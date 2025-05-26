@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "file": "CALENDAR/2025-05-26.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-Scoop-Package-Manager-Guide"
+              "title": "2025-05-26"
+            }
+          },
+          {
+            "id": "af8ba196879cbb79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-26-Framework de Desenvolvimento Evolutivo"
             }
           },
           {
@@ -104,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -163,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "file": "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-26-Scoop-Package-Manager-Guide"
+              "title": "Outline of 2025-05-26-Framework de Desenvolvimento Evolutivo"
             }
           }
         ]
@@ -208,7 +232,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "file": "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +242,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-05-26-Scoop-Package-Manager-Guide"
+              "title": "Backlinks for 2025-05-26-Framework de Desenvolvimento Evolutivo"
             }
           },
           {
@@ -279,9 +303,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a9d0c17cbfc9e04e",
+  "active": "af8ba196879cbb79",
   "lastOpenFiles": [
     "CALENDAR/2025-05-26.md",
+    "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-26-data-science-roadmap.md",
     "2025-05-26-boas-vindas.md",
@@ -308,7 +333,6 @@
     "2025-05-26-test.md",
     "2025-05-26-nw.md",
     "2025-05-26-nrw.md",
-    "2025-05-26-new-post-testing.md",
     "TEMPLATE/desktop.ini"
   ]
 }
