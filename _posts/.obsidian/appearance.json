@@ -5,5 +5,6 @@
     "minorAdds",
     "datacore-classes",
     "dashboarPlusPlus"
-  ]
+  ],
+  "theme": "moonstone"
 }

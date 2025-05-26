@@ -8,6 +8,8 @@ categories:
 description: Este guia oferece um roteiro estruturado para aprender Data Science, Machine Learning e Deep Learning
 tags:
   - roadmap
+  - learning
+  - data-science
 pin: true
 ---
 ## Apresentação
