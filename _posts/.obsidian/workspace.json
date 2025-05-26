@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
+                "file": "2019-08-09-getting-started.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "DAILY-CALENDAR-TEMPLATE"
+              "title": "2019-08-09-getting-started"
             }
           },
           {
@@ -139,13 +139,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
+                "file": "2019-08-09-getting-started.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DAILY-CALENDAR-TEMPLATE"
+              "title": "Outline of 2019-08-09-getting-started"
             }
           }
         ]
@@ -184,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
+                "file": "2019-08-09-getting-started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -194,7 +194,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DAILY-CALENDAR-TEMPLATE"
+              "title": "Backlinks for 2019-08-09-getting-started"
             }
           },
           {
@@ -257,11 +257,11 @@
   },
   "active": "4477ad05f5b4dacc",
   "lastOpenFiles": [
-    "CALENDAR/2025-05-26.md",
+    "2025-05-26-data-science-roadmap.md",
     "2025-05-26-boas-vindas.md",
     "2025-05-26-arctic-monkeys-tbhc-album.md",
+    "CALENDAR/2025-05-26.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
-    "2025-05-26-data-science-roadmap.md",
     "2025-05-26-data-science-roadmap 1.md",
     "2019-08-09-getting-started.md",
     "2025-05-26-post-test.md",

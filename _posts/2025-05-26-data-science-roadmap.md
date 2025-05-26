@@ -10,7 +10,7 @@ tags:
   - roadmap
   - learning
   - data-science
-pin: true
+pin: false
 ---
 ## Apresentação
 
