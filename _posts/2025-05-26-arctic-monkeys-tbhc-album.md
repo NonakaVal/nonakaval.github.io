@@ -4,9 +4,9 @@ description: O álbum _Tranquility Base Hotel & Casino_, lançado em 11 de maio 
 date: 2025-05-26 12:42:25 -03:00
 author: cotes
 categories:
-  - Blogging
-tags:
   - music
+tags:
+  - blogging
 pin: 
 image: assets/img/tbhc.jpg
 math: false

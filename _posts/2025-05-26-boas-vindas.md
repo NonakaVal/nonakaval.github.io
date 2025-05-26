@@ -4,8 +4,11 @@ description: Me chamo Valdenir Nonaka e aqui publicarei minhas notas e estudos. 
 date: 2025-05-26 12:50:39 -03:00
 author: cotes
 categories:
-  - Blogging
-tags: 
+  - data-science
+  - python
+tags:
+  - lerning-resources
+  - blogging
 pin: true
 image: assets/img/studing.jpg
 math: true

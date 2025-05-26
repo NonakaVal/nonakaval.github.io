@@ -3,13 +3,16 @@ title: Data Science, Machine Learning e Deep Learning
 date: 2025-05-26 14:10:00 +0800
 author: Val
 categories:
-  - roadmap
-  - study-resources
+  - math
+  - statistic
+  - programação
+  - data-cleaning
+  - data-wragling
+  - data-science
 description: Este guia oferece um roteiro estruturado para aprender Data Science, Machine Learning e Deep Learning
 tags:
+  - lerning-resources
   - roadmap
-  - learning
-  - data-science
 pin: false
 ---
 ## Apresentação
