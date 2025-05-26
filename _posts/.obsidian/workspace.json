@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "426a7596c16ff43b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1f1660081872985",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71d3474b9f67e5e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2019-08-08-text-and-typography.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2019-08-08-text-and-typography"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6b92e7d6da07b712",
+    "type": "split",
+    "children": [
+      {
+        "id": "91411cdf1f537d7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f5e1e9ff1328ea0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ec6e9e506e0c5cd2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "69d61d109b6bb91a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "81f2a6cc383e51d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "e440d8c83e5cffca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33905676c292e79d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2019-08-08-text-and-typography.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2019-08-08-text-and-typography"
+            }
+          },
+          {
+            "id": "18f05648c08c3cef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2019-08-08-text-and-typography.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2019-08-08-text-and-typography"
+            }
+          },
+          {
+            "id": "01601bdb07e55e32",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0cba2b90cb298f7d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2019-08-08-text-and-typography.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2019-08-08-text-and-typography"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "71d3474b9f67e5e1",
+  "lastOpenFiles": [
+    "2025-05-26-data-science-roadmap.md",
+    "2019-08-11-customize-the-favicon.md",
+    "2019-08-09-getting-started.md",
+    "2019-08-08-write-a-new-post.md",
+    "2019-08-08-text-and-typography.md"
+  ]
+}
