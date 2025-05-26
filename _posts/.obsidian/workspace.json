@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-arctic-monkeys-tbhc-album.md",
+                "file": "CALENDAR/2025-05-26.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-arctic-monkeys-tbhc-album"
+              "title": "2025-05-26"
+            }
+          },
+          {
+            "id": "a9d0c17cbfc9e04e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-26-Scoop-Package-Manager-Guide"
             }
           },
           {
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -139,13 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-05-26-arctic-monkeys-tbhc-album.md",
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-26-arctic-monkeys-tbhc-album"
+              "title": "Outline of 2025-05-26-Scoop-Package-Manager-Guide"
             }
           }
         ]
@@ -184,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-05-26-arctic-monkeys-tbhc-album.md",
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -194,7 +218,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-05-26-arctic-monkeys-tbhc-album"
+              "title": "Backlinks for 2025-05-26-Scoop-Package-Manager-Guide"
             }
           },
           {
@@ -255,13 +279,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4477ad05f5b4dacc",
+  "active": "a9d0c17cbfc9e04e",
   "lastOpenFiles": [
-    "2025-05-26-boas-vindas.md",
+    "CALENDAR/2025-05-26.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-26-data-science-roadmap.md",
+    "2025-05-26-boas-vindas.md",
     "2025-05-26-arctic-monkeys-tbhc-album.md",
     "2019-08-09-getting-started.md",
-    "CALENDAR/2025-05-26.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
     "2025-05-26-data-science-roadmap 1.md",
     "2025-05-26-post-test.md",
@@ -284,7 +309,6 @@
     "2025-05-26-nw.md",
     "2025-05-26-nrw.md",
     "2025-05-26-new-post-testing.md",
-    "TEMPLATE/desktop.ini",
-    "2025-05-26-nota-teste-blabla.md"
+    "TEMPLATE/desktop.ini"
   ]
 }
