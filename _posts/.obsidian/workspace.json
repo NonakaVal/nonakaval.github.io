@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-Framework de Desenvolvimento Evolutivo"
+              "title": "2025-05-26-Scoop-Package-Manager-Guide"
             }
           },
           {
@@ -187,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-26-Framework de Desenvolvimento Evolutivo"
+              "title": "Outline of 2025-05-26-Scoop-Package-Manager-Guide"
             }
           }
         ]
@@ -232,7 +232,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,7 +242,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-05-26-Framework de Desenvolvimento Evolutivo"
+              "title": "Backlinks for 2025-05-26-Scoop-Package-Manager-Guide"
             }
           },
           {
@@ -305,12 +305,12 @@
   },
   "active": "af8ba196879cbb79",
   "lastOpenFiles": [
-    "CALENDAR/2025-05-26.md",
     "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-26-data-science-roadmap.md",
     "2025-05-26-boas-vindas.md",
     "2025-05-26-arctic-monkeys-tbhc-album.md",
+    "CALENDAR/2025-05-26.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2019-08-09-getting-started.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
     "2025-05-26-data-science-roadmap 1.md",

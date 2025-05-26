@@ -2,7 +2,7 @@
 title: Por que Tranquility Base Hotel and Cassino é genial
 description: O álbum _Tranquility Base Hotel & Casino_, lançado em 11 de maio de 2018, é o sexto trabalho de estúdio da banda britânica Arctic Monkeys.
 date: 2025-05-26 12:42:25 -03:00
-author: cotes
+author: Val
 categories:
   - music
 tags:
