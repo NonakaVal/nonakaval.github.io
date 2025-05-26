@@ -14,6 +14,7 @@ pin: true
 
 Este guia oferece um **roteiro estruturado** para aprender **Data Science, Machine Learning e Deep Learning**, desde fundamentos (matemática, programação) até tópicos avançados (NLP, Big Data). Com links diretos para os melhores cursos, livros e tutoriais, além de um checklist interativo, o material simplifica o aprendizado, nota foi gerada por uma das minhas crews tal como a [LazyResearches](https://github.com/NonakaVal/LazyResearchesWithCrewai) -- Poderá baixar a nota em `.md` por esse [link](https://drive.google.com/file/d/12FdKQjJ7YY9EC3Rg_rvuSpmSsBHvF4Jy/view?usp=sharing)
 
+
 ## 🎓Alicerces do Conhecimento – A Base Indispensável
 
 ### **🔢 Matemática**

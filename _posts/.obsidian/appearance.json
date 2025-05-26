@@ -1,1 +1,9 @@
-{}
+{
+  "cssTheme": "Shimmering Focus",
+  "enabledCssSnippets": [
+    "minorFixes",
+    "minorAdds",
+    "datacore-classes",
+    "dashboarPlusPlus"
+  ]
+}
