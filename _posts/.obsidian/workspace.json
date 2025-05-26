@@ -32,60 +32,12 @@
             }
           },
           {
-            "id": "0d629bb2dc969afc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CALENDAR/2025-05-26.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-26"
-            }
-          },
-          {
-            "id": "6d540340e8c4fd62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-05-26-arctic-monkeys-tbhc-album.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-26-arctic-monkeys-tbhc-album"
-            }
-          },
-          {
             "id": "4477ad05f5b4dacc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-boas-vindas.md",
+                "file": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-boas-vindas"
+              "title": "DAILY-CALENDAR-TEMPLATE"
             }
           },
           {
@@ -109,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CALENDAR/2025-05-26.md",
+                "file": "2025-05-26-data-science-roadmap.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,35 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26"
-            }
-          },
-          {
-            "id": "0e3bd6f02145de3f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CALENDAR/2025-05-26.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-26"
+              "title": "2025-05-26-data-science-roadmap"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,13 +139,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-05-26-boas-vindas.md",
+                "file": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-26-boas-vindas"
+              "title": "Outline of DAILY-CALENDAR-TEMPLATE"
             }
           }
         ]
@@ -256,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-05-26-boas-vindas.md",
+                "file": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -266,7 +194,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-05-26-boas-vindas"
+              "title": "Backlinks for DAILY-CALENDAR-TEMPLATE"
             }
           },
           {
@@ -329,13 +257,13 @@
   },
   "active": "4477ad05f5b4dacc",
   "lastOpenFiles": [
-    "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
+    "CALENDAR/2025-05-26.md",
     "2025-05-26-boas-vindas.md",
+    "2025-05-26-arctic-monkeys-tbhc-album.md",
+    "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
     "2025-05-26-data-science-roadmap.md",
     "2025-05-26-data-science-roadmap 1.md",
     "2019-08-09-getting-started.md",
-    "2025-05-26-arctic-monkeys-tbhc-album.md",
-    "CALENDAR/2025-05-26.md",
     "2025-05-26-post-test.md",
     "TEMPLATE/POST-TEMPLATE.md",
     "2025-05-26-nova-nota.md",
