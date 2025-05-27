@@ -5,12 +5,16 @@
       "path": "2025-05-26-boas-vindas.md"
     },
     {
-      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
-      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
+      "basename": "POST-TEMPLATE",
+      "path": "TEMPLATE/POST-TEMPLATE.md"
     },
     {
-      "basename": "2025-05-26-data-science-roadmap",
-      "path": "2025-05-26-data-science-roadmap.md"
+      "basename": "2025-05-26",
+      "path": "CALENDAR/2025-05-26.md"
+    },
+    {
+      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
+      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
     },
     {
       "basename": "2025-05-26-Scoop-Package-Manager-Guide",
@@ -21,16 +25,12 @@
       "path": "2025-05-26-Framework de Desenvolvimento Evolutivo.md"
     },
     {
-      "basename": "POST-TEMPLATE",
-      "path": "TEMPLATE/POST-TEMPLATE.md"
+      "basename": "2025-05-26-data-science-roadmap",
+      "path": "2025-05-26-data-science-roadmap.md"
     },
     {
       "basename": "DAILY-CALENDAR-TEMPLATE",
       "path": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
-    },
-    {
-      "basename": "2025-05-26",
-      "path": "CALENDAR/2025-05-26.md"
     },
     {
       "basename": "digital-garden-home",
@@ -59,10 +59,6 @@
     {
       "basename": "Roadmap Ciência de Dados, ML & DL",
       "path": "Efforts/PROJECTS/Digital-Garden/Roadmap Ciência de Dados, ML & DL.md"
-    },
-    {
-      "basename": "cmp-git-branches",
-      "path": "Atlas/04_COMPONENT/cmp-git-branches.md"
     },
     {
       "basename": "mapas-galaticos",
@@ -195,10 +191,6 @@
     {
       "basename": "2025-01-02",
       "path": "Calendar/DAILY/2025-01-02.md"
-    },
-    {
-      "basename": "2024-08-14",
-      "path": "Calendar/DAILY/2024-08-14.md"
     }
   ],
   "omittedPaths": [],

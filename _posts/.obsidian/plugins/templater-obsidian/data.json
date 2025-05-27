@@ -17,6 +17,10 @@
     {
       "folder": "CALENDAR",
       "template": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
+    },
+    {
+      "folder": "/",
+      "template": "TEMPLATE/POST-TEMPLATE.md"
     }
   ],
   "enable_file_templates": false,
