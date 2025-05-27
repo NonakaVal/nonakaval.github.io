@@ -18,5 +18,3 @@ My name is Valdenir Nonaka, and I work with data in an integrated way, connectin
 I work with data holistically—bridging analysis, automation, and content creation to drive results.
 
 Usando Python para fugir do Excel, e o Excel para fugir do Python.
-
-![My helpful screenshot](/assets/2.png)
