@@ -52,6 +52,37 @@ refactor: true
 {% endfor %}
 {% endif %}
 
+<div>
+  <style>
+    #sakana-widget {
+      float: right;
+      margin: 0px;
+    }
+
+    /* Responsivo para telas menores que 768px (mobile) */
+    @media (max-width: 768px) {
+      #sakana-widget {
+        float: none;
+        margin: 20px auto;
+        display: block;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.1/lib/sakana.min.css" />
+
+  <div id="sakana-widget"></div>
+
+  <script>
+    function initSakanaWidget() {
+      new SakanaWidget().mount('#sakana-widget');
+    }
+  </script>
+
+  <script async onload="initSakanaWidget()"
+    src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.1/lib/sakana.min.js"></script>
+</div>
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
   <article class="card-wrapper card">
@@ -125,5 +156,3 @@ refactor: true
 {% if paginator.total_pages > 1 %}
 {% include post-paginator.html %}
 {% endif %}
-
-
