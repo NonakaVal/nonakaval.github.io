@@ -1,7 +1,7 @@
 ---
 title: Seja Bem vindo
 description: Me chamo Valdenir Nonaka e aqui publicarei minhas notas e estudos. Além de diversos recursos e materiais focados em TI e Data Science.
-date: 2025-05-26 12:50:39 -03:00
+date: 2025-05-26 12:50:39
 author: Val
 categories:
   - data-science

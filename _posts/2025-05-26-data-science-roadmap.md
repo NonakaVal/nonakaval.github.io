@@ -1,6 +1,6 @@
 ---
 title: Data Science, Machine Learning e Deep Learning
-date: 2025-05-26 14:10:00 +0800
+date: 2025-05-26 14:10:00
 author: Val
 categories:
   - math
@@ -13,7 +13,6 @@ description: Este guia oferece um roteiro estruturado para aprender Data Scien
 tags:
   - lerning-resources
   - roadmap
-pin: false
 ---
 ## Apresentação
 

@@ -1,7 +1,7 @@
 ---
 title: Assistindo Anime pelo terminal com scoop
 description: Scoop is a command-line package manager for Windows that simplifies the installation and management of software.
-date: 2025-05-26 13:29:11 -03:00
+date: 2025-05-26 13:29:11
 author: Val
 categories:
   - Entertainment

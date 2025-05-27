@@ -1,7 +1,7 @@
 ---
 title: Framework de Desenvolvimento Evolutivo
 description: Muitas organizações ficam meses desenvolvendo produtos "perfeitos" que nunca saem do papel ou chegam tarde demais ao mercado. Nossa metodologia faz você conseguir lançar qualquer projeto em 1 semana e, consequentemente, começar a gerar resultados rapidamente.
-date: 2025-05-26 13:36:30 -03:00
+date: 2025-05-26 13:36:30
 author: Alex
 categories:
   - desenvolvimento-pessoal

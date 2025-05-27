@@ -1,0 +1,53 @@
+{
+  "debounceTimeout": 0,
+  "ignoreOpenFiles": true,
+  "ignoreForceViewAll": true,
+  "folders": [
+    {
+      "folder": "System/HUB",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "System/TEMPLATE",
+      "viewMode": "obsidianEditingMode: source"
+    },
+    {
+      "folder": "Atlas/01_INDEX",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "Atlas/05_DOC",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "Atlas/06_WORKFLOW",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "Atlas/08_MAPS",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "Calendar/DAILY",
+      "viewMode": "obsidianEditingMode: live"
+    },
+    {
+      "folder": "System/ASSETS",
+      "viewMode": "obsidianEditingMode: source"
+    },
+    {
+      "folder": "",
+      "viewMode": ""
+    }
+  ],
+  "files": [
+    {
+      "filePattern": "Efforts/AREAS/Writing/von/conceitos/mapas-galaticos.md",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "",
+      "viewMode": ""
+    }
+  ]
+}
