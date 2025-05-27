@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "file": "2025-05-26-boas-vindas.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-Scoop-Package-Manager-Guide"
+              "title": "2025-05-26-boas-vindas"
+            }
+          },
+          {
+            "id": "a825c8969d4f0182",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-05-26-boas-vindas.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-26-boas-vindas"
             }
           },
           {
@@ -128,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -160,7 +184,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:blogging",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -289,7 +313,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 352.5
+    "width": 351.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -303,15 +327,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "af8ba196879cbb79",
+  "active": "a825c8969d4f0182",
   "lastOpenFiles": [
-    "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
-    "2025-05-26-data-science-roadmap.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-26-boas-vindas.md",
+    "2025-05-26-data-science-roadmap.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
+    "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
     "TEMPLATE/POST-TEMPLATE.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
     "CALENDAR/2025-05-26.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-26-arctic-monkeys-tbhc-album.md",
     "desktop.ini",
     "2019-08-09-getting-started.md",
