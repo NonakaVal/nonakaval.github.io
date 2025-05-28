@@ -11,6 +11,7 @@ math: true
 mermaid: true
 calendar: "[[2025-05-26]]"
 ---
+
 ### Professional Profile
 
 My name is Valdenir Nonaka, and I work with data in an integrated way, connecting analysis, automation, and content. love solving problems - whether in e-commerce, personal organization, or marketing.
