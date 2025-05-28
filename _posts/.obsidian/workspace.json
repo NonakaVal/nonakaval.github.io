@@ -54,9 +54,33 @@
               "icon": "lucide-file",
               "title": "2025-05-28-music-tranquility-base"
             }
+          },
+          {
+            "id": "8d0fd4202979c046",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SYSTEM/TIPOGRAFIA.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "TIPOGRAFIA"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -232,18 +256,21 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a1f97a93d3e0d9c0",
+  "active": "7f5e1e9ff1328ea0",
   "lastOpenFiles": [
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
+    "SYSTEM",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
+    "2025-05-28-my-obsidian-setup.md",
+    "SYSTEM/TIPOGRAFIA.md",
+    "CALENDAR/2025-05-28.md",
+    "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
+    "2025-05-26-data-science-roadmap.md",
     "2025-05-28-music-tranquility-base.md",
-    "Untitled.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-26-About-me.md",
     "Pasted image 20250528162638.png",
-    "2025-05-26-data-science-roadmap.md",
     "TEMPLATE/POST-TEMPLATE.md",
     "CALENDAR/2025-05-26.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
-    "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
     "2025-05-27-nova-postagem.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
     "CALENDAR/2025-05-27.md",
@@ -261,9 +288,6 @@
     "CALENDAR.md",
     "CALENDAR",
     "TEMPLATE/Untitled",
-    "2025-05-26-ww.md",
-    "2025-05-26-qualquer-nota.md",
-    "2025-05-26-new1.md",
     "TEMPLATE/desktop.ini"
   ]
 }

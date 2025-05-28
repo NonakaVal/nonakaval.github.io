@@ -4,17 +4,18 @@ description: Scoop is a command-line package manager for Windows that simplifies
 date: 2025-05-26 13:29:11
 author: Val
 categories:
-  - Entertainment
   - Anime
 tags:
   - Guide
 pin: 
-image: 
+image: assets/img/cats.jpg
 math: true
 mermaid: true
 calendar: "[[2025-05-26]]"
 ---
 
+
+<https://www.youtube.com/watch?v=OFQQALduhzA>
 
 
 https://scoop.sh/

@@ -7,5 +7,14 @@
       ],
       "key": "D"
     }
-  ]
+  ],
+  "quickadd:choice:57f97def-1e94-4eda-bd47-6ee8e6a33540": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file": []
 }

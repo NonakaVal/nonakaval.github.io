@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "2025-05-26-Scoop-Package-Manager-Guide",
+      "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
+    },
+    {
+      "basename": "2025-05-28-my-obsidian-setup",
+      "path": "2025-05-28-my-obsidian-setup.md"
+    },
+    {
+      "basename": "2025-05-28",
+      "path": "CALENDAR/2025-05-28.md"
+    },
+    {
       "basename": "2025-05-28-music-tranquility-base",
       "path": "2025-05-28-music-tranquility-base.md"
     },
@@ -13,24 +29,12 @@
       "path": "2025-05-26-About-me.md"
     },
     {
-      "basename": "2025-05-26-data-science-roadmap",
-      "path": "2025-05-26-data-science-roadmap.md"
-    },
-    {
       "basename": "POST-TEMPLATE",
       "path": "TEMPLATE/POST-TEMPLATE.md"
     },
     {
       "basename": "2025-05-26",
       "path": "CALENDAR/2025-05-26.md"
-    },
-    {
-      "basename": "2025-05-26-Scoop-Package-Manager-Guide",
-      "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
-    },
-    {
-      "basename": "2025-05-26-Framework de Desenvolvimento Evolutivo",
-      "path": "2025-05-26-Framework de Desenvolvimento Evolutivo.md"
     },
     {
       "basename": "DAILY-CALENDAR-TEMPLATE",
@@ -191,10 +195,6 @@
     {
       "basename": "PKM-Youtube-Videos-archived",
       "path": "Efforts/ARCHIVES/PKM-Youtube-Videos/PKM-Youtube-Videos-archived.md"
-    },
-    {
-      "basename": "2025-01-02",
-      "path": "Calendar/DAILY/2025-01-02.md"
     }
   ],
   "omittedPaths": [],
