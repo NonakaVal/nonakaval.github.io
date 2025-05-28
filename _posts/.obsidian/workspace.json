@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-boas-vindas.md",
+                "file": "2025-05-26-About-me.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-boas-vindas"
+              "title": "2025-05-26-About-me"
             }
           }
         ]
@@ -119,7 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 492.5
+    "width": 434.5
   },
   "right": {
     "id": "81f2a6cc383e51d9",
@@ -192,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 351.5
+    "width": 351.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,13 +209,14 @@
   },
   "active": "c26fd3bb93e0138d",
   "lastOpenFiles": [
-    "TEMPLATE/POST-TEMPLATE.md",
-    "2025-05-26-boas-vindas.md",
-    "CALENDAR/2025-05-26.md",
+    "Pasted image 20250528162638.png",
+    "2025-05-26-About-me.md",
+    "2025-05-26-data-science-roadmap.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
+    "TEMPLATE/POST-TEMPLATE.md",
+    "CALENDAR/2025-05-26.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
-    "2025-05-26-data-science-roadmap.md",
     "2025-05-27-nova-postagem.md",
     "Untitled.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
@@ -236,7 +238,6 @@
     "2025-05-26-ww.md",
     "2025-05-26-qualquer-nota.md",
     "2025-05-26-new1.md",
-    "2025-05-26-new-post-test.md",
     "TEMPLATE/desktop.ini"
   ]
 }
