@@ -8,7 +8,7 @@ categories:
 tags:
   - blogging
 pin: 
-image: assets\img\tbhc2.jpg
+image: assets/img/tbhc2.jpg
 math: false
 mermaid: false
 calendar: "[[2025-05-28]]"
