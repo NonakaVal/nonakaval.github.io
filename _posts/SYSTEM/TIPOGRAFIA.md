@@ -1,31 +1,5 @@
----
-title: 
-description: 
-date: 2025-05-28 18:03:28
-author: 
-categories: 
-tags: 
-pin: 
-image: 
-math: false
-mermaid: false
-calendar: '[[2025-05-28]]'
----
 
----
-title: Text and Typography
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
-date: 2025-05-28 10:05:54
-author: cotes
-categories:
-  - Blogging
-tags: 
-pin: 
-image: 
-math: true
-mermaid: true
-calendar: "[[2025-05-28]]"
----
+
 
 ## Headings[](https://chirpy.cotes.page/posts/text-and-typography/#headings)
 

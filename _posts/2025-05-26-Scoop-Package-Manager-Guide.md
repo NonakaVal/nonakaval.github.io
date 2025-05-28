@@ -6,6 +6,7 @@ author: Val
 categories:
   - Anime
 tags:
+  - Explore
   - Guide
 pin: 
 image: assets/img/cats.jpg

@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM/TIPOGRAFIA.md",
+                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "TIPOGRAFIA"
+              "title": "2025-05-26-Scoop-Package-Manager-Guide"
             }
           }
         ],
@@ -256,17 +256,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7f5e1e9ff1328ea0",
+  "active": "8d0fd4202979c046",
   "lastOpenFiles": [
-    "SYSTEM",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
+    "2025-05-28-music-tranquility-base.md",
     "2025-05-28-my-obsidian-setup.md",
-    "SYSTEM/TIPOGRAFIA.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "CALENDAR/2025-05-28.md",
+    "SYSTEM/desktop.ini",
+    "SYSTEM/TIPOGRAFIA.md",
+    "SYSTEM",
     "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
     "2025-05-26-data-science-roadmap.md",
-    "2025-05-28-music-tranquility-base.md",
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-26-About-me.md",
     "Pasted image 20250528162638.png",
     "TEMPLATE/POST-TEMPLATE.md",

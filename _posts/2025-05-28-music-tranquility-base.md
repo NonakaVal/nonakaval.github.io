@@ -6,7 +6,7 @@ author: Val
 categories:
   - music
 tags:
-  - blogging
+  - Review
 pin: 
 image: assets/img/tbhc2.jpg
 math: false

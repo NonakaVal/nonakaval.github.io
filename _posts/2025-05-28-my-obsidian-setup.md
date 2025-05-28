@@ -3,8 +3,11 @@ title: Meu Sistema de Gestão de Conhecimento com Obsidian
 description: Como estruturei minha vault, os plugins que uso etc.
 date: 2025-05-28 17:28:25
 author: Val
-categories: 
-tags: 
+categories:
+  - obsidian
+  - gestão de conhecimento
+tags:
+  - Setup
 pin: 
 image: assets/img/obsidian.png
 math: false
