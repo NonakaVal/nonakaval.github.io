@@ -4,12 +4,17 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+<img src="/assets/img/profire.jpg" width="180" alt="Foto de perfil">
+
+Hey, I’m Valdenir Nonaka. 
+I’m into data, automation, and figuring out how to organize pretty much anything. Whether it’s work, projects, or just my own curiosity. After years of keeping my notes to myself, I finally decided to share what I’ve been learning. If you're into productivity, knowledge management, and tools like Obsidian, you’ll feel right at home on my YouTube channel. 
+
+- <https://www.youtube.com/@nonaka96>
+- <https://nonakaval.github.io/nonaka/>
+- <https://www.instagram.com/nonaka.val>
+- <mailto:valdenirnonaka@gmail.com>
+
+Like the title says, I'm not a dev—just love seeing how far open-source can go and starting to believe that humanity isn’t entirely doomed in the process.
 
 
-Professional Profile
-My name is Valdenir Nonaka, and I work with data in an integrated way, connecting analysis, automation, and content. love solving problems - whether in e-commerce, personal organization, or marketing.
-
-My most recent e-commerce role was at Collector's Guardian, where I achieved significant results and, most importantly, gained valuable experience. -- Our team implemented strategies that drove remarkable outcomes in both brand awareness and consolidation, as well as in sales and conversion.
-
+<img src="/assets/img/tab.gif" alt="gif">

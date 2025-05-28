@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "file": "2025-05-26-About-me.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-Scoop-Package-Manager-Guide"
+              "title": "2025-05-26-About-me"
             }
           }
         ],
@@ -258,10 +258,10 @@
   },
   "active": "8d0fd4202979c046",
   "lastOpenFiles": [
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-28-music-tranquility-base.md",
     "2025-05-28-my-obsidian-setup.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "CALENDAR/2025-05-28.md",
     "SYSTEM/desktop.ini",
     "SYSTEM/TIPOGRAFIA.md",
