@@ -1,6 +1,6 @@
 ---
 title: Tranquility Base Hotel & Casino
-description: Um pouco sobre como
+description: Uma breve análise  de um dos meus álbuns favoritos da vida
 date: 2025-05-28 16:56:32
 author: Val
 categories:
