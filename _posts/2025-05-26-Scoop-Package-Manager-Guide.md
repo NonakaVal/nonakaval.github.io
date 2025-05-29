@@ -5,9 +5,11 @@ date: 2025-05-26 13:29:11
 author: Val
 categories:
   - Anime
+  - Windows Powershell
 tags:
   - Explore
   - Guide
+  - Dicas
 pin: 
 image: assets/img/anime.png
 math: true
