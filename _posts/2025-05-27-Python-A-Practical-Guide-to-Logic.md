@@ -7,7 +7,7 @@ categories:
   - programação
   - python
 tags:
-  - Start
+  - Dicas
 pin: 
 image: assets/img/Python-logical-operators.jpg
 math: true

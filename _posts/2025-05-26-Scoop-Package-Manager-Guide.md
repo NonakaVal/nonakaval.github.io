@@ -9,7 +9,7 @@ tags:
   - Explore
   - Guide
 pin: 
-image: assets/img/cats.jpg
+image: assets/img/anime.png
 math: true
 mermaid: true
 calendar: "[[2025-05-26]]"

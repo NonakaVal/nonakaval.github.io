@@ -8,7 +8,7 @@ categories:
   - gestão de conhecimento
 tags:
   - Setup
-pin: 
+pin: false
 image: assets/img/obsidian.png
 math: false
 mermaid: false

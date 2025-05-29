@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-About-me.md",
+                "file": "SYSTEM/TIPOGRAFIA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-About-me"
+              "title": "TIPOGRAFIA"
             }
           }
         ],
@@ -177,6 +177,7 @@
       {
         "id": "e440d8c83e5cffca",
         "type": "tabs",
+        "dimension": 39.125,
         "children": [
           {
             "id": "33905676c292e79d",
@@ -238,11 +239,41 @@
           }
         ],
         "currentTab": 3
+      },
+      {
+        "id": "ce3287dd365563ef",
+        "type": "tabs",
+        "dimension": 60.875,
+        "children": [
+          {
+            "id": "b71cfbf9c93115c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SYSTEM/TIPOGRAFIA.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "TIPOGRAFIA"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 351.5,
-    "collapsed": true
+    "width": 351.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,17 +289,18 @@
   },
   "active": "8d0fd4202979c046",
   "lastOpenFiles": [
+    "2025-05-26-About-me.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "2025-05-28-music-tranquility-base.md",
     "2025-05-28-my-obsidian-setup.md",
+    "2025-05-28-music-tranquility-base.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "SYSTEM/TIPOGRAFIA.md",
     "CALENDAR/2025-05-28.md",
     "SYSTEM/desktop.ini",
-    "SYSTEM/TIPOGRAFIA.md",
     "SYSTEM",
     "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
     "2025-05-26-data-science-roadmap.md",
-    "2025-05-26-About-me.md",
     "Pasted image 20250528162638.png",
     "TEMPLATE/POST-TEMPLATE.md",
     "CALENDAR/2025-05-26.md",
