@@ -9,32 +9,40 @@
       "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
     },
     {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
-    },
-    {
       "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
       "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
-    },
-    {
-      "basename": "2025-05-28-my-obsidian-setup",
-      "path": "2025-05-28-my-obsidian-setup.md"
     },
     {
       "basename": "2025-05-28-music-tranquility-base",
       "path": "2025-05-28-music-tranquility-base.md"
     },
     {
+      "basename": "2025-05-28-my-obsidian-setup",
+      "path": "2025-05-28-my-obsidian-setup.md"
+    },
+    {
       "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
     },
     {
-      "basename": "2025-05-28",
-      "path": "CALENDAR/2025-05-28.md"
+      "basename": "2025-05-29-cat-memes-1",
+      "path": "GALLERY-POSTS/2025-05-29-cat-memes-1.md"
+    },
+    {
+      "basename": "GALLERY-POST-TEMPLATE",
+      "path": "TEMPLATE/GALLERY-POST-TEMPLATE.md"
     },
     {
       "basename": "POST-TEMPLATE",
       "path": "TEMPLATE/POST-TEMPLATE.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "2025-05-28",
+      "path": "CALENDAR/2025-05-28.md"
     },
     {
       "basename": "2025-05-26",
@@ -187,18 +195,6 @@
     {
       "basename": "serie-plugins-da-comunidade",
       "path": "Efforts/AREAS/PKM-Youtube-Videos/serie-plugins-da-comunidade.md"
-    },
-    {
-      "basename": "2023-11-29",
-      "path": "Calendar/DAILY/2023-11-29.md"
-    },
-    {
-      "basename": "RawThoughts",
-      "path": "Efforts/AREAS/Writing/RawThoughts/RawThoughts.md"
-    },
-    {
-      "basename": "PKM-Youtube-Videos-archived",
-      "path": "Efforts/ARCHIVES/PKM-Youtube-Videos/PKM-Youtube-Videos-archived.md"
     }
   ],
   "omittedPaths": [],

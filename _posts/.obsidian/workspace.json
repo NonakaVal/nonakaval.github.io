@@ -78,9 +78,33 @@
               "icon": "lucide-file",
               "title": "2025-05-26-About-me"
             }
+          },
+          {
+            "id": "b862d2de099f9a23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-05-26-About-me.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-26-About-me"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -92,6 +116,7 @@
       {
         "id": "91411cdf1f537d7c",
         "type": "tabs",
+        "dimension": 50.131926121372025,
         "children": [
           {
             "id": "7f5e1e9ff1328ea0",
@@ -153,6 +178,7 @@
       {
         "id": "d52612002cb4bdfd",
         "type": "tabs",
+        "dimension": 49.86807387862797,
         "children": [
           {
             "id": "8d29bb4e19b2f1c5",
@@ -273,7 +299,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 351.5
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -287,22 +313,30 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "8d0fd4202979c046",
+  "active": "b862d2de099f9a23",
   "lastOpenFiles": [
     "2025-05-26-Scoop-Package-Manager-Guide.md",
-    "SYSTEM/TIPOGRAFIA.md",
-    "2025-05-26-About-me.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "2025-05-28-my-obsidian-setup.md",
     "2025-05-28-music-tranquility-base.md",
+    "2025-05-28-my-obsidian-setup.md",
+    "2025-05-26-About-me.md",
+    "2025-05-29-gallery-post-test.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "GALLERY-POSTS/2025-05-29-cat-memes-1.md",
+    "TEMPLATE/GALLERY-POST-TEMPLATE.md",
+    "GALLERY-POSTS/desktop.ini",
+    "Untitled/Untitled",
+    "Untitled/desktop.ini",
+    "GALLERY-POSTS",
+    "TEMPLATE/POST-TEMPLATE.md",
+    "SYSTEM/TIPOGRAFIA.md",
+    "2025-05-29-new.md",
     "CALENDAR/2025-05-28.md",
     "SYSTEM/desktop.ini",
     "SYSTEM",
     "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
     "2025-05-26-data-science-roadmap.md",
     "Pasted image 20250528162638.png",
-    "TEMPLATE/POST-TEMPLATE.md",
     "CALENDAR/2025-05-26.md",
     "2025-05-27-nova-postagem.md",
     "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
@@ -315,10 +349,6 @@
     "2025-05-26-nova-nota.md",
     "2025-05-26-new.md",
     "2025-05-26.md",
-    "2025-05-26-weda.md",
-    "2025-05-26-new-note-test.md",
-    "2025-05-26-new-note.md",
-    "CALENDAR.md",
     "CALENDAR",
     "TEMPLATE/Untitled",
     "TEMPLATE/desktop.ini"

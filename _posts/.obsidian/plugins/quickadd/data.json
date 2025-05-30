@@ -27,6 +27,36 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": true
+    },
+    {
+      "id": "8a52fbb8-f629-4d75-a45e-c179d8794c05",
+      "name": "GALLERY-POST",
+      "type": "Template",
+      "command": true,
+      "templatePath": "TEMPLATE/GALLERY-POST-TEMPLATE.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{date}}-{{value}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "GALLERY-POSTS"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [],

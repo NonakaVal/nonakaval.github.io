@@ -5,6 +5,7 @@ date: 2025-05-28 16:56:32
 author: Val
 categories:
   - music
+  - review
 tags:
   - Review
 pin: 

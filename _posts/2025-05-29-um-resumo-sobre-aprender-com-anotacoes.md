@@ -4,9 +4,8 @@ description: Um resumo conciso do meu primeiro vídeo no youtube sobre estar tom
 date: 2025-05-29 15:50:50
 author: Val
 categories:
-  - obsidian
   - gestão de conhecimento
-  - resumo de video
+  - obsidian
 tags:
   - Insight
   - Dicas

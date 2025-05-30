@@ -4,8 +4,8 @@ description: Scoop is a command-line package manager for Windows that simplifies
 date: 2025-05-26 13:29:11
 author: Val
 categories:
-  - Anime
   - Windows Powershell
+  - Anime
 tags:
   - Explore
   - Guide
