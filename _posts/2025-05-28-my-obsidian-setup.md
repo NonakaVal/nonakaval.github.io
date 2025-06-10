@@ -4,8 +4,8 @@ description: Como estruturei minha vault, os plugins que uso etc.
 date: 2025-05-28 17:28:25
 author: Val
 categories:
-  - obsidian
   - gestão de conhecimento
+  - obsidian
 tags:
   - Setup
 pin: false
