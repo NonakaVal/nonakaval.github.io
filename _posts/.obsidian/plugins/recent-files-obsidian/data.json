@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-06-10-introduction-to-ruby",
+      "path": "2025-06-10-introduction-to-ruby.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
       "basename": "2025-05-26-Scoop-Package-Manager-Guide",
       "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "2025-05-26",
       "path": "CALENDAR/2025-05-26.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
     },
     {
       "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
@@ -195,10 +199,6 @@
     {
       "basename": "Portifolio-Content",
       "path": "Efforts/AREAS/Career-development/Portifolio-Content.md"
-    },
-    {
-      "basename": "serie-plugins-da-comunidade",
-      "path": "Efforts/AREAS/PKM-Youtube-Videos/serie-plugins-da-comunidade.md"
     }
   ],
   "omittedPaths": [],

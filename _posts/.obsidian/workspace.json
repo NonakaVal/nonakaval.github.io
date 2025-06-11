@@ -126,9 +126,33 @@
               "icon": "lucide-file",
               "title": "2025-05-26-Scoop-Package-Manager-Guide"
             }
+          },
+          {
+            "id": "b72bda2738ee502e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-06-10-introduction-to-ruby.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-10-introduction-to-ruby"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -188,16 +212,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                "file": "2025-06-10-introduction-to-ruby.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-26-Scoop-Package-Manager-Guide"
+              "title": "Outline of 2025-06-10-introduction-to-ruby"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "d52612002cb4bdfd",
@@ -337,15 +362,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4ba494ba5262b430",
+  "active": "0cba2b90cb298f7d",
   "lastOpenFiles": [
+    "SYSTEM/TIPOGRAFIA.md",
+    "2025-06-10-introduction-to-ruby.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2025-05-28-my-obsidian-setup.md",
     "2025-05-28-music-tranquility-base.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "CALENDAR/2025-05-26.md",
-    "SYSTEM/TIPOGRAFIA.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-26-About-me.md",
     "2025-05-29-gallery-post-test.md",
@@ -372,7 +398,6 @@
     "2025-05-26-data-science-roadmap 1.md",
     "2025-05-26-post-test.md",
     "2025-05-26-nova-nota.md",
-    "2025-05-26-new.md",
     "CALENDAR",
     "TEMPLATE/Untitled",
     "TEMPLATE/desktop.ini"
