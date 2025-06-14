@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-06-10-introduction-to-ruby.md",
+                "file": "CALENDAR/2025-06-14.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -148,11 +148,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-06-10-introduction-to-ruby"
+              "title": "2025-06-14"
+            }
+          },
+          {
+            "id": "c03981ae8209d99d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-06-14-build-setup-code-search-rg.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-14-build-setup-code-search-rg"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -212,17 +236,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-06-10-introduction-to-ruby.md",
+                "file": "2025-06-14-build-setup-code-search-rg.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-06-10-introduction-to-ruby"
+              "title": "Outline of 2025-06-14-build-setup-code-search-rg"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "d52612002cb4bdfd",
@@ -348,7 +371,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 353.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -362,10 +386,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0cba2b90cb298f7d",
+  "active": "c03981ae8209d99d",
   "lastOpenFiles": [
-    "SYSTEM/TIPOGRAFIA.md",
+    "draft-codeSearchbasic-usage-examples.md",
+    "2025-06-14-build-setup-code-search-rg.md",
+    "CALENDAR/2025-06-14.md",
     "2025-06-10-introduction-to-ruby.md",
+    "SYSTEM/TIPOGRAFIA.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
@@ -395,9 +422,6 @@
     "2025-05-26-arctic-monkeys-tbhc-album.md",
     "desktop.ini",
     "2019-08-09-getting-started.md",
-    "2025-05-26-data-science-roadmap 1.md",
-    "2025-05-26-post-test.md",
-    "2025-05-26-nova-nota.md",
     "CALENDAR",
     "TEMPLATE/Untitled",
     "TEMPLATE/desktop.ini"
