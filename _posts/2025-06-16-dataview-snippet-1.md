@@ -42,7 +42,7 @@ Formata uma tabela com os primeiros headers nas duas notas diárias em intervalo
 const folderPath = "CAMINHO-DA-SUA-PASTA"; //  Exemplo : "CALENDAR/DAILY"   
 
 const dateRange = {
-  start: new Date("2025-02"),
+  start: new Date("2025-02-01"),
   end: new Date("2025-04-01")
 };
 
