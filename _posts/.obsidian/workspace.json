@@ -181,7 +181,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-06-16-dataview-snippet-1.md",
+                "file": "2025-05-26-About-me.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -196,7 +196,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-06-16-dataview-snippet-1"
+              "title": "2025-05-26-About-me"
             }
           }
         ],
@@ -233,7 +233,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:blogging",
+                "query": "line:(alt)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -269,7 +269,8 @@
               "title": "Outline of 2025-06-14-build-setup-code-search-rg"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "d52612002cb4bdfd",
@@ -412,8 +413,11 @@
   },
   "active": "2a2f6a8a1b5fd6f0",
   "lastOpenFiles": [
-    "SYSTEM/TIPOGRAFIA.md",
+    "2025-05-28-music-tranquility-base.md",
+    "2025-05-28-my-obsidian-setup.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2025-06-16-dataview-snippet-1.md",
+    "SYSTEM/TIPOGRAFIA.md",
     "2025-06-14-build-setup-code-search-rg.md",
     "2025-06-16----.md",
     "draft-codeSearchbasic-usage-examples.md",
@@ -421,9 +425,6 @@
     "2025-06-10-introduction-to-ruby.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-my-obsidian-setup.md",
-    "2025-05-28-music-tranquility-base.md",
     "CALENDAR/2025-05-26.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-26-About-me.md",

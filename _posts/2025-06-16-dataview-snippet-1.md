@@ -18,7 +18,7 @@ calendar: "[[2025-06-16]]"
 
 Formata uma tabela com os primeiros headers nas duas notas diárias em intervalos específicos, pode ser muito útil para usar no periodic-notes[^2] permitindo uma forma fácil de revisar um mês ou mais das notas em uma única nota, segue um print abaixo.
 
-<img src="/assets/img/snip-1.png">
+<img src="/assets/img/snip-1.png" alt="é isso">
 
 
 # Como usar
