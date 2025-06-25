@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-06-25-dataview-snippet-2",
+      "path": "dataview-snippets/2025-06-25-dataview-snippet-2.md"
+    },
+    {
+      "basename": "2025-06-16-dataview-snippet-1",
+      "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
+    },
+    {
+      "basename": "2025-06-10-introduction-to-ruby",
+      "path": "2025-06-10-introduction-to-ruby.md"
+    },
+    {
+      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
+      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
+    },
+    {
+      "basename": "2025-05-28-music-tranquility-base",
+      "path": "2025-05-28-music-tranquility-base.md"
+    },
+    {
       "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
     },
@@ -9,20 +29,8 @@
       "path": "2025-05-26-About-me.md"
     },
     {
-      "basename": "2025-06-10-introduction-to-ruby",
-      "path": "2025-06-10-introduction-to-ruby.md"
-    },
-    {
-      "basename": "2025-05-28-music-tranquility-base",
-      "path": "2025-05-28-music-tranquility-base.md"
-    },
-    {
       "basename": "2025-05-26-Scoop-Package-Manager-Guide",
       "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
-    },
-    {
-      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
-      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
     },
     {
       "basename": "2025-05-28-my-obsidian-setup",
@@ -35,10 +43,6 @@
     {
       "basename": "2025-06-14-build-setup-code-search-rg",
       "path": "2025-06-14-build-setup-code-search-rg.md"
-    },
-    {
-      "basename": "2025-06-16-dataview-snippet-1",
-      "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
     },
     {
       "basename": "2025-06-25",
@@ -195,10 +199,6 @@
     {
       "basename": "book-V.N.E.S.T.",
       "path": "Efforts/AREAS/Writing/von/book-V.N.E.S.T..md"
-    },
-    {
-      "basename": "Writing",
-      "path": "Efforts/AREAS/Writing/Writing.md"
     }
   ],
   "omittedPaths": [],

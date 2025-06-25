@@ -30,8 +30,57 @@
               "icon": "lucide-file",
               "title": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes"
             }
+          },
+          {
+            "id": "50a8d70a97148e04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dataview-snippets/2025-06-16-dataview-snippet-1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-16-dataview-snippet-1"
+            }
+          },
+          {
+            "id": "cfe7dbb1245ada8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dataview-snippets/2025-06-25-dataview-snippet-2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-25-dataview-snippet-2"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -121,7 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.5
+    "width": 507.5124969482422
   },
   "right": {
     "id": "81f2a6cc383e51d9",
@@ -241,18 +290,21 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2a2f6a8a1b5fd6f0",
+  "active": "cfe7dbb1245ada8c",
   "lastOpenFiles": [
-    "2025-05-26-About-me.md",
+    "dataview-snippets/2025-06-16-dataview-snippet-1.md",
+    "dataview-snippets/2025-06-25-dataview-snippet-2.md",
     "2025-06-10-introduction-to-ruby.md",
-    "2025-05-28-music-tranquility-base.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
+    "2025-06-25-er.md",
+    "2025-06-25-post-exemplo.md",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "2025-05-28-my-obsidian-setup.md",
+    "2025-05-28-music-tranquility-base.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-05-26-About-me.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
+    "2025-05-28-my-obsidian-setup.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-06-14-build-setup-code-search-rg.md",
-    "dataview-snippets/2025-06-16-dataview-snippet-1.md",
     "dataview-snippets",
     "CALENDAR/2025-06-25.md",
     "SYSTEM/TIPOGRAFIA.md",
@@ -273,9 +325,7 @@
     "SYSTEM/desktop.ini",
     "SYSTEM",
     "2025-05-26-Framework de Desenvolvimento Evolutivo.md",
-    "2025-05-26-data-science-roadmap.md",
     "Pasted image 20250528162638.png",
-    "2025-05-27-nova-postagem.md",
     "desktop.ini",
     "CALENDAR",
     "TEMPLATE/Untitled"
