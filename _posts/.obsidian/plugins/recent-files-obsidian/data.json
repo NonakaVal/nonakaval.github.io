@@ -1,56 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-06-16-dataview-snippet-1",
-      "path": "2025-06-16-dataview-snippet-1.md"
-    },
-    {
       "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "2025-05-28-music-tranquility-base",
-      "path": "2025-05-28-music-tranquility-base.md"
     },
     {
       "basename": "2025-05-26-About-me",
       "path": "2025-05-26-About-me.md"
     },
     {
-      "basename": "2025-05-28-my-obsidian-setup",
-      "path": "2025-05-28-my-obsidian-setup.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
-    },
-    {
-      "basename": "2025-06-14-build-setup-code-search-rg",
-      "path": "2025-06-14-build-setup-code-search-rg.md"
-    },
-    {
-      "basename": "2025-06-14",
-      "path": "CALENDAR/2025-06-14.md"
-    },
-    {
       "basename": "2025-06-10-introduction-to-ruby",
       "path": "2025-06-10-introduction-to-ruby.md"
+    },
+    {
+      "basename": "2025-05-28-music-tranquility-base",
+      "path": "2025-05-28-music-tranquility-base.md"
     },
     {
       "basename": "2025-05-26-Scoop-Package-Manager-Guide",
       "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
     },
     {
+      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
+      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
+    },
+    {
+      "basename": "2025-05-28-my-obsidian-setup",
+      "path": "2025-05-28-my-obsidian-setup.md"
+    },
+    {
       "basename": "2025-06-10-conhecimento-fragmentado",
       "path": "2025-06-10-conhecimento-fragmentado.md"
     },
     {
-      "basename": "2025-05-26",
-      "path": "CALENDAR/2025-05-26.md"
+      "basename": "2025-06-14-build-setup-code-search-rg",
+      "path": "2025-06-14-build-setup-code-search-rg.md"
     },
     {
-      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
-      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
+      "basename": "2025-06-16-dataview-snippet-1",
+      "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
+    },
+    {
+      "basename": "2025-06-25",
+      "path": "CALENDAR/2025-06-25.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "2025-06-14",
+      "path": "CALENDAR/2025-06-14.md"
+    },
+    {
+      "basename": "2025-05-26",
+      "path": "CALENDAR/2025-05-26.md"
     },
     {
       "basename": "2025-05-29-cat-memes-1",
@@ -195,10 +199,6 @@
     {
       "basename": "Writing",
       "path": "Efforts/AREAS/Writing/Writing.md"
-    },
-    {
-      "basename": "conceitos-fundamentais",
-      "path": "Efforts/AREAS/PKM-Youtube-Videos/conceitos-fundamentais.md"
     }
   ],
   "omittedPaths": [],

@@ -106,7 +106,6 @@ Ruby possui uma das melhores documentações que já li, com diversos ótimos re
 
 [^2]: <https://pt.wikipedia.org/wiki/Perl>
 	
-
 [^3]: <https://en.wikipedia.org/wiki/Smalltalk>
 
 [^4]: <https://rubyonrails.org/>

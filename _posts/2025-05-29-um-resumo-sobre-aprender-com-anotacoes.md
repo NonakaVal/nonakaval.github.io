@@ -8,7 +8,7 @@ categories:
 tags:
   - Insight
   - Dicas
-pin: 
+pin: true
 image: assets/img/video1.png
 math: false
 mermaid: false

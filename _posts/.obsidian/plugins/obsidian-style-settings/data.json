@@ -7,7 +7,6 @@
   "shimmering-focus@@show-sidebar-toggle-buttons": true,
   "shimmering-focus@@show-close-buttons": true,
   "shimmering-focus@@show-urls": true,
-  "shimmering-focus@@no-codeblock-line-numbers": true,
   "shimmering-focus@@hide-inline-title-when-more-than-one-tab": true,
   "shimmering-focus@@hide-vault-switcher-and-settings": false,
   "shimmering-focus@@normal-header-bar": true,
