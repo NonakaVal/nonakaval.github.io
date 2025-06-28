@@ -16,7 +16,7 @@ timezone:
 
 title: Not A Dev # the main title
 
-tagline: Notes by @NonakaVal # it will display as the subtitle
+tagline: by @NonakaVal # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Personal Blog by @NonakaVal

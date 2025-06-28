@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-06-25-dataview-snippet-2",
-      "path": "dataview-snippets/2025-06-25-dataview-snippet-2.md"
-    },
-    {
       "basename": "2025-06-16-dataview-snippet-1",
       "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
+    },
+    {
+      "basename": "2025-06-10-conhecimento-fragmentado",
+      "path": "2025-06-10-conhecimento-fragmentado.md"
+    },
+    {
+      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
+      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
+    },
+    {
+      "basename": "2025-05-28-my-obsidian-setup",
+      "path": "2025-05-28-my-obsidian-setup.md"
+    },
+    {
+      "basename": "2025-05-26-About-me",
+      "path": "2025-05-26-About-me.md"
+    },
+    {
+      "basename": "2025-05-26-Scoop-Package-Manager-Guide",
+      "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
+    },
+    {
+      "basename": "2025-06-28-human-sadness",
+      "path": "2025-06-28-human-sadness.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "2025-06-25-dataview-snippet-2",
+      "path": "dataview-snippets/2025-06-25-dataview-snippet-2.md"
     },
     {
       "basename": "2025-06-10-introduction-to-ruby",
@@ -21,36 +49,12 @@
       "path": "2025-05-28-music-tranquility-base.md"
     },
     {
-      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
-      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "2025-05-26-About-me",
-      "path": "2025-05-26-About-me.md"
-    },
-    {
-      "basename": "2025-05-26-Scoop-Package-Manager-Guide",
-      "path": "2025-05-26-Scoop-Package-Manager-Guide.md"
-    },
-    {
-      "basename": "2025-05-28-my-obsidian-setup",
-      "path": "2025-05-28-my-obsidian-setup.md"
-    },
-    {
-      "basename": "2025-06-10-conhecimento-fragmentado",
-      "path": "2025-06-10-conhecimento-fragmentado.md"
-    },
-    {
       "basename": "2025-06-14-build-setup-code-search-rg",
       "path": "2025-06-14-build-setup-code-search-rg.md"
     },
     {
       "basename": "2025-06-25",
       "path": "CALENDAR/2025-06-25.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
     },
     {
       "basename": "2025-06-14",
@@ -195,10 +199,6 @@
     {
       "basename": "@_by_count_links",
       "path": "System/ASSETS/Dataview/@_by_count_links.md"
-    },
-    {
-      "basename": "book-V.N.E.S.T.",
-      "path": "Efforts/AREAS/Writing/von/book-V.N.E.S.T..md"
     }
   ],
   "omittedPaths": [],
