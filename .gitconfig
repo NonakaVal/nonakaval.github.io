@@ -1,0 +1,12 @@
+[user]
+	name = NonakaVal
+	email = nonka96@outlook.com
+[credential]
+	helper = 
+	helper = /usr/bin/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
