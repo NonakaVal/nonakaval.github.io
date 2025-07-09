@@ -8,7 +8,7 @@ categories:
   - obsidian
 tags:
   - Setup
-pin: false
+pin: true
 image: assets/img/obsidian.png
 math: false
 mermaid: false

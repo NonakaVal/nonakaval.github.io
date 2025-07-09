@@ -7,7 +7,7 @@ categories:
   - gestão de conhecimento
 tags:
   - Insight
-pin: true
+pin: false
 image: assets/img/schema-recto-2-with-captions.png
 math: false
 mermaid: false
