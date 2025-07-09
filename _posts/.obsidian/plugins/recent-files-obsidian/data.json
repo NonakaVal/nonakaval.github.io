@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-07-09-lazy-commits",
+      "path": "2025-07-09-lazy-commits.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
       "basename": "2025-06-16-dataview-snippet-1",
       "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
     },
@@ -27,10 +35,6 @@
     {
       "basename": "2025-06-28-human-sadness",
       "path": "2025-06-28-human-sadness.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
     },
     {
       "basename": "2025-06-25-dataview-snippet-2",
@@ -195,10 +199,6 @@
     {
       "basename": "@_dataview_tasks",
       "path": "System/ASSETS/Dataview/@_dataview_tasks.md"
-    },
-    {
-      "basename": "@_by_count_links",
-      "path": "System/ASSETS/Dataview/@_by_count_links.md"
     }
   ],
   "omittedPaths": [],
