@@ -21,7 +21,7 @@ Mensagens de commit confusas ou despadronizadas tornam o histórico difícil de 
 
 Com isso em mente fiz esse script python.
 
-👉 [NonakaVal/lazy-commits](https://github.com/NonakaVal/lazy-commits)
+👉 NonakaVal/lazy-commits <https://github.com/NonakaVal/lazy-commits>
 
 ﻿# 🐙 GCA — Git Commit Assistant
 
