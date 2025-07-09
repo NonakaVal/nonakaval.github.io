@@ -17,7 +17,7 @@ calendar: "[[2025-07-09]]"
 
 Mensagens de commit confusas ou despadronizadas tornam o histórico difícil de entender.  
 
-<img src="/assets/img/Captura de imagem_20250709_014844.png">
+<img src="/assets/img/Captura de imagem_20250709_014844.png" alt="gif">
 
 Com isso em mente fiz esse script python.
 
@@ -64,7 +64,7 @@ fix: correct password validation (2025-06-29)
 docs: update README with setup instructions (2025-06-29)
 ```
 
-<img src="/assets/img/Captura de imagem_20250709_014510.png">
+<img src="/assets/img/Captura de imagem_20250709_014510.png" alt="gif">
 
 ---
 
