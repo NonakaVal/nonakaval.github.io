@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-06-25-dataview-snippet-2",
+      "path": "dataview-snippets/2025-06-25-dataview-snippet-2.md"
+    },
+    {
+      "basename": "2025-06-16-dataview-snippet-1",
+      "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
+    },
+    {
+      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
+      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
+    },
+    {
+      "basename": "2025-07-11-plugins-2",
+      "path": "2025-07-11-plugins-2.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
       "basename": "2025-07-09",
       "path": "CALENDAR/2025-07-09.md"
     },
@@ -27,22 +47,6 @@
     {
       "basename": "2025-06-28-human-sadness",
       "path": "2025-06-28-human-sadness.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
-    },
-    {
-      "basename": "2025-06-16-dataview-snippet-1",
-      "path": "dataview-snippets/2025-06-16-dataview-snippet-1.md"
-    },
-    {
-      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
-      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "2025-06-25-dataview-snippet-2",
-      "path": "dataview-snippets/2025-06-25-dataview-snippet-2.md"
     },
     {
       "basename": "2025-06-10-introduction-to-ruby",
@@ -195,10 +199,6 @@
     {
       "basename": "RoadMap.sh Path",
       "path": "Efforts/AREAS/DataScienceLearning/RoadMap.sh Path.md"
-    },
-    {
-      "basename": "Jhee",
-      "path": "Social/PEOPLE/Jhee.md"
     }
   ],
   "omittedPaths": [],

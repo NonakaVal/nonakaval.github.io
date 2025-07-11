@@ -138,7 +138,7 @@ gantt
 
 ## Video
 
-{% include embed/youtube.html id='E2Rj2gQAyPA' %}
+{% include embed/youtube.html id='LcuK-229btQ' %}
 
 
 
