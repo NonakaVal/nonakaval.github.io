@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-07-09",
+      "path": "CALENDAR/2025-07-09.md"
+    },
+    {
       "basename": "2025-05-28-my-obsidian-setup",
       "path": "2025-05-28-my-obsidian-setup.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Jhee",
       "path": "Social/PEOPLE/Jhee.md"
-    },
-    {
-      "basename": "@_dataview_tasks",
-      "path": "System/ASSETS/Dataview/@_dataview_tasks.md"
     }
   ],
   "omittedPaths": [],
