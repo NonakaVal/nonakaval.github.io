@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-08-20-arquiteto-jardineiro",
+      "path": "2025-08-20-arquiteto-jardineiro.md"
+    },
+    {
+      "basename": "2025-08-20",
+      "path": "CALENDAR/2025-08-20.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "SYSTEM/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "2025-08-20-arc-framework",
+      "path": "2025-08-20-arc-framework.md"
+    },
+    {
       "basename": "2025-07-11-plugins-2",
       "path": "2025-07-11-plugins-2.md"
     },
@@ -15,10 +31,6 @@
     {
       "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
     },
     {
       "basename": "2025-07-09",
@@ -187,18 +199,6 @@
     {
       "basename": "concept- Data Exploration-dashboard-desing-guide",
       "path": "Atlas/02_CONCEPT/concept- Data Exploration-dashboard-desing-guide.md"
-    },
-    {
-      "basename": "index-pandas-basic-data-manipulation",
-      "path": "Atlas/01_INDEX/index-pandas-basic-data-manipulation.md"
-    },
-    {
-      "basename": "DataScienceLearning",
-      "path": "Efforts/AREAS/DataScienceLearning/DataScienceLearning.md"
-    },
-    {
-      "basename": "RoadMap.sh Path",
-      "path": "Efforts/AREAS/DataScienceLearning/RoadMap.sh Path.md"
     }
   ],
   "omittedPaths": [],

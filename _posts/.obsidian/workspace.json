@@ -32,6 +32,54 @@
             }
           },
           {
+            "id": "919193facbe72d9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-08-20-arc-framework.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-20-arc-framework"
+            }
+          },
+          {
+            "id": "08e6a0856ddcf40e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-08-20-arquiteto-jardineiro.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-20-arquiteto-jardineiro"
+            }
+          },
+          {
             "id": "b8eacfc179806baf",
             "type": "leaf",
             "state": {
@@ -79,7 +127,8 @@
               "title": "2025-07-11-plugins-2"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -274,11 +323,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -289,13 +338,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d41a8e7a1d77e17f",
+  "active": "08e6a0856ddcf40e",
   "lastOpenFiles": [
+    "CALENDAR/2025-08-20.md",
+    "2025-08-20-arquiteto-jardineiro.md",
+    "SYSTEM/TIPOGRAFIA.md",
+    "2025-08-20-arc-framework.md",
+    "2025-07-11-plugins-2.md",
+    "2025-08-20-lyt-concepts.md",
     "dataview-snippets/2025-06-16-dataview-snippet-1.md",
     "dataview-snippets/2025-06-25-dataview-snippet-2.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-07-11-plugins-2.md",
-    "SYSTEM/TIPOGRAFIA.md",
     "CALENDAR/2025-07-09.md",
     "2025-05-28-my-obsidian-setup.md",
     "2025-06-10-conhecimento-fragmentado.md",
@@ -314,10 +367,6 @@
     "2025-06-16----.md",
     "draft-codeSearchbasic-usage-examples.md",
     "CALENDAR/2025-06-14.md",
-    "CALENDAR/2025-05-26.md",
-    "2025-05-29-gallery-post-test.md",
-    "GALLERY-POSTS/2025-05-29-cat-memes-1.md",
-    "TEMPLATE/GALLERY-POST-TEMPLATE.md",
     "GALLERY-POSTS/desktop.ini",
     "Untitled/Untitled",
     "Untitled/desktop.ini",
