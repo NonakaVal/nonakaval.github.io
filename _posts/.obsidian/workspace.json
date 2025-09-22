@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "017be2a23369208d",
+        "id": "adcee1176c593b45",
         "type": "tabs",
         "children": [
           {
-            "id": "d41a8e7a1d77e17f",
+            "id": "cc0703b8f7f0e611",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-07-11-plugins-2.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-11-plugins-2"
-            }
-          },
-          {
-            "id": "919193facbe72d9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-08-20-arc-framework.md",
+                "file": "2025-09-22-10-dicas-#1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,83 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-08-20-arc-framework"
-            }
-          },
-          {
-            "id": "08e6a0856ddcf40e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-08-20-arquiteto-jardineiro.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-08-20-arquiteto-jardineiro"
-            }
-          },
-          {
-            "id": "b8eacfc179806baf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CALENDAR/2025-07-09.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-09"
-            }
-          },
-          {
-            "id": "a24fed0a33434d75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-07-11-plugins-2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-11-plugins-2"
+              "title": "2025-09-22-10-dicas-#1"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -140,7 +43,6 @@
       {
         "id": "91411cdf1f537d7c",
         "type": "tabs",
-        "dimension": 50.131926121372025,
         "children": [
           {
             "id": "7f5e1e9ff1328ea0",
@@ -152,7 +54,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -183,6 +85,16 @@
             }
           },
           {
+            "id": "8d29bb4e19b2f1c5",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
             "id": "0cba2b90cb298f7d",
             "type": "leaf",
             "state": {
@@ -198,27 +110,11 @@
             }
           }
         ]
-      },
-      {
-        "id": "d52612002cb4bdfd",
-        "type": "tabs",
-        "dimension": 49.86807387862797,
-        "children": [
-          {
-            "id": "8d29bb4e19b2f1c5",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 507.5124969482422
+    "width": 507.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "81f2a6cc383e51d9",
@@ -327,29 +223,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "08e6a0856ddcf40e",
+  "active": "cc0703b8f7f0e611",
   "lastOpenFiles": [
-    "CALENDAR/2025-08-20.md",
-    "2025-08-20-arquiteto-jardineiro.md",
     "SYSTEM/TIPOGRAFIA.md",
-    "2025-08-20-arc-framework.md",
+    "2025-09-22-10-dicas-#1.md",
     "2025-07-11-plugins-2.md",
+    "2025-08-20-arquiteto-jardineiro.md",
+    "CALENDAR/2025-07-09.md",
+    "CALENDAR/2025-08-20.md",
+    "2025-08-20-arc-framework.md",
     "2025-08-20-lyt-concepts.md",
     "dataview-snippets/2025-06-16-dataview-snippet-1.md",
     "dataview-snippets/2025-06-25-dataview-snippet-2.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "CALENDAR/2025-07-09.md",
     "2025-05-28-my-obsidian-setup.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-07-09-lazy-commits.md",
@@ -366,7 +263,6 @@
     "CALENDAR/2025-06-25.md",
     "2025-06-16----.md",
     "draft-codeSearchbasic-usage-examples.md",
-    "CALENDAR/2025-06-14.md",
     "GALLERY-POSTS/desktop.ini",
     "Untitled/Untitled",
     "Untitled/desktop.ini",
