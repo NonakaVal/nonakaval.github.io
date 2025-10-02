@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "2025-09-22-10-dicas-#1"
             }
+          },
+          {
+            "id": "0c14cef52376f294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-10-02-daily-notes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-10-02-daily-notes"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -234,9 +259,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cc0703b8f7f0e611",
+  "active": "0c14cef52376f294",
   "lastOpenFiles": [
     "SYSTEM/TIPOGRAFIA.md",
+    "2025-10-02-daily-notes.md",
+    "2025-10-02-A importancia das Notas Diárias.md",
     "2025-09-22-10-dicas-#1.md",
     "2025-07-11-plugins-2.md",
     "2025-08-20-arquiteto-jardineiro.md",
@@ -261,8 +288,6 @@
     "2025-06-14-build-setup-code-search-rg.md",
     "dataview-snippets",
     "CALENDAR/2025-06-25.md",
-    "2025-06-16----.md",
-    "draft-codeSearchbasic-usage-examples.md",
     "GALLERY-POSTS/desktop.ini",
     "Untitled/Untitled",
     "Untitled/desktop.ini",
