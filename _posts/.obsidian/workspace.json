@@ -61,9 +61,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-12-09-Parte 1.md",
+                "file": "dataview-snippets/2025-06-16-dataview-snippet-1.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-12-09-Parte 1"
+              "title": "2025-06-16-dataview-snippet-1"
             }
           }
         ],
@@ -282,35 +282,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b71cfbf9c93115c2",
+  "active": "22af220af49fc092",
   "lastOpenFiles": [
-    "2025-12-09-Parte 1.md",
-    "X/TIPOGRAFIA.md",
+    "GALLERY-POSTS/2025-05-29-cat-memes-1.md",
+    "dataview-snippets/2025-06-16-dataview-snippet-1.md",
+    "dataview-snippets/2025-06-25-dataview-snippet-2.md",
     "2025-05-26-About-me.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
-    "2025-06-10-introduction-to-ruby.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-my-obsidian-setup.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "2025-05-28-music-tranquility-base.md",
+    "2025-05-28-my-obsidian-setup.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2025-06-10-introduction-to-ruby.md",
+    "2025-07-09-lazy-commits.md",
+    "2025-06-28-human-sadness.md",
+    "2025-07-11-plugins-2.md",
+    "2025-08-20-arc-framework.md",
+    "2025-08-20-arquiteto-jardineiro.md",
+    "2025-09-22-10-dicas-#1.md",
     "2025-10-02-daily-notes.md",
+    "2025-12-09-Parte 1.md",
+    "X/TIPOGRAFIA.md",
     "2025-06-14-build-setup-code-search-rg.md",
     "Pasted image 20251209051754.png",
     "CALENDAR/2025-12-08.md",
     "2025-12-08-new.md",
     "2025-10-02-A importancia das Notas Diárias.md",
-    "2025-09-22-10-dicas-#1.md",
-    "2025-07-11-plugins-2.md",
-    "2025-08-20-arquiteto-jardineiro.md",
     "CALENDAR/2025-07-09.md",
     "CALENDAR/2025-08-20.md",
-    "2025-08-20-arc-framework.md",
-    "2025-08-20-lyt-concepts.md",
-    "dataview-snippets/2025-06-16-dataview-snippet-1.md",
-    "dataview-snippets/2025-06-25-dataview-snippet-2.md",
-    "2025-07-09-lazy-commits.md",
-    "2025-06-28-human-sadness.md",
-    "2025-06-25-er.md",
     "dataview-snippets",
     "GALLERY-POSTS/desktop.ini",
     "Untitled/Untitled",
