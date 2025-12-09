@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-28-my-obsidian-setup.md",
+                "file": "2025-12-09-Parte 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-28-my-obsidian-setup"
+              "title": "2025-12-09-Parte 1"
             }
           }
         ],
@@ -284,6 +284,7 @@
   },
   "active": "22af220af49fc092",
   "lastOpenFiles": [
+    "2025-05-28-my-obsidian-setup.md",
     "2025-12-09-Parte 1.md",
     "2025-06-14-build-setup-code-search-rg.md",
     "X/TIPOGRAFIA.md",
@@ -302,7 +303,6 @@
     "dataview-snippets/2025-06-16-dataview-snippet-1.md",
     "dataview-snippets/2025-06-25-dataview-snippet-2.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-my-obsidian-setup.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-07-09-lazy-commits.md",
     "2025-05-26-About-me.md",
