@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-02-daily-notes.md",
+                "file": "X/TIPOGRAFIA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-10-02-daily-notes"
+              "title": "TIPOGRAFIA"
+            }
+          },
+          {
+            "id": "22af220af49fc092",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-05-28-my-obsidian-setup.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-28-my-obsidian-setup"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -79,7 +103,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -115,8 +139,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           },
           {
@@ -125,21 +149,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-06-14-build-setup-code-search-rg.md",
+                "file": "X/TIPOGRAFIA.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-06-14-build-setup-code-search-rg"
+              "title": "Outline of TIPOGRAFIA"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 507.5124969482422,
-    "collapsed": true
+    "width": 507.5124969482422
   },
   "right": {
     "id": "81f2a6cc383e51d9",
@@ -222,7 +245,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SYSTEM/TIPOGRAFIA.md",
+                "file": "X/TIPOGRAFIA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -248,20 +271,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "0c14cef52376f294",
+  "active": "22af220af49fc092",
   "lastOpenFiles": [
-    "SYSTEM/TIPOGRAFIA.md",
+    "2025-12-09-Parte 1.md",
+    "2025-06-14-build-setup-code-search-rg.md",
+    "X/TIPOGRAFIA.md",
+    "Pasted image 20251209051754.png",
+    "CALENDAR/2025-12-08.md",
+    "2025-12-08-new.md",
     "2025-10-02-daily-notes.md",
     "2025-10-02-A importancia das Notas Diárias.md",
     "2025-09-22-10-dicas-#1.md",
@@ -283,17 +311,13 @@
     "2025-06-10-introduction-to-ruby.md",
     "2025-06-25-er.md",
     "2025-06-25-post-exemplo.md",
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "2025-05-28-music-tranquility-base.md",
-    "2025-06-14-build-setup-code-search-rg.md",
     "dataview-snippets",
-    "CALENDAR/2025-06-25.md",
     "GALLERY-POSTS/desktop.ini",
     "Untitled/Untitled",
     "Untitled/desktop.ini",
     "GALLERY-POSTS",
     "SYSTEM/desktop.ini",
-    "SYSTEM",
+    "X",
     "Pasted image 20250528162638.png",
     "desktop.ini",
     "CALENDAR",

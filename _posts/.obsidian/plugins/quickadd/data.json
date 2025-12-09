@@ -5,7 +5,7 @@
       "name": "new-note",
       "type": "Template",
       "command": true,
-      "templatePath": "TEMPLATE/POST-TEMPLATE.md",
+      "templatePath": "X/TEMPLATE/POST-TEMPLATE.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{date}}-{{value}}"
@@ -39,7 +39,7 @@
       "name": "GALLERY-POST",
       "type": "Template",
       "command": true,
-      "templatePath": "TEMPLATE/GALLERY-POST-TEMPLATE.md",
+      "templatePath": "X/TEMPLATE/POST-TEMPLATE.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{date}}-{{value}}"

@@ -133,7 +133,7 @@ gantt
 ## Images
 
 
-<img src="/assets/img/2.png">
+<img src="/assets/img/quote.png">
 
 
 ## Video

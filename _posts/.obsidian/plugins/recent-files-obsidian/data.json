@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-10-02-daily-notes",
-      "path": "2025-10-02-daily-notes.md"
+      "basename": "2025-05-28-my-obsidian-setup",
+      "path": "2025-05-28-my-obsidian-setup.md"
+    },
+    {
+      "basename": "2025-12-09-Parte 1",
+      "path": "2025-12-09-Parte 1.md"
     },
     {
       "basename": "TIPOGRAFIA",
-      "path": "SYSTEM/TIPOGRAFIA.md"
+      "path": "X/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "2025-12-08",
+      "path": "CALENDAR/2025-12-08.md"
+    },
+    {
+      "basename": "2025-10-02-daily-notes",
+      "path": "2025-10-02-daily-notes.md"
     },
     {
       "basename": "2025-09-22-10-dicas-#1",
@@ -45,10 +57,6 @@
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
     },
     {
-      "basename": "2025-05-28-my-obsidian-setup",
-      "path": "2025-05-28-my-obsidian-setup.md"
-    },
-    {
       "basename": "2025-06-10-conhecimento-fragmentado",
       "path": "2025-06-10-conhecimento-fragmentado.md"
     },
@@ -81,10 +89,6 @@
       "path": "2025-05-28-music-tranquility-base.md"
     },
     {
-      "basename": "2025-06-14-build-setup-code-search-rg",
-      "path": "2025-06-14-build-setup-code-search-rg.md"
-    },
-    {
       "basename": "2025-06-25",
       "path": "CALENDAR/2025-06-25.md"
     },
@@ -102,11 +106,11 @@
     },
     {
       "basename": "GALLERY-POST-TEMPLATE",
-      "path": "TEMPLATE/GALLERY-POST-TEMPLATE.md"
+      "path": "X/TEMPLATE/GALLERY-POST-TEMPLATE.md"
     },
     {
       "basename": "POST-TEMPLATE",
-      "path": "TEMPLATE/POST-TEMPLATE.md"
+      "path": "X/TEMPLATE/POST-TEMPLATE.md"
     },
     {
       "basename": "2025-05-28",
@@ -114,7 +118,7 @@
     },
     {
       "basename": "DAILY-CALENDAR-TEMPLATE",
-      "path": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
+      "path": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
     },
     {
       "basename": "digital-garden-home",
@@ -191,14 +195,6 @@
     {
       "basename": "report-structure",
       "path": "Atlas/02_CONCEPT/report-structure.md"
-    },
-    {
-      "basename": "concept-boas-praticas-storytelling",
-      "path": "Atlas/02_CONCEPT/concept-boas-praticas-storytelling.md"
-    },
-    {
-      "basename": "concept-storytelling-report-awareness",
-      "path": "Atlas/02_CONCEPT/concept-storytelling-report-awareness.md"
     }
   ],
   "omittedPaths": [],

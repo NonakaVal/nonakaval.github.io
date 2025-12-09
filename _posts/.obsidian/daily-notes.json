@@ -1,5 +1,5 @@
 {
   "format": "YYYY-MM-DD HH:mm:ss Z",
   "folder": "CALENDAR",
-  "template": "TEMPLATE/DAILY-CALENDAR-TEMPLATE"
+  "template": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE"
 }

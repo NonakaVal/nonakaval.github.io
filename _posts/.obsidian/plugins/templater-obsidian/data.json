@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "TEMPLATE",
+  "templates_folder": "X/TEMPLATE",
   "templates_pairs": [
     [
       "",
@@ -16,11 +16,11 @@
   "folder_templates": [
     {
       "folder": "CALENDAR",
-      "template": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
+      "template": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
     },
     {
       "folder": "/",
-      "template": "TEMPLATE/POST-TEMPLATE.md"
+      "template": "X/TEMPLATE/POST-TEMPLATE.md"
     }
   ],
   "enable_file_templates": false,

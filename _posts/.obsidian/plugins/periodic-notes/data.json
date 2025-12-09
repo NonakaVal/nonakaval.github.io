@@ -4,7 +4,7 @@
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "folder": "CALENDAR",
-    "template": "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
+    "template": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
     "enabled": true,
     "format": "YYYY-MM-DD"
   },
