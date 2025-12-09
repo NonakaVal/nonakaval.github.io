@@ -227,3 +227,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# If you're using Chirpy theme, check these settings
+favicon: /assets/img/favicons/favicon.ico
+apple-touch-icon: /assets/img/favicons/apple-touch-icon.png
