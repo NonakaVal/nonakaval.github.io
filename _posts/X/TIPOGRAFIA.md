@@ -133,9 +133,6 @@ gantt
 ## Images
 
 
-<img src="/assets/img/quote.png" alt="quote">
-
-
 ## Video
 
 {% include embed/youtube.html id='LcuK-229btQ' %}
