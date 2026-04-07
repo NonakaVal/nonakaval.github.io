@@ -8,7 +8,8 @@ categories:
   - review
 tags:
   - Review
-pin: 
+  - português
+pin:
 image: assets/img/tbhc2.jpg
 math: false
 mermaid: false

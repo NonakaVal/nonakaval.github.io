@@ -10,7 +10,8 @@ tags:
   - Explore
   - Guide
   - Dicas
-pin: 
+  - english
+pin:
 image: assets/img/anime.png
 math: true
 mermaid: true

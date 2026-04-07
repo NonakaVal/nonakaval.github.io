@@ -8,7 +8,8 @@ categories:
   - python
 tags:
   - Dicas
-pin: 
+  - português
+pin:
 image: assets/img/d2489f96-d56f-4b82-bc7f-84fbc9fb1368.png
 math: false
 mermaid: false

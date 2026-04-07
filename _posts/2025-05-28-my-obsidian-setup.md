@@ -8,6 +8,7 @@ categories:
   - obsidian
 tags:
   - Setup
+  - português
 pin: false
 image: assets/img/obsidian.png
 math: false

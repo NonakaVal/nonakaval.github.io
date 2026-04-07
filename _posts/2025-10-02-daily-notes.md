@@ -8,6 +8,7 @@ categories:
   - obsidian
 tags:
   - Dicas
+  - português
 pin:
 image: assets/img/daily.png
 math: false

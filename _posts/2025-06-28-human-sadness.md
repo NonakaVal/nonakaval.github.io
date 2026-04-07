@@ -7,7 +7,8 @@ categories:
   - music
 tags:
   - Review
-pin: 
+  - português
+pin:
 image: assets/img/julianc.png
 math: false
 mermaid: false

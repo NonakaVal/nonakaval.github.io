@@ -8,7 +8,8 @@ categories:
   - python
 tags:
   - Dicas
-pin: 
+  - english
+pin:
 image: assets/img/Python-logical-operators.jpg
 math: true
 mermaid: true

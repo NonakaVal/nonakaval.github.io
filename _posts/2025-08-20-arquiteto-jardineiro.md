@@ -7,6 +7,7 @@ categories:
   - gestão de conhecimento
 tags:
   - Dicas
+  - português
 pin:
 image: assets/img/garden-arc.png
 math: false

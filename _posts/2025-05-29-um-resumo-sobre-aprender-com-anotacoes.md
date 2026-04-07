@@ -8,6 +8,7 @@ categories:
 tags:
   - Insight
   - Dicas
+  - português
 pin: false
 image: assets/img/video1.png
 math: false
