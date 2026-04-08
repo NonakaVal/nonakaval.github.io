@@ -13,7 +13,6 @@ Like the title says, I'm not a dev—just love seeing how far open-source can go
 
 Links:
 
-- <https://nonakaval.github.io/nonaka/>
 - <https://www.youtube.com/@nonaka96>
 - <https://www.instagram.com/nonaka.val>
 - <mailto:valdenirnonaka@gmail.com>
