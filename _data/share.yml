@@ -1,7 +1,18 @@
 #  Sharing options at the bottom of the post.
 #  Icons from <https://fontawesome.com/>
 
+# Sharing options at the bottom of the post.
+# Icons from <https://fontawesome.com/>
+
 platforms:
+  - type: Whatsapp
+    icon: "fab fa-whatsapp"
+    link: "https://api.whatsapp.com/send?text=TITLE%20URL"
+
+  - type: Reddit
+    icon: "fab fa-reddit"
+    link: "https://www.reddit.com/submit?url=URL&title=TITLE"
+
   - type: Twitter
     icon: "fa-brands fa-square-x-twitter"
     link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
@@ -14,6 +25,9 @@ platforms:
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"
 
+  # Nota sobre Instagram: 
+  # O Instagram não possui uma URL oficial de "compartilhamento web" para posts externos 
+  # como as outras redes (devido ao foco mobile), por isso geralmente não é incluído no share.yml.
   # Uncomment below if you need to.
   #
   # - type: Linkedin
