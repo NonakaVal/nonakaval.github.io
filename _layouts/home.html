@@ -56,10 +56,9 @@ refactor: true
   <style>
     #sakana-widget {
       float: right;
-      margin: 0px;
+      margin: 0;
     }
 
-    /* Responsivo para telas menores que 768px (mobile) */
     @media (max-width: 768px) {
       #sakana-widget {
         float: none;
@@ -75,12 +74,31 @@ refactor: true
 
   <script>
     function initSakanaWidget() {
-      new SakanaWidget().mount('#sakana-widget');
+      const imagePaths = [
+        '../assets/img/annia.png',
+        '../assets/img/morgana.png'
+      ];
+
+      imagePaths.forEach((path, index) => {
+        const base = SakanaWidget.getCharacter('chisato');
+        const character = JSON.parse(JSON.stringify(base));
+
+        character.image = path;
+
+        SakanaWidget.registerCharacter(`custom-${index}`, character);
+      });
+
+      new SakanaWidget({
+        character: 'custom-0',
+        controls: true,
+        rod: true,
+        draggable: true
+      }).mount('#sakana-widget');
     }
   </script>
 
-  <script async onload="initSakanaWidget()"
-    src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.1/lib/sakana.min.js"></script>
+  <script async onload="initSakanaWidget()" src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.1/lib/sakana.min.js">
+  </script>
 </div>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
