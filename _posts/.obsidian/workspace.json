@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-12-09-Parte 1.md",
+                "file": "2025-09-22-10-dicas-#1.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-12-09-Parte 1"
+              "title": "2025-09-22-10-dicas-#1"
             }
           }
         ],
@@ -103,7 +103,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -272,19 +272,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false
     }
   },
   "active": "22af220af49fc092",
   "lastOpenFiles": [
+    "2025-05-26-About-me.md",
+    "2025-12-09-Parte 1.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
+    "2025-05-26-Scoop-Package-Manager-Guide.md",
+    "X/TIPOGRAFIA.md",
     "2025-10-02-daily-notes.md",
     "2025-09-22-10-dicas-#1.md",
     "2025-08-20-arquiteto-jardineiro.md",
@@ -294,14 +300,8 @@
     "2025-06-28-human-sadness.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2025-05-28-my-obsidian-setup.md",
     "2025-05-28-music-tranquility-base.md",
-    "X/TIPOGRAFIA.md",
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
-    "2025-05-26-About-me.md",
-    "2025-12-09-Parte 1.md",
     "dataview-snippets/2025-06-16-dataview-snippet-1.md",
     "GALLERY-POSTS/2025-05-29-cat-memes-1.md",
     "dataview-snippets/2025-06-25-dataview-snippet-2.md",
