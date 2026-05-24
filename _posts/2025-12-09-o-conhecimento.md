@@ -1,5 +1,5 @@
 ---
-title: Conhecimento
+title: O conhecimento
 description: Trechos aleatório de um projeto literário ai
 date: 2025-12-09 05:14:48
 author: Val
@@ -7,7 +7,7 @@ categories:
   - Literatura
 tags:
   - Ensaios
-pin: false
+pin: true
 image: assets/img/universe.png
 math: false
 mermaid: false
@@ -28,7 +28,7 @@ existir é fácil, porém tudo indica que se tornar capaz de saber que existe é
 
 antes de explorarmos o complexo vamos refletir sobre um aspecto humano, nossa característica que permite, antes de tudo, compartilhar esse, ou qualquer outro conhecimento.
 
-[[2026-05-24-limite-da-individualidade]]
+[O limite da individualidade](https://nonakaval.github.io/posts/limite-da-individualidade/)
 
 
 
