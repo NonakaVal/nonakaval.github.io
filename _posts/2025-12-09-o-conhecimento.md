@@ -5,8 +5,8 @@ date: 2025-12-09 05:14:48
 author: Val
 categories:
   - Literatura
+  - Reflexão
 tags:
-  - Ensaios
 pin: true
 image: assets/img/universe.png
 math: false
