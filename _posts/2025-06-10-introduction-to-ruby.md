@@ -9,7 +9,6 @@ categories:
 tags:
   - Review
   - Recursos
-  - português
 pin:
 image: assets/img/ruby.png
 math: false

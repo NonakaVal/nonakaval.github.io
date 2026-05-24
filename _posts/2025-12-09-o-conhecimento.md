@@ -7,7 +7,6 @@ categories:
   - Literatura
 tags:
   - Ensaios
-  - português
 pin: false
 image: assets/img/universe.png
 math: false
@@ -15,7 +14,7 @@ mermaid: false
 calendar: "[[2025-12-09]]"
 ---
 
-<img src="/assets/img/quote.png" alt="go">
+<img src="assets/post-images/knowledge.png" alt="go">
 
 ---
 
@@ -29,7 +28,7 @@ existir é fácil, porém tudo indica que se tornar capaz de saber que existe é
 
 antes de explorarmos o complexo vamos refletir sobre um aspecto humano, nossa característica que permite, antes de tudo, compartilhar esse, ou qualquer outro conhecimento.
 
-`tudo é informação
+[[2026-05-24-limite-da-individualidade]]
 
 
 

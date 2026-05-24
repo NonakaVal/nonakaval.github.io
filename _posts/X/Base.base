@@ -1,0 +1,31 @@
+filters:
+  and:
+    - '!file.inFolder("CALENDAR")'
+    - '!file.inFolder("X")'
+views:
+  - type: table
+    name: Tabela
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - date
+      - file.name
+      - title
+      - description
+      - tags
+      - image
+      - categories
+      - author
+    sort:
+      - property: date
+        direction: DESC
+      - property: image
+        direction: ASC
+      - property: categories
+        direction: ASC
+    columnSize:
+      file.name: 124
+      note.title: 323
+      note.description: 282
+      note.image: 381
