@@ -25,7 +25,7 @@ Em sua essência e forma, **Simetria que atravessam até os domínios mais abstr
 
 **As flores** que muito antes dos pássaros já salvavam toda a vida de uma existência sem cor, 
 
-Cores das quais separam o tédio adulto nossas festas quando criança. **Aquele breve instante no qual a felicidade realmente existia.**
+Cores das quais separam o tédio adulto das nossas festas quando criança. **Aquele breve instante no qual a felicidade realmente existia.**
 
 
 > Seria esse então o papel das flores nesse mundo ?
