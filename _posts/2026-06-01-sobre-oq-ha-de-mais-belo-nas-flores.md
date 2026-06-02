@@ -6,6 +6,8 @@ author: Val
 categories:
   - Escritas Pessoais
 tags:
+  - Amor
+  - Contemplação
 pin:
 image: assets/post-images/flores.png
 math: false
