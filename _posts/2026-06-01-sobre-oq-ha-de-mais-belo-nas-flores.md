@@ -17,85 +17,98 @@ calendar: "[[2026-06-01]]"
 
 **A beleza é subjetiva,** 
 
-"Está nos olhos de quem vê", <br> *é o que eles dizem.*
+> "Está nos olhos de quem vê",
 
 **Mas e quanto as flores ?** 
 
-Em sua essência e forma, **Simetria que atravessam até os domínios mais abstratos**
+> Em sua essência e forma, 
 
-> "Geometricamente belo."
+---
 
-**As flores** que muito antes dos pássaros já salvavam toda a vida de uma existência sem cor, 
+**Simetria que atravessa até os domínios mais abstratos**
 
-Cores das quais separam o tédio adulto das nossas festas quando criança. **Aquele breve instante no qual a felicidade realmente existia.**
+> "geometricamente belo."
+
+**Flores** que muito antes dos pássaros já **salvavam toda a vida de uma existência sem cor**, 
+
+> Cores das quais separam o tédio adulto das festas que nossos pais faziam para nós quando criança. 
+
+> **Aquele breve instante** no qual a felicidade realmente existia.
 
 
 > Seria esse então o papel das flores nesse mundo ?
 
-> Nossa salvação de um triste universo monocromático ?
-
-**Flores** que só agora aprendi a enxergar, **quase como se só agora passassem a existir.**
-
-
-Talvez pelo tempo que passei buscando, pelos lugares que passava.
-
-**Alheio ao mundo,**
-
-Catalogando mentalmente cada uma.
-Sempre incerto sobre a qual lhe entregaria.
-
-Precisava ter certeza que pegaria a mais linda de todas.
-As vezes até cogitava sair da minha rota, 
-quantas mais veria se fosse ?
-Não importa quantas ou o quão longe.
-
-**Nem toda as flores do mundo estaria à altura de tal propósito,**
-
-Então sem muita escolha, voltava então buscar a melhor ao meu alcance. 
-
-**Um breve contato com o presente.** 
-
-Por todos os passos meu foco era apenas ela em mãos.
-
-**Alheio ao mundo,** 
-
-Planejando todas as possíveis formas as quais lhe entregaria.
-E as incontáveis formas como a quão responderia.
-
-
-> Mas sem nunca jamais estar pronto para o momento que te encontrasse.
-
-**Me lembro agora** dos seus olhos castanhos, você sempre com os cabelos no exato tom sob a pele do seu rosto, seu sorriso com linhas que formavam traços cujo vislumbre total possuía aquela mesma simetria das quais tanto apreciam na **mais bela das flores,** 
-
-> Flores que parecem se tornar opacas e sem vida quando comparado
-
-**E não mais só por um breve instante me fazia voltar ao mundo,** 
-
-> Separando o que era real dentre incontáveis mundos alheios dos quais ainda vivo.
-
-Ao menos agora aprendi a ver **um mundo com mais cores.** 
-Entender a beleza onde o extremo oposto do romântico sequer antes concebia. 
-
-Mesmo depois das tantas as vezes que me falou o quanto certas coisas muito tinham a ver com o amor. 
-
-> O tal do amor que também dizem que é subjetivo.
+Nossa salvação de um **infeliz universo monocromático** ?
 
 ---
 
+**Não tenho muito contato com o presente**
+
+> Não conhecia essas cores.
+
+> Talvez aprendi pelo tempo que passei buscando,
+
+---
+
+**Alheio ao mundo,**
+
+> Catalogando mentalmente cada uma. Sempre incerto sobre a qual lhe entregaria.
+
+> Precisava da certeza que pegaria a mais linda.
+
+**Mas nem toda as flores do mundo estaria à altura de tal propósito,**
+
+> Voltava então buscar a melhor ao meu alcance. 
+
+**Um breve contato com o presente.** 
+
+> Por cada passo meu foco era apenas ela em mãos,
+
+**Alheio ao mundo,** 
+
+> Planejando todas as possíveis formas as quais lhe entregaria.
+E ou as incontáveis como a quão receberia.
+
+
+---
+
+**Me lembro** dos seus olhos castanhos, seus cabelos sempre no exato tom sob a pele de alguém que encanta **mesmo desarrumada,** as linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais tanto apreciam **nas flores,** 
+
+> **Flores que por mais belas que fossem.** 
+ 
+
+> só me guiavam até você.
+
+**Mais que um breve contato com o presente**
+
+> além dos incontáveis mundos dos quais ainda vivo.
+
+---
+
+**Por sorte de um tempo para cá tenho visto mais cores,** 
+
+> parece que entendi a beleza onde o extremo oposto do romântico sequer concebe. 
+> Mesmo depois das tantas as vezes que falou sobre o quanto certas coisas muito tinham a ver com o amor. 
+
+**Amor que também dizem ser subjetivo.**
+
+> Ao menos sob os meus olhos,
+
+
 **Sempre vou amar você,** 
 
-> Da minha maneira
+> Pois agora, onde quer que esteja.
 
-**Esteja onde estiver parte de você estará aqui.**
+> **Para sempre comigo**
 
-> Com o que vejo de mais belo nas flores,
+**Com o que vejo de mais belo nas flores**,
 
- **Com o que as tornou realmente belas para mim.**
+**O que as tornou realmente belas para mim.**
 
-Por todo lado estarão me salvando dos outros mundos,
-> 
+> por todo lado me salvando,
 
-> daqueles infelizes universos monocromáticos
+
+**Daqueles infelizes universos monocromáticos**
 
 
 
