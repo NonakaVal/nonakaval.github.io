@@ -102,7 +102,7 @@ As linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais t
 
 **Mais que apenas um breve contato com o presente**
 
-> Além dos incontáveis outros dois quais ainda vivo.
+> Além dos incontáveis outros dos quais ainda vivo.
 
 ---
 
