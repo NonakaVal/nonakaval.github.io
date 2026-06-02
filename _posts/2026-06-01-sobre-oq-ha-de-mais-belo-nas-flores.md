@@ -7,7 +7,6 @@ categories:
   - Escritas Pessoais
 tags:
   - Amor
-  - Contemplação
 pin:
 image: assets/post-images/flores.png
 math: false
@@ -17,23 +16,32 @@ calendar: "[[2026-06-01]]"
 
 **A beleza é subjetiva,** 
 
-> "Está nos olhos de quem vê",
+> "Nos olhos de quem vê",
 
 **Mas e quanto as flores ?** 
 
-> Em sua essência e forma, 
+
 
 ---
 
-**Simetria que atravessa até os domínios mais abstratos**
 
-> "geometricamente belo."
+> Em sua essência e forma, 
+*
+
+**Simetria** que atravessa até os domínios mais abstratos
+
+<img src="assets/post-images/flores-g.png" alt="go">
+
+
+
+
+---
 
 **Flores** que muito antes dos pássaros já **salvavam toda a vida de uma existência sem cor**, 
 
 > Cores das quais separam o tédio adulto das festas que nossos pais faziam para nós quando criança. 
 
-> **Aquele breve instante** no qual a felicidade realmente existia.
+**Aquele breve instante** no qual a felicidade realmente existia.
 
 
 > Seria esse então o papel das flores nesse mundo ?
@@ -42,13 +50,16 @@ Nossa salvação de um **infeliz universo monocromático** ?
 
 ---
 
+<img src="assets/post-images/flores-1.png" alt="go">
+
+---
+
+
 **Não tenho muito contato com o presente**
 
 > Não conhecia essas cores.
 
-> Talvez aprendi pelo tempo que passei buscando,
-
----
+> Aprendi durante minhas buscas,
 
 **Alheio ao mundo,**
 
@@ -56,7 +67,7 @@ Nossa salvação de um **infeliz universo monocromático** ?
 
 > Precisava da certeza que pegaria a mais linda.
 
-**Mas nem toda as flores do mundo estaria à altura de tal propósito,**
+> Mas nem todas as flores do mundo estaria à altura de tal propósito,
 
 > Voltava então buscar a melhor ao meu alcance. 
 
@@ -69,48 +80,56 @@ Nossa salvação de um **infeliz universo monocromático** ?
 > Planejando todas as possíveis formas as quais lhe entregaria.
 E ou as incontáveis como a quão receberia.
 
+---
+
+
+<img src="assets/post-images/main.jpg" alt="go">
 
 ---
 
-**Me lembro** dos seus olhos castanhos, seus cabelos sempre no exato tom sob a pele de alguém que encanta **mesmo desarrumada,** as linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais tanto apreciam **nas flores,** 
+**Me lembro** dos seus olhos castanhos, seus cabelos sempre no exato tom sob a pele de alguém que encanta **mesmo desarrumada,** 
+
+
+As linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais tanto apreciam **nas flores,** 
+
+---
+
 
 > **Flores que por mais belas que fossem.** 
  
 
 > só me guiavam até você.
 
-**Mais que um breve contato com o presente**
+**Mais que apenas um breve contato com o presente**
 
-> além dos incontáveis mundos dos quais ainda vivo.
+> Além dos incontáveis outros dois quais ainda vivo.
 
 ---
 
-**Por sorte de um tempo para cá tenho visto mais cores,** 
+**Agora eles parecem cada vez mais distantes** 
 
-> parece que entendi a beleza onde o extremo oposto do romântico sequer concebe. 
-> Mesmo depois das tantas as vezes que falou sobre o quanto certas coisas muito tinham a ver com o amor. 
+> parece existir mais daquela beleza onde o extremo oposto do romântico sequer concebe. 
+> as mesmas que por tantas vezes falou sobre o quanto muito tinham a ver com o amor. 
 
 **Amor que também dizem ser subjetivo.**
 
-> Ao menos sob os meus olhos,
+> Então, ao menos sob os meus olhos,
 
 
 **Sempre vou amar você,** 
 
-> Pois agora, onde quer que esteja.
+> Onde quer que esteja.
 
-> **Para sempre comigo**
+**Vai estar comigo no que vejo de mais belo nas flores**,
 
-**Com o que vejo de mais belo nas flores**,
+**Com o que as tornou realmente belas para mim.**
 
-**O que as tornou realmente belas para mim.**
-
-> por todo lado me salvando,
+> por todo lado como sempre me salvando,
 
 
 **Daqueles infelizes universos monocromáticos**
 
-
+<img src="assets/post-images/main2.jpg" alt="go">
 
 
 

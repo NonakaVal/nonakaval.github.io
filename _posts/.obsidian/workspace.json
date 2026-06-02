@@ -249,7 +249,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 486.5
+    "width": 431.5
   },
   "right": {
     "id": "81f2a6cc383e51d9",
@@ -372,13 +372,14 @@
   },
   "active": "12ea0bc726dfacf8",
   "lastOpenFiles": [
-    "2025-09-22-10-dicas-#1.md",
-    "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
     "2025-12-09-o-conhecimento.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2026-06-01-rumi.md",
-    "X/TIPOGRAFIA.md",
     "2026-05-24-limite-da-individualidade.md",
+    "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
+    "2026-06-01-rumi.md",
+    "X/TEMPLATE/add img post.md",
+    "2025-09-22-10-dicas-#1.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "X/TIPOGRAFIA.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-05-26-About-me.md",
     "2025-08-20-arc-framework.md",
@@ -398,7 +399,6 @@
     "2025-05-28-my-obsidian-setup.md",
     "dataview-snippets/2025-06-16-dataview-snippet-1.md",
     "GALLERY-POSTS/2025-05-29-cat-memes-1.md",
-    "dataview-snippets/2025-06-25-dataview-snippet-2.md",
     "Pasted image 20251209051754.png",
     "dataview-snippets",
     "GALLERY-POSTS/desktop.ini",

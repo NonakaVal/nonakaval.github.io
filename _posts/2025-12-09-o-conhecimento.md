@@ -4,8 +4,8 @@ description: Trechos aleatório de um projeto literário ai
 date: 2025-12-09 05:14:48
 author: Val
 categories:
-  - Literatura
   - Reflexão
+  - Escritas Pessoais
 tags:
 pin: false
 image: assets/img/universe.png

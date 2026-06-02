@@ -4,7 +4,7 @@ description: Outro texto que tenho salvo há anos.
 date: 2026-05-24 17:23:42
 author: Val
 categories:
-  - Reflexão
+  - Escritas Pessoais
 tags:
 pin:
 image: assets/img/Era-da-Solidao-Einstein-800x450.png
