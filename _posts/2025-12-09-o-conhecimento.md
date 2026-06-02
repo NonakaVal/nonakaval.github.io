@@ -7,7 +7,7 @@ categories:
   - Literatura
   - Reflexão
 tags:
-pin: true
+pin: false
 image: assets/img/universe.png
 math: false
 mermaid: false
