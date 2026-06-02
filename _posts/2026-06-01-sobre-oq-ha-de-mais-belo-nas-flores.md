@@ -119,9 +119,9 @@ As linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais t
 
 **Sempre vou amar você,** 
 
-> Onde quer que esteja.
+> Onde quer que esteja.Vai estar comigo.
 
-**Vai estar comigo no que vejo de mais belo nas flores**,
+Com o que vejo de mais belo nas flores,
 
 **Com o que as tornou realmente belas para mim.**
 
