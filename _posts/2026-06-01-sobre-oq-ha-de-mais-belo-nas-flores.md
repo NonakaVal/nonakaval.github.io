@@ -100,9 +100,9 @@ As linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais t
 
 > só me guiavam até você.
 
-**Mais que apenas um breve contato com o presente**
+**Muito além daquele breve contato com o presente**
 
-> Além dos incontáveis outros dos quais ainda vivo.
+> Um viver real em meio aos incontáveis outros sem cor dos quais ainda vivo.
 
 ---
 
