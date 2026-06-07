@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Obsidian Workspace — Animado
+   Pastas: +, 00 Code, 01 Snippets, 03 Config, 04 Workflow, 05 Toolbox,
+           06 Work, 07 AI, 08 Focus Areas, Calendar & Review,
+           Index & Bases, Knowlegde, Memos,
+           V-01-Ideia, V-02-Estrutura, V-03-Roteiro, V-04-Edicao, V-05-Review,
+           Write, X, z-ignore, z-Media
+   ========================================================================== */
+
+/* ==============================
+   DESIGN TOKENS
+   ============================== */
+:root {
+  --color-border:        rgba(166, 172, 181, 0.22);
+  --color-border-strong: rgba(166, 172, 181, 0.6);
+  --space-sm: 0.25rem;
+  --space-md: 1.5rem;
+  --space-xl: 2.5rem;
+  --transition-fast:   160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==============================
+   OCULTAR
+   ============================== */
+div[data-path^="z-"],
+div[data-path="z-ignore"],
+div[data-path="z-Media"] {
+  display: none !important;
+}
+
+/* ==============================
+   BASE GLOBAL — padding, animação
+   ============================== */
+div[data-path="+"],
+div[data-path="00 Code"],
+div[data-path="01 Snippets"],
+div[data-path="03 Config"],
+div[data-path="04 Workflow"],
+div[data-path="05 Toolbox"],
+div[data-path="06 Work"],
+div[data-path="07 AI"],
+div[data-path="08 Focus Areas"],
+div[data-path="Calendar & Review"],
+div[data-path="Index & Bases"],
+div[data-path="Knowlegde"],
+div[data-path="Memos"],
+div[data-path="V-01-Ideia"],
+div[data-path="V-02-Inspiracoes"],
+div[data-path="V-03-Roteiro"],
+div[data-path="V-04-Edicao"],
+div[data-path="V-05-Review"],
+div[data-path="Write"],
+div[data-path="X"] {
+  position: relative;
+  padding-inline: var(--space-md);
+  padding-top: var(--space-xl);
+  transition: background-color var(--transition-normal),
+              transform var(--transition-fast);
+  animation: sectionFadeIn 320ms ease-out both;
+}
+
+/* ==============================
+   GRUPO 1 — + (atalhos / inbox)
+   ============================== */
+div[data-path="+"] {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-strong);
+}
+
+/* ==============================
+   GRUPO 2 — Pessoal / PKM
+   Calendar & Review · Index & Bases · Knowlegde · Memos · Write
+   ============================== */
+div[data-path="Calendar & Review"] {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-strong);
+}
+div[data-path="Index & Bases"],
+div[data-path="Knowlegde"],
+div[data-path="Memos"],
+div[data-path="Write"] {
+  margin-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ==============================
+   GRUPO 3 — Pipeline Vídeo V-01 → V-05
+   ============================== */
+div[data-path="V-01-Ideia"] {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-strong);
+}
+div[data-path="V-02-Inspiracoes"],
+div[data-path="V-03-Roteiro"],
+div[data-path="V-04-Edicao"],
+div[data-path="V-05-Review"] {
+  margin-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ==============================
+   GRUPO 4 — Sistema / Dev
+   00 Code · 01 Snippets · 03 Config · 04 Workflow · 05 Toolbox
+   06 Work · 07 AI · 08 Focus Areas
+   ============================== */
+div[data-path="00 Code"] {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-strong);
+}
+div[data-path="01 Snippets"],
+div[data-path="03 Config"],
+div[data-path="04 Workflow"],
+div[data-path="05 Toolbox"],
+div[data-path="06 Work"],
+div[data-path="07 AI"],
+div[data-path="08 Focus Areas"] {
+  margin-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ==============================
+   GRUPO 5 — X (encerra / arquivo)
+   ============================== */
+div[data-path="X"] {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-strong);
+}
+
+/* ==============================
+   INDICADOR LATERAL (barra colorida)
+   ============================== */
+div[data-path="+"]::before,
+div[data-path="Calendar & Review"]::before,
+div[data-path="Index & Bases"]::before,
+div[data-path="Knowlegde"]::before,
+div[data-path="Memos"]::before,
+div[data-path="Write"]::before,
+div[data-path="V-01-Ideia"]::before,
+div[data-path="V-02-Inspiracoes"]::before,
+div[data-path="V-03-Roteiro"]::before,
+div[data-path="V-04-Edicao"]::before,
+div[data-path="V-05-Review"]::before,
+div[data-path="00 Code"]::before,
+div[data-path="01 Snippets"]::before,
+div[data-path="03 Config"]::before,
+div[data-path="04 Workflow"]::before,
+div[data-path="05 Toolbox"]::before,
+div[data-path="06 Work"]::before,
+div[data-path="07 AI"]::before,
+div[data-path="08 Focus Areas"]::before,
+div[data-path="X"]::before {
+  content: '';
+  position: absolute;
+  top: var(--space-md);
+  left: 0;
+  width: 2px;
+  height: 22px;
+  opacity: 0.45;
+  border-radius: 0;
+  transition: opacity var(--transition-fast), width var(--transition-fast);
+}
+
+/* Cores por grupo */
+div[data-path="+"]::before                  { background: #90a4ae; }
+
+div[data-path="Calendar & Review"]::before  { background: #7986cb; }
+div[data-path="Index & Bases"]::before      { background: #7986cb; }
+div[data-path="Knowlegde"]::before          { background: #7986cb; }
+div[data-path="Memos"]::before              { background: #7986cb; }
+div[data-path="Write"]::before              { background: #7986cb; }
+
+div[data-path="V-01-Ideia"]::before         { background: #ce93d8; }
+div[data-path="V-02-Inspiracoes"]::before     { background: #b39ddb; }
+div[data-path="V-03-Roteiro"]::before       { background: #9575cd; }
+div[data-path="V-04-Edicao"]::before        { background: #7986cb; }
+div[data-path="V-05-Review"]::before        { background: #4fc3f7; }
+
+div[data-path="00 Code"]::before            { background: #4db6ac; }
+div[data-path="01 Snippets"]::before        { background: #4db6ac; }
+div[data-path="03 Config"]::before          { background: #4db6ac; }
+div[data-path="04 Workflow"]::before        { background: #4db6ac; }
+div[data-path="05 Toolbox"]::before         { background: #4db6ac; }
+div[data-path="06 Work"]::before            { background: #4db6ac; }
+div[data-path="07 AI"]::before              { background: #4db6ac; }
+div[data-path="08 Focus Areas"]::before     { background: #4db6ac; }
+
+div[data-path="X"]::before                  { background: #9e9e9e; }
+
+/* Hover — indicador alarga */
+div[data-path="+"]:hover::before,
+div[data-path="Calendar & Review"]:hover::before,
+div[data-path="Index & Bases"]:hover::before,
+div[data-path="Knowlegde"]:hover::before,
+div[data-path="Memos"]:hover::before,
+div[data-path="Write"]:hover::before,
+div[data-path="V-01-Ideia"]:hover::before,
+div[data-path="V-02-Inspiracoes"]:hover::before,
+div[data-path="V-03-Roteiro"]:hover::before,
+div[data-path="V-04-Edicao"]:hover::before,
+div[data-path="V-05-Review"]:hover::before,
+div[data-path="00 Code"]:hover::before,
+div[data-path="01 Snippets"]:hover::before,
+div[data-path="03 Config"]:hover::before,
+div[data-path="04 Workflow"]:hover::before,
+div[data-path="05 Toolbox"]:hover::before,
+div[data-path="06 Work"]:hover::before,
+div[data-path="07 AI"]:hover::before,
+div[data-path="08 Focus Areas"]:hover::before,
+div[data-path="X"]:hover::before {
+  opacity: 1;
+  width: 3px;
+}
+
+/* ==============================
+   TEXTO — hover colore por grupo
+   ============================== */
+div[data-path] .nav-file-title-content {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: color var(--transition-fast);
+}
+
+div[data-path="+"]:hover .nav-file-title-content                  { color: #90a4ae; }
+
+div[data-path="Calendar & Review"]:hover .nav-file-title-content  { color: #7986cb; }
+div[data-path="Index & Bases"]:hover .nav-file-title-content      { color: #7986cb; }
+div[data-path="Knowlegde"]:hover .nav-file-title-content          { color: #7986cb; }
+div[data-path="Memos"]:hover .nav-file-title-content              { color: #7986cb; }
+div[data-path="Write"]:hover .nav-file-title-content              { color: #7986cb; }
+
+div[data-path="V-01-Ideia"]:hover .nav-file-title-content         { color: #ce93d8; }
+div[data-path="V-02-Inspiracoes"]:hover .nav-file-title-content     { color: #b39ddb; }
+div[data-path="V-03-Roteiro"]:hover .nav-file-title-content       { color: #9575cd; }
+div[data-path="V-04-Edicao"]:hover .nav-file-title-content        { color: #7986cb; }
+div[data-path="V-05-Review"]:hover .nav-file-title-content        { color: #4fc3f7; }
+
+div[data-path="00 Code"]:hover .nav-file-title-content            { color: #4db6ac; }
+div[data-path="01 Snippets"]:hover .nav-file-title-content        { color: #4db6ac; }
+div[data-path="03 Config"]:hover .nav-file-title-content          { color: #4db6ac; }
+div[data-path="04 Workflow"]:hover .nav-file-title-content        { color: #4db6ac; }
+div[data-path="05 Toolbox"]:hover .nav-file-title-content         { color: #4db6ac; }
+div[data-path="06 Work"]:hover .nav-file-title-content            { color: #4db6ac; }
+div[data-path="07 AI"]:hover .nav-file-title-content              { color: #4db6ac; }
+div[data-path="08 Focus Areas"]:hover .nav-file-title-content     { color: #4db6ac; }
+
+div[data-path="X"]:hover .nav-file-title-content                  { color: #9e9e9e; }
+
+/* ==============================
+   ANIMAÇÃO DE ENTRADA
+   ============================== */
+@keyframes sectionFadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+div[data-path="+"]                  { animation-delay:   0ms; }
+div[data-path="Calendar & Review"]  { animation-delay:  50ms; }
+div[data-path="Index & Bases"]      { animation-delay:  80ms; }
+div[data-path="Knowlegde"]          { animation-delay: 100ms; }
+div[data-path="Memos"]              { animation-delay: 120ms; }
+div[data-path="Write"]              { animation-delay: 140ms; }
+div[data-path="V-01-Ideia"]         { animation-delay: 180ms; }
+div[data-path="V-02-Inspiracoes"]     { animation-delay: 200ms; }
+div[data-path="V-03-Roteiro"]       { animation-delay: 220ms; }
+div[data-path="V-04-Edicao"]        { animation-delay: 240ms; }
+div[data-path="V-05-Review"]        { animation-delay: 260ms; }
+div[data-path="00 Code"]            { animation-delay: 300ms; }
+div[data-path="01 Snippets"]        { animation-delay: 320ms; }
+div[data-path="03 Config"]          { animation-delay: 340ms; }
+div[data-path="04 Workflow"]        { animation-delay: 360ms; }
+div[data-path="05 Toolbox"]         { animation-delay: 380ms; }
+div[data-path="06 Work"]            { animation-delay: 400ms; }
+div[data-path="07 AI"]              { animation-delay: 420ms; }
+div[data-path="08 Focus Areas"]     { animation-delay: 440ms; }
+div[data-path="X"]                  { animation-delay: 480ms; }
+
+/* ==============================
+   FOCO
+   ============================== */
+div[data-path]:focus-within {
+  outline: 2px solid rgba(166, 172, 181, 0.45);
+  outline-offset: 2px;
+}
+
+/* ==============================
+   RESPONSIVO
+   ============================== */
+@media (max-width: 768px) {
+  div[data-path] {
+    padding-inline: 0.75rem;
+    margin-inline: -0.75rem;
+  }
+}

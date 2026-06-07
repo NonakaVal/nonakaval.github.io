@@ -10,7 +10,6 @@ views:
       direction: ASC
     order:
       - date
-      - file.name
       - title
       - description
       - tags
@@ -25,7 +24,7 @@ views:
       - property: categories
         direction: ASC
     columnSize:
-      file.name: 124
+      note.date: 193
       note.title: 323
       note.description: 282
       note.image: 381

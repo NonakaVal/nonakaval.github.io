@@ -8,13 +8,13 @@ categories:
   - Escritas Pessoais
 tags:
 pin: false
-image: assets/img/universe.png
+image: assets/img/post-banners/o-conhecimento.png
 math: false
 mermaid: false
 calendar: "[[2025-12-09]]"
 ---
 
-<img src="assets/post-images/knowledge.png" alt="go">
+<img src="assets/post-images/conhecimento/knowledge.png" alt="go">
 
 ---
 

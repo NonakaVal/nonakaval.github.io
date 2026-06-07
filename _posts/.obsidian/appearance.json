@@ -1,11 +1,11 @@
 {
-  "cssTheme": "Shimmering Focus",
+  "cssTheme": "",
   "enabledCssSnippets": [
     "minorFixes",
     "minorAdds",
     "datacore-classes",
     "dashboarPlusPlus"
   ],
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 14
 }

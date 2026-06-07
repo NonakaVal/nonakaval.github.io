@@ -10,7 +10,7 @@ tags:
   - Dicas
   - english
 pin:
-image: assets/img/Python-logical-operators.jpg
+image: assets/img/post-banners/Python-logical-operators.jpg
 math: true
 mermaid: true
 calendar: "[[2025-05-27]]"

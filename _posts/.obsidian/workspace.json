@@ -8,54 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cc0703b8f7f0e611",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-09-22-10-dicas-#1.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-09-22-10-dicas-#1"
-            }
-          },
-          {
-            "id": "0c14cef52376f294",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "X/TIPOGRAFIA.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "TIPOGRAFIA"
-            }
-          },
-          {
             "id": "22af220af49fc092",
             "type": "leaf",
             "pinned": true,
@@ -71,12 +23,12 @@
             }
           },
           {
-            "id": "225cc958c6ab44e0",
+            "id": "62bb16141a9a599b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-12-09-o-conhecimento.md",
+                "file": "2026-06-07-test.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -91,83 +43,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-12-09-o-conhecimento"
-            }
-          },
-          {
-            "id": "57aecadaa65d9896",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-05-24-limite-da-individualidade.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-05-24-limite-da-individualidade"
-            }
-          },
-          {
-            "id": "649550110941f85e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores"
-            }
-          },
-          {
-            "id": "12ea0bc726dfacf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores"
+              "title": "2026-06-07-test"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -190,7 +70,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -314,8 +194,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ],
@@ -359,46 +239,47 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
+      "workspaces:Gerenciar leiautes da área de trabalho": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "12ea0bc726dfacf8",
+  "active": "62bb16141a9a599b",
   "lastOpenFiles": [
-    "2025-12-09-o-conhecimento.md",
-    "2026-05-24-limite-da-individualidade.md",
+    "X/TEMPLATE/SNIPPETS/_INDEX.md",
+    "2026-06-07-test.md",
+    "X/Base.base",
+    "Sem título.md",
+    "Untitled.md",
+    "X/TEMPLATE/POST-TEMPLATE.md",
+    "X/TEMPLATE/SNIPPETS/block-code-tutorial.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-05-28-music-tranquility-base.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
+    "2025-05-26-About-me.md",
     "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
     "2026-06-01-rumi.md",
+    "2025-12-09-o-conhecimento.md",
+    "2026-05-24-limite-da-individualidade.md",
     "X/TEMPLATE/add img post.md",
     "2025-09-22-10-dicas-#1.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "X/TIPOGRAFIA.md",
     "2025-06-10-introduction-to-ruby.md",
-    "2025-05-26-About-me.md",
     "2025-08-20-arc-framework.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-music-tranquility-base.md",
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "X/TEMPLATE/GALLERY-POST-TEMPLATE.md",
     "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
-    "X/TEMPLATE/POST-TEMPLATE.md",
-    "X/Base.base",
     "2025-08-20-arquiteto-jardineiro.md",
     "2025-05-26-Scoop-Package-Manager-Guide.md",
     "2025-10-02-daily-notes.md",
     "2025-07-11-plugins-2.md",
-    "2025-07-09-lazy-commits.md",
-    "2025-06-28-human-sadness.md",
-    "2025-05-28-my-obsidian-setup.md",
-    "dataview-snippets/2025-06-16-dataview-snippet-1.md",
-    "GALLERY-POSTS/2025-05-29-cat-memes-1.md",
     "Pasted image 20251209051754.png",
     "dataview-snippets",
     "GALLERY-POSTS/desktop.ini",

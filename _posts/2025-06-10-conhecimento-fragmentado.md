@@ -8,7 +8,7 @@ categories:
 tags:
   - Insight
 pin: false
-image: assets/img/schema-recto-2-with-captions.png
+image: assets/img/post-banners/conhecimento-fragmentado.png
 math: false
 mermaid: false
 calendar: "[[2025-06-10]]"

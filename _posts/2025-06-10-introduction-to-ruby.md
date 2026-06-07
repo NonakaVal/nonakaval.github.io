@@ -10,7 +10,7 @@ tags:
   - Review
   - Recursos
 pin:
-image: assets/img/ruby.png
+image: assets/img/post-banners/ruby.png
 math: false
 mermaid: false
 calendar: "[[2025-06-10]]"

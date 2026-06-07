@@ -9,7 +9,7 @@ categories:
 tags:
   - Review
 pin:
-image: assets/img/tbhc2.jpg
+image: assets/img/post-banners/tranquility-base-hotel.jpg
 math: false
 mermaid: false
 calendar: "[[2025-05-28]]"

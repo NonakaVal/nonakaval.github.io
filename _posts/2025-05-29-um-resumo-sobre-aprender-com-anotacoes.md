@@ -10,7 +10,7 @@ tags:
   - Dicas
   - português
 pin: false
-image: assets/img/video1.png
+image: assets/img/post-banners/aprender-com-anotacoes.png
 math: false
 mermaid: false
 calendar: "[[2025-05-29]]"

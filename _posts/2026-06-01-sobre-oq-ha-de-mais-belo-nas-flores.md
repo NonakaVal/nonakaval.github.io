@@ -8,7 +8,7 @@ categories:
 tags:
   - Amor
 pin:
-image: assets/post-images/flores.png
+image: assets/img/post-banners/flores-capa.png
 math: false
 mermaid: false
 calendar: "[[2026-06-01]]"
@@ -28,9 +28,9 @@ calendar: "[[2026-06-01]]"
 > Em sua essência e forma, 
 *
 
-**Simetria** que atravessa até os domínios mais abstratos
+**Formas Simétricas** que atravessa até os domínios mais abstratos
 
-<img src="assets/post-images/flores-g.png" alt="go">
+<img src="assets/post-images/flores/flores-geometria.png" alt="go">
 
 
 
@@ -50,7 +50,7 @@ Nossa salvação de um **infeliz universo monocromático** ?
 
 ---
 
-<img src="assets/post-images/flores-1.png" alt="go">
+<img src="assets/post-images/flores/flores-ilustracao.png" alt="go">
 
 ---
 
@@ -83,7 +83,7 @@ E ou as incontáveis como a quão receberia.
 ---
 
 
-<img src="assets/post-images/main.jpg" alt="go">
+<img src="assets/post-images/flores/flores-maos.jpg" alt="go">
 
 ---
 
@@ -130,7 +130,7 @@ Com o que vejo de mais belo nas flores,
 
 **Daqueles infelizes universos monocromáticos**
 
-<img src="assets/post-images/main2.jpg" alt="go">
+<img src="assets/post-images/flores/flores-maos-2.jpg" alt="go">
 
 
 

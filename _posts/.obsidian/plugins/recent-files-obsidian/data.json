@@ -1,8 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "2026-06-07-test",
+      "path": "2026-06-07-test.md"
+    },
+    {
+      "basename": "_INDEX",
+      "path": "X/TEMPLATE/SNIPPETS/_INDEX.md"
+    },
+    {
+      "basename": "Base",
+      "path": "X/Base.base"
+    },
+    {
+      "basename": "Sem título",
+      "path": "Sem título.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
+      "basename": "POST-TEMPLATE",
+      "path": "X/TEMPLATE/POST-TEMPLATE.md"
+    },
+    {
+      "basename": "block-code-tutorial",
+      "path": "X/TEMPLATE/SNIPPETS/block-code-tutorial.md"
+    },
+    {
+      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
+      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
+    },
+    {
+      "basename": "2025-05-28-music-tranquility-base",
+      "path": "2025-05-28-music-tranquility-base.md"
+    },
+    {
+      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
+      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
+    },
+    {
+      "basename": "2025-05-26-About-me",
+      "path": "2025-05-26-About-me.md"
+    },
+    {
       "basename": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores",
       "path": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md"
+    },
+    {
+      "basename": "2026-06-01-rumi",
+      "path": "2026-06-01-rumi.md"
     },
     {
       "basename": "2025-12-09-o-conhecimento",
@@ -11,10 +59,6 @@
     {
       "basename": "2026-05-24-limite-da-individualidade",
       "path": "2026-05-24-limite-da-individualidade.md"
-    },
-    {
-      "basename": "2026-06-01-rumi",
-      "path": "2026-06-01-rumi.md"
     },
     {
       "basename": "add img post",
@@ -37,24 +81,8 @@
       "path": "2025-06-10-introduction-to-ruby.md"
     },
     {
-      "basename": "2025-05-26-About-me",
-      "path": "2025-05-26-About-me.md"
-    },
-    {
       "basename": "2025-08-20-arc-framework",
       "path": "2025-08-20-arc-framework.md"
-    },
-    {
-      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
-      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "2025-05-28-music-tranquility-base",
-      "path": "2025-05-28-music-tranquility-base.md"
-    },
-    {
-      "basename": "2025-05-27-Python-A-Practical-Guide-to-Logic",
-      "path": "2025-05-27-Python-A-Practical-Guide-to-Logic.md"
     },
     {
       "basename": "GALLERY-POST-TEMPLATE",
@@ -63,14 +91,6 @@
     {
       "basename": "DAILY-CALENDAR-TEMPLATE",
       "path": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
-    },
-    {
-      "basename": "POST-TEMPLATE",
-      "path": "X/TEMPLATE/POST-TEMPLATE.md"
-    },
-    {
-      "basename": "Base",
-      "path": "X/Base.base"
     },
     {
       "basename": "2025-12-08",

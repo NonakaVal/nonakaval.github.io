@@ -1,0 +1,236 @@
+{
+  "workspaces": {
+    "Base": {
+      "main": {
+        "id": "426a7596c16ff43b",
+        "type": "split",
+        "children": [
+          {
+            "id": "adcee1176c593b45",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "22af220af49fc092",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "bases",
+                  "state": {
+                    "file": "X/Base.base",
+                    "viewName": "Tabela"
+                  },
+                  "pinned": true,
+                  "icon": "lucide-table",
+                  "title": "Base"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "6b92e7d6da07b712",
+        "type": "split",
+        "children": [
+          {
+            "id": "91411cdf1f537d7c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7f5e1e9ff1328ea0",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Explorador de arquivos"
+                }
+              },
+              {
+                "id": "ec6e9e506e0c5cd2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "line:(alt)",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "69d61d109b6bb91a",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "8d29bb4e19b2f1c5",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "recent-files"
+                }
+              },
+              {
+                "id": "0cba2b90cb298f7d",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "X/TIPOGRAFIA.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of TIPOGRAFIA"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 431.5
+      },
+      "right": {
+        "id": "81f2a6cc383e51d9",
+        "type": "split",
+        "children": [
+          {
+            "id": "e440d8c83e5cffca",
+            "type": "tabs",
+            "dimension": 39.125,
+            "children": [
+              {
+                "id": "33905676c292e79d",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "2025-05-26-Scoop-Package-Manager-Guide.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for 2025-05-26-Scoop-Package-Manager-Guide"
+                }
+              },
+              {
+                "id": "18f05648c08c3cef",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "2025-05-26-data-science-roadmap.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from 2025-05-26-data-science-roadmap"
+                }
+              },
+              {
+                "id": "01601bdb07e55e32",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "d27123b0aa0b9c0a",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "calendar"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "ce3287dd365563ef",
+            "type": "tabs",
+            "dimension": 60.875,
+            "children": [
+              {
+                "id": "b71cfbf9c93115c2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "X/TIPOGRAFIA.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "TIPOGRAFIA"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 353.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Abrir a troca rápida": false,
+          "graph:Abrir visualização em gráfico": false,
+          "canvas:Criar novo canvas": false,
+          "daily-notes:Abrir a nota de hoje": false,
+          "templates:Inserir modelo": false,
+          "command-palette:Abrir paleta de comandos": false,
+          "bases:Criar nova base": false,
+          "templater-obsidian:Templater": false,
+          "periodic-notes:Open today": false,
+          "workspaces:Gerenciar leiautes da área de trabalho": false
+        }
+      },
+      "active": "22af220af49fc092",
+      "mtime": "2026-06-07T19:29:59-03:00"
+    }
+  },
+  "active": "Base"
+}

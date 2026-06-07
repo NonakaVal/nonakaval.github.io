@@ -7,12 +7,12 @@ categories:
   - Escritas Pessoais
 tags:
 pin:
-image: assets/img/Era-da-Solidao-Einstein-800x450.png
+image: assets/img/post-banners/limite-da-individualidade.png
 math: false
 mermaid: false
 calendar: "[[2026-05-24]]"
 ---
-<img src="assets/post-images/limiteind.png" alt="go">
+<img src="assets/post-images/limite-individualidade/limite-individualidade.png" alt="go">
 
 ---
 

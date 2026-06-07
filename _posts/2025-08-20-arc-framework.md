@@ -8,7 +8,7 @@ categories:
 tags:
   - Dicas
 pin:
-image: assets/img/arc.png
+image: assets/img/post-banners/arc-framework.png
 math: false
 mermaid: false
 calendar: "[[2025-08-20]]"

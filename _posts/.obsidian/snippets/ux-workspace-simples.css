@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Obsidian Workspace — Simples (sem animações)
+   ========================================================================== */
+
+/* --- OCULTAR --- */
+div[data-path^="z-"] {
+  display: none !important;
+}
+
+/* --- SEPARADORES DE GRUPO --- */
+
+/* Grupo 1 — + */
+div[data-path="+"] {
+  border-top: 1px solid rgba(166, 172, 181, 0.6);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* Grupo 2 — PKM */
+div[data-path="Calendar & Review"] {
+  border-top: 1px solid rgba(166, 172, 181, 0.6);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* Grupo 3 — Vídeo */
+div[data-path="V-01-Ideia"] {
+  border-top: 1px solid rgba(166, 172, 181, 0.6);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* Grupo 4 — Sistema */
+div[data-path="00 Code"] {
+  border-top: 1px solid rgba(166, 172, 181, 0.6);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+
+/* Grupo 4 — Sistema */
+div[data-path="Write"] {
+  border-top: 1px solid rgba(166, 172, 181, 0.6);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* Grupo 5 — X */
+div[data-path="X"] {
+  border-top: 1px solid rgba(166, 172, 181, 0.6);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* --- BARRAS LATERAIS COLORIDAS --- */
+
+div[data-path="+"]                 { border-left: 2px solid #90a4ae; padding-left: 6px; }
+
+div[data-path="Calendar & Review"] { border-left: 2px solid #7986cb; padding-left: 6px; }
+div[data-path="Index & Bases"]     { border-left: 2px solid #7986cb; padding-left: 6px; }
+div[data-path="Knowlegde"]         { border-left: 2px solid #7986cb; padding-left: 6px; }
+div[data-path="Memos"]             { border-left: 2px solid #7986cb; padding-left: 6px; }
+div[data-path="Write"]             { border-left: 2px solid #7986cb; padding-left: 6px; }
+div[data-path="TaskNotes"]         { border-left: 2px solid #7986cb; padding-left: 6px; }
+
+div[data-path="V-01-Ideia"]        { border-left: 2px solid #ce93d8; padding-left: 6px; }
+div[data-path="V-02-Inspiracoes"]    { border-left: 2px solid #b39ddb; padding-left: 6px; }
+div[data-path="V-03-Roteiro"]      { border-left: 2px solid #9575cd; padding-left: 6px; }
+div[data-path="V-04-Edicao"]       { border-left: 2px solid #7986cb; padding-left: 6px; }
+div[data-path="V-05-Review"]       { border-left: 2px solid #4fc3f7; padding-left: 6px; }
+
+div[data-path="00 Code"]           { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="01 Snippets"]       { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="03 Config"]         { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="04 Workflow"]       { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="05 Toolbox"]        { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="06 Work"]           { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="07 AI"]             { border-left: 2px solid #4db6ac; padding-left: 6px; }
+div[data-path="08 Focus Areas"]    { border-left: 2px solid #4db6ac; padding-left: 6px; }
+
+div[data-path="X"]                 { border-left: 2px solid #9e9e9e; padding-left: 6px; }

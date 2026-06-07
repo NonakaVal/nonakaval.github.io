@@ -38,7 +38,6 @@
   "minimal-style@@window-title-off": false,
   "minimal-style@@file-header-visibility": "minimal-tab-title-visible",
   "minimal-style@@frame-background@@light": "#F52727",
-  "minimal-advanced@@styled-scrollbars": true,
   "minimal-advanced@@cursor": "default",
   "chime-theme@@heading-colors": "heading-default",
   "chime-theme@@smaller-headings": false,
