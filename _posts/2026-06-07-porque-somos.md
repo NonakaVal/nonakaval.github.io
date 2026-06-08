@@ -1,5 +1,5 @@
 ---
-title: Somos uma fração de algo infinito,
+title: O agora
 description:
 date: 2026-06-07 21:09:19
 author: Val
