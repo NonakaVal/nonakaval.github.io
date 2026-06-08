@@ -14,20 +14,24 @@ mermaid: false
 calendar: "[[2026-06-07]]"
 ---
 
-Somos uma fração de algo infinito, 
+"Somos uma fração de algo infinito, 
 Sem propósitos além dos quais criamos para nós mesmos;
 
-Podemos ser apenas uma projeção à beira de um grande vazio, sequer existindo além disso, sequer sendo reais de fato. 
-Mas o que é real?;
+Podemos ser apenas uma projeção à beira de um grande vazio, sequer existindo além disso, 
+
+sequer sendo reais de fato. 
+
+Mas o que é real?
 
 Eu sinto, eu amo, eu odeio, eu estou aqui, seja para sempre ou por um momento. 
-Eu existo agora, preocupando-me mais com o que pode ou não ser real, deixando de viver o que inquestionavelmente é real.
 
-Essa fração de algo infinito;
+Eu existo agora, preocupando-me mais com o que pode ou não ser, deixando de viver o que inquestionavelmente é.
 
-Se tudo tem um fim nesta realidade, apreciar o agora, nada além do agora, é transcender o tempo, é superar o fim, 
+Essa fração de algo infinito.
 
-Independente se somos filhos de deuses, ou simplesmente projeções,  na beira de um grande vazio."
+O agora nos faz transcender ao tempo, é o que nos torna real.
+
+Independente se somos filhos de deuses, ou simples projeções  na beira de um grande vazio."
 
 
 
