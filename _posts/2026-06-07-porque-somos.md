@@ -17,9 +17,7 @@ calendar: "[[2026-06-07]]"
 "Somos uma fração de algo infinito, 
 Sem propósitos além dos quais criamos para nós mesmos;
 
-Podemos ser apenas uma projeção à beira de um grande vazio, sequer existindo além disso, 
-
-sequer sendo reais de fato. 
+Podemos ser apenas uma projeção à beira de um grande vazio, sequer existindo além disso, sequer sendo reais de fato. 
 
 Mas o que é real?
 
