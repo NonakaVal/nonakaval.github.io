@@ -23,7 +23,9 @@ Mas o que é real?
 
 Eu sinto, eu amo, eu odeio, eu estou aqui, seja para sempre ou por um momento. 
 
-Eu existo agora, preocupando-me mais com o que pode ou não ser, deixando de viver o que inquestionavelmente é.
+Eu existo agora, 
+
+preocupando-me mais com o que pode ou não ser, deixando de viver o que inquestionavelmente é.
 
 Essa fração de algo infinito.
 
