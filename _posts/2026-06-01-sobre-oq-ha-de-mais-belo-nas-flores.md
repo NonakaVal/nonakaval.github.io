@@ -25,10 +25,10 @@ calendar: "[[2026-06-01]]"
 ---
 
 
-> Em sua essência e forma, 
-*
+> Em sua essência e formas, 
 
-**Formas Simétricas** que atravessa até os domínios mais abstratos
+
+**Simetria** que as faz atravessar até os domínios mais abstratos
 
 <img src="assets/post-images/flores/flores-geometria.png" alt="go">
 
