@@ -1,6 +1,6 @@
 ---
 title: Sobre o que há de mais belo nas flores
-description: Gay Depressivo decide postar algo gay e depressivo.
+description:
 date: 2026-06-01 15:59:52
 author: Val
 categories:
