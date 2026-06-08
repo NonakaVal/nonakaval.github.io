@@ -119,13 +119,13 @@ As linhas do **seu sorriso** e traços com aquela **mesma simetria** das quais t
 
 **Sempre vou amar você,** 
 
-> Onde quer que esteja.Vai estar comigo.
+> Onde quer que esteja. Também estará comigo.
 
-Com o que vejo de mais belo nas flores,
+**Com o que vejo de mais belo nas flores,**
 
-**Com o que as tornou realmente belas para mim.**
+Com o que as tornou realmente belas para mim.
 
-> por todo lado como sempre me salvando,
+> por todo lado sempre me salvando,
 
 
 **Daqueles infelizes universos monocromáticos**
