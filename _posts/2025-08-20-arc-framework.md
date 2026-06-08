@@ -13,7 +13,6 @@ math: false
 mermaid: false
 calendar: "[[2025-08-20]]"
 ---
-
 O **ARC** é um método prático para gerenciar e desenvolver ideias. Seu nome vem de três ações fundamentais: **Adicionar (Add)**, **Relacionar (Relate)** e **Comunicar (Communicate)**.
 
 O objetivo do ARC é evitar que ideias boas fiquem paradas em anotações soltas, guiando-as por um fluxo natural até se tornarem algo útil e concreto.

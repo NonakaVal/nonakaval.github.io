@@ -76,7 +76,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
+                "file": "2025-05-26-About-me.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -91,7 +91,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores"
+              "title": "2025-05-26-About-me"
             }
           }
         ],
@@ -114,7 +114,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -164,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "X/TIPOGRAFIA.md",
+                "file": "2025-05-26-About-me.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TIPOGRAFIA"
+              "title": "Sumário de 2025-05-26-About-me"
             }
           }
         ]
@@ -294,19 +294,31 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Criar nova base": false,
-      "templater-obsidian:Templater": false,
       "workspaces:Gerenciar leiautes da área de trabalho": false,
-      "periodic-notes:Open today": false
+      "templater-obsidian:Templater": false,
+      "periodic-notes:Open today": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
   "active": "53af71adb6d7581c",
   "lastOpenFiles": [
-    "2026-06-01-rumi.md",
-    "2026-06-07-porque-somos.md",
-    "2026-06-07-solidao.md",
+    "X/shellcommands/gca.py",
+    "X/shellcommands",
+    "2026-06-07-O-agora.md",
+    "2026-03-16-solidao.md",
+    "2025-05-26-About-me.md",
     "2026-05-24-limite-da-individualidade.md",
-    "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
     "2025-12-09-o-conhecimento.md",
+    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
+    "2025-06-10-introduction-to-ruby.md",
+    "2025-08-20-arc-framework.md",
+    "2025-09-22-10-dicas-#1.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-05-28-music-tranquility-base.md",
+    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
+    "X/CONVENCOES-CATEGORIAS-TAGS.md",
+    "2026-06-01-rumi.md",
     "X/Base.base",
     "Untitled.md",
     "Sem título.md",
@@ -314,20 +326,10 @@
     "X/TEMPLATE/SNIPPETS/_INDEX.md",
     "X/TEMPLATE/POST-TEMPLATE.md",
     "X/TEMPLATE/SNIPPETS/block-code-tutorial.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-music-tranquility-base.md",
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "2025-05-26-About-me.md",
     "X/TEMPLATE/add img post.md",
-    "2025-09-22-10-dicas-#1.md",
-    "2025-06-10-conhecimento-fragmentado.md",
     "X/TIPOGRAFIA.md",
-    "2025-06-10-introduction-to-ruby.md",
-    "2025-08-20-arc-framework.md",
     "X/TEMPLATE/GALLERY-POST-TEMPLATE.md",
     "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
-    "2025-08-20-arquiteto-jardineiro.md",
-    "2025-05-26-Scoop-Package-Manager-Guide.md",
     "Pasted image 20251209051754.png",
     "dataview-snippets",
     "GALLERY-POSTS/desktop.ini",
@@ -337,7 +339,6 @@
     "SYSTEM/desktop.ini",
     "X",
     "Pasted image 20250528162638.png",
-    "desktop.ini",
-    "CALENDAR"
+    "desktop.ini"
   ]
 }
