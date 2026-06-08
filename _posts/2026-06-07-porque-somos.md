@@ -7,7 +7,7 @@ categories:
   - Escritas Pessoais
   - Reflexão
 tags:
-pin:
+pin: true
 image: assets/img/post-banners/2026-06-07-porque-somos.jpg
 math: false
 mermaid: false
