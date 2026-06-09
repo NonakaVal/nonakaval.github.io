@@ -76,7 +76,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-26-About-me.md",
+                "file": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -91,11 +91,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-26-About-me"
+              "title": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes"
+            }
+          },
+          {
+            "id": "d335a364254cc9c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-08-estado natural das coisas.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-08-estado natural das coisas"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -296,29 +320,30 @@
       "bases:Criar nova base": false,
       "workspaces:Gerenciar leiautes da área de trabalho": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "53af71adb6d7581c",
+  "active": "d335a364254cc9c4",
   "lastOpenFiles": [
-    "X/shellcommands/gca.py",
-    "X/shellcommands",
     "2026-06-07-O-agora.md",
-    "2026-03-16-solidao.md",
-    "2025-05-26-About-me.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2025-12-09-o-conhecimento.md",
-    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
+    "2026-06-08-estado natural das coisas.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-05-28-music-tranquility-base.md",
+    "2025-06-10-conhecimento-fragmentado.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-08-20-arc-framework.md",
     "2025-09-22-10-dicas-#1.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-music-tranquility-base.md",
+    "2025-12-09-o-conhecimento.md",
+    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
+    "2026-03-16-solidao.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2026-06-01-rumi.md",
+    "2025-05-26-About-me.md",
+    "X/shellcommands/gca.py",
+    "X/shellcommands",
     "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
     "X/CONVENCOES-CATEGORIAS-TAGS.md",
-    "2026-06-01-rumi.md",
     "X/Base.base",
     "Untitled.md",
     "Sem título.md",
@@ -338,7 +363,6 @@
     "GALLERY-POSTS",
     "SYSTEM/desktop.ini",
     "X",
-    "Pasted image 20250528162638.png",
-    "desktop.ini"
+    "Pasted image 20250528162638.png"
   ]
 }
