@@ -48,11 +48,11 @@ calendar: "[[2026-06-12]]"
 
 > mas talvez consiga deixar de ser uma.
 
-**faça uma promessa a si mesmo,** 
+**Então cumpra a promessa que fez a si mesmo,** 
 
 > seja melhor
 
-**seja indiferente à tudo que não importa.**
+**seja indiferente a tudo que não importa.**
 
 
 
