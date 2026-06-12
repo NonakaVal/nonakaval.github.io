@@ -16,38 +16,43 @@ math: false
 mermaid: false
 calendar: "[[2026-06-12]]"
 ---
-é só um momento de dor,  
+> é só **um momento** de dor,  
 
-sinta, e nunca esqueça o que realmente importa,
+**sinta, e nunca esqueça o que realmente importa,**
 
-> sua capacidade de mudar, 
+> **sua capacidade de mudar,** 
 
-> de construir um novo você cada vez melhor
+> de construir um novo você cada vez melhor,
 
-Seja indiferente à tudo que não importa,
+**então seja indiferente a tudo que não importa,**
 
 ---
 
-o quão longe estou do meu melhor ?
+> quão longe estou do meu melhor ?
 
-quase uma vida inteira vivendo errado,
+> quase uma vida inteira vivendo errado,
 
-me jogaram num poço aceitando migalhas, 
+> me jogaram num poço de migalhas, 
 
-> preciso mudar, preciso ser melhor, 
+---
+
+**preciso mudar, preciso ser melhor,** 
 
 > aceitar que algumas coisas não importam
 
-> sobre aquilo, não importa, 
+> sobre aquilo ? : **não importa,** 
 
-você não pode evitar decepções nesse mundo, 
-mas talvez consiga deixar de ser uma decepção.
+---
 
-> faça uma promessa a si mesmo, 
+**você não pode evitar decepções nesse mundo,** 
+
+> mas talvez consiga deixar de ser uma.
+
+**faça uma promessa a si mesmo,** 
 
 > seja melhor
 
-seja indiferente à tudo que não importa.
+**seja indiferente à tudo que não importa.**
 
 
 

@@ -161,8 +161,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-12-eterno.md",
-                "mode": "preview",
+                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -176,7 +176,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-12-eterno"
+              "title": "2026-06-12-Vai-ficar-tudo-bem"
             }
           }
         ],
@@ -387,11 +387,11 @@
   },
   "active": "667e7d63a5fef7f9",
   "lastOpenFiles": [
+    "2026-06-12-eterno.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
     "2026-03-16-solidao.md",
     "2026-06-08-estado natural das coisas.md",
     "2026-06-07-O-agora.md",
-    "2026-06-12-eterno.md",
     "2026-06-12-humansadness.md",
     "X/TIPOGRAFIA.md",
     "2026-06-01-rumi.md",
