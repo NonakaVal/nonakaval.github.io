@@ -130,9 +130,57 @@
               "icon": "lucide-file",
               "title": "2026-06-12-eterno"
             }
+          },
+          {
+            "id": "53927c5c6ef5617c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-12-humansadness.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-12-humansadness"
+            }
+          },
+          {
+            "id": "667e7d63a5fef7f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-12-eterno.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-12-eterno"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -337,14 +385,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "907e81aa484209ac",
+  "active": "667e7d63a5fef7f9",
   "lastOpenFiles": [
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-03-16-solidao.md",
     "2026-06-08-estado natural das coisas.md",
-    "2026-06-12-eterno.md",
     "2026-06-07-O-agora.md",
+    "2026-06-12-eterno.md",
+    "2026-06-12-humansadness.md",
+    "X/TIPOGRAFIA.md",
     "2026-06-01-rumi.md",
     "2026-05-24-limite-da-individualidade.md",
-    "2026-03-16-solidao.md",
     "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
     "2025-12-09-o-conhecimento.md",
     "2025-09-22-10-dicas-#1.md",
@@ -365,8 +416,6 @@
     "X/TEMPLATE/SNIPPETS/_INDEX.md",
     "X/TEMPLATE/POST-TEMPLATE.md",
     "X/TEMPLATE/SNIPPETS/block-code-tutorial.md",
-    "X/TEMPLATE/add img post.md",
-    "X/TIPOGRAFIA.md",
     "Pasted image 20251209051754.png",
     "dataview-snippets",
     "GALLERY-POSTS/desktop.ini",

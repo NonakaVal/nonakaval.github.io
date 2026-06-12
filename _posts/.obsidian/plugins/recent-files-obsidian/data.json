@@ -5,6 +5,14 @@
       "path": "2026-06-12-eterno.md"
     },
     {
+      "basename": "2026-06-12-Vai-ficar-tudo-bem",
+      "path": "2026-06-12-Vai-ficar-tudo-bem.md"
+    },
+    {
+      "basename": "2026-03-16-solidao",
+      "path": "2026-03-16-solidao.md"
+    },
+    {
       "basename": "2026-06-08-estado natural das coisas",
       "path": "2026-06-08-estado natural das coisas.md"
     },
@@ -13,16 +21,20 @@
       "path": "2026-06-07-O-agora.md"
     },
     {
+      "basename": "2026-06-12-humansadness",
+      "path": "2026-06-12-humansadness.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "X/TIPOGRAFIA.md"
+    },
+    {
       "basename": "2026-06-01-rumi",
       "path": "2026-06-01-rumi.md"
     },
     {
       "basename": "2026-05-24-limite-da-individualidade",
       "path": "2026-05-24-limite-da-individualidade.md"
-    },
-    {
-      "basename": "2026-03-16-solidao",
-      "path": "2026-03-16-solidao.md"
     },
     {
       "basename": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores",
@@ -83,10 +95,6 @@
     {
       "basename": "add img post",
       "path": "X/TEMPLATE/add img post.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "X/TIPOGRAFIA.md"
     },
     {
       "basename": "GALLERY-POST-TEMPLATE",
@@ -191,14 +199,6 @@
     {
       "basename": "index-computer-science",
       "path": "Atlas/01_INDEX/index-computer-science.md"
-    },
-    {
-      "basename": "cmp-fundamentals-of-storytelling",
-      "path": "Atlas/04_COMPONENT/cmp-fundamentals-of-storytelling.md"
-    },
-    {
-      "basename": "report-structure",
-      "path": "Atlas/02_CONCEPT/report-structure.md"
     }
   ],
   "omittedPaths": [],
