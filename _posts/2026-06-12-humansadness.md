@@ -16,7 +16,9 @@ calendar: "[[2026-06-12]]"
 
 Uma das melhores músicas já feitas na história, além do seu tempo...
 
-
-
-
 {% include embed/youtube.html id='SuXlZ5PHK9I' %}
+
+
+
+[Releitura de um poema escrito há séculos.](https://nonakaval.github.io/posts/rumi/)
+
