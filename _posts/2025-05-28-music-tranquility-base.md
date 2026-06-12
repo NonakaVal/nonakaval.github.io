@@ -4,10 +4,10 @@ description: Uma breve análise  de um dos meus álbuns favoritos da vida
 date: 2025-05-28 16:56:32
 author: Val
 categories:
-  - music
-  - review
+  - Cultura
 tags:
-  - Review
+  - resenha
+  - musica
 pin:
 image: assets/img/post-banners/tranquility-base-hotel.jpg
 math: false

@@ -4,9 +4,10 @@ description:
 date: 2026-01-10 15:59:52
 author: Val
 categories:
-  - Escritas Pessoais
+  - Escrita
 tags:
-  - Amor
+  - poesia
+  - amor
 pin:
 image: assets/img/post-banners/flores-capa.png
 math: false

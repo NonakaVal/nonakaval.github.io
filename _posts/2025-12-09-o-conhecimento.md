@@ -4,9 +4,11 @@ description: Trechos aleatório de um projeto literário ai
 date: 2025-12-09 05:14:48
 author: Val
 categories:
-  - Reflexão
-  - Escritas Pessoais
+  - Escrita
 tags:
+  - ensaio
+  - filosofia
+  - existencialismo
 pin: false
 image: assets/img/post-banners/o-conhecimento.png
 math: false

@@ -4,11 +4,10 @@ description: " Ruby é uma linguagem de programação orientada a objetos..."
 date: 2025-06-10 22:53:03
 author: Val
 categories:
-  - programação
-  - ruby
+  - Programacao
 tags:
-  - Review
-  - Recursos
+  - ruby
+  - tutorial
 pin:
 image: assets/img/post-banners/ruby.png
 math: false

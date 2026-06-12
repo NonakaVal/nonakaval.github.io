@@ -1,11 +1,13 @@
 ---
-title:
+title: Mudança
 description:
 date: 2026-06-08 20:47:02
 author: Val
 categories:
-  - Escritas Pessoais
+  - Reflexao
 tags:
+  - ensaio
+  - autoconhecimento
 pin: false
 image: assets/img/post-banners/samuraidog.jpg
 math: false

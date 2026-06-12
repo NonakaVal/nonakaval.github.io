@@ -4,9 +4,10 @@ description: Um Fluxo Simples para Desenvolver Ideias
 date: 2025-08-20 07:42:04
 author: Val
 categories:
-  - gestão de conhecimento
+  - Aprendizado
 tags:
-  - Dicas
+  - pkm
+  - tutorial
 pin:
 image: assets/img/post-banners/arc-framework.png
 math: false

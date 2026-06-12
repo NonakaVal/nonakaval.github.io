@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2026-06-12-eterno",
+      "path": "2026-06-12-eterno.md"
+    },
+    {
       "basename": "2026-06-08-estado natural das coisas",
       "path": "2026-06-08-estado natural das coisas.md"
     },
@@ -9,48 +13,48 @@
       "path": "2026-06-07-O-agora.md"
     },
     {
-      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
-      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "2025-05-28-music-tranquility-base",
-      "path": "2025-05-28-music-tranquility-base.md"
-    },
-    {
-      "basename": "2025-06-10-conhecimento-fragmentado",
-      "path": "2025-06-10-conhecimento-fragmentado.md"
-    },
-    {
-      "basename": "2025-06-10-introduction-to-ruby",
-      "path": "2025-06-10-introduction-to-ruby.md"
-    },
-    {
-      "basename": "2025-08-20-arc-framework",
-      "path": "2025-08-20-arc-framework.md"
-    },
-    {
-      "basename": "2025-09-22-10-dicas-#1",
-      "path": "2025-09-22-10-dicas-#1.md"
-    },
-    {
-      "basename": "2025-12-09-o-conhecimento",
-      "path": "2025-12-09-o-conhecimento.md"
-    },
-    {
-      "basename": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores",
-      "path": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md"
-    },
-    {
-      "basename": "2026-03-16-solidao",
-      "path": "2026-03-16-solidao.md"
+      "basename": "2026-06-01-rumi",
+      "path": "2026-06-01-rumi.md"
     },
     {
       "basename": "2026-05-24-limite-da-individualidade",
       "path": "2026-05-24-limite-da-individualidade.md"
     },
     {
-      "basename": "2026-06-01-rumi",
-      "path": "2026-06-01-rumi.md"
+      "basename": "2026-03-16-solidao",
+      "path": "2026-03-16-solidao.md"
+    },
+    {
+      "basename": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores",
+      "path": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md"
+    },
+    {
+      "basename": "2025-12-09-o-conhecimento",
+      "path": "2025-12-09-o-conhecimento.md"
+    },
+    {
+      "basename": "2025-09-22-10-dicas-#1",
+      "path": "2025-09-22-10-dicas-#1.md"
+    },
+    {
+      "basename": "2025-08-20-arc-framework",
+      "path": "2025-08-20-arc-framework.md"
+    },
+    {
+      "basename": "2025-06-10-introduction-to-ruby",
+      "path": "2025-06-10-introduction-to-ruby.md"
+    },
+    {
+      "basename": "2025-06-10-conhecimento-fragmentado",
+      "path": "2025-06-10-conhecimento-fragmentado.md"
+    },
+    {
+      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
+      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
+    },
+    {
+      "basename": "2025-05-28-music-tranquility-base",
+      "path": "2025-05-28-music-tranquility-base.md"
     },
     {
       "basename": "2025-05-26-About-me",

@@ -4,8 +4,10 @@ description: Outro texto que tenho salvo há anos.
 date: 2026-05-24 17:23:42
 author: Val
 categories:
-  - Escritas Pessoais
+  - Escrita
 tags:
+  - ensaio
+  - filosofia
 pin:
 image: assets/img/post-banners/limite-da-individualidade.png
 math: false

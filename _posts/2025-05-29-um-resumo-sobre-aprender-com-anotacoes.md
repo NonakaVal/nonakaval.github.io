@@ -4,11 +4,11 @@ description: Um resumo conciso do meu primeiro vídeo no youtube sobre estar tom
 date: 2025-05-29 15:50:50
 author: Val
 categories:
-  - gestão de conhecimento
+  - Aprendizado
 tags:
-  - Insight
-  - Dicas
-  - português
+  - pkm
+  - tutorial
+  - dicas
 pin: false
 image: assets/img/post-banners/aprender-com-anotacoes.png
 math: false
