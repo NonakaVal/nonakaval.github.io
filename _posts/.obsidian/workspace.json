@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-05-24-limite-da-individualidade.md",
-                "mode": "preview",
+                "file": "2026-06-14-Memória.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-05-24-limite-da-individualidade"
+              "title": "2026-06-14-Memória"
             }
           },
           {
@@ -202,9 +202,33 @@
               "icon": "lucide-file",
               "title": "2026-06-12-Vai-ficar-tudo-bem"
             }
+          },
+          {
+            "id": "00198d631eda5809",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-14-Memória.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-14-Memória"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -409,22 +433,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "224427aff8b3fef0",
+  "active": "8881ff8e890018e9",
   "lastOpenFiles": [
-    "2026-06-12-humansadness.md",
-    "2026-06-01-rumi.md",
+    "2025-09-22-10-dicas-#1.md",
     "2025-12-09-o-conhecimento.md",
+    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
+    "2026-03-16-solidao.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2026-06-01-rumi.md",
+    "2026-06-07-O-agora.md",
+    "2026-06-08-estado natural das coisas.md",
+    "2026-06-12-eterno.md",
+    "2026-06-12-humansadness.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-14-Memória.md",
     "2025-05-26-About-me.md",
     "X/Base.base",
     "X/TIPOGRAFIA.md",
-    "2026-06-12-eterno.md",
-    "2026-03-16-solidao.md",
-    "2026-06-08-estado natural das coisas.md",
-    "2026-06-07-O-agora.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
-    "2025-09-22-10-dicas-#1.md",
     "2025-08-20-arc-framework.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-06-10-conhecimento-fragmentado.md",
