@@ -126,7 +126,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-03-16-solidao.md",
+                "file": "2025-06-10-conhecimento-fragmentado.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -141,7 +141,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-03-16-solidao"
+              "title": "2025-06-10-conhecimento-fragmentado"
             }
           }
         ],
@@ -292,8 +292,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -352,6 +352,12 @@
   },
   "active": "f72fe7d8e855a7f7",
   "lastOpenFiles": [
+    "2025-06-10-introduction-to-ruby.md",
+    "2025-09-22-10-dicas-#1.md",
+    "2025-08-20-arc-framework.md",
+    "2025-12-09-o-conhecimento.md",
+    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
+    "2026-03-16-solidao.md",
     "2026-05-24-limite-da-individualidade.md",
     "2025-05-26-About-me.md",
     "Calendar/2026-06-15.md",
@@ -359,9 +365,6 @@
     "2026-06-12-eterno.md",
     "2025-05-28-music-tranquility-base.md",
     "X/Templates/Snippets/Insert prompt.md",
-    "2025-08-20-arc-framework.md",
-    "2025-09-22-10-dicas-#1.md",
-    "2025-06-10-introduction-to-ruby.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/Templates/Snippets/prompt-success.md",
@@ -374,11 +377,8 @@
     "X/Templates/Snippets/prompt-note.md",
     "X/Templates/Snippets/prompt-next.md",
     "X/Base.base",
-    "2025-12-09-o-conhecimento.md",
     "2026-06-07-O-agora.md",
     "2026-06-12-humansadness.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-06-08-estado natural das coisas.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",
