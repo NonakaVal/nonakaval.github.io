@@ -6,7 +6,7 @@ author: Val
 categories:
 tags:
 pin: false
-image: assets/img/post-banners/
+image: assets/img/post-banners/report.png
 math: false
 mermaid: false
 calendar: "[[2026-06-15]]"
@@ -60,6 +60,8 @@ Neste momento, podemos detalhar mais informações relevantes e fornecer dados c
 Por fim, apresentamos as próximas ações necessárias.
 
 <img src="assets/post-images/report/3.png" alt="go4">
+
+![](https://cdn-images-1.medium.com/max/873/0*pUP9nEKGwjOBeKzv.png)
 
 ---
 
