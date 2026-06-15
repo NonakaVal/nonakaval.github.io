@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "X/Templates/Snippets/post url.md",
+                "file": "X/Templates/Snippets/Insert prompt.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "post url"
+              "title": "Insert prompt"
             }
           },
           {
@@ -143,9 +143,33 @@
               "icon": "lucide-file",
               "title": "2025-06-10-conhecimento-fragmentado"
             }
+          },
+          {
+            "id": "ce92a5f1befc98f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-15-base-bom-relatorio.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-15-base-bom-relatorio"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -223,7 +247,8 @@
               "title": "Outline of TIPOGRAFIA"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -350,8 +375,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f72fe7d8e855a7f7",
+  "active": "ce92a5f1befc98f6",
   "lastOpenFiles": [
+    "X/Base.base",
+    "X/Templates/Snippets/Insert prompt.md",
+    "X/Templates/Snippets/post url.md",
+    "2026-06-15-base-bom-relatorio.md",
+    "2025-06-10-conhecimento-fragmentado.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-09-22-10-dicas-#1.md",
     "2025-08-20-arc-framework.md",
@@ -361,11 +391,8 @@
     "2026-05-24-limite-da-individualidade.md",
     "2025-05-26-About-me.md",
     "Calendar/2026-06-15.md",
-    "X/Templates/Snippets/post url.md",
     "2026-06-12-eterno.md",
     "2025-05-28-music-tranquility-base.md",
-    "X/Templates/Snippets/Insert prompt.md",
-    "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/Templates/Snippets/prompt-success.md",
     "X/Templates/Snippets/prompt-tip.md",
@@ -376,9 +403,6 @@
     "X/Templates/Snippets/prompt-idea.md",
     "X/Templates/Snippets/prompt-note.md",
     "X/Templates/Snippets/prompt-next.md",
-    "X/Base.base",
-    "2026-06-07-O-agora.md",
-    "2026-06-12-humansadness.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",
