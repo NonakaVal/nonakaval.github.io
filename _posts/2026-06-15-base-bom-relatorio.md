@@ -59,8 +59,6 @@ Neste momento, podemos detalhar mais informações relevantes e fornecer dados c
 
 Por fim, apresentamos as próximas ações necessárias.
 
-<img src="assets/post-images/report/3.png" alt="go4">
-
 ![](https://cdn-images-1.medium.com/max/873/0*pUP9nEKGwjOBeKzv.png)
 
 ---
