@@ -150,7 +150,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
+                "file": "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -165,7 +165,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-12-Vai-ficar-tudo-bem"
+              "title": "sobre-oq-ha-de-mais-belo-nas-flores"
             }
           }
         ],
@@ -374,9 +374,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ce92a5f1befc98f6",
+  "active": "7f5e1e9ff1328ea0",
   "lastOpenFiles": [
+    "+",
     "2026-06-15-base-bom-relatorio.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-12-humansadness.md",
+    "2026-06-12-eterno.md",
+    "2026-06-07-O-agora.md",
+    "2026-06-01-rumi.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2026-03-16-solidao.md",
+    "2025-05-26-About-me.md",
+    "2025-05-28-music-tranquility-base.md",
     "X/Base.base",
     "X/Templates/Snippets/Insert prompt.md",
     "X/Templates/Snippets/post url.md",
@@ -385,23 +395,14 @@
     "2025-09-22-10-dicas-#1.md",
     "2025-08-20-arc-framework.md",
     "2025-12-09-o-conhecimento.md",
-    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
-    "2026-03-16-solidao.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2025-05-26-About-me.md",
+    "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
     "Calendar/2026-06-15.md",
-    "2026-06-12-eterno.md",
-    "2025-05-28-music-tranquility-base.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/Templates/Snippets/prompt-success.md",
     "X/Templates/Snippets/prompt-tip.md",
     "X/Templates/Snippets/prompt-bug.md",
     "X/Templates/Snippets/prompt-danger.md",
     "X/TIPOGRAFIA.md",
-    "X/Templates/Snippets/prompt-info.md",
-    "X/Templates/Snippets/prompt-idea.md",
-    "X/Templates/Snippets/prompt-note.md",
-    "X/Templates/Snippets/prompt-next.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",
