@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "X/TEMPLATE",
+  "templates_folder": "X/Templates",
   "templates_pairs": [
     [
       "",
@@ -8,19 +8,19 @@
     ]
   ],
   "trigger_on_file_creation": true,
-  "auto_jump_to_cursor": false,
+  "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "CALENDAR",
+      "folder": "Calendar",
       "template": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
     },
     {
       "folder": "/",
-      "template": "X/TEMPLATE/POST-TEMPLATE.md"
+      "template": "X/Templates/POST-TEMPLATE.md"
     }
   ],
   "enable_file_templates": false,

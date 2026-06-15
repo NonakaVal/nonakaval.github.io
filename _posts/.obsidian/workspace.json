@@ -23,36 +23,12 @@
             }
           },
           {
-            "id": "11334d195213912d",
+            "id": "f0bc07d5479496ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-01-sobre-oq-ha-de-mais-belo-nas-flores"
-            }
-          },
-          {
-            "id": "8881ff8e890018e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-06-14-Memória.md",
+                "file": "X/Templates/Snippets/post url.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -67,16 +43,42 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-14-Memória"
+              "title": "post url"
             }
           },
           {
-            "id": "53af71adb6d7581c",
+            "id": "7bf130e742a3ae9c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-05-24-limite-da-individualidade.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2026-05-24-limite-da-individualidade"
+            }
+          },
+          {
+            "id": "c8fa5d1f18640b26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+                "file": "2025-05-26-About-me.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -91,29 +93,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes"
+              "title": "2025-05-26-About-me"
             }
           },
           {
-            "id": "d335a364254cc9c4",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "X/Base.base",
-                "viewName": "Tabela"
-              },
-              "icon": "lucide-table",
-              "title": "Base"
-            }
-          },
-          {
-            "id": "907e81aa484209ac",
+            "id": "9ee1f5a70f3fd4cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-12-eterno.md",
+                "file": "Calendar/2026-06-15.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -128,16 +117,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-12-eterno"
+              "title": "2026-06-15"
             }
           },
           {
-            "id": "53927c5c6ef5617c",
+            "id": "f72fe7d8e855a7f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-12-humansadness.md",
+                "file": "2026-03-16-solidao.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,83 +141,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-12-humansadness"
-            }
-          },
-          {
-            "id": "667e7d63a5fef7f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "X/TIPOGRAFIA.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "TIPOGRAFIA"
-            }
-          },
-          {
-            "id": "224427aff8b3fef0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-12-Vai-ficar-tudo-bem"
-            }
-          },
-          {
-            "id": "00198d631eda5809",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-06-14-Memória.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-14-Memória"
+              "title": "2026-03-16-solidao"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -247,11 +164,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabeticalReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de ficheiros"
+              "title": "Files"
             }
           },
           {
@@ -287,8 +204,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           },
           {
@@ -297,13 +214,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-05-26-About-me.md",
+                "file": "X/TIPOGRAFIA.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 2025-05-26-About-me"
+              "title": "Outline of TIPOGRAFIA"
             }
           }
         ]
@@ -420,50 +337,51 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir Quick Switcher": false,
-      "graph:Abrir Visualização de diagrama de grafo": false,
-      "canvas:Criar novo Canvas": false,
-      "daily-notes:Abrir nota de hoje": false,
-      "templates:Inserir templates": false,
-      "command-palette:Abrir paleta de comando": false,
-      "workspaces:Gerir esquema da área de trabalho": false,
-      "bases:Criar nova base": false,
-      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "8881ff8e890018e9",
+  "active": "f72fe7d8e855a7f7",
   "lastOpenFiles": [
-    "2025-09-22-10-dicas-#1.md",
-    "2025-12-09-o-conhecimento.md",
-    "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md",
-    "2026-03-16-solidao.md",
     "2026-05-24-limite-da-individualidade.md",
-    "2026-06-01-rumi.md",
-    "2026-06-07-O-agora.md",
-    "2026-06-08-estado natural das coisas.md",
-    "2026-06-12-eterno.md",
-    "2026-06-12-humansadness.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-06-14-Memória.md",
     "2025-05-26-About-me.md",
-    "X/Base.base",
-    "X/TIPOGRAFIA.md",
+    "Calendar/2026-06-15.md",
+    "X/Templates/Snippets/post url.md",
+    "2026-06-12-eterno.md",
+    "2025-05-28-music-tranquility-base.md",
+    "X/Templates/Snippets/Insert prompt.md",
     "2025-08-20-arc-framework.md",
+    "2025-09-22-10-dicas-#1.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-05-28-music-tranquility-base.md",
-    "X/CONVENCOES-CATEGORIAS-TAGS.md",
+    "X/Templates/Snippets/prompt-success.md",
+    "X/Templates/Snippets/prompt-tip.md",
+    "X/Templates/Snippets/prompt-bug.md",
+    "X/Templates/Snippets/prompt-danger.md",
+    "X/TIPOGRAFIA.md",
+    "X/Templates/Snippets/prompt-info.md",
+    "X/Templates/Snippets/prompt-idea.md",
+    "X/Templates/Snippets/prompt-note.md",
+    "X/Templates/Snippets/prompt-next.md",
+    "X/Base.base",
+    "2025-12-09-o-conhecimento.md",
+    "2026-06-07-O-agora.md",
+    "2026-06-12-humansadness.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-08-estado natural das coisas.md",
+    "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",
-    "2025-05-27-Python-A-Practical-Guide-to-Logic.md",
-    "Untitled.md",
-    "Sem título.md",
-    "2026-06-07-test.md",
-    "X/TEMPLATE/SNIPPETS/_INDEX.md",
-    "X/TEMPLATE/POST-TEMPLATE.md",
     "Pasted image 20251209051754.png",
     "dataview-snippets",
     "GALLERY-POSTS/desktop.ini",
@@ -471,7 +389,6 @@
     "Untitled/desktop.ini",
     "GALLERY-POSTS",
     "SYSTEM/desktop.ini",
-    "X",
     "Pasted image 20250528162638.png"
   ]
 }

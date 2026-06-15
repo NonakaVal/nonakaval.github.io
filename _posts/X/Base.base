@@ -1,6 +1,6 @@
 filters:
   and:
-    - '!file.inFolder("CALENDAR")'
+    - '!file.inFolder("Calendar")'
     - '!file.inFolder("X")'
 views:
   - type: table
@@ -16,6 +16,7 @@ views:
       - image
       - categories
       - author
+      - file.name
     sort:
       - property: date
         direction: DESC
@@ -25,6 +26,8 @@ views:
         direction: ASC
     columnSize:
       note.date: 193
-      note.title: 323
+      note.title: 294
       note.description: 282
       note.image: 381
+  - type: table
+    name: Templates

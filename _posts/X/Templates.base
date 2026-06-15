@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.inFolder("X/Templates")
+formulas:
+  mtime: file.mtime.relative()
+views:
+  - type: table
+    name: Table
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - formula.mtime
+      - file.name
+      - file.tags
+    sort:
+      - property: formula.mtime
+        direction: ASC
+    columnSize:
+      formula.mtime: 241

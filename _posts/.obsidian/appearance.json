@@ -1,11 +1,11 @@
 {
-  "cssTheme": "",
+  "cssTheme": "Things",
   "enabledCssSnippets": [
     "minorFixes",
     "minorAdds",
     "datacore-classes",
     "dashboarPlusPlus"
   ],
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 14
 }

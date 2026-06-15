@@ -30,7 +30,9 @@ existir é fácil, porém tudo indica que se tornar capaz de saber que existe é
 
 antes de explorarmos o complexo vamos refletir sobre um aspecto humano, nossa característica que permite, antes de tudo, compartilhar esse, ou qualquer outro conhecimento.
 
-[O limite da individualidade](https://nonakaval.github.io/posts/limite-da-individualidade/)
+
+{: .prompt-tip }
+> [O limite da individualidade]({% post_url 2026-05-24-limite-da-individualidade %})
 
 
 

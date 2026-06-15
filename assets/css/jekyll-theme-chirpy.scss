@@ -9,3 +9,104 @@
 ';
 
 /* append your custom style below */
+
+/* ==================== Custom prompt types ==================== */
+/* Replicates Chirpy's prompt mixin pattern for new types.
+   Base layout (padding, border-radius, etc.) is inherited
+   automatically from the theme's `[class^='prompt-']` selector. */
+
+/* --- SCSS mixins to keep light/dark DRY --- */
+@mixin custom-prompt-light {
+  --prompt-success-bg: rgb(16 185 129 / 15%);
+  --prompt-success-icon-color: #059669;
+  --prompt-note-bg: rgb(139 92 246 / 12%);
+  --prompt-note-icon-color: #7c3aed;
+  --prompt-quote-bg: rgb(107 114 128 / 12%);
+  --prompt-quote-icon-color: #4b5563;
+  --prompt-bug-bg: rgb(236 72 153 / 12%);
+  --prompt-bug-icon-color: #db2777;
+  --prompt-next-bg: rgb(20 184 166 / 12%);
+  --prompt-next-icon-color: #0d9488;
+}
+
+@mixin custom-prompt-dark {
+  --prompt-success-bg: rgb(6 78 59 / 75%);
+  --prompt-success-icon-color: rgb(16 185 129 / 85%);
+  --prompt-note-bg: rgb(46 16 101 / 75%);
+  --prompt-note-icon-color: rgb(167 139 250 / 85%);
+  --prompt-quote-bg: rgb(31 41 55 / 75%);
+  --prompt-quote-icon-color: rgb(156 163 175 / 85%);
+  --prompt-bug-bg: rgb(80 7 36 / 75%);
+  --prompt-bug-icon-color: rgb(244 114 182 / 85%);
+  --prompt-next-bg: rgb(12 50 47 / 75%);
+  --prompt-next-icon-color: rgb(45 212 191 / 85%);
+}
+
+/* --- Theme switching (matches Chirpy's _base.scss logic) --- */
+html {
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+      @include custom-prompt-light;
+    }
+    &[data-mode='dark'] {
+      @include custom-prompt-dark;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      @include custom-prompt-dark;
+    }
+    &[data-mode='light'] {
+      @include custom-prompt-light;
+    }
+  }
+}
+
+/* --- Per-type icon + background --- */
+blockquote.prompt-success {
+  background-color: var(--prompt-success-bg);
+  &::before {
+    content: '\f00c'; /* fa-check */
+    color: var(--prompt-success-icon-color);
+    font: var(--fa-font-solid);
+  }
+}
+
+blockquote.prompt-note {
+  background-color: var(--prompt-note-bg);
+  &::before {
+    content: '\f02e'; /* fa-bookmark */
+    color: var(--prompt-note-icon-color);
+    font: var(--fa-font-solid);
+  }
+}
+
+blockquote.prompt-quote {
+  background-color: var(--prompt-quote-bg);
+  &::before {
+    content: '\f10d'; /* fa-quote-left */
+    color: var(--prompt-quote-icon-color);
+    font: var(--fa-font-solid);
+  }
+}
+
+blockquote.prompt-bug {
+  background-color: var(--prompt-bug-bg);
+  &::before {
+    content: '\f188'; /* fa-bug */
+    color: var(--prompt-bug-icon-color);
+    font: var(--fa-font-solid);
+  }
+}
+
+blockquote.prompt-next {
+  background-color: var(--prompt-next-bg);
+  &::before {
+    content: '\f101'; /* fa-angles-right » */
+    color: var(--prompt-next-icon-color);
+    font: var(--fa-font-solid);
+  }
+}

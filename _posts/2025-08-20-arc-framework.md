@@ -30,13 +30,11 @@ O objetivo do ARC é evitar que ideias boas fiquem paradas em anotações soltas
     A etapa final é dar um propósito à ideia. Se você se sentir perdido ou desmotivado, é um sinal para pular direto para aqui. Compartilhe seu pensamento: escreva um rascunho, envie um email, discuta com alguém. Ter um ponto final—algo para _puxar_ a ideia—é crucial para manter o processo em movimento.
     
 
-Em resumo, o ARC é um ciclo que tira as ideias da estagnação, movendo-as da captura para a criação.
-
- 
 
 
 
-
+{: .prompt-next }
+> [10 Dicas Obsidian ]({% post_url 2025-09-22-10-dicas-#1 %})
 
 
 

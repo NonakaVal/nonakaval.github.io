@@ -5,7 +5,7 @@
       "name": "new-note",
       "type": "Template",
       "command": true,
-      "templatePath": "X/TEMPLATE/POST-TEMPLATE.md",
+      "templatePath": "X/Templates/POST-TEMPLATE.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{date}}-{{value}}"
@@ -33,47 +33,11 @@
         "focus": true,
         "mode": "default"
       }
-    },
-    {
-      "id": "8a52fbb8-f629-4d75-a45e-c179d8794c05",
-      "name": "GALLERY-POST",
-      "type": "Template",
-      "command": true,
-      "templatePath": "X/TEMPLATE/POST-TEMPLATE.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{date}}-{{value}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "GALLERY-POSTS"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "default"
-      }
     }
   ],
   "inputPrompt": "single-line",
   "devMode": false,
-  "templateFolderPath": "TEMPLATE",
+  "templateFolderPath": "X/Templates",
   "announceUpdates": true,
   "version": "2.4.0",
   "globalVariables": {},

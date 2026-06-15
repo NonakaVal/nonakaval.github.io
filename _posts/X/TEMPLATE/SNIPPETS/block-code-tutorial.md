@@ -1,9 +1,0 @@
-### 
-
-{: .prompt-tip }
-> 
-
-```language
-
-```
-

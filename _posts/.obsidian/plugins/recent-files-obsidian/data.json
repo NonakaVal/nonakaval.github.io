@@ -1,22 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "2026-06-14-Memória",
-      "path": "2026-06-14-Memória.md"
-    },
-    {
-      "basename": "2025-09-22-10-dicas-#1",
-      "path": "2025-09-22-10-dicas-#1.md"
-    },
-    {
-      "basename": "2025-12-09-o-conhecimento",
-      "path": "2025-12-09-o-conhecimento.md"
-    },
-    {
-      "basename": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores",
-      "path": "2026-01-10-sobre-oq-ha-de-mais-belo-nas-flores.md"
-    },
-    {
       "basename": "2026-03-16-solidao",
       "path": "2026-03-16-solidao.md"
     },
@@ -25,44 +9,36 @@
       "path": "2026-05-24-limite-da-individualidade.md"
     },
     {
-      "basename": "2026-06-01-rumi",
-      "path": "2026-06-01-rumi.md"
+      "basename": "2025-05-26-About-me",
+      "path": "2025-05-26-About-me.md"
     },
     {
-      "basename": "2026-06-07-O-agora",
-      "path": "2026-06-07-O-agora.md"
+      "basename": "2026-06-15",
+      "path": "Calendar/2026-06-15.md"
     },
     {
-      "basename": "2026-06-08-estado natural das coisas",
-      "path": "2026-06-08-estado natural das coisas.md"
+      "basename": "post url",
+      "path": "X/Templates/Snippets/post url.md"
     },
     {
       "basename": "2026-06-12-eterno",
       "path": "2026-06-12-eterno.md"
     },
     {
-      "basename": "2026-06-12-humansadness",
-      "path": "2026-06-12-humansadness.md"
+      "basename": "2025-05-28-music-tranquility-base",
+      "path": "2025-05-28-music-tranquility-base.md"
     },
     {
-      "basename": "2026-06-12-Vai-ficar-tudo-bem",
-      "path": "2026-06-12-Vai-ficar-tudo-bem.md"
-    },
-    {
-      "basename": "2025-05-26-About-me",
-      "path": "2025-05-26-About-me.md"
-    },
-    {
-      "basename": "Base",
-      "path": "X/Base.base"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "X/TIPOGRAFIA.md"
+      "basename": "Insert prompt",
+      "path": "X/Templates/Snippets/Insert prompt.md"
     },
     {
       "basename": "2025-08-20-arc-framework",
       "path": "2025-08-20-arc-framework.md"
+    },
+    {
+      "basename": "2025-09-22-10-dicas-#1",
+      "path": "2025-09-22-10-dicas-#1.md"
     },
     {
       "basename": "2025-06-10-introduction-to-ruby",
@@ -77,128 +53,124 @@
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
     },
     {
-      "basename": "2025-05-28-music-tranquility-base",
-      "path": "2025-05-28-music-tranquility-base.md"
+      "basename": "TIPOGRAFIA",
+      "path": "X/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "Base",
+      "path": "X/Base.base"
+    },
+    {
+      "basename": "2025-12-09-o-conhecimento",
+      "path": "2025-12-09-o-conhecimento.md"
+    },
+    {
+      "basename": "2026-06-07-O-agora",
+      "path": "2026-06-07-O-agora.md"
+    },
+    {
+      "basename": "2026-06-12-humansadness",
+      "path": "2026-06-12-humansadness.md"
+    },
+    {
+      "basename": "2026-06-12-Vai-ficar-tudo-bem",
+      "path": "2026-06-12-Vai-ficar-tudo-bem.md"
+    },
+    {
+      "basename": "Templates",
+      "path": "X/Templates.base"
+    },
+    {
+      "basename": "math-block",
+      "path": "X/Templates/Snippets/math-block.md"
+    },
+    {
+      "basename": "mermaid",
+      "path": "X/Templates/Snippets/mermaid.md"
+    },
+    {
+      "basename": "img-sized",
+      "path": "X/Templates/Snippets/img-sized.md"
+    },
+    {
+      "basename": "img-inline",
+      "path": "X/Templates/Snippets/img-inline.md"
+    },
+    {
+      "basename": "footnote-def",
+      "path": "X/Templates/Snippets/footnote-def.md"
+    },
+    {
+      "basename": "embed-bilibili",
+      "path": "X/Templates/Snippets/embed-bilibili.md"
+    },
+    {
+      "basename": "code-block",
+      "path": "X/Templates/Snippets/code-block.md"
+    },
+    {
+      "basename": "embed-audio",
+      "path": "X/Templates/Snippets/embed-audio.md"
+    },
+    {
+      "basename": "block-video-section",
+      "path": "X/Templates/Snippets/block-video-section.md"
+    },
+    {
+      "basename": "block-quote-source",
+      "path": "X/Templates/Snippets/block-quote-source.md"
+    },
+    {
+      "basename": "block-image-gallery",
+      "path": "X/Templates/Snippets/block-image-gallery.md"
+    },
+    {
+      "basename": "block-code-tutorial",
+      "path": "X/Templates/Snippets/block-code-tutorial.md"
+    },
+    {
+      "basename": "_tp input",
+      "path": "X/Templates/Snippets/_tp input.md"
+    },
+    {
+      "basename": "_tp jump cursor",
+      "path": "X/Templates/Snippets/_tp jump cursor.md"
+    },
+    {
+      "basename": "embed-video",
+      "path": "X/Templates/Snippets/embed-video.md"
+    },
+    {
+      "basename": "2026-06-01-rumi",
+      "path": "2026-06-01-rumi.md"
+    },
+    {
+      "basename": "2025-07-09",
+      "path": "Calendar/2025-07-09.md"
+    },
+    {
+      "basename": "2025-06-14",
+      "path": "Calendar/2025-06-14.md"
+    },
+    {
+      "basename": "2025-05-28",
+      "path": "Calendar/2025-05-28.md"
+    },
+    {
+      "basename": "2025-05-26",
+      "path": "Calendar/2025-05-26.md"
     },
     {
       "basename": "CONVENCOES-CATEGORIAS-TAGS",
       "path": "X/CONVENCOES-CATEGORIAS-TAGS.md"
     },
     {
-      "basename": "_INDEX",
-      "path": "X/TEMPLATE/SNIPPETS/_INDEX.md"
+      "basename": "footnote",
+      "path": "X/Templates/Snippets/footnote.md"
     },
     {
-      "basename": "POST-TEMPLATE",
-      "path": "X/TEMPLATE/POST-TEMPLATE.md"
-    },
-    {
-      "basename": "block-code-tutorial",
-      "path": "X/TEMPLATE/SNIPPETS/block-code-tutorial.md"
-    },
-    {
-      "basename": "add img post",
-      "path": "X/TEMPLATE/add img post.md"
-    },
-    {
-      "basename": "GALLERY-POST-TEMPLATE",
-      "path": "X/TEMPLATE/GALLERY-POST-TEMPLATE.md"
-    },
-    {
-      "basename": "DAILY-CALENDAR-TEMPLATE",
-      "path": "X/TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
-    },
-    {
-      "basename": "2025-12-08",
-      "path": "CALENDAR/2025-12-08.md"
-    },
-    {
-      "basename": "2025-07-09",
-      "path": "CALENDAR/2025-07-09.md"
-    },
-    {
-      "basename": "2025-08-20",
-      "path": "CALENDAR/2025-08-20.md"
-    },
-    {
-      "basename": "2025-06-25",
-      "path": "CALENDAR/2025-06-25.md"
-    },
-    {
-      "basename": "2025-06-14",
-      "path": "CALENDAR/2025-06-14.md"
-    },
-    {
-      "basename": "2025-05-26",
-      "path": "CALENDAR/2025-05-26.md"
-    },
-    {
-      "basename": "2025-05-28",
-      "path": "CALENDAR/2025-05-28.md"
-    },
-    {
-      "basename": "digital-garden-home",
-      "path": "Efforts/PROJECTS/Digital-Garden/digital-garden-home.md"
-    },
-    {
-      "basename": "Digital-Garden",
-      "path": "Efforts/PROJECTS/Digital-Garden/Digital-Garden.md"
-    },
-    {
-      "basename": "2025-05-26",
-      "path": "Calendar/DAILY/2025-05-26.md"
-    },
-    {
-      "basename": "template_daily_note",
-      "path": "System/TEMPLATE/FORMAT/CALENDAR/template_daily_note.md"
-    },
-    {
-      "basename": "template_area_note",
-      "path": "System/TEMPLATE/FORMAT/template_area_note.md"
-    },
-    {
-      "basename": "template_area",
-      "path": "System/TEMPLATE/FORMAT/template_area.md"
-    },
-    {
-      "basename": "Roadmap Ciência de Dados, ML & DL",
-      "path": "Efforts/PROJECTS/Digital-Garden/Roadmap Ciência de Dados, ML & DL.md"
-    },
-    {
-      "basename": "mapas-galaticos",
-      "path": "Efforts/AREAS/Writing/von/conceitos/mapas-galaticos.md"
-    },
-    {
-      "basename": "draft-dg-tests",
-      "path": "Drafts/draft-dg-tests.md"
-    },
-    {
-      "basename": "Les Failles - Pomme",
-      "path": "Entertainment/MUSIC/Les Failles - Pomme.md"
-    },
-    {
-      "basename": "2025-05-25",
-      "path": "Calendar/DAILY/2025-05-25.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "ai-data-scientist_page-0001",
-      "path": "System/MEDIA/ai-data-scientist_page-0001.jpg"
-    },
-    {
-      "basename": "AI and Data Scientist .sh roadmap",
-      "path": "Drafts/AI and Data Scientist .sh roadmap.canvas"
-    },
-    {
-      "basename": "Data Science Python Maps",
-      "path": "Atlas/08_MAPS/Data Science Python Maps.md"
-    },
-    {
-      "basename": "index-datascience",
-      "path": "Atlas/01_INDEX/index-datascience.md"
+      "basename": "embed-youtube",
+      "path": "X/Templates/Snippets/embed-youtube.md"
     }
   ],
   "omittedPaths": [],

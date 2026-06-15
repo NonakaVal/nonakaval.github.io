@@ -1,6 +1,6 @@
 ---
 title: Human Sadness - Julian Casablancas+The Voidz
-description:
+description: Julian 💕
 date: 2026-06-12 13:25:11
 author: Val
 categories:
@@ -20,5 +20,5 @@ Uma das melhores músicas já feitas na história, além do seu tempo...
 
 
 
-[Releitura de um poema escrito há séculos.](https://nonakaval.github.io/posts/rumi/)
+[Releitura de um poema escrito a séculos]({% post_url 2026-06-01-rumi %})
 
