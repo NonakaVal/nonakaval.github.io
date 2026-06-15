@@ -53,13 +53,13 @@ A introdução deve conter apenas o essencial. Tudo o que é necessário saber p
 
 Neste momento, podemos detalhar mais informações relevantes e fornecer dados complementares que fundamentam e justificam as conclusões e recomendações.
 
-![](https://cdn-images-1.medium.com/max/873/0*eTyJI9QrM6ckMV9g.png)
+<img src="assets/post-images/report/2.png" alt="go3">
 
 #### **Conclusões**
 
 Por fim, apresentamos as próximas ações necessárias.
 
-![](https://cdn-images-1.medium.com/max/873/0*pUP9nEKGwjOBeKzv.png)
+<img src="assets/post-images/report/3.png" alt="go4">
 
 ---
 
