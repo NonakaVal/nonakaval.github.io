@@ -150,9 +150,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-15-base-bom-relatorio.md",
+                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -165,7 +165,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-15-base-bom-relatorio"
+              "title": "2026-06-12-Vai-ficar-tudo-bem"
             }
           }
         ],
@@ -247,8 +247,7 @@
               "title": "Outline of TIPOGRAFIA"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -377,10 +376,10 @@
   },
   "active": "ce92a5f1befc98f6",
   "lastOpenFiles": [
+    "2026-06-15-base-bom-relatorio.md",
     "X/Base.base",
     "X/Templates/Snippets/Insert prompt.md",
     "X/Templates/Snippets/post url.md",
-    "2026-06-15-base-bom-relatorio.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-09-22-10-dicas-#1.md",

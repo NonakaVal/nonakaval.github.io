@@ -1,6 +1,6 @@
 ---
-title: Vai ficar tudo bem
-description: como desativa a depressão ?
+title: O que realmente importa
+description: Um desabafo leve
 date: 2026-06-12 13:39:59
 author: Val
 categories:
