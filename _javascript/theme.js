@@ -6,6 +6,7 @@
 class Theme {
   static #modeKey = 'mode';
   static #modeAttr = 'data-mode';
+  static #darkMedia = window.matchMedia('(prefers-color-scheme: dark)');
   static switchable = !document.documentElement.hasAttribute(this.#modeAttr);
 
   static get DARK() {
@@ -26,14 +27,14 @@ class Theme {
   /**
    * Gets the current visual state of the theme.
    *
-   * @returns {string} The current visual state, either the manually set mode,
-   *                   or the default ('dark').
+   * @returns {string} The current visual state, either the mode if it exists,
+   *                   or the system dark mode state ('dark' or 'light').
    */
   static get visualState() {
     if (this.#hasMode) {
       return this.#mode;
     } else {
-      return this.DARK;
+      return this.#sysDark ? this.DARK : this.LIGHT;
     }
   }
 
@@ -52,6 +53,10 @@ class Theme {
     return this.#mode !== null;
   }
 
+  static get #sysDark() {
+    return this.#darkMedia.matches;
+  }
+
   /**
    * Maps theme modes to provided values
    * @param {string} light Value for light mode
@@ -66,12 +71,21 @@ class Theme {
   }
 
   /**
-   * Initializes the theme based on the stored mode (defaults to dark)
+   * Initializes the theme based on system preferences or stored mode
    */
   static init() {
     if (!this.switchable) {
       return;
     }
+
+    this.#darkMedia.addEventListener('change', () => {
+      const lastMode = this.#mode;
+      this.#clearMode();
+
+      if (lastMode !== this.visualState) {
+        this.#notify();
+      }
+    });
 
     if (!this.#hasMode) {
       return;
@@ -91,7 +105,7 @@ class Theme {
     if (this.#hasMode) {
       this.#clearMode();
     } else {
-      this.#setLight();
+      this.#sysDark ? this.#setLight() : this.#setDark();
     }
     this.#notify();
   }

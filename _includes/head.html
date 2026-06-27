@@ -99,6 +99,16 @@
 
   <!-- Scripts -->
 
+  <!-- Tema padrão: escuro na primeira visita.
+       Deve rodar ANTES do theme.min.js (que lê localStorage 'theme').
+       Usa flag separada para não reaplicar dark se o usuário escolher 'Sistema'. -->
+  <script>
+    if (!localStorage.getItem('theme') && !localStorage.getItem('theme-default-seeded')) {
+      localStorage.setItem('theme', 'dark');
+      localStorage.setItem('theme-default-seeded', '1');
+    }
+  </script>
+
   <script src="{{ '/assets/js/dist/theme.min.js' | relative_url }}"></script>
 
   {% include js-selector.html lang=lang %}
