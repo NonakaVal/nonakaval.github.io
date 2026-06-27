@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Base",
+      "path": "X/Base.base"
+    },
+    {
       "basename": "sobre-oq-ha-de-mais-belo-nas-flores",
       "path": "+/sobre-oq-ha-de-mais-belo-nas-flores.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "2025-05-28-music-tranquility-base",
       "path": "2025-05-28-music-tranquility-base.md"
-    },
-    {
-      "basename": "Base",
-      "path": "X/Base.base"
     },
     {
       "basename": "Insert prompt",
