@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-07-03-flores.md",
-                "mode": "preview",
+                "file": "2026-05-24-limite-da-individualidade.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-07-03-flores"
+              "title": "2026-05-24-limite-da-individualidade"
             }
           }
         ],
@@ -278,8 +278,9 @@
   },
   "active": "4c48fb0a5dc1447b",
   "lastOpenFiles": [
-    "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
     "2026-07-03-flores.md",
+    "+/Untitled.md",
+    "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
     "X/Base.base",
     "Calendar/2026-07-01.md",
     "+",
@@ -305,7 +306,6 @@
     "X/Templates/Snippets/prompt-success.md",
     "X/Templates/Snippets/prompt-tip.md",
     "X/Templates/Snippets/prompt-bug.md",
-    "X/Templates/Snippets/prompt-danger.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",
