@@ -23,38 +23,14 @@
             }
           },
           {
-            "id": "70cdc73f806acdaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "sobre-oq-ha-de-mais-belo-nas-flores"
-            }
-          },
-          {
             "id": "4c48fb0a5dc1447b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-05-24-limite-da-individualidade.md",
+                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -67,11 +43,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-05-24-limite-da-individualidade"
+              "title": "2026-06-12-Vai-ficar-tudo-bem"
+            }
+          },
+          {
+            "id": "8f1765402426703c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-07-03-flores.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-03-flores"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +94,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -218,8 +218,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -258,27 +258,29 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
-      "bases:Create new base": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "workspaces:Gerenciar leiautes da área de trabalho": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "4c48fb0a5dc1447b",
+  "active": "7f5e1e9ff1328ea0",
   "lastOpenFiles": [
+    "2026-06-07-O-agora.md",
+    "2026-07-07-eramos-vulgares.md",
     "2026-07-03-flores.md",
+    "2026-05-24-limite-da-individualidade.md",
     "+/Untitled.md",
     "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
     "X/Base.base",
@@ -288,9 +290,7 @@
     "2026-06-12-Vai-ficar-tudo-bem.md",
     "2026-06-12-humansadness.md",
     "2026-06-12-eterno.md",
-    "2026-06-07-O-agora.md",
     "2026-06-01-rumi.md",
-    "2026-05-24-limite-da-individualidade.md",
     "2026-03-16-solidao.md",
     "2025-05-26-About-me.md",
     "2025-05-28-music-tranquility-base.md",
@@ -305,7 +305,6 @@
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/Templates/Snippets/prompt-success.md",
     "X/Templates/Snippets/prompt-tip.md",
-    "X/Templates/Snippets/prompt-bug.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",

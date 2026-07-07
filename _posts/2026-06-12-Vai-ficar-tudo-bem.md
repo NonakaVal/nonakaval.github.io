@@ -11,7 +11,7 @@ tags:
   - poesia
   - autoconhecimento
 pin: false
-image: assets/img/post-banners/sadcat.jpg
+image: assets/img/post-banners/julianwolf.png
 math: false
 mermaid: false
 calendar: "[[2026-06-12]]"
