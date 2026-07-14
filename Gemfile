@@ -7,6 +7,9 @@ gem "jekyll-theme-chirpy", "~> 7.3"
 # Fix sass native build issues on GitHub Actions
 gem "sass-embedded", "1.77.8"
 
+# Ruby 3.4+: erb is no longer a default gem loaded outside Bundler
+gem "erb"
+
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do

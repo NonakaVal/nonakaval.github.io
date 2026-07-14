@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-07-03-flores.md",
+                "file": "eramos-vulgares.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -67,11 +67,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-07-03-flores"
+              "title": "eramos-vulgares"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +94,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -262,24 +262,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "workspaces:Gerenciar leiautes da área de trabalho": false,
-      "bases:Criar nova base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "7f5e1e9ff1328ea0",
+  "active": "8f1765402426703c",
   "lastOpenFiles": [
-    "2026-06-07-O-agora.md",
-    "2026-07-07-eramos-vulgares.md",
     "2026-07-03-flores.md",
+    "2026-07-11-pomme-1.md",
+    "2026-07-12-new post.md",
+    "X/TIPOGRAFIA.md",
+    "eramos-vulgares.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-07-O-agora.md",
     "2026-05-24-limite-da-individualidade.md",
     "+/Untitled.md",
     "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
@@ -287,7 +291,6 @@
     "Calendar/2026-07-01.md",
     "+",
     "2026-06-15-base-bom-relatorio.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
     "2026-06-12-humansadness.md",
     "2026-06-12-eterno.md",
     "2026-06-01-rumi.md",
@@ -302,9 +305,6 @@
     "2025-08-20-arc-framework.md",
     "2025-12-09-o-conhecimento.md",
     "Calendar/2026-06-15.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "X/Templates/Snippets/prompt-success.md",
-    "X/Templates/Snippets/prompt-tip.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",
