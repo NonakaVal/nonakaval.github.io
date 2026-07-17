@@ -17,10 +17,19 @@ package-lock.json
 
 # IDE configurations
 .idea
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/tasks.json
+.vscode/
+
+# Local & personal config
+.gitconfig
+.mcp.json
+
+# Shell dotfiles (local)
+.bash_profile
+.bashrc
+.zshrc
+.profile
+.zprofile
+.ripgreprc
 
 # Misc
 _sass/vendors
