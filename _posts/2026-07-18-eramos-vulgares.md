@@ -1,7 +1,7 @@
 ---
-title: Céu estrelado
+title: Céu
 description: "Me aventurando na escrita de poesias #2"
-date: 2026-07-07 02:26:19
+date: 2025-06-15 02:26:19
 author: Val
 categories:
   - Escrita

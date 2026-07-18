@@ -24,6 +24,6 @@ calendar: "[[2026-05-24]]"
 
 
 {: .prompt-quote }
-> [O limite da indivualide]({% post_url 2026-05-24-limite-da-individualidade %})
+> [Conhecimento]({% post_url 2025-12-09-o-conhecimento %})
 
 

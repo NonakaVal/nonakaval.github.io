@@ -91,8 +91,10 @@ refactor: true
         SakanaWidget.registerCharacter(`custom-${index}`, character);
       });
 
+      const randomIndex = Math.floor(Math.random() * imagePaths.length);
+
       new SakanaWidget({
-        character: 'custom-0',
+        character: `custom-${randomIndex}`,
         controls: true,
         rod: true,
         draggable: true
