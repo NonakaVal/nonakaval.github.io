@@ -52,18 +52,48 @@ refactor: true
 {% endfor %}
 {% endif %}
 
-<div>
+<div class="home-widget-row">
   <style>
+    /* Desktop: untouched — widget floats right, post-list wraps left. */
     #sakana-widget {
       float: right;
       margin: 0;
     }
 
+    /* Mobile-only: widget + trending tags side-by-side. */
     @media (max-width: 768px) {
+      .home-widget-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 20px 0;
+      }
+
       #sakana-widget {
         float: none;
-        margin: 20px auto;
+        margin: 0;
         display: block;
+        flex-shrink: 0;
+      }
+
+      .home-widget-tags {
+        flex: 1 1 auto;
+        min-width: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.25rem 0.4rem;
+      }
+
+      /* Extra-small phones: shrink the widget visually to free horizontal
+         room for the tags. transform-origin keeps the left edge fixed so the
+         widget stays anchored next to the post-list. */
+      @media (max-width: 400px) {
+        #sakana-widget {
+          transform: scale(0.85);
+          transform-origin: left center;
+        }
       }
     }
   </style>
@@ -71,6 +101,47 @@ refactor: true
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.1/lib/sakana.min.css" />
 
   <div id="sakana-widget"></div>
+
+  <!-- Mobile-only trending tags beside the widget (hidden on desktop via d-md-none) -->
+  {% assign widget_max_tags = 5 %}
+  {% assign widget_size_list = '' | split: '' %}
+  {% assign widget_tag_list = '' | split: '' %}
+
+  {% for tag in site.tags %}
+    {% assign widget_size = tag | last | size %}
+    {% assign widget_size_list = widget_size_list | push: widget_size %}
+    {% assign widget_tag_str = tag | first | append: '::' | append: widget_size %}
+    {% assign widget_tag_list = widget_tag_list | push: widget_tag_str %}
+  {% endfor %}
+
+  {% assign widget_size_list = widget_size_list | sort | reverse %}
+  {% assign widget_tag_list = widget_tag_list | sort_natural %}
+
+  {% assign widget_trending_tags = '' | split: '' %}
+
+  {% for widget_size in widget_size_list limit: widget_max_tags %}
+    {% for widget_tag_str in widget_tag_list %}
+      {% assign widget_tag = widget_tag_str | split: '::' %}
+      {% assign widget_tag_name = widget_tag | first %}
+      {% assign widget_tag_count = widget_tag | last | plus: 0 %}
+      {% if widget_tag_count == widget_size %}
+        {% unless widget_trending_tags contains widget_tag_name %}
+          {% assign widget_trending_tags = widget_trending_tags | push: widget_tag_name %}
+          {% break %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if widget_trending_tags.size > 0 %}
+  <div class="home-widget-tags d-md-none">
+    <i class="fa fa-tags fa-fw me-1"></i>
+    {% for widget_tag_name in widget_trending_tags %}
+      {% assign widget_tag_url = widget_tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
+      <a href="{{ widget_tag_url | relative_url }}" class="post-tag no-text-decoration">{{ widget_tag_name }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
 
   <script>
     function initSakanaWidget() {
