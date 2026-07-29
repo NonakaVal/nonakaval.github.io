@@ -8,7 +8,6 @@ categories:
 tags:
   - ensaio
   - filosofia
-  - frase
 pin:
 image: assets/img/post-banners/limite-da-individualidade.png
 math: false

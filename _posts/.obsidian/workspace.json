@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-05-24-limite-da-individualidade.md",
-                "mode": "source",
+                "file": "2025-05-26-About-me.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -67,11 +67,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-05-24-limite-da-individualidade"
+              "title": "2025-05-26-About-me"
+            }
+          },
+          {
+            "id": "cf0e3676f3469bc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-12-eterno.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-12-eterno"
+            }
+          },
+          {
+            "id": "7a6d039773d2bdd9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-06-12-eterno.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-12-eterno"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -272,40 +320,40 @@
       "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "2e9339e8505922f3",
+  "active": "7a6d039773d2bdd9",
   "lastOpenFiles": [
+    "2026-07-29-eterno-retorno-nietzsche.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2025-06-10-introduction-to-ruby.md",
+    "2025-08-20-arc-framework.md",
+    "2025-09-22-10-dicas-#1.md",
     "2025-12-09-o-conhecimento.md",
     "2026-05-24-limite-da-individualidade.md",
     "2026-06-01-rumi.md",
-    "2026-06-12-eterno.md",
     "2026-06-07-O-agora.md",
+    "2026-06-12-eterno.md",
     "2026-06-12-humansadness.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-15-base-bom-relatorio.md",
+    "2026-07-03-flores.md",
     "2026-07-18-eramos-vulgares.md",
+    "X/Base.base",
     "2025-05-26-About-me.md",
     "X/music-tranquility-base.md",
-    "2026-07-03-flores.md",
     "2025-06-15-eramos-vulgares.md",
-    "2025-06-10-introduction-to-ruby.md",
-    "2025-08-20-arc-framework.md",
-    "X/Base.base",
     "2026-07-11-pomme-1.md",
     "2026-07-12-new post.md",
     "X/TIPOGRAFIA.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
     "+/Untitled.md",
     "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
     "Calendar/2026-07-01.md",
     "+",
-    "2026-06-15-base-bom-relatorio.md",
     "2026-03-16-solidao.md",
-    "X/Templates/Snippets/Insert prompt.md",
-    "X/Templates/Snippets/post url.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2025-09-22-10-dicas-#1.md",
     "X/Templates.base",
     "X/shellcommands/gca.py",
     "X/shellcommands",

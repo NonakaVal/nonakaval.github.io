@@ -4,7 +4,10 @@ description: A Base de um Bom Relatório
 date: 2026-06-15 18:21:19
 author: Val
 categories:
+  - Aprendizado
 tags:
+  - dicas
+  - tutorial
 pin: false
 image: assets/img/post-banners/report.png
 math: false
