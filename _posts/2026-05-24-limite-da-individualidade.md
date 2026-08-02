@@ -6,8 +6,7 @@ author: Val
 categories:
   - Escrita
 tags:
-  - ensaio
-  - filosofia
+  - Filosofia
 pin:
 image: assets/img/post-banners/limite-da-individualidade.png
 math: false

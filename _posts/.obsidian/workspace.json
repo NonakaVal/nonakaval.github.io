@@ -100,7 +100,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-01-rumi.md",
+                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -115,7 +115,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-01-rumi"
+              "title": "2026-06-12-Vai-ficar-tudo-bem"
             }
           }
         ],
@@ -153,10 +153,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:(alt)",
+                "query": "tag:#ensaio",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -199,7 +199,8 @@
               "title": "Outline of TIPOGRAFIA"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -212,7 +213,6 @@
       {
         "id": "e440d8c83e5cffca",
         "type": "tabs",
-        "dimension": 39.125,
         "children": [
           {
             "id": "33905676c292e79d",
@@ -268,48 +268,30 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "5b23c0c6ef0fb866",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
-        "currentTab": 3
-      },
-      {
-        "id": "ce3287dd365563ef",
-        "type": "tabs",
-        "dimension": 60.875,
-        "children": [
-          {
-            "id": "b71cfbf9c93115c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "X/TIPOGRAFIA.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "TIPOGRAFIA"
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -322,26 +304,27 @@
       "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "7a6d039773d2bdd9",
   "lastOpenFiles": [
     "2026-06-12-eterno.md",
-    "2026-07-29-eterno-retorno-nietzsche.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2025-06-10-introduction-to-ruby.md",
+    "2026-06-15-base-bom-relatorio.md",
     "2025-08-20-arc-framework.md",
-    "2025-09-22-10-dicas-#1.md",
-    "2025-12-09-o-conhecimento.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2026-06-01-rumi.md",
+    "2025-06-10-introduction-to-ruby.md",
     "2026-06-07-O-agora.md",
+    "2026-06-01-rumi.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2025-12-09-o-conhecimento.md",
+    "2025-09-22-10-dicas-#1.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "X/TIPOGRAFIA.md",
+    "2026-07-29-eterno-retorno-nietzsche.md",
     "2026-06-12-humansadness.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-06-15-base-bom-relatorio.md",
     "2026-07-03-flores.md",
     "2026-07-18-eramos-vulgares.md",
     "X/Base.base",
@@ -350,7 +333,6 @@
     "2025-06-15-eramos-vulgares.md",
     "2026-07-11-pomme-1.md",
     "2026-07-12-new post.md",
-    "X/TIPOGRAFIA.md",
     "+/Untitled.md",
     "+/sobre-oq-ha-de-mais-belo-nas-flores.md",
     "Calendar/2026-07-01.md",

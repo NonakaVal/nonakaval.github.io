@@ -6,7 +6,7 @@ author: Val
 categories:
   - Escrita
 tags:
-  - poesia
+  - Poesia
 pin: false
 image: assets/img/post-banners/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
 math: false

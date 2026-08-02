@@ -7,7 +7,7 @@ categories:
   - Cultura
   - Pessoal
 tags:
-  - musica
+  - Música
 pin:
 image: assets/img/post-banners/tranquility-base-hotel.jpg
 math: false

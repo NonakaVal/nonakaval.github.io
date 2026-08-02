@@ -6,9 +6,8 @@ author: Val
 categories:
   - Escrita
 tags:
-  - ensaio
-  - filosofia
-  - existencialismo
+  - Filosofia
+  - Existencialismo
 pin: false
 image: assets/img/post-banners/o-conhecimento.png
 math: false

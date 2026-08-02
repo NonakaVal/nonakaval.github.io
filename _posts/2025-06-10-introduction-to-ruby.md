@@ -6,8 +6,7 @@ author: Val
 categories:
   - Programacao
 tags:
-  - ruby
-  - tutorial
+  - Ruby
 pin:
 image: assets/img/post-banners/ruby.png
 math: false

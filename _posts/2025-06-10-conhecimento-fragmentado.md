@@ -6,8 +6,7 @@ author: Val
 categories:
   - Reflexao
 tags:
-  - pensamento-sistemico
-  - ensaio
+  - Pensamento-sistemico
 pin: false
 image: assets/img/post-banners/conhecimento-fragmentado.png
 math: false

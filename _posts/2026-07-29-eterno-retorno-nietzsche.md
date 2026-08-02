@@ -7,8 +7,8 @@ categories:
   - Reflexao
   - Releitura
 tags:
-  - filosofia
-  - existencialismo
+  - Filosofia
+  - Existencialismo
 pin: false
 image: assets/img/post-banners/eternoretorno.jpg
 math: false

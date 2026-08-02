@@ -6,8 +6,7 @@ author: Val
 categories:
   - Aprendizado
 tags:
-  - dicas
-  - tutorial
+  - Dicas
 pin: false
 image: assets/img/post-banners/report.png
 math: false

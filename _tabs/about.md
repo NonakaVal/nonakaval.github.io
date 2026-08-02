@@ -6,13 +6,29 @@ order: 4
 
 <img src="/assets/img/profile/profire.jpg" width="180" alt="Foto de perfil">
 
-Like the title says, I'm not a dev—just love seeing how far open-source can go and starting to believe that humanity isn’t entirely doomed in the process.
+Gosto de escrever, estudar e resolver problemas complexos sem motivo nenhum, 
+Também de café  e gatos.
+
+Nada aqui foi gerado, por mais que eu adore usar IA e seja um entusiasta... (e use de forma intensiva para incontáveis fíns kk ) acho importante preservarmos o valor da escrita, esse blog é um projeto muito pessoal com diversos propósitos, nenhum deles envolvem alcance, só queria um lugar para publicar algumas das milhares de notas que tenho desde de nem me lembro quando.. escritas e ensaios pessoais, e de autores que me fazem pensar.
+
+<br><br>
 
 
+┌────────────────────────────────▰▰▰
 <img src="/assets/img/profile/tab.gif" alt="gif">
+└───────────────────────────▰▰▰
 
-Links:
 
-- <https://www.youtube.com/@nonaka96>
-- <https://www.instagram.com/nonaka.val>
-- <mailto:valdenirnonaka@gmail.com>
+<br><br><br><br>
+
+
+<pre>
+┌──┤ SOCIAL ├─────────▰▰▰
+│
+├─◈ <a href="https://www.instagram.com/nonaka.val">Instagram</a>
+├─◈ <a href="https://www.youtube.com/@nonaka96">YouTube</a>
+├─◈ <a href="https://medium.com/@valdenirnonaka">Medium</a>
+│
+└──────────────────────────────▰▰▰
+
+</pre>

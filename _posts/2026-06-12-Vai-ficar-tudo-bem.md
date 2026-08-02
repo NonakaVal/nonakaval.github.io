@@ -7,9 +7,8 @@ categories:
   - Pessoal
   - Escrita
 tags:
-  - ensaio
-  - poesia
-  - autoconhecimento
+  - Poesia
+  - Autoconhecimento
 pin: false
 image: assets/img/post-banners/julianwolf.png
 math: false

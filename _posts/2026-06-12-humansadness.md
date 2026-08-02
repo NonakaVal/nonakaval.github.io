@@ -6,7 +6,7 @@ author: Val
 categories:
   - Cultura
 tags:
-  - musica
+  - Música
 pin: false
 image: assets/img/post-banners/julianc.png
 math: false

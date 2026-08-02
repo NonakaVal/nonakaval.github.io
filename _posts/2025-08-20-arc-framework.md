@@ -6,8 +6,7 @@ author: Val
 categories:
   - Aprendizado
 tags:
-  - pkm
-  - tutorial
+  - PKM
 pin:
 image: assets/img/post-banners/arc-framework.png
 math: false

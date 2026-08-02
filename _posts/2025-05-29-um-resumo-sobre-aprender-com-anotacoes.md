@@ -6,9 +6,8 @@ author: Val
 categories:
   - Aprendizado
 tags:
-  - pkm
-  - tutorial
-  - dicas
+  - PKM
+  - Dicas
 pin: false
 image: assets/img/post-banners/aprender-com-anotacoes.png
 math: false
