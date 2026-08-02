@@ -100,7 +100,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-12-eterno.md",
+                "file": "2026-06-01-rumi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -115,7 +115,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-12-eterno"
+              "title": "2026-06-01-rumi"
             }
           }
         ],
@@ -139,7 +139,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -326,6 +328,7 @@
   },
   "active": "7a6d039773d2bdd9",
   "lastOpenFiles": [
+    "2026-06-12-eterno.md",
     "2026-07-29-eterno-retorno-nietzsche.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2025-06-10-conhecimento-fragmentado.md",
@@ -336,7 +339,6 @@
     "2026-05-24-limite-da-individualidade.md",
     "2026-06-01-rumi.md",
     "2026-06-07-O-agora.md",
-    "2026-06-12-eterno.md",
     "2026-06-12-humansadness.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
     "2026-06-15-base-bom-relatorio.md",
