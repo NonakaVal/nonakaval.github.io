@@ -3,12 +3,11 @@ title: O Eterno Retorno - Nietzsche
 description: " Nietzsche, Gaia Ciência, §341"
 date: 2026-07-29 14:56:13
 author: Val
-categories:
-  - Reflexao
-  - Releitura
 tags:
   - Filosofia
   - Existencialismo
+  - Reflexao
+  - Releitura
 pin: false
 image: assets/img/post-banners/eternoretorno.jpg
 math: false

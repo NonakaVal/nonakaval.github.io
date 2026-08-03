@@ -3,10 +3,9 @@ title: Não me entenda mal
 description: A Base de um Bom Relatório
 date: 2026-06-15 18:21:19
 author: Val
-categories:
-  - Aprendizado
 tags:
   - Dicas
+  - Aprendizado
 pin: false
 image: assets/img/post-banners/report.png
 math: false

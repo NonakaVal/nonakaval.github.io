@@ -3,11 +3,11 @@ title: Conhecimento
 description: Trechos aleatório de um projeto literário ai
 date: 2025-12-09 05:14:48
 author: Val
-categories:
-  - Escrita
 tags:
   - Filosofia
   - Existencialismo
+  - Escrita
+  - Pessoal
 pin: false
 image: assets/img/post-banners/o-conhecimento.png
 math: false

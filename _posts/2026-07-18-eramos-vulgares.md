@@ -3,10 +3,10 @@ title: Céu
 description: "Me aventurando na escrita de poesias #2"
 date: 2025-06-15 02:26:19
 author: Val
-categories:
-  - Escrita
 tags:
   - Poesia
+  - Escrita
+  - Pessoal
 pin: false
 image: assets/img/post-banners/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
 math: false

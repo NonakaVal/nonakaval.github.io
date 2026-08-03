@@ -23,6 +23,18 @@ package-lock.json
 .gitconfig
 .mcp.json
 
+# AI / Session files
+.tmp/
+.opencode/
+.claude/
+.cursor/
+.agents/
+.ai/
+.context/
+AGENTS.md
+CLAUDE.md
+.cursorrules
+
 # Shell dotfiles (local)
 .bash_profile
 .bashrc

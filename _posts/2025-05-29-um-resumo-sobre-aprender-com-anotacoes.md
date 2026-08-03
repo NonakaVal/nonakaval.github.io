@@ -3,11 +3,11 @@ title: Um resumo sobre aprender com anotações
 description: Um resumo conciso do meu primeiro vídeo no youtube sobre estar tomando notas.
 date: 2025-05-29 15:50:50
 author: Val
-categories:
-  - Aprendizado
 tags:
   - PKM
   - Dicas
+  - Youtube
+  - Obsidian
 pin: false
 image: assets/img/post-banners/aprender-com-anotacoes.png
 math: false

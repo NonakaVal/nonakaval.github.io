@@ -3,10 +3,9 @@ title: Compreensão Fragmentada
 description: Explorando o problema de estudar apenas partes de um sistema.
 date: 2025-06-10 15:05:05
 author: Val
-categories:
-  - Reflexao
 tags:
-  - Pensamento-sistemico
+  - Alegação
+  - Escrita
 pin: false
 image: assets/img/post-banners/conhecimento-fragmentado.png
 math: false

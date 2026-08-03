@@ -100,7 +100,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
+                "file": "2026-07-29-eterno-retorno-nietzsche.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -115,7 +115,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-12-Vai-ficar-tudo-bem"
+              "title": "2026-07-29-eterno-retorno-nietzsche"
             }
           }
         ],
@@ -153,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ensaio",
+                "query": "tag:#Escrita",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -199,8 +199,7 @@
               "title": "Outline of TIPOGRAFIA"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -310,23 +309,23 @@
   },
   "active": "7a6d039773d2bdd9",
   "lastOpenFiles": [
-    "2026-06-12-eterno.md",
-    "2026-06-15-base-bom-relatorio.md",
-    "2025-08-20-arc-framework.md",
-    "2025-06-10-introduction-to-ruby.md",
-    "2026-06-07-O-agora.md",
-    "2026-06-01-rumi.md",
-    "2026-05-24-limite-da-individualidade.md",
     "2025-12-09-o-conhecimento.md",
-    "2025-09-22-10-dicas-#1.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "X/TIPOGRAFIA.md",
-    "2026-07-29-eterno-retorno-nietzsche.md",
-    "2026-06-12-humansadness.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2026-06-07-O-agora.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
     "2026-07-03-flores.md",
     "2026-07-18-eramos-vulgares.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2026-06-01-rumi.md",
+    "2025-09-22-10-dicas-#1.md",
+    "2025-08-20-arc-framework.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2026-07-29-eterno-retorno-nietzsche.md",
+    "2025-06-10-introduction-to-ruby.md",
+    "2026-06-12-eterno.md",
+    "2026-06-15-base-bom-relatorio.md",
+    "X/TIPOGRAFIA.md",
+    "2026-06-12-humansadness.md",
     "X/Base.base",
     "2025-05-26-About-me.md",
     "X/music-tranquility-base.md",
