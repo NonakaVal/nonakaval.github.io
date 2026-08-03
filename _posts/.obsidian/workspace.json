@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-05-24-limite-da-individualidade.md",
+                "file": "2026-06-12-humansadness.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-05-24-limite-da-individualidade"
+              "title": "2026-06-12-humansadness"
             }
           },
           {
@@ -113,7 +113,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:Alegação",
+                "query": "tag:#Cultura",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -159,7 +159,8 @@
               "title": "Outline of TIPOGRAFIA"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -250,8 +251,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,19 +270,20 @@
   },
   "active": "2e9339e8505922f3",
   "lastOpenFiles": [
+    "X/music-tranquility-base.md",
+    "2026-06-12-humansadness.md",
+    "2026-05-24-limite-da-individualidade.md",
     "2026-07-03-flores.md",
     "2026-07-29-eterno-retorno-nietzsche.md",
     "+  Não Postado/eramos-vulgares.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/TIPOGRAFIA.md",
-    "X/music-tranquility-base.md",
     "X/CONVENCOES-CATEGORIAS-TAGS.md",
     "X/Base.base",
     "X/Templates/DAILY-CALENDAR-TEMPLATE.md",
     "+  Não Postado",
     "2026-06-15-base-bom-relatorio.md",
     "2025-12-09-o-conhecimento.md",
-    "2026-05-24-limite-da-individualidade.md",
     "2026-06-07-O-agora.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
     "2025-06-10-conhecimento-fragmentado.md",
@@ -291,7 +292,6 @@
     "2025-08-20-arc-framework.md",
     "2025-06-10-introduction-to-ruby.md",
     "2026-06-12-eterno.md",
-    "2026-06-12-humansadness.md",
     "2025-05-26-About-me.md",
     "2025-06-15-eramos-vulgares.md",
     "2026-07-11-pomme-1.md",

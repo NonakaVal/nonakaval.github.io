@@ -5,7 +5,6 @@ date: 2026-06-12 13:25:11
 author: Val
 tags:
   - Música
-  - Cultura
 pin: false
 image: assets/img/post-banners/julianc.png
 math: false
