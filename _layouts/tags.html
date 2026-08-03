@@ -4,18 +4,23 @@ layout: page
 ---
 
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign tags = '' | split: '' %}
+  {% assign tag_pairs = '' | split: '' %}
   {% for t in site.tags %}
-    {% assign tags = tags | push: t[0] %}
+    {% assign tag_count = t[1] | size %}
+    {% assign tag_inv = 999 | minus: tag_count %}
+    {% assign tag_padded = tag_inv | prepend: '000' | slice: -3, 3 %}
+    {% assign tag_pair = tag_padded | append: '::' | append: t[0] %}
+    {% assign tag_pairs = tag_pairs | push: tag_pair %}
   {% endfor %}
 
-  {% assign sorted_tags = tags | sort_natural %}
+  {% assign sorted_tag_pairs = tag_pairs | sort %}
 
-  {% for t in sorted_tags %}
+  {% for pair in sorted_tag_pairs %}
+    {% assign tag_name = pair | split: '::' | last %}
     <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
-        {{ t -}}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
+      <a class="tag" href="{{ tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ tag_name -}}
+        <span class="text-muted">{{ site.tags[tag_name].size }}</span>
       </a>
     </div>
   {% endfor %}

@@ -110,3 +110,20 @@ blockquote.prompt-next {
     font: var(--fa-font-solid);
   }
 }
+
+/* ==================== Archives: smaller fonts on mobile ==================== */
+@media (max-width: 768px) {
+  #archives {
+    .year {
+      font-size: 1.3rem;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+    }
+
+    .date.day {
+      font-size: 80%;
+    }
+  }
+}

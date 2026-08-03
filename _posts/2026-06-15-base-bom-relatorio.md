@@ -5,7 +5,7 @@ date: 2026-06-15 18:21:19
 author: Val
 tags:
   - Dicas
-  - Aprendizado
+  - Dados
 pin: false
 image: assets/img/post-banners/report.png
 math: false

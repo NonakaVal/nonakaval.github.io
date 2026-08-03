@@ -7,7 +7,7 @@ views:
     name: Tabela
     groupBy:
       property: file.folder
-      direction: ASC
+      direction: DESC
     order:
       - date
       - title
@@ -18,16 +18,17 @@ views:
       - author
       - file.name
     sort:
+      - property: image
+        direction: DESC
       - property: date
         direction: DESC
-      - property: image
-        direction: ASC
       - property: categories
         direction: ASC
     columnSize:
       note.date: 193
       note.title: 294
       note.description: 282
+      note.tags: 443
       note.image: 381
   - type: table
     name: Templates
