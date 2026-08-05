@@ -298,7 +298,7 @@ refactor: true
     <i class="fa-fw fas fa-archive"></i>
     <span>Arquivos</span>
   </a>
-  <button type="button" id="home-sort-btn" class="home-archives-btn" aria-pressed="false" title="Alterar ordem dos posts">
+  <button type="button" id="home-sort-btn" class="home-archives-btn d-md-none" aria-pressed="false" title="Alterar ordem dos posts">
     <i class="fa-fw fas fa-arrow-down-wide-short"></i>
     <span>Mais recentes</span>
   </button>
@@ -430,11 +430,28 @@ refactor: true
 
     state.order = getOrder();
     applyOrder();
-
     btn.addEventListener('click', function () {
       state.order = state.order === ASC ? DESC : ASC;
       setOrder(state.order);
       applyOrder();
     });
+
+    // Update ordering if another tab changes the stored order
+    window.addEventListener('storage', function (e) {
+      if (e.key === KEY) {
+        state.order = getOrder();
+        applyOrder();
+      }
+    });
+
+    // Re-apply ordering when viewport crosses the mobile breakpoint
+    try {
+      const mql = window.matchMedia('(max-width: 768px)');
+      if (typeof mql.addEventListener === 'function') {
+        mql.addEventListener('change', applyOrder);
+      } else if (typeof mql.addListener === 'function') {
+        mql.addListener(applyOrder);
+      }
+    } catch (e) { /* matchMedia unsupported */ }
   })();
 </script>
