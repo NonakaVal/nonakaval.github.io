@@ -5,8 +5,6 @@ date: 2026-08-05 19:01:44
 author: Val
 tags:
   - Escrita
-  - Reflexao
-  - Existencialismo
   - Filosofia
 pin: false
 image: assets/img/post-banners/human.jpg

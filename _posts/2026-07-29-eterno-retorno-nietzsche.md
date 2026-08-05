@@ -5,8 +5,6 @@ date: 2026-07-29 14:56:13
 author: Val
 tags:
   - Filosofia
-  - Existencialismo
-  - Reflexao
   - Releitura
 pin: false
 image: assets/img/post-banners/eternoretorno.jpg

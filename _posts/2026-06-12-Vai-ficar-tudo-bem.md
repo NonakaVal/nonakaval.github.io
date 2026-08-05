@@ -6,7 +6,6 @@ author: Val
 tags:
   - Poesia
   - Pessoal
-  - Escrita
 pin: false
 image: assets/img/post-banners/julianwolf.png
 math: false

@@ -6,6 +6,8 @@ author: Val
 tags:
   - PKM
   - Dicas
+  - Youtube
+  - Obsidian
 pin:
 image: assets/img/post-banners/arc-framework.png
 math: false
@@ -22,7 +24,7 @@ O objetivo do ARC é evitar que ideias boas fiquem paradas em anotações soltas
     Capture tudo que chamar sua atenção. Uma ideia, um insight de um livro, uma pergunta. Nesta fase, o importante é registrar sem julgar.
     
 2. **Relacionar (Relate):**  
-    Esta é a etapa mais importante. Aqui, você para de apenas coletar e começa a conectar. Relacione a nova anotação com outras que você já tem. É esse processo de ligar pontos que transforma informação bruta em conhecimento understanding.
+    Esta é a etapa mais importante. Aqui, você para de apenas coletar e começa a conectar. Relacione a nova anotação com outras que você já atem. É esse processo de ligar pontos que transforma informação bruta em conhecimento understanding.
     
 3. **Comunicar (Communicate):**  
     A etapa final é dar um propósito à ideia. Se você se sentir perdido ou desmotivado, é um sinal para pular direto para aqui. Compartilhe seu pensamento: escreva um rascunho, envie um email, discuta com alguém. Ter um ponto final—algo para _puxar_ a ideia—é crucial para manter o processo em movimento.

@@ -5,8 +5,7 @@ date: 2026-08-04 02:03:20
 author: Val
 tags:
   - Música
-  - Poesia
-  - Letra
+  - Recomendação
 pin: false
 image: assets/img/post-banners/pomme.png
 math: false

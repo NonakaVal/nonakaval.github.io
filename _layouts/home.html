@@ -98,6 +98,44 @@ refactor: true
       line-height: 1.2;
     }
 
+    /* Post order / archives toolbar: right-aligned, above the first post.
+       Neutral pills, matching the mobile tag pills (post-tag style). */
+    .home-archives-row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+      padding-right: 0.5rem;
+      margin: -0.5rem 0 0.75rem;
+    }
+
+    .home-archives-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      line-height: 1.2;
+      font-size: 0.95rem;
+      border: 1px solid var(--tag-border);
+      box-shadow: 0 0 3px 0 var(--tag-shadow);
+      color: var(--text-muted-color);
+      background: transparent;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .home-archives-btn:hover {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    .home-archives-btn.active,
+    .home-archives-btn[aria-pressed='true'] {
+      color: var(--link-color);
+      border-color: var(--link-color);
+    }
+
     /* Desktop: untouched — widget floats right, post-list wraps left. */
     #sakana-widget {
       float: right;
@@ -161,33 +199,6 @@ refactor: true
 
       .card-wrapper img {
         min-height: 110px;
-      }
-
-      /* Archives shortcut button: right-aligned, above the first post.
-         Neutral pill, matching the mobile tag pills (post-tag style). */
-      .home-archives-row {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 0.5rem;
-        margin: -0.5rem 0 0.75rem;
-      }
-
-      .home-archives-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.2rem 0.55rem;
-        border-radius: 999px;
-        line-height: 1.2;
-        font-size: 0.95rem;
-        border: 1px solid var(--tag-border);
-        box-shadow: 0 0 3px 0 var(--tag-shadow);
-        color: var(--text-muted-color);
-      }
-
-      .home-archives-btn:hover {
-        color: var(--link-color);
-        text-decoration: none;
       }
 
       /* Extra-small phones: shrink the widget visually to free horizontal
@@ -281,17 +292,21 @@ refactor: true
   </script>
 </div>
 
-<!-- Mobile-only shortcut to the archives, right above the first post. -->
-<div class="home-archives-row d-md-none">
-  <a href="{{ '/archives/' | relative_url }}" class="home-archives-btn">
+<!-- Toolbar: mobile-only shortcut to the archives + post order toggle (all screens). -->
+<div class="home-archives-row">
+  <a href="{{ '/archives/' | relative_url }}" class="home-archives-btn d-md-none">
     <i class="fa-fw fas fa-archive"></i>
     <span>Arquivos</span>
   </a>
+  <button type="button" id="home-sort-btn" class="home-archives-btn" aria-pressed="false" title="Alterar ordem dos posts">
+    <i class="fa-fw fas fa-arrow-down-wide-short"></i>
+    <span>Mais recentes</span>
+  </button>
 </div>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-  <article class="card-wrapper card">
+  <article class="card-wrapper card" data-ts-sort="{{ post.date | date: '%s' }}">
     <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
       {% assign card_body_col = '12' %}
 
@@ -351,3 +366,75 @@ refactor: true
 {% if paginator.total_pages > 1 %}
 {% include post-paginator.html %}
 {% endif %}
+
+<script>
+  (function () {
+    const list = document.getElementById('post-list');
+    const btn = document.getElementById('home-sort-btn');
+    if (!list || !btn) return;
+
+    const KEY = 'home-post-order';
+    const DESC = 'desc'; // newest first (site default)
+    const ASC = 'asc'; // oldest first ("primeiros posts primeiro")
+
+    const state = {
+      order: DESC
+    };
+
+    function getOrder() {
+      try {
+        const saved = localStorage.getItem(KEY);
+        return saved === ASC ? ASC : DESC;
+      } catch (e) {
+        return DESC;
+      }
+    }
+
+    function setOrder(order) {
+      try {
+        localStorage.setItem(KEY, order);
+      } catch (e) { /* storage unavailable */ }
+    }
+
+    function tsOf(card) {
+      const ts = card.getAttribute('data-ts-sort');
+      return ts ? parseInt(ts, 10) : 0;
+    }
+
+    function applyOrder() {
+      const cards = Array.from(list.querySelectorAll('article.card-wrapper'));
+      const pinned = cards.filter(function (c) {
+        return c.querySelector('.pin') !== null;
+      });
+      const normal = cards.filter(function (c) {
+        return c.querySelector('.pin') === null;
+      });
+
+      normal.sort(function (a, b) {
+        return state.order === ASC ? tsOf(a) - tsOf(b) : tsOf(b) - tsOf(a);
+      });
+
+      pinned.concat(normal).forEach(function (card) {
+        list.appendChild(card);
+      });
+
+      const asc = state.order === ASC;
+      const icon = btn.querySelector('i');
+      const label = btn.querySelector('span');
+
+      icon.className = 'fa-fw fas ' + (asc ? 'fa-arrow-up-wide-short' : 'fa-arrow-down-wide-short');
+      label.textContent = asc ? 'Mais antigos' : 'Mais recentes';
+      btn.setAttribute('aria-pressed', String(asc));
+      btn.classList.toggle('active', asc);
+    }
+
+    state.order = getOrder();
+    applyOrder();
+
+    btn.addEventListener('click', function () {
+      state.order = state.order === ASC ? DESC : ASC;
+      setOrder(state.order);
+      applyOrder();
+    });
+  })();
+</script>

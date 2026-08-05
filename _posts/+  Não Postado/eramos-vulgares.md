@@ -5,7 +5,6 @@ date: 2025-06-15 02:26:19
 author: Val
 tags:
   - Poesia
-  - Escrita
   - Pessoal
 pin: false
 image: assets/img/post-banners/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg

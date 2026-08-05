@@ -5,7 +5,6 @@ date: 2025-06-10 15:05:05
 author: Val
 tags:
   - Alegação
-  - Escrita
 pin: false
 image: assets/img/post-banners/conhecimento-fragmentado.png
 math: false
