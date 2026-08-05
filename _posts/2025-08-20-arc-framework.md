@@ -29,10 +29,19 @@ O objetivo do ARC é evitar que ideias boas fiquem paradas em anotações soltas
     
 
 
+<br><br>
 
 
-{: .prompt-next }
-> [10 Dicas Obsidian ]({% post_url 2025-09-22-10-dicas-#1 %})
+
+
+---
+
+Vídeo que eu falo um pouco sobre e várias outras coisas
+
+{% include embed/youtube.html id='aMFggmPRiio' %}
+
+
+
 
 
 

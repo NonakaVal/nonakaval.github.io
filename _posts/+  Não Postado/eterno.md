@@ -14,7 +14,7 @@ calendar: "[[2026-06-12]]"
 ---
 
 {: .prompt-quote }
-> A obrigatoriedade do eterno dado pela lógica do "nada" torna o tempo,  ou como o vemos, um óbvio sinal que somos um estado de inferior de existência.
+> A obrigatoriedade do eterno dado pela lógica do "nada" torna o tempo, ou como o vemos, um óbvio sinal que somos um estado de inferior de existência.
 
 
 

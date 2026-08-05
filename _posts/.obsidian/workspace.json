@@ -61,7 +61,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-04-Pourquoi la mort te fait peur.md",
+                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-12-Vai-ficar-tudo-bem"
+            }
+          },
+          {
+            "id": "43a4264753d85ef8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-08-05-humanidade.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-04-Pourquoi la mort te fait peur"
+              "title": "2026-08-05-humanidade"
             }
           },
           {
@@ -104,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +162,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Cultura",
+                "query": "10-d",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -292,36 +316,36 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cf0e3676f3469bc0",
+  "active": "43a4264753d85ef8",
   "lastOpenFiles": [
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-08-05-humanidade.md",
     "2026-06-12-humansadness.md",
-    "2026-08-04-Pourquoi la mort te fait peur.md",
-    "2026-06-12-eterno.md",
-    "X/Templates/Snippets/br br.md",
     "2026-06-07-O-agora.md",
-    "X/music-tranquility-base.md",
     "2026-05-24-limite-da-individualidade.md",
+    "+  Não Postado/eterno.md",
+    "2025-08-20-arc-framework.md",
+    "2026-06-01-rumi.md",
+    "2025-12-09-o-conhecimento.md",
+    "2025-09-22-10-dicas-#1.md",
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2026-08-04-Pourquoi la mort te fait peur.md",
+    "X/Templates/Snippets/br br.md",
+    "X/music-tranquility-base.md",
     "2026-07-03-flores.md",
     "2026-07-29-eterno-retorno-nietzsche.md",
     "+  Não Postado/eramos-vulgares.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/TIPOGRAFIA.md",
     "X/CONVENCOES-CATEGORIAS-TAGS.md",
     "X/Base.base",
     "X/Templates/DAILY-CALENDAR-TEMPLATE.md",
     "+  Não Postado",
     "2026-06-15-base-bom-relatorio.md",
-    "2025-12-09-o-conhecimento.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2026-06-01-rumi.md",
-    "2025-09-22-10-dicas-#1.md",
-    "2025-08-20-arc-framework.md",
     "2025-06-10-introduction-to-ruby.md",
     "2025-05-26-About-me.md",
     "2025-06-15-eramos-vulgares.md",
     "2026-07-11-pomme-1.md",
-    "2026-07-12-new post.md",
     "+  Não Postado",
     "X/Templates.base",
     "X/shellcommands/gca.py",
