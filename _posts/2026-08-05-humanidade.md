@@ -6,6 +6,7 @@ author: Val
 tags:
   - Escrita
   - Filosofia
+  - Reflexao
 pin: false
 image: assets/img/post-banners/human.jpg
 math: false

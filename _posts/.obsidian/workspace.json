@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-10-python logic.md",
+                "file": "2026-07-29-eterno-retorno-nietzsche.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-10-python logic"
+              "title": "2026-07-29-eterno-retorno-nietzsche"
             }
           }
         ],
@@ -220,8 +220,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -239,7 +239,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "ce3287dd365563ef",
@@ -274,8 +274,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -294,25 +293,26 @@
   },
   "active": "2e525e0b515d1962",
   "lastOpenFiles": [
-    "+  Não Postado/books.md",
+    "2026-08-04-Pourquoi la mort te fait peur.md",
     "2026-08-05-humanidade.md",
     "2026-08-10-python logic.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2025-06-10-conhecimento-fragmentado.md",
+    "2025-08-20-arc-framework.md",
+    "2025-12-09-o-conhecimento.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2026-06-01-rumi.md",
+    "2026-06-07-O-agora.md",
+    "2026-06-12-humansadness.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-15-base-bom-relatorio.md",
+    "2026-07-03-flores.md",
+    "2026-07-29-eterno-retorno-nietzsche.md",
+    "+  Não Postado/books.md",
     "+  Não Postado/eterno.md",
     "+  Não Postado/eramos-vulgares.md",
     "+  Não Postado/pyt.md",
     "X/Base.base",
-    "2026-08-04-Pourquoi la mort te fait peur.md",
-    "2025-08-20-arc-framework.md",
-    "2026-07-03-flores.md",
-    "2025-12-09-o-conhecimento.md",
-    "2026-07-29-eterno-retorno-nietzsche.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-06-12-humansadness.md",
-    "2026-06-07-O-agora.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2026-06-01-rumi.md",
     "2025-09-22-10-dicas-#1.md",
     "X/Templates/Snippets/br br.md",
     "X/music-tranquility-base.md",
@@ -320,7 +320,6 @@
     "X/CONVENCOES-CATEGORIAS-TAGS.md",
     "X/Templates/DAILY-CALENDAR-TEMPLATE.md",
     "+  Não Postado",
-    "2026-06-15-base-bom-relatorio.md",
     "2025-06-10-introduction-to-ruby.md",
     "+  Não Postado",
     "X/Templates.base",
