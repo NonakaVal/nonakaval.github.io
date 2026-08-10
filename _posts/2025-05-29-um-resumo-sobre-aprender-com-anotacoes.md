@@ -1,7 +1,7 @@
 ---
 title: Um resumo sobre aprender com anotações
 description: Um resumo conciso do meu primeiro vídeo no youtube sobre estar tomando notas.
-date: 2025-05-29 15:50:50
+date: 2025-05-10 15:50:50
 author: Val
 tags:
   - PKM
