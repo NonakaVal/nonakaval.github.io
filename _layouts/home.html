@@ -136,6 +136,22 @@ refactor: true
       border-color: var(--link-color);
     }
 
+    /* Keep this component's responsive visibility independent of the
+       environment-specific utility stylesheet. */
+    .home-mobile-only {
+      display: none;
+    }
+
+    @media (max-width: 767.98px) {
+      .home-mobile-only {
+        display: inline-flex;
+      }
+
+      .home-widget-tags.home-mobile-only {
+        display: flex;
+      }
+    }
+
     /* Desktop: untouched — widget floats right, post-list wraps left. */
     #sakana-widget {
       float: right;
@@ -217,7 +233,7 @@ refactor: true
 
   <div id="sakana-widget"></div>
 
-  <!-- Mobile-only trending tags beside the widget (hidden on desktop via d-md-none) -->
+  <!-- Mobile-only trending tags beside the widget -->
   {% assign widget_max_tags = 5 %}
   {% assign widget_size_list = '' | split: '' %}
   {% assign widget_tag_list = '' | split: '' %}
@@ -249,7 +265,7 @@ refactor: true
   {% endfor %}
 
   {% if widget_trending_tags.size > 0 %}
-  <div class="home-widget-tags d-md-none">
+  <div class="home-widget-tags home-mobile-only">
     <i class="fa fa-tags fa-fw me-1"></i>
     {% for widget_tag_name in widget_trending_tags %}
       {% assign widget_tag_url = widget_tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
@@ -294,11 +310,11 @@ refactor: true
 
 <!-- Toolbar: mobile-only shortcut to the archives + post order toggle (all screens). -->
 <div class="home-archives-row">
-  <a href="{{ '/archives/' | relative_url }}" class="home-archives-btn d-md-none">
+  <a href="{{ '/archives/' | relative_url }}" class="home-archives-btn home-mobile-only">
     <i class="fa-fw fas fa-archive"></i>
     <span>Arquivos</span>
   </a>
-  <button type="button" id="home-sort-btn" class="home-archives-btn d-md-none" aria-pressed="false" title="Alterar ordem dos posts">
+  <button type="button" id="home-sort-btn" class="home-archives-btn home-mobile-only" aria-pressed="false" title="Alterar ordem dos posts">
     <i class="fa-fw fas fa-arrow-down-wide-short"></i>
     <span>Mais recentes</span>
   </button>
@@ -374,8 +390,8 @@ refactor: true
     if (!list || !btn) return;
 
     const KEY = 'home-post-order';
-    const DESC = 'desc'; // newest first (site default)
-    const ASC = 'asc'; // oldest first ("primeiros posts primeiro")
+    const DESC = 'desc'; /* newest first (site default) */
+    const ASC = 'asc'; /* oldest first ("primeiros posts primeiro") */
 
     const state = {
       order: DESC
@@ -414,9 +430,7 @@ refactor: true
         return state.order === ASC ? tsOf(a) - tsOf(b) : tsOf(b) - tsOf(a);
       });
 
-      pinned.concat(normal).forEach(function (card) {
-        list.appendChild(card);
-      });
+      list.replaceChildren.apply(list, pinned.concat(normal));
 
       const asc = state.order === ASC;
       const icon = btn.querySelector('i');
@@ -436,7 +450,7 @@ refactor: true
       applyOrder();
     });
 
-    // Update ordering if another tab changes the stored order
+    /* Update ordering if another tab changes the stored order. */
     window.addEventListener('storage', function (e) {
       if (e.key === KEY) {
         state.order = getOrder();
@@ -444,7 +458,7 @@ refactor: true
       }
     });
 
-    // Re-apply ordering when viewport crosses the mobile breakpoint
+    /* Re-apply ordering when viewport crosses the mobile breakpoint. */
     try {
       const mql = window.matchMedia('(max-width: 768px)');
       if (typeof mql.addEventListener === 'function') {
