@@ -114,7 +114,7 @@ refactor: true
       align-items: center;
       gap: 0.4rem;
       padding: 0.2rem 0.55rem;
-      border-radius: 999px;
+      border-radius: 40px;
       line-height: 1.2;
       font-size: 0.95rem;
       border: 1px solid var(--tag-border);
@@ -239,10 +239,10 @@ refactor: true
   {% assign widget_tag_list = '' | split: '' %}
 
   {% for tag in site.tags %}
-    {% assign widget_size = tag | last | size %}
-    {% assign widget_size_list = widget_size_list | push: widget_size %}
-    {% assign widget_tag_str = tag | first | append: '::' | append: widget_size %}
-    {% assign widget_tag_list = widget_tag_list | push: widget_tag_str %}
+  {% assign widget_size = tag | last | size %}
+  {% assign widget_size_list = widget_size_list | push: widget_size %}
+  {% assign widget_tag_str = tag | first | append: '::' | append: widget_size %}
+  {% assign widget_tag_list = widget_tag_list | push: widget_tag_str %}
   {% endfor %}
 
   {% assign widget_size_list = widget_size_list | sort | reverse %}
@@ -251,25 +251,25 @@ refactor: true
   {% assign widget_trending_tags = '' | split: '' %}
 
   {% for widget_size in widget_size_list limit: widget_max_tags %}
-    {% for widget_tag_str in widget_tag_list %}
-      {% assign widget_tag = widget_tag_str | split: '::' %}
-      {% assign widget_tag_name = widget_tag | first %}
-      {% assign widget_tag_count = widget_tag | last | plus: 0 %}
-      {% if widget_tag_count == widget_size %}
-        {% unless widget_trending_tags contains widget_tag_name %}
-          {% assign widget_trending_tags = widget_trending_tags | push: widget_tag_name %}
-          {% break %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
+  {% for widget_tag_str in widget_tag_list %}
+  {% assign widget_tag = widget_tag_str | split: '::' %}
+  {% assign widget_tag_name = widget_tag | first %}
+  {% assign widget_tag_count = widget_tag | last | plus: 0 %}
+  {% if widget_tag_count == widget_size %}
+  {% unless widget_trending_tags contains widget_tag_name %}
+  {% assign widget_trending_tags = widget_trending_tags | push: widget_tag_name %}
+  {% break %}
+  {% endunless %}
+  {% endif %}
+  {% endfor %}
   {% endfor %}
 
   {% if widget_trending_tags.size > 0 %}
   <div class="home-widget-tags home-mobile-only">
     <i class="fa fa-tags fa-fw me-1"></i>
     {% for widget_tag_name in widget_trending_tags %}
-      {% assign widget_tag_url = widget_tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
-      <a href="{{ widget_tag_url | relative_url }}" class="post-tag no-text-decoration">{{ widget_tag_name }}</a>
+    {% assign widget_tag_url = widget_tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
+    <a href="{{ widget_tag_url | relative_url }}" class="post-tag no-text-decoration">{{ widget_tag_name }}</a>
     {% endfor %}
   </div>
   {% endif %}
@@ -278,7 +278,7 @@ refactor: true
     function initSakanaWidget() {
       const imagePaths = [
         '../assets/img/profile/ps3.png',
-        '../assets/img/profile/Futaba.png',   
+        '../assets/img/profile/Futaba.png',
         '../assets/img/profile/makoto-niijima.png',
         '../assets/img/profile/morgana.png',
         '../assets/img/profile/annia.png'
@@ -310,14 +310,16 @@ refactor: true
 
 <!-- Toolbar: mobile-only shortcut to the archives + post order toggle (all screens). -->
 <div class="home-archives-row">
-  <a href="{{ '/archives/' | relative_url }}" class="home-archives-btn home-mobile-only">
-    <i class="fa-fw fas fa-archive"></i>
-    <span>Arquivos</span>
-  </a>
-  <button type="button" id="home-sort-btn" class="home-archives-btn home-mobile-only" aria-pressed="false" title="Alterar ordem dos posts">
+
+  <button type="button" id="home-sort-btn" class="home-archives-btn home-mobile-only" aria-pressed="false"
+    title="Alterar ordem dos posts">
     <i class="fa-fw fas fa-arrow-down-wide-short"></i>
     <span>Mais recentes</span>
   </button>
+    <a href="{{ '/archives/' | relative_url }}" class="home-archives-btn home-mobile-only">
+    <i class="fa-fw fas fa-archive"></i>
+    <span>Arquivos</span>
+  </a>
 </div>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
