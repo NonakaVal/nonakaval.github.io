@@ -6,7 +6,6 @@ author: Val
 tags:
   - Cultura
   - Dicas
-  - En
 pin: false
 math: false
 mermaid: false

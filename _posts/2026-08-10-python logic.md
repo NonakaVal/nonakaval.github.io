@@ -8,7 +8,6 @@ tags:
   - Python
   - Logica
   - Tutorial
-  - En
 pin: false
 image: assets/img/post-banners/Python-logical-operators.jpg
 math: false

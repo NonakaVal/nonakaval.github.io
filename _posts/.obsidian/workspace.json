@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-10-books.md",
+                "file": "2026-08-10-python logic.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-10-books"
+              "title": "2026-08-10-python logic"
             }
           }
         ],
@@ -294,9 +294,9 @@
   },
   "active": "2e525e0b515d1962",
   "lastOpenFiles": [
-    "2026-08-10-python logic.md",
-    "2026-08-10-books.md",
+    "+  Não Postado/books.md",
     "2026-08-05-humanidade.md",
+    "2026-08-10-python logic.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "+  Não Postado/eterno.md",
