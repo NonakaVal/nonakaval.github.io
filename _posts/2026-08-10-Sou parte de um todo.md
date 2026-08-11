@@ -1,6 +1,6 @@
 ---
 title: Sou parte de um todo
-description: "Um desabafo leve #1 ll"
+description: "Um desabafo leve #2"
 date: 2026-08-10 11:09:39
 author: Val
 tags:

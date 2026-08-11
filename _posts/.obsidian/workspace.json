@@ -93,6 +93,30 @@
               "icon": "lucide-file",
               "title": "2026-08-10-Sou parte de um todo"
             }
+          },
+          {
+            "id": "d0f99f1275df69d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "X/Templates/Snippets/add-video-youtube.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "add-video-youtube"
+            }
           }
         ],
         "currentTab": 3
@@ -145,7 +169,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -156,8 +183,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           },
           {
@@ -315,13 +342,20 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7f5e1e9ff1328ea0",
+  "active": "e3099070dc448bf5",
   "lastOpenFiles": [
+    "2026-08-11-last-hope.md",
+    "2026-06-12-humansadness.md",
+    "X/Pastas Sistema.md",
+    "X/TIPOGRAFIA.md",
+    "X/Templates/Snippets/add folder.md",
+    "2026-08-10-Sou parte de um todo.md",
+    "X/Templates/Snippets/add-video-youtube.md",
+    "X/Templates/Snippets/embed-video.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
     "2026-06-15-base-bom-relatorio.md",
     "2026-05-24-limite-da-individualidade.md",
     "2026-06-07-O-agora.md",
-    "2026-08-10-Sou parte de um todo.md",
     "2026-07-03-flores.md",
     "2026-07-29-eterno-retorno-nietzsche.md",
     "2026-08-04-Pourquoi la mort te fait peur.md",
@@ -332,18 +366,11 @@
     "2025-08-20-arc-framework.md",
     "2025-12-09-o-conhecimento.md",
     "2026-06-01-rumi.md",
-    "2026-06-12-humansadness.md",
     "+  Não Postado/books.md",
     "+  Não Postado/eterno.md",
     "+  Não Postado/eramos-vulgares.md",
     "+  Não Postado/pyt.md",
     "X/Base.base",
-    "2025-09-22-10-dicas-#1.md",
-    "X/Templates/Snippets/br br.md",
-    "X/music-tranquility-base.md",
-    "X/TIPOGRAFIA.md",
-    "X/CONVENCOES-CATEGORIAS-TAGS.md",
-    "X/Templates/DAILY-CALENDAR-TEMPLATE.md",
     "+  Não Postado",
     "+  Não Postado",
     "X/Templates.base",

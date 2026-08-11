@@ -1,0 +1,1 @@
+[📂 <% tp.system.prompt("Folder label")%>](<file://<% tp.system.prompt("path")%>>)
