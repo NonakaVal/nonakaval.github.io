@@ -6,8 +6,6 @@ author: Val
 tags:
   - Programacao
   - Python
-  - Logica
-  - Tutorial
   - Dicas
 pin: false
 image: assets/img/post-banners/Python-logical-operators.jpg
