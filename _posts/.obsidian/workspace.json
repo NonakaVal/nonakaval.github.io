@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-19-sobre-mim.md",
-                "mode": "source",
+                "file": "2025-12-09-o-conhecimento.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-19-sobre-mim"
+              "title": "2025-12-09-o-conhecimento"
             }
           }
         ],
@@ -320,8 +320,9 @@
   "active": "7865d049336fa1c1",
   "lastOpenFiles": [
     "2025-06-10-conhecimento-fragmentado.md",
-    "2025-12-09-o-conhecimento.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2026-08-19-sobre-mim.md",
+    "2025-12-09-o-conhecimento.md",
     "+  Não Postado/python logic.md",
     "+  Não Postado/music-tranquility-base.md",
     "+  Não Postado/eterno.md",
@@ -348,7 +349,6 @@
     "X/Templates/Snippets/code-block.md",
     "X/Templates/Snippets/embed-audio.md",
     "X/Templates/Snippets/embed-bilibili.md",
-    "X/Templates/Snippets/embed-video.md",
     "Pasted image 20260819010855.png",
     "+  Não Postado",
     "+  Não Postado",

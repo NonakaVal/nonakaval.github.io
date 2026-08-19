@@ -1,12 +1,12 @@
 ---
 title: Conhecimento
-description: Trechos aleatório de um projeto literário ai
+description: Trechos aleatório de um projeto literário ai e primeiro post recomendado
 date: 2025-12-09 05:14:48
 author: Val
 tags:
   - Pessoal
   - Filosofia
-pin: false
+pin: true
 image: assets/img/post-banners/o-conhecimento.png
 math: false
 mermaid: false
