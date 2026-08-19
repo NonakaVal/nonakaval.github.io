@@ -24,7 +24,9 @@ calendar: "[[2026-08-10]]"
 >
 >Minha solidão é reflexo de quem sou;
 >
->Tudo que senti, **senti sozinho**.
+>Tudo que senti, 
+>
+>**Senti sozinho**.
 >
 >Não terá ninguém para chorar minha morte;
 >
@@ -37,5 +39,30 @@ calendar: "[[2026-08-10]]"
 >Não há outro tipo de morte, 
 >
 >**Sou parte de um todo,**
+
+
+
+{: .prompt-next }
+> [Real Transcender Humano]({% post_url 2026-08-05-humanidade %})
+
+
+
+{: .prompt-tip }
+> [Conhecimento Fragmentado]({% post_url 2025-06-10-conhecimento-fragmentado %})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

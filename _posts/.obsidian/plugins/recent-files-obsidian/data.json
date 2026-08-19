@@ -1,12 +1,68 @@
 {
   "recentFiles": [
     {
-      "basename": "2026-08-10-python logic",
-      "path": "2026-08-10-python logic.md"
+      "basename": "2026-08-19-permita-me-ser-voce",
+      "path": "2026-08-19-permita-me-ser-voce.md"
+    },
+    {
+      "basename": "2025-06-10-conhecimento-fragmentado",
+      "path": "2025-06-10-conhecimento-fragmentado.md"
+    },
+    {
+      "basename": "2026-07-03-flores",
+      "path": "2026-07-03-flores.md"
+    },
+    {
+      "basename": "2026-06-01-rumi",
+      "path": "2026-06-01-rumi.md"
+    },
+    {
+      "basename": "2026-06-07-O-agora",
+      "path": "2026-06-07-O-agora.md"
+    },
+    {
+      "basename": "2026-06-12-humansadness",
+      "path": "2026-06-12-humansadness.md"
+    },
+    {
+      "basename": "2026-06-12-Vai-ficar-tudo-bem",
+      "path": "2026-06-12-Vai-ficar-tudo-bem.md"
+    },
+    {
+      "basename": "2026-08-10-Sou parte de um todo",
+      "path": "2026-08-10-Sou parte de um todo.md"
+    },
+    {
+      "basename": "2025-12-09-o-conhecimento",
+      "path": "2025-12-09-o-conhecimento.md"
+    },
+    {
+      "basename": "2026-05-24-limite-da-individualidade",
+      "path": "2026-05-24-limite-da-individualidade.md"
     },
     {
       "basename": "2026-08-05-humanidade",
       "path": "2026-08-05-humanidade.md"
+    },
+    {
+      "basename": "2025-08-20-arc-framework",
+      "path": "2025-08-20-arc-framework.md"
+    },
+    {
+      "basename": "2026-08-11-last-hope",
+      "path": "2026-08-11-last-hope.md"
+    },
+    {
+      "basename": "python logic",
+      "path": "+  Não Postado/python logic.md"
+    },
+    {
+      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
+      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "X/TIPOGRAFIA.md"
     },
     {
       "basename": "2026-08-04-Pourquoi la mort te fait peur",
@@ -17,64 +73,12 @@
       "path": "2026-07-29-eterno-retorno-nietzsche.md"
     },
     {
-      "basename": "2026-07-03-flores",
-      "path": "2026-07-03-flores.md"
-    },
-    {
       "basename": "2026-06-15-base-bom-relatorio",
       "path": "2026-06-15-base-bom-relatorio.md"
     },
     {
-      "basename": "2026-06-12-Vai-ficar-tudo-bem",
-      "path": "2026-06-12-Vai-ficar-tudo-bem.md"
-    },
-    {
-      "basename": "2026-06-12-humansadness",
-      "path": "2026-06-12-humansadness.md"
-    },
-    {
-      "basename": "2026-06-07-O-agora",
-      "path": "2026-06-07-O-agora.md"
-    },
-    {
-      "basename": "2026-06-01-rumi",
-      "path": "2026-06-01-rumi.md"
-    },
-    {
-      "basename": "2026-05-24-limite-da-individualidade",
-      "path": "2026-05-24-limite-da-individualidade.md"
-    },
-    {
-      "basename": "2025-12-09-o-conhecimento",
-      "path": "2025-12-09-o-conhecimento.md"
-    },
-    {
-      "basename": "2025-08-20-arc-framework",
-      "path": "2025-08-20-arc-framework.md"
-    },
-    {
-      "basename": "2025-06-10-conhecimento-fragmentado",
-      "path": "2025-06-10-conhecimento-fragmentado.md"
-    },
-    {
-      "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
-      "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "2026-08-11-last-hope",
-      "path": "2026-08-11-last-hope.md"
-    },
-    {
-      "basename": "2026-08-10-Sou parte de um todo",
-      "path": "2026-08-10-Sou parte de um todo.md"
-    },
-    {
       "basename": "Pastas Sistema",
       "path": "X/Pastas Sistema.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "X/TIPOGRAFIA.md"
     },
     {
       "basename": "add folder",
@@ -191,10 +195,6 @@
     {
       "basename": "_tp jump cursor",
       "path": "X/Templates/Snippets/_tp jump cursor.md"
-    },
-    {
-      "basename": "footnote",
-      "path": "X/Templates/Snippets/footnote.md"
     }
   ],
   "omittedPaths": [],

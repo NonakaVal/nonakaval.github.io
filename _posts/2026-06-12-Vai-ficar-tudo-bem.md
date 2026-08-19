@@ -54,3 +54,15 @@ calendar: "[[2026-06-12]]"
 
 
 
+
+{: .prompt-next }
+> [Sobre o que há de mais belo nas flores]({% post_url 2026-07-03-flores %})
+
+
+{: .prompt-tip }
+> [Last Hope]({% post_url 2026-08-11-last-hope %})
+
+
+
+
+

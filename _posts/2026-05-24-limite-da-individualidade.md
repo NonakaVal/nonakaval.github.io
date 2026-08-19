@@ -20,7 +20,7 @@ calendar: "[[2026-05-24]]"
 ---
 
 
-{: .prompt-quote }
-> [Conhecimento]({% post_url 2025-12-09-o-conhecimento %})
+{: .prompt-next }
+> [Sou parte de um todo]({% post_url 2026-08-10-Sou parte de um todo %})
 
 

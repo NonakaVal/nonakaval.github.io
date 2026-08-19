@@ -138,6 +138,21 @@ Esse problema se agrava em **sistemas sociais**, onde decisões equivocadas pode
 
 
 
+{: .prompt-next }
+> [O conhecimento]({% post_url 2025-12-09-o-conhecimento %})
+
+
+
+{: .prompt-tip }
+> [ARC framework]({% post_url 2025-08-20-arc-framework %})
+
+
+
+{: .prompt-info }
+> [Resumo sobre aprender com anotações]({% post_url 2025-05-29-um-resumo-sobre-aprender-com-anotacoes %})
+
+
+
 
 
 

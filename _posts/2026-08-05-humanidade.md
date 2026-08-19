@@ -36,5 +36,19 @@ calendar: "[[2026-08-05]]"
 > Encare o desespero de ter perdido sua única vida...
 
 
+{: .prompt-next }
+> [O Agora]({% post_url 2026-06-07-O-agora %})
+
+
+{: .prompt-tip }
+> [Eterno Retorno]({% post_url 2026-07-29-eterno-retorno-nietzsche %})
+
+
+{: .prompt-tip }
+> [Rumi]({% post_url 2026-06-01-rumi %})
+
+
+
+
 
 

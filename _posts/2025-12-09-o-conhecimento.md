@@ -6,7 +6,7 @@ author: Val
 tags:
   - Pessoal
   - Filosofia
-pin: false
+pin: true
 image: assets/img/post-banners/o-conhecimento.png
 math: false
 mermaid: false
@@ -29,15 +29,12 @@ existir é fácil, porém tudo indica que se tornar capaz de saber que existe é
 antes de explorarmos o complexo vamos refletir sobre um aspecto humano, nossa característica que permite, antes de tudo, compartilhar esse, ou qualquer outro conhecimento.
 
 
-{: .prompt-tip }
+{: .prompt-next }
 > [O limite da individualidade]({% post_url 2026-05-24-limite-da-individualidade %})
 
 
-
-
-
-
-
+{: .prompt-tip }
+> [Conhecimento Fragmentado]({% post_url 2025-06-10-conhecimento-fragmentado %})
 
 
 

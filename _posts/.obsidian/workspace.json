@@ -47,13 +47,37 @@
             }
           },
           {
-            "id": "2e525e0b515d1962",
+            "id": "e3099070dc448bf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-08-19-permita-me-ser-voce.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-08-19-permita-me-ser-voce"
+            }
+          },
+          {
+            "id": "bd7e3b2b355368ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "2026-07-03-flores.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -68,30 +92,6 @@
               },
               "icon": "lucide-file",
               "title": "2026-07-03-flores"
-            }
-          },
-          {
-            "id": "e3099070dc448bf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-08-10-python logic.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-10-python logic"
             }
           },
           {
@@ -119,7 +119,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -153,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:(alt)",
+                "query": "tag:#Existencialismo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,8 +183,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           },
           {
@@ -215,7 +215,6 @@
       {
         "id": "e440d8c83e5cffca",
         "type": "tabs",
-        "dimension": 39.125,
         "children": [
           {
             "id": "33905676c292e79d",
@@ -242,12 +241,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-05-26-data-science-roadmap.md",
+                "file": "2026-08-19-permita-me-ser-voce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-05-26-data-science-roadmap"
+              "title": "Outgoing links"
             }
           },
           {
@@ -271,8 +270,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -290,42 +289,12 @@
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "ce3287dd365563ef",
-        "type": "tabs",
-        "dimension": 60.875,
-        "children": [
-          {
-            "id": "b71cfbf9c93115c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "X/TIPOGRAFIA.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "TIPOGRAFIA"
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 353.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -337,39 +306,40 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
   "active": "e3099070dc448bf5",
   "lastOpenFiles": [
+    "2025-06-10-conhecimento-fragmentado.md",
+    "2026-07-03-flores.md",
+    "2026-08-19-permita-me-ser-voce.md",
+    "2026-08-19.md",
+    "Pasted image 20260819010855.png",
+    "2026-06-01-rumi.md",
+    "2026-06-07-O-agora.md",
+    "2026-06-12-humansadness.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-08-10-Sou parte de um todo.md",
+    "Untitled.md",
+    "2025-12-09-o-conhecimento.md",
+    "2026-05-24-limite-da-individualidade.md",
     "2026-08-05-humanidade.md",
+    "2025-08-20-arc-framework.md",
+    "2026-08-11-last-hope.md",
+    "+  Não Postado/python logic.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "X/TIPOGRAFIA.md",
     "2026-08-04-Pourquoi la mort te fait peur.md",
     "2026-07-29-eterno-retorno-nietzsche.md",
-    "2026-07-03-flores.md",
     "2026-06-15-base-bom-relatorio.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-06-12-humansadness.md",
-    "2026-06-07-O-agora.md",
-    "2026-06-01-rumi.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2025-12-09-o-conhecimento.md",
-    "2025-08-20-arc-framework.md",
-    "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
-    "2026-08-11-last-hope.md",
-    "2026-08-10-Sou parte de um todo.md",
     "X/Pastas Sistema.md",
-    "X/TIPOGRAFIA.md",
     "X/Templates/Snippets/add folder.md",
     "X/Templates/Snippets/add-video-youtube.md",
     "X/Templates/Snippets/embed-video.md",
-    "2026-08-10-python logic.md",
     "+  Não Postado/books.md",
-    "+  Não Postado/eterno.md",
-    "+  Não Postado/eramos-vulgares.md",
-    "+  Não Postado/pyt.md",
     "X/Base.base",
     "+  Não Postado",
     "+  Não Postado",
