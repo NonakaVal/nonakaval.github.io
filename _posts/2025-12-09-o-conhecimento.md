@@ -6,7 +6,7 @@ author: Val
 tags:
   - Pessoal
   - Filosofia
-pin: true
+pin: false
 image: assets/img/post-banners/o-conhecimento.png
 math: false
 mermaid: false
