@@ -10,7 +10,7 @@ math: false
 mermaid: false
 calendar: "[[2026-08-11]]"
 ---
-[📂 Assets](<file:///home/val/Projetos/nonakaval.github.io/assets/>)
+# [📂 Assets](<file:///home/val/Projetos/nonakaval.github.io/assets/>)
 
 
 

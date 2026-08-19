@@ -1,6 +1,86 @@
 {
   "recentFiles": [
     {
+      "basename": "python logic",
+      "path": "+  Não Postado/python logic.md"
+    },
+    {
+      "basename": "music-tranquility-base",
+      "path": "+  Não Postado/music-tranquility-base.md"
+    },
+    {
+      "basename": "eterno",
+      "path": "+  Não Postado/eterno.md"
+    },
+    {
+      "basename": "eramos-vulgares",
+      "path": "+  Não Postado/eramos-vulgares.md"
+    },
+    {
+      "basename": "books",
+      "path": "+  Não Postado/books.md"
+    },
+    {
+      "basename": "TIPOGRAFIA",
+      "path": "X/+/TIPOGRAFIA.md"
+    },
+    {
+      "basename": "Templates",
+      "path": "X/Bases/Templates.base"
+    },
+    {
+      "basename": "Pastas Sistema",
+      "path": "X/+/Pastas Sistema.md"
+    },
+    {
+      "basename": "CONVENCOES-CATEGORIAS-TAGS",
+      "path": "X/+/CONVENCOES-CATEGORIAS-TAGS.md"
+    },
+    {
+      "basename": "Base",
+      "path": "X/Bases/Base.base"
+    },
+    {
+      "basename": "_ post Insert prompt",
+      "path": "X/Templates/Snippets/_ post Insert prompt.md"
+    },
+    {
+      "basename": "post add img post",
+      "path": "X/Templates/Snippets/post add img post.md"
+    },
+    {
+      "basename": "post add-video-youtube",
+      "path": "X/Templates/Snippets/post add-video-youtube.md"
+    },
+    {
+      "basename": "post img-inline",
+      "path": "X/Templates/Snippets/post img-inline.md"
+    },
+    {
+      "basename": "post img-sized",
+      "path": "X/Templates/Snippets/post img-sized.md"
+    },
+    {
+      "basename": "System add folder",
+      "path": "X/Templates/Snippets/System add folder.md"
+    },
+    {
+      "basename": "post url link",
+      "path": "X/Templates/Snippets/post url link.md"
+    },
+    {
+      "basename": "tp input",
+      "path": "X/Templates/Snippets/tp input.md"
+    },
+    {
+      "basename": "tp jump cursor",
+      "path": "X/Templates/Snippets/tp jump cursor.md"
+    },
+    {
+      "basename": "POST-TEMPLATE",
+      "path": "X/Templates/POST-TEMPLATE.md"
+    },
+    {
       "basename": "2025-12-09-o-conhecimento",
       "path": "2025-12-09-o-conhecimento.md"
     },
@@ -53,16 +133,8 @@
       "path": "2025-08-20-arc-framework.md"
     },
     {
-      "basename": "python logic",
-      "path": "+  Não Postado/python logic.md"
-    },
-    {
       "basename": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes",
       "path": "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md"
-    },
-    {
-      "basename": "TIPOGRAFIA",
-      "path": "X/TIPOGRAFIA.md"
     },
     {
       "basename": "2026-08-04-Pourquoi la mort te fait peur",
@@ -77,124 +149,12 @@
       "path": "2026-06-15-base-bom-relatorio.md"
     },
     {
-      "basename": "Pastas Sistema",
-      "path": "X/Pastas Sistema.md"
-    },
-    {
-      "basename": "add folder",
-      "path": "X/Templates/Snippets/add folder.md"
-    },
-    {
-      "basename": "add-video-youtube",
-      "path": "X/Templates/Snippets/add-video-youtube.md"
-    },
-    {
-      "basename": "embed-video",
-      "path": "X/Templates/Snippets/embed-video.md"
-    },
-    {
-      "basename": "books",
-      "path": "+  Não Postado/books.md"
-    },
-    {
-      "basename": "eterno",
-      "path": "+  Não Postado/eterno.md"
-    },
-    {
-      "basename": "eramos-vulgares",
-      "path": "+  Não Postado/eramos-vulgares.md"
-    },
-    {
-      "basename": "Base",
-      "path": "X/Base.base"
-    },
-    {
-      "basename": "br br",
-      "path": "X/Templates/Snippets/br br.md"
-    },
-    {
-      "basename": "music-tranquility-base",
-      "path": "X/music-tranquility-base.md"
-    },
-    {
-      "basename": "CONVENCOES-CATEGORIAS-TAGS",
-      "path": "X/CONVENCOES-CATEGORIAS-TAGS.md"
-    },
-    {
       "basename": "2025-05-26-About-me",
       "path": "2025-05-26-About-me.md"
     },
     {
       "basename": "sobre-oq-ha-de-mais-belo-nas-flores",
       "path": "+/sobre-oq-ha-de-mais-belo-nas-flores.md"
-    },
-    {
-      "basename": "Insert prompt",
-      "path": "X/Templates/Snippets/Insert prompt.md"
-    },
-    {
-      "basename": "post url",
-      "path": "X/Templates/Snippets/post url.md"
-    },
-    {
-      "basename": "Templates",
-      "path": "X/Templates.base"
-    },
-    {
-      "basename": "math-block",
-      "path": "X/Templates/Snippets/math-block.md"
-    },
-    {
-      "basename": "mermaid",
-      "path": "X/Templates/Snippets/mermaid.md"
-    },
-    {
-      "basename": "img-sized",
-      "path": "X/Templates/Snippets/img-sized.md"
-    },
-    {
-      "basename": "img-inline",
-      "path": "X/Templates/Snippets/img-inline.md"
-    },
-    {
-      "basename": "footnote-def",
-      "path": "X/Templates/Snippets/footnote-def.md"
-    },
-    {
-      "basename": "embed-bilibili",
-      "path": "X/Templates/Snippets/embed-bilibili.md"
-    },
-    {
-      "basename": "code-block",
-      "path": "X/Templates/Snippets/code-block.md"
-    },
-    {
-      "basename": "embed-audio",
-      "path": "X/Templates/Snippets/embed-audio.md"
-    },
-    {
-      "basename": "block-video-section",
-      "path": "X/Templates/Snippets/block-video-section.md"
-    },
-    {
-      "basename": "block-quote-source",
-      "path": "X/Templates/Snippets/block-quote-source.md"
-    },
-    {
-      "basename": "block-image-gallery",
-      "path": "X/Templates/Snippets/block-image-gallery.md"
-    },
-    {
-      "basename": "block-code-tutorial",
-      "path": "X/Templates/Snippets/block-code-tutorial.md"
-    },
-    {
-      "basename": "_tp input",
-      "path": "X/Templates/Snippets/_tp input.md"
-    },
-    {
-      "basename": "_tp jump cursor",
-      "path": "X/Templates/Snippets/_tp jump cursor.md"
     }
   ],
   "omittedPaths": [],

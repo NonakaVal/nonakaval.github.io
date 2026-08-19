@@ -6,3 +6,4 @@ const selectedItem = (await tp.system.suggester((item) => item.basename, items))
 [<%tp.system.prompt("Label")%>]({% post_url <% selectedItem %> %})
 
 
+	
