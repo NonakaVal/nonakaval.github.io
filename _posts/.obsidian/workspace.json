@@ -52,9 +52,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-19-permita-me-ser-voce.md",
+                "file": "2026-06-12-Vai-ficar-tudo-bem.md",
                 "mode": "preview",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-19-permita-me-ser-voce"
+              "title": "2026-06-12-Vai-ficar-tudo-bem"
             }
           },
           {
@@ -307,28 +307,28 @@
       "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "e3099070dc448bf5",
   "lastOpenFiles": [
+    "2026-06-07-O-agora.md",
+    "2026-08-05-humanidade.md",
+    "2026-08-10-Sou parte de um todo.md",
+    "2026-08-11-last-hope.md",
+    "2026-08-19-permita-me-ser-voce.md",
+    "2025-12-09-o-conhecimento.md",
     "2025-06-10-conhecimento-fragmentado.md",
     "2026-07-03-flores.md",
-    "2026-08-19-permita-me-ser-voce.md",
     "2026-08-19.md",
     "Pasted image 20260819010855.png",
     "2026-06-01-rumi.md",
-    "2026-06-07-O-agora.md",
     "2026-06-12-humansadness.md",
     "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-08-10-Sou parte de um todo.md",
     "Untitled.md",
-    "2025-12-09-o-conhecimento.md",
     "2026-05-24-limite-da-individualidade.md",
-    "2026-08-05-humanidade.md",
     "2025-08-20-arc-framework.md",
-    "2026-08-11-last-hope.md",
     "+  Não Postado/python logic.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "X/TIPOGRAFIA.md",

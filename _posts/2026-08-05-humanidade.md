@@ -14,26 +14,27 @@ mermaid: false
 calendar: "[[2026-08-05]]"
 ---
 
-{: .prompt-quote }
-> O real transcender humano é a sua capacidade de viver uma ilusão,
-> 
-> Números que perdem valor quando escolhemos de fazer mais, 
-> 
-> Deuses que viram mitos quando trocamos de lideres,
-> 
-> Verdades as que só existem pra você, 
-> 
-> Somos capazes de tornar mentiras reais só por que acreditamos nelas juntos,
-> 
-> Jogue sua vida fora por algo que sequer pode existir amanha, 
-> 
-> Negue a verdade só porque lhe convém, 
-> 
-> de fato não muda nada,
-> 
-> Mas quando deixar a ilusão,
-> 
-> Encare o desespero de ter perdido sua única vida...
+<br><br><br>
+
+
+O real transcender humano é a sua capacidade de viver uma ilusão 
+<br>
+Números que perdem valor quando escolhemos de fazer mais, 
+<br>
+Deuses que viram mitos quando trocamos de lideres,
+<br>Verdades as que só existem pra você, 
+<br>
+<br>Somos capazes de tornar mentiras reais só por que acreditamos nelas juntos,
+<br>Jogue sua vida fora por algo que sequer pode existir amanha, 
+<br>Negue a verdade só porque lhe convém, 
+<br>
+<br>de fato não muda nada,
+<br> Mas quando deixar a ilusão,
+<br> Encare o desespero de ter perdido sua única vida...
+
+<br><br><br><br><br>
+
+---
 
 
 {: .prompt-next }

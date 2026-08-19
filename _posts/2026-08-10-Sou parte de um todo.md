@@ -15,32 +15,20 @@ mermaid: false
 calendar: "[[2026-08-10]]"
 ---
 
-{: .prompt-quote }
->**Sou parte de um todo,** 
->
->Sequer existo como um,
->
->Talvez por isso doí se sentir só;
->
->Minha solidão é reflexo de quem sou;
->
->Tudo que senti, 
->
->**Senti sozinho**.
->
->Não terá ninguém para chorar minha morte;
->
->Ninguém parar ir ao meu funeral;
->
->Uma vida solitária;
->
->Uma morte solitária;
->
->Não há outro tipo de morte, 
->
->**Sou parte de um todo,**
+<br> **Sou parte de um todo,**  
+<br> Sequer existo como um,
+<br>
+<br> **Talvez por isso doí se sentir só** <br> Minha solidão é reflexo de quem sou
+<br> Tudo que senti <br> **Senti sozinho**.
+<br>
+<br> Não terá ninguém para chorar minha morte <br> Ninguém parar ir ao meu funeral
+<br>
+<br> **Uma vida solitária** <br> **Uma morte solitária**
+<br> Não há outro tipo de morte <br><br> **Sou parte de um todo,**
 
+<br><br><br><br>
 
+---
 
 {: .prompt-next }
 > [Real Transcender Humano]({% post_url 2026-08-05-humanidade %})
