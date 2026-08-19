@@ -13,6 +13,8 @@ mermaid: false
 calendar: "[[2025-12-09]]"
 ---
 
+
+
 {: .prompt-quote }
 > Ademais tudo que **acreditamos** estar aptos a entender, A **busca** pelo que é real sendo **também** parte da realidade torna  toda forma de **conhecimento** e tudo que permite sua compreensão o **resultado** de um só universo experienciando a si mesmo, entender o que existe é também entender **própria existência**, e entender a própria existência é o **propósito** que partilhamos com **tudo que existe**.
 
