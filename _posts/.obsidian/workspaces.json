@@ -14,17 +14,28 @@
                 "type": "leaf",
                 "pinned": true,
                 "state": {
+                  "type": "empty",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Nova aba"
+                }
+              },
+              {
+                "id": "30f29ef273c5d57c",
+                "type": "leaf",
+                "state": {
                   "type": "bases",
                   "state": {
-                    "file": "X/Base.base",
+                    "file": "X/Bases/Base.base",
                     "viewName": "Tabela"
                   },
-                  "pinned": true,
                   "icon": "lucide-table",
                   "title": "Base"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -49,7 +60,7 @@
                     "searchQuery": ""
                   },
                   "icon": "lucide-folder-closed",
-                  "title": "Files"
+                  "title": "Explorador de arquivos"
                 }
               },
               {
@@ -243,21 +254,21 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "graph:Open graph view": false,
-          "canvas:Create new canvas": false,
-          "daily-notes:Open today's daily note": false,
-          "templates:Insert template": false,
-          "command-palette:Open command palette": false,
-          "workspaces:Manage workspace layouts": false,
-          "bases:Create new base": false,
+          "switcher:Abrir a troca rápida": false,
+          "graph:Abrir visualização em gráfico": false,
+          "canvas:Criar novo canvas": false,
+          "daily-notes:Abrir a nota de hoje": false,
+          "templates:Inserir modelo": false,
+          "command-palette:Abrir paleta de comandos": false,
+          "workspaces:Gerenciar leiautes da área de trabalho": false,
+          "bases:Criar nova base": false,
           "obsidian-shellcommands:Shell commands: Custom variables": false,
           "templater-obsidian:Templater": false,
           "periodic-notes:Open today": false
         }
       },
-      "active": "22af220af49fc092",
-      "mtime": "2026-08-19T02:14:28-03:00"
+      "active": "30f29ef273c5d57c",
+      "mtime": "2026-08-31T17:02:21-03:00"
     },
     "Templates": {
       "main": {

@@ -1,5 +1,5 @@
 ---
-title: Sou a chuva no telhado
+title: Sou a chuva
 description: Me aventurando na escrita de poesias sobre pessoas que só existiram na minha cabeça parte 2
 date: 2026-08-19 01:08:54
 author: Val
@@ -15,24 +15,26 @@ calendar: "[[2026-08-19]]"
 
 Sou a chuva no telhado <br> Me torno a gota na janela
 
-Eu era tudo que existe <br> Perdido em uma vastidão de formas
+Eu era tudo  <br> Perdido em uma vastidão de formas
 
-Até me encontrar em teus olhos <br> Descobrir alegria pelo teu sorriso 
+Até que...
 
-Quando pisco me perco <br> Quando longe não existo
+Escolhi ser você <br> Mesmo quando eu podia ser tudo
 
-Escolhi ser você <br> Quando podia ser tudo
+Escolhi ser você <br> Mas perdi minha forma.
 
-Escolhi ser você <br> Então perdi minha forma.
+Permita-se se tornar eu <br> Para que então não me perca
 
-Peço que permita-se se tornar eu <br> Para que então não me perca
+Permita-me se tornar você <br> Para que então sejamos um.
 
-Me permita se tornar você <br> Sem que eu tenha que deixar de ser eu
+Quero existir em você <br> Sem que eu tenha que deixar de ser eu
 
-Até que voltemos a ser gotas <br> Esquecidos para sempre
+Até que voltemos a ser gotas <br> Apagados pela chuva <br> E não um pelo outro
 
-Apagadas pela chuva <br> E não um pelo outro
+---
 
+
+<br><br>
 
 
 {: .prompt-tip }

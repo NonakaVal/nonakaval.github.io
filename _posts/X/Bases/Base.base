@@ -1,6 +1,6 @@
 filters:
   and:
-    - '!file.inFolder("Calendar")'
+    - '!file.inFolder("+  Não Postado")'
     - '!file.inFolder("X")'
 views:
   - type: table
@@ -18,12 +18,8 @@ views:
       - author
       - file.name
     sort:
-      - property: image
-        direction: DESC
       - property: date
         direction: DESC
-      - property: categories
-        direction: ASC
     columnSize:
       note.date: 193
       note.title: 294
