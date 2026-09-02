@@ -17,19 +17,19 @@ Sou a chuva no telhado <br> Me torno a gota na janela
 
 Eu era tudo  <br> Perdido em uma vastidão de formas
 
-Até que...
-
 Escolhi ser você <br> Mesmo quando eu podia ser tudo
 
 Escolhi ser você <br> Mas perdi minha forma.
 
-Permita-se se tornar eu <br> Para que então não me perca
+Permita-se se tornar eu <br> E não me perca
 
-Permita-me se tornar você <br> Para que então sejamos um.
+Permita-me se tornar você <br> E sejamos um.
 
 Quero existir em você <br> Sem que eu tenha que deixar de ser eu
 
-Até que voltemos a ser gotas <br> Apagados pela chuva <br> E não um pelo outro
+Até que voltemos a ser gotas <br> Apagados pela chuva <br>
+
+E não um pelo outro
 
 ---
 
