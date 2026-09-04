@@ -19,7 +19,7 @@ Eu era tudo  <br> Perdido em uma vastidão de formas
 
 Escolhi ser você <br> Mesmo quando eu podia ser tudo
 
-Escolhi ser você <br> Mas perdi minha forma.
+Escolhi ser você <br> E ganhei vida
 
 Permita-se se tornar eu <br> E não me perca
 
