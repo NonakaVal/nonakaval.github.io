@@ -22,7 +22,8 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md"
+    "TEMPLATE/DAILY-CALENDAR-TEMPLATE.md",
+    "X/Templates/Snippets/br.md"
   ],
   "startup_templates": [],
   "intellisense_render": "1",

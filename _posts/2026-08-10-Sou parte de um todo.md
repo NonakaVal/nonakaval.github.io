@@ -15,18 +15,30 @@ mermaid: false
 calendar: "[[2026-08-10]]"
 ---
 
-<br> **Sou parte de um todo,**  
-<br> Sequer existo como um,
-<br>
-<br> **Talvez por isso doí se sentir só** <br> Minha solidão é reflexo de quem sou
-<br> Tudo que senti <br> **Senti sozinho**.
-<br>
-<br> Não terá ninguém para chorar minha morte <br> Ninguém parar ir ao meu funeral
-<br>
-<br> **Uma vida solitária** <br> **Uma morte solitária**
-<br> Não há outro tipo de morte <br><br> **Sou parte de um todo,**
 
-<br><br><br><br>
+<br>
+
+Sou parte de um todo, <br> Sequer existo como um,  <br> do todo vem tudo que sei, <br> Em mim há tudo que sinto,
+
+Sentindo sozinho
+
+Sorrindo só para mim, <br> Rasgando eu mesmo meu peito <br> Nunca partilhado <br> Nunca real
+
+Só existo nas minhas memórias, <br> Muitas das quais apagadas <br> 
+Ninguém para chorar minha morte <br> 
+
+Morte que me salva da vida,
+<br> Uma vida solitária <br> Uma morte solidária <br> 
+
+
+Sou parte de um todo, <br>
+Sequer existo como um...
+
+
+
+<br>
+<br>
+
 
 ---
 

@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-19-permita-me-ser-voce.md",
-                "mode": "preview",
+                "file": "2026-07-03-flores.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -40,7 +40,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-19-permita-me-ser-voce"
+              "title": "2026-07-03-flores"
             }
           }
         ],
@@ -193,8 +193,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -285,15 +285,29 @@
       "command-palette:Abrir paleta de comandos": false,
       "workspaces:Gerenciar leiautes da área de trabalho": false,
       "bases:Criar nova base": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
   "active": "30f29ef273c5d57c",
   "lastOpenFiles": [
-    "X/Bases/Base.base",
+    "+  Não Postado/flores 1.md",
+    "2026-07-03-flores.md",
+    "X/Templates/Snippets/br.md",
+    "+  Não Postado/Sem título.md",
+    "2026-08-10-Sou parte de um todo.md",
+    "2026-08-05-humanidade.md",
+    "2026-08-04-Pourquoi la mort te fait peur.md",
+    "2026-07-29-eterno-retorno-nietzsche.md",
+    "2026-06-15-base-bom-relatorio.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-12-humansadness.md",
+    "2026-06-07-O-agora.md",
+    "2026-05-24-limite-da-individualidade.md",
     "2025-12-09-o-conhecimento.md",
+    "2026-08-19-permita-me-ser-voce.md",
+    "X/Bases/Base.base",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "2026-08-19-sobre-mim.md",
@@ -308,19 +322,6 @@
     "X/+/CONVENCOES-CATEGORIAS-TAGS.md",
     "X/+",
     "X/Bases",
-    "X/Templates/Snippets/_ post Insert prompt.md",
-    "X/Templates/Snippets/post add img post.md",
-    "X/Templates/Snippets/post add-video-youtube.md",
-    "X/Templates/Snippets/post img-inline.md",
-    "X/Templates/Snippets/post img-sized.md",
-    "X/Templates/Snippets/System add folder.md",
-    "X/Templates/Snippets/block-code-tutorial.md",
-    "X/Templates/Snippets/block-image-gallery.md",
-    "X/Templates/Snippets/block-quote-source.md",
-    "X/Templates/Snippets/block-video-section.md",
-    "X/Templates/Snippets/br br.md",
-    "X/Templates/Snippets/code-block.md",
-    "X/Templates/Snippets/embed-audio.md",
     "Pasted image 20260819010855.png",
     "+  Não Postado",
     "+  Não Postado",
