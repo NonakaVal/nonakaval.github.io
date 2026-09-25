@@ -21,11 +21,13 @@ Escolhi ser você <br> Mesmo quando eu podia ser tudo
 
 Escolhi ser você <br> E ganhei vida
 
-Permita-se se tornar eu <br> E não me perca
+Quero existir em você <br> Sem que eu tenha que deixar de ser eu
+
+Permita-se se tornar eu <br> Para que então não me perca
 
 Permita-me se tornar você <br> E sejamos um.
 
-Quero existir em você <br> Sem que eu tenha que deixar de ser eu
+
 
 Até que voltemos a ser gotas <br> Apagados pela chuva <br>
 
