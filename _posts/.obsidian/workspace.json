@@ -16,7 +16,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "New tab"
             }
           },
           {
@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-19-permita-me-ser-voce.md",
-                "mode": "source",
+                "file": "2026-06-07-O-agora.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -40,7 +40,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-19-permita-me-ser-voce"
+              "title": "2026-06-07-O-agora"
             }
           }
         ],
@@ -69,7 +69,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -277,21 +277,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "workspaces:Gerenciar leiautes da área de trabalho": false,
-      "bases:Criar nova base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "30f29ef273c5d57c",
   "lastOpenFiles": [
+    "2026-08-19-permita-me-ser-voce.md",
     "2026-07-03-flores.md",
     "+  Não Postado/flores 1.md",
     "X/Templates/Snippets/br.md",
@@ -306,7 +307,6 @@
     "2026-06-07-O-agora.md",
     "2026-05-24-limite-da-individualidade.md",
     "2025-12-09-o-conhecimento.md",
-    "2026-08-19-permita-me-ser-voce.md",
     "X/Bases/Base.base",
     "2025-06-10-conhecimento-fragmentado.md",
     "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",

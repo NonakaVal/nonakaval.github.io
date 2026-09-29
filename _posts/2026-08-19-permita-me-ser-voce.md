@@ -13,25 +13,38 @@ mermaid: false
 calendar: "[[2026-08-19]]"
 ---
 
-Sou a chuva no telhado <br> Me torno a gota na janela
 
-Eu era tudo  <br> Perdido em uma vastidão de formas
+Sou a gota d'água,<br>
+me torno um grão de areia.<br>
+Polimorfo , perdido em uma vastidão de formas.<br>
 
-Escolhi ser você <br> Mesmo quando eu podia ser tudo
+Escolhi ser você,<br>
+mesmo quando podia ser tudo.<br>
 
-Escolhi ser você <br> E ganhei vida
+Você também me escolheu,<br>
+Permitimos mudar um ao outro,<br>
 
-Quero existir em você <br> Sem que eu tenha que deixar de ser eu
+Mas não temos forma,<br>
+Somos a mudança,<br>
+Filhos da metamorfose,<br>
 
-Permita-se se tornar eu <br> Para que então não me perca
+Permita-se tornar-se eu,<br>
+para que então não me perca.<br>
 
-Permita-me se tornar você <br> E sejamos um.
+Permita-me me tornar você,<br>
+sem que eu tenha que deixar de existir.<br>
 
+Dance comigo sub muitas formas,<br>
+Sejamos um,<br>
 
+Até que o amor acabe,<br>
+Já que nada é permanente,<br>
+se tudo que temos é agora..<br>
 
-Até que voltemos a ser gotas <br> Apagados pela chuva <br>
-
-E não um pelo outro
+Esteja comigo,<br>
+Viva em mim pelo tempo que existirmos nessa forma,<br>
+até voltarmos a ser gotas d'água,<br>
+Apagados pela chuva, e não um pelo outro.
 
 ---
 
