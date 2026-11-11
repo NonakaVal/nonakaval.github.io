@@ -16,7 +16,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Nova aba"
             }
           },
           {
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-19-permita-me-ser-voce.md",
+                "file": "2025-06-10-conhecimento-fragmentado.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -40,7 +40,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-19-permita-me-ser-voce"
+              "title": "2025-06-10-conhecimento-fragmentado"
             }
           }
         ],
@@ -63,13 +63,13 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -277,14 +277,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
-      "bases:Create new base": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "workspaces:Gerenciar leiautes da área de trabalho": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
       "periodic-notes:Open today": false
@@ -292,23 +292,26 @@
   },
   "active": "30f29ef273c5d57c",
   "lastOpenFiles": [
+    "2025-08-20-arc-framework.md",
     "2025-06-10-conhecimento-fragmentado.md",
-    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
+    "2025-12-09-o-conhecimento.md",
+    "2026-05-24-limite-da-individualidade.md",
+    "2026-06-01-rumi.md",
     "2026-06-07-O-agora.md",
-    "2026-08-19-permita-me-ser-voce.md",
+    "2026-06-12-humansadness.md",
+    "2026-06-12-Vai-ficar-tudo-bem.md",
+    "2026-06-15-base-bom-relatorio.md",
     "2026-07-03-flores.md",
+    "2026-07-29-eterno-retorno-nietzsche.md",
+    "2026-08-04-Pourquoi la mort te fait peur.md",
+    "2026-08-10-Sou parte de um todo.md",
+    "2026-08-05-humanidade.md",
+    "2026-08-11-last-hope.md",
+    "2026-08-19-permita-me-ser-voce.md",
+    "2025-05-29-um-resumo-sobre-aprender-com-anotacoes.md",
     "+  Não Postado/flores 1.md",
     "X/Templates/Snippets/br.md",
     "+  Não Postado/Sem título.md",
-    "2026-08-10-Sou parte de um todo.md",
-    "2026-08-05-humanidade.md",
-    "2026-08-04-Pourquoi la mort te fait peur.md",
-    "2026-07-29-eterno-retorno-nietzsche.md",
-    "2026-06-15-base-bom-relatorio.md",
-    "2026-06-12-Vai-ficar-tudo-bem.md",
-    "2026-06-12-humansadness.md",
-    "2026-05-24-limite-da-individualidade.md",
-    "2025-12-09-o-conhecimento.md",
     "X/Bases/Base.base",
     "2026-08-19-sobre-mim.md",
     "+  Não Postado/python logic.md",
@@ -316,10 +319,7 @@
     "+  Não Postado/eterno.md",
     "+  Não Postado/eramos-vulgares.md",
     "+  Não Postado/books.md",
-    "X/+/TIPOGRAFIA.md",
     "X/Bases/Templates.base",
-    "X/+/Pastas Sistema.md",
-    "X/+/CONVENCOES-CATEGORIAS-TAGS.md",
     "X/+",
     "X/Bases",
     "Pasted image 20260819010855.png",

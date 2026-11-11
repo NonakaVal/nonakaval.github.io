@@ -4,7 +4,6 @@ description: Um desabafo leve
 date: 2026-06-12 13:39:59
 author: Val
 tags:
-  - Poesia
   - Pessoal
 pin: false
 image: assets/img/post-banners/julianwolf.png

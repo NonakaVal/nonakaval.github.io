@@ -1,11 +1,10 @@
 ---
 title: Sou a chuva
-description: Me aventurando na escrita de poesias sobre pessoas que só existiram na minha cabeça parte 2
+description: Mudar não é uma opção
 date: 2026-08-19 01:08:54
 author: Val
 tags:
   - Pessoal
-  - Poesia
 pin: false
 image: assets/img/post-banners/janela-em-um-dia-chuvoso_1260-36.jpg
 math: false

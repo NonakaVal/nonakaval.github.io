@@ -4,9 +4,7 @@ description: "Um desabafo leve #2"
 date: 2026-08-10 11:09:39
 author: Val
 tags:
-  - Escrita
   - Pessoal
-  - Poesia
   - Filosofia
 pin: false
 image: assets/img/post-banners/shared.jpg

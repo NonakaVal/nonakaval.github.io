@@ -452,7 +452,7 @@ var PromptModal = class extends import_obsidian2.Modal {
   }
   createForm() {
     const textInput = new import_obsidian2.TextComponent(this.contentEl);
-    textInput.inputEl.style.width = "100%";
+    textInput.inputEl.addClass("yt-transcript__prompt-input");
     textInput.onChange((value) => this.value = value);
     textInput.inputEl.addEventListener(
       "keydown",
@@ -482,7 +482,7 @@ var PromptModal = class extends import_obsidian2.Modal {
     this.resolve(this.value);
     this.close();
   }
-  async openAndGetValue(resolve, reject) {
+  openAndGetValue(resolve, reject) {
     this.resolve = resolve;
     this.reject = reject;
     this.open();
@@ -579,6 +579,117 @@ var InsertTranscriptCommand = class {
   }
 };
 
+// src/obsidian/settings.ts
+var DEFAULT_SETTINGS = {
+  timestampMod: 5,
+  lang: "en",
+  country: "EN",
+  openLocation: "right-sidebar"
+};
+var OPEN_LOCATION_OPTIONS = {
+  "right-sidebar": "Right sidebar",
+  "left-sidebar": "Left sidebar",
+  tab: "New tab",
+  split: "Split (right)"
+};
+var SETTING_TEXT = {
+  timestampMod: {
+    name: "Timestamp interval",
+    desc: "How many transcript lines to group under each timestamp (1 = a timestamp on every line).",
+    aliases: ["lines per timestamp", "grouping", "blocks"]
+  },
+  lang: {
+    name: "Language",
+    desc: "Preferred transcript language code, e.g. en or de. Falls back to the closest available track.",
+    aliases: ["captions", "subtitles", "lang"]
+  },
+  country: {
+    name: "Country",
+    desc: "Country code sent to YouTube, e.g. US or PL.",
+    aliases: ["region", "locale"]
+  },
+  openLocation: {
+    name: "Open transcript in",
+    desc: "Where the transcript view opens.",
+    aliases: ["sidebar", "tab", "split", "panel", "view"]
+  }
+};
+function validateTimestampMod(value) {
+  if (!Number.isInteger(value) || value < 1) {
+    return "Enter a whole number of 1 or more.";
+  }
+  return void 0;
+}
+function buildSettingDefinitions() {
+  return [
+    {
+      ...SETTING_TEXT.timestampMod,
+      control: {
+        type: "number",
+        key: "timestampMod",
+        defaultValue: DEFAULT_SETTINGS.timestampMod,
+        min: 1,
+        step: 1,
+        validate: validateTimestampMod
+      }
+    },
+    {
+      ...SETTING_TEXT.lang,
+      control: {
+        type: "text",
+        key: "lang",
+        defaultValue: DEFAULT_SETTINGS.lang,
+        placeholder: DEFAULT_SETTINGS.lang
+      }
+    },
+    {
+      ...SETTING_TEXT.country,
+      control: {
+        type: "text",
+        key: "country",
+        defaultValue: DEFAULT_SETTINGS.country,
+        placeholder: DEFAULT_SETTINGS.country
+      }
+    },
+    {
+      ...SETTING_TEXT.openLocation,
+      control: {
+        type: "dropdown",
+        key: "openLocation",
+        defaultValue: DEFAULT_SETTINGS.openLocation,
+        options: OPEN_LOCATION_OPTIONS
+      }
+    }
+  ];
+}
+function isSettingKey(key) {
+  return Object.prototype.hasOwnProperty.call(DEFAULT_SETTINGS, key);
+}
+function isOpenLocation(value) {
+  return typeof value === "string" && Object.prototype.hasOwnProperty.call(OPEN_LOCATION_OPTIONS, value);
+}
+function applySettingValue(settings, key, value) {
+  switch (key) {
+    case "timestampMod":
+      if (typeof value !== "number" || validateTimestampMod(value)) {
+        return false;
+      }
+      settings.timestampMod = value;
+      return true;
+    case "lang":
+    case "country":
+      if (typeof value !== "string") return false;
+      settings[key] = value;
+      return true;
+    case "openLocation":
+      if (!isOpenLocation(value)) return false;
+      settings.openLocation = value;
+      return true;
+    default:
+      return false;
+  }
+}
+
 // src/obsidian/views/transcript-view.ts
 var import_obsidian4 = require("obsidian");
 
@@ -587,7 +698,8 @@ function highlightText(el, searchValue) {
   var _a;
   if (!searchValue) return;
   const needle = searchValue.toLowerCase();
-  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  const doc = el.doc;
+  const walker = doc.createTreeWalker(el, NodeFilter.SHOW_TEXT);
   const textNodes = [];
   let node = walker.nextNode();
   while (node) {
@@ -602,24 +714,24 @@ function highlightText(el, searchValue) {
     if (matchIdx === -1) continue;
     const parent = textNode.parentNode;
     if (!parent) continue;
-    const fragment = document.createDocumentFragment();
+    const fragment = createFragment();
     while (matchIdx !== -1) {
       if (matchIdx > searchFrom) {
         fragment.appendChild(
-          document.createTextNode(text.slice(searchFrom, matchIdx))
+          doc.createTextNode(text.slice(searchFrom, matchIdx))
         );
       }
-      const mark = document.createElement("span");
-      mark.className = "yt-transcript__highlight";
-      mark.textContent = text.slice(matchIdx, matchIdx + needle.length);
-      fragment.appendChild(mark);
+      fragment.appendChild(
+        createSpan({
+          cls: "yt-transcript__highlight",
+          text: text.slice(matchIdx, matchIdx + needle.length)
+        })
+      );
       searchFrom = matchIdx + needle.length;
       matchIdx = lower.indexOf(needle, searchFrom);
     }
     if (searchFrom < text.length) {
-      fragment.appendChild(
-        document.createTextNode(text.slice(searchFrom))
-      );
+      fragment.appendChild(doc.createTextNode(text.slice(searchFrom)));
     }
     parent.replaceChild(fragment, textNode);
   }
@@ -637,7 +749,7 @@ var TranscriptView = class extends import_obsidian4.ItemView {
     this.contentEl.empty();
     this.contentEl.createEl("h4", { text: "Transcript" });
   }
-  async setEphemeralState(state) {
+  setEphemeralState(state) {
     const { url, transcript } = state;
     if (!url || !transcript) return;
     const { timestampMod } = this.plugin.settings;
@@ -647,40 +759,40 @@ var TranscriptView = class extends import_obsidian4.ItemView {
     this.currentTimestampMod = timestampMod;
     this.currentSearch = "";
     this.contentEl.empty();
-    const headerEl = this.contentEl.createEl("div", {
+    const headerEl = this.contentEl.createDiv({
       cls: "yt-transcript__header"
     });
-    headerEl.createEl("div", {
+    headerEl.createDiv({
       text: transcript.title,
       cls: "yt-transcript__video-title",
       attr: { title: transcript.title }
     });
     if (transcript.lines.length === 0) {
-      this.contentEl.createEl("div", {
+      this.contentEl.createDiv({
         text: "No transcript found for this video.",
         cls: "yt-transcript__empty"
       });
       return;
     }
-    const actionsEl = headerEl.createEl("div", {
+    const actionsEl = headerEl.createDiv({
       cls: "yt-transcript__actions"
     });
     this.renderSearchInput(actionsEl, url, transcript, timestampMod);
     this.renderIntervalInput(actionsEl);
     this.renderCopyAllButton(actionsEl);
-    this.matchCountEl = headerEl.createEl("div", {
+    this.matchCountEl = headerEl.createDiv({
       cls: "yt-transcript__match-count"
     });
-    this.dataContainerEl = this.contentEl.createEl("div", {
+    this.dataContainerEl = this.contentEl.createDiv({
       cls: "yt-transcript__blocks"
     });
     this.renderTranscriptionBlocks(url, transcript, timestampMod, "");
   }
   renderSearchInput(parentEl, url, data, timestampMod) {
-    const wrapperEl = parentEl.createEl("div", {
+    const wrapperEl = parentEl.createDiv({
       cls: "yt-transcript__search"
     });
-    const iconEl = wrapperEl.createEl("span", {
+    const iconEl = wrapperEl.createSpan({
       cls: "yt-transcript__search-icon"
     });
     (0, import_obsidian4.setIcon)(iconEl, "search");
@@ -701,7 +813,7 @@ var TranscriptView = class extends import_obsidian4.ItemView {
       cls: "yt-transcript__interval",
       attr: { title: "Lines grouped per timestamp" }
     });
-    wrapperEl.createEl("span", {
+    wrapperEl.createSpan({
       text: "Every",
       cls: "yt-transcript__interval-label"
     });
@@ -712,25 +824,28 @@ var TranscriptView = class extends import_obsidian4.ItemView {
     input.min = "1";
     input.step = "1";
     input.value = String((_a = this.currentTimestampMod) != null ? _a : 5);
-    input.addEventListener("change", async () => {
-      var _a2;
-      const parsed = Number.parseInt(input.value, 10);
-      if (Number.isNaN(parsed) || parsed < 1) {
-        input.value = String((_a2 = this.currentTimestampMod) != null ? _a2 : 5);
-        return;
-      }
-      this.currentTimestampMod = parsed;
-      this.plugin.settings.timestampMod = parsed;
-      await this.plugin.saveSettings();
-      if (this.currentUrl && this.currentData) {
-        this.renderTranscriptionBlocks(
-          this.currentUrl,
-          this.currentData,
-          parsed,
-          this.currentSearch
-        );
-      }
+    input.addEventListener("change", () => {
+      void this.onIntervalChange(input);
     });
+  }
+  async onIntervalChange(input) {
+    var _a;
+    const parsed = Number.parseInt(input.value, 10);
+    if (Number.isNaN(parsed) || parsed < 1) {
+      input.value = String((_a = this.currentTimestampMod) != null ? _a : 5);
+      return;
+    }
+    this.currentTimestampMod = parsed;
+    this.plugin.settings.timestampMod = parsed;
+    if (this.currentUrl && this.currentData) {
+      this.renderTranscriptionBlocks(
+        this.currentUrl,
+        this.currentData,
+        parsed,
+        this.currentSearch
+      );
+    }
+    await this.plugin.saveSettings();
   }
   renderCopyAllButton(parentEl) {
     const btn = parentEl.createEl("button", {
@@ -762,12 +877,18 @@ var TranscriptView = class extends import_obsidian4.ItemView {
       (block) => block.quote.toLowerCase().includes(this.currentSearch.toLowerCase())
     );
     if (blocks.length === 0) return;
-    navigator.clipboard.writeText(
-      this.formatContentToPaste(this.currentUrl, blocks)
-    );
-    new import_obsidian4.Notice(
+    void this.copyText(
+      this.formatContentToPaste(this.currentUrl, blocks),
       this.currentSearch ? `Copied ${blocks.length} matching blocks` : "Copied transcript"
     );
+  }
+  async copyText(text, successMessage) {
+    try {
+      await navigator.clipboard.writeText(text);
+      if (successMessage) new import_obsidian4.Notice(successMessage);
+    } catch (e) {
+      new import_obsidian4.Notice("Could not copy to the clipboard.");
+    }
   }
   formatContentToPaste(url, blocks) {
     return blocks.map((block) => {
@@ -786,7 +907,7 @@ var TranscriptView = class extends import_obsidian4.ItemView {
     );
     this.updateMatchCount(searchValue, filteredBlocks.length);
     if (searchValue !== "" && filteredBlocks.length === 0) {
-      dataContainerEl.createEl("div", {
+      dataContainerEl.createDiv({
         text: "No matches.",
         cls: "yt-transcript__empty"
       });
@@ -794,7 +915,7 @@ var TranscriptView = class extends import_obsidian4.ItemView {
     }
     filteredBlocks.forEach((block) => {
       const { quote, quoteTimeOffset } = block;
-      const blockContainerEl = createEl("div", {
+      const blockContainerEl = createDiv({
         cls: "yt-transcript__transcript-block"
       });
       blockContainerEl.draggable = true;
@@ -806,7 +927,7 @@ var TranscriptView = class extends import_obsidian4.ItemView {
           href: timestampHref
         }
       });
-      const span = dataContainerEl.createEl("span", {
+      const span = dataContainerEl.createSpan({
         text: quote,
         title: "Click to copy"
       });
@@ -814,7 +935,7 @@ var TranscriptView = class extends import_obsidian4.ItemView {
         var _a;
         const target = event.target;
         if (target !== null) {
-          navigator.clipboard.writeText((_a = target.textContent) != null ? _a : "");
+          void this.copyText((_a = target.textContent) != null ? _a : "");
         }
       });
       if (searchValue !== "") highlightText(span, searchValue);
@@ -836,8 +957,9 @@ var TranscriptView = class extends import_obsidian4.ItemView {
           const menu = new import_obsidian4.Menu();
           menu.addItem(
             (item) => item.setTitle("Copy all").onClick(() => {
-              navigator.clipboard.writeText(
-                this.formatContentToPaste(url, filteredBlocks)
+              void this.copyText(
+                this.formatContentToPaste(url, filteredBlocks),
+                "Copied transcript"
               );
             })
           );
@@ -860,12 +982,6 @@ var TranscriptView = class extends import_obsidian4.ItemView {
 };
 
 // src/obsidian/plugin.ts
-var DEFAULT_SETTINGS = {
-  timestampMod: 5,
-  lang: "en",
-  country: "EN",
-  openLocation: "right-sidebar"
-};
 var YTranscriptPlugin = class extends import_obsidian5.Plugin {
   async onload() {
     await this.loadSettings();
@@ -876,23 +992,22 @@ var YTranscriptPlugin = class extends import_obsidian5.Plugin {
     );
     this.addCommand({
       id: "transcript-from-text",
-      name: "Get YouTube transcript from selected url",
+      name: "Get YouTube transcript from selected URL",
       editorCallback: (editor) => {
         const url = getSelectedText(editor).trim();
-        this.openView(url);
+        void this.openView(url);
       }
     });
     this.addCommand({
       id: "transcript-from-prompt",
-      name: "Get YouTube transcript from url prompt",
+      name: "Get YouTube transcript from URL prompt",
       callback: async () => {
         const prompt = new PromptModal(this.app);
         const url = await new Promise(
-          (resolve) => prompt.openAndGetValue(resolve, () => {
-          })
+          (resolve) => prompt.openAndGetValue(resolve, () => resolve(""))
         );
         if (url) {
-          this.openView(url);
+          await this.openView(url);
         }
       }
     });
@@ -926,7 +1041,7 @@ var YTranscriptPlugin = class extends import_obsidian5.Plugin {
       const transcript = await this.getTranscript(url);
       const leaf = this.getOpenLeaf();
       await leaf.setViewState({ type: TRANSCRIPT_TYPE_VIEW });
-      this.app.workspace.revealLeaf(leaf);
+      await this.app.workspace.revealLeaf(leaf);
       leaf.setEphemeralState({ url, transcript });
     } catch (err) {
       const message = err instanceof Error ? err.message : "Unknown error";
@@ -949,15 +1064,9 @@ var YTranscriptPlugin = class extends import_obsidian5.Plugin {
         return workspace.getRightLeaf(false);
     }
   }
-  onunload() {
-    this.app.workspace.detachLeavesOfType(TRANSCRIPT_TYPE_VIEW);
-  }
   async loadSettings() {
-    this.settings = Object.assign(
-      {},
-      DEFAULT_SETTINGS,
-      await this.loadData()
-    );
+    const saved = await this.loadData();
+    this.settings = { ...DEFAULT_SETTINGS, ...saved };
   }
   async saveSettings() {
     await this.saveData(this.settings);
@@ -968,40 +1077,44 @@ var YTranscriptSettingTab = class extends import_obsidian5.PluginSettingTab {
     super(app, plugin);
     this.plugin = plugin;
   }
+  // Obsidian 1.13+: renders the tab declaratively and makes every setting searchable.
+  // When this returns a non-empty array, display() is never called.
+  getSettingDefinitions() {
+    return buildSettingDefinitions();
+  }
+  getControlValue(key) {
+    return isSettingKey(key) ? this.plugin.settings[key] : void 0;
+  }
+  async setControlValue(key, value) {
+    if (applySettingValue(this.plugin.settings, key, value)) {
+      await this.plugin.saveSettings();
+    }
+  }
+  // Fallback for Obsidian 1.7.2–1.12, which don't know getSettingDefinitions().
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: "Settings for YTranscript" });
-    new import_obsidian5.Setting(containerEl).setName("Timestamp interval").setDesc(
-      "Indicates how often timestamp should occur in text (1 - every line, 10 - every 10 lines)"
-    ).addText(
-      (text) => text.setValue(this.plugin.settings.timestampMod.toFixed()).onChange(async (value) => {
-        const v = Number.parseInt(value);
-        this.plugin.settings.timestampMod = Number.isNaN(v) ? 5 : v;
-        await this.plugin.saveSettings();
-      })
+    new import_obsidian5.Setting(containerEl).setName(SETTING_TEXT.timestampMod.name).setDesc(SETTING_TEXT.timestampMod.desc).addText(
+      (text) => text.setValue(this.plugin.settings.timestampMod.toFixed()).onChange(
+        (value) => this.setControlValue(
+          "timestampMod",
+          Number.parseInt(value, 10)
+        )
+      )
     );
-    new import_obsidian5.Setting(containerEl).setName("Language").setDesc("Preferred transcript language").addText(
-      (text) => text.setValue(this.plugin.settings.lang).onChange(async (value) => {
-        this.plugin.settings.lang = value;
-        await this.plugin.saveSettings();
-      })
+    new import_obsidian5.Setting(containerEl).setName(SETTING_TEXT.lang.name).setDesc(SETTING_TEXT.lang.desc).addText(
+      (text) => text.setPlaceholder(DEFAULT_SETTINGS.lang).setValue(this.plugin.settings.lang).onChange((value) => this.setControlValue("lang", value))
     );
-    new import_obsidian5.Setting(containerEl).setName("Country").setDesc("Preferred transcript country code").addText(
-      (text) => text.setValue(this.plugin.settings.country).onChange(async (value) => {
-        this.plugin.settings.country = value;
-        await this.plugin.saveSettings();
-      })
+    new import_obsidian5.Setting(containerEl).setName(SETTING_TEXT.country.name).setDesc(SETTING_TEXT.country.desc).addText(
+      (text) => text.setPlaceholder(DEFAULT_SETTINGS.country).setValue(this.plugin.settings.country).onChange(
+        (value) => this.setControlValue("country", value)
+      )
     );
-    new import_obsidian5.Setting(containerEl).setName("Open transcript in").setDesc("Where to open the transcript view").addDropdown(
-      (dropdown) => dropdown.addOptions({
-        "right-sidebar": "Right sidebar",
-        "left-sidebar": "Left sidebar",
-        tab: "New tab",
-        split: "Split (right)"
-      }).setValue(this.plugin.settings.openLocation).onChange(async (value) => {
-        this.plugin.settings.openLocation = value;
-        await this.plugin.saveSettings();
+    new import_obsidian5.Setting(containerEl).setName(SETTING_TEXT.openLocation.name).setDesc(SETTING_TEXT.openLocation.desc).addDropdown(
+      (dropdown) => dropdown.addOptions(OPEN_LOCATION_OPTIONS).setValue(this.plugin.settings.openLocation).onChange((value) => {
+        if (isOpenLocation(value)) {
+          void this.setControlValue("openLocation", value);
+        }
       })
     );
   }

@@ -26,8 +26,24 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
 var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  try {
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  } catch (e) {
+    throw mod = 0, e;
+  }
 };
 var __export = (target, all) => {
   for (var name in all)
@@ -41,8 +57,16 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target, mod));
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -64,4871 +88,6 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/entities/lib/maps/entities.json
-var require_entities = __commonJS({
-  "node_modules/entities/lib/maps/entities.json"(exports, module2) {
-    module2.exports = { Aacute: "\xC1", aacute: "\xE1", Abreve: "\u0102", abreve: "\u0103", ac: "\u223E", acd: "\u223F", acE: "\u223E\u0333", Acirc: "\xC2", acirc: "\xE2", acute: "\xB4", Acy: "\u0410", acy: "\u0430", AElig: "\xC6", aelig: "\xE6", af: "\u2061", Afr: "\u{1D504}", afr: "\u{1D51E}", Agrave: "\xC0", agrave: "\xE0", alefsym: "\u2135", aleph: "\u2135", Alpha: "\u0391", alpha: "\u03B1", Amacr: "\u0100", amacr: "\u0101", amalg: "\u2A3F", amp: "&", AMP: "&", andand: "\u2A55", And: "\u2A53", and: "\u2227", andd: "\u2A5C", andslope: "\u2A58", andv: "\u2A5A", ang: "\u2220", ange: "\u29A4", angle: "\u2220", angmsdaa: "\u29A8", angmsdab: "\u29A9", angmsdac: "\u29AA", angmsdad: "\u29AB", angmsdae: "\u29AC", angmsdaf: "\u29AD", angmsdag: "\u29AE", angmsdah: "\u29AF", angmsd: "\u2221", angrt: "\u221F", angrtvb: "\u22BE", angrtvbd: "\u299D", angsph: "\u2222", angst: "\xC5", angzarr: "\u237C", Aogon: "\u0104", aogon: "\u0105", Aopf: "\u{1D538}", aopf: "\u{1D552}", apacir: "\u2A6F", ap: "\u2248", apE: "\u2A70", ape: "\u224A", apid: "\u224B", apos: "'", ApplyFunction: "\u2061", approx: "\u2248", approxeq: "\u224A", Aring: "\xC5", aring: "\xE5", Ascr: "\u{1D49C}", ascr: "\u{1D4B6}", Assign: "\u2254", ast: "*", asymp: "\u2248", asympeq: "\u224D", Atilde: "\xC3", atilde: "\xE3", Auml: "\xC4", auml: "\xE4", awconint: "\u2233", awint: "\u2A11", backcong: "\u224C", backepsilon: "\u03F6", backprime: "\u2035", backsim: "\u223D", backsimeq: "\u22CD", Backslash: "\u2216", Barv: "\u2AE7", barvee: "\u22BD", barwed: "\u2305", Barwed: "\u2306", barwedge: "\u2305", bbrk: "\u23B5", bbrktbrk: "\u23B6", bcong: "\u224C", Bcy: "\u0411", bcy: "\u0431", bdquo: "\u201E", becaus: "\u2235", because: "\u2235", Because: "\u2235", bemptyv: "\u29B0", bepsi: "\u03F6", bernou: "\u212C", Bernoullis: "\u212C", Beta: "\u0392", beta: "\u03B2", beth: "\u2136", between: "\u226C", Bfr: "\u{1D505}", bfr: "\u{1D51F}", bigcap: "\u22C2", bigcirc: "\u25EF", bigcup: "\u22C3", bigodot: "\u2A00", bigoplus: "\u2A01", bigotimes: "\u2A02", bigsqcup: "\u2A06", bigstar: "\u2605", bigtriangledown: "\u25BD", bigtriangleup: "\u25B3", biguplus: "\u2A04", bigvee: "\u22C1", bigwedge: "\u22C0", bkarow: "\u290D", blacklozenge: "\u29EB", blacksquare: "\u25AA", blacktriangle: "\u25B4", blacktriangledown: "\u25BE", blacktriangleleft: "\u25C2", blacktriangleright: "\u25B8", blank: "\u2423", blk12: "\u2592", blk14: "\u2591", blk34: "\u2593", block: "\u2588", bne: "=\u20E5", bnequiv: "\u2261\u20E5", bNot: "\u2AED", bnot: "\u2310", Bopf: "\u{1D539}", bopf: "\u{1D553}", bot: "\u22A5", bottom: "\u22A5", bowtie: "\u22C8", boxbox: "\u29C9", boxdl: "\u2510", boxdL: "\u2555", boxDl: "\u2556", boxDL: "\u2557", boxdr: "\u250C", boxdR: "\u2552", boxDr: "\u2553", boxDR: "\u2554", boxh: "\u2500", boxH: "\u2550", boxhd: "\u252C", boxHd: "\u2564", boxhD: "\u2565", boxHD: "\u2566", boxhu: "\u2534", boxHu: "\u2567", boxhU: "\u2568", boxHU: "\u2569", boxminus: "\u229F", boxplus: "\u229E", boxtimes: "\u22A0", boxul: "\u2518", boxuL: "\u255B", boxUl: "\u255C", boxUL: "\u255D", boxur: "\u2514", boxuR: "\u2558", boxUr: "\u2559", boxUR: "\u255A", boxv: "\u2502", boxV: "\u2551", boxvh: "\u253C", boxvH: "\u256A", boxVh: "\u256B", boxVH: "\u256C", boxvl: "\u2524", boxvL: "\u2561", boxVl: "\u2562", boxVL: "\u2563", boxvr: "\u251C", boxvR: "\u255E", boxVr: "\u255F", boxVR: "\u2560", bprime: "\u2035", breve: "\u02D8", Breve: "\u02D8", brvbar: "\xA6", bscr: "\u{1D4B7}", Bscr: "\u212C", bsemi: "\u204F", bsim: "\u223D", bsime: "\u22CD", bsolb: "\u29C5", bsol: "\\", bsolhsub: "\u27C8", bull: "\u2022", bullet: "\u2022", bump: "\u224E", bumpE: "\u2AAE", bumpe: "\u224F", Bumpeq: "\u224E", bumpeq: "\u224F", Cacute: "\u0106", cacute: "\u0107", capand: "\u2A44", capbrcup: "\u2A49", capcap: "\u2A4B", cap: "\u2229", Cap: "\u22D2", capcup: "\u2A47", capdot: "\u2A40", CapitalDifferentialD: "\u2145", caps: "\u2229\uFE00", caret: "\u2041", caron: "\u02C7", Cayleys: "\u212D", ccaps: "\u2A4D", Ccaron: "\u010C", ccaron: "\u010D", Ccedil: "\xC7", ccedil: "\xE7", Ccirc: "\u0108", ccirc: "\u0109", Cconint: "\u2230", ccups: "\u2A4C", ccupssm: "\u2A50", Cdot: "\u010A", cdot: "\u010B", cedil: "\xB8", Cedilla: "\xB8", cemptyv: "\u29B2", cent: "\xA2", centerdot: "\xB7", CenterDot: "\xB7", cfr: "\u{1D520}", Cfr: "\u212D", CHcy: "\u0427", chcy: "\u0447", check: "\u2713", checkmark: "\u2713", Chi: "\u03A7", chi: "\u03C7", circ: "\u02C6", circeq: "\u2257", circlearrowleft: "\u21BA", circlearrowright: "\u21BB", circledast: "\u229B", circledcirc: "\u229A", circleddash: "\u229D", CircleDot: "\u2299", circledR: "\xAE", circledS: "\u24C8", CircleMinus: "\u2296", CirclePlus: "\u2295", CircleTimes: "\u2297", cir: "\u25CB", cirE: "\u29C3", cire: "\u2257", cirfnint: "\u2A10", cirmid: "\u2AEF", cirscir: "\u29C2", ClockwiseContourIntegral: "\u2232", CloseCurlyDoubleQuote: "\u201D", CloseCurlyQuote: "\u2019", clubs: "\u2663", clubsuit: "\u2663", colon: ":", Colon: "\u2237", Colone: "\u2A74", colone: "\u2254", coloneq: "\u2254", comma: ",", commat: "@", comp: "\u2201", compfn: "\u2218", complement: "\u2201", complexes: "\u2102", cong: "\u2245", congdot: "\u2A6D", Congruent: "\u2261", conint: "\u222E", Conint: "\u222F", ContourIntegral: "\u222E", copf: "\u{1D554}", Copf: "\u2102", coprod: "\u2210", Coproduct: "\u2210", copy: "\xA9", COPY: "\xA9", copysr: "\u2117", CounterClockwiseContourIntegral: "\u2233", crarr: "\u21B5", cross: "\u2717", Cross: "\u2A2F", Cscr: "\u{1D49E}", cscr: "\u{1D4B8}", csub: "\u2ACF", csube: "\u2AD1", csup: "\u2AD0", csupe: "\u2AD2", ctdot: "\u22EF", cudarrl: "\u2938", cudarrr: "\u2935", cuepr: "\u22DE", cuesc: "\u22DF", cularr: "\u21B6", cularrp: "\u293D", cupbrcap: "\u2A48", cupcap: "\u2A46", CupCap: "\u224D", cup: "\u222A", Cup: "\u22D3", cupcup: "\u2A4A", cupdot: "\u228D", cupor: "\u2A45", cups: "\u222A\uFE00", curarr: "\u21B7", curarrm: "\u293C", curlyeqprec: "\u22DE", curlyeqsucc: "\u22DF", curlyvee: "\u22CE", curlywedge: "\u22CF", curren: "\xA4", curvearrowleft: "\u21B6", curvearrowright: "\u21B7", cuvee: "\u22CE", cuwed: "\u22CF", cwconint: "\u2232", cwint: "\u2231", cylcty: "\u232D", dagger: "\u2020", Dagger: "\u2021", daleth: "\u2138", darr: "\u2193", Darr: "\u21A1", dArr: "\u21D3", dash: "\u2010", Dashv: "\u2AE4", dashv: "\u22A3", dbkarow: "\u290F", dblac: "\u02DD", Dcaron: "\u010E", dcaron: "\u010F", Dcy: "\u0414", dcy: "\u0434", ddagger: "\u2021", ddarr: "\u21CA", DD: "\u2145", dd: "\u2146", DDotrahd: "\u2911", ddotseq: "\u2A77", deg: "\xB0", Del: "\u2207", Delta: "\u0394", delta: "\u03B4", demptyv: "\u29B1", dfisht: "\u297F", Dfr: "\u{1D507}", dfr: "\u{1D521}", dHar: "\u2965", dharl: "\u21C3", dharr: "\u21C2", DiacriticalAcute: "\xB4", DiacriticalDot: "\u02D9", DiacriticalDoubleAcute: "\u02DD", DiacriticalGrave: "`", DiacriticalTilde: "\u02DC", diam: "\u22C4", diamond: "\u22C4", Diamond: "\u22C4", diamondsuit: "\u2666", diams: "\u2666", die: "\xA8", DifferentialD: "\u2146", digamma: "\u03DD", disin: "\u22F2", div: "\xF7", divide: "\xF7", divideontimes: "\u22C7", divonx: "\u22C7", DJcy: "\u0402", djcy: "\u0452", dlcorn: "\u231E", dlcrop: "\u230D", dollar: "$", Dopf: "\u{1D53B}", dopf: "\u{1D555}", Dot: "\xA8", dot: "\u02D9", DotDot: "\u20DC", doteq: "\u2250", doteqdot: "\u2251", DotEqual: "\u2250", dotminus: "\u2238", dotplus: "\u2214", dotsquare: "\u22A1", doublebarwedge: "\u2306", DoubleContourIntegral: "\u222F", DoubleDot: "\xA8", DoubleDownArrow: "\u21D3", DoubleLeftArrow: "\u21D0", DoubleLeftRightArrow: "\u21D4", DoubleLeftTee: "\u2AE4", DoubleLongLeftArrow: "\u27F8", DoubleLongLeftRightArrow: "\u27FA", DoubleLongRightArrow: "\u27F9", DoubleRightArrow: "\u21D2", DoubleRightTee: "\u22A8", DoubleUpArrow: "\u21D1", DoubleUpDownArrow: "\u21D5", DoubleVerticalBar: "\u2225", DownArrowBar: "\u2913", downarrow: "\u2193", DownArrow: "\u2193", Downarrow: "\u21D3", DownArrowUpArrow: "\u21F5", DownBreve: "\u0311", downdownarrows: "\u21CA", downharpoonleft: "\u21C3", downharpoonright: "\u21C2", DownLeftRightVector: "\u2950", DownLeftTeeVector: "\u295E", DownLeftVectorBar: "\u2956", DownLeftVector: "\u21BD", DownRightTeeVector: "\u295F", DownRightVectorBar: "\u2957", DownRightVector: "\u21C1", DownTeeArrow: "\u21A7", DownTee: "\u22A4", drbkarow: "\u2910", drcorn: "\u231F", drcrop: "\u230C", Dscr: "\u{1D49F}", dscr: "\u{1D4B9}", DScy: "\u0405", dscy: "\u0455", dsol: "\u29F6", Dstrok: "\u0110", dstrok: "\u0111", dtdot: "\u22F1", dtri: "\u25BF", dtrif: "\u25BE", duarr: "\u21F5", duhar: "\u296F", dwangle: "\u29A6", DZcy: "\u040F", dzcy: "\u045F", dzigrarr: "\u27FF", Eacute: "\xC9", eacute: "\xE9", easter: "\u2A6E", Ecaron: "\u011A", ecaron: "\u011B", Ecirc: "\xCA", ecirc: "\xEA", ecir: "\u2256", ecolon: "\u2255", Ecy: "\u042D", ecy: "\u044D", eDDot: "\u2A77", Edot: "\u0116", edot: "\u0117", eDot: "\u2251", ee: "\u2147", efDot: "\u2252", Efr: "\u{1D508}", efr: "\u{1D522}", eg: "\u2A9A", Egrave: "\xC8", egrave: "\xE8", egs: "\u2A96", egsdot: "\u2A98", el: "\u2A99", Element: "\u2208", elinters: "\u23E7", ell: "\u2113", els: "\u2A95", elsdot: "\u2A97", Emacr: "\u0112", emacr: "\u0113", empty: "\u2205", emptyset: "\u2205", EmptySmallSquare: "\u25FB", emptyv: "\u2205", EmptyVerySmallSquare: "\u25AB", emsp13: "\u2004", emsp14: "\u2005", emsp: "\u2003", ENG: "\u014A", eng: "\u014B", ensp: "\u2002", Eogon: "\u0118", eogon: "\u0119", Eopf: "\u{1D53C}", eopf: "\u{1D556}", epar: "\u22D5", eparsl: "\u29E3", eplus: "\u2A71", epsi: "\u03B5", Epsilon: "\u0395", epsilon: "\u03B5", epsiv: "\u03F5", eqcirc: "\u2256", eqcolon: "\u2255", eqsim: "\u2242", eqslantgtr: "\u2A96", eqslantless: "\u2A95", Equal: "\u2A75", equals: "=", EqualTilde: "\u2242", equest: "\u225F", Equilibrium: "\u21CC", equiv: "\u2261", equivDD: "\u2A78", eqvparsl: "\u29E5", erarr: "\u2971", erDot: "\u2253", escr: "\u212F", Escr: "\u2130", esdot: "\u2250", Esim: "\u2A73", esim: "\u2242", Eta: "\u0397", eta: "\u03B7", ETH: "\xD0", eth: "\xF0", Euml: "\xCB", euml: "\xEB", euro: "\u20AC", excl: "!", exist: "\u2203", Exists: "\u2203", expectation: "\u2130", exponentiale: "\u2147", ExponentialE: "\u2147", fallingdotseq: "\u2252", Fcy: "\u0424", fcy: "\u0444", female: "\u2640", ffilig: "\uFB03", fflig: "\uFB00", ffllig: "\uFB04", Ffr: "\u{1D509}", ffr: "\u{1D523}", filig: "\uFB01", FilledSmallSquare: "\u25FC", FilledVerySmallSquare: "\u25AA", fjlig: "fj", flat: "\u266D", fllig: "\uFB02", fltns: "\u25B1", fnof: "\u0192", Fopf: "\u{1D53D}", fopf: "\u{1D557}", forall: "\u2200", ForAll: "\u2200", fork: "\u22D4", forkv: "\u2AD9", Fouriertrf: "\u2131", fpartint: "\u2A0D", frac12: "\xBD", frac13: "\u2153", frac14: "\xBC", frac15: "\u2155", frac16: "\u2159", frac18: "\u215B", frac23: "\u2154", frac25: "\u2156", frac34: "\xBE", frac35: "\u2157", frac38: "\u215C", frac45: "\u2158", frac56: "\u215A", frac58: "\u215D", frac78: "\u215E", frasl: "\u2044", frown: "\u2322", fscr: "\u{1D4BB}", Fscr: "\u2131", gacute: "\u01F5", Gamma: "\u0393", gamma: "\u03B3", Gammad: "\u03DC", gammad: "\u03DD", gap: "\u2A86", Gbreve: "\u011E", gbreve: "\u011F", Gcedil: "\u0122", Gcirc: "\u011C", gcirc: "\u011D", Gcy: "\u0413", gcy: "\u0433", Gdot: "\u0120", gdot: "\u0121", ge: "\u2265", gE: "\u2267", gEl: "\u2A8C", gel: "\u22DB", geq: "\u2265", geqq: "\u2267", geqslant: "\u2A7E", gescc: "\u2AA9", ges: "\u2A7E", gesdot: "\u2A80", gesdoto: "\u2A82", gesdotol: "\u2A84", gesl: "\u22DB\uFE00", gesles: "\u2A94", Gfr: "\u{1D50A}", gfr: "\u{1D524}", gg: "\u226B", Gg: "\u22D9", ggg: "\u22D9", gimel: "\u2137", GJcy: "\u0403", gjcy: "\u0453", gla: "\u2AA5", gl: "\u2277", glE: "\u2A92", glj: "\u2AA4", gnap: "\u2A8A", gnapprox: "\u2A8A", gne: "\u2A88", gnE: "\u2269", gneq: "\u2A88", gneqq: "\u2269", gnsim: "\u22E7", Gopf: "\u{1D53E}", gopf: "\u{1D558}", grave: "`", GreaterEqual: "\u2265", GreaterEqualLess: "\u22DB", GreaterFullEqual: "\u2267", GreaterGreater: "\u2AA2", GreaterLess: "\u2277", GreaterSlantEqual: "\u2A7E", GreaterTilde: "\u2273", Gscr: "\u{1D4A2}", gscr: "\u210A", gsim: "\u2273", gsime: "\u2A8E", gsiml: "\u2A90", gtcc: "\u2AA7", gtcir: "\u2A7A", gt: ">", GT: ">", Gt: "\u226B", gtdot: "\u22D7", gtlPar: "\u2995", gtquest: "\u2A7C", gtrapprox: "\u2A86", gtrarr: "\u2978", gtrdot: "\u22D7", gtreqless: "\u22DB", gtreqqless: "\u2A8C", gtrless: "\u2277", gtrsim: "\u2273", gvertneqq: "\u2269\uFE00", gvnE: "\u2269\uFE00", Hacek: "\u02C7", hairsp: "\u200A", half: "\xBD", hamilt: "\u210B", HARDcy: "\u042A", hardcy: "\u044A", harrcir: "\u2948", harr: "\u2194", hArr: "\u21D4", harrw: "\u21AD", Hat: "^", hbar: "\u210F", Hcirc: "\u0124", hcirc: "\u0125", hearts: "\u2665", heartsuit: "\u2665", hellip: "\u2026", hercon: "\u22B9", hfr: "\u{1D525}", Hfr: "\u210C", HilbertSpace: "\u210B", hksearow: "\u2925", hkswarow: "\u2926", hoarr: "\u21FF", homtht: "\u223B", hookleftarrow: "\u21A9", hookrightarrow: "\u21AA", hopf: "\u{1D559}", Hopf: "\u210D", horbar: "\u2015", HorizontalLine: "\u2500", hscr: "\u{1D4BD}", Hscr: "\u210B", hslash: "\u210F", Hstrok: "\u0126", hstrok: "\u0127", HumpDownHump: "\u224E", HumpEqual: "\u224F", hybull: "\u2043", hyphen: "\u2010", Iacute: "\xCD", iacute: "\xED", ic: "\u2063", Icirc: "\xCE", icirc: "\xEE", Icy: "\u0418", icy: "\u0438", Idot: "\u0130", IEcy: "\u0415", iecy: "\u0435", iexcl: "\xA1", iff: "\u21D4", ifr: "\u{1D526}", Ifr: "\u2111", Igrave: "\xCC", igrave: "\xEC", ii: "\u2148", iiiint: "\u2A0C", iiint: "\u222D", iinfin: "\u29DC", iiota: "\u2129", IJlig: "\u0132", ijlig: "\u0133", Imacr: "\u012A", imacr: "\u012B", image: "\u2111", ImaginaryI: "\u2148", imagline: "\u2110", imagpart: "\u2111", imath: "\u0131", Im: "\u2111", imof: "\u22B7", imped: "\u01B5", Implies: "\u21D2", incare: "\u2105", in: "\u2208", infin: "\u221E", infintie: "\u29DD", inodot: "\u0131", intcal: "\u22BA", int: "\u222B", Int: "\u222C", integers: "\u2124", Integral: "\u222B", intercal: "\u22BA", Intersection: "\u22C2", intlarhk: "\u2A17", intprod: "\u2A3C", InvisibleComma: "\u2063", InvisibleTimes: "\u2062", IOcy: "\u0401", iocy: "\u0451", Iogon: "\u012E", iogon: "\u012F", Iopf: "\u{1D540}", iopf: "\u{1D55A}", Iota: "\u0399", iota: "\u03B9", iprod: "\u2A3C", iquest: "\xBF", iscr: "\u{1D4BE}", Iscr: "\u2110", isin: "\u2208", isindot: "\u22F5", isinE: "\u22F9", isins: "\u22F4", isinsv: "\u22F3", isinv: "\u2208", it: "\u2062", Itilde: "\u0128", itilde: "\u0129", Iukcy: "\u0406", iukcy: "\u0456", Iuml: "\xCF", iuml: "\xEF", Jcirc: "\u0134", jcirc: "\u0135", Jcy: "\u0419", jcy: "\u0439", Jfr: "\u{1D50D}", jfr: "\u{1D527}", jmath: "\u0237", Jopf: "\u{1D541}", jopf: "\u{1D55B}", Jscr: "\u{1D4A5}", jscr: "\u{1D4BF}", Jsercy: "\u0408", jsercy: "\u0458", Jukcy: "\u0404", jukcy: "\u0454", Kappa: "\u039A", kappa: "\u03BA", kappav: "\u03F0", Kcedil: "\u0136", kcedil: "\u0137", Kcy: "\u041A", kcy: "\u043A", Kfr: "\u{1D50E}", kfr: "\u{1D528}", kgreen: "\u0138", KHcy: "\u0425", khcy: "\u0445", KJcy: "\u040C", kjcy: "\u045C", Kopf: "\u{1D542}", kopf: "\u{1D55C}", Kscr: "\u{1D4A6}", kscr: "\u{1D4C0}", lAarr: "\u21DA", Lacute: "\u0139", lacute: "\u013A", laemptyv: "\u29B4", lagran: "\u2112", Lambda: "\u039B", lambda: "\u03BB", lang: "\u27E8", Lang: "\u27EA", langd: "\u2991", langle: "\u27E8", lap: "\u2A85", Laplacetrf: "\u2112", laquo: "\xAB", larrb: "\u21E4", larrbfs: "\u291F", larr: "\u2190", Larr: "\u219E", lArr: "\u21D0", larrfs: "\u291D", larrhk: "\u21A9", larrlp: "\u21AB", larrpl: "\u2939", larrsim: "\u2973", larrtl: "\u21A2", latail: "\u2919", lAtail: "\u291B", lat: "\u2AAB", late: "\u2AAD", lates: "\u2AAD\uFE00", lbarr: "\u290C", lBarr: "\u290E", lbbrk: "\u2772", lbrace: "{", lbrack: "[", lbrke: "\u298B", lbrksld: "\u298F", lbrkslu: "\u298D", Lcaron: "\u013D", lcaron: "\u013E", Lcedil: "\u013B", lcedil: "\u013C", lceil: "\u2308", lcub: "{", Lcy: "\u041B", lcy: "\u043B", ldca: "\u2936", ldquo: "\u201C", ldquor: "\u201E", ldrdhar: "\u2967", ldrushar: "\u294B", ldsh: "\u21B2", le: "\u2264", lE: "\u2266", LeftAngleBracket: "\u27E8", LeftArrowBar: "\u21E4", leftarrow: "\u2190", LeftArrow: "\u2190", Leftarrow: "\u21D0", LeftArrowRightArrow: "\u21C6", leftarrowtail: "\u21A2", LeftCeiling: "\u2308", LeftDoubleBracket: "\u27E6", LeftDownTeeVector: "\u2961", LeftDownVectorBar: "\u2959", LeftDownVector: "\u21C3", LeftFloor: "\u230A", leftharpoondown: "\u21BD", leftharpoonup: "\u21BC", leftleftarrows: "\u21C7", leftrightarrow: "\u2194", LeftRightArrow: "\u2194", Leftrightarrow: "\u21D4", leftrightarrows: "\u21C6", leftrightharpoons: "\u21CB", leftrightsquigarrow: "\u21AD", LeftRightVector: "\u294E", LeftTeeArrow: "\u21A4", LeftTee: "\u22A3", LeftTeeVector: "\u295A", leftthreetimes: "\u22CB", LeftTriangleBar: "\u29CF", LeftTriangle: "\u22B2", LeftTriangleEqual: "\u22B4", LeftUpDownVector: "\u2951", LeftUpTeeVector: "\u2960", LeftUpVectorBar: "\u2958", LeftUpVector: "\u21BF", LeftVectorBar: "\u2952", LeftVector: "\u21BC", lEg: "\u2A8B", leg: "\u22DA", leq: "\u2264", leqq: "\u2266", leqslant: "\u2A7D", lescc: "\u2AA8", les: "\u2A7D", lesdot: "\u2A7F", lesdoto: "\u2A81", lesdotor: "\u2A83", lesg: "\u22DA\uFE00", lesges: "\u2A93", lessapprox: "\u2A85", lessdot: "\u22D6", lesseqgtr: "\u22DA", lesseqqgtr: "\u2A8B", LessEqualGreater: "\u22DA", LessFullEqual: "\u2266", LessGreater: "\u2276", lessgtr: "\u2276", LessLess: "\u2AA1", lesssim: "\u2272", LessSlantEqual: "\u2A7D", LessTilde: "\u2272", lfisht: "\u297C", lfloor: "\u230A", Lfr: "\u{1D50F}", lfr: "\u{1D529}", lg: "\u2276", lgE: "\u2A91", lHar: "\u2962", lhard: "\u21BD", lharu: "\u21BC", lharul: "\u296A", lhblk: "\u2584", LJcy: "\u0409", ljcy: "\u0459", llarr: "\u21C7", ll: "\u226A", Ll: "\u22D8", llcorner: "\u231E", Lleftarrow: "\u21DA", llhard: "\u296B", lltri: "\u25FA", Lmidot: "\u013F", lmidot: "\u0140", lmoustache: "\u23B0", lmoust: "\u23B0", lnap: "\u2A89", lnapprox: "\u2A89", lne: "\u2A87", lnE: "\u2268", lneq: "\u2A87", lneqq: "\u2268", lnsim: "\u22E6", loang: "\u27EC", loarr: "\u21FD", lobrk: "\u27E6", longleftarrow: "\u27F5", LongLeftArrow: "\u27F5", Longleftarrow: "\u27F8", longleftrightarrow: "\u27F7", LongLeftRightArrow: "\u27F7", Longleftrightarrow: "\u27FA", longmapsto: "\u27FC", longrightarrow: "\u27F6", LongRightArrow: "\u27F6", Longrightarrow: "\u27F9", looparrowleft: "\u21AB", looparrowright: "\u21AC", lopar: "\u2985", Lopf: "\u{1D543}", lopf: "\u{1D55D}", loplus: "\u2A2D", lotimes: "\u2A34", lowast: "\u2217", lowbar: "_", LowerLeftArrow: "\u2199", LowerRightArrow: "\u2198", loz: "\u25CA", lozenge: "\u25CA", lozf: "\u29EB", lpar: "(", lparlt: "\u2993", lrarr: "\u21C6", lrcorner: "\u231F", lrhar: "\u21CB", lrhard: "\u296D", lrm: "\u200E", lrtri: "\u22BF", lsaquo: "\u2039", lscr: "\u{1D4C1}", Lscr: "\u2112", lsh: "\u21B0", Lsh: "\u21B0", lsim: "\u2272", lsime: "\u2A8D", lsimg: "\u2A8F", lsqb: "[", lsquo: "\u2018", lsquor: "\u201A", Lstrok: "\u0141", lstrok: "\u0142", ltcc: "\u2AA6", ltcir: "\u2A79", lt: "<", LT: "<", Lt: "\u226A", ltdot: "\u22D6", lthree: "\u22CB", ltimes: "\u22C9", ltlarr: "\u2976", ltquest: "\u2A7B", ltri: "\u25C3", ltrie: "\u22B4", ltrif: "\u25C2", ltrPar: "\u2996", lurdshar: "\u294A", luruhar: "\u2966", lvertneqq: "\u2268\uFE00", lvnE: "\u2268\uFE00", macr: "\xAF", male: "\u2642", malt: "\u2720", maltese: "\u2720", Map: "\u2905", map: "\u21A6", mapsto: "\u21A6", mapstodown: "\u21A7", mapstoleft: "\u21A4", mapstoup: "\u21A5", marker: "\u25AE", mcomma: "\u2A29", Mcy: "\u041C", mcy: "\u043C", mdash: "\u2014", mDDot: "\u223A", measuredangle: "\u2221", MediumSpace: "\u205F", Mellintrf: "\u2133", Mfr: "\u{1D510}", mfr: "\u{1D52A}", mho: "\u2127", micro: "\xB5", midast: "*", midcir: "\u2AF0", mid: "\u2223", middot: "\xB7", minusb: "\u229F", minus: "\u2212", minusd: "\u2238", minusdu: "\u2A2A", MinusPlus: "\u2213", mlcp: "\u2ADB", mldr: "\u2026", mnplus: "\u2213", models: "\u22A7", Mopf: "\u{1D544}", mopf: "\u{1D55E}", mp: "\u2213", mscr: "\u{1D4C2}", Mscr: "\u2133", mstpos: "\u223E", Mu: "\u039C", mu: "\u03BC", multimap: "\u22B8", mumap: "\u22B8", nabla: "\u2207", Nacute: "\u0143", nacute: "\u0144", nang: "\u2220\u20D2", nap: "\u2249", napE: "\u2A70\u0338", napid: "\u224B\u0338", napos: "\u0149", napprox: "\u2249", natural: "\u266E", naturals: "\u2115", natur: "\u266E", nbsp: "\xA0", nbump: "\u224E\u0338", nbumpe: "\u224F\u0338", ncap: "\u2A43", Ncaron: "\u0147", ncaron: "\u0148", Ncedil: "\u0145", ncedil: "\u0146", ncong: "\u2247", ncongdot: "\u2A6D\u0338", ncup: "\u2A42", Ncy: "\u041D", ncy: "\u043D", ndash: "\u2013", nearhk: "\u2924", nearr: "\u2197", neArr: "\u21D7", nearrow: "\u2197", ne: "\u2260", nedot: "\u2250\u0338", NegativeMediumSpace: "\u200B", NegativeThickSpace: "\u200B", NegativeThinSpace: "\u200B", NegativeVeryThinSpace: "\u200B", nequiv: "\u2262", nesear: "\u2928", nesim: "\u2242\u0338", NestedGreaterGreater: "\u226B", NestedLessLess: "\u226A", NewLine: "\n", nexist: "\u2204", nexists: "\u2204", Nfr: "\u{1D511}", nfr: "\u{1D52B}", ngE: "\u2267\u0338", nge: "\u2271", ngeq: "\u2271", ngeqq: "\u2267\u0338", ngeqslant: "\u2A7E\u0338", nges: "\u2A7E\u0338", nGg: "\u22D9\u0338", ngsim: "\u2275", nGt: "\u226B\u20D2", ngt: "\u226F", ngtr: "\u226F", nGtv: "\u226B\u0338", nharr: "\u21AE", nhArr: "\u21CE", nhpar: "\u2AF2", ni: "\u220B", nis: "\u22FC", nisd: "\u22FA", niv: "\u220B", NJcy: "\u040A", njcy: "\u045A", nlarr: "\u219A", nlArr: "\u21CD", nldr: "\u2025", nlE: "\u2266\u0338", nle: "\u2270", nleftarrow: "\u219A", nLeftarrow: "\u21CD", nleftrightarrow: "\u21AE", nLeftrightarrow: "\u21CE", nleq: "\u2270", nleqq: "\u2266\u0338", nleqslant: "\u2A7D\u0338", nles: "\u2A7D\u0338", nless: "\u226E", nLl: "\u22D8\u0338", nlsim: "\u2274", nLt: "\u226A\u20D2", nlt: "\u226E", nltri: "\u22EA", nltrie: "\u22EC", nLtv: "\u226A\u0338", nmid: "\u2224", NoBreak: "\u2060", NonBreakingSpace: "\xA0", nopf: "\u{1D55F}", Nopf: "\u2115", Not: "\u2AEC", not: "\xAC", NotCongruent: "\u2262", NotCupCap: "\u226D", NotDoubleVerticalBar: "\u2226", NotElement: "\u2209", NotEqual: "\u2260", NotEqualTilde: "\u2242\u0338", NotExists: "\u2204", NotGreater: "\u226F", NotGreaterEqual: "\u2271", NotGreaterFullEqual: "\u2267\u0338", NotGreaterGreater: "\u226B\u0338", NotGreaterLess: "\u2279", NotGreaterSlantEqual: "\u2A7E\u0338", NotGreaterTilde: "\u2275", NotHumpDownHump: "\u224E\u0338", NotHumpEqual: "\u224F\u0338", notin: "\u2209", notindot: "\u22F5\u0338", notinE: "\u22F9\u0338", notinva: "\u2209", notinvb: "\u22F7", notinvc: "\u22F6", NotLeftTriangleBar: "\u29CF\u0338", NotLeftTriangle: "\u22EA", NotLeftTriangleEqual: "\u22EC", NotLess: "\u226E", NotLessEqual: "\u2270", NotLessGreater: "\u2278", NotLessLess: "\u226A\u0338", NotLessSlantEqual: "\u2A7D\u0338", NotLessTilde: "\u2274", NotNestedGreaterGreater: "\u2AA2\u0338", NotNestedLessLess: "\u2AA1\u0338", notni: "\u220C", notniva: "\u220C", notnivb: "\u22FE", notnivc: "\u22FD", NotPrecedes: "\u2280", NotPrecedesEqual: "\u2AAF\u0338", NotPrecedesSlantEqual: "\u22E0", NotReverseElement: "\u220C", NotRightTriangleBar: "\u29D0\u0338", NotRightTriangle: "\u22EB", NotRightTriangleEqual: "\u22ED", NotSquareSubset: "\u228F\u0338", NotSquareSubsetEqual: "\u22E2", NotSquareSuperset: "\u2290\u0338", NotSquareSupersetEqual: "\u22E3", NotSubset: "\u2282\u20D2", NotSubsetEqual: "\u2288", NotSucceeds: "\u2281", NotSucceedsEqual: "\u2AB0\u0338", NotSucceedsSlantEqual: "\u22E1", NotSucceedsTilde: "\u227F\u0338", NotSuperset: "\u2283\u20D2", NotSupersetEqual: "\u2289", NotTilde: "\u2241", NotTildeEqual: "\u2244", NotTildeFullEqual: "\u2247", NotTildeTilde: "\u2249", NotVerticalBar: "\u2224", nparallel: "\u2226", npar: "\u2226", nparsl: "\u2AFD\u20E5", npart: "\u2202\u0338", npolint: "\u2A14", npr: "\u2280", nprcue: "\u22E0", nprec: "\u2280", npreceq: "\u2AAF\u0338", npre: "\u2AAF\u0338", nrarrc: "\u2933\u0338", nrarr: "\u219B", nrArr: "\u21CF", nrarrw: "\u219D\u0338", nrightarrow: "\u219B", nRightarrow: "\u21CF", nrtri: "\u22EB", nrtrie: "\u22ED", nsc: "\u2281", nsccue: "\u22E1", nsce: "\u2AB0\u0338", Nscr: "\u{1D4A9}", nscr: "\u{1D4C3}", nshortmid: "\u2224", nshortparallel: "\u2226", nsim: "\u2241", nsime: "\u2244", nsimeq: "\u2244", nsmid: "\u2224", nspar: "\u2226", nsqsube: "\u22E2", nsqsupe: "\u22E3", nsub: "\u2284", nsubE: "\u2AC5\u0338", nsube: "\u2288", nsubset: "\u2282\u20D2", nsubseteq: "\u2288", nsubseteqq: "\u2AC5\u0338", nsucc: "\u2281", nsucceq: "\u2AB0\u0338", nsup: "\u2285", nsupE: "\u2AC6\u0338", nsupe: "\u2289", nsupset: "\u2283\u20D2", nsupseteq: "\u2289", nsupseteqq: "\u2AC6\u0338", ntgl: "\u2279", Ntilde: "\xD1", ntilde: "\xF1", ntlg: "\u2278", ntriangleleft: "\u22EA", ntrianglelefteq: "\u22EC", ntriangleright: "\u22EB", ntrianglerighteq: "\u22ED", Nu: "\u039D", nu: "\u03BD", num: "#", numero: "\u2116", numsp: "\u2007", nvap: "\u224D\u20D2", nvdash: "\u22AC", nvDash: "\u22AD", nVdash: "\u22AE", nVDash: "\u22AF", nvge: "\u2265\u20D2", nvgt: ">\u20D2", nvHarr: "\u2904", nvinfin: "\u29DE", nvlArr: "\u2902", nvle: "\u2264\u20D2", nvlt: "<\u20D2", nvltrie: "\u22B4\u20D2", nvrArr: "\u2903", nvrtrie: "\u22B5\u20D2", nvsim: "\u223C\u20D2", nwarhk: "\u2923", nwarr: "\u2196", nwArr: "\u21D6", nwarrow: "\u2196", nwnear: "\u2927", Oacute: "\xD3", oacute: "\xF3", oast: "\u229B", Ocirc: "\xD4", ocirc: "\xF4", ocir: "\u229A", Ocy: "\u041E", ocy: "\u043E", odash: "\u229D", Odblac: "\u0150", odblac: "\u0151", odiv: "\u2A38", odot: "\u2299", odsold: "\u29BC", OElig: "\u0152", oelig: "\u0153", ofcir: "\u29BF", Ofr: "\u{1D512}", ofr: "\u{1D52C}", ogon: "\u02DB", Ograve: "\xD2", ograve: "\xF2", ogt: "\u29C1", ohbar: "\u29B5", ohm: "\u03A9", oint: "\u222E", olarr: "\u21BA", olcir: "\u29BE", olcross: "\u29BB", oline: "\u203E", olt: "\u29C0", Omacr: "\u014C", omacr: "\u014D", Omega: "\u03A9", omega: "\u03C9", Omicron: "\u039F", omicron: "\u03BF", omid: "\u29B6", ominus: "\u2296", Oopf: "\u{1D546}", oopf: "\u{1D560}", opar: "\u29B7", OpenCurlyDoubleQuote: "\u201C", OpenCurlyQuote: "\u2018", operp: "\u29B9", oplus: "\u2295", orarr: "\u21BB", Or: "\u2A54", or: "\u2228", ord: "\u2A5D", order: "\u2134", orderof: "\u2134", ordf: "\xAA", ordm: "\xBA", origof: "\u22B6", oror: "\u2A56", orslope: "\u2A57", orv: "\u2A5B", oS: "\u24C8", Oscr: "\u{1D4AA}", oscr: "\u2134", Oslash: "\xD8", oslash: "\xF8", osol: "\u2298", Otilde: "\xD5", otilde: "\xF5", otimesas: "\u2A36", Otimes: "\u2A37", otimes: "\u2297", Ouml: "\xD6", ouml: "\xF6", ovbar: "\u233D", OverBar: "\u203E", OverBrace: "\u23DE", OverBracket: "\u23B4", OverParenthesis: "\u23DC", para: "\xB6", parallel: "\u2225", par: "\u2225", parsim: "\u2AF3", parsl: "\u2AFD", part: "\u2202", PartialD: "\u2202", Pcy: "\u041F", pcy: "\u043F", percnt: "%", period: ".", permil: "\u2030", perp: "\u22A5", pertenk: "\u2031", Pfr: "\u{1D513}", pfr: "\u{1D52D}", Phi: "\u03A6", phi: "\u03C6", phiv: "\u03D5", phmmat: "\u2133", phone: "\u260E", Pi: "\u03A0", pi: "\u03C0", pitchfork: "\u22D4", piv: "\u03D6", planck: "\u210F", planckh: "\u210E", plankv: "\u210F", plusacir: "\u2A23", plusb: "\u229E", pluscir: "\u2A22", plus: "+", plusdo: "\u2214", plusdu: "\u2A25", pluse: "\u2A72", PlusMinus: "\xB1", plusmn: "\xB1", plussim: "\u2A26", plustwo: "\u2A27", pm: "\xB1", Poincareplane: "\u210C", pointint: "\u2A15", popf: "\u{1D561}", Popf: "\u2119", pound: "\xA3", prap: "\u2AB7", Pr: "\u2ABB", pr: "\u227A", prcue: "\u227C", precapprox: "\u2AB7", prec: "\u227A", preccurlyeq: "\u227C", Precedes: "\u227A", PrecedesEqual: "\u2AAF", PrecedesSlantEqual: "\u227C", PrecedesTilde: "\u227E", preceq: "\u2AAF", precnapprox: "\u2AB9", precneqq: "\u2AB5", precnsim: "\u22E8", pre: "\u2AAF", prE: "\u2AB3", precsim: "\u227E", prime: "\u2032", Prime: "\u2033", primes: "\u2119", prnap: "\u2AB9", prnE: "\u2AB5", prnsim: "\u22E8", prod: "\u220F", Product: "\u220F", profalar: "\u232E", profline: "\u2312", profsurf: "\u2313", prop: "\u221D", Proportional: "\u221D", Proportion: "\u2237", propto: "\u221D", prsim: "\u227E", prurel: "\u22B0", Pscr: "\u{1D4AB}", pscr: "\u{1D4C5}", Psi: "\u03A8", psi: "\u03C8", puncsp: "\u2008", Qfr: "\u{1D514}", qfr: "\u{1D52E}", qint: "\u2A0C", qopf: "\u{1D562}", Qopf: "\u211A", qprime: "\u2057", Qscr: "\u{1D4AC}", qscr: "\u{1D4C6}", quaternions: "\u210D", quatint: "\u2A16", quest: "?", questeq: "\u225F", quot: '"', QUOT: '"', rAarr: "\u21DB", race: "\u223D\u0331", Racute: "\u0154", racute: "\u0155", radic: "\u221A", raemptyv: "\u29B3", rang: "\u27E9", Rang: "\u27EB", rangd: "\u2992", range: "\u29A5", rangle: "\u27E9", raquo: "\xBB", rarrap: "\u2975", rarrb: "\u21E5", rarrbfs: "\u2920", rarrc: "\u2933", rarr: "\u2192", Rarr: "\u21A0", rArr: "\u21D2", rarrfs: "\u291E", rarrhk: "\u21AA", rarrlp: "\u21AC", rarrpl: "\u2945", rarrsim: "\u2974", Rarrtl: "\u2916", rarrtl: "\u21A3", rarrw: "\u219D", ratail: "\u291A", rAtail: "\u291C", ratio: "\u2236", rationals: "\u211A", rbarr: "\u290D", rBarr: "\u290F", RBarr: "\u2910", rbbrk: "\u2773", rbrace: "}", rbrack: "]", rbrke: "\u298C", rbrksld: "\u298E", rbrkslu: "\u2990", Rcaron: "\u0158", rcaron: "\u0159", Rcedil: "\u0156", rcedil: "\u0157", rceil: "\u2309", rcub: "}", Rcy: "\u0420", rcy: "\u0440", rdca: "\u2937", rdldhar: "\u2969", rdquo: "\u201D", rdquor: "\u201D", rdsh: "\u21B3", real: "\u211C", realine: "\u211B", realpart: "\u211C", reals: "\u211D", Re: "\u211C", rect: "\u25AD", reg: "\xAE", REG: "\xAE", ReverseElement: "\u220B", ReverseEquilibrium: "\u21CB", ReverseUpEquilibrium: "\u296F", rfisht: "\u297D", rfloor: "\u230B", rfr: "\u{1D52F}", Rfr: "\u211C", rHar: "\u2964", rhard: "\u21C1", rharu: "\u21C0", rharul: "\u296C", Rho: "\u03A1", rho: "\u03C1", rhov: "\u03F1", RightAngleBracket: "\u27E9", RightArrowBar: "\u21E5", rightarrow: "\u2192", RightArrow: "\u2192", Rightarrow: "\u21D2", RightArrowLeftArrow: "\u21C4", rightarrowtail: "\u21A3", RightCeiling: "\u2309", RightDoubleBracket: "\u27E7", RightDownTeeVector: "\u295D", RightDownVectorBar: "\u2955", RightDownVector: "\u21C2", RightFloor: "\u230B", rightharpoondown: "\u21C1", rightharpoonup: "\u21C0", rightleftarrows: "\u21C4", rightleftharpoons: "\u21CC", rightrightarrows: "\u21C9", rightsquigarrow: "\u219D", RightTeeArrow: "\u21A6", RightTee: "\u22A2", RightTeeVector: "\u295B", rightthreetimes: "\u22CC", RightTriangleBar: "\u29D0", RightTriangle: "\u22B3", RightTriangleEqual: "\u22B5", RightUpDownVector: "\u294F", RightUpTeeVector: "\u295C", RightUpVectorBar: "\u2954", RightUpVector: "\u21BE", RightVectorBar: "\u2953", RightVector: "\u21C0", ring: "\u02DA", risingdotseq: "\u2253", rlarr: "\u21C4", rlhar: "\u21CC", rlm: "\u200F", rmoustache: "\u23B1", rmoust: "\u23B1", rnmid: "\u2AEE", roang: "\u27ED", roarr: "\u21FE", robrk: "\u27E7", ropar: "\u2986", ropf: "\u{1D563}", Ropf: "\u211D", roplus: "\u2A2E", rotimes: "\u2A35", RoundImplies: "\u2970", rpar: ")", rpargt: "\u2994", rppolint: "\u2A12", rrarr: "\u21C9", Rrightarrow: "\u21DB", rsaquo: "\u203A", rscr: "\u{1D4C7}", Rscr: "\u211B", rsh: "\u21B1", Rsh: "\u21B1", rsqb: "]", rsquo: "\u2019", rsquor: "\u2019", rthree: "\u22CC", rtimes: "\u22CA", rtri: "\u25B9", rtrie: "\u22B5", rtrif: "\u25B8", rtriltri: "\u29CE", RuleDelayed: "\u29F4", ruluhar: "\u2968", rx: "\u211E", Sacute: "\u015A", sacute: "\u015B", sbquo: "\u201A", scap: "\u2AB8", Scaron: "\u0160", scaron: "\u0161", Sc: "\u2ABC", sc: "\u227B", sccue: "\u227D", sce: "\u2AB0", scE: "\u2AB4", Scedil: "\u015E", scedil: "\u015F", Scirc: "\u015C", scirc: "\u015D", scnap: "\u2ABA", scnE: "\u2AB6", scnsim: "\u22E9", scpolint: "\u2A13", scsim: "\u227F", Scy: "\u0421", scy: "\u0441", sdotb: "\u22A1", sdot: "\u22C5", sdote: "\u2A66", searhk: "\u2925", searr: "\u2198", seArr: "\u21D8", searrow: "\u2198", sect: "\xA7", semi: ";", seswar: "\u2929", setminus: "\u2216", setmn: "\u2216", sext: "\u2736", Sfr: "\u{1D516}", sfr: "\u{1D530}", sfrown: "\u2322", sharp: "\u266F", SHCHcy: "\u0429", shchcy: "\u0449", SHcy: "\u0428", shcy: "\u0448", ShortDownArrow: "\u2193", ShortLeftArrow: "\u2190", shortmid: "\u2223", shortparallel: "\u2225", ShortRightArrow: "\u2192", ShortUpArrow: "\u2191", shy: "\xAD", Sigma: "\u03A3", sigma: "\u03C3", sigmaf: "\u03C2", sigmav: "\u03C2", sim: "\u223C", simdot: "\u2A6A", sime: "\u2243", simeq: "\u2243", simg: "\u2A9E", simgE: "\u2AA0", siml: "\u2A9D", simlE: "\u2A9F", simne: "\u2246", simplus: "\u2A24", simrarr: "\u2972", slarr: "\u2190", SmallCircle: "\u2218", smallsetminus: "\u2216", smashp: "\u2A33", smeparsl: "\u29E4", smid: "\u2223", smile: "\u2323", smt: "\u2AAA", smte: "\u2AAC", smtes: "\u2AAC\uFE00", SOFTcy: "\u042C", softcy: "\u044C", solbar: "\u233F", solb: "\u29C4", sol: "/", Sopf: "\u{1D54A}", sopf: "\u{1D564}", spades: "\u2660", spadesuit: "\u2660", spar: "\u2225", sqcap: "\u2293", sqcaps: "\u2293\uFE00", sqcup: "\u2294", sqcups: "\u2294\uFE00", Sqrt: "\u221A", sqsub: "\u228F", sqsube: "\u2291", sqsubset: "\u228F", sqsubseteq: "\u2291", sqsup: "\u2290", sqsupe: "\u2292", sqsupset: "\u2290", sqsupseteq: "\u2292", square: "\u25A1", Square: "\u25A1", SquareIntersection: "\u2293", SquareSubset: "\u228F", SquareSubsetEqual: "\u2291", SquareSuperset: "\u2290", SquareSupersetEqual: "\u2292", SquareUnion: "\u2294", squarf: "\u25AA", squ: "\u25A1", squf: "\u25AA", srarr: "\u2192", Sscr: "\u{1D4AE}", sscr: "\u{1D4C8}", ssetmn: "\u2216", ssmile: "\u2323", sstarf: "\u22C6", Star: "\u22C6", star: "\u2606", starf: "\u2605", straightepsilon: "\u03F5", straightphi: "\u03D5", strns: "\xAF", sub: "\u2282", Sub: "\u22D0", subdot: "\u2ABD", subE: "\u2AC5", sube: "\u2286", subedot: "\u2AC3", submult: "\u2AC1", subnE: "\u2ACB", subne: "\u228A", subplus: "\u2ABF", subrarr: "\u2979", subset: "\u2282", Subset: "\u22D0", subseteq: "\u2286", subseteqq: "\u2AC5", SubsetEqual: "\u2286", subsetneq: "\u228A", subsetneqq: "\u2ACB", subsim: "\u2AC7", subsub: "\u2AD5", subsup: "\u2AD3", succapprox: "\u2AB8", succ: "\u227B", succcurlyeq: "\u227D", Succeeds: "\u227B", SucceedsEqual: "\u2AB0", SucceedsSlantEqual: "\u227D", SucceedsTilde: "\u227F", succeq: "\u2AB0", succnapprox: "\u2ABA", succneqq: "\u2AB6", succnsim: "\u22E9", succsim: "\u227F", SuchThat: "\u220B", sum: "\u2211", Sum: "\u2211", sung: "\u266A", sup1: "\xB9", sup2: "\xB2", sup3: "\xB3", sup: "\u2283", Sup: "\u22D1", supdot: "\u2ABE", supdsub: "\u2AD8", supE: "\u2AC6", supe: "\u2287", supedot: "\u2AC4", Superset: "\u2283", SupersetEqual: "\u2287", suphsol: "\u27C9", suphsub: "\u2AD7", suplarr: "\u297B", supmult: "\u2AC2", supnE: "\u2ACC", supne: "\u228B", supplus: "\u2AC0", supset: "\u2283", Supset: "\u22D1", supseteq: "\u2287", supseteqq: "\u2AC6", supsetneq: "\u228B", supsetneqq: "\u2ACC", supsim: "\u2AC8", supsub: "\u2AD4", supsup: "\u2AD6", swarhk: "\u2926", swarr: "\u2199", swArr: "\u21D9", swarrow: "\u2199", swnwar: "\u292A", szlig: "\xDF", Tab: "	", target: "\u2316", Tau: "\u03A4", tau: "\u03C4", tbrk: "\u23B4", Tcaron: "\u0164", tcaron: "\u0165", Tcedil: "\u0162", tcedil: "\u0163", Tcy: "\u0422", tcy: "\u0442", tdot: "\u20DB", telrec: "\u2315", Tfr: "\u{1D517}", tfr: "\u{1D531}", there4: "\u2234", therefore: "\u2234", Therefore: "\u2234", Theta: "\u0398", theta: "\u03B8", thetasym: "\u03D1", thetav: "\u03D1", thickapprox: "\u2248", thicksim: "\u223C", ThickSpace: "\u205F\u200A", ThinSpace: "\u2009", thinsp: "\u2009", thkap: "\u2248", thksim: "\u223C", THORN: "\xDE", thorn: "\xFE", tilde: "\u02DC", Tilde: "\u223C", TildeEqual: "\u2243", TildeFullEqual: "\u2245", TildeTilde: "\u2248", timesbar: "\u2A31", timesb: "\u22A0", times: "\xD7", timesd: "\u2A30", tint: "\u222D", toea: "\u2928", topbot: "\u2336", topcir: "\u2AF1", top: "\u22A4", Topf: "\u{1D54B}", topf: "\u{1D565}", topfork: "\u2ADA", tosa: "\u2929", tprime: "\u2034", trade: "\u2122", TRADE: "\u2122", triangle: "\u25B5", triangledown: "\u25BF", triangleleft: "\u25C3", trianglelefteq: "\u22B4", triangleq: "\u225C", triangleright: "\u25B9", trianglerighteq: "\u22B5", tridot: "\u25EC", trie: "\u225C", triminus: "\u2A3A", TripleDot: "\u20DB", triplus: "\u2A39", trisb: "\u29CD", tritime: "\u2A3B", trpezium: "\u23E2", Tscr: "\u{1D4AF}", tscr: "\u{1D4C9}", TScy: "\u0426", tscy: "\u0446", TSHcy: "\u040B", tshcy: "\u045B", Tstrok: "\u0166", tstrok: "\u0167", twixt: "\u226C", twoheadleftarrow: "\u219E", twoheadrightarrow: "\u21A0", Uacute: "\xDA", uacute: "\xFA", uarr: "\u2191", Uarr: "\u219F", uArr: "\u21D1", Uarrocir: "\u2949", Ubrcy: "\u040E", ubrcy: "\u045E", Ubreve: "\u016C", ubreve: "\u016D", Ucirc: "\xDB", ucirc: "\xFB", Ucy: "\u0423", ucy: "\u0443", udarr: "\u21C5", Udblac: "\u0170", udblac: "\u0171", udhar: "\u296E", ufisht: "\u297E", Ufr: "\u{1D518}", ufr: "\u{1D532}", Ugrave: "\xD9", ugrave: "\xF9", uHar: "\u2963", uharl: "\u21BF", uharr: "\u21BE", uhblk: "\u2580", ulcorn: "\u231C", ulcorner: "\u231C", ulcrop: "\u230F", ultri: "\u25F8", Umacr: "\u016A", umacr: "\u016B", uml: "\xA8", UnderBar: "_", UnderBrace: "\u23DF", UnderBracket: "\u23B5", UnderParenthesis: "\u23DD", Union: "\u22C3", UnionPlus: "\u228E", Uogon: "\u0172", uogon: "\u0173", Uopf: "\u{1D54C}", uopf: "\u{1D566}", UpArrowBar: "\u2912", uparrow: "\u2191", UpArrow: "\u2191", Uparrow: "\u21D1", UpArrowDownArrow: "\u21C5", updownarrow: "\u2195", UpDownArrow: "\u2195", Updownarrow: "\u21D5", UpEquilibrium: "\u296E", upharpoonleft: "\u21BF", upharpoonright: "\u21BE", uplus: "\u228E", UpperLeftArrow: "\u2196", UpperRightArrow: "\u2197", upsi: "\u03C5", Upsi: "\u03D2", upsih: "\u03D2", Upsilon: "\u03A5", upsilon: "\u03C5", UpTeeArrow: "\u21A5", UpTee: "\u22A5", upuparrows: "\u21C8", urcorn: "\u231D", urcorner: "\u231D", urcrop: "\u230E", Uring: "\u016E", uring: "\u016F", urtri: "\u25F9", Uscr: "\u{1D4B0}", uscr: "\u{1D4CA}", utdot: "\u22F0", Utilde: "\u0168", utilde: "\u0169", utri: "\u25B5", utrif: "\u25B4", uuarr: "\u21C8", Uuml: "\xDC", uuml: "\xFC", uwangle: "\u29A7", vangrt: "\u299C", varepsilon: "\u03F5", varkappa: "\u03F0", varnothing: "\u2205", varphi: "\u03D5", varpi: "\u03D6", varpropto: "\u221D", varr: "\u2195", vArr: "\u21D5", varrho: "\u03F1", varsigma: "\u03C2", varsubsetneq: "\u228A\uFE00", varsubsetneqq: "\u2ACB\uFE00", varsupsetneq: "\u228B\uFE00", varsupsetneqq: "\u2ACC\uFE00", vartheta: "\u03D1", vartriangleleft: "\u22B2", vartriangleright: "\u22B3", vBar: "\u2AE8", Vbar: "\u2AEB", vBarv: "\u2AE9", Vcy: "\u0412", vcy: "\u0432", vdash: "\u22A2", vDash: "\u22A8", Vdash: "\u22A9", VDash: "\u22AB", Vdashl: "\u2AE6", veebar: "\u22BB", vee: "\u2228", Vee: "\u22C1", veeeq: "\u225A", vellip: "\u22EE", verbar: "|", Verbar: "\u2016", vert: "|", Vert: "\u2016", VerticalBar: "\u2223", VerticalLine: "|", VerticalSeparator: "\u2758", VerticalTilde: "\u2240", VeryThinSpace: "\u200A", Vfr: "\u{1D519}", vfr: "\u{1D533}", vltri: "\u22B2", vnsub: "\u2282\u20D2", vnsup: "\u2283\u20D2", Vopf: "\u{1D54D}", vopf: "\u{1D567}", vprop: "\u221D", vrtri: "\u22B3", Vscr: "\u{1D4B1}", vscr: "\u{1D4CB}", vsubnE: "\u2ACB\uFE00", vsubne: "\u228A\uFE00", vsupnE: "\u2ACC\uFE00", vsupne: "\u228B\uFE00", Vvdash: "\u22AA", vzigzag: "\u299A", Wcirc: "\u0174", wcirc: "\u0175", wedbar: "\u2A5F", wedge: "\u2227", Wedge: "\u22C0", wedgeq: "\u2259", weierp: "\u2118", Wfr: "\u{1D51A}", wfr: "\u{1D534}", Wopf: "\u{1D54E}", wopf: "\u{1D568}", wp: "\u2118", wr: "\u2240", wreath: "\u2240", Wscr: "\u{1D4B2}", wscr: "\u{1D4CC}", xcap: "\u22C2", xcirc: "\u25EF", xcup: "\u22C3", xdtri: "\u25BD", Xfr: "\u{1D51B}", xfr: "\u{1D535}", xharr: "\u27F7", xhArr: "\u27FA", Xi: "\u039E", xi: "\u03BE", xlarr: "\u27F5", xlArr: "\u27F8", xmap: "\u27FC", xnis: "\u22FB", xodot: "\u2A00", Xopf: "\u{1D54F}", xopf: "\u{1D569}", xoplus: "\u2A01", xotime: "\u2A02", xrarr: "\u27F6", xrArr: "\u27F9", Xscr: "\u{1D4B3}", xscr: "\u{1D4CD}", xsqcup: "\u2A06", xuplus: "\u2A04", xutri: "\u25B3", xvee: "\u22C1", xwedge: "\u22C0", Yacute: "\xDD", yacute: "\xFD", YAcy: "\u042F", yacy: "\u044F", Ycirc: "\u0176", ycirc: "\u0177", Ycy: "\u042B", ycy: "\u044B", yen: "\xA5", Yfr: "\u{1D51C}", yfr: "\u{1D536}", YIcy: "\u0407", yicy: "\u0457", Yopf: "\u{1D550}", yopf: "\u{1D56A}", Yscr: "\u{1D4B4}", yscr: "\u{1D4CE}", YUcy: "\u042E", yucy: "\u044E", yuml: "\xFF", Yuml: "\u0178", Zacute: "\u0179", zacute: "\u017A", Zcaron: "\u017D", zcaron: "\u017E", Zcy: "\u0417", zcy: "\u0437", Zdot: "\u017B", zdot: "\u017C", zeetrf: "\u2128", ZeroWidthSpace: "\u200B", Zeta: "\u0396", zeta: "\u03B6", zfr: "\u{1D537}", Zfr: "\u2128", ZHcy: "\u0416", zhcy: "\u0436", zigrarr: "\u21DD", zopf: "\u{1D56B}", Zopf: "\u2124", Zscr: "\u{1D4B5}", zscr: "\u{1D4CF}", zwj: "\u200D", zwnj: "\u200C" };
-  }
-});
-
-// node_modules/markdown-it/lib/common/entities.js
-var require_entities2 = __commonJS({
-  "node_modules/markdown-it/lib/common/entities.js"(exports, module2) {
-    "use strict";
-    module2.exports = require_entities();
-  }
-});
-
-// node_modules/uc.micro/categories/P/regex.js
-var require_regex = __commonJS({
-  "node_modules/uc.micro/categories/P/regex.js"(exports, module2) {
-    module2.exports = /[!-#%-\*,-\/:;\?@\[-\]_\{\}\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166D\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4E\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]|\uD800[\uDD00-\uDD02\uDF9F\uDFD0]|\uD801\uDD6F|\uD802[\uDC57\uDD1F\uDD3F\uDE50-\uDE58\uDE7F\uDEF0-\uDEF6\uDF39-\uDF3F\uDF99-\uDF9C]|\uD803[\uDF55-\uDF59]|\uD804[\uDC47-\uDC4D\uDCBB\uDCBC\uDCBE-\uDCC1\uDD40-\uDD43\uDD74\uDD75\uDDC5-\uDDC8\uDDCD\uDDDB\uDDDD-\uDDDF\uDE38-\uDE3D\uDEA9]|\uD805[\uDC4B-\uDC4F\uDC5B\uDC5D\uDCC6\uDDC1-\uDDD7\uDE41-\uDE43\uDE60-\uDE6C\uDF3C-\uDF3E]|\uD806[\uDC3B\uDE3F-\uDE46\uDE9A-\uDE9C\uDE9E-\uDEA2]|\uD807[\uDC41-\uDC45\uDC70\uDC71\uDEF7\uDEF8]|\uD809[\uDC70-\uDC74]|\uD81A[\uDE6E\uDE6F\uDEF5\uDF37-\uDF3B\uDF44]|\uD81B[\uDE97-\uDE9A]|\uD82F\uDC9F|\uD836[\uDE87-\uDE8B]|\uD83A[\uDD5E\uDD5F]/;
-  }
-});
-
-// node_modules/mdurl/encode.js
-var require_encode = __commonJS({
-  "node_modules/mdurl/encode.js"(exports, module2) {
-    "use strict";
-    var encodeCache = {};
-    function getEncodeCache(exclude) {
-      var i, ch, cache = encodeCache[exclude];
-      if (cache) {
-        return cache;
-      }
-      cache = encodeCache[exclude] = [];
-      for (i = 0; i < 128; i++) {
-        ch = String.fromCharCode(i);
-        if (/^[0-9a-z]$/i.test(ch)) {
-          cache.push(ch);
-        } else {
-          cache.push("%" + ("0" + i.toString(16).toUpperCase()).slice(-2));
-        }
-      }
-      for (i = 0; i < exclude.length; i++) {
-        cache[exclude.charCodeAt(i)] = exclude[i];
-      }
-      return cache;
-    }
-    function encode(string, exclude, keepEscaped) {
-      var i, l, code, nextCode, cache, result = "";
-      if (typeof exclude !== "string") {
-        keepEscaped = exclude;
-        exclude = encode.defaultChars;
-      }
-      if (typeof keepEscaped === "undefined") {
-        keepEscaped = true;
-      }
-      cache = getEncodeCache(exclude);
-      for (i = 0, l = string.length; i < l; i++) {
-        code = string.charCodeAt(i);
-        if (keepEscaped && code === 37 && i + 2 < l) {
-          if (/^[0-9a-f]{2}$/i.test(string.slice(i + 1, i + 3))) {
-            result += string.slice(i, i + 3);
-            i += 2;
-            continue;
-          }
-        }
-        if (code < 128) {
-          result += cache[code];
-          continue;
-        }
-        if (code >= 55296 && code <= 57343) {
-          if (code >= 55296 && code <= 56319 && i + 1 < l) {
-            nextCode = string.charCodeAt(i + 1);
-            if (nextCode >= 56320 && nextCode <= 57343) {
-              result += encodeURIComponent(string[i] + string[i + 1]);
-              i++;
-              continue;
-            }
-          }
-          result += "%EF%BF%BD";
-          continue;
-        }
-        result += encodeURIComponent(string[i]);
-      }
-      return result;
-    }
-    encode.defaultChars = ";/?:@&=+$,-_.!~*'()#";
-    encode.componentChars = "-_.!~*'()";
-    module2.exports = encode;
-  }
-});
-
-// node_modules/mdurl/decode.js
-var require_decode = __commonJS({
-  "node_modules/mdurl/decode.js"(exports, module2) {
-    "use strict";
-    var decodeCache = {};
-    function getDecodeCache(exclude) {
-      var i, ch, cache = decodeCache[exclude];
-      if (cache) {
-        return cache;
-      }
-      cache = decodeCache[exclude] = [];
-      for (i = 0; i < 128; i++) {
-        ch = String.fromCharCode(i);
-        cache.push(ch);
-      }
-      for (i = 0; i < exclude.length; i++) {
-        ch = exclude.charCodeAt(i);
-        cache[ch] = "%" + ("0" + ch.toString(16).toUpperCase()).slice(-2);
-      }
-      return cache;
-    }
-    function decode(string, exclude) {
-      var cache;
-      if (typeof exclude !== "string") {
-        exclude = decode.defaultChars;
-      }
-      cache = getDecodeCache(exclude);
-      return string.replace(/(%[a-f0-9]{2})+/gi, function(seq) {
-        var i, l, b1, b2, b3, b4, chr, result = "";
-        for (i = 0, l = seq.length; i < l; i += 3) {
-          b1 = parseInt(seq.slice(i + 1, i + 3), 16);
-          if (b1 < 128) {
-            result += cache[b1];
-            continue;
-          }
-          if ((b1 & 224) === 192 && i + 3 < l) {
-            b2 = parseInt(seq.slice(i + 4, i + 6), 16);
-            if ((b2 & 192) === 128) {
-              chr = b1 << 6 & 1984 | b2 & 63;
-              if (chr < 128) {
-                result += "\uFFFD\uFFFD";
-              } else {
-                result += String.fromCharCode(chr);
-              }
-              i += 3;
-              continue;
-            }
-          }
-          if ((b1 & 240) === 224 && i + 6 < l) {
-            b2 = parseInt(seq.slice(i + 4, i + 6), 16);
-            b3 = parseInt(seq.slice(i + 7, i + 9), 16);
-            if ((b2 & 192) === 128 && (b3 & 192) === 128) {
-              chr = b1 << 12 & 61440 | b2 << 6 & 4032 | b3 & 63;
-              if (chr < 2048 || chr >= 55296 && chr <= 57343) {
-                result += "\uFFFD\uFFFD\uFFFD";
-              } else {
-                result += String.fromCharCode(chr);
-              }
-              i += 6;
-              continue;
-            }
-          }
-          if ((b1 & 248) === 240 && i + 9 < l) {
-            b2 = parseInt(seq.slice(i + 4, i + 6), 16);
-            b3 = parseInt(seq.slice(i + 7, i + 9), 16);
-            b4 = parseInt(seq.slice(i + 10, i + 12), 16);
-            if ((b2 & 192) === 128 && (b3 & 192) === 128 && (b4 & 192) === 128) {
-              chr = b1 << 18 & 1835008 | b2 << 12 & 258048 | b3 << 6 & 4032 | b4 & 63;
-              if (chr < 65536 || chr > 1114111) {
-                result += "\uFFFD\uFFFD\uFFFD\uFFFD";
-              } else {
-                chr -= 65536;
-                result += String.fromCharCode(55296 + (chr >> 10), 56320 + (chr & 1023));
-              }
-              i += 9;
-              continue;
-            }
-          }
-          result += "\uFFFD";
-        }
-        return result;
-      });
-    }
-    decode.defaultChars = ";/?:@&=+$,#";
-    decode.componentChars = "";
-    module2.exports = decode;
-  }
-});
-
-// node_modules/mdurl/format.js
-var require_format = __commonJS({
-  "node_modules/mdurl/format.js"(exports, module2) {
-    "use strict";
-    module2.exports = function format(url) {
-      var result = "";
-      result += url.protocol || "";
-      result += url.slashes ? "//" : "";
-      result += url.auth ? url.auth + "@" : "";
-      if (url.hostname && url.hostname.indexOf(":") !== -1) {
-        result += "[" + url.hostname + "]";
-      } else {
-        result += url.hostname || "";
-      }
-      result += url.port ? ":" + url.port : "";
-      result += url.pathname || "";
-      result += url.search || "";
-      result += url.hash || "";
-      return result;
-    };
-  }
-});
-
-// node_modules/mdurl/parse.js
-var require_parse = __commonJS({
-  "node_modules/mdurl/parse.js"(exports, module2) {
-    "use strict";
-    function Url() {
-      this.protocol = null;
-      this.slashes = null;
-      this.auth = null;
-      this.port = null;
-      this.hostname = null;
-      this.hash = null;
-      this.search = null;
-      this.pathname = null;
-    }
-    var protocolPattern = /^([a-z0-9.+-]+:)/i;
-    var portPattern = /:[0-9]*$/;
-    var simplePathPattern = /^(\/\/?(?!\/)[^\?\s]*)(\?[^\s]*)?$/;
-    var delims = ["<", ">", '"', "`", " ", "\r", "\n", "	"];
-    var unwise = ["{", "}", "|", "\\", "^", "`"].concat(delims);
-    var autoEscape = ["'"].concat(unwise);
-    var nonHostChars = ["%", "/", "?", ";", "#"].concat(autoEscape);
-    var hostEndingChars = ["/", "?", "#"];
-    var hostnameMaxLen = 255;
-    var hostnamePartPattern = /^[+a-z0-9A-Z_-]{0,63}$/;
-    var hostnamePartStart = /^([+a-z0-9A-Z_-]{0,63})(.*)$/;
-    var hostlessProtocol = {
-      "javascript": true,
-      "javascript:": true
-    };
-    var slashedProtocol = {
-      "http": true,
-      "https": true,
-      "ftp": true,
-      "gopher": true,
-      "file": true,
-      "http:": true,
-      "https:": true,
-      "ftp:": true,
-      "gopher:": true,
-      "file:": true
-    };
-    function urlParse(url, slashesDenoteHost) {
-      if (url && url instanceof Url) {
-        return url;
-      }
-      var u = new Url();
-      u.parse(url, slashesDenoteHost);
-      return u;
-    }
-    Url.prototype.parse = function(url, slashesDenoteHost) {
-      var i, l, lowerProto, hec, slashes, rest = url;
-      rest = rest.trim();
-      if (!slashesDenoteHost && url.split("#").length === 1) {
-        var simplePath = simplePathPattern.exec(rest);
-        if (simplePath) {
-          this.pathname = simplePath[1];
-          if (simplePath[2]) {
-            this.search = simplePath[2];
-          }
-          return this;
-        }
-      }
-      var proto = protocolPattern.exec(rest);
-      if (proto) {
-        proto = proto[0];
-        lowerProto = proto.toLowerCase();
-        this.protocol = proto;
-        rest = rest.substr(proto.length);
-      }
-      if (slashesDenoteHost || proto || rest.match(/^\/\/[^@\/]+@[^@\/]+/)) {
-        slashes = rest.substr(0, 2) === "//";
-        if (slashes && !(proto && hostlessProtocol[proto])) {
-          rest = rest.substr(2);
-          this.slashes = true;
-        }
-      }
-      if (!hostlessProtocol[proto] && (slashes || proto && !slashedProtocol[proto])) {
-        var hostEnd = -1;
-        for (i = 0; i < hostEndingChars.length; i++) {
-          hec = rest.indexOf(hostEndingChars[i]);
-          if (hec !== -1 && (hostEnd === -1 || hec < hostEnd)) {
-            hostEnd = hec;
-          }
-        }
-        var auth, atSign;
-        if (hostEnd === -1) {
-          atSign = rest.lastIndexOf("@");
-        } else {
-          atSign = rest.lastIndexOf("@", hostEnd);
-        }
-        if (atSign !== -1) {
-          auth = rest.slice(0, atSign);
-          rest = rest.slice(atSign + 1);
-          this.auth = auth;
-        }
-        hostEnd = -1;
-        for (i = 0; i < nonHostChars.length; i++) {
-          hec = rest.indexOf(nonHostChars[i]);
-          if (hec !== -1 && (hostEnd === -1 || hec < hostEnd)) {
-            hostEnd = hec;
-          }
-        }
-        if (hostEnd === -1) {
-          hostEnd = rest.length;
-        }
-        if (rest[hostEnd - 1] === ":") {
-          hostEnd--;
-        }
-        var host = rest.slice(0, hostEnd);
-        rest = rest.slice(hostEnd);
-        this.parseHost(host);
-        this.hostname = this.hostname || "";
-        var ipv6Hostname = this.hostname[0] === "[" && this.hostname[this.hostname.length - 1] === "]";
-        if (!ipv6Hostname) {
-          var hostparts = this.hostname.split(/\./);
-          for (i = 0, l = hostparts.length; i < l; i++) {
-            var part = hostparts[i];
-            if (!part) {
-              continue;
-            }
-            if (!part.match(hostnamePartPattern)) {
-              var newpart = "";
-              for (var j = 0, k = part.length; j < k; j++) {
-                if (part.charCodeAt(j) > 127) {
-                  newpart += "x";
-                } else {
-                  newpart += part[j];
-                }
-              }
-              if (!newpart.match(hostnamePartPattern)) {
-                var validParts = hostparts.slice(0, i);
-                var notHost = hostparts.slice(i + 1);
-                var bit = part.match(hostnamePartStart);
-                if (bit) {
-                  validParts.push(bit[1]);
-                  notHost.unshift(bit[2]);
-                }
-                if (notHost.length) {
-                  rest = notHost.join(".") + rest;
-                }
-                this.hostname = validParts.join(".");
-                break;
-              }
-            }
-          }
-        }
-        if (this.hostname.length > hostnameMaxLen) {
-          this.hostname = "";
-        }
-        if (ipv6Hostname) {
-          this.hostname = this.hostname.substr(1, this.hostname.length - 2);
-        }
-      }
-      var hash = rest.indexOf("#");
-      if (hash !== -1) {
-        this.hash = rest.substr(hash);
-        rest = rest.slice(0, hash);
-      }
-      var qm = rest.indexOf("?");
-      if (qm !== -1) {
-        this.search = rest.substr(qm);
-        rest = rest.slice(0, qm);
-      }
-      if (rest) {
-        this.pathname = rest;
-      }
-      if (slashedProtocol[lowerProto] && this.hostname && !this.pathname) {
-        this.pathname = "";
-      }
-      return this;
-    };
-    Url.prototype.parseHost = function(host) {
-      var port = portPattern.exec(host);
-      if (port) {
-        port = port[0];
-        if (port !== ":") {
-          this.port = port.substr(1);
-        }
-        host = host.substr(0, host.length - port.length);
-      }
-      if (host) {
-        this.hostname = host;
-      }
-    };
-    module2.exports = urlParse;
-  }
-});
-
-// node_modules/mdurl/index.js
-var require_mdurl = __commonJS({
-  "node_modules/mdurl/index.js"(exports, module2) {
-    "use strict";
-    module2.exports.encode = require_encode();
-    module2.exports.decode = require_decode();
-    module2.exports.format = require_format();
-    module2.exports.parse = require_parse();
-  }
-});
-
-// node_modules/uc.micro/properties/Any/regex.js
-var require_regex2 = __commonJS({
-  "node_modules/uc.micro/properties/Any/regex.js"(exports, module2) {
-    module2.exports = /[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/;
-  }
-});
-
-// node_modules/uc.micro/categories/Cc/regex.js
-var require_regex3 = __commonJS({
-  "node_modules/uc.micro/categories/Cc/regex.js"(exports, module2) {
-    module2.exports = /[\0-\x1F\x7F-\x9F]/;
-  }
-});
-
-// node_modules/uc.micro/categories/Cf/regex.js
-var require_regex4 = __commonJS({
-  "node_modules/uc.micro/categories/Cf/regex.js"(exports, module2) {
-    module2.exports = /[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/;
-  }
-});
-
-// node_modules/uc.micro/categories/Z/regex.js
-var require_regex5 = __commonJS({
-  "node_modules/uc.micro/categories/Z/regex.js"(exports, module2) {
-    module2.exports = /[ \xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/;
-  }
-});
-
-// node_modules/uc.micro/index.js
-var require_uc = __commonJS({
-  "node_modules/uc.micro/index.js"(exports) {
-    "use strict";
-    exports.Any = require_regex2();
-    exports.Cc = require_regex3();
-    exports.Cf = require_regex4();
-    exports.P = require_regex();
-    exports.Z = require_regex5();
-  }
-});
-
-// node_modules/markdown-it/lib/common/utils.js
-var require_utils = __commonJS({
-  "node_modules/markdown-it/lib/common/utils.js"(exports) {
-    "use strict";
-    function _class(obj) {
-      return Object.prototype.toString.call(obj);
-    }
-    function isString(obj) {
-      return _class(obj) === "[object String]";
-    }
-    var _hasOwnProperty = Object.prototype.hasOwnProperty;
-    function has(object, key) {
-      return _hasOwnProperty.call(object, key);
-    }
-    function assign(obj) {
-      var sources = Array.prototype.slice.call(arguments, 1);
-      sources.forEach(function(source) {
-        if (!source) {
-          return;
-        }
-        if (typeof source !== "object") {
-          throw new TypeError(source + "must be object");
-        }
-        Object.keys(source).forEach(function(key) {
-          obj[key] = source[key];
-        });
-      });
-      return obj;
-    }
-    function arrayReplaceAt(src, pos, newElements) {
-      return [].concat(src.slice(0, pos), newElements, src.slice(pos + 1));
-    }
-    function isValidEntityCode(c) {
-      if (c >= 55296 && c <= 57343) {
-        return false;
-      }
-      if (c >= 64976 && c <= 65007) {
-        return false;
-      }
-      if ((c & 65535) === 65535 || (c & 65535) === 65534) {
-        return false;
-      }
-      if (c >= 0 && c <= 8) {
-        return false;
-      }
-      if (c === 11) {
-        return false;
-      }
-      if (c >= 14 && c <= 31) {
-        return false;
-      }
-      if (c >= 127 && c <= 159) {
-        return false;
-      }
-      if (c > 1114111) {
-        return false;
-      }
-      return true;
-    }
-    function fromCodePoint(c) {
-      if (c > 65535) {
-        c -= 65536;
-        var surrogate1 = 55296 + (c >> 10), surrogate2 = 56320 + (c & 1023);
-        return String.fromCharCode(surrogate1, surrogate2);
-      }
-      return String.fromCharCode(c);
-    }
-    var UNESCAPE_MD_RE = /\\([!"#$%&'()*+,\-.\/:;<=>?@[\\\]^_`{|}~])/g;
-    var ENTITY_RE = /&([a-z#][a-z0-9]{1,31});/gi;
-    var UNESCAPE_ALL_RE = new RegExp(UNESCAPE_MD_RE.source + "|" + ENTITY_RE.source, "gi");
-    var DIGITAL_ENTITY_TEST_RE = /^#((?:x[a-f0-9]{1,8}|[0-9]{1,8}))/i;
-    var entities = require_entities2();
-    function replaceEntityPattern(match, name) {
-      var code = 0;
-      if (has(entities, name)) {
-        return entities[name];
-      }
-      if (name.charCodeAt(0) === 35 && DIGITAL_ENTITY_TEST_RE.test(name)) {
-        code = name[1].toLowerCase() === "x" ? parseInt(name.slice(2), 16) : parseInt(name.slice(1), 10);
-        if (isValidEntityCode(code)) {
-          return fromCodePoint(code);
-        }
-      }
-      return match;
-    }
-    function unescapeMd(str) {
-      if (str.indexOf("\\") < 0) {
-        return str;
-      }
-      return str.replace(UNESCAPE_MD_RE, "$1");
-    }
-    function unescapeAll(str) {
-      if (str.indexOf("\\") < 0 && str.indexOf("&") < 0) {
-        return str;
-      }
-      return str.replace(UNESCAPE_ALL_RE, function(match, escaped, entity) {
-        if (escaped) {
-          return escaped;
-        }
-        return replaceEntityPattern(match, entity);
-      });
-    }
-    var HTML_ESCAPE_TEST_RE = /[&<>"]/;
-    var HTML_ESCAPE_REPLACE_RE = /[&<>"]/g;
-    var HTML_REPLACEMENTS = {
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;"
-    };
-    function replaceUnsafeChar(ch) {
-      return HTML_REPLACEMENTS[ch];
-    }
-    function escapeHtml(str) {
-      if (HTML_ESCAPE_TEST_RE.test(str)) {
-        return str.replace(HTML_ESCAPE_REPLACE_RE, replaceUnsafeChar);
-      }
-      return str;
-    }
-    var REGEXP_ESCAPE_RE = /[.?*+^$[\]\\(){}|-]/g;
-    function escapeRE(str) {
-      return str.replace(REGEXP_ESCAPE_RE, "\\$&");
-    }
-    function isSpace(code) {
-      switch (code) {
-        case 9:
-        case 32:
-          return true;
-      }
-      return false;
-    }
-    function isWhiteSpace(code) {
-      if (code >= 8192 && code <= 8202) {
-        return true;
-      }
-      switch (code) {
-        case 9:
-        case 10:
-        case 11:
-        case 12:
-        case 13:
-        case 32:
-        case 160:
-        case 5760:
-        case 8239:
-        case 8287:
-        case 12288:
-          return true;
-      }
-      return false;
-    }
-    var UNICODE_PUNCT_RE = require_regex();
-    function isPunctChar(ch) {
-      return UNICODE_PUNCT_RE.test(ch);
-    }
-    function isMdAsciiPunct(ch) {
-      switch (ch) {
-        case 33:
-        case 34:
-        case 35:
-        case 36:
-        case 37:
-        case 38:
-        case 39:
-        case 40:
-        case 41:
-        case 42:
-        case 43:
-        case 44:
-        case 45:
-        case 46:
-        case 47:
-        case 58:
-        case 59:
-        case 60:
-        case 61:
-        case 62:
-        case 63:
-        case 64:
-        case 91:
-        case 92:
-        case 93:
-        case 94:
-        case 95:
-        case 96:
-        case 123:
-        case 124:
-        case 125:
-        case 126:
-          return true;
-        default:
-          return false;
-      }
-    }
-    function normalizeReference(str) {
-      str = str.trim().replace(/\s+/g, " ");
-      if ("\u1E9E".toLowerCase() === "\u1E7E") {
-        str = str.replace(/ẞ/g, "\xDF");
-      }
-      return str.toLowerCase().toUpperCase();
-    }
-    exports.lib = {};
-    exports.lib.mdurl = require_mdurl();
-    exports.lib.ucmicro = require_uc();
-    exports.assign = assign;
-    exports.isString = isString;
-    exports.has = has;
-    exports.unescapeMd = unescapeMd;
-    exports.unescapeAll = unescapeAll;
-    exports.isValidEntityCode = isValidEntityCode;
-    exports.fromCodePoint = fromCodePoint;
-    exports.escapeHtml = escapeHtml;
-    exports.arrayReplaceAt = arrayReplaceAt;
-    exports.isSpace = isSpace;
-    exports.isWhiteSpace = isWhiteSpace;
-    exports.isMdAsciiPunct = isMdAsciiPunct;
-    exports.isPunctChar = isPunctChar;
-    exports.escapeRE = escapeRE;
-    exports.normalizeReference = normalizeReference;
-  }
-});
-
-// node_modules/markdown-it/lib/helpers/parse_link_label.js
-var require_parse_link_label = __commonJS({
-  "node_modules/markdown-it/lib/helpers/parse_link_label.js"(exports, module2) {
-    "use strict";
-    module2.exports = function parseLinkLabel(state, start, disableNested) {
-      var level, found, marker, prevPos, labelEnd = -1, max = state.posMax, oldPos = state.pos;
-      state.pos = start + 1;
-      level = 1;
-      while (state.pos < max) {
-        marker = state.src.charCodeAt(state.pos);
-        if (marker === 93) {
-          level--;
-          if (level === 0) {
-            found = true;
-            break;
-          }
-        }
-        prevPos = state.pos;
-        state.md.inline.skipToken(state);
-        if (marker === 91) {
-          if (prevPos === state.pos - 1) {
-            level++;
-          } else if (disableNested) {
-            state.pos = oldPos;
-            return -1;
-          }
-        }
-      }
-      if (found) {
-        labelEnd = state.pos;
-      }
-      state.pos = oldPos;
-      return labelEnd;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/helpers/parse_link_destination.js
-var require_parse_link_destination = __commonJS({
-  "node_modules/markdown-it/lib/helpers/parse_link_destination.js"(exports, module2) {
-    "use strict";
-    var unescapeAll = require_utils().unescapeAll;
-    module2.exports = function parseLinkDestination(str, pos, max) {
-      var code, level, lines = 0, start = pos, result = {
-        ok: false,
-        pos: 0,
-        lines: 0,
-        str: ""
-      };
-      if (str.charCodeAt(pos) === 60) {
-        pos++;
-        while (pos < max) {
-          code = str.charCodeAt(pos);
-          if (code === 10) {
-            return result;
-          }
-          if (code === 60) {
-            return result;
-          }
-          if (code === 62) {
-            result.pos = pos + 1;
-            result.str = unescapeAll(str.slice(start + 1, pos));
-            result.ok = true;
-            return result;
-          }
-          if (code === 92 && pos + 1 < max) {
-            pos += 2;
-            continue;
-          }
-          pos++;
-        }
-        return result;
-      }
-      level = 0;
-      while (pos < max) {
-        code = str.charCodeAt(pos);
-        if (code === 32) {
-          break;
-        }
-        if (code < 32 || code === 127) {
-          break;
-        }
-        if (code === 92 && pos + 1 < max) {
-          if (str.charCodeAt(pos + 1) === 32) {
-            break;
-          }
-          pos += 2;
-          continue;
-        }
-        if (code === 40) {
-          level++;
-          if (level > 32) {
-            return result;
-          }
-        }
-        if (code === 41) {
-          if (level === 0) {
-            break;
-          }
-          level--;
-        }
-        pos++;
-      }
-      if (start === pos) {
-        return result;
-      }
-      if (level !== 0) {
-        return result;
-      }
-      result.str = unescapeAll(str.slice(start, pos));
-      result.lines = lines;
-      result.pos = pos;
-      result.ok = true;
-      return result;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/helpers/parse_link_title.js
-var require_parse_link_title = __commonJS({
-  "node_modules/markdown-it/lib/helpers/parse_link_title.js"(exports, module2) {
-    "use strict";
-    var unescapeAll = require_utils().unescapeAll;
-    module2.exports = function parseLinkTitle(str, pos, max) {
-      var code, marker, lines = 0, start = pos, result = {
-        ok: false,
-        pos: 0,
-        lines: 0,
-        str: ""
-      };
-      if (pos >= max) {
-        return result;
-      }
-      marker = str.charCodeAt(pos);
-      if (marker !== 34 && marker !== 39 && marker !== 40) {
-        return result;
-      }
-      pos++;
-      if (marker === 40) {
-        marker = 41;
-      }
-      while (pos < max) {
-        code = str.charCodeAt(pos);
-        if (code === marker) {
-          result.pos = pos + 1;
-          result.lines = lines;
-          result.str = unescapeAll(str.slice(start + 1, pos));
-          result.ok = true;
-          return result;
-        } else if (code === 40 && marker === 41) {
-          return result;
-        } else if (code === 10) {
-          lines++;
-        } else if (code === 92 && pos + 1 < max) {
-          pos++;
-          if (str.charCodeAt(pos) === 10) {
-            lines++;
-          }
-        }
-        pos++;
-      }
-      return result;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/helpers/index.js
-var require_helpers = __commonJS({
-  "node_modules/markdown-it/lib/helpers/index.js"(exports) {
-    "use strict";
-    exports.parseLinkLabel = require_parse_link_label();
-    exports.parseLinkDestination = require_parse_link_destination();
-    exports.parseLinkTitle = require_parse_link_title();
-  }
-});
-
-// node_modules/markdown-it/lib/renderer.js
-var require_renderer = __commonJS({
-  "node_modules/markdown-it/lib/renderer.js"(exports, module2) {
-    "use strict";
-    var assign = require_utils().assign;
-    var unescapeAll = require_utils().unescapeAll;
-    var escapeHtml = require_utils().escapeHtml;
-    var default_rules = {};
-    default_rules.code_inline = function(tokens, idx, options, env, slf) {
-      var token = tokens[idx];
-      return "<code" + slf.renderAttrs(token) + ">" + escapeHtml(tokens[idx].content) + "</code>";
-    };
-    default_rules.code_block = function(tokens, idx, options, env, slf) {
-      var token = tokens[idx];
-      return "<pre" + slf.renderAttrs(token) + "><code>" + escapeHtml(tokens[idx].content) + "</code></pre>\n";
-    };
-    default_rules.fence = function(tokens, idx, options, env, slf) {
-      var token = tokens[idx], info = token.info ? unescapeAll(token.info).trim() : "", langName = "", langAttrs = "", highlighted, i, arr, tmpAttrs, tmpToken;
-      if (info) {
-        arr = info.split(/(\s+)/g);
-        langName = arr[0];
-        langAttrs = arr.slice(2).join("");
-      }
-      if (options.highlight) {
-        highlighted = options.highlight(token.content, langName, langAttrs) || escapeHtml(token.content);
-      } else {
-        highlighted = escapeHtml(token.content);
-      }
-      if (highlighted.indexOf("<pre") === 0) {
-        return highlighted + "\n";
-      }
-      if (info) {
-        i = token.attrIndex("class");
-        tmpAttrs = token.attrs ? token.attrs.slice() : [];
-        if (i < 0) {
-          tmpAttrs.push(["class", options.langPrefix + langName]);
-        } else {
-          tmpAttrs[i] = tmpAttrs[i].slice();
-          tmpAttrs[i][1] += " " + options.langPrefix + langName;
-        }
-        tmpToken = {
-          attrs: tmpAttrs
-        };
-        return "<pre><code" + slf.renderAttrs(tmpToken) + ">" + highlighted + "</code></pre>\n";
-      }
-      return "<pre><code" + slf.renderAttrs(token) + ">" + highlighted + "</code></pre>\n";
-    };
-    default_rules.image = function(tokens, idx, options, env, slf) {
-      var token = tokens[idx];
-      token.attrs[token.attrIndex("alt")][1] = slf.renderInlineAsText(token.children, options, env);
-      return slf.renderToken(tokens, idx, options);
-    };
-    default_rules.hardbreak = function(tokens, idx, options) {
-      return options.xhtmlOut ? "<br />\n" : "<br>\n";
-    };
-    default_rules.softbreak = function(tokens, idx, options) {
-      return options.breaks ? options.xhtmlOut ? "<br />\n" : "<br>\n" : "\n";
-    };
-    default_rules.text = function(tokens, idx) {
-      return escapeHtml(tokens[idx].content);
-    };
-    default_rules.html_block = function(tokens, idx) {
-      return tokens[idx].content;
-    };
-    default_rules.html_inline = function(tokens, idx) {
-      return tokens[idx].content;
-    };
-    function Renderer() {
-      this.rules = assign({}, default_rules);
-    }
-    Renderer.prototype.renderAttrs = function renderAttrs(token) {
-      var i, l, result;
-      if (!token.attrs) {
-        return "";
-      }
-      result = "";
-      for (i = 0, l = token.attrs.length; i < l; i++) {
-        result += " " + escapeHtml(token.attrs[i][0]) + '="' + escapeHtml(token.attrs[i][1]) + '"';
-      }
-      return result;
-    };
-    Renderer.prototype.renderToken = function renderToken(tokens, idx, options) {
-      var nextToken, result = "", needLf = false, token = tokens[idx];
-      if (token.hidden) {
-        return "";
-      }
-      if (token.block && token.nesting !== -1 && idx && tokens[idx - 1].hidden) {
-        result += "\n";
-      }
-      result += (token.nesting === -1 ? "</" : "<") + token.tag;
-      result += this.renderAttrs(token);
-      if (token.nesting === 0 && options.xhtmlOut) {
-        result += " /";
-      }
-      if (token.block) {
-        needLf = true;
-        if (token.nesting === 1) {
-          if (idx + 1 < tokens.length) {
-            nextToken = tokens[idx + 1];
-            if (nextToken.type === "inline" || nextToken.hidden) {
-              needLf = false;
-            } else if (nextToken.nesting === -1 && nextToken.tag === token.tag) {
-              needLf = false;
-            }
-          }
-        }
-      }
-      result += needLf ? ">\n" : ">";
-      return result;
-    };
-    Renderer.prototype.renderInline = function(tokens, options, env) {
-      var type, result = "", rules = this.rules;
-      for (var i = 0, len = tokens.length; i < len; i++) {
-        type = tokens[i].type;
-        if (typeof rules[type] !== "undefined") {
-          result += rules[type](tokens, i, options, env, this);
-        } else {
-          result += this.renderToken(tokens, i, options);
-        }
-      }
-      return result;
-    };
-    Renderer.prototype.renderInlineAsText = function(tokens, options, env) {
-      var result = "";
-      for (var i = 0, len = tokens.length; i < len; i++) {
-        if (tokens[i].type === "text") {
-          result += tokens[i].content;
-        } else if (tokens[i].type === "image") {
-          result += this.renderInlineAsText(tokens[i].children, options, env);
-        } else if (tokens[i].type === "softbreak") {
-          result += "\n";
-        }
-      }
-      return result;
-    };
-    Renderer.prototype.render = function(tokens, options, env) {
-      var i, len, type, result = "", rules = this.rules;
-      for (i = 0, len = tokens.length; i < len; i++) {
-        type = tokens[i].type;
-        if (type === "inline") {
-          result += this.renderInline(tokens[i].children, options, env);
-        } else if (typeof rules[type] !== "undefined") {
-          result += rules[tokens[i].type](tokens, i, options, env, this);
-        } else {
-          result += this.renderToken(tokens, i, options, env);
-        }
-      }
-      return result;
-    };
-    module2.exports = Renderer;
-  }
-});
-
-// node_modules/markdown-it/lib/ruler.js
-var require_ruler = __commonJS({
-  "node_modules/markdown-it/lib/ruler.js"(exports, module2) {
-    "use strict";
-    function Ruler() {
-      this.__rules__ = [];
-      this.__cache__ = null;
-    }
-    Ruler.prototype.__find__ = function(name) {
-      for (var i = 0; i < this.__rules__.length; i++) {
-        if (this.__rules__[i].name === name) {
-          return i;
-        }
-      }
-      return -1;
-    };
-    Ruler.prototype.__compile__ = function() {
-      var self = this;
-      var chains = [""];
-      self.__rules__.forEach(function(rule) {
-        if (!rule.enabled) {
-          return;
-        }
-        rule.alt.forEach(function(altName) {
-          if (chains.indexOf(altName) < 0) {
-            chains.push(altName);
-          }
-        });
-      });
-      self.__cache__ = {};
-      chains.forEach(function(chain) {
-        self.__cache__[chain] = [];
-        self.__rules__.forEach(function(rule) {
-          if (!rule.enabled) {
-            return;
-          }
-          if (chain && rule.alt.indexOf(chain) < 0) {
-            return;
-          }
-          self.__cache__[chain].push(rule.fn);
-        });
-      });
-    };
-    Ruler.prototype.at = function(name, fn, options) {
-      var index = this.__find__(name);
-      var opt = options || {};
-      if (index === -1) {
-        throw new Error("Parser rule not found: " + name);
-      }
-      this.__rules__[index].fn = fn;
-      this.__rules__[index].alt = opt.alt || [];
-      this.__cache__ = null;
-    };
-    Ruler.prototype.before = function(beforeName, ruleName, fn, options) {
-      var index = this.__find__(beforeName);
-      var opt = options || {};
-      if (index === -1) {
-        throw new Error("Parser rule not found: " + beforeName);
-      }
-      this.__rules__.splice(index, 0, {
-        name: ruleName,
-        enabled: true,
-        fn,
-        alt: opt.alt || []
-      });
-      this.__cache__ = null;
-    };
-    Ruler.prototype.after = function(afterName, ruleName, fn, options) {
-      var index = this.__find__(afterName);
-      var opt = options || {};
-      if (index === -1) {
-        throw new Error("Parser rule not found: " + afterName);
-      }
-      this.__rules__.splice(index + 1, 0, {
-        name: ruleName,
-        enabled: true,
-        fn,
-        alt: opt.alt || []
-      });
-      this.__cache__ = null;
-    };
-    Ruler.prototype.push = function(ruleName, fn, options) {
-      var opt = options || {};
-      this.__rules__.push({
-        name: ruleName,
-        enabled: true,
-        fn,
-        alt: opt.alt || []
-      });
-      this.__cache__ = null;
-    };
-    Ruler.prototype.enable = function(list, ignoreInvalid) {
-      if (!Array.isArray(list)) {
-        list = [list];
-      }
-      var result = [];
-      list.forEach(function(name) {
-        var idx = this.__find__(name);
-        if (idx < 0) {
-          if (ignoreInvalid) {
-            return;
-          }
-          throw new Error("Rules manager: invalid rule name " + name);
-        }
-        this.__rules__[idx].enabled = true;
-        result.push(name);
-      }, this);
-      this.__cache__ = null;
-      return result;
-    };
-    Ruler.prototype.enableOnly = function(list, ignoreInvalid) {
-      if (!Array.isArray(list)) {
-        list = [list];
-      }
-      this.__rules__.forEach(function(rule) {
-        rule.enabled = false;
-      });
-      this.enable(list, ignoreInvalid);
-    };
-    Ruler.prototype.disable = function(list, ignoreInvalid) {
-      if (!Array.isArray(list)) {
-        list = [list];
-      }
-      var result = [];
-      list.forEach(function(name) {
-        var idx = this.__find__(name);
-        if (idx < 0) {
-          if (ignoreInvalid) {
-            return;
-          }
-          throw new Error("Rules manager: invalid rule name " + name);
-        }
-        this.__rules__[idx].enabled = false;
-        result.push(name);
-      }, this);
-      this.__cache__ = null;
-      return result;
-    };
-    Ruler.prototype.getRules = function(chainName) {
-      if (this.__cache__ === null) {
-        this.__compile__();
-      }
-      return this.__cache__[chainName] || [];
-    };
-    module2.exports = Ruler;
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/normalize.js
-var require_normalize = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/normalize.js"(exports, module2) {
-    "use strict";
-    var NEWLINES_RE = /\r\n?|\n/g;
-    var NULL_RE = /\0/g;
-    module2.exports = function normalize(state) {
-      var str;
-      str = state.src.replace(NEWLINES_RE, "\n");
-      str = str.replace(NULL_RE, "\uFFFD");
-      state.src = str;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/block.js
-var require_block = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/block.js"(exports, module2) {
-    "use strict";
-    module2.exports = function block(state) {
-      var token;
-      if (state.inlineMode) {
-        token = new state.Token("inline", "", 0);
-        token.content = state.src;
-        token.map = [0, 1];
-        token.children = [];
-        state.tokens.push(token);
-      } else {
-        state.md.block.parse(state.src, state.md, state.env, state.tokens);
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/inline.js
-var require_inline = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/inline.js"(exports, module2) {
-    "use strict";
-    module2.exports = function inline(state) {
-      var tokens = state.tokens, tok, i, l;
-      for (i = 0, l = tokens.length; i < l; i++) {
-        tok = tokens[i];
-        if (tok.type === "inline") {
-          state.md.inline.parse(tok.content, state.md, state.env, tok.children);
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/linkify.js
-var require_linkify = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/linkify.js"(exports, module2) {
-    "use strict";
-    var arrayReplaceAt = require_utils().arrayReplaceAt;
-    function isLinkOpen(str) {
-      return /^<a[>\s]/i.test(str);
-    }
-    function isLinkClose(str) {
-      return /^<\/a\s*>/i.test(str);
-    }
-    module2.exports = function linkify(state) {
-      var i, j, l, tokens, token, currentToken, nodes, ln, text2, pos, lastPos, level, htmlLinkLevel, url, fullUrl, urlText, blockTokens = state.tokens, links;
-      if (!state.md.options.linkify) {
-        return;
-      }
-      for (j = 0, l = blockTokens.length; j < l; j++) {
-        if (blockTokens[j].type !== "inline" || !state.md.linkify.pretest(blockTokens[j].content)) {
-          continue;
-        }
-        tokens = blockTokens[j].children;
-        htmlLinkLevel = 0;
-        for (i = tokens.length - 1; i >= 0; i--) {
-          currentToken = tokens[i];
-          if (currentToken.type === "link_close") {
-            i--;
-            while (tokens[i].level !== currentToken.level && tokens[i].type !== "link_open") {
-              i--;
-            }
-            continue;
-          }
-          if (currentToken.type === "html_inline") {
-            if (isLinkOpen(currentToken.content) && htmlLinkLevel > 0) {
-              htmlLinkLevel--;
-            }
-            if (isLinkClose(currentToken.content)) {
-              htmlLinkLevel++;
-            }
-          }
-          if (htmlLinkLevel > 0) {
-            continue;
-          }
-          if (currentToken.type === "text" && state.md.linkify.test(currentToken.content)) {
-            text2 = currentToken.content;
-            links = state.md.linkify.match(text2);
-            nodes = [];
-            level = currentToken.level;
-            lastPos = 0;
-            if (links.length > 0 && links[0].index === 0 && i > 0 && tokens[i - 1].type === "text_special") {
-              links = links.slice(1);
-            }
-            for (ln = 0; ln < links.length; ln++) {
-              url = links[ln].url;
-              fullUrl = state.md.normalizeLink(url);
-              if (!state.md.validateLink(fullUrl)) {
-                continue;
-              }
-              urlText = links[ln].text;
-              if (!links[ln].schema) {
-                urlText = state.md.normalizeLinkText("http://" + urlText).replace(/^http:\/\//, "");
-              } else if (links[ln].schema === "mailto:" && !/^mailto:/i.test(urlText)) {
-                urlText = state.md.normalizeLinkText("mailto:" + urlText).replace(/^mailto:/, "");
-              } else {
-                urlText = state.md.normalizeLinkText(urlText);
-              }
-              pos = links[ln].index;
-              if (pos > lastPos) {
-                token = new state.Token("text", "", 0);
-                token.content = text2.slice(lastPos, pos);
-                token.level = level;
-                nodes.push(token);
-              }
-              token = new state.Token("link_open", "a", 1);
-              token.attrs = [["href", fullUrl]];
-              token.level = level++;
-              token.markup = "linkify";
-              token.info = "auto";
-              nodes.push(token);
-              token = new state.Token("text", "", 0);
-              token.content = urlText;
-              token.level = level;
-              nodes.push(token);
-              token = new state.Token("link_close", "a", -1);
-              token.level = --level;
-              token.markup = "linkify";
-              token.info = "auto";
-              nodes.push(token);
-              lastPos = links[ln].lastIndex;
-            }
-            if (lastPos < text2.length) {
-              token = new state.Token("text", "", 0);
-              token.content = text2.slice(lastPos);
-              token.level = level;
-              nodes.push(token);
-            }
-            blockTokens[j].children = tokens = arrayReplaceAt(tokens, i, nodes);
-          }
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/replacements.js
-var require_replacements = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/replacements.js"(exports, module2) {
-    "use strict";
-    var RARE_RE = /\+-|\.\.|\?\?\?\?|!!!!|,,|--/;
-    var SCOPED_ABBR_TEST_RE = /\((c|tm|r)\)/i;
-    var SCOPED_ABBR_RE = /\((c|tm|r)\)/ig;
-    var SCOPED_ABBR = {
-      c: "\xA9",
-      r: "\xAE",
-      tm: "\u2122"
-    };
-    function replaceFn(match, name) {
-      return SCOPED_ABBR[name.toLowerCase()];
-    }
-    function replace_scoped(inlineTokens) {
-      var i, token, inside_autolink = 0;
-      for (i = inlineTokens.length - 1; i >= 0; i--) {
-        token = inlineTokens[i];
-        if (token.type === "text" && !inside_autolink) {
-          token.content = token.content.replace(SCOPED_ABBR_RE, replaceFn);
-        }
-        if (token.type === "link_open" && token.info === "auto") {
-          inside_autolink--;
-        }
-        if (token.type === "link_close" && token.info === "auto") {
-          inside_autolink++;
-        }
-      }
-    }
-    function replace_rare(inlineTokens) {
-      var i, token, inside_autolink = 0;
-      for (i = inlineTokens.length - 1; i >= 0; i--) {
-        token = inlineTokens[i];
-        if (token.type === "text" && !inside_autolink) {
-          if (RARE_RE.test(token.content)) {
-            token.content = token.content.replace(/\+-/g, "\xB1").replace(/\.{2,}/g, "\u2026").replace(/([?!])…/g, "$1..").replace(/([?!]){4,}/g, "$1$1$1").replace(/,{2,}/g, ",").replace(/(^|[^-])---(?=[^-]|$)/mg, "$1\u2014").replace(/(^|\s)--(?=\s|$)/mg, "$1\u2013").replace(/(^|[^-\s])--(?=[^-\s]|$)/mg, "$1\u2013");
-          }
-        }
-        if (token.type === "link_open" && token.info === "auto") {
-          inside_autolink--;
-        }
-        if (token.type === "link_close" && token.info === "auto") {
-          inside_autolink++;
-        }
-      }
-    }
-    module2.exports = function replace(state) {
-      var blkIdx;
-      if (!state.md.options.typographer) {
-        return;
-      }
-      for (blkIdx = state.tokens.length - 1; blkIdx >= 0; blkIdx--) {
-        if (state.tokens[blkIdx].type !== "inline") {
-          continue;
-        }
-        if (SCOPED_ABBR_TEST_RE.test(state.tokens[blkIdx].content)) {
-          replace_scoped(state.tokens[blkIdx].children);
-        }
-        if (RARE_RE.test(state.tokens[blkIdx].content)) {
-          replace_rare(state.tokens[blkIdx].children);
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/smartquotes.js
-var require_smartquotes = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/smartquotes.js"(exports, module2) {
-    "use strict";
-    var isWhiteSpace = require_utils().isWhiteSpace;
-    var isPunctChar = require_utils().isPunctChar;
-    var isMdAsciiPunct = require_utils().isMdAsciiPunct;
-    var QUOTE_TEST_RE = /['"]/;
-    var QUOTE_RE = /['"]/g;
-    var APOSTROPHE = "\u2019";
-    function replaceAt(str, index, ch) {
-      return str.slice(0, index) + ch + str.slice(index + 1);
-    }
-    function process_inlines(tokens, state) {
-      var i, token, text2, t, pos, max, thisLevel, item, lastChar, nextChar, isLastPunctChar, isNextPunctChar, isLastWhiteSpace, isNextWhiteSpace, canOpen, canClose, j, isSingle, stack, openQuote, closeQuote;
-      stack = [];
-      for (i = 0; i < tokens.length; i++) {
-        token = tokens[i];
-        thisLevel = tokens[i].level;
-        for (j = stack.length - 1; j >= 0; j--) {
-          if (stack[j].level <= thisLevel) {
-            break;
-          }
-        }
-        stack.length = j + 1;
-        if (token.type !== "text") {
-          continue;
-        }
-        text2 = token.content;
-        pos = 0;
-        max = text2.length;
-        OUTER:
-          while (pos < max) {
-            QUOTE_RE.lastIndex = pos;
-            t = QUOTE_RE.exec(text2);
-            if (!t) {
-              break;
-            }
-            canOpen = canClose = true;
-            pos = t.index + 1;
-            isSingle = t[0] === "'";
-            lastChar = 32;
-            if (t.index - 1 >= 0) {
-              lastChar = text2.charCodeAt(t.index - 1);
-            } else {
-              for (j = i - 1; j >= 0; j--) {
-                if (tokens[j].type === "softbreak" || tokens[j].type === "hardbreak")
-                  break;
-                if (!tokens[j].content)
-                  continue;
-                lastChar = tokens[j].content.charCodeAt(tokens[j].content.length - 1);
-                break;
-              }
-            }
-            nextChar = 32;
-            if (pos < max) {
-              nextChar = text2.charCodeAt(pos);
-            } else {
-              for (j = i + 1; j < tokens.length; j++) {
-                if (tokens[j].type === "softbreak" || tokens[j].type === "hardbreak")
-                  break;
-                if (!tokens[j].content)
-                  continue;
-                nextChar = tokens[j].content.charCodeAt(0);
-                break;
-              }
-            }
-            isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctChar(String.fromCharCode(lastChar));
-            isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctChar(String.fromCharCode(nextChar));
-            isLastWhiteSpace = isWhiteSpace(lastChar);
-            isNextWhiteSpace = isWhiteSpace(nextChar);
-            if (isNextWhiteSpace) {
-              canOpen = false;
-            } else if (isNextPunctChar) {
-              if (!(isLastWhiteSpace || isLastPunctChar)) {
-                canOpen = false;
-              }
-            }
-            if (isLastWhiteSpace) {
-              canClose = false;
-            } else if (isLastPunctChar) {
-              if (!(isNextWhiteSpace || isNextPunctChar)) {
-                canClose = false;
-              }
-            }
-            if (nextChar === 34 && t[0] === '"') {
-              if (lastChar >= 48 && lastChar <= 57) {
-                canClose = canOpen = false;
-              }
-            }
-            if (canOpen && canClose) {
-              canOpen = isLastPunctChar;
-              canClose = isNextPunctChar;
-            }
-            if (!canOpen && !canClose) {
-              if (isSingle) {
-                token.content = replaceAt(token.content, t.index, APOSTROPHE);
-              }
-              continue;
-            }
-            if (canClose) {
-              for (j = stack.length - 1; j >= 0; j--) {
-                item = stack[j];
-                if (stack[j].level < thisLevel) {
-                  break;
-                }
-                if (item.single === isSingle && stack[j].level === thisLevel) {
-                  item = stack[j];
-                  if (isSingle) {
-                    openQuote = state.md.options.quotes[2];
-                    closeQuote = state.md.options.quotes[3];
-                  } else {
-                    openQuote = state.md.options.quotes[0];
-                    closeQuote = state.md.options.quotes[1];
-                  }
-                  token.content = replaceAt(token.content, t.index, closeQuote);
-                  tokens[item.token].content = replaceAt(tokens[item.token].content, item.pos, openQuote);
-                  pos += closeQuote.length - 1;
-                  if (item.token === i) {
-                    pos += openQuote.length - 1;
-                  }
-                  text2 = token.content;
-                  max = text2.length;
-                  stack.length = j;
-                  continue OUTER;
-                }
-              }
-            }
-            if (canOpen) {
-              stack.push({
-                token: i,
-                pos: t.index,
-                single: isSingle,
-                level: thisLevel
-              });
-            } else if (canClose && isSingle) {
-              token.content = replaceAt(token.content, t.index, APOSTROPHE);
-            }
-          }
-      }
-    }
-    module2.exports = function smartquotes(state) {
-      var blkIdx;
-      if (!state.md.options.typographer) {
-        return;
-      }
-      for (blkIdx = state.tokens.length - 1; blkIdx >= 0; blkIdx--) {
-        if (state.tokens[blkIdx].type !== "inline" || !QUOTE_TEST_RE.test(state.tokens[blkIdx].content)) {
-          continue;
-        }
-        process_inlines(state.tokens[blkIdx].children, state);
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/text_join.js
-var require_text_join = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/text_join.js"(exports, module2) {
-    "use strict";
-    module2.exports = function text_join(state) {
-      var j, l, tokens, curr, max, last, blockTokens = state.tokens;
-      for (j = 0, l = blockTokens.length; j < l; j++) {
-        if (blockTokens[j].type !== "inline")
-          continue;
-        tokens = blockTokens[j].children;
-        max = tokens.length;
-        for (curr = 0; curr < max; curr++) {
-          if (tokens[curr].type === "text_special") {
-            tokens[curr].type = "text";
-          }
-        }
-        for (curr = last = 0; curr < max; curr++) {
-          if (tokens[curr].type === "text" && curr + 1 < max && tokens[curr + 1].type === "text") {
-            tokens[curr + 1].content = tokens[curr].content + tokens[curr + 1].content;
-          } else {
-            if (curr !== last) {
-              tokens[last] = tokens[curr];
-            }
-            last++;
-          }
-        }
-        if (curr !== last) {
-          tokens.length = last;
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/token.js
-var require_token = __commonJS({
-  "node_modules/markdown-it/lib/token.js"(exports, module2) {
-    "use strict";
-    function Token(type, tag, nesting) {
-      this.type = type;
-      this.tag = tag;
-      this.attrs = null;
-      this.map = null;
-      this.nesting = nesting;
-      this.level = 0;
-      this.children = null;
-      this.content = "";
-      this.markup = "";
-      this.info = "";
-      this.meta = null;
-      this.block = false;
-      this.hidden = false;
-    }
-    Token.prototype.attrIndex = function attrIndex(name) {
-      var attrs, i, len;
-      if (!this.attrs) {
-        return -1;
-      }
-      attrs = this.attrs;
-      for (i = 0, len = attrs.length; i < len; i++) {
-        if (attrs[i][0] === name) {
-          return i;
-        }
-      }
-      return -1;
-    };
-    Token.prototype.attrPush = function attrPush(attrData) {
-      if (this.attrs) {
-        this.attrs.push(attrData);
-      } else {
-        this.attrs = [attrData];
-      }
-    };
-    Token.prototype.attrSet = function attrSet(name, value) {
-      var idx = this.attrIndex(name), attrData = [name, value];
-      if (idx < 0) {
-        this.attrPush(attrData);
-      } else {
-        this.attrs[idx] = attrData;
-      }
-    };
-    Token.prototype.attrGet = function attrGet(name) {
-      var idx = this.attrIndex(name), value = null;
-      if (idx >= 0) {
-        value = this.attrs[idx][1];
-      }
-      return value;
-    };
-    Token.prototype.attrJoin = function attrJoin(name, value) {
-      var idx = this.attrIndex(name);
-      if (idx < 0) {
-        this.attrPush([name, value]);
-      } else {
-        this.attrs[idx][1] = this.attrs[idx][1] + " " + value;
-      }
-    };
-    module2.exports = Token;
-  }
-});
-
-// node_modules/markdown-it/lib/rules_core/state_core.js
-var require_state_core = __commonJS({
-  "node_modules/markdown-it/lib/rules_core/state_core.js"(exports, module2) {
-    "use strict";
-    var Token = require_token();
-    function StateCore(src, md, env) {
-      this.src = src;
-      this.env = env;
-      this.tokens = [];
-      this.inlineMode = false;
-      this.md = md;
-    }
-    StateCore.prototype.Token = Token;
-    module2.exports = StateCore;
-  }
-});
-
-// node_modules/markdown-it/lib/parser_core.js
-var require_parser_core = __commonJS({
-  "node_modules/markdown-it/lib/parser_core.js"(exports, module2) {
-    "use strict";
-    var Ruler = require_ruler();
-    var _rules = [
-      ["normalize", require_normalize()],
-      ["block", require_block()],
-      ["inline", require_inline()],
-      ["linkify", require_linkify()],
-      ["replacements", require_replacements()],
-      ["smartquotes", require_smartquotes()],
-      ["text_join", require_text_join()]
-    ];
-    function Core() {
-      this.ruler = new Ruler();
-      for (var i = 0; i < _rules.length; i++) {
-        this.ruler.push(_rules[i][0], _rules[i][1]);
-      }
-    }
-    Core.prototype.process = function(state) {
-      var i, l, rules;
-      rules = this.ruler.getRules("");
-      for (i = 0, l = rules.length; i < l; i++) {
-        rules[i](state);
-      }
-    };
-    Core.prototype.State = require_state_core();
-    module2.exports = Core;
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/table.js
-var require_table = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/table.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    function getLine(state, line) {
-      var pos = state.bMarks[line] + state.tShift[line], max = state.eMarks[line];
-      return state.src.slice(pos, max);
-    }
-    function escapedSplit(str) {
-      var result = [], pos = 0, max = str.length, ch, isEscaped = false, lastPos = 0, current = "";
-      ch = str.charCodeAt(pos);
-      while (pos < max) {
-        if (ch === 124) {
-          if (!isEscaped) {
-            result.push(current + str.substring(lastPos, pos));
-            current = "";
-            lastPos = pos + 1;
-          } else {
-            current += str.substring(lastPos, pos - 1);
-            lastPos = pos;
-          }
-        }
-        isEscaped = ch === 92;
-        pos++;
-        ch = str.charCodeAt(pos);
-      }
-      result.push(current + str.substring(lastPos));
-      return result;
-    }
-    module2.exports = function table(state, startLine, endLine, silent) {
-      var ch, lineText, pos, i, l, nextLine, columns, columnCount, token, aligns, t, tableLines, tbodyLines, oldParentType, terminate, terminatorRules, firstCh, secondCh;
-      if (startLine + 2 > endLine) {
-        return false;
-      }
-      nextLine = startLine + 1;
-      if (state.sCount[nextLine] < state.blkIndent) {
-        return false;
-      }
-      if (state.sCount[nextLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      pos = state.bMarks[nextLine] + state.tShift[nextLine];
-      if (pos >= state.eMarks[nextLine]) {
-        return false;
-      }
-      firstCh = state.src.charCodeAt(pos++);
-      if (firstCh !== 124 && firstCh !== 45 && firstCh !== 58) {
-        return false;
-      }
-      if (pos >= state.eMarks[nextLine]) {
-        return false;
-      }
-      secondCh = state.src.charCodeAt(pos++);
-      if (secondCh !== 124 && secondCh !== 45 && secondCh !== 58 && !isSpace(secondCh)) {
-        return false;
-      }
-      if (firstCh === 45 && isSpace(secondCh)) {
-        return false;
-      }
-      while (pos < state.eMarks[nextLine]) {
-        ch = state.src.charCodeAt(pos);
-        if (ch !== 124 && ch !== 45 && ch !== 58 && !isSpace(ch)) {
-          return false;
-        }
-        pos++;
-      }
-      lineText = getLine(state, startLine + 1);
-      columns = lineText.split("|");
-      aligns = [];
-      for (i = 0; i < columns.length; i++) {
-        t = columns[i].trim();
-        if (!t) {
-          if (i === 0 || i === columns.length - 1) {
-            continue;
-          } else {
-            return false;
-          }
-        }
-        if (!/^:?-+:?$/.test(t)) {
-          return false;
-        }
-        if (t.charCodeAt(t.length - 1) === 58) {
-          aligns.push(t.charCodeAt(0) === 58 ? "center" : "right");
-        } else if (t.charCodeAt(0) === 58) {
-          aligns.push("left");
-        } else {
-          aligns.push("");
-        }
-      }
-      lineText = getLine(state, startLine).trim();
-      if (lineText.indexOf("|") === -1) {
-        return false;
-      }
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      columns = escapedSplit(lineText);
-      if (columns.length && columns[0] === "")
-        columns.shift();
-      if (columns.length && columns[columns.length - 1] === "")
-        columns.pop();
-      columnCount = columns.length;
-      if (columnCount === 0 || columnCount !== aligns.length) {
-        return false;
-      }
-      if (silent) {
-        return true;
-      }
-      oldParentType = state.parentType;
-      state.parentType = "table";
-      terminatorRules = state.md.block.ruler.getRules("blockquote");
-      token = state.push("table_open", "table", 1);
-      token.map = tableLines = [startLine, 0];
-      token = state.push("thead_open", "thead", 1);
-      token.map = [startLine, startLine + 1];
-      token = state.push("tr_open", "tr", 1);
-      token.map = [startLine, startLine + 1];
-      for (i = 0; i < columns.length; i++) {
-        token = state.push("th_open", "th", 1);
-        if (aligns[i]) {
-          token.attrs = [["style", "text-align:" + aligns[i]]];
-        }
-        token = state.push("inline", "", 0);
-        token.content = columns[i].trim();
-        token.children = [];
-        token = state.push("th_close", "th", -1);
-      }
-      token = state.push("tr_close", "tr", -1);
-      token = state.push("thead_close", "thead", -1);
-      for (nextLine = startLine + 2; nextLine < endLine; nextLine++) {
-        if (state.sCount[nextLine] < state.blkIndent) {
-          break;
-        }
-        terminate = false;
-        for (i = 0, l = terminatorRules.length; i < l; i++) {
-          if (terminatorRules[i](state, nextLine, endLine, true)) {
-            terminate = true;
-            break;
-          }
-        }
-        if (terminate) {
-          break;
-        }
-        lineText = getLine(state, nextLine).trim();
-        if (!lineText) {
-          break;
-        }
-        if (state.sCount[nextLine] - state.blkIndent >= 4) {
-          break;
-        }
-        columns = escapedSplit(lineText);
-        if (columns.length && columns[0] === "")
-          columns.shift();
-        if (columns.length && columns[columns.length - 1] === "")
-          columns.pop();
-        if (nextLine === startLine + 2) {
-          token = state.push("tbody_open", "tbody", 1);
-          token.map = tbodyLines = [startLine + 2, 0];
-        }
-        token = state.push("tr_open", "tr", 1);
-        token.map = [nextLine, nextLine + 1];
-        for (i = 0; i < columnCount; i++) {
-          token = state.push("td_open", "td", 1);
-          if (aligns[i]) {
-            token.attrs = [["style", "text-align:" + aligns[i]]];
-          }
-          token = state.push("inline", "", 0);
-          token.content = columns[i] ? columns[i].trim() : "";
-          token.children = [];
-          token = state.push("td_close", "td", -1);
-        }
-        token = state.push("tr_close", "tr", -1);
-      }
-      if (tbodyLines) {
-        token = state.push("tbody_close", "tbody", -1);
-        tbodyLines[1] = nextLine;
-      }
-      token = state.push("table_close", "table", -1);
-      tableLines[1] = nextLine;
-      state.parentType = oldParentType;
-      state.line = nextLine;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/code.js
-var require_code = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/code.js"(exports, module2) {
-    "use strict";
-    module2.exports = function code(state, startLine, endLine) {
-      var nextLine, last, token;
-      if (state.sCount[startLine] - state.blkIndent < 4) {
-        return false;
-      }
-      last = nextLine = startLine + 1;
-      while (nextLine < endLine) {
-        if (state.isEmpty(nextLine)) {
-          nextLine++;
-          continue;
-        }
-        if (state.sCount[nextLine] - state.blkIndent >= 4) {
-          nextLine++;
-          last = nextLine;
-          continue;
-        }
-        break;
-      }
-      state.line = last;
-      token = state.push("code_block", "code", 0);
-      token.content = state.getLines(startLine, last, 4 + state.blkIndent, false) + "\n";
-      token.map = [startLine, state.line];
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/fence.js
-var require_fence = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/fence.js"(exports, module2) {
-    "use strict";
-    module2.exports = function fence(state, startLine, endLine, silent) {
-      var marker, len, params, nextLine, mem, token, markup, haveEndMarker = false, pos = state.bMarks[startLine] + state.tShift[startLine], max = state.eMarks[startLine];
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      if (pos + 3 > max) {
-        return false;
-      }
-      marker = state.src.charCodeAt(pos);
-      if (marker !== 126 && marker !== 96) {
-        return false;
-      }
-      mem = pos;
-      pos = state.skipChars(pos, marker);
-      len = pos - mem;
-      if (len < 3) {
-        return false;
-      }
-      markup = state.src.slice(mem, pos);
-      params = state.src.slice(pos, max);
-      if (marker === 96) {
-        if (params.indexOf(String.fromCharCode(marker)) >= 0) {
-          return false;
-        }
-      }
-      if (silent) {
-        return true;
-      }
-      nextLine = startLine;
-      for (; ; ) {
-        nextLine++;
-        if (nextLine >= endLine) {
-          break;
-        }
-        pos = mem = state.bMarks[nextLine] + state.tShift[nextLine];
-        max = state.eMarks[nextLine];
-        if (pos < max && state.sCount[nextLine] < state.blkIndent) {
-          break;
-        }
-        if (state.src.charCodeAt(pos) !== marker) {
-          continue;
-        }
-        if (state.sCount[nextLine] - state.blkIndent >= 4) {
-          continue;
-        }
-        pos = state.skipChars(pos, marker);
-        if (pos - mem < len) {
-          continue;
-        }
-        pos = state.skipSpaces(pos);
-        if (pos < max) {
-          continue;
-        }
-        haveEndMarker = true;
-        break;
-      }
-      len = state.sCount[startLine];
-      state.line = nextLine + (haveEndMarker ? 1 : 0);
-      token = state.push("fence", "code", 0);
-      token.info = params;
-      token.content = state.getLines(startLine + 1, nextLine, len, true);
-      token.markup = markup;
-      token.map = [startLine, state.line];
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/blockquote.js
-var require_blockquote = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/blockquote.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    module2.exports = function blockquote(state, startLine, endLine, silent) {
-      var adjustTab, ch, i, initial, l, lastLineEmpty, lines, nextLine, offset, oldBMarks, oldBSCount, oldIndent, oldParentType, oldSCount, oldTShift, spaceAfterMarker, terminate, terminatorRules, token, isOutdented, oldLineMax = state.lineMax, pos = state.bMarks[startLine] + state.tShift[startLine], max = state.eMarks[startLine];
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      if (state.src.charCodeAt(pos++) !== 62) {
-        return false;
-      }
-      if (silent) {
-        return true;
-      }
-      initial = offset = state.sCount[startLine] + 1;
-      if (state.src.charCodeAt(pos) === 32) {
-        pos++;
-        initial++;
-        offset++;
-        adjustTab = false;
-        spaceAfterMarker = true;
-      } else if (state.src.charCodeAt(pos) === 9) {
-        spaceAfterMarker = true;
-        if ((state.bsCount[startLine] + offset) % 4 === 3) {
-          pos++;
-          initial++;
-          offset++;
-          adjustTab = false;
-        } else {
-          adjustTab = true;
-        }
-      } else {
-        spaceAfterMarker = false;
-      }
-      oldBMarks = [state.bMarks[startLine]];
-      state.bMarks[startLine] = pos;
-      while (pos < max) {
-        ch = state.src.charCodeAt(pos);
-        if (isSpace(ch)) {
-          if (ch === 9) {
-            offset += 4 - (offset + state.bsCount[startLine] + (adjustTab ? 1 : 0)) % 4;
-          } else {
-            offset++;
-          }
-        } else {
-          break;
-        }
-        pos++;
-      }
-      oldBSCount = [state.bsCount[startLine]];
-      state.bsCount[startLine] = state.sCount[startLine] + 1 + (spaceAfterMarker ? 1 : 0);
-      lastLineEmpty = pos >= max;
-      oldSCount = [state.sCount[startLine]];
-      state.sCount[startLine] = offset - initial;
-      oldTShift = [state.tShift[startLine]];
-      state.tShift[startLine] = pos - state.bMarks[startLine];
-      terminatorRules = state.md.block.ruler.getRules("blockquote");
-      oldParentType = state.parentType;
-      state.parentType = "blockquote";
-      for (nextLine = startLine + 1; nextLine < endLine; nextLine++) {
-        isOutdented = state.sCount[nextLine] < state.blkIndent;
-        pos = state.bMarks[nextLine] + state.tShift[nextLine];
-        max = state.eMarks[nextLine];
-        if (pos >= max) {
-          break;
-        }
-        if (state.src.charCodeAt(pos++) === 62 && !isOutdented) {
-          initial = offset = state.sCount[nextLine] + 1;
-          if (state.src.charCodeAt(pos) === 32) {
-            pos++;
-            initial++;
-            offset++;
-            adjustTab = false;
-            spaceAfterMarker = true;
-          } else if (state.src.charCodeAt(pos) === 9) {
-            spaceAfterMarker = true;
-            if ((state.bsCount[nextLine] + offset) % 4 === 3) {
-              pos++;
-              initial++;
-              offset++;
-              adjustTab = false;
-            } else {
-              adjustTab = true;
-            }
-          } else {
-            spaceAfterMarker = false;
-          }
-          oldBMarks.push(state.bMarks[nextLine]);
-          state.bMarks[nextLine] = pos;
-          while (pos < max) {
-            ch = state.src.charCodeAt(pos);
-            if (isSpace(ch)) {
-              if (ch === 9) {
-                offset += 4 - (offset + state.bsCount[nextLine] + (adjustTab ? 1 : 0)) % 4;
-              } else {
-                offset++;
-              }
-            } else {
-              break;
-            }
-            pos++;
-          }
-          lastLineEmpty = pos >= max;
-          oldBSCount.push(state.bsCount[nextLine]);
-          state.bsCount[nextLine] = state.sCount[nextLine] + 1 + (spaceAfterMarker ? 1 : 0);
-          oldSCount.push(state.sCount[nextLine]);
-          state.sCount[nextLine] = offset - initial;
-          oldTShift.push(state.tShift[nextLine]);
-          state.tShift[nextLine] = pos - state.bMarks[nextLine];
-          continue;
-        }
-        if (lastLineEmpty) {
-          break;
-        }
-        terminate = false;
-        for (i = 0, l = terminatorRules.length; i < l; i++) {
-          if (terminatorRules[i](state, nextLine, endLine, true)) {
-            terminate = true;
-            break;
-          }
-        }
-        if (terminate) {
-          state.lineMax = nextLine;
-          if (state.blkIndent !== 0) {
-            oldBMarks.push(state.bMarks[nextLine]);
-            oldBSCount.push(state.bsCount[nextLine]);
-            oldTShift.push(state.tShift[nextLine]);
-            oldSCount.push(state.sCount[nextLine]);
-            state.sCount[nextLine] -= state.blkIndent;
-          }
-          break;
-        }
-        oldBMarks.push(state.bMarks[nextLine]);
-        oldBSCount.push(state.bsCount[nextLine]);
-        oldTShift.push(state.tShift[nextLine]);
-        oldSCount.push(state.sCount[nextLine]);
-        state.sCount[nextLine] = -1;
-      }
-      oldIndent = state.blkIndent;
-      state.blkIndent = 0;
-      token = state.push("blockquote_open", "blockquote", 1);
-      token.markup = ">";
-      token.map = lines = [startLine, 0];
-      state.md.block.tokenize(state, startLine, nextLine);
-      token = state.push("blockquote_close", "blockquote", -1);
-      token.markup = ">";
-      state.lineMax = oldLineMax;
-      state.parentType = oldParentType;
-      lines[1] = state.line;
-      for (i = 0; i < oldTShift.length; i++) {
-        state.bMarks[i + startLine] = oldBMarks[i];
-        state.tShift[i + startLine] = oldTShift[i];
-        state.sCount[i + startLine] = oldSCount[i];
-        state.bsCount[i + startLine] = oldBSCount[i];
-      }
-      state.blkIndent = oldIndent;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/hr.js
-var require_hr = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/hr.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    module2.exports = function hr(state, startLine, endLine, silent) {
-      var marker, cnt, ch, token, pos = state.bMarks[startLine] + state.tShift[startLine], max = state.eMarks[startLine];
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      marker = state.src.charCodeAt(pos++);
-      if (marker !== 42 && marker !== 45 && marker !== 95) {
-        return false;
-      }
-      cnt = 1;
-      while (pos < max) {
-        ch = state.src.charCodeAt(pos++);
-        if (ch !== marker && !isSpace(ch)) {
-          return false;
-        }
-        if (ch === marker) {
-          cnt++;
-        }
-      }
-      if (cnt < 3) {
-        return false;
-      }
-      if (silent) {
-        return true;
-      }
-      state.line = startLine + 1;
-      token = state.push("hr", "hr", 0);
-      token.map = [startLine, state.line];
-      token.markup = Array(cnt + 1).join(String.fromCharCode(marker));
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/list.js
-var require_list = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/list.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    function skipBulletListMarker(state, startLine) {
-      var marker, pos, max, ch;
-      pos = state.bMarks[startLine] + state.tShift[startLine];
-      max = state.eMarks[startLine];
-      marker = state.src.charCodeAt(pos++);
-      if (marker !== 42 && marker !== 45 && marker !== 43) {
-        return -1;
-      }
-      if (pos < max) {
-        ch = state.src.charCodeAt(pos);
-        if (!isSpace(ch)) {
-          return -1;
-        }
-      }
-      return pos;
-    }
-    function skipOrderedListMarker(state, startLine) {
-      var ch, start = state.bMarks[startLine] + state.tShift[startLine], pos = start, max = state.eMarks[startLine];
-      if (pos + 1 >= max) {
-        return -1;
-      }
-      ch = state.src.charCodeAt(pos++);
-      if (ch < 48 || ch > 57) {
-        return -1;
-      }
-      for (; ; ) {
-        if (pos >= max) {
-          return -1;
-        }
-        ch = state.src.charCodeAt(pos++);
-        if (ch >= 48 && ch <= 57) {
-          if (pos - start >= 10) {
-            return -1;
-          }
-          continue;
-        }
-        if (ch === 41 || ch === 46) {
-          break;
-        }
-        return -1;
-      }
-      if (pos < max) {
-        ch = state.src.charCodeAt(pos);
-        if (!isSpace(ch)) {
-          return -1;
-        }
-      }
-      return pos;
-    }
-    function markTightParagraphs(state, idx) {
-      var i, l, level = state.level + 2;
-      for (i = idx + 2, l = state.tokens.length - 2; i < l; i++) {
-        if (state.tokens[i].level === level && state.tokens[i].type === "paragraph_open") {
-          state.tokens[i + 2].hidden = true;
-          state.tokens[i].hidden = true;
-          i += 2;
-        }
-      }
-    }
-    module2.exports = function list(state, startLine, endLine, silent) {
-      var ch, contentStart, i, indent, indentAfterMarker, initial, isOrdered, itemLines, l, listLines, listTokIdx, markerCharCode, markerValue, max, nextLine, offset, oldListIndent, oldParentType, oldSCount, oldTShift, oldTight, pos, posAfterMarker, prevEmptyEnd, start, terminate, terminatorRules, token, isTerminatingParagraph = false, tight = true;
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      if (state.listIndent >= 0 && state.sCount[startLine] - state.listIndent >= 4 && state.sCount[startLine] < state.blkIndent) {
-        return false;
-      }
-      if (silent && state.parentType === "paragraph") {
-        if (state.sCount[startLine] >= state.blkIndent) {
-          isTerminatingParagraph = true;
-        }
-      }
-      if ((posAfterMarker = skipOrderedListMarker(state, startLine)) >= 0) {
-        isOrdered = true;
-        start = state.bMarks[startLine] + state.tShift[startLine];
-        markerValue = Number(state.src.slice(start, posAfterMarker - 1));
-        if (isTerminatingParagraph && markerValue !== 1)
-          return false;
-      } else if ((posAfterMarker = skipBulletListMarker(state, startLine)) >= 0) {
-        isOrdered = false;
-      } else {
-        return false;
-      }
-      if (isTerminatingParagraph) {
-        if (state.skipSpaces(posAfterMarker) >= state.eMarks[startLine])
-          return false;
-      }
-      markerCharCode = state.src.charCodeAt(posAfterMarker - 1);
-      if (silent) {
-        return true;
-      }
-      listTokIdx = state.tokens.length;
-      if (isOrdered) {
-        token = state.push("ordered_list_open", "ol", 1);
-        if (markerValue !== 1) {
-          token.attrs = [["start", markerValue]];
-        }
-      } else {
-        token = state.push("bullet_list_open", "ul", 1);
-      }
-      token.map = listLines = [startLine, 0];
-      token.markup = String.fromCharCode(markerCharCode);
-      nextLine = startLine;
-      prevEmptyEnd = false;
-      terminatorRules = state.md.block.ruler.getRules("list");
-      oldParentType = state.parentType;
-      state.parentType = "list";
-      while (nextLine < endLine) {
-        pos = posAfterMarker;
-        max = state.eMarks[nextLine];
-        initial = offset = state.sCount[nextLine] + posAfterMarker - (state.bMarks[startLine] + state.tShift[startLine]);
-        while (pos < max) {
-          ch = state.src.charCodeAt(pos);
-          if (ch === 9) {
-            offset += 4 - (offset + state.bsCount[nextLine]) % 4;
-          } else if (ch === 32) {
-            offset++;
-          } else {
-            break;
-          }
-          pos++;
-        }
-        contentStart = pos;
-        if (contentStart >= max) {
-          indentAfterMarker = 1;
-        } else {
-          indentAfterMarker = offset - initial;
-        }
-        if (indentAfterMarker > 4) {
-          indentAfterMarker = 1;
-        }
-        indent = initial + indentAfterMarker;
-        token = state.push("list_item_open", "li", 1);
-        token.markup = String.fromCharCode(markerCharCode);
-        token.map = itemLines = [startLine, 0];
-        if (isOrdered) {
-          token.info = state.src.slice(start, posAfterMarker - 1);
-        }
-        oldTight = state.tight;
-        oldTShift = state.tShift[startLine];
-        oldSCount = state.sCount[startLine];
-        oldListIndent = state.listIndent;
-        state.listIndent = state.blkIndent;
-        state.blkIndent = indent;
-        state.tight = true;
-        state.tShift[startLine] = contentStart - state.bMarks[startLine];
-        state.sCount[startLine] = offset;
-        if (contentStart >= max && state.isEmpty(startLine + 1)) {
-          state.line = Math.min(state.line + 2, endLine);
-        } else {
-          state.md.block.tokenize(state, startLine, endLine, true);
-        }
-        if (!state.tight || prevEmptyEnd) {
-          tight = false;
-        }
-        prevEmptyEnd = state.line - startLine > 1 && state.isEmpty(state.line - 1);
-        state.blkIndent = state.listIndent;
-        state.listIndent = oldListIndent;
-        state.tShift[startLine] = oldTShift;
-        state.sCount[startLine] = oldSCount;
-        state.tight = oldTight;
-        token = state.push("list_item_close", "li", -1);
-        token.markup = String.fromCharCode(markerCharCode);
-        nextLine = startLine = state.line;
-        itemLines[1] = nextLine;
-        contentStart = state.bMarks[startLine];
-        if (nextLine >= endLine) {
-          break;
-        }
-        if (state.sCount[nextLine] < state.blkIndent) {
-          break;
-        }
-        if (state.sCount[startLine] - state.blkIndent >= 4) {
-          break;
-        }
-        terminate = false;
-        for (i = 0, l = terminatorRules.length; i < l; i++) {
-          if (terminatorRules[i](state, nextLine, endLine, true)) {
-            terminate = true;
-            break;
-          }
-        }
-        if (terminate) {
-          break;
-        }
-        if (isOrdered) {
-          posAfterMarker = skipOrderedListMarker(state, nextLine);
-          if (posAfterMarker < 0) {
-            break;
-          }
-          start = state.bMarks[nextLine] + state.tShift[nextLine];
-        } else {
-          posAfterMarker = skipBulletListMarker(state, nextLine);
-          if (posAfterMarker < 0) {
-            break;
-          }
-        }
-        if (markerCharCode !== state.src.charCodeAt(posAfterMarker - 1)) {
-          break;
-        }
-      }
-      if (isOrdered) {
-        token = state.push("ordered_list_close", "ol", -1);
-      } else {
-        token = state.push("bullet_list_close", "ul", -1);
-      }
-      token.markup = String.fromCharCode(markerCharCode);
-      listLines[1] = nextLine;
-      state.line = nextLine;
-      state.parentType = oldParentType;
-      if (tight) {
-        markTightParagraphs(state, listTokIdx);
-      }
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/reference.js
-var require_reference = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/reference.js"(exports, module2) {
-    "use strict";
-    var normalizeReference = require_utils().normalizeReference;
-    var isSpace = require_utils().isSpace;
-    module2.exports = function reference(state, startLine, _endLine, silent) {
-      var ch, destEndPos, destEndLineNo, endLine, href, i, l, label, labelEnd, oldParentType, res, start, str, terminate, terminatorRules, title, lines = 0, pos = state.bMarks[startLine] + state.tShift[startLine], max = state.eMarks[startLine], nextLine = startLine + 1;
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      if (state.src.charCodeAt(pos) !== 91) {
-        return false;
-      }
-      while (++pos < max) {
-        if (state.src.charCodeAt(pos) === 93 && state.src.charCodeAt(pos - 1) !== 92) {
-          if (pos + 1 === max) {
-            return false;
-          }
-          if (state.src.charCodeAt(pos + 1) !== 58) {
-            return false;
-          }
-          break;
-        }
-      }
-      endLine = state.lineMax;
-      terminatorRules = state.md.block.ruler.getRules("reference");
-      oldParentType = state.parentType;
-      state.parentType = "reference";
-      for (; nextLine < endLine && !state.isEmpty(nextLine); nextLine++) {
-        if (state.sCount[nextLine] - state.blkIndent > 3) {
-          continue;
-        }
-        if (state.sCount[nextLine] < 0) {
-          continue;
-        }
-        terminate = false;
-        for (i = 0, l = terminatorRules.length; i < l; i++) {
-          if (terminatorRules[i](state, nextLine, endLine, true)) {
-            terminate = true;
-            break;
-          }
-        }
-        if (terminate) {
-          break;
-        }
-      }
-      str = state.getLines(startLine, nextLine, state.blkIndent, false).trim();
-      max = str.length;
-      for (pos = 1; pos < max; pos++) {
-        ch = str.charCodeAt(pos);
-        if (ch === 91) {
-          return false;
-        } else if (ch === 93) {
-          labelEnd = pos;
-          break;
-        } else if (ch === 10) {
-          lines++;
-        } else if (ch === 92) {
-          pos++;
-          if (pos < max && str.charCodeAt(pos) === 10) {
-            lines++;
-          }
-        }
-      }
-      if (labelEnd < 0 || str.charCodeAt(labelEnd + 1) !== 58) {
-        return false;
-      }
-      for (pos = labelEnd + 2; pos < max; pos++) {
-        ch = str.charCodeAt(pos);
-        if (ch === 10) {
-          lines++;
-        } else if (isSpace(ch)) {
-        } else {
-          break;
-        }
-      }
-      res = state.md.helpers.parseLinkDestination(str, pos, max);
-      if (!res.ok) {
-        return false;
-      }
-      href = state.md.normalizeLink(res.str);
-      if (!state.md.validateLink(href)) {
-        return false;
-      }
-      pos = res.pos;
-      lines += res.lines;
-      destEndPos = pos;
-      destEndLineNo = lines;
-      start = pos;
-      for (; pos < max; pos++) {
-        ch = str.charCodeAt(pos);
-        if (ch === 10) {
-          lines++;
-        } else if (isSpace(ch)) {
-        } else {
-          break;
-        }
-      }
-      res = state.md.helpers.parseLinkTitle(str, pos, max);
-      if (pos < max && start !== pos && res.ok) {
-        title = res.str;
-        pos = res.pos;
-        lines += res.lines;
-      } else {
-        title = "";
-        pos = destEndPos;
-        lines = destEndLineNo;
-      }
-      while (pos < max) {
-        ch = str.charCodeAt(pos);
-        if (!isSpace(ch)) {
-          break;
-        }
-        pos++;
-      }
-      if (pos < max && str.charCodeAt(pos) !== 10) {
-        if (title) {
-          title = "";
-          pos = destEndPos;
-          lines = destEndLineNo;
-          while (pos < max) {
-            ch = str.charCodeAt(pos);
-            if (!isSpace(ch)) {
-              break;
-            }
-            pos++;
-          }
-        }
-      }
-      if (pos < max && str.charCodeAt(pos) !== 10) {
-        return false;
-      }
-      label = normalizeReference(str.slice(1, labelEnd));
-      if (!label) {
-        return false;
-      }
-      if (silent) {
-        return true;
-      }
-      if (typeof state.env.references === "undefined") {
-        state.env.references = {};
-      }
-      if (typeof state.env.references[label] === "undefined") {
-        state.env.references[label] = { title, href };
-      }
-      state.parentType = oldParentType;
-      state.line = startLine + lines + 1;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/common/html_blocks.js
-var require_html_blocks = __commonJS({
-  "node_modules/markdown-it/lib/common/html_blocks.js"(exports, module2) {
-    "use strict";
-    module2.exports = [
-      "address",
-      "article",
-      "aside",
-      "base",
-      "basefont",
-      "blockquote",
-      "body",
-      "caption",
-      "center",
-      "col",
-      "colgroup",
-      "dd",
-      "details",
-      "dialog",
-      "dir",
-      "div",
-      "dl",
-      "dt",
-      "fieldset",
-      "figcaption",
-      "figure",
-      "footer",
-      "form",
-      "frame",
-      "frameset",
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "h5",
-      "h6",
-      "head",
-      "header",
-      "hr",
-      "html",
-      "iframe",
-      "legend",
-      "li",
-      "link",
-      "main",
-      "menu",
-      "menuitem",
-      "nav",
-      "noframes",
-      "ol",
-      "optgroup",
-      "option",
-      "p",
-      "param",
-      "section",
-      "source",
-      "summary",
-      "table",
-      "tbody",
-      "td",
-      "tfoot",
-      "th",
-      "thead",
-      "title",
-      "tr",
-      "track",
-      "ul"
-    ];
-  }
-});
-
-// node_modules/markdown-it/lib/common/html_re.js
-var require_html_re = __commonJS({
-  "node_modules/markdown-it/lib/common/html_re.js"(exports, module2) {
-    "use strict";
-    var attr_name = "[a-zA-Z_:][a-zA-Z0-9:._-]*";
-    var unquoted = "[^\"'=<>`\\x00-\\x20]+";
-    var single_quoted = "'[^']*'";
-    var double_quoted = '"[^"]*"';
-    var attr_value = "(?:" + unquoted + "|" + single_quoted + "|" + double_quoted + ")";
-    var attribute = "(?:\\s+" + attr_name + "(?:\\s*=\\s*" + attr_value + ")?)";
-    var open_tag = "<[A-Za-z][A-Za-z0-9\\-]*" + attribute + "*\\s*\\/?>";
-    var close_tag = "<\\/[A-Za-z][A-Za-z0-9\\-]*\\s*>";
-    var comment = "<!---->|<!--(?:-?[^>-])(?:-?[^-])*-->";
-    var processing = "<[?][\\s\\S]*?[?]>";
-    var declaration = "<![A-Z]+\\s+[^>]*>";
-    var cdata = "<!\\[CDATA\\[[\\s\\S]*?\\]\\]>";
-    var HTML_TAG_RE = new RegExp("^(?:" + open_tag + "|" + close_tag + "|" + comment + "|" + processing + "|" + declaration + "|" + cdata + ")");
-    var HTML_OPEN_CLOSE_TAG_RE = new RegExp("^(?:" + open_tag + "|" + close_tag + ")");
-    module2.exports.HTML_TAG_RE = HTML_TAG_RE;
-    module2.exports.HTML_OPEN_CLOSE_TAG_RE = HTML_OPEN_CLOSE_TAG_RE;
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/html_block.js
-var require_html_block = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/html_block.js"(exports, module2) {
-    "use strict";
-    var block_names = require_html_blocks();
-    var HTML_OPEN_CLOSE_TAG_RE = require_html_re().HTML_OPEN_CLOSE_TAG_RE;
-    var HTML_SEQUENCES = [
-      [/^<(script|pre|style|textarea)(?=(\s|>|$))/i, /<\/(script|pre|style|textarea)>/i, true],
-      [/^<!--/, /-->/, true],
-      [/^<\?/, /\?>/, true],
-      [/^<![A-Z]/, />/, true],
-      [/^<!\[CDATA\[/, /\]\]>/, true],
-      [new RegExp("^</?(" + block_names.join("|") + ")(?=(\\s|/?>|$))", "i"), /^$/, true],
-      [new RegExp(HTML_OPEN_CLOSE_TAG_RE.source + "\\s*$"), /^$/, false]
-    ];
-    module2.exports = function html_block(state, startLine, endLine, silent) {
-      var i, nextLine, token, lineText, pos = state.bMarks[startLine] + state.tShift[startLine], max = state.eMarks[startLine];
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      if (!state.md.options.html) {
-        return false;
-      }
-      if (state.src.charCodeAt(pos) !== 60) {
-        return false;
-      }
-      lineText = state.src.slice(pos, max);
-      for (i = 0; i < HTML_SEQUENCES.length; i++) {
-        if (HTML_SEQUENCES[i][0].test(lineText)) {
-          break;
-        }
-      }
-      if (i === HTML_SEQUENCES.length) {
-        return false;
-      }
-      if (silent) {
-        return HTML_SEQUENCES[i][2];
-      }
-      nextLine = startLine + 1;
-      if (!HTML_SEQUENCES[i][1].test(lineText)) {
-        for (; nextLine < endLine; nextLine++) {
-          if (state.sCount[nextLine] < state.blkIndent) {
-            break;
-          }
-          pos = state.bMarks[nextLine] + state.tShift[nextLine];
-          max = state.eMarks[nextLine];
-          lineText = state.src.slice(pos, max);
-          if (HTML_SEQUENCES[i][1].test(lineText)) {
-            if (lineText.length !== 0) {
-              nextLine++;
-            }
-            break;
-          }
-        }
-      }
-      state.line = nextLine;
-      token = state.push("html_block", "", 0);
-      token.map = [startLine, nextLine];
-      token.content = state.getLines(startLine, nextLine, state.blkIndent, true);
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/heading.js
-var require_heading = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/heading.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    module2.exports = function heading(state, startLine, endLine, silent) {
-      var ch, level, tmp, token, pos = state.bMarks[startLine] + state.tShift[startLine], max = state.eMarks[startLine];
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      ch = state.src.charCodeAt(pos);
-      if (ch !== 35 || pos >= max) {
-        return false;
-      }
-      level = 1;
-      ch = state.src.charCodeAt(++pos);
-      while (ch === 35 && pos < max && level <= 6) {
-        level++;
-        ch = state.src.charCodeAt(++pos);
-      }
-      if (level > 6 || pos < max && !isSpace(ch)) {
-        return false;
-      }
-      if (silent) {
-        return true;
-      }
-      max = state.skipSpacesBack(max, pos);
-      tmp = state.skipCharsBack(max, 35, pos);
-      if (tmp > pos && isSpace(state.src.charCodeAt(tmp - 1))) {
-        max = tmp;
-      }
-      state.line = startLine + 1;
-      token = state.push("heading_open", "h" + String(level), 1);
-      token.markup = "########".slice(0, level);
-      token.map = [startLine, state.line];
-      token = state.push("inline", "", 0);
-      token.content = state.src.slice(pos, max).trim();
-      token.map = [startLine, state.line];
-      token.children = [];
-      token = state.push("heading_close", "h" + String(level), -1);
-      token.markup = "########".slice(0, level);
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/lheading.js
-var require_lheading = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/lheading.js"(exports, module2) {
-    "use strict";
-    module2.exports = function lheading(state, startLine, endLine) {
-      var content, terminate, i, l, token, pos, max, level, marker, nextLine = startLine + 1, oldParentType, terminatorRules = state.md.block.ruler.getRules("paragraph");
-      if (state.sCount[startLine] - state.blkIndent >= 4) {
-        return false;
-      }
-      oldParentType = state.parentType;
-      state.parentType = "paragraph";
-      for (; nextLine < endLine && !state.isEmpty(nextLine); nextLine++) {
-        if (state.sCount[nextLine] - state.blkIndent > 3) {
-          continue;
-        }
-        if (state.sCount[nextLine] >= state.blkIndent) {
-          pos = state.bMarks[nextLine] + state.tShift[nextLine];
-          max = state.eMarks[nextLine];
-          if (pos < max) {
-            marker = state.src.charCodeAt(pos);
-            if (marker === 45 || marker === 61) {
-              pos = state.skipChars(pos, marker);
-              pos = state.skipSpaces(pos);
-              if (pos >= max) {
-                level = marker === 61 ? 1 : 2;
-                break;
-              }
-            }
-          }
-        }
-        if (state.sCount[nextLine] < 0) {
-          continue;
-        }
-        terminate = false;
-        for (i = 0, l = terminatorRules.length; i < l; i++) {
-          if (terminatorRules[i](state, nextLine, endLine, true)) {
-            terminate = true;
-            break;
-          }
-        }
-        if (terminate) {
-          break;
-        }
-      }
-      if (!level) {
-        return false;
-      }
-      content = state.getLines(startLine, nextLine, state.blkIndent, false).trim();
-      state.line = nextLine + 1;
-      token = state.push("heading_open", "h" + String(level), 1);
-      token.markup = String.fromCharCode(marker);
-      token.map = [startLine, state.line];
-      token = state.push("inline", "", 0);
-      token.content = content;
-      token.map = [startLine, state.line - 1];
-      token.children = [];
-      token = state.push("heading_close", "h" + String(level), -1);
-      token.markup = String.fromCharCode(marker);
-      state.parentType = oldParentType;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/paragraph.js
-var require_paragraph = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/paragraph.js"(exports, module2) {
-    "use strict";
-    module2.exports = function paragraph(state, startLine) {
-      var content, terminate, i, l, token, oldParentType, nextLine = startLine + 1, terminatorRules = state.md.block.ruler.getRules("paragraph"), endLine = state.lineMax;
-      oldParentType = state.parentType;
-      state.parentType = "paragraph";
-      for (; nextLine < endLine && !state.isEmpty(nextLine); nextLine++) {
-        if (state.sCount[nextLine] - state.blkIndent > 3) {
-          continue;
-        }
-        if (state.sCount[nextLine] < 0) {
-          continue;
-        }
-        terminate = false;
-        for (i = 0, l = terminatorRules.length; i < l; i++) {
-          if (terminatorRules[i](state, nextLine, endLine, true)) {
-            terminate = true;
-            break;
-          }
-        }
-        if (terminate) {
-          break;
-        }
-      }
-      content = state.getLines(startLine, nextLine, state.blkIndent, false).trim();
-      state.line = nextLine;
-      token = state.push("paragraph_open", "p", 1);
-      token.map = [startLine, state.line];
-      token = state.push("inline", "", 0);
-      token.content = content;
-      token.map = [startLine, state.line];
-      token.children = [];
-      token = state.push("paragraph_close", "p", -1);
-      state.parentType = oldParentType;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_block/state_block.js
-var require_state_block = __commonJS({
-  "node_modules/markdown-it/lib/rules_block/state_block.js"(exports, module2) {
-    "use strict";
-    var Token = require_token();
-    var isSpace = require_utils().isSpace;
-    function StateBlock(src, md, env, tokens) {
-      var ch, s, start, pos, len, indent, offset, indent_found;
-      this.src = src;
-      this.md = md;
-      this.env = env;
-      this.tokens = tokens;
-      this.bMarks = [];
-      this.eMarks = [];
-      this.tShift = [];
-      this.sCount = [];
-      this.bsCount = [];
-      this.blkIndent = 0;
-      this.line = 0;
-      this.lineMax = 0;
-      this.tight = false;
-      this.ddIndent = -1;
-      this.listIndent = -1;
-      this.parentType = "root";
-      this.level = 0;
-      this.result = "";
-      s = this.src;
-      indent_found = false;
-      for (start = pos = indent = offset = 0, len = s.length; pos < len; pos++) {
-        ch = s.charCodeAt(pos);
-        if (!indent_found) {
-          if (isSpace(ch)) {
-            indent++;
-            if (ch === 9) {
-              offset += 4 - offset % 4;
-            } else {
-              offset++;
-            }
-            continue;
-          } else {
-            indent_found = true;
-          }
-        }
-        if (ch === 10 || pos === len - 1) {
-          if (ch !== 10) {
-            pos++;
-          }
-          this.bMarks.push(start);
-          this.eMarks.push(pos);
-          this.tShift.push(indent);
-          this.sCount.push(offset);
-          this.bsCount.push(0);
-          indent_found = false;
-          indent = 0;
-          offset = 0;
-          start = pos + 1;
-        }
-      }
-      this.bMarks.push(s.length);
-      this.eMarks.push(s.length);
-      this.tShift.push(0);
-      this.sCount.push(0);
-      this.bsCount.push(0);
-      this.lineMax = this.bMarks.length - 1;
-    }
-    StateBlock.prototype.push = function(type, tag, nesting) {
-      var token = new Token(type, tag, nesting);
-      token.block = true;
-      if (nesting < 0)
-        this.level--;
-      token.level = this.level;
-      if (nesting > 0)
-        this.level++;
-      this.tokens.push(token);
-      return token;
-    };
-    StateBlock.prototype.isEmpty = function isEmpty(line) {
-      return this.bMarks[line] + this.tShift[line] >= this.eMarks[line];
-    };
-    StateBlock.prototype.skipEmptyLines = function skipEmptyLines(from) {
-      for (var max = this.lineMax; from < max; from++) {
-        if (this.bMarks[from] + this.tShift[from] < this.eMarks[from]) {
-          break;
-        }
-      }
-      return from;
-    };
-    StateBlock.prototype.skipSpaces = function skipSpaces(pos) {
-      var ch;
-      for (var max = this.src.length; pos < max; pos++) {
-        ch = this.src.charCodeAt(pos);
-        if (!isSpace(ch)) {
-          break;
-        }
-      }
-      return pos;
-    };
-    StateBlock.prototype.skipSpacesBack = function skipSpacesBack(pos, min) {
-      if (pos <= min) {
-        return pos;
-      }
-      while (pos > min) {
-        if (!isSpace(this.src.charCodeAt(--pos))) {
-          return pos + 1;
-        }
-      }
-      return pos;
-    };
-    StateBlock.prototype.skipChars = function skipChars(pos, code) {
-      for (var max = this.src.length; pos < max; pos++) {
-        if (this.src.charCodeAt(pos) !== code) {
-          break;
-        }
-      }
-      return pos;
-    };
-    StateBlock.prototype.skipCharsBack = function skipCharsBack(pos, code, min) {
-      if (pos <= min) {
-        return pos;
-      }
-      while (pos > min) {
-        if (code !== this.src.charCodeAt(--pos)) {
-          return pos + 1;
-        }
-      }
-      return pos;
-    };
-    StateBlock.prototype.getLines = function getLines(begin, end, indent, keepLastLF) {
-      var i, lineIndent, ch, first, last, queue, lineStart, line = begin;
-      if (begin >= end) {
-        return "";
-      }
-      queue = new Array(end - begin);
-      for (i = 0; line < end; line++, i++) {
-        lineIndent = 0;
-        lineStart = first = this.bMarks[line];
-        if (line + 1 < end || keepLastLF) {
-          last = this.eMarks[line] + 1;
-        } else {
-          last = this.eMarks[line];
-        }
-        while (first < last && lineIndent < indent) {
-          ch = this.src.charCodeAt(first);
-          if (isSpace(ch)) {
-            if (ch === 9) {
-              lineIndent += 4 - (lineIndent + this.bsCount[line]) % 4;
-            } else {
-              lineIndent++;
-            }
-          } else if (first - lineStart < this.tShift[line]) {
-            lineIndent++;
-          } else {
-            break;
-          }
-          first++;
-        }
-        if (lineIndent > indent) {
-          queue[i] = new Array(lineIndent - indent + 1).join(" ") + this.src.slice(first, last);
-        } else {
-          queue[i] = this.src.slice(first, last);
-        }
-      }
-      return queue.join("");
-    };
-    StateBlock.prototype.Token = Token;
-    module2.exports = StateBlock;
-  }
-});
-
-// node_modules/markdown-it/lib/parser_block.js
-var require_parser_block = __commonJS({
-  "node_modules/markdown-it/lib/parser_block.js"(exports, module2) {
-    "use strict";
-    var Ruler = require_ruler();
-    var _rules = [
-      ["table", require_table(), ["paragraph", "reference"]],
-      ["code", require_code()],
-      ["fence", require_fence(), ["paragraph", "reference", "blockquote", "list"]],
-      ["blockquote", require_blockquote(), ["paragraph", "reference", "blockquote", "list"]],
-      ["hr", require_hr(), ["paragraph", "reference", "blockquote", "list"]],
-      ["list", require_list(), ["paragraph", "reference", "blockquote"]],
-      ["reference", require_reference()],
-      ["html_block", require_html_block(), ["paragraph", "reference", "blockquote"]],
-      ["heading", require_heading(), ["paragraph", "reference", "blockquote"]],
-      ["lheading", require_lheading()],
-      ["paragraph", require_paragraph()]
-    ];
-    function ParserBlock() {
-      this.ruler = new Ruler();
-      for (var i = 0; i < _rules.length; i++) {
-        this.ruler.push(_rules[i][0], _rules[i][1], { alt: (_rules[i][2] || []).slice() });
-      }
-    }
-    ParserBlock.prototype.tokenize = function(state, startLine, endLine) {
-      var ok, i, rules = this.ruler.getRules(""), len = rules.length, line = startLine, hasEmptyLines = false, maxNesting = state.md.options.maxNesting;
-      while (line < endLine) {
-        state.line = line = state.skipEmptyLines(line);
-        if (line >= endLine) {
-          break;
-        }
-        if (state.sCount[line] < state.blkIndent) {
-          break;
-        }
-        if (state.level >= maxNesting) {
-          state.line = endLine;
-          break;
-        }
-        for (i = 0; i < len; i++) {
-          ok = rules[i](state, line, endLine, false);
-          if (ok) {
-            break;
-          }
-        }
-        state.tight = !hasEmptyLines;
-        if (state.isEmpty(state.line - 1)) {
-          hasEmptyLines = true;
-        }
-        line = state.line;
-        if (line < endLine && state.isEmpty(line)) {
-          hasEmptyLines = true;
-          line++;
-          state.line = line;
-        }
-      }
-    };
-    ParserBlock.prototype.parse = function(src, md, env, outTokens) {
-      var state;
-      if (!src) {
-        return;
-      }
-      state = new this.State(src, md, env, outTokens);
-      this.tokenize(state, state.line, state.lineMax);
-    };
-    ParserBlock.prototype.State = require_state_block();
-    module2.exports = ParserBlock;
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/text.js
-var require_text = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/text.js"(exports, module2) {
-    "use strict";
-    function isTerminatorChar(ch) {
-      switch (ch) {
-        case 10:
-        case 33:
-        case 35:
-        case 36:
-        case 37:
-        case 38:
-        case 42:
-        case 43:
-        case 45:
-        case 58:
-        case 60:
-        case 61:
-        case 62:
-        case 64:
-        case 91:
-        case 92:
-        case 93:
-        case 94:
-        case 95:
-        case 96:
-        case 123:
-        case 125:
-        case 126:
-          return true;
-        default:
-          return false;
-      }
-    }
-    module2.exports = function text2(state, silent) {
-      var pos = state.pos;
-      while (pos < state.posMax && !isTerminatorChar(state.src.charCodeAt(pos))) {
-        pos++;
-      }
-      if (pos === state.pos) {
-        return false;
-      }
-      if (!silent) {
-        state.pending += state.src.slice(state.pos, pos);
-      }
-      state.pos = pos;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/linkify.js
-var require_linkify2 = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/linkify.js"(exports, module2) {
-    "use strict";
-    var SCHEME_RE = /(?:^|[^a-z0-9.+-])([a-z][a-z0-9.+-]*)$/i;
-    module2.exports = function linkify(state, silent) {
-      var pos, max, match, proto, link, url, fullUrl, token;
-      if (!state.md.options.linkify)
-        return false;
-      if (state.linkLevel > 0)
-        return false;
-      pos = state.pos;
-      max = state.posMax;
-      if (pos + 3 > max)
-        return false;
-      if (state.src.charCodeAt(pos) !== 58)
-        return false;
-      if (state.src.charCodeAt(pos + 1) !== 47)
-        return false;
-      if (state.src.charCodeAt(pos + 2) !== 47)
-        return false;
-      match = state.pending.match(SCHEME_RE);
-      if (!match)
-        return false;
-      proto = match[1];
-      link = state.md.linkify.matchAtStart(state.src.slice(pos - proto.length));
-      if (!link)
-        return false;
-      url = link.url;
-      url = url.replace(/\*+$/, "");
-      fullUrl = state.md.normalizeLink(url);
-      if (!state.md.validateLink(fullUrl))
-        return false;
-      if (!silent) {
-        state.pending = state.pending.slice(0, -proto.length);
-        token = state.push("link_open", "a", 1);
-        token.attrs = [["href", fullUrl]];
-        token.markup = "linkify";
-        token.info = "auto";
-        token = state.push("text", "", 0);
-        token.content = state.md.normalizeLinkText(url);
-        token = state.push("link_close", "a", -1);
-        token.markup = "linkify";
-        token.info = "auto";
-      }
-      state.pos += url.length - proto.length;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/newline.js
-var require_newline = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/newline.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    module2.exports = function newline(state, silent) {
-      var pmax, max, ws, pos = state.pos;
-      if (state.src.charCodeAt(pos) !== 10) {
-        return false;
-      }
-      pmax = state.pending.length - 1;
-      max = state.posMax;
-      if (!silent) {
-        if (pmax >= 0 && state.pending.charCodeAt(pmax) === 32) {
-          if (pmax >= 1 && state.pending.charCodeAt(pmax - 1) === 32) {
-            ws = pmax - 1;
-            while (ws >= 1 && state.pending.charCodeAt(ws - 1) === 32)
-              ws--;
-            state.pending = state.pending.slice(0, ws);
-            state.push("hardbreak", "br", 0);
-          } else {
-            state.pending = state.pending.slice(0, -1);
-            state.push("softbreak", "br", 0);
-          }
-        } else {
-          state.push("softbreak", "br", 0);
-        }
-      }
-      pos++;
-      while (pos < max && isSpace(state.src.charCodeAt(pos))) {
-        pos++;
-      }
-      state.pos = pos;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/escape.js
-var require_escape = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/escape.js"(exports, module2) {
-    "use strict";
-    var isSpace = require_utils().isSpace;
-    var ESCAPED = [];
-    for (i = 0; i < 256; i++) {
-      ESCAPED.push(0);
-    }
-    var i;
-    "\\!\"#$%&'()*+,./:;<=>?@[]^_`{|}~-".split("").forEach(function(ch) {
-      ESCAPED[ch.charCodeAt(0)] = 1;
-    });
-    module2.exports = function escape2(state, silent) {
-      var ch1, ch2, origStr, escapedStr, token, pos = state.pos, max = state.posMax;
-      if (state.src.charCodeAt(pos) !== 92)
-        return false;
-      pos++;
-      if (pos >= max)
-        return false;
-      ch1 = state.src.charCodeAt(pos);
-      if (ch1 === 10) {
-        if (!silent) {
-          state.push("hardbreak", "br", 0);
-        }
-        pos++;
-        while (pos < max) {
-          ch1 = state.src.charCodeAt(pos);
-          if (!isSpace(ch1))
-            break;
-          pos++;
-        }
-        state.pos = pos;
-        return true;
-      }
-      escapedStr = state.src[pos];
-      if (ch1 >= 55296 && ch1 <= 56319 && pos + 1 < max) {
-        ch2 = state.src.charCodeAt(pos + 1);
-        if (ch2 >= 56320 && ch2 <= 57343) {
-          escapedStr += state.src[pos + 1];
-          pos++;
-        }
-      }
-      origStr = "\\" + escapedStr;
-      if (!silent) {
-        token = state.push("text_special", "", 0);
-        if (ch1 < 256 && ESCAPED[ch1] !== 0) {
-          token.content = escapedStr;
-        } else {
-          token.content = origStr;
-        }
-        token.markup = origStr;
-        token.info = "escape";
-      }
-      state.pos = pos + 1;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/backticks.js
-var require_backticks = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/backticks.js"(exports, module2) {
-    "use strict";
-    module2.exports = function backtick(state, silent) {
-      var start, max, marker, token, matchStart, matchEnd, openerLength, closerLength, pos = state.pos, ch = state.src.charCodeAt(pos);
-      if (ch !== 96) {
-        return false;
-      }
-      start = pos;
-      pos++;
-      max = state.posMax;
-      while (pos < max && state.src.charCodeAt(pos) === 96) {
-        pos++;
-      }
-      marker = state.src.slice(start, pos);
-      openerLength = marker.length;
-      if (state.backticksScanned && (state.backticks[openerLength] || 0) <= start) {
-        if (!silent)
-          state.pending += marker;
-        state.pos += openerLength;
-        return true;
-      }
-      matchStart = matchEnd = pos;
-      while ((matchStart = state.src.indexOf("`", matchEnd)) !== -1) {
-        matchEnd = matchStart + 1;
-        while (matchEnd < max && state.src.charCodeAt(matchEnd) === 96) {
-          matchEnd++;
-        }
-        closerLength = matchEnd - matchStart;
-        if (closerLength === openerLength) {
-          if (!silent) {
-            token = state.push("code_inline", "code", 0);
-            token.markup = marker;
-            token.content = state.src.slice(pos, matchStart).replace(/\n/g, " ").replace(/^ (.+) $/, "$1");
-          }
-          state.pos = matchEnd;
-          return true;
-        }
-        state.backticks[closerLength] = matchStart;
-      }
-      state.backticksScanned = true;
-      if (!silent)
-        state.pending += marker;
-      state.pos += openerLength;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/strikethrough.js
-var require_strikethrough = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/strikethrough.js"(exports, module2) {
-    "use strict";
-    module2.exports.tokenize = function strikethrough(state, silent) {
-      var i, scanned, token, len, ch, start = state.pos, marker = state.src.charCodeAt(start);
-      if (silent) {
-        return false;
-      }
-      if (marker !== 126) {
-        return false;
-      }
-      scanned = state.scanDelims(state.pos, true);
-      len = scanned.length;
-      ch = String.fromCharCode(marker);
-      if (len < 2) {
-        return false;
-      }
-      if (len % 2) {
-        token = state.push("text", "", 0);
-        token.content = ch;
-        len--;
-      }
-      for (i = 0; i < len; i += 2) {
-        token = state.push("text", "", 0);
-        token.content = ch + ch;
-        state.delimiters.push({
-          marker,
-          length: 0,
-          token: state.tokens.length - 1,
-          end: -1,
-          open: scanned.can_open,
-          close: scanned.can_close
-        });
-      }
-      state.pos += scanned.length;
-      return true;
-    };
-    function postProcess(state, delimiters) {
-      var i, j, startDelim, endDelim, token, loneMarkers = [], max = delimiters.length;
-      for (i = 0; i < max; i++) {
-        startDelim = delimiters[i];
-        if (startDelim.marker !== 126) {
-          continue;
-        }
-        if (startDelim.end === -1) {
-          continue;
-        }
-        endDelim = delimiters[startDelim.end];
-        token = state.tokens[startDelim.token];
-        token.type = "s_open";
-        token.tag = "s";
-        token.nesting = 1;
-        token.markup = "~~";
-        token.content = "";
-        token = state.tokens[endDelim.token];
-        token.type = "s_close";
-        token.tag = "s";
-        token.nesting = -1;
-        token.markup = "~~";
-        token.content = "";
-        if (state.tokens[endDelim.token - 1].type === "text" && state.tokens[endDelim.token - 1].content === "~") {
-          loneMarkers.push(endDelim.token - 1);
-        }
-      }
-      while (loneMarkers.length) {
-        i = loneMarkers.pop();
-        j = i + 1;
-        while (j < state.tokens.length && state.tokens[j].type === "s_close") {
-          j++;
-        }
-        j--;
-        if (i !== j) {
-          token = state.tokens[j];
-          state.tokens[j] = state.tokens[i];
-          state.tokens[i] = token;
-        }
-      }
-    }
-    module2.exports.postProcess = function strikethrough(state) {
-      var curr, tokens_meta = state.tokens_meta, max = state.tokens_meta.length;
-      postProcess(state, state.delimiters);
-      for (curr = 0; curr < max; curr++) {
-        if (tokens_meta[curr] && tokens_meta[curr].delimiters) {
-          postProcess(state, tokens_meta[curr].delimiters);
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/emphasis.js
-var require_emphasis = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/emphasis.js"(exports, module2) {
-    "use strict";
-    module2.exports.tokenize = function emphasis(state, silent) {
-      var i, scanned, token, start = state.pos, marker = state.src.charCodeAt(start);
-      if (silent) {
-        return false;
-      }
-      if (marker !== 95 && marker !== 42) {
-        return false;
-      }
-      scanned = state.scanDelims(state.pos, marker === 42);
-      for (i = 0; i < scanned.length; i++) {
-        token = state.push("text", "", 0);
-        token.content = String.fromCharCode(marker);
-        state.delimiters.push({
-          marker,
-          length: scanned.length,
-          token: state.tokens.length - 1,
-          end: -1,
-          open: scanned.can_open,
-          close: scanned.can_close
-        });
-      }
-      state.pos += scanned.length;
-      return true;
-    };
-    function postProcess(state, delimiters) {
-      var i, startDelim, endDelim, token, ch, isStrong, max = delimiters.length;
-      for (i = max - 1; i >= 0; i--) {
-        startDelim = delimiters[i];
-        if (startDelim.marker !== 95 && startDelim.marker !== 42) {
-          continue;
-        }
-        if (startDelim.end === -1) {
-          continue;
-        }
-        endDelim = delimiters[startDelim.end];
-        isStrong = i > 0 && delimiters[i - 1].end === startDelim.end + 1 && delimiters[i - 1].marker === startDelim.marker && delimiters[i - 1].token === startDelim.token - 1 && delimiters[startDelim.end + 1].token === endDelim.token + 1;
-        ch = String.fromCharCode(startDelim.marker);
-        token = state.tokens[startDelim.token];
-        token.type = isStrong ? "strong_open" : "em_open";
-        token.tag = isStrong ? "strong" : "em";
-        token.nesting = 1;
-        token.markup = isStrong ? ch + ch : ch;
-        token.content = "";
-        token = state.tokens[endDelim.token];
-        token.type = isStrong ? "strong_close" : "em_close";
-        token.tag = isStrong ? "strong" : "em";
-        token.nesting = -1;
-        token.markup = isStrong ? ch + ch : ch;
-        token.content = "";
-        if (isStrong) {
-          state.tokens[delimiters[i - 1].token].content = "";
-          state.tokens[delimiters[startDelim.end + 1].token].content = "";
-          i--;
-        }
-      }
-    }
-    module2.exports.postProcess = function emphasis(state) {
-      var curr, tokens_meta = state.tokens_meta, max = state.tokens_meta.length;
-      postProcess(state, state.delimiters);
-      for (curr = 0; curr < max; curr++) {
-        if (tokens_meta[curr] && tokens_meta[curr].delimiters) {
-          postProcess(state, tokens_meta[curr].delimiters);
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/link.js
-var require_link = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/link.js"(exports, module2) {
-    "use strict";
-    var normalizeReference = require_utils().normalizeReference;
-    var isSpace = require_utils().isSpace;
-    module2.exports = function link(state, silent) {
-      var attrs, code, label, labelEnd, labelStart, pos, res, ref, token, href = "", title = "", oldPos = state.pos, max = state.posMax, start = state.pos, parseReference = true;
-      if (state.src.charCodeAt(state.pos) !== 91) {
-        return false;
-      }
-      labelStart = state.pos + 1;
-      labelEnd = state.md.helpers.parseLinkLabel(state, state.pos, true);
-      if (labelEnd < 0) {
-        return false;
-      }
-      pos = labelEnd + 1;
-      if (pos < max && state.src.charCodeAt(pos) === 40) {
-        parseReference = false;
-        pos++;
-        for (; pos < max; pos++) {
-          code = state.src.charCodeAt(pos);
-          if (!isSpace(code) && code !== 10) {
-            break;
-          }
-        }
-        if (pos >= max) {
-          return false;
-        }
-        start = pos;
-        res = state.md.helpers.parseLinkDestination(state.src, pos, state.posMax);
-        if (res.ok) {
-          href = state.md.normalizeLink(res.str);
-          if (state.md.validateLink(href)) {
-            pos = res.pos;
-          } else {
-            href = "";
-          }
-          start = pos;
-          for (; pos < max; pos++) {
-            code = state.src.charCodeAt(pos);
-            if (!isSpace(code) && code !== 10) {
-              break;
-            }
-          }
-          res = state.md.helpers.parseLinkTitle(state.src, pos, state.posMax);
-          if (pos < max && start !== pos && res.ok) {
-            title = res.str;
-            pos = res.pos;
-            for (; pos < max; pos++) {
-              code = state.src.charCodeAt(pos);
-              if (!isSpace(code) && code !== 10) {
-                break;
-              }
-            }
-          }
-        }
-        if (pos >= max || state.src.charCodeAt(pos) !== 41) {
-          parseReference = true;
-        }
-        pos++;
-      }
-      if (parseReference) {
-        if (typeof state.env.references === "undefined") {
-          return false;
-        }
-        if (pos < max && state.src.charCodeAt(pos) === 91) {
-          start = pos + 1;
-          pos = state.md.helpers.parseLinkLabel(state, pos);
-          if (pos >= 0) {
-            label = state.src.slice(start, pos++);
-          } else {
-            pos = labelEnd + 1;
-          }
-        } else {
-          pos = labelEnd + 1;
-        }
-        if (!label) {
-          label = state.src.slice(labelStart, labelEnd);
-        }
-        ref = state.env.references[normalizeReference(label)];
-        if (!ref) {
-          state.pos = oldPos;
-          return false;
-        }
-        href = ref.href;
-        title = ref.title;
-      }
-      if (!silent) {
-        state.pos = labelStart;
-        state.posMax = labelEnd;
-        token = state.push("link_open", "a", 1);
-        token.attrs = attrs = [["href", href]];
-        if (title) {
-          attrs.push(["title", title]);
-        }
-        state.linkLevel++;
-        state.md.inline.tokenize(state);
-        state.linkLevel--;
-        token = state.push("link_close", "a", -1);
-      }
-      state.pos = pos;
-      state.posMax = max;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/image.js
-var require_image = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/image.js"(exports, module2) {
-    "use strict";
-    var normalizeReference = require_utils().normalizeReference;
-    var isSpace = require_utils().isSpace;
-    module2.exports = function image(state, silent) {
-      var attrs, code, content, label, labelEnd, labelStart, pos, ref, res, title, token, tokens, start, href = "", oldPos = state.pos, max = state.posMax;
-      if (state.src.charCodeAt(state.pos) !== 33) {
-        return false;
-      }
-      if (state.src.charCodeAt(state.pos + 1) !== 91) {
-        return false;
-      }
-      labelStart = state.pos + 2;
-      labelEnd = state.md.helpers.parseLinkLabel(state, state.pos + 1, false);
-      if (labelEnd < 0) {
-        return false;
-      }
-      pos = labelEnd + 1;
-      if (pos < max && state.src.charCodeAt(pos) === 40) {
-        pos++;
-        for (; pos < max; pos++) {
-          code = state.src.charCodeAt(pos);
-          if (!isSpace(code) && code !== 10) {
-            break;
-          }
-        }
-        if (pos >= max) {
-          return false;
-        }
-        start = pos;
-        res = state.md.helpers.parseLinkDestination(state.src, pos, state.posMax);
-        if (res.ok) {
-          href = state.md.normalizeLink(res.str);
-          if (state.md.validateLink(href)) {
-            pos = res.pos;
-          } else {
-            href = "";
-          }
-        }
-        start = pos;
-        for (; pos < max; pos++) {
-          code = state.src.charCodeAt(pos);
-          if (!isSpace(code) && code !== 10) {
-            break;
-          }
-        }
-        res = state.md.helpers.parseLinkTitle(state.src, pos, state.posMax);
-        if (pos < max && start !== pos && res.ok) {
-          title = res.str;
-          pos = res.pos;
-          for (; pos < max; pos++) {
-            code = state.src.charCodeAt(pos);
-            if (!isSpace(code) && code !== 10) {
-              break;
-            }
-          }
-        } else {
-          title = "";
-        }
-        if (pos >= max || state.src.charCodeAt(pos) !== 41) {
-          state.pos = oldPos;
-          return false;
-        }
-        pos++;
-      } else {
-        if (typeof state.env.references === "undefined") {
-          return false;
-        }
-        if (pos < max && state.src.charCodeAt(pos) === 91) {
-          start = pos + 1;
-          pos = state.md.helpers.parseLinkLabel(state, pos);
-          if (pos >= 0) {
-            label = state.src.slice(start, pos++);
-          } else {
-            pos = labelEnd + 1;
-          }
-        } else {
-          pos = labelEnd + 1;
-        }
-        if (!label) {
-          label = state.src.slice(labelStart, labelEnd);
-        }
-        ref = state.env.references[normalizeReference(label)];
-        if (!ref) {
-          state.pos = oldPos;
-          return false;
-        }
-        href = ref.href;
-        title = ref.title;
-      }
-      if (!silent) {
-        content = state.src.slice(labelStart, labelEnd);
-        state.md.inline.parse(content, state.md, state.env, tokens = []);
-        token = state.push("image", "img", 0);
-        token.attrs = attrs = [["src", href], ["alt", ""]];
-        token.children = tokens;
-        token.content = content;
-        if (title) {
-          attrs.push(["title", title]);
-        }
-      }
-      state.pos = pos;
-      state.posMax = max;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/autolink.js
-var require_autolink = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/autolink.js"(exports, module2) {
-    "use strict";
-    var EMAIL_RE = /^([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$/;
-    var AUTOLINK_RE = /^([a-zA-Z][a-zA-Z0-9+.\-]{1,31}):([^<>\x00-\x20]*)$/;
-    module2.exports = function autolink(state, silent) {
-      var url, fullUrl, token, ch, start, max, pos = state.pos;
-      if (state.src.charCodeAt(pos) !== 60) {
-        return false;
-      }
-      start = state.pos;
-      max = state.posMax;
-      for (; ; ) {
-        if (++pos >= max)
-          return false;
-        ch = state.src.charCodeAt(pos);
-        if (ch === 60)
-          return false;
-        if (ch === 62)
-          break;
-      }
-      url = state.src.slice(start + 1, pos);
-      if (AUTOLINK_RE.test(url)) {
-        fullUrl = state.md.normalizeLink(url);
-        if (!state.md.validateLink(fullUrl)) {
-          return false;
-        }
-        if (!silent) {
-          token = state.push("link_open", "a", 1);
-          token.attrs = [["href", fullUrl]];
-          token.markup = "autolink";
-          token.info = "auto";
-          token = state.push("text", "", 0);
-          token.content = state.md.normalizeLinkText(url);
-          token = state.push("link_close", "a", -1);
-          token.markup = "autolink";
-          token.info = "auto";
-        }
-        state.pos += url.length + 2;
-        return true;
-      }
-      if (EMAIL_RE.test(url)) {
-        fullUrl = state.md.normalizeLink("mailto:" + url);
-        if (!state.md.validateLink(fullUrl)) {
-          return false;
-        }
-        if (!silent) {
-          token = state.push("link_open", "a", 1);
-          token.attrs = [["href", fullUrl]];
-          token.markup = "autolink";
-          token.info = "auto";
-          token = state.push("text", "", 0);
-          token.content = state.md.normalizeLinkText(url);
-          token = state.push("link_close", "a", -1);
-          token.markup = "autolink";
-          token.info = "auto";
-        }
-        state.pos += url.length + 2;
-        return true;
-      }
-      return false;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/html_inline.js
-var require_html_inline = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/html_inline.js"(exports, module2) {
-    "use strict";
-    var HTML_TAG_RE = require_html_re().HTML_TAG_RE;
-    function isLinkOpen(str) {
-      return /^<a[>\s]/i.test(str);
-    }
-    function isLinkClose(str) {
-      return /^<\/a\s*>/i.test(str);
-    }
-    function isLetter(ch) {
-      var lc = ch | 32;
-      return lc >= 97 && lc <= 122;
-    }
-    module2.exports = function html_inline(state, silent) {
-      var ch, match, max, token, pos = state.pos;
-      if (!state.md.options.html) {
-        return false;
-      }
-      max = state.posMax;
-      if (state.src.charCodeAt(pos) !== 60 || pos + 2 >= max) {
-        return false;
-      }
-      ch = state.src.charCodeAt(pos + 1);
-      if (ch !== 33 && ch !== 63 && ch !== 47 && !isLetter(ch)) {
-        return false;
-      }
-      match = state.src.slice(pos).match(HTML_TAG_RE);
-      if (!match) {
-        return false;
-      }
-      if (!silent) {
-        token = state.push("html_inline", "", 0);
-        token.content = state.src.slice(pos, pos + match[0].length);
-        if (isLinkOpen(token.content))
-          state.linkLevel++;
-        if (isLinkClose(token.content))
-          state.linkLevel--;
-      }
-      state.pos += match[0].length;
-      return true;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/entity.js
-var require_entity = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/entity.js"(exports, module2) {
-    "use strict";
-    var entities = require_entities2();
-    var has = require_utils().has;
-    var isValidEntityCode = require_utils().isValidEntityCode;
-    var fromCodePoint = require_utils().fromCodePoint;
-    var DIGITAL_RE = /^&#((?:x[a-f0-9]{1,6}|[0-9]{1,7}));/i;
-    var NAMED_RE = /^&([a-z][a-z0-9]{1,31});/i;
-    module2.exports = function entity(state, silent) {
-      var ch, code, match, token, pos = state.pos, max = state.posMax;
-      if (state.src.charCodeAt(pos) !== 38)
-        return false;
-      if (pos + 1 >= max)
-        return false;
-      ch = state.src.charCodeAt(pos + 1);
-      if (ch === 35) {
-        match = state.src.slice(pos).match(DIGITAL_RE);
-        if (match) {
-          if (!silent) {
-            code = match[1][0].toLowerCase() === "x" ? parseInt(match[1].slice(1), 16) : parseInt(match[1], 10);
-            token = state.push("text_special", "", 0);
-            token.content = isValidEntityCode(code) ? fromCodePoint(code) : fromCodePoint(65533);
-            token.markup = match[0];
-            token.info = "entity";
-          }
-          state.pos += match[0].length;
-          return true;
-        }
-      } else {
-        match = state.src.slice(pos).match(NAMED_RE);
-        if (match) {
-          if (has(entities, match[1])) {
-            if (!silent) {
-              token = state.push("text_special", "", 0);
-              token.content = entities[match[1]];
-              token.markup = match[0];
-              token.info = "entity";
-            }
-            state.pos += match[0].length;
-            return true;
-          }
-        }
-      }
-      return false;
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/balance_pairs.js
-var require_balance_pairs = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/balance_pairs.js"(exports, module2) {
-    "use strict";
-    function processDelimiters(state, delimiters) {
-      var closerIdx, openerIdx, closer, opener, minOpenerIdx, newMinOpenerIdx, isOddMatch, lastJump, openersBottom = {}, max = delimiters.length;
-      if (!max)
-        return;
-      var headerIdx = 0;
-      var lastTokenIdx = -2;
-      var jumps = [];
-      for (closerIdx = 0; closerIdx < max; closerIdx++) {
-        closer = delimiters[closerIdx];
-        jumps.push(0);
-        if (delimiters[headerIdx].marker !== closer.marker || lastTokenIdx !== closer.token - 1) {
-          headerIdx = closerIdx;
-        }
-        lastTokenIdx = closer.token;
-        closer.length = closer.length || 0;
-        if (!closer.close)
-          continue;
-        if (!openersBottom.hasOwnProperty(closer.marker)) {
-          openersBottom[closer.marker] = [-1, -1, -1, -1, -1, -1];
-        }
-        minOpenerIdx = openersBottom[closer.marker][(closer.open ? 3 : 0) + closer.length % 3];
-        openerIdx = headerIdx - jumps[headerIdx] - 1;
-        newMinOpenerIdx = openerIdx;
-        for (; openerIdx > minOpenerIdx; openerIdx -= jumps[openerIdx] + 1) {
-          opener = delimiters[openerIdx];
-          if (opener.marker !== closer.marker)
-            continue;
-          if (opener.open && opener.end < 0) {
-            isOddMatch = false;
-            if (opener.close || closer.open) {
-              if ((opener.length + closer.length) % 3 === 0) {
-                if (opener.length % 3 !== 0 || closer.length % 3 !== 0) {
-                  isOddMatch = true;
-                }
-              }
-            }
-            if (!isOddMatch) {
-              lastJump = openerIdx > 0 && !delimiters[openerIdx - 1].open ? jumps[openerIdx - 1] + 1 : 0;
-              jumps[closerIdx] = closerIdx - openerIdx + lastJump;
-              jumps[openerIdx] = lastJump;
-              closer.open = false;
-              opener.end = closerIdx;
-              opener.close = false;
-              newMinOpenerIdx = -1;
-              lastTokenIdx = -2;
-              break;
-            }
-          }
-        }
-        if (newMinOpenerIdx !== -1) {
-          openersBottom[closer.marker][(closer.open ? 3 : 0) + (closer.length || 0) % 3] = newMinOpenerIdx;
-        }
-      }
-    }
-    module2.exports = function link_pairs(state) {
-      var curr, tokens_meta = state.tokens_meta, max = state.tokens_meta.length;
-      processDelimiters(state, state.delimiters);
-      for (curr = 0; curr < max; curr++) {
-        if (tokens_meta[curr] && tokens_meta[curr].delimiters) {
-          processDelimiters(state, tokens_meta[curr].delimiters);
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/fragments_join.js
-var require_fragments_join = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/fragments_join.js"(exports, module2) {
-    "use strict";
-    module2.exports = function fragments_join(state) {
-      var curr, last, level = 0, tokens = state.tokens, max = state.tokens.length;
-      for (curr = last = 0; curr < max; curr++) {
-        if (tokens[curr].nesting < 0)
-          level--;
-        tokens[curr].level = level;
-        if (tokens[curr].nesting > 0)
-          level++;
-        if (tokens[curr].type === "text" && curr + 1 < max && tokens[curr + 1].type === "text") {
-          tokens[curr + 1].content = tokens[curr].content + tokens[curr + 1].content;
-        } else {
-          if (curr !== last) {
-            tokens[last] = tokens[curr];
-          }
-          last++;
-        }
-      }
-      if (curr !== last) {
-        tokens.length = last;
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/rules_inline/state_inline.js
-var require_state_inline = __commonJS({
-  "node_modules/markdown-it/lib/rules_inline/state_inline.js"(exports, module2) {
-    "use strict";
-    var Token = require_token();
-    var isWhiteSpace = require_utils().isWhiteSpace;
-    var isPunctChar = require_utils().isPunctChar;
-    var isMdAsciiPunct = require_utils().isMdAsciiPunct;
-    function StateInline(src, md, env, outTokens) {
-      this.src = src;
-      this.env = env;
-      this.md = md;
-      this.tokens = outTokens;
-      this.tokens_meta = Array(outTokens.length);
-      this.pos = 0;
-      this.posMax = this.src.length;
-      this.level = 0;
-      this.pending = "";
-      this.pendingLevel = 0;
-      this.cache = {};
-      this.delimiters = [];
-      this._prev_delimiters = [];
-      this.backticks = {};
-      this.backticksScanned = false;
-      this.linkLevel = 0;
-    }
-    StateInline.prototype.pushPending = function() {
-      var token = new Token("text", "", 0);
-      token.content = this.pending;
-      token.level = this.pendingLevel;
-      this.tokens.push(token);
-      this.pending = "";
-      return token;
-    };
-    StateInline.prototype.push = function(type, tag, nesting) {
-      if (this.pending) {
-        this.pushPending();
-      }
-      var token = new Token(type, tag, nesting);
-      var token_meta = null;
-      if (nesting < 0) {
-        this.level--;
-        this.delimiters = this._prev_delimiters.pop();
-      }
-      token.level = this.level;
-      if (nesting > 0) {
-        this.level++;
-        this._prev_delimiters.push(this.delimiters);
-        this.delimiters = [];
-        token_meta = { delimiters: this.delimiters };
-      }
-      this.pendingLevel = this.level;
-      this.tokens.push(token);
-      this.tokens_meta.push(token_meta);
-      return token;
-    };
-    StateInline.prototype.scanDelims = function(start, canSplitWord) {
-      var pos = start, lastChar, nextChar, count, can_open, can_close, isLastWhiteSpace, isLastPunctChar, isNextWhiteSpace, isNextPunctChar, left_flanking = true, right_flanking = true, max = this.posMax, marker = this.src.charCodeAt(start);
-      lastChar = start > 0 ? this.src.charCodeAt(start - 1) : 32;
-      while (pos < max && this.src.charCodeAt(pos) === marker) {
-        pos++;
-      }
-      count = pos - start;
-      nextChar = pos < max ? this.src.charCodeAt(pos) : 32;
-      isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctChar(String.fromCharCode(lastChar));
-      isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctChar(String.fromCharCode(nextChar));
-      isLastWhiteSpace = isWhiteSpace(lastChar);
-      isNextWhiteSpace = isWhiteSpace(nextChar);
-      if (isNextWhiteSpace) {
-        left_flanking = false;
-      } else if (isNextPunctChar) {
-        if (!(isLastWhiteSpace || isLastPunctChar)) {
-          left_flanking = false;
-        }
-      }
-      if (isLastWhiteSpace) {
-        right_flanking = false;
-      } else if (isLastPunctChar) {
-        if (!(isNextWhiteSpace || isNextPunctChar)) {
-          right_flanking = false;
-        }
-      }
-      if (!canSplitWord) {
-        can_open = left_flanking && (!right_flanking || isLastPunctChar);
-        can_close = right_flanking && (!left_flanking || isNextPunctChar);
-      } else {
-        can_open = left_flanking;
-        can_close = right_flanking;
-      }
-      return {
-        can_open,
-        can_close,
-        length: count
-      };
-    };
-    StateInline.prototype.Token = Token;
-    module2.exports = StateInline;
-  }
-});
-
-// node_modules/markdown-it/lib/parser_inline.js
-var require_parser_inline = __commonJS({
-  "node_modules/markdown-it/lib/parser_inline.js"(exports, module2) {
-    "use strict";
-    var Ruler = require_ruler();
-    var _rules = [
-      ["text", require_text()],
-      ["linkify", require_linkify2()],
-      ["newline", require_newline()],
-      ["escape", require_escape()],
-      ["backticks", require_backticks()],
-      ["strikethrough", require_strikethrough().tokenize],
-      ["emphasis", require_emphasis().tokenize],
-      ["link", require_link()],
-      ["image", require_image()],
-      ["autolink", require_autolink()],
-      ["html_inline", require_html_inline()],
-      ["entity", require_entity()]
-    ];
-    var _rules2 = [
-      ["balance_pairs", require_balance_pairs()],
-      ["strikethrough", require_strikethrough().postProcess],
-      ["emphasis", require_emphasis().postProcess],
-      ["fragments_join", require_fragments_join()]
-    ];
-    function ParserInline() {
-      var i;
-      this.ruler = new Ruler();
-      for (i = 0; i < _rules.length; i++) {
-        this.ruler.push(_rules[i][0], _rules[i][1]);
-      }
-      this.ruler2 = new Ruler();
-      for (i = 0; i < _rules2.length; i++) {
-        this.ruler2.push(_rules2[i][0], _rules2[i][1]);
-      }
-    }
-    ParserInline.prototype.skipToken = function(state) {
-      var ok, i, pos = state.pos, rules = this.ruler.getRules(""), len = rules.length, maxNesting = state.md.options.maxNesting, cache = state.cache;
-      if (typeof cache[pos] !== "undefined") {
-        state.pos = cache[pos];
-        return;
-      }
-      if (state.level < maxNesting) {
-        for (i = 0; i < len; i++) {
-          state.level++;
-          ok = rules[i](state, true);
-          state.level--;
-          if (ok) {
-            break;
-          }
-        }
-      } else {
-        state.pos = state.posMax;
-      }
-      if (!ok) {
-        state.pos++;
-      }
-      cache[pos] = state.pos;
-    };
-    ParserInline.prototype.tokenize = function(state) {
-      var ok, i, rules = this.ruler.getRules(""), len = rules.length, end = state.posMax, maxNesting = state.md.options.maxNesting;
-      while (state.pos < end) {
-        if (state.level < maxNesting) {
-          for (i = 0; i < len; i++) {
-            ok = rules[i](state, false);
-            if (ok) {
-              break;
-            }
-          }
-        }
-        if (ok) {
-          if (state.pos >= end) {
-            break;
-          }
-          continue;
-        }
-        state.pending += state.src[state.pos++];
-      }
-      if (state.pending) {
-        state.pushPending();
-      }
-    };
-    ParserInline.prototype.parse = function(str, md, env, outTokens) {
-      var i, rules, len;
-      var state = new this.State(str, md, env, outTokens);
-      this.tokenize(state);
-      rules = this.ruler2.getRules("");
-      len = rules.length;
-      for (i = 0; i < len; i++) {
-        rules[i](state);
-      }
-    };
-    ParserInline.prototype.State = require_state_inline();
-    module2.exports = ParserInline;
-  }
-});
-
-// node_modules/linkify-it/lib/re.js
-var require_re = __commonJS({
-  "node_modules/linkify-it/lib/re.js"(exports, module2) {
-    "use strict";
-    module2.exports = function(opts) {
-      var re = {};
-      opts = opts || {};
-      re.src_Any = require_regex2().source;
-      re.src_Cc = require_regex3().source;
-      re.src_Z = require_regex5().source;
-      re.src_P = require_regex().source;
-      re.src_ZPCc = [re.src_Z, re.src_P, re.src_Cc].join("|");
-      re.src_ZCc = [re.src_Z, re.src_Cc].join("|");
-      var text_separators = "[><\uFF5C]";
-      re.src_pseudo_letter = "(?:(?!" + text_separators + "|" + re.src_ZPCc + ")" + re.src_Any + ")";
-      re.src_ip4 = "(?:(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
-      re.src_auth = "(?:(?:(?!" + re.src_ZCc + "|[@/\\[\\]()]).)+@)?";
-      re.src_port = "(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?";
-      re.src_host_terminator = "(?=$|" + text_separators + "|" + re.src_ZPCc + ")(?!" + (opts["---"] ? "-(?!--)|" : "-|") + "_|:\\d|\\.-|\\.(?!$|" + re.src_ZPCc + "))";
-      re.src_path = "(?:[/?#](?:(?!" + re.src_ZCc + "|" + text_separators + `|[()[\\]{}.,"'?!\\-;]).|\\[(?:(?!` + re.src_ZCc + "|\\]).)*\\]|\\((?:(?!" + re.src_ZCc + "|[)]).)*\\)|\\{(?:(?!" + re.src_ZCc + '|[}]).)*\\}|\\"(?:(?!' + re.src_ZCc + `|["]).)+\\"|\\'(?:(?!` + re.src_ZCc + "|[']).)+\\'|\\'(?=" + re.src_pseudo_letter + "|[-])|\\.{2,}[a-zA-Z0-9%/&]|\\.(?!" + re.src_ZCc + "|[.]|$)|" + (opts["---"] ? "\\-(?!--(?:[^-]|$))(?:-*)|" : "\\-+|") + ",(?!" + re.src_ZCc + "|$)|;(?!" + re.src_ZCc + "|$)|\\!+(?!" + re.src_ZCc + "|[!]|$)|\\?(?!" + re.src_ZCc + "|[?]|$))+|\\/)?";
-      re.src_email_name = '[\\-;:&=\\+\\$,\\.a-zA-Z0-9_][\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]*';
-      re.src_xn = "xn--[a-z0-9\\-]{1,59}";
-      re.src_domain_root = "(?:" + re.src_xn + "|" + re.src_pseudo_letter + "{1,63})";
-      re.src_domain = "(?:" + re.src_xn + "|(?:" + re.src_pseudo_letter + ")|(?:" + re.src_pseudo_letter + "(?:-|" + re.src_pseudo_letter + "){0,61}" + re.src_pseudo_letter + "))";
-      re.src_host = "(?:(?:(?:(?:" + re.src_domain + ")\\.)*" + re.src_domain + "))";
-      re.tpl_host_fuzzy = "(?:" + re.src_ip4 + "|(?:(?:(?:" + re.src_domain + ")\\.)+(?:%TLDS%)))";
-      re.tpl_host_no_ip_fuzzy = "(?:(?:(?:" + re.src_domain + ")\\.)+(?:%TLDS%))";
-      re.src_host_strict = re.src_host + re.src_host_terminator;
-      re.tpl_host_fuzzy_strict = re.tpl_host_fuzzy + re.src_host_terminator;
-      re.src_host_port_strict = re.src_host + re.src_port + re.src_host_terminator;
-      re.tpl_host_port_fuzzy_strict = re.tpl_host_fuzzy + re.src_port + re.src_host_terminator;
-      re.tpl_host_port_no_ip_fuzzy_strict = re.tpl_host_no_ip_fuzzy + re.src_port + re.src_host_terminator;
-      re.tpl_host_fuzzy_test = "localhost|www\\.|\\.\\d{1,3}\\.|(?:\\.(?:%TLDS%)(?:" + re.src_ZPCc + "|>|$))";
-      re.tpl_email_fuzzy = "(^|" + text_separators + '|"|\\(|' + re.src_ZCc + ")(" + re.src_email_name + "@" + re.tpl_host_fuzzy_strict + ")";
-      re.tpl_link_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|\uFF5C]|" + re.src_ZPCc + "))((?![$+<=>^`|\uFF5C])" + re.tpl_host_port_fuzzy_strict + re.src_path + ")";
-      re.tpl_link_no_ip_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|\uFF5C]|" + re.src_ZPCc + "))((?![$+<=>^`|\uFF5C])" + re.tpl_host_port_no_ip_fuzzy_strict + re.src_path + ")";
-      return re;
-    };
-  }
-});
-
-// node_modules/linkify-it/index.js
-var require_linkify_it = __commonJS({
-  "node_modules/linkify-it/index.js"(exports, module2) {
-    "use strict";
-    function assign(obj) {
-      var sources = Array.prototype.slice.call(arguments, 1);
-      sources.forEach(function(source) {
-        if (!source) {
-          return;
-        }
-        Object.keys(source).forEach(function(key) {
-          obj[key] = source[key];
-        });
-      });
-      return obj;
-    }
-    function _class(obj) {
-      return Object.prototype.toString.call(obj);
-    }
-    function isString(obj) {
-      return _class(obj) === "[object String]";
-    }
-    function isObject(obj) {
-      return _class(obj) === "[object Object]";
-    }
-    function isRegExp(obj) {
-      return _class(obj) === "[object RegExp]";
-    }
-    function isFunction(obj) {
-      return _class(obj) === "[object Function]";
-    }
-    function escapeRE(str) {
-      return str.replace(/[.?*+^$[\]\\(){}|-]/g, "\\$&");
-    }
-    var defaultOptions = {
-      fuzzyLink: true,
-      fuzzyEmail: true,
-      fuzzyIP: false
-    };
-    function isOptionsObj(obj) {
-      return Object.keys(obj || {}).reduce(function(acc, k) {
-        return acc || defaultOptions.hasOwnProperty(k);
-      }, false);
-    }
-    var defaultSchemas = {
-      "http:": {
-        validate: function(text2, pos, self) {
-          var tail = text2.slice(pos);
-          if (!self.re.http) {
-            self.re.http = new RegExp("^\\/\\/" + self.re.src_auth + self.re.src_host_port_strict + self.re.src_path, "i");
-          }
-          if (self.re.http.test(tail)) {
-            return tail.match(self.re.http)[0].length;
-          }
-          return 0;
-        }
-      },
-      "https:": "http:",
-      "ftp:": "http:",
-      "//": {
-        validate: function(text2, pos, self) {
-          var tail = text2.slice(pos);
-          if (!self.re.no_http) {
-            self.re.no_http = new RegExp("^" + self.re.src_auth + "(?:localhost|(?:(?:" + self.re.src_domain + ")\\.)+" + self.re.src_domain_root + ")" + self.re.src_port + self.re.src_host_terminator + self.re.src_path, "i");
-          }
-          if (self.re.no_http.test(tail)) {
-            if (pos >= 3 && text2[pos - 3] === ":") {
-              return 0;
-            }
-            if (pos >= 3 && text2[pos - 3] === "/") {
-              return 0;
-            }
-            return tail.match(self.re.no_http)[0].length;
-          }
-          return 0;
-        }
-      },
-      "mailto:": {
-        validate: function(text2, pos, self) {
-          var tail = text2.slice(pos);
-          if (!self.re.mailto) {
-            self.re.mailto = new RegExp("^" + self.re.src_email_name + "@" + self.re.src_host_strict, "i");
-          }
-          if (self.re.mailto.test(tail)) {
-            return tail.match(self.re.mailto)[0].length;
-          }
-          return 0;
-        }
-      }
-    };
-    var tlds_2ch_src_re = "a[cdefgilmnoqrstuwxz]|b[abdefghijmnorstvwyz]|c[acdfghiklmnoruvwxyz]|d[ejkmoz]|e[cegrstu]|f[ijkmor]|g[abdefghilmnpqrstuwy]|h[kmnrtu]|i[delmnoqrst]|j[emop]|k[eghimnprwyz]|l[abcikrstuvy]|m[acdeghklmnopqrstuvwxyz]|n[acefgilopruz]|om|p[aefghklmnrstwy]|qa|r[eosuw]|s[abcdeghijklmnortuvxyz]|t[cdfghjklmnortvwz]|u[agksyz]|v[aceginu]|w[fs]|y[et]|z[amw]";
-    var tlds_default = "biz|com|edu|gov|net|org|pro|web|xxx|aero|asia|coop|info|museum|name|shop|\u0440\u0444".split("|");
-    function resetScanCache(self) {
-      self.__index__ = -1;
-      self.__text_cache__ = "";
-    }
-    function createValidator(re) {
-      return function(text2, pos) {
-        var tail = text2.slice(pos);
-        if (re.test(tail)) {
-          return tail.match(re)[0].length;
-        }
-        return 0;
-      };
-    }
-    function createNormalizer() {
-      return function(match, self) {
-        self.normalize(match);
-      };
-    }
-    function compile(self) {
-      var re = self.re = require_re()(self.__opts__);
-      var tlds = self.__tlds__.slice();
-      self.onCompile();
-      if (!self.__tlds_replaced__) {
-        tlds.push(tlds_2ch_src_re);
-      }
-      tlds.push(re.src_xn);
-      re.src_tlds = tlds.join("|");
-      function untpl(tpl) {
-        return tpl.replace("%TLDS%", re.src_tlds);
-      }
-      re.email_fuzzy = RegExp(untpl(re.tpl_email_fuzzy), "i");
-      re.link_fuzzy = RegExp(untpl(re.tpl_link_fuzzy), "i");
-      re.link_no_ip_fuzzy = RegExp(untpl(re.tpl_link_no_ip_fuzzy), "i");
-      re.host_fuzzy_test = RegExp(untpl(re.tpl_host_fuzzy_test), "i");
-      var aliases = [];
-      self.__compiled__ = {};
-      function schemaError(name, val) {
-        throw new Error('(LinkifyIt) Invalid schema "' + name + '": ' + val);
-      }
-      Object.keys(self.__schemas__).forEach(function(name) {
-        var val = self.__schemas__[name];
-        if (val === null) {
-          return;
-        }
-        var compiled = { validate: null, link: null };
-        self.__compiled__[name] = compiled;
-        if (isObject(val)) {
-          if (isRegExp(val.validate)) {
-            compiled.validate = createValidator(val.validate);
-          } else if (isFunction(val.validate)) {
-            compiled.validate = val.validate;
-          } else {
-            schemaError(name, val);
-          }
-          if (isFunction(val.normalize)) {
-            compiled.normalize = val.normalize;
-          } else if (!val.normalize) {
-            compiled.normalize = createNormalizer();
-          } else {
-            schemaError(name, val);
-          }
-          return;
-        }
-        if (isString(val)) {
-          aliases.push(name);
-          return;
-        }
-        schemaError(name, val);
-      });
-      aliases.forEach(function(alias) {
-        if (!self.__compiled__[self.__schemas__[alias]]) {
-          return;
-        }
-        self.__compiled__[alias].validate = self.__compiled__[self.__schemas__[alias]].validate;
-        self.__compiled__[alias].normalize = self.__compiled__[self.__schemas__[alias]].normalize;
-      });
-      self.__compiled__[""] = { validate: null, normalize: createNormalizer() };
-      var slist = Object.keys(self.__compiled__).filter(function(name) {
-        return name.length > 0 && self.__compiled__[name];
-      }).map(escapeRE).join("|");
-      self.re.schema_test = RegExp("(^|(?!_)(?:[><\uFF5C]|" + re.src_ZPCc + "))(" + slist + ")", "i");
-      self.re.schema_search = RegExp("(^|(?!_)(?:[><\uFF5C]|" + re.src_ZPCc + "))(" + slist + ")", "ig");
-      self.re.schema_at_start = RegExp("^" + self.re.schema_search.source, "i");
-      self.re.pretest = RegExp("(" + self.re.schema_test.source + ")|(" + self.re.host_fuzzy_test.source + ")|@", "i");
-      resetScanCache(self);
-    }
-    function Match(self, shift) {
-      var start = self.__index__, end = self.__last_index__, text2 = self.__text_cache__.slice(start, end);
-      this.schema = self.__schema__.toLowerCase();
-      this.index = start + shift;
-      this.lastIndex = end + shift;
-      this.raw = text2;
-      this.text = text2;
-      this.url = text2;
-    }
-    function createMatch(self, shift) {
-      var match = new Match(self, shift);
-      self.__compiled__[match.schema].normalize(match, self);
-      return match;
-    }
-    function LinkifyIt(schemas, options) {
-      if (!(this instanceof LinkifyIt)) {
-        return new LinkifyIt(schemas, options);
-      }
-      if (!options) {
-        if (isOptionsObj(schemas)) {
-          options = schemas;
-          schemas = {};
-        }
-      }
-      this.__opts__ = assign({}, defaultOptions, options);
-      this.__index__ = -1;
-      this.__last_index__ = -1;
-      this.__schema__ = "";
-      this.__text_cache__ = "";
-      this.__schemas__ = assign({}, defaultSchemas, schemas);
-      this.__compiled__ = {};
-      this.__tlds__ = tlds_default;
-      this.__tlds_replaced__ = false;
-      this.re = {};
-      compile(this);
-    }
-    LinkifyIt.prototype.add = function add(schema, definition) {
-      this.__schemas__[schema] = definition;
-      compile(this);
-      return this;
-    };
-    LinkifyIt.prototype.set = function set(options) {
-      this.__opts__ = assign(this.__opts__, options);
-      return this;
-    };
-    LinkifyIt.prototype.test = function test(text2) {
-      this.__text_cache__ = text2;
-      this.__index__ = -1;
-      if (!text2.length) {
-        return false;
-      }
-      var m, ml, me, len, shift, next, re, tld_pos, at_pos;
-      if (this.re.schema_test.test(text2)) {
-        re = this.re.schema_search;
-        re.lastIndex = 0;
-        while ((m = re.exec(text2)) !== null) {
-          len = this.testSchemaAt(text2, m[2], re.lastIndex);
-          if (len) {
-            this.__schema__ = m[2];
-            this.__index__ = m.index + m[1].length;
-            this.__last_index__ = m.index + m[0].length + len;
-            break;
-          }
-        }
-      }
-      if (this.__opts__.fuzzyLink && this.__compiled__["http:"]) {
-        tld_pos = text2.search(this.re.host_fuzzy_test);
-        if (tld_pos >= 0) {
-          if (this.__index__ < 0 || tld_pos < this.__index__) {
-            if ((ml = text2.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) !== null) {
-              shift = ml.index + ml[1].length;
-              if (this.__index__ < 0 || shift < this.__index__) {
-                this.__schema__ = "";
-                this.__index__ = shift;
-                this.__last_index__ = ml.index + ml[0].length;
-              }
-            }
-          }
-        }
-      }
-      if (this.__opts__.fuzzyEmail && this.__compiled__["mailto:"]) {
-        at_pos = text2.indexOf("@");
-        if (at_pos >= 0) {
-          if ((me = text2.match(this.re.email_fuzzy)) !== null) {
-            shift = me.index + me[1].length;
-            next = me.index + me[0].length;
-            if (this.__index__ < 0 || shift < this.__index__ || shift === this.__index__ && next > this.__last_index__) {
-              this.__schema__ = "mailto:";
-              this.__index__ = shift;
-              this.__last_index__ = next;
-            }
-          }
-        }
-      }
-      return this.__index__ >= 0;
-    };
-    LinkifyIt.prototype.pretest = function pretest(text2) {
-      return this.re.pretest.test(text2);
-    };
-    LinkifyIt.prototype.testSchemaAt = function testSchemaAt(text2, schema, pos) {
-      if (!this.__compiled__[schema.toLowerCase()]) {
-        return 0;
-      }
-      return this.__compiled__[schema.toLowerCase()].validate(text2, pos, this);
-    };
-    LinkifyIt.prototype.match = function match(text2) {
-      var shift = 0, result = [];
-      if (this.__index__ >= 0 && this.__text_cache__ === text2) {
-        result.push(createMatch(this, shift));
-        shift = this.__last_index__;
-      }
-      var tail = shift ? text2.slice(shift) : text2;
-      while (this.test(tail)) {
-        result.push(createMatch(this, shift));
-        tail = tail.slice(this.__last_index__);
-        shift += this.__last_index__;
-      }
-      if (result.length) {
-        return result;
-      }
-      return null;
-    };
-    LinkifyIt.prototype.matchAtStart = function matchAtStart(text2) {
-      this.__text_cache__ = text2;
-      this.__index__ = -1;
-      if (!text2.length)
-        return null;
-      var m = this.re.schema_at_start.exec(text2);
-      if (!m)
-        return null;
-      var len = this.testSchemaAt(text2, m[2], m[0].length);
-      if (!len)
-        return null;
-      this.__schema__ = m[2];
-      this.__index__ = m.index + m[1].length;
-      this.__last_index__ = m.index + m[0].length + len;
-      return createMatch(this, 0);
-    };
-    LinkifyIt.prototype.tlds = function tlds(list, keepOld) {
-      list = Array.isArray(list) ? list : [list];
-      if (!keepOld) {
-        this.__tlds__ = list.slice();
-        this.__tlds_replaced__ = true;
-        compile(this);
-        return this;
-      }
-      this.__tlds__ = this.__tlds__.concat(list).sort().filter(function(el, idx, arr) {
-        return el !== arr[idx - 1];
-      }).reverse();
-      compile(this);
-      return this;
-    };
-    LinkifyIt.prototype.normalize = function normalize(match) {
-      if (!match.schema) {
-        match.url = "http://" + match.url;
-      }
-      if (match.schema === "mailto:" && !/^mailto:/i.test(match.url)) {
-        match.url = "mailto:" + match.url;
-      }
-    };
-    LinkifyIt.prototype.onCompile = function onCompile() {
-    };
-    module2.exports = LinkifyIt;
-  }
-});
-
-// node_modules/markdown-it/lib/presets/default.js
-var require_default = __commonJS({
-  "node_modules/markdown-it/lib/presets/default.js"(exports, module2) {
-    "use strict";
-    module2.exports = {
-      options: {
-        html: false,
-        xhtmlOut: false,
-        breaks: false,
-        langPrefix: "language-",
-        linkify: false,
-        typographer: false,
-        quotes: "\u201C\u201D\u2018\u2019",
-        highlight: null,
-        maxNesting: 100
-      },
-      components: {
-        core: {},
-        block: {},
-        inline: {}
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/presets/zero.js
-var require_zero = __commonJS({
-  "node_modules/markdown-it/lib/presets/zero.js"(exports, module2) {
-    "use strict";
-    module2.exports = {
-      options: {
-        html: false,
-        xhtmlOut: false,
-        breaks: false,
-        langPrefix: "language-",
-        linkify: false,
-        typographer: false,
-        quotes: "\u201C\u201D\u2018\u2019",
-        highlight: null,
-        maxNesting: 20
-      },
-      components: {
-        core: {
-          rules: [
-            "normalize",
-            "block",
-            "inline",
-            "text_join"
-          ]
-        },
-        block: {
-          rules: [
-            "paragraph"
-          ]
-        },
-        inline: {
-          rules: [
-            "text"
-          ],
-          rules2: [
-            "balance_pairs",
-            "fragments_join"
-          ]
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/presets/commonmark.js
-var require_commonmark = __commonJS({
-  "node_modules/markdown-it/lib/presets/commonmark.js"(exports, module2) {
-    "use strict";
-    module2.exports = {
-      options: {
-        html: true,
-        xhtmlOut: true,
-        breaks: false,
-        langPrefix: "language-",
-        linkify: false,
-        typographer: false,
-        quotes: "\u201C\u201D\u2018\u2019",
-        highlight: null,
-        maxNesting: 20
-      },
-      components: {
-        core: {
-          rules: [
-            "normalize",
-            "block",
-            "inline",
-            "text_join"
-          ]
-        },
-        block: {
-          rules: [
-            "blockquote",
-            "code",
-            "fence",
-            "heading",
-            "hr",
-            "html_block",
-            "lheading",
-            "list",
-            "reference",
-            "paragraph"
-          ]
-        },
-        inline: {
-          rules: [
-            "autolink",
-            "backticks",
-            "emphasis",
-            "entity",
-            "escape",
-            "html_inline",
-            "image",
-            "link",
-            "newline",
-            "text"
-          ],
-          rules2: [
-            "balance_pairs",
-            "emphasis",
-            "fragments_join"
-          ]
-        }
-      }
-    };
-  }
-});
-
-// node_modules/markdown-it/lib/index.js
-var require_lib = __commonJS({
-  "node_modules/markdown-it/lib/index.js"(exports, module2) {
-    "use strict";
-    var utils2 = require_utils();
-    var helpers = require_helpers();
-    var Renderer = require_renderer();
-    var ParserCore = require_parser_core();
-    var ParserBlock = require_parser_block();
-    var ParserInline = require_parser_inline();
-    var LinkifyIt = require_linkify_it();
-    var mdurl = require_mdurl();
-    var punycode = require("punycode");
-    var config = {
-      default: require_default(),
-      zero: require_zero(),
-      commonmark: require_commonmark()
-    };
-    var BAD_PROTO_RE = /^(vbscript|javascript|file|data):/;
-    var GOOD_DATA_RE = /^data:image\/(gif|png|jpeg|webp);/;
-    function validateLink(url) {
-      var str = url.trim().toLowerCase();
-      return BAD_PROTO_RE.test(str) ? GOOD_DATA_RE.test(str) ? true : false : true;
-    }
-    var RECODE_HOSTNAME_FOR = ["http:", "https:", "mailto:"];
-    function normalizeLink(url) {
-      var parsed = mdurl.parse(url, true);
-      if (parsed.hostname) {
-        if (!parsed.protocol || RECODE_HOSTNAME_FOR.indexOf(parsed.protocol) >= 0) {
-          try {
-            parsed.hostname = punycode.toASCII(parsed.hostname);
-          } catch (er) {
-          }
-        }
-      }
-      return mdurl.encode(mdurl.format(parsed));
-    }
-    function normalizeLinkText(url) {
-      var parsed = mdurl.parse(url, true);
-      if (parsed.hostname) {
-        if (!parsed.protocol || RECODE_HOSTNAME_FOR.indexOf(parsed.protocol) >= 0) {
-          try {
-            parsed.hostname = punycode.toUnicode(parsed.hostname);
-          } catch (er) {
-          }
-        }
-      }
-      return mdurl.decode(mdurl.format(parsed), mdurl.decode.defaultChars + "%");
-    }
-    function MarkdownIt(presetName, options) {
-      if (!(this instanceof MarkdownIt)) {
-        return new MarkdownIt(presetName, options);
-      }
-      if (!options) {
-        if (!utils2.isString(presetName)) {
-          options = presetName || {};
-          presetName = "default";
-        }
-      }
-      this.inline = new ParserInline();
-      this.block = new ParserBlock();
-      this.core = new ParserCore();
-      this.renderer = new Renderer();
-      this.linkify = new LinkifyIt();
-      this.validateLink = validateLink;
-      this.normalizeLink = normalizeLink;
-      this.normalizeLinkText = normalizeLinkText;
-      this.utils = utils2;
-      this.helpers = utils2.assign({}, helpers);
-      this.options = {};
-      this.configure(presetName);
-      if (options) {
-        this.set(options);
-      }
-    }
-    MarkdownIt.prototype.set = function(options) {
-      utils2.assign(this.options, options);
-      return this;
-    };
-    MarkdownIt.prototype.configure = function(presets) {
-      var self = this, presetName;
-      if (utils2.isString(presets)) {
-        presetName = presets;
-        presets = config[presetName];
-        if (!presets) {
-          throw new Error('Wrong `markdown-it` preset "' + presetName + '", check name');
-        }
-      }
-      if (!presets) {
-        throw new Error("Wrong `markdown-it` preset, can't be empty");
-      }
-      if (presets.options) {
-        self.set(presets.options);
-      }
-      if (presets.components) {
-        Object.keys(presets.components).forEach(function(name) {
-          if (presets.components[name].rules) {
-            self[name].ruler.enableOnly(presets.components[name].rules);
-          }
-          if (presets.components[name].rules2) {
-            self[name].ruler2.enableOnly(presets.components[name].rules2);
-          }
-        });
-      }
-      return this;
-    };
-    MarkdownIt.prototype.enable = function(list, ignoreInvalid) {
-      var result = [];
-      if (!Array.isArray(list)) {
-        list = [list];
-      }
-      ["core", "block", "inline"].forEach(function(chain) {
-        result = result.concat(this[chain].ruler.enable(list, true));
-      }, this);
-      result = result.concat(this.inline.ruler2.enable(list, true));
-      var missed = list.filter(function(name) {
-        return result.indexOf(name) < 0;
-      });
-      if (missed.length && !ignoreInvalid) {
-        throw new Error("MarkdownIt. Failed to enable unknown rule(s): " + missed);
-      }
-      return this;
-    };
-    MarkdownIt.prototype.disable = function(list, ignoreInvalid) {
-      var result = [];
-      if (!Array.isArray(list)) {
-        list = [list];
-      }
-      ["core", "block", "inline"].forEach(function(chain) {
-        result = result.concat(this[chain].ruler.disable(list, true));
-      }, this);
-      result = result.concat(this.inline.ruler2.disable(list, true));
-      var missed = list.filter(function(name) {
-        return result.indexOf(name) < 0;
-      });
-      if (missed.length && !ignoreInvalid) {
-        throw new Error("MarkdownIt. Failed to disable unknown rule(s): " + missed);
-      }
-      return this;
-    };
-    MarkdownIt.prototype.use = function(plugin) {
-      var args = [this].concat(Array.prototype.slice.call(arguments, 1));
-      plugin.apply(plugin, args);
-      return this;
-    };
-    MarkdownIt.prototype.parse = function(src, env) {
-      if (typeof src !== "string") {
-        throw new Error("Input data should be a String");
-      }
-      var state = new this.core.State(src, this, env);
-      this.core.process(state);
-      return state.tokens;
-    };
-    MarkdownIt.prototype.render = function(src, env) {
-      env = env || {};
-      return this.renderer.render(this.parse(src, env), this.options, env);
-    };
-    MarkdownIt.prototype.parseInline = function(src, env) {
-      var state = new this.core.State(src, this, env);
-      state.inlineMode = true;
-      this.core.process(state);
-      return state.tokens;
-    };
-    MarkdownIt.prototype.renderInline = function(src, env) {
-      env = env || {};
-      return this.renderer.render(this.parseInline(src, env), this.options, env);
-    };
-    module2.exports = MarkdownIt;
-  }
-});
-
-// node_modules/markdown-it/index.js
-var require_markdown_it = __commonJS({
-  "node_modules/markdown-it/index.js"(exports, module2) {
-    "use strict";
-    module2.exports = require_lib();
-  }
-});
-
 // node_modules/minimatch/lib/path.js
 var require_path = __commonJS({
   "node_modules/minimatch/lib/path.js"(exports, module2) {
@@ -4943,10 +102,8 @@ var require_balanced_match = __commonJS({
     "use strict";
     module2.exports = balanced;
     function balanced(a, b, str) {
-      if (a instanceof RegExp)
-        a = maybeMatch(a, str);
-      if (b instanceof RegExp)
-        b = maybeMatch(b, str);
+      if (a instanceof RegExp) a = maybeMatch(a, str);
+      if (b instanceof RegExp) b = maybeMatch(b, str);
       var r = range(a, b, str);
       return r && {
         start: r[0],
@@ -5007,6 +164,10 @@ var require_brace_expansion = __commonJS({
     var escClose = "\0CLOSE" + Math.random() + "\0";
     var escComma = "\0COMMA" + Math.random() + "\0";
     var escPeriod = "\0PERIOD" + Math.random() + "\0";
+    var EXPANSION_MAX = 1e5;
+    var EXPANSION_MAX_LENGTH = 4e6;
+    var EXPANSION_MAX_DEPTH = 1e3;
+    var EXPANSION_MAX_REWRITES = 1e3;
     function numeric(str) {
       return parseInt(str, 10) == str ? parseInt(str, 10) : str.charCodeAt(0);
     }
@@ -5016,33 +177,49 @@ var require_brace_expansion = __commonJS({
     function unescapeBraces(str) {
       return str.split(escSlash).join("\\").split(escOpen).join("{").split(escClose).join("}").split(escComma).join(",").split(escPeriod).join(".");
     }
-    function parseCommaParts(str) {
-      if (!str)
-        return [""];
-      var parts = [];
-      var m = balanced("{", "}", str);
-      if (!m)
-        return str.split(",");
-      var pre = m.pre;
-      var body = m.body;
-      var post = m.post;
-      var p = pre.split(",");
-      p[p.length - 1] += "{" + body + "}";
-      var postParts = parseCommaParts(post);
-      if (post.length) {
-        p[p.length - 1] += postParts.shift();
-        p.push.apply(p, postParts);
+    function pushAll(target, items) {
+      for (var i = 0; i < items.length; i++) {
+        target.push(items[i]);
       }
-      parts.push.apply(parts, p);
-      return parts;
     }
-    function expandTop(str) {
+    function parseCommaParts(str) {
+      var parts = [];
+      var carry = "";
+      for (; ; ) {
+        var m = balanced("{", "}", str);
+        if (!m) {
+          var tail = str.split(",");
+          tail[0] = carry + tail[0];
+          pushAll(parts, tail);
+          return parts;
+        }
+        var pre = m.pre;
+        var body = m.body;
+        var post = m.post;
+        var p = pre.split(",");
+        p[0] = carry + p[0];
+        p[p.length - 1] += "{" + body + "}";
+        if (!post.length) {
+          pushAll(parts, p);
+          return parts;
+        }
+        carry = p.pop();
+        pushAll(parts, p);
+        str = post;
+      }
+    }
+    function expandTop(str, options) {
       if (!str)
         return [];
+      options = options || {};
+      var max = options.max == null ? EXPANSION_MAX : options.max;
+      var maxLength = options.maxLength == null ? EXPANSION_MAX_LENGTH : options.maxLength;
+      var maxDepth = options.maxDepth == null ? EXPANSION_MAX_DEPTH : options.maxDepth;
+      var maxRewrites = options.maxRewrites == null ? EXPANSION_MAX_REWRITES : options.maxRewrites;
       if (str.substr(0, 2) === "{}") {
         str = "\\{\\}" + str.substr(2);
       }
-      return expand(escapeBraces(str), true).map(unescapeBraces);
+      return expand(escapeBraces(str), max, maxLength, maxDepth, 0, maxRewrites, true).map(unescapeBraces);
     }
     function embrace(str) {
       return "{" + str + "}";
@@ -5056,94 +233,165 @@ var require_brace_expansion = __commonJS({
     function gte(i, y) {
       return i >= y;
     }
-    function expand(str, isTop) {
-      var expansions = [];
-      var m = balanced("{", "}", str);
-      if (!m)
-        return [str];
-      var pre = m.pre;
-      var post = m.post.length ? expand(m.post, false) : [""];
-      if (/\$$/.test(m.pre)) {
-        for (var k = 0; k < post.length; k++) {
-          var expansion = pre + "{" + m.body + "}" + post[k];
-          expansions.push(expansion);
+    function combine(acc, pre, values, max, maxLength, dropEmpties) {
+      var out = [];
+      var length = 0;
+      for (var a = 0; a < acc.length; a++) {
+        for (var v = 0; v < values.length; v++) {
+          if (out.length >= max) return out;
+          var expansion = acc[a] + pre + values[v];
+          if (dropEmpties && !expansion) continue;
+          if (length + expansion.length > maxLength) return out;
+          out.push(expansion);
+          length += expansion.length;
         }
-      } else {
+      }
+      return out;
+    }
+    function expandSequence(body, isAlphaSequence, max, maxLength) {
+      var n = body.split(/\.\./);
+      var N = [];
+      if (n[0] === void 0 || n[1] === void 0) {
+        return N;
+      }
+      var x = numeric(n[0]);
+      var y = numeric(n[1]);
+      var width = Math.max(n[0].length, n[1].length);
+      var incr = n.length === 3 && n[2] !== void 0 ? Math.max(Math.abs(numeric(n[2])), 1) : 1;
+      var test = lte;
+      var reverse = y < x;
+      if (reverse) {
+        incr *= -1;
+        test = gte;
+      }
+      var pad = n.some(isPadded);
+      var length = 0;
+      for (var i = x; test(i, y) && N.length < max; i += incr) {
+        var c;
+        if (isAlphaSequence) {
+          c = String.fromCharCode(i);
+          if (c === "\\") {
+            c = "";
+          }
+        } else {
+          c = String(i);
+          if (pad) {
+            var need = width - c.length;
+            if (need > 0) {
+              var z = new Array(need + 1).join("0");
+              if (i < 0) {
+                c = "-" + z + c.slice(1);
+              } else {
+                c = z + c;
+              }
+            }
+          }
+        }
+        if (length + c.length > maxLength) break;
+        N.push(c);
+        length += c.length;
+      }
+      return N;
+    }
+    function expand(str, max, maxLength, maxDepth, depth, maxRewrites, isTop) {
+      if (depth > maxDepth) {
+        return [str];
+      }
+      var acc = [""];
+      var rewrites = 0;
+      var dropEmpties = false;
+      var firstGroup = true;
+      for (; ; ) {
+        const m = balanced("{", "}", str);
+        if (!m) {
+          return combine(acc, str, [""], max, maxLength, dropEmpties);
+        }
+        const pre = m.pre;
+        if (/\$$/.test(pre)) {
+          acc = combine(
+            acc,
+            pre + "{" + m.body + "}",
+            [""],
+            max,
+            maxLength,
+            dropEmpties && !m.post.length
+          );
+          firstGroup = false;
+          if (!m.post.length) break;
+          str = m.post;
+          continue;
+        }
         var isNumericSequence = /^-?\d+\.\.-?\d+(?:\.\.-?\d+)?$/.test(m.body);
         var isAlphaSequence = /^[a-zA-Z]\.\.[a-zA-Z](?:\.\.-?\d+)?$/.test(m.body);
         var isSequence = isNumericSequence || isAlphaSequence;
         var isOptions = m.body.indexOf(",") >= 0;
         if (!isSequence && !isOptions) {
-          if (m.post.match(/,.*\}/)) {
+          if (rewrites < maxRewrites && m.post.match(/,(?!,).*\}/)) {
+            rewrites++;
             str = m.pre + "{" + m.body + escClose + m.post;
-            return expand(str);
+            isTop = true;
+            continue;
           }
-          return [str];
+          return combine(
+            acc,
+            pre + "{" + m.body + "}" + m.post,
+            [""],
+            max,
+            maxLength,
+            dropEmpties
+          );
         }
-        var n;
+        if (firstGroup) {
+          dropEmpties = isTop && !isSequence;
+          firstGroup = false;
+        }
+        var values;
         if (isSequence) {
-          n = m.body.split(/\.\./);
+          values = expandSequence(m.body, isAlphaSequence, max, maxLength);
         } else {
-          n = parseCommaParts(m.body);
-          if (n.length === 1) {
-            n = expand(n[0], false).map(embrace);
+          var n = parseCommaParts(m.body);
+          if (n.length === 1 && n[0] !== void 0) {
+            n = expand(n[0], max, maxLength, maxDepth, depth + 1, maxRewrites, false).map(embrace);
             if (n.length === 1) {
-              return post.map(function(p) {
-                return m.pre + n[0] + p;
-              });
+              acc = combine(
+                acc,
+                pre + n[0],
+                [""],
+                max,
+                maxLength,
+                dropEmpties && !m.post.length
+              );
+              if (!m.post.length) break;
+              str = m.post;
+              continue;
             }
           }
-        }
-        var N;
-        if (isSequence) {
-          var x = numeric(n[0]);
-          var y = numeric(n[1]);
-          var width = Math.max(n[0].length, n[1].length);
-          var incr = n.length == 3 ? Math.abs(numeric(n[2])) : 1;
-          var test = lte;
-          var reverse = y < x;
-          if (reverse) {
-            incr *= -1;
-            test = gte;
+          var dropsEmpties = dropEmpties && !m.post.length && !pre;
+          for (var d = 0; dropsEmpties && d < acc.length; d++) {
+            if (acc[d]) {
+              dropsEmpties = false;
+            }
           }
-          var pad = n.some(isPadded);
-          N = [];
-          for (var i = x; test(i, y); i += incr) {
-            var c;
-            if (isAlphaSequence) {
-              c = String.fromCharCode(i);
-              if (c === "\\")
-                c = "";
-            } else {
-              c = String(i);
-              if (pad) {
-                var need = width - c.length;
-                if (need > 0) {
-                  var z = new Array(need + 1).join("0");
-                  if (i < 0)
-                    c = "-" + z + c.slice(1);
-                  else
-                    c = z + c;
-                }
+          values = [];
+          var valuesLength = 0;
+          outer: for (var j = 0; j < n.length; j++) {
+            var expanded = expand(n[j], max, maxLength, maxDepth, depth + 1, maxRewrites, false);
+            for (var k = 0; k < expanded.length; k++) {
+              var v = expanded[k];
+              if (dropsEmpties && !v) continue;
+              if (values.length >= max || valuesLength + v.length > maxLength) {
+                break outer;
               }
+              values.push(v);
+              valuesLength += v.length;
             }
-            N.push(c);
-          }
-        } else {
-          N = [];
-          for (var j = 0; j < n.length; j++) {
-            N.push.apply(N, expand(n[j], false));
           }
         }
-        for (var j = 0; j < N.length; j++) {
-          for (var k = 0; k < post.length; k++) {
-            var expansion = pre + N[j] + post[k];
-            if (!isTop || isSequence || expansion)
-              expansions.push(expansion);
-          }
-        }
+        acc = combine(acc, pre, values, max, maxLength, dropEmpties && !m.post.length);
+        if (!m.post.length) break;
+        str = m.post;
       }
-      return expansions;
+      return acc;
     }
   }
 });
@@ -5151,18 +399,18 @@ var require_brace_expansion = __commonJS({
 // node_modules/minimatch/minimatch.js
 var require_minimatch = __commonJS({
   "node_modules/minimatch/minimatch.js"(exports, module2) {
-    var minimatch2 = module2.exports = (p, pattern, options = {}) => {
+    var minimatch = module2.exports = (p, pattern, options = {}) => {
       assertValidPattern(pattern);
       if (!options.nocomment && pattern.charAt(0) === "#") {
         return false;
       }
-      return new Minimatch(pattern, options).match(p);
+      return new Minimatch2(pattern, options).match(p);
     };
-    module2.exports = minimatch2;
+    module2.exports = minimatch;
     var path = require_path();
-    minimatch2.sep = path.sep;
-    var GLOBSTAR = Symbol("globstar **");
-    minimatch2.GLOBSTAR = GLOBSTAR;
+    minimatch.sep = path.sep;
+    var GLOBSTAR = /* @__PURE__ */ Symbol("globstar **");
+    minimatch.GLOBSTAR = GLOBSTAR;
     var expand = require_brace_expansion();
     var plTypes = {
       "!": { open: "(?:(?!(?:", close: "))[^/]*?)" },
@@ -5182,18 +430,18 @@ var require_minimatch = __commonJS({
     var reSpecials = charSet("().*{}+?[]^$\\!");
     var addPatternStartSet = charSet("[.(");
     var slashSplit = /\/+/;
-    minimatch2.filter = (pattern, options = {}) => (p, i, list) => minimatch2(p, pattern, options);
+    minimatch.filter = (pattern, options = {}) => (p, i, list2) => minimatch(p, pattern, options);
     var ext = (a, b = {}) => {
       const t = {};
       Object.keys(a).forEach((k) => t[k] = a[k]);
       Object.keys(b).forEach((k) => t[k] = b[k]);
       return t;
     };
-    minimatch2.defaults = (def) => {
+    minimatch.defaults = (def) => {
       if (!def || typeof def !== "object" || !Object.keys(def).length) {
-        return minimatch2;
+        return minimatch;
       }
-      const orig = minimatch2;
+      const orig = minimatch;
       const m = (p, pattern, options) => orig(p, pattern, ext(def, options));
       m.Minimatch = class Minimatch extends orig.Minimatch {
         constructor(pattern, options) {
@@ -5205,10 +453,10 @@ var require_minimatch = __commonJS({
       m.defaults = (options) => orig.defaults(ext(def, options));
       m.makeRe = (pattern, options) => orig.makeRe(pattern, ext(def, options));
       m.braceExpand = (pattern, options) => orig.braceExpand(pattern, ext(def, options));
-      m.match = (list, pattern, options) => orig.match(list, pattern, ext(def, options));
+      m.match = (list2, pattern, options) => orig.match(list2, pattern, ext(def, options));
       return m;
     };
-    minimatch2.braceExpand = (pattern, options) => braceExpand(pattern, options);
+    minimatch.braceExpand = (pattern, options) => braceExpand(pattern, options);
     var braceExpand = (pattern, options = {}) => {
       assertValidPattern(pattern);
       if (options.nobrace || !/\{(?:(?!\{).)*\}/.test(pattern)) {
@@ -5225,24 +473,26 @@ var require_minimatch = __commonJS({
         throw new TypeError("pattern is too long");
       }
     };
-    var SUBPARSE = Symbol("subparse");
-    minimatch2.makeRe = (pattern, options) => new Minimatch(pattern, options || {}).makeRe();
-    minimatch2.match = (list, pattern, options = {}) => {
-      const mm = new Minimatch(pattern, options);
-      list = list.filter((f) => mm.match(f));
-      if (mm.options.nonull && !list.length) {
-        list.push(pattern);
+    var SUBPARSE = /* @__PURE__ */ Symbol("subparse");
+    minimatch.makeRe = (pattern, options) => new Minimatch2(pattern, options || {}).makeRe();
+    minimatch.match = (list2, pattern, options = {}) => {
+      const mm = new Minimatch2(pattern, options);
+      list2 = list2.filter((f) => mm.match(f));
+      if (mm.options.nonull && !list2.length) {
+        list2.push(pattern);
       }
-      return list;
+      return list2;
     };
     var globUnescape = (s) => s.replace(/\\(.)/g, "$1");
+    var charUnescape = (s) => s.replace(/\\([^-\]])/g, "$1");
     var regExpEscape = (s) => s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
-    var Minimatch = class {
+    var braExpEscape = (s) => s.replace(/[[\]\\]/g, "\\$&");
+    var Minimatch2 = class {
       constructor(pattern, options) {
         assertValidPattern(pattern);
-        if (!options)
-          options = {};
+        if (!options) options = {};
         this.options = options;
+        this.maxGlobstarRecursion = options.maxGlobstarRecursion !== void 0 ? options.maxGlobstarRecursion : 200;
         this.set = [];
         this.pattern = pattern;
         this.windowsPathsNoEscape = !!options.windowsPathsNoEscape || options.allowWindowsEscape === false;
@@ -5271,8 +521,7 @@ var require_minimatch = __commonJS({
         }
         this.parseNegate();
         let set = this.globSet = this.braceExpand();
-        if (options.debug)
-          this.debug = (...args) => console.error(...args);
+        if (options.debug) this.debug = (...args) => console.error(...args);
         this.debug(this.pattern, set);
         set = this.globParts = set.map((s) => s.split(slashSplit));
         this.debug(this.pattern, set);
@@ -5283,8 +532,7 @@ var require_minimatch = __commonJS({
         this.set = set;
       }
       parseNegate() {
-        if (this.options.nonegate)
-          return;
+        if (this.options.nonegate) return;
         const pattern = this.pattern;
         let negate = false;
         let negateOffset = 0;
@@ -5292,56 +540,155 @@ var require_minimatch = __commonJS({
           negate = !negate;
           negateOffset++;
         }
-        if (negateOffset)
-          this.pattern = pattern.substr(negateOffset);
+        if (negateOffset) this.pattern = pattern.slice(negateOffset);
         this.negate = negate;
       }
+      // set partial to true to test if, for example,
+      // "/a/b" matches the start of "/*/b/*/d"
+      // Partial means, if you run out of file before you run
+      // out of pattern, then that's fine, as long as all
+      // the parts match.
       matchOne(file, pattern, partial) {
-        var options = this.options;
-        this.debug("matchOne", { "this": this, file, pattern });
-        this.debug("matchOne", file.length, pattern.length);
-        for (var fi = 0, pi = 0, fl = file.length, pl = pattern.length; fi < fl && pi < pl; fi++, pi++) {
-          this.debug("matchOne loop");
-          var p = pattern[pi];
-          var f = file[fi];
-          this.debug(pattern, p, f);
-          if (p === false)
-            return false;
-          if (p === GLOBSTAR) {
-            this.debug("GLOBSTAR", [pattern, p, f]);
-            var fr = fi;
-            var pr = pi + 1;
-            if (pr === pl) {
-              this.debug("** at the end");
-              for (; fi < fl; fi++) {
-                if (file[fi] === "." || file[fi] === ".." || !options.dot && file[fi].charAt(0) === ".")
-                  return false;
-              }
-              return true;
-            }
-            while (fr < fl) {
-              var swallowee = file[fr];
-              this.debug("\nglobstar while", file, fr, pattern, pr, swallowee);
-              if (this.matchOne(file.slice(fr), pattern.slice(pr), partial)) {
-                this.debug("globstar found match!", fr, fl, swallowee);
-                return true;
-              } else {
-                if (swallowee === "." || swallowee === ".." || !options.dot && swallowee.charAt(0) === ".") {
-                  this.debug("dot detected!", file, fr, pattern, pr);
-                  break;
-                }
-                this.debug("globstar swallow a segment, and continue");
-                fr++;
-              }
-            }
-            if (partial) {
-              this.debug("\n>>> no match, partial?", file, fr, pattern, pr);
-              if (fr === fl)
-                return true;
-            }
+        if (pattern.indexOf(GLOBSTAR) !== -1) {
+          return this._matchGlobstar(file, pattern, partial, 0, 0);
+        }
+        return this._matchOne(file, pattern, partial, 0, 0);
+      }
+      _matchGlobstar(file, pattern, partial, fileIndex, patternIndex) {
+        let firstgs = -1;
+        for (let i = patternIndex; i < pattern.length; i++) {
+          if (pattern[i] === GLOBSTAR) {
+            firstgs = i;
+            break;
+          }
+        }
+        let lastgs = -1;
+        for (let i = pattern.length - 1; i >= 0; i--) {
+          if (pattern[i] === GLOBSTAR) {
+            lastgs = i;
+            break;
+          }
+        }
+        const head = pattern.slice(patternIndex, firstgs);
+        const body = partial ? pattern.slice(firstgs + 1) : pattern.slice(firstgs + 1, lastgs);
+        const tail = partial ? [] : pattern.slice(lastgs + 1);
+        if (head.length) {
+          const fileHead = file.slice(fileIndex, fileIndex + head.length);
+          if (!this._matchOne(fileHead, head, partial, 0, 0)) {
             return false;
           }
-          var hit;
+          fileIndex += head.length;
+        }
+        let fileTailMatch = 0;
+        if (tail.length) {
+          if (tail.length + fileIndex > file.length) return false;
+          const tailStart = file.length - tail.length;
+          if (this._matchOne(file, tail, partial, tailStart, 0)) {
+            fileTailMatch = tail.length;
+          } else {
+            if (file[file.length - 1] !== "" || fileIndex + tail.length === file.length) {
+              return false;
+            }
+            if (!this._matchOne(file, tail, partial, tailStart - 1, 0)) {
+              return false;
+            }
+            fileTailMatch = tail.length + 1;
+          }
+        }
+        if (!body.length) {
+          let sawSome = !!fileTailMatch;
+          for (let i = fileIndex; i < file.length - fileTailMatch; i++) {
+            const f = String(file[i]);
+            sawSome = true;
+            if (f === "." || f === ".." || !this.options.dot && f.charAt(0) === ".") {
+              return false;
+            }
+          }
+          return partial || sawSome;
+        }
+        const bodySegments = [[[], 0]];
+        let currentBody = bodySegments[0];
+        let nonGsParts = 0;
+        const nonGsPartsSums = [0];
+        for (const b of body) {
+          if (b === GLOBSTAR) {
+            nonGsPartsSums.push(nonGsParts);
+            currentBody = [[], 0];
+            bodySegments.push(currentBody);
+          } else {
+            currentBody[0].push(b);
+            nonGsParts++;
+          }
+        }
+        let idx = bodySegments.length - 1;
+        const fileLength = file.length - fileTailMatch;
+        for (const b of bodySegments) {
+          b[1] = fileLength - (nonGsPartsSums[idx--] + b[0].length);
+        }
+        return !!this._matchGlobStarBodySections(
+          file,
+          bodySegments,
+          fileIndex,
+          0,
+          partial,
+          0,
+          !!fileTailMatch
+        );
+      }
+      // return false for "nope, not matching"
+      // return null for "not matching, cannot keep trying"
+      _matchGlobStarBodySections(file, bodySegments, fileIndex, bodyIndex, partial, globStarDepth, sawTail) {
+        const bs = bodySegments[bodyIndex];
+        if (!bs) {
+          for (let i = fileIndex; i < file.length; i++) {
+            sawTail = true;
+            const f = file[i];
+            if (f === "." || f === ".." || !this.options.dot && f.charAt(0) === ".") {
+              return false;
+            }
+          }
+          return sawTail;
+        }
+        const [body, after] = bs;
+        while (fileIndex <= after) {
+          const m = this._matchOne(
+            file.slice(0, fileIndex + body.length),
+            body,
+            partial,
+            fileIndex,
+            0
+          );
+          if (m && globStarDepth < this.maxGlobstarRecursion) {
+            const sub = this._matchGlobStarBodySections(
+              file,
+              bodySegments,
+              fileIndex + body.length,
+              bodyIndex + 1,
+              partial,
+              globStarDepth + 1,
+              sawTail
+            );
+            if (sub !== false) {
+              return sub;
+            }
+          }
+          const f = file[fileIndex];
+          if (f === "." || f === ".." || !this.options.dot && f.charAt(0) === ".") {
+            return false;
+          }
+          fileIndex++;
+        }
+        return partial || null;
+      }
+      _matchOne(file, pattern, partial, fileIndex, patternIndex) {
+        let fi, pi, fl, pl;
+        for (fi = fileIndex, pi = patternIndex, fl = file.length, pl = pattern.length; fi < fl && pi < pl; fi++, pi++) {
+          this.debug("matchOne loop");
+          const p = pattern[pi];
+          const f = file[fi];
+          this.debug(pattern, p, f);
+          if (p === false || p === GLOBSTAR) return false;
+          let hit;
           if (typeof p === "string") {
             hit = f === p;
             this.debug("string match", p, f, hit);
@@ -5349,8 +696,7 @@ var require_minimatch = __commonJS({
             hit = f.match(p);
             this.debug("pattern match", p, f, hit);
           }
-          if (!hit)
-            return false;
+          if (!hit) return false;
         }
         if (fi === fl && pi === pl) {
           return true;
@@ -5373,10 +719,9 @@ var require_minimatch = __commonJS({
           else
             pattern = "*";
         }
-        if (pattern === "")
-          return "";
+        if (pattern === "") return "";
         let re = "";
-        let hasMagic = !!options.nocase;
+        let hasMagic = false;
         let escaping = false;
         const patternListStack = [];
         const negativeLists = [];
@@ -5387,7 +732,10 @@ var require_minimatch = __commonJS({
         let cs;
         let pl;
         let sp;
-        const patternStart = pattern.charAt(0) === "." ? "" : options.dot ? "(?!(?:^|\\/)\\.{1,2}(?:$|\\/))" : "(?!\\.)";
+        let dotTravAllowed = pattern.charAt(0) === ".";
+        let dotFileAllowed = options.dot || dotTravAllowed;
+        const patternStart = () => dotTravAllowed ? "" : dotFileAllowed ? "(?!(?:^|\\/)\\.{1,2}(?:$|\\/))" : "(?!\\.)";
+        const subPatternStart = (p) => p.charAt(0) === "." ? "" : options.dot ? "(?!(?:^|\\/)\\.{1,2}(?:$|\\/))" : "(?!\\.)";
         const clearStateChar = () => {
           if (stateChar) {
             switch (stateChar) {
@@ -5421,13 +769,20 @@ var require_minimatch = __commonJS({
             continue;
           }
           switch (c) {
+            /* istanbul ignore next */
             case "/": {
               return false;
             }
             case "\\":
+              if (inClass && pattern.charAt(i + 1) === "-") {
+                re += c;
+                continue;
+              }
               clearStateChar();
               escaping = true;
               continue;
+            // the various stateChar values
+            // for the "extglob" stuff.
             case "?":
             case "*":
             case "+":
@@ -5436,18 +791,17 @@ var require_minimatch = __commonJS({
               this.debug("%s	%s %s %j <-- stateChar", pattern, i, re, c);
               if (inClass) {
                 this.debug("  in class");
-                if (c === "!" && i === classStart + 1)
-                  c = "^";
+                if (c === "!" && i === classStart + 1) c = "^";
                 re += c;
                 continue;
               }
+              if (c === "*" && stateChar === "*") continue;
               this.debug("call clearStateChar %j", stateChar);
               clearStateChar();
               stateChar = c;
-              if (options.noext)
-                clearStateChar();
+              if (options.noext) clearStateChar();
               continue;
-            case "(":
+            case "(": {
               if (inClass) {
                 re += "(";
                 continue;
@@ -5456,39 +810,55 @@ var require_minimatch = __commonJS({
                 re += "\\(";
                 continue;
               }
-              patternListStack.push({
+              const plEntry = {
                 type: stateChar,
                 start: i - 1,
                 reStart: re.length,
                 open: plTypes[stateChar].open,
                 close: plTypes[stateChar].close
-              });
-              re += stateChar === "!" ? "(?:(?!(?:" : "(?:";
+              };
+              this.debug(this.pattern, "	", plEntry);
+              patternListStack.push(plEntry);
+              re += plEntry.open;
+              if (plEntry.start === 0 && plEntry.type !== "!") {
+                dotTravAllowed = true;
+                re += subPatternStart(pattern.slice(i + 1));
+              }
               this.debug("plType %j %j", stateChar, re);
               stateChar = false;
               continue;
-            case ")":
-              if (inClass || !patternListStack.length) {
+            }
+            case ")": {
+              const plEntry = patternListStack[patternListStack.length - 1];
+              if (inClass || !plEntry) {
                 re += "\\)";
                 continue;
               }
+              patternListStack.pop();
               clearStateChar();
               hasMagic = true;
-              pl = patternListStack.pop();
+              pl = plEntry;
               re += pl.close;
               if (pl.type === "!") {
-                negativeLists.push(pl);
+                negativeLists.push(Object.assign(pl, { reEnd: re.length }));
               }
-              pl.reEnd = re.length;
               continue;
-            case "|":
-              if (inClass || !patternListStack.length) {
+            }
+            case "|": {
+              const plEntry = patternListStack[patternListStack.length - 1];
+              if (inClass || !plEntry) {
                 re += "\\|";
                 continue;
               }
               clearStateChar();
               re += "|";
+              if (plEntry.start === 0 && plEntry.type !== "!") {
+                dotTravAllowed = true;
+                re += subPatternStart(pattern.slice(i + 1));
+              }
               continue;
+            }
+            // these are mostly the same in regexp and glob
             case "[":
               clearStateChar();
               if (inClass) {
@@ -5507,17 +877,13 @@ var require_minimatch = __commonJS({
               }
               cs = pattern.substring(classStart + 1, i);
               try {
-                RegExp("[" + cs + "]");
+                RegExp("[" + braExpEscape(charUnescape(cs)) + "]");
+                re += c;
               } catch (er) {
-                sp = this.parse(cs, SUBPARSE);
-                re = re.substr(0, reClassStart) + "\\[" + sp[0] + "\\]";
-                hasMagic = hasMagic || sp[1];
-                inClass = false;
-                continue;
+                re = re.substring(0, reClassStart) + "(?:$.)";
               }
               hasMagic = true;
               inClass = false;
-              re += c;
               continue;
             default:
               clearStateChar();
@@ -5529,9 +895,9 @@ var require_minimatch = __commonJS({
           }
         }
         if (inClass) {
-          cs = pattern.substr(classStart + 1);
+          cs = pattern.slice(classStart + 1);
           sp = this.parse(cs, SUBPARSE);
-          re = re.substr(0, reClassStart) + "\\[" + sp[0];
+          re = re.substring(0, reClassStart) + "\\[" + sp[0];
           hasMagic = hasMagic || sp[1];
         }
         for (pl = patternListStack.pop(); pl; pl = patternListStack.pop()) {
@@ -5560,23 +926,27 @@ var require_minimatch = __commonJS({
           const nlFirst = re.slice(nl.reStart, nl.reEnd - 8);
           let nlAfter = re.slice(nl.reEnd);
           const nlLast = re.slice(nl.reEnd - 8, nl.reEnd) + nlAfter;
-          const openParensBefore = nlBefore.split("(").length - 1;
+          const closeParensBefore = nlBefore.split(")").length;
+          const openParensBefore = nlBefore.split("(").length - closeParensBefore;
           let cleanAfter = nlAfter;
           for (let i = 0; i < openParensBefore; i++) {
             cleanAfter = cleanAfter.replace(/\)[+*?]?/, "");
           }
           nlAfter = cleanAfter;
-          const dollar = nlAfter === "" && isSub !== SUBPARSE ? "$" : "";
+          const dollar = nlAfter === "" && isSub !== SUBPARSE ? "(?:$|\\/)" : "";
           re = nlBefore + nlFirst + nlAfter + dollar + nlLast;
         }
         if (re !== "" && hasMagic) {
           re = "(?=.)" + re;
         }
         if (addPatternStart) {
-          re = patternStart + re;
+          re = patternStart() + re;
         }
         if (isSub === SUBPARSE) {
           return [re, hasMagic];
+        }
+        if (options.nocase && !hasMagic) {
+          hasMagic = pattern.toUpperCase() !== pattern.toLowerCase();
         }
         if (!hasMagic) {
           return globUnescape(pattern);
@@ -5592,8 +962,7 @@ var require_minimatch = __commonJS({
         }
       }
       makeRe() {
-        if (this.regexp || this.regexp === false)
-          return this.regexp;
+        if (this.regexp || this.regexp === false) return this.regexp;
         const set = this.set;
         if (!set.length) {
           this.regexp = false;
@@ -5603,7 +972,9 @@ var require_minimatch = __commonJS({
         const twoStar = options.noglobstar ? star : options.dot ? twoStarDot : twoStarNoDot;
         const flags = options.nocase ? "i" : "";
         let re = set.map((pattern) => {
-          pattern = pattern.map((p) => typeof p === "string" ? regExpEscape(p) : p === GLOBSTAR ? GLOBSTAR : p._src).reduce((set2, p) => {
+          pattern = pattern.map(
+            (p) => typeof p === "string" ? regExpEscape(p) : p === GLOBSTAR ? GLOBSTAR : p._src
+          ).reduce((set2, p) => {
             if (!(set2[set2.length - 1] === GLOBSTAR && p === GLOBSTAR)) {
               set2.push(p);
             }
@@ -5629,8 +1000,7 @@ var require_minimatch = __commonJS({
           return pattern.filter((p) => p !== GLOBSTAR).join("/");
         }).join("|");
         re = "^(?:" + re + ")$";
-        if (this.negate)
-          re = "^(?!" + re + ").*$";
+        if (this.negate) re = "^(?!" + re + ").*$";
         try {
           this.regexp = new RegExp(re, flags);
         } catch (ex) {
@@ -5640,12 +1010,9 @@ var require_minimatch = __commonJS({
       }
       match(f, partial = this.partial) {
         this.debug("match", f, this.pattern);
-        if (this.comment)
-          return false;
-        if (this.empty)
-          return f === "";
-        if (f === "/" && partial)
-          return true;
+        if (this.comment) return false;
+        if (this.empty) return f === "";
+        if (f === "/" && partial) return true;
         const options = this.options;
         if (path.sep !== "/") {
           f = f.split(path.sep).join("/");
@@ -5657,8 +1024,7 @@ var require_minimatch = __commonJS({
         let filename;
         for (let i = f.length - 1; i >= 0; i--) {
           filename = f[i];
-          if (filename)
-            break;
+          if (filename) break;
         }
         for (let i = 0; i < set.length; i++) {
           const pattern = set[i];
@@ -5668,20 +1034,18 @@ var require_minimatch = __commonJS({
           }
           const hit = this.matchOne(file, pattern, partial);
           if (hit) {
-            if (options.flipNegate)
-              return true;
+            if (options.flipNegate) return true;
             return !this.negate;
           }
         }
-        if (options.flipNegate)
-          return false;
+        if (options.flipNegate) return false;
         return this.negate;
       }
       static defaults(def) {
-        return minimatch2.defaults(def).Minimatch;
+        return minimatch.defaults(def).Minimatch;
       }
     };
-    minimatch2.Minimatch = Minimatch;
+    minimatch.Minimatch = Minimatch2;
   }
 });
 
@@ -5691,129 +1055,187 @@ __export(main_exports, {
   default: () => TodoPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian5 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 
 // src/constants.ts
 var TODO_VIEW_TYPE = "todo";
-var LOCAL_SORT_OPT = {
-  numeric: true,
-  ignorePunctuation: true
-};
+var TASK_COMPLETION_DELAY_MS = 1e3;
 
 // src/settings.ts
 var import_obsidian = require("obsidian");
 var DEFAULT_SETTINGS = {
   todoPageName: "todo",
+  useTasksPlugin: false,
+  excludeTags: "",
+  focusFolder: "",
+  showGroupCounts: true,
+  showSource: false,
+  animateCompletion: true,
   showChecked: false,
   showAllTodos: false,
   showOnlyActiveFile: false,
   autoRefresh: true,
   subGroups: false,
-  groupBy: "page",
+  subGroupBy: "none",
+  nestSubtasks: false,
+  groupBy: "tag",
   sortDirectionItems: "new->old",
   sortDirectionGroups: "new->old",
   sortDirectionSubGroups: "new->old",
   includeFiles: "",
-  lookAndFeel: "classic",
   _collapsedSections: [],
   _hiddenTags: []
+};
+var SORT_OPTIONS = {
+  "a->z": "Name A\u2013Z",
+  "z->a": "Name Z\u2013A",
+  "new->old": "Newest created",
+  "old->new": "Oldest created",
+  modified: "Recently modified"
 };
 var TodoSettingTab = class extends import_obsidian.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
+    this.pending = {};
+  }
+  saveText(key, value) {
+    this.pending = __spreadProps(__spreadValues({}, this.pending), { [key]: value });
+    window.clearTimeout(this.timer);
+    this.timer = window.setTimeout(() => this.flush(), 500);
+  }
+  flush() {
+    window.clearTimeout(this.timer);
+    if (Object.keys(this.pending).length) {
+      const updates = this.pending;
+      this.pending = {};
+      void this.plugin.updateSettings(updates);
+    }
+  }
+  hide() {
+    this.flush();
   }
   display() {
     this.containerEl.empty();
-    this.containerEl.createEl("h3", {
-      text: "General Settings"
+    this.containerEl.createEl("h2", { text: "Checklist" });
+    this.containerEl.createEl("p", {
+      text: "Your notes are the source of truth. Organize their tasks here without moving or rewriting them."
     });
-    this.buildSettings();
+    this.heading("Task sources");
+    this.text(
+      "todoPageName",
+      "Included tags",
+      "One tag per line. A tag includes its nested tags. Leave empty to show all Markdown tasks.",
+      "todo",
+      true
+    );
+    this.text(
+      "excludeTags",
+      "Excluded tags",
+      "Hide tasks or tagged blocks with these tags, including nested tags. A matching property tag excludes the whole note.",
+      "archive\nsomeday",
+      true
+    );
+    this.text(
+      "includeFiles",
+      "File patterns",
+      "One glob per line. Positive patterns include files; ! patterns exclude them. Leave empty to include every note.",
+      "Projects/**\n!Projects/Archive/**",
+      true
+    );
+    this.toggle(
+      "showAllTodos",
+      "Include all tasks in matching notes",
+      "Otherwise include tagged tasks, their children, and tagged blocks. A matching property tag always includes the entire note."
+    );
+    this.heading("Organization");
+    this.select("groupBy", "Group by", {
+      none: "None",
+      page: "Page",
+      tag: "Tag",
+      folder: "Folder"
+    });
+    if (this.plugin.getSettingValue("groupBy") !== "none")
+      this.select("subGroupBy", "Subgroup by", {
+        none: "None",
+        tag: "Tag",
+        page: "Page",
+        folder: "Folder"
+      });
+    this.toggle(
+      "nestSubtasks",
+      "Show nested subtasks",
+      "Off keeps the previous version\u2019s flat list and task selection. Turn on to include children of tagged tasks and show an expandable hierarchy."
+    );
+    this.select("sortDirectionGroups", "Group order", __spreadProps(__spreadValues({}, SORT_OPTIONS), {
+      configured: "Configured tag order"
+    }));
+    this.select("sortDirectionItems", "Task order", __spreadValues({
+      source: "Order in note"
+    }, SORT_OPTIONS));
+    this.heading("Display");
+    this.toggle(
+      "showSource",
+      "Show source notes",
+      "Show each task\u2019s note outside page groups. Off by default."
+    );
+    this.toggle(
+      "showGroupCounts",
+      "Task count",
+      "Show the total task count and group counts."
+    );
+    this.toggle("showChecked", "Show completed tasks");
+    this.toggle(
+      "animateCompletion",
+      "Delay completion",
+      "Keep completed tasks visible briefly so you can undo an accidental check."
+    );
+    this.toggle("showOnlyActiveFile", "Current note only");
+    this.text(
+      "focusFolder",
+      "Limit to folder",
+      "Limit the view to this vault-relative folder and its subfolders. Clear to show every folder.",
+      "Projects"
+    );
+    this.heading("Integration");
+    this.toggle(
+      "useTasksPlugin",
+      "Complete with Tasks",
+      "Use the Tasks plugin\u2019s completion command, including its completion dates and recurrence rules. Requires Tasks 7.2 or later to be enabled."
+    );
+    this.heading("Refresh");
+    this.toggle(
+      "autoRefresh",
+      "Refresh automatically",
+      "Update after notes change. You can always refresh from the pane or command palette."
+    );
   }
-  buildSettings() {
-    new import_obsidian.Setting(this.containerEl).setName("General");
-    new import_obsidian.Setting(this.containerEl).setName("Tag name").setDesc('e.g. "todo" will match #todo. You may add mutliple tags separated by a newline. Leave empty to capture all').addTextArea((text2) => text2.setPlaceholder("todo").setValue(this.plugin.getSettingValue("todoPageName")).onChange((value) => __async(this, null, function* () {
-      yield this.plugin.updateSettings({
-        todoPageName: value
-      });
-    })));
-    new import_obsidian.Setting(this.containerEl).setName("Show Completed?").addToggle((toggle) => {
-      toggle.setValue(this.plugin.getSettingValue("showChecked"));
-      toggle.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({ showChecked: value });
-      }));
-    });
-    new import_obsidian.Setting(this.containerEl).setName("Show All Todos In File?").setDesc("Show all items in file if tag is present, or only items attached to the block where the tag is located. Only has an effect if Tag Name is not empty").addToggle((toggle) => {
-      toggle.setValue(this.plugin.getSettingValue("showAllTodos"));
-      toggle.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({ showAllTodos: value });
-      }));
-    });
-    new import_obsidian.Setting(this.containerEl).setName("Show only in currently active file?").setDesc("Show only todos present in currently active file?").addToggle((toggle) => {
-      toggle.setValue(this.plugin.getSettingValue("showOnlyActiveFile"));
-      toggle.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({ showOnlyActiveFile: value });
-      }));
-    });
-    new import_obsidian.Setting(this.containerEl).setName("Grouping & Sorting");
-    new import_obsidian.Setting(this.containerEl).setName("Group By").addDropdown((dropdown) => {
-      dropdown.addOption("page", "Page");
-      dropdown.addOption("tag", "Tag");
-      dropdown.setValue(this.plugin.getSettingValue("groupBy"));
-      dropdown.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({ groupBy: value });
-      }));
-    });
-    new import_obsidian.Setting(this.containerEl).setName("Item Sort").addDropdown((dropdown) => {
-      dropdown.addOption("a->z", "A -> Z");
-      dropdown.addOption("z->a", "Z -> A");
-      dropdown.addOption("new->old", "New -> Old");
-      dropdown.addOption("old->new", "Old -> New");
-      dropdown.setValue(this.plugin.getSettingValue("sortDirectionItems"));
-      dropdown.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({
-          sortDirectionItems: value
-        });
-      }));
-    }).setDesc("Time sorts are based on last time the file for a particular item was edited");
-    new import_obsidian.Setting(this.containerEl).setName("Group Sort").addDropdown((dropdown) => {
-      dropdown.addOption("a->z", "A -> Z");
-      dropdown.addOption("z->a", "Z -> A");
-      dropdown.addOption("new->old", "New -> Old");
-      dropdown.addOption("old->new", "Old -> New");
-      dropdown.setValue(this.plugin.getSettingValue("sortDirectionGroups"));
-      dropdown.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({
-          sortDirectionGroups: value
-        });
-      }));
-    }).setDesc("Time sorts are based on last time the file for the newest or oldest item in a group was edited");
-    new import_obsidian.Setting(this.containerEl).setName("Styling");
-    new import_obsidian.Setting(this.containerEl).setName("Look and Feel").addDropdown((dropdown) => {
-      dropdown.addOption("classic", "Classic");
-      dropdown.addOption("compact", "Compact");
-      dropdown.setValue(this.plugin.getSettingValue("lookAndFeel"));
-      dropdown.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({ lookAndFeel: value });
-      }));
-    });
-    new import_obsidian.Setting(this.containerEl).setName("Advanced");
-    new import_obsidian.Setting(this.containerEl).setName("Include Files").setDesc("Include all files that match this glob pattern. Examples on plugin page/github readme. Leave empty to check all files.").setTooltip("**/*").addText((text2) => text2.setValue(this.plugin.getSettingValue("includeFiles")).onChange((value) => __async(this, null, function* () {
-      yield this.plugin.updateSettings({
-        includeFiles: value
-      });
-    })));
-    new import_obsidian.Setting(this.containerEl).setName("Auto Refresh List?").addToggle((toggle) => {
-      toggle.setValue(this.plugin.getSettingValue("autoRefresh"));
-      toggle.onChange((value) => __async(this, null, function* () {
-        yield this.plugin.updateSettings({ autoRefresh: value });
-      }));
-    }).setDesc(`It's recommended to leave this on unless you are expereince performance issues due to a large vault. You can then reload manually using the "Checklist: refresh" command`);
+  heading(text3) {
+    this.containerEl.createEl("h3", { text: text3 });
+  }
+  text(key, name, desc, placeholder, multiline = false) {
+    const setting = new import_obsidian.Setting(this.containerEl).setName(name).setDesc(desc);
+    const configure = (input) => input.setPlaceholder(placeholder).setValue(this.plugin.getSettingValue(key)).onChange((value) => this.saveText(key, value));
+    if (multiline) setting.addTextArea(configure);
+    else setting.addText(configure);
+  }
+  toggle(key, name, desc = "") {
+    new import_obsidian.Setting(this.containerEl).setName(name).setDesc(desc).addToggle(
+      (input) => input.setValue(this.plugin.getSettingValue(key)).onChange((value) => this.plugin.updateSettings({ [key]: value }))
+    );
+  }
+  select(key, name, options) {
+    new import_obsidian.Setting(this.containerEl).setName(name).addDropdown(
+      (input) => input.addOptions(options).setValue(this.plugin.getSettingValue(key)).onChange((value) => __async(this, null, function* () {
+        yield this.plugin.updateSettings({ [key]: value });
+        if (key === "groupBy" || key === "subGroupBy") this.display();
+      }))
+    );
   }
 };
 
 // src/view.ts
-var import_obsidian4 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // node_modules/svelte/internal/index.mjs
 function noop() {
@@ -5836,12 +1258,35 @@ function safe_not_equal(a, b) {
 function is_empty(obj) {
   return Object.keys(obj).length === 0;
 }
-function null_to_empty(value) {
-  return value == null ? "" : value;
-}
 function action_destroyer(action_result) {
   return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
 }
+var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
+var ResizeObserverSingleton = class _ResizeObserverSingleton {
+  constructor(options) {
+    this.options = options;
+    this._listeners = "WeakMap" in globals ? /* @__PURE__ */ new WeakMap() : void 0;
+  }
+  observe(element2, listener) {
+    this._listeners.set(element2, listener);
+    this._getObserver().observe(element2, this.options);
+    return () => {
+      this._listeners.delete(element2);
+      this._observer.unobserve(element2);
+    };
+  }
+  _getObserver() {
+    var _a;
+    return (_a = this._observer) !== null && _a !== void 0 ? _a : this._observer = new ResizeObserver((entries) => {
+      var _a2;
+      for (const entry of entries) {
+        _ResizeObserverSingleton.entries.set(entry.target, entry);
+        (_a2 = this._listeners.get(entry.target)) === null || _a2 === void 0 ? void 0 : _a2(entry);
+      }
+    });
+  }
+};
+ResizeObserverSingleton.entries = "WeakMap" in globals ? /* @__PURE__ */ new WeakMap() : void 0;
 var is_hydrating = false;
 function start_hydrating() {
   is_hydrating = true;
@@ -5872,12 +1317,15 @@ function get_root_for_style(node) {
 }
 function append_stylesheet(node, style) {
   append(node.head || node, style);
+  return style.sheet;
 }
 function insert(target, node, anchor) {
   target.insertBefore(node, anchor || null);
 }
 function detach(node) {
-  node.parentNode.removeChild(node);
+  if (node.parentNode) {
+    node.parentNode.removeChild(node);
+  }
 }
 function destroy_each(iterations, detaching) {
   for (let i = 0; i < iterations.length; i += 1) {
@@ -5904,12 +1352,6 @@ function listen(node, event, handler, options) {
   node.addEventListener(event, handler, options);
   return () => node.removeEventListener(event, handler, options);
 }
-function prevent_default(fn) {
-  return function(event) {
-    event.preventDefault();
-    return fn.call(this, event);
-  };
-}
 function attr(node, attribute, value) {
   if (value == null)
     node.removeAttribute(attribute);
@@ -5919,50 +1361,87 @@ function attr(node, attribute, value) {
 function children(element2) {
   return Array.from(element2.childNodes);
 }
-function set_data(text2, data) {
+function set_data(text3, data) {
   data = "" + data;
-  if (text2.wholeText !== data)
-    text2.data = data;
+  if (text3.data === data)
+    return;
+  text3.data = data;
 }
 function set_input_value(input, value) {
   input.value = value == null ? "" : value;
 }
+function select_option(select, value, mounting) {
+  for (let i = 0; i < select.options.length; i += 1) {
+    const option = select.options[i];
+    if (option.__value === value) {
+      option.selected = true;
+      return;
+    }
+  }
+  if (!mounting || value !== void 0) {
+    select.selectedIndex = -1;
+  }
+}
+var crossorigin;
+function is_crossorigin() {
+  if (crossorigin === void 0) {
+    crossorigin = false;
+    try {
+      if (typeof window !== "undefined" && window.parent) {
+        void window.parent.document;
+      }
+    } catch (error2) {
+      crossorigin = true;
+    }
+  }
+  return crossorigin;
+}
+function add_iframe_resize_listener(node, fn) {
+  const computed_style = getComputedStyle(node);
+  if (computed_style.position === "static") {
+    node.style.position = "relative";
+  }
+  const iframe = element("iframe");
+  iframe.setAttribute("style", "display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;");
+  iframe.setAttribute("aria-hidden", "true");
+  iframe.tabIndex = -1;
+  const crossorigin2 = is_crossorigin();
+  let unsubscribe;
+  if (crossorigin2) {
+    iframe.src = "data:text/html,<script>onresize=function(){parent.postMessage(0,'*')}<\/script>";
+    unsubscribe = listen(window, "message", (event) => {
+      if (event.source === iframe.contentWindow)
+        fn();
+    });
+  } else {
+    iframe.src = "about:blank";
+    iframe.onload = () => {
+      unsubscribe = listen(iframe.contentWindow, "resize", fn);
+      fn();
+    };
+  }
+  append(node, iframe);
+  return () => {
+    if (crossorigin2) {
+      unsubscribe();
+    } else if (unsubscribe && iframe.contentWindow) {
+      unsubscribe();
+    }
+    detach(iframe);
+  };
+}
 function toggle_class(element2, name, toggle) {
   element2.classList[toggle ? "add" : "remove"](name);
-}
-function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
-  const e = document.createEvent("CustomEvent");
-  e.initCustomEvent(type, bubbles, cancelable, detail);
-  return e;
 }
 var current_component;
 function set_current_component(component) {
   current_component = component;
 }
-function get_current_component() {
-  if (!current_component)
-    throw new Error("Function called outside component initialization");
-  return current_component;
-}
-function createEventDispatcher() {
-  const component = get_current_component();
-  return (type, detail, { cancelable = false } = {}) => {
-    const callbacks = component.$$.callbacks[type];
-    if (callbacks) {
-      const event = custom_event(type, detail, { cancelable });
-      callbacks.slice().forEach((fn) => {
-        fn.call(component, event);
-      });
-      return !event.defaultPrevented;
-    }
-    return true;
-  };
-}
 var dirty_components = [];
 var binding_callbacks = [];
 var render_callbacks = [];
 var flush_callbacks = [];
-var resolved_promise = Promise.resolve();
+var resolved_promise = /* @__PURE__ */ Promise.resolve();
 var update_scheduled = false;
 function schedule_update() {
   if (!update_scheduled) {
@@ -5970,19 +1449,35 @@ function schedule_update() {
     resolved_promise.then(flush);
   }
 }
+function tick() {
+  schedule_update();
+  return resolved_promise;
+}
 function add_render_callback(fn) {
   render_callbacks.push(fn);
+}
+function add_flush_callback(fn) {
+  flush_callbacks.push(fn);
 }
 var seen_callbacks = /* @__PURE__ */ new Set();
 var flushidx = 0;
 function flush() {
+  if (flushidx !== 0) {
+    return;
+  }
   const saved_component = current_component;
   do {
-    while (flushidx < dirty_components.length) {
-      const component = dirty_components[flushidx];
-      flushidx++;
-      set_current_component(component);
-      update(component.$$);
+    try {
+      while (flushidx < dirty_components.length) {
+        const component = dirty_components[flushidx];
+        flushidx++;
+        set_current_component(component);
+        update(component.$$);
+      }
+    } catch (e) {
+      dirty_components.length = 0;
+      flushidx = 0;
+      throw e;
     }
     set_current_component(null);
     dirty_components.length = 0;
@@ -6015,6 +1510,13 @@ function update($$) {
     $$.after_update.forEach(add_render_callback);
   }
 }
+function flush_render_callbacks(fns) {
+  const filtered = [];
+  const targets = [];
+  render_callbacks.forEach((c) => fns.indexOf(c) === -1 ? filtered.push(c) : targets.push(c));
+  targets.forEach((c) => c());
+  render_callbacks = filtered;
+}
 var outroing = /* @__PURE__ */ new Set();
 var outros;
 function group_outros() {
@@ -6022,6 +1524,7 @@ function group_outros() {
     r: 0,
     c: [],
     p: outros
+    // parent group
   };
 }
 function check_outros() {
@@ -6030,42 +1533,150 @@ function check_outros() {
   }
   outros = outros.p;
 }
-function transition_in(block, local) {
-  if (block && block.i) {
-    outroing.delete(block);
-    block.i(local);
+function transition_in(block2, local) {
+  if (block2 && block2.i) {
+    outroing.delete(block2);
+    block2.i(local);
   }
 }
-function transition_out(block, local, detach2, callback) {
-  if (block && block.o) {
-    if (outroing.has(block))
+function transition_out(block2, local, detach2, callback) {
+  if (block2 && block2.o) {
+    if (outroing.has(block2))
       return;
-    outroing.add(block);
+    outroing.add(block2);
     outros.c.push(() => {
-      outroing.delete(block);
+      outroing.delete(block2);
       if (callback) {
         if (detach2)
-          block.d(1);
+          block2.d(1);
         callback();
       }
     });
-    block.o(local);
+    block2.o(local);
   } else if (callback) {
     callback();
   }
 }
-var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
-function create_component(block) {
-  block && block.c();
+function outro_and_destroy_block(block2, lookup) {
+  transition_out(block2, 1, 1, () => {
+    lookup.delete(block2.key);
+  });
+}
+function update_keyed_each(old_blocks, dirty, get_key, dynamic, ctx, list2, lookup, node, destroy, create_each_block5, next, get_context) {
+  let o = old_blocks.length;
+  let n = list2.length;
+  let i = o;
+  const old_indexes = {};
+  while (i--)
+    old_indexes[old_blocks[i].key] = i;
+  const new_blocks = [];
+  const new_lookup = /* @__PURE__ */ new Map();
+  const deltas = /* @__PURE__ */ new Map();
+  const updates = [];
+  i = n;
+  while (i--) {
+    const child_ctx = get_context(ctx, list2, i);
+    const key = get_key(child_ctx);
+    let block2 = lookup.get(key);
+    if (!block2) {
+      block2 = create_each_block5(key, child_ctx);
+      block2.c();
+    } else if (dynamic) {
+      updates.push(() => block2.p(child_ctx, dirty));
+    }
+    new_lookup.set(key, new_blocks[i] = block2);
+    if (key in old_indexes)
+      deltas.set(key, Math.abs(i - old_indexes[key]));
+  }
+  const will_move = /* @__PURE__ */ new Set();
+  const did_move = /* @__PURE__ */ new Set();
+  function insert2(block2) {
+    transition_in(block2, 1);
+    block2.m(node, next);
+    lookup.set(block2.key, block2);
+    next = block2.first;
+    n--;
+  }
+  while (o && n) {
+    const new_block = new_blocks[n - 1];
+    const old_block = old_blocks[o - 1];
+    const new_key = new_block.key;
+    const old_key = old_block.key;
+    if (new_block === old_block) {
+      next = new_block.first;
+      o--;
+      n--;
+    } else if (!new_lookup.has(old_key)) {
+      destroy(old_block, lookup);
+      o--;
+    } else if (!lookup.has(new_key) || will_move.has(new_key)) {
+      insert2(new_block);
+    } else if (did_move.has(old_key)) {
+      o--;
+    } else if (deltas.get(new_key) > deltas.get(old_key)) {
+      did_move.add(new_key);
+      insert2(new_block);
+    } else {
+      will_move.add(old_key);
+      o--;
+    }
+  }
+  while (o--) {
+    const old_block = old_blocks[o];
+    if (!new_lookup.has(old_block.key))
+      destroy(old_block, lookup);
+  }
+  while (n)
+    insert2(new_blocks[n - 1]);
+  run_all(updates);
+  return new_blocks;
+}
+var _boolean_attributes = [
+  "allowfullscreen",
+  "allowpaymentrequest",
+  "async",
+  "autofocus",
+  "autoplay",
+  "checked",
+  "controls",
+  "default",
+  "defer",
+  "disabled",
+  "formnovalidate",
+  "hidden",
+  "inert",
+  "ismap",
+  "loop",
+  "multiple",
+  "muted",
+  "nomodule",
+  "novalidate",
+  "open",
+  "playsinline",
+  "readonly",
+  "required",
+  "reversed",
+  "selected"
+];
+var boolean_attributes = /* @__PURE__ */ new Set([..._boolean_attributes]);
+function bind(component, name, callback) {
+  const index = component.$$.props[name];
+  if (index !== void 0) {
+    component.$$.bound[index] = callback;
+    callback(component.$$.ctx[index]);
+  }
+}
+function create_component(block2) {
+  block2 && block2.c();
 }
 function mount_component(component, target, anchor, customElement) {
-  const { fragment, on_mount, on_destroy, after_update } = component.$$;
+  const { fragment, after_update } = component.$$;
   fragment && fragment.m(target, anchor);
   if (!customElement) {
     add_render_callback(() => {
-      const new_on_destroy = on_mount.map(run).filter(is_function);
-      if (on_destroy) {
-        on_destroy.push(...new_on_destroy);
+      const new_on_destroy = component.$$.on_mount.map(run).filter(is_function);
+      if (component.$$.on_destroy) {
+        component.$$.on_destroy.push(...new_on_destroy);
       } else {
         run_all(new_on_destroy);
       }
@@ -6077,6 +1688,7 @@ function mount_component(component, target, anchor, customElement) {
 function destroy_component(component, detaching) {
   const $$ = component.$$;
   if ($$.fragment !== null) {
+    flush_render_callbacks($$.after_update);
     run_all($$.on_destroy);
     $$.fragment && $$.fragment.d(detaching);
     $$.on_destroy = $$.fragment = null;
@@ -6091,22 +1703,25 @@ function make_dirty(component, i) {
   }
   component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
 }
-function init(component, options, instance7, create_fragment7, not_equal, props, append_styles2, dirty = [-1]) {
+function init(component, options, instance6, create_fragment6, not_equal, props, append_styles2, dirty = [-1]) {
   const parent_component = current_component;
   set_current_component(component);
   const $$ = component.$$ = {
     fragment: null,
-    ctx: null,
+    ctx: [],
+    // state
     props,
     update: noop,
     not_equal,
     bound: blank_object(),
+    // lifecycle
     on_mount: [],
     on_destroy: [],
     on_disconnect: [],
     before_update: [],
     after_update: [],
     context: new Map(options.context || (parent_component ? parent_component.$$.context : [])),
+    // everything else
     callbacks: blank_object(),
     dirty,
     skip_bound: false,
@@ -6114,7 +1729,7 @@ function init(component, options, instance7, create_fragment7, not_equal, props,
   };
   append_styles2 && append_styles2($$.root);
   let ready = false;
-  $$.ctx = instance7 ? instance7(component, options.props || {}, (i, ret, ...rest) => {
+  $$.ctx = instance6 ? instance6(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
       if (!$$.skip_bound && $$.bound[i])
@@ -6127,7 +1742,7 @@ function init(component, options, instance7, create_fragment7, not_equal, props,
   $$.update();
   ready = true;
   run_all($$.before_update);
-  $$.fragment = create_fragment7 ? create_fragment7($$.ctx) : false;
+  $$.fragment = create_fragment6 ? create_fragment6($$.ctx) : false;
   if (options.target) {
     if (options.hydrate) {
       start_hydrating();
@@ -6170,6 +1785,9 @@ if (typeof HTMLElement === "function") {
       this.$destroy = noop;
     }
     $on(type, callback) {
+      if (!is_function(callback)) {
+        return noop;
+      }
       const callbacks = this.$$.callbacks[type] || (this.$$.callbacks[type] = []);
       callbacks.push(callback);
       return () => {
@@ -6193,6 +1811,9 @@ var SvelteComponent = class {
     this.$destroy = noop;
   }
   $on(type, callback) {
+    if (!is_function(callback)) {
+      return noop;
+    }
     const callbacks = this.$$.callbacks[type] || (this.$$.callbacks[type] = []);
     callbacks.push(callback);
     return () => {
@@ -6217,164 +1838,5513 @@ var import_obsidian3 = require("obsidian");
 var import_obsidian2 = require("obsidian");
 var classifyString = (str) => {
   const sanitzedGroupName = (str != null ? str : "").replace(/[^A-Za-z0-9]/g, "");
-  const dasherizedGroupName = sanitzedGroupName.replace(/^([A-Z])|[\s\._](\w)/g, function(_, p1, p2) {
-    if (p2)
-      return "-" + p2.toLowerCase();
-    return p1.toLowerCase();
-  });
+  const dasherizedGroupName = sanitzedGroupName.replace(
+    /^([A-Z])|[\s\._](\w)/g,
+    function(_, p1, p2) {
+      if (p2) return "-" + p2.toLowerCase();
+      return p1.toLowerCase();
+    }
+  );
   return dasherizedGroupName;
 };
-var removeTagFromText = (text2, tag) => {
-  if (!text2)
-    return "";
-  if (!tag)
-    return text2.trim();
-  return text2.replace(new RegExp(`\\s?\\#${tag}[^\\s]*`, "g"), "").trim();
+var removeTagFromText = (text3, tag) => {
+  if (!text3) return "";
+  if (!tag) return text3.trim();
+  const escaped = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return text3.replace(new RegExp(`(^|\\s)#${escaped}(?:/[^\\s]+)?(?=\\s|$)`, "gi"), "$1").trim();
 };
 var getTagMeta = (tag) => {
   const tagMatch = /^\#([^\/]+)\/?(.*)?$/.exec(tag);
-  if (!tagMatch)
-    return { main: null, sub: null };
+  if (!tagMatch) return { main: null, sub: null };
   const [full, main, sub] = tagMatch;
   return { main, sub };
 };
-var retrieveTag = (tagMeta) => {
-  return tagMeta.main ? tagMeta.main : tagMeta.sub ? tagMeta.sub : "";
+var matchesTodoTag = (tag, todoTags) => {
+  const normalized = tag.replace(/^#/, "").toLowerCase();
+  return todoTags.some((value) => {
+    const configured = value.trim().replace(/^#/, "").toLowerCase();
+    return configured.length > 0 && (normalized === configured || normalized.startsWith(configured + "/"));
+  });
 };
 var mapLinkMeta = (linkMeta) => {
-  const map = /* @__PURE__ */ new Map();
-  for (const link of linkMeta)
-    map.set(link.filePath, link);
-  return map;
+  const map2 = /* @__PURE__ */ new Map();
+  for (const link2 of linkMeta) map2.set(link2.filePath, link2);
+  return map2;
 };
-var setLineTo = (line, setTo) => line.replace(/^((\s|\>)*([\-\*]|[0-9]+\.)\s\[)([^\]]+)(\].*$)/, `$1${setTo ? "x" : " "}$5`);
+var setLineTo = (line, setTo) => line.replace(
+  /^((\s|\>)*([\-\*+]|[0-9]+\.)\s\[)([^\]]+)(\].*$)/,
+  `$1${setTo ? "x" : " "}$5`
+);
 var getAllLinesFromFile = (cache) => cache.split(/\r?\n/);
-var combineFileLines = (lines) => lines.join("\n");
 var lineIsValidTodo = (line) => {
-  return /^(\s|\>)*([\-\*]|[0-9]+\.)\s\[(.{1})\]\s{1,4}\S+/.test(line);
+  return /^(\s|\>)*([\-\*+]|[0-9]+\.)\s\[(.{1})\]\s{1,4}\S+/.test(line);
 };
 var extractTextFromTodoLine = (line) => {
   var _a;
-  return (_a = /^(\s|\>)*([\-\*]|[0-9]+\.)\s\[(.{1})\]\s{1,4}(\S{1}.*)$/.exec(line)) == null ? void 0 : _a[4];
+  return (_a = /^(\s|\>)*([\-\*+]|[0-9]+\.)\s\[(.{1})\]\s{1,4}(\S{1}.*)$/.exec(line)) == null ? void 0 : _a[4];
 };
 var getIndentationSpacesFromTodoLine = (line) => {
   var _a, _b, _c;
-  return (_c = (_b = (_a = /^(\s*)([\-\*]|[0-9]+\.)\s\[(.{1})\]\s{1,4}(\S+)/.exec(line)) == null ? void 0 : _a[1]) == null ? void 0 : _b.length) != null ? _c : 0;
+  return (_c = (_b = (_a = /^(\s*)([\-\*+]|[0-9]+\.)\s\[(.{1})\]\s{1,4}(\S+)/.exec(line)) == null ? void 0 : _a[1]) == null ? void 0 : _b.length) != null ? _c : 0;
 };
-var todoLineIsChecked = (line) => /^(\s|\>)*([\-\*]|[0-9]+\.)\s\[(\S{1})\]/.test(line);
+var todoLineIsChecked = (line) => /^(\s|\>)*([\-\*+]|[0-9]+\.)\s\[(\S{1})\]/.test(line);
 var getFileLabelFromName = (filename) => {
   var _a;
   return (_a = /^(.+)\.md$/.exec(filename)) == null ? void 0 : _a[1];
 };
-var sortGenericItemsInplace = (items, direction, sortByNameKey, sortByTimeKey) => {
-  if (direction === "a->z")
-    items.sort((a, b) => a[sortByNameKey].localeCompare(b[sortByNameKey], navigator.language, LOCAL_SORT_OPT));
-  if (direction === "z->a")
-    items.sort((a, b) => b[sortByNameKey].localeCompare(a[sortByNameKey], navigator.language, LOCAL_SORT_OPT));
-  if (direction === "new->old")
-    items.sort((a, b) => b[sortByTimeKey] - a[sortByTimeKey]);
-  if (direction === "old->new")
-    items.sort((a, b) => a[sortByTimeKey] - b[sortByTimeKey]);
-};
 var ensureMdExtension = (path) => {
-  if (!/\.md$/.test(path))
-    return `${path}.md`;
+  if (!/\.md$/.test(path)) return `${path}.md`;
   return path;
 };
 var getFrontmatterTags = (cache, todoTags = []) => {
   var _a;
   const frontMatterTags = (_a = (0, import_obsidian2.parseFrontMatterTags)(cache == null ? void 0 : cache.frontmatter)) != null ? _a : [];
   if (todoTags.length > 0)
-    return frontMatterTags.filter((tag) => todoTags.includes(getTagMeta(tag).main));
+    return frontMatterTags.filter(
+      (tag) => matchesTodoTag(tag, todoTags)
+    );
   return frontMatterTags;
-};
-var getAllTagsFromMetadata = (cache) => {
-  var _a;
-  if (!cache)
-    return [];
-  const frontmatterTags = getFrontmatterTags(cache);
-  const blockTags = ((_a = cache.tags) != null ? _a : []).map((e) => e.tag);
-  return [...frontmatterTags, ...blockTags];
 };
 var getFileFromPath = (vault, path) => {
   let file = vault.getAbstractFileByPath(path);
-  if (file instanceof import_obsidian2.TFile)
-    return file;
+  if (file instanceof import_obsidian2.TFile) return file;
   const files = vault.getMarkdownFiles();
   file = files.find((e) => e.name === path);
-  if (file instanceof import_obsidian2.TFile)
-    return file;
+  if (file instanceof import_obsidian2.TFile) return file;
 };
 
 // src/utils/files.ts
-var navToFile = (app, path, ev, line) => __async(void 0, null, function* () {
+var navToFile = (app, path, ev, line) => __async(null, null, function* () {
   path = ensureMdExtension(path);
   const file = getFileFromPath(app.vault, path);
-  if (!file)
-    return;
+  if (!file) return;
   const mod = import_obsidian3.Keymap.isModEvent(ev);
   const leaf = app.workspace.getLeaf(mod);
   yield leaf.openFile(file);
-  if (line) {
-    app.workspace.getActiveViewOfType(import_obsidian3.MarkdownView).editor.setCursor(line);
+  if (line != null) {
+    const view = leaf.view;
+    if (view instanceof import_obsidian3.MarkdownView) {
+      view.editor.setCursor({ line, ch: 0 });
+      view.editor.scrollIntoView({ from: { line, ch: 0 }, to: { line, ch: 0 } }, true);
+    }
+    leaf.setEphemeralState({ line, focus: true });
   }
 });
 
-// src/utils/groups.ts
-var groupTodos = (items, groupBy, sortGroups, sortItems, subGroups, subGroupSort) => {
-  var _a, _b, _c;
-  const groups = [];
+// src/utils/hierarchy.ts
+var buildTodoTree = (items) => {
+  const itemsByLocation = /* @__PURE__ */ new Map();
+  const roots = [];
   for (const item of items) {
-    const itemKey = groupBy === "page" ? item.filePath : `#${[item.mainTag, item.subTag].filter((e) => e != null).join("/")}`;
-    let group = groups.find((g) => g.id === itemKey);
-    if (!group) {
-      const newGroup = {
-        id: itemKey,
+    itemsByLocation.set(locationKey(item.filePath, item.line), __spreadProps(__spreadValues({}, item), {
+      children: []
+    }));
+  }
+  for (const item of itemsByLocation.values()) {
+    const parent = item.parentLine == null ? void 0 : itemsByLocation.get(locationKey(item.filePath, item.parentLine));
+    if (parent && parent.line < item.line) parent.children.push(item);
+    else roots.push(item);
+  }
+  return roots;
+};
+var createDescendantLookup = (items) => {
+  var _a;
+  const childrenByParent = /* @__PURE__ */ new Map();
+  for (const item of items) {
+    const children2 = (_a = childrenByParent.get(item.parent)) != null ? _a : [];
+    children2.push(item.line);
+    childrenByParent.set(item.parent, children2);
+  }
+  return (rootLine) => {
+    var _a2;
+    const descendants = /* @__PURE__ */ new Set([rootLine]);
+    const pending = [rootLine];
+    while (pending.length > 0) {
+      const parent = pending.pop();
+      for (const child of (_a2 = childrenByParent.get(parent)) != null ? _a2 : []) {
+        if (descendants.has(child)) continue;
+        descendants.add(child);
+        pending.push(child);
+      }
+    }
+    return descendants;
+  };
+};
+var countTodoTree = (items) => items.reduce((count, item) => count + 1 + countTodoTree(item.children), 0);
+var locationKey = (filePath, line) => `${filePath}:${line}`;
+
+// src/utils/groups.ts
+var collator = new Intl.Collator(void 0, {
+  numeric: true,
+  sensitivity: "base"
+});
+var compareText = (a, b) => collator.compare(a, b);
+var sortTodoTree = (items, direction) => {
+  items.sort((a, b) => {
+    if (direction === "a->z") return compareText(a.originalText, b.originalText);
+    if (direction === "z->a") return compareText(b.originalText, a.originalText);
+    const time = direction === "modified" ? b.fileModifiedTs - a.fileModifiedTs : direction === "new->old" ? b.fileCreatedTs - a.fileCreatedTs : direction === "old->new" ? a.fileCreatedTs - b.fileCreatedTs : 0;
+    return time || compareText(a.filePath, b.filePath) || a.line - b.line;
+  });
+  for (const item of items) sortTodoTree(item.children, direction);
+  return items;
+};
+var groupTodos = (items, groupBy, sortGroups, sortItems, subGroups, subGroupSort, configuredTags = [], parentId = "", nestSubtasks = true) => {
+  const organize = (tasks) => sortTodoTree(
+    buildTodoTree(
+      nestSubtasks ? tasks : tasks.map((task) => __spreadProps(__spreadValues({}, task), { parentLine: void 0 }))
+    ),
+    sortItems
+  );
+  if (groupBy === "none") {
+    if (!items.length) return [];
+    return [
+      {
+        id: "ungrouped",
+        type: "none",
+        label: "",
         sortName: "",
         className: "",
+        oldestItem: 0,
+        newestItem: 0,
+        todos: organize(items)
+      }
+    ];
+  }
+  const byKey = /* @__PURE__ */ new Map();
+  for (const item of items) {
+    const folder = item.filePath.includes("/") ? item.filePath.slice(0, item.filePath.lastIndexOf("/")) : "/";
+    const tag = item.mainTag ? "#" + [item.mainTag, item.subTag].filter(Boolean).join("/") : "";
+    const key = groupBy === "page" ? item.filePath : groupBy === "folder" ? folder : tag;
+    let group = byKey.get(key);
+    if (!group) {
+      const label = groupBy === "page" ? item.fileLabel : groupBy === "folder" ? folder === "/" ? "Vault root" : folder : tag || "Untagged";
+      group = {
+        id: parentId ? JSON.stringify([parentId, groupBy, key]) : key,
         type: groupBy,
+        path: groupBy === "page" ? item.filePath : void 0,
+        label,
+        sortName: label,
+        className: classifyString(label),
         todos: [],
         oldestItem: Infinity,
         newestItem: 0
       };
-      if (newGroup.type === "page") {
-        newGroup.pageName = item.fileLabel;
-        newGroup.sortName = item.fileLabel;
-        newGroup.className = classifyString(item.fileLabel);
-      } else if (newGroup.type === "tag") {
-        newGroup.mainTag = item.mainTag;
-        newGroup.subTags = item.subTag;
-        newGroup.sortName = item.mainTag + ((_a = item.subTag) != null ? _a : "0");
-        newGroup.className = classifyString(((_b = newGroup.mainTag) != null ? _b : "") + ((_c = newGroup.subTags) != null ? _c : ""));
+      if (group.type === "page") group.pageName = item.fileLabel;
+      if (group.type === "tag") {
+        group.mainTag = item.mainTag;
+        group.subTags = item.subTag;
       }
-      groups.push(newGroup);
-      group = newGroup;
+      byKey.set(key, group);
     }
-    if (group.newestItem < item.fileCreatedTs)
-      group.newestItem = item.fileCreatedTs;
-    if (group.oldestItem > item.fileCreatedTs)
-      group.oldestItem = item.fileCreatedTs;
+    group.newestItem = Math.max(group.newestItem, item.fileCreatedTs);
+    group.oldestItem = Math.min(group.oldestItem, item.fileCreatedTs);
     group.todos.push(item);
   }
-  const nonEmptyGroups = groups.filter((g) => g.todos.length > 0);
-  sortGenericItemsInplace(nonEmptyGroups, sortGroups, "sortName", sortGroups === "new->old" ? "newestItem" : "oldestItem");
-  if (!subGroups)
-    for (const g of groups)
-      sortGenericItemsInplace(g.todos, sortItems, "originalText", "fileCreatedTs");
-  else
-    for (const g of nonEmptyGroups)
-      g.groups = groupTodos(g.todos, groupBy === "page" ? "tag" : "page", subGroupSort, sortItems, false, null);
-  return nonEmptyGroups;
+  const groups = [...byKey.values()];
+  const configuredRank = (group) => {
+    const tag = group.label.replace(/^#/, "");
+    const rank = configuredTags.findIndex(
+      (t) => tag === t || tag.startsWith(t + "/")
+    );
+    return rank < 0 ? configuredTags.length : rank;
+  };
+  const modified = (group) => group.todos.reduce((n, t) => Math.max(n, t.fileModifiedTs), 0);
+  const sortKeys = new Map(
+    groups.map((group) => [
+      group,
+      sortGroups === "modified" ? modified(group) : sortGroups === "configured" && groupBy === "tag" ? configuredRank(group) : 0
+    ])
+  );
+  groups.sort((a, b) => {
+    if (sortGroups === "new->old")
+      return b.newestItem - a.newestItem || compareText(a.label, b.label);
+    if (sortGroups === "old->new")
+      return a.oldestItem - b.oldestItem || compareText(a.label, b.label);
+    if (sortGroups === "modified")
+      return sortKeys.get(b) - sortKeys.get(a) || compareText(a.label, b.label);
+    if (sortGroups === "z->a") return compareText(b.label, a.label);
+    if (sortGroups === "configured" && groupBy === "tag")
+      return sortKeys.get(a) - sortKeys.get(b) || compareText(a.label, b.label);
+    return compareText(a.label, b.label);
+  });
+  for (const group of groups) {
+    if (subGroups && subGroups !== "none" && subGroups !== groupBy)
+      group.groups = groupTodos(
+        group.todos,
+        typeof subGroups === "string" ? subGroups : groupBy === "page" ? "tag" : "page",
+        subGroupSort,
+        sortItems,
+        false,
+        subGroupSort,
+        configuredTags,
+        group.id,
+        nestSubtasks
+      );
+    group.todos = organize(group.todos);
+  }
+  return groups;
 };
 
+// node_modules/mdurl/index.mjs
+var mdurl_exports = {};
+__export(mdurl_exports, {
+  decode: () => decode_default,
+  encode: () => encode_default,
+  format: () => format,
+  parse: () => parse_default
+});
+
+// node_modules/mdurl/lib/decode.mjs
+var decodeCache = {};
+function getDecodeCache(exclude) {
+  let cache = decodeCache[exclude];
+  if (cache) {
+    return cache;
+  }
+  cache = decodeCache[exclude] = [];
+  for (let i = 0; i < 128; i++) {
+    const ch = String.fromCharCode(i);
+    cache.push(ch);
+  }
+  for (let i = 0; i < exclude.length; i++) {
+    const ch = exclude.charCodeAt(i);
+    cache[ch] = "%" + ("0" + ch.toString(16).toUpperCase()).slice(-2);
+  }
+  return cache;
+}
+function decode(string, exclude) {
+  if (typeof exclude !== "string") {
+    exclude = decode.defaultChars;
+  }
+  const cache = getDecodeCache(exclude);
+  return string.replace(/(%[a-f0-9]{2})+/gi, function(seq) {
+    let result = "";
+    for (let i = 0, l = seq.length; i < l; i += 3) {
+      const b1 = parseInt(seq.slice(i + 1, i + 3), 16);
+      if (b1 < 128) {
+        result += cache[b1];
+        continue;
+      }
+      if ((b1 & 224) === 192 && i + 3 < l) {
+        const b2 = parseInt(seq.slice(i + 4, i + 6), 16);
+        if ((b2 & 192) === 128) {
+          const chr = b1 << 6 & 1984 | b2 & 63;
+          if (chr < 128) {
+            result += "\uFFFD\uFFFD";
+          } else {
+            result += String.fromCharCode(chr);
+          }
+          i += 3;
+          continue;
+        }
+      }
+      if ((b1 & 240) === 224 && i + 6 < l) {
+        const b2 = parseInt(seq.slice(i + 4, i + 6), 16);
+        const b3 = parseInt(seq.slice(i + 7, i + 9), 16);
+        if ((b2 & 192) === 128 && (b3 & 192) === 128) {
+          const chr = b1 << 12 & 61440 | b2 << 6 & 4032 | b3 & 63;
+          if (chr < 2048 || chr >= 55296 && chr <= 57343) {
+            result += "\uFFFD\uFFFD\uFFFD";
+          } else {
+            result += String.fromCharCode(chr);
+          }
+          i += 6;
+          continue;
+        }
+      }
+      if ((b1 & 248) === 240 && i + 9 < l) {
+        const b2 = parseInt(seq.slice(i + 4, i + 6), 16);
+        const b3 = parseInt(seq.slice(i + 7, i + 9), 16);
+        const b4 = parseInt(seq.slice(i + 10, i + 12), 16);
+        if ((b2 & 192) === 128 && (b3 & 192) === 128 && (b4 & 192) === 128) {
+          let chr = b1 << 18 & 1835008 | b2 << 12 & 258048 | b3 << 6 & 4032 | b4 & 63;
+          if (chr < 65536 || chr > 1114111) {
+            result += "\uFFFD\uFFFD\uFFFD\uFFFD";
+          } else {
+            chr -= 65536;
+            result += String.fromCharCode(55296 + (chr >> 10), 56320 + (chr & 1023));
+          }
+          i += 9;
+          continue;
+        }
+      }
+      result += "\uFFFD";
+    }
+    return result;
+  });
+}
+decode.defaultChars = ";/?:@&=+$,#";
+decode.componentChars = "";
+var decode_default = decode;
+
+// node_modules/mdurl/lib/encode.mjs
+var encodeCache = {};
+function getEncodeCache(exclude) {
+  let cache = encodeCache[exclude];
+  if (cache) {
+    return cache;
+  }
+  cache = encodeCache[exclude] = [];
+  for (let i = 0; i < 128; i++) {
+    const ch = String.fromCharCode(i);
+    if (/^[0-9a-z]$/i.test(ch)) {
+      cache.push(ch);
+    } else {
+      cache.push("%" + ("0" + i.toString(16).toUpperCase()).slice(-2));
+    }
+  }
+  for (let i = 0; i < exclude.length; i++) {
+    cache[exclude.charCodeAt(i)] = exclude[i];
+  }
+  return cache;
+}
+function encode(string, exclude, keepEscaped) {
+  if (typeof exclude !== "string") {
+    keepEscaped = exclude;
+    exclude = encode.defaultChars;
+  }
+  if (typeof keepEscaped === "undefined") {
+    keepEscaped = true;
+  }
+  const cache = getEncodeCache(exclude);
+  let result = "";
+  for (let i = 0, l = string.length; i < l; i++) {
+    const code2 = string.charCodeAt(i);
+    if (keepEscaped && code2 === 37 && i + 2 < l) {
+      if (/^[0-9a-f]{2}$/i.test(string.slice(i + 1, i + 3))) {
+        result += string.slice(i, i + 3);
+        i += 2;
+        continue;
+      }
+    }
+    if (code2 < 128) {
+      result += cache[code2];
+      continue;
+    }
+    if (code2 >= 55296 && code2 <= 57343) {
+      if (code2 >= 55296 && code2 <= 56319 && i + 1 < l) {
+        const nextCode = string.charCodeAt(i + 1);
+        if (nextCode >= 56320 && nextCode <= 57343) {
+          result += encodeURIComponent(string[i] + string[i + 1]);
+          i++;
+          continue;
+        }
+      }
+      result += "%EF%BF%BD";
+      continue;
+    }
+    result += encodeURIComponent(string[i]);
+  }
+  return result;
+}
+encode.defaultChars = ";/?:@&=+$,-_.!~*'()#";
+encode.componentChars = "-_.!~*'()";
+var encode_default = encode;
+
+// node_modules/mdurl/lib/format.mjs
+function format(url) {
+  let result = "";
+  result += url.protocol || "";
+  result += url.slashes ? "//" : "";
+  result += url.auth ? url.auth + "@" : "";
+  if (url.hostname && url.hostname.indexOf(":") !== -1) {
+    result += "[" + url.hostname + "]";
+  } else {
+    result += url.hostname || "";
+  }
+  result += url.port ? ":" + url.port : "";
+  result += url.pathname || "";
+  result += url.search || "";
+  result += url.hash || "";
+  return result;
+}
+
+// node_modules/mdurl/lib/parse.mjs
+function Url() {
+  this.protocol = null;
+  this.slashes = null;
+  this.auth = null;
+  this.port = null;
+  this.hostname = null;
+  this.hash = null;
+  this.search = null;
+  this.pathname = null;
+}
+var protocolPattern = /^([a-z0-9.+-]+:)/i;
+var portPattern = /:[0-9]*$/;
+var simplePathPattern = /^(\/\/?(?!\/)[^\?\s]*)(\?[^\s]*)?$/;
+var delims = ["<", ">", '"', "`", " ", "\r", "\n", "	"];
+var unwise = ["{", "}", "|", "\\", "^", "`"].concat(delims);
+var autoEscape = ["'"].concat(unwise);
+var nonHostChars = ["%", "/", "?", ";", "#"].concat(autoEscape);
+var hostEndingChars = ["/", "?", "#"];
+var hostnameMaxLen = 255;
+var hostnamePartPattern = /^[+a-z0-9A-Z_-]{0,63}$/;
+var hostnamePartStart = /^([+a-z0-9A-Z_-]{0,63})(.*)$/;
+var hostlessProtocol = {
+  javascript: true,
+  "javascript:": true
+};
+var slashedProtocol = {
+  http: true,
+  https: true,
+  ftp: true,
+  gopher: true,
+  file: true,
+  "http:": true,
+  "https:": true,
+  "ftp:": true,
+  "gopher:": true,
+  "file:": true
+};
+function urlParse(url, slashesDenoteHost) {
+  if (url && url instanceof Url) return url;
+  const u = new Url();
+  u.parse(url, slashesDenoteHost);
+  return u;
+}
+Url.prototype.parse = function(url, slashesDenoteHost) {
+  let lowerProto, hec, slashes;
+  let rest = url;
+  rest = rest.trim();
+  if (!slashesDenoteHost && url.split("#").length === 1) {
+    const simplePath = simplePathPattern.exec(rest);
+    if (simplePath) {
+      this.pathname = simplePath[1];
+      if (simplePath[2]) {
+        this.search = simplePath[2];
+      }
+      return this;
+    }
+  }
+  let proto = protocolPattern.exec(rest);
+  if (proto) {
+    proto = proto[0];
+    lowerProto = proto.toLowerCase();
+    this.protocol = proto;
+    rest = rest.substr(proto.length);
+  }
+  if (slashesDenoteHost || proto || rest.match(/^\/\/[^@\/]+@[^@\/]+/)) {
+    slashes = rest.substr(0, 2) === "//";
+    if (slashes && !(proto && hostlessProtocol[proto])) {
+      rest = rest.substr(2);
+      this.slashes = true;
+    }
+  }
+  if (!hostlessProtocol[proto] && (slashes || proto && !slashedProtocol[proto])) {
+    let hostEnd = -1;
+    for (let i = 0; i < hostEndingChars.length; i++) {
+      hec = rest.indexOf(hostEndingChars[i]);
+      if (hec !== -1 && (hostEnd === -1 || hec < hostEnd)) {
+        hostEnd = hec;
+      }
+    }
+    let auth, atSign;
+    if (hostEnd === -1) {
+      atSign = rest.lastIndexOf("@");
+    } else {
+      atSign = rest.lastIndexOf("@", hostEnd);
+    }
+    if (atSign !== -1) {
+      auth = rest.slice(0, atSign);
+      rest = rest.slice(atSign + 1);
+      this.auth = auth;
+    }
+    hostEnd = -1;
+    for (let i = 0; i < nonHostChars.length; i++) {
+      hec = rest.indexOf(nonHostChars[i]);
+      if (hec !== -1 && (hostEnd === -1 || hec < hostEnd)) {
+        hostEnd = hec;
+      }
+    }
+    if (hostEnd === -1) {
+      hostEnd = rest.length;
+    }
+    if (rest[hostEnd - 1] === ":") {
+      hostEnd--;
+    }
+    const host = rest.slice(0, hostEnd);
+    rest = rest.slice(hostEnd);
+    this.parseHost(host);
+    this.hostname = this.hostname || "";
+    const ipv6Hostname = this.hostname[0] === "[" && this.hostname[this.hostname.length - 1] === "]";
+    if (!ipv6Hostname) {
+      const hostparts = this.hostname.split(/\./);
+      for (let i = 0, l = hostparts.length; i < l; i++) {
+        const part = hostparts[i];
+        if (!part) {
+          continue;
+        }
+        if (!part.match(hostnamePartPattern)) {
+          let newpart = "";
+          for (let j = 0, k = part.length; j < k; j++) {
+            if (part.charCodeAt(j) > 127) {
+              newpart += "x";
+            } else {
+              newpart += part[j];
+            }
+          }
+          if (!newpart.match(hostnamePartPattern)) {
+            const validParts = hostparts.slice(0, i);
+            const notHost = hostparts.slice(i + 1);
+            const bit = part.match(hostnamePartStart);
+            if (bit) {
+              validParts.push(bit[1]);
+              notHost.unshift(bit[2]);
+            }
+            if (notHost.length) {
+              rest = notHost.join(".") + rest;
+            }
+            this.hostname = validParts.join(".");
+            break;
+          }
+        }
+      }
+    }
+    if (this.hostname.length > hostnameMaxLen) {
+      this.hostname = "";
+    }
+    if (ipv6Hostname) {
+      this.hostname = this.hostname.substr(1, this.hostname.length - 2);
+    }
+  }
+  const hash = rest.indexOf("#");
+  if (hash !== -1) {
+    this.hash = rest.substr(hash);
+    rest = rest.slice(0, hash);
+  }
+  const qm = rest.indexOf("?");
+  if (qm !== -1) {
+    this.search = rest.substr(qm);
+    rest = rest.slice(0, qm);
+  }
+  if (rest) {
+    this.pathname = rest;
+  }
+  if (slashedProtocol[lowerProto] && this.hostname && !this.pathname) {
+    this.pathname = "";
+  }
+  return this;
+};
+Url.prototype.parseHost = function(host) {
+  let port = portPattern.exec(host);
+  if (port) {
+    port = port[0];
+    if (port !== ":") {
+      this.port = port.substr(1);
+    }
+    host = host.substr(0, host.length - port.length);
+  }
+  if (host) {
+    this.hostname = host;
+  }
+};
+var parse_default = urlParse;
+
+// node_modules/uc.micro/build/index.mjs
+var build_exports = {};
+__export(build_exports, {
+  Any: () => Any,
+  Cc: () => Cc,
+  Cf: () => Cf,
+  P: () => P,
+  S: () => S,
+  Z: () => Z
+});
+var Any = /[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/;
+var Cc = /[\0-\x1F\x7F-\x9F]/;
+var Cf = /[\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/;
+var P = /[!-#%-\*,-\/:;\?@\[-\]_\{\}\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061D-\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B4E\u1B4F\u1B5A-\u1B60\u1B7D-\u1B7F\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52-\u2E5D\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]|\uD800[\uDD00-\uDD02\uDF9F\uDFD0]|\uD801\uDD6F|\uD802[\uDC57\uDD1F\uDD3F\uDE50-\uDE58\uDE7F\uDEF0-\uDEF6\uDF39-\uDF3F\uDF99-\uDF9C]|\uD803[\uDD6E\uDEAD\uDED0\uDF55-\uDF59\uDF86-\uDF89]|\uD804[\uDC47-\uDC4D\uDCBB\uDCBC\uDCBE-\uDCC1\uDD40-\uDD43\uDD74\uDD75\uDDC5-\uDDC8\uDDCD\uDDDB\uDDDD-\uDDDF\uDE38-\uDE3D\uDEA9\uDFD4\uDFD5\uDFD7\uDFD8]|\uD805[\uDC4B-\uDC4F\uDC5A\uDC5B\uDC5D\uDCC6\uDDC1-\uDDD7\uDE41-\uDE43\uDE60-\uDE6C\uDEB9\uDF3C-\uDF3E]|\uD806[\uDC3B\uDD44-\uDD46\uDDE2\uDE3F-\uDE46\uDE9A-\uDE9C\uDE9E-\uDEA2\uDF00-\uDF09\uDFE1]|\uD807[\uDC41-\uDC45\uDC70\uDC71\uDEF7\uDEF8\uDF43-\uDF4F\uDFFF]|\uD809[\uDC70-\uDC74]|\uD80B[\uDFF1\uDFF2]|\uD81A[\uDE6E\uDE6F\uDEF5\uDF37-\uDF3B\uDF44]|\uD81B[\uDD6D-\uDD6F\uDE97-\uDE9A\uDFE2]|\uD82F\uDC9F|\uD836[\uDE87-\uDE8B]|\uD839\uDDFF|\uD83A[\uDD5E\uDD5F]/;
+var S = /[\$\+<->\^`\|~\xA2-\xA6\xA8\xA9\xAC\xAE-\xB1\xB4\xB8\xD7\xF7\u02C2-\u02C5\u02D2-\u02DF\u02E5-\u02EB\u02ED\u02EF-\u02FF\u0375\u0384\u0385\u03F6\u0482\u058D-\u058F\u0606-\u0608\u060B\u060E\u060F\u06DE\u06E9\u06FD\u06FE\u07F6\u07FE\u07FF\u0888\u09F2\u09F3\u09FA\u09FB\u0AF1\u0B70\u0BF3-\u0BFA\u0C7F\u0D4F\u0D79\u0E3F\u0F01-\u0F03\u0F13\u0F15-\u0F17\u0F1A-\u0F1F\u0F34\u0F36\u0F38\u0FBE-\u0FC5\u0FC7-\u0FCC\u0FCE\u0FCF\u0FD5-\u0FD8\u109E\u109F\u1390-\u1399\u166D\u17DB\u1940\u19DE-\u19FF\u1B61-\u1B6A\u1B74-\u1B7C\u1FBD\u1FBF-\u1FC1\u1FCD-\u1FCF\u1FDD-\u1FDF\u1FED-\u1FEF\u1FFD\u1FFE\u2044\u2052\u207A-\u207C\u208A-\u208C\u20A0-\u20C1\u2100\u2101\u2103-\u2106\u2108\u2109\u2114\u2116-\u2118\u211E-\u2123\u2125\u2127\u2129\u212E\u213A\u213B\u2140-\u2144\u214A-\u214D\u214F\u218A\u218B\u2190-\u2307\u230C-\u2328\u232B-\u2429\u2440-\u244A\u249C-\u24E9\u2500-\u2767\u2794-\u27C4\u27C7-\u27E5\u27F0-\u2982\u2999-\u29D7\u29DC-\u29FB\u29FE-\u2B73\u2B76-\u2BFF\u2CE5-\u2CEA\u2E50\u2E51\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u2FF0-\u2FFF\u3004\u3012\u3013\u3020\u3036\u3037\u303E\u303F\u309B\u309C\u3190\u3191\u3196-\u319F\u31C0-\u31E5\u31EF\u3200-\u321E\u322A-\u3247\u3250\u3260-\u327F\u328A-\u32B0\u32C0-\u33FF\u4DC0-\u4DFF\uA490-\uA4C6\uA700-\uA716\uA720\uA721\uA789\uA78A\uA828-\uA82B\uA836-\uA839\uAA77-\uAA79\uAB5B\uAB6A\uAB6B\uFB29\uFBB2-\uFBD2\uFD40-\uFD4F\uFD90\uFD91\uFDC8-\uFDCF\uFDFC-\uFDFF\uFE62\uFE64-\uFE66\uFE69\uFF04\uFF0B\uFF1C-\uFF1E\uFF3E\uFF40\uFF5C\uFF5E\uFFE0-\uFFE6\uFFE8-\uFFEE\uFFFC\uFFFD]|\uD800[\uDD37-\uDD3F\uDD79-\uDD89\uDD8C-\uDD8E\uDD90-\uDD9C\uDDA0\uDDD0-\uDDFC]|\uD802[\uDC77\uDC78\uDEC8]|\uD803[\uDD8E\uDD8F\uDED1-\uDED8]|\uD805\uDF3F|\uD807[\uDFD5-\uDFF1]|\uD81A[\uDF3C-\uDF3F\uDF45]|\uD82F\uDC9C|\uD833[\uDC00-\uDCEF\uDCFA-\uDCFC\uDD00-\uDEB3\uDEBA-\uDED0\uDEE0-\uDEF0\uDF50-\uDFC3]|\uD834[\uDC00-\uDCF5\uDD00-\uDD26\uDD29-\uDD64\uDD6A-\uDD6C\uDD83\uDD84\uDD8C-\uDDA9\uDDAE-\uDDEA\uDE00-\uDE41\uDE45\uDF00-\uDF56]|\uD835[\uDEC1\uDEDB\uDEFB\uDF15\uDF35\uDF4F\uDF6F\uDF89\uDFA9\uDFC3]|\uD836[\uDC00-\uDDFF\uDE37-\uDE3A\uDE6D-\uDE74\uDE76-\uDE83\uDE85\uDE86]|\uD838[\uDD4F\uDEFF]|\uD83B[\uDCAC\uDCB0\uDD2E\uDEF0\uDEF1]|\uD83C[\uDC00-\uDC2B\uDC30-\uDC93\uDCA0-\uDCAE\uDCB1-\uDCBF\uDCC1-\uDCCF\uDCD1-\uDCF5\uDD0D-\uDDAD\uDDE6-\uDE02\uDE10-\uDE3B\uDE40-\uDE48\uDE50\uDE51\uDE60-\uDE65\uDF00-\uDFFF]|\uD83D[\uDC00-\uDED8\uDEDC-\uDEEC\uDEF0-\uDEFC\uDF00-\uDFD9\uDFE0-\uDFEB\uDFF0]|\uD83E[\uDC00-\uDC0B\uDC10-\uDC47\uDC50-\uDC59\uDC60-\uDC87\uDC90-\uDCAD\uDCB0-\uDCBB\uDCC0\uDCC1\uDCD0-\uDCD8\uDD00-\uDE57\uDE60-\uDE6D\uDE70-\uDE7C\uDE80-\uDE8A\uDE8E-\uDEC6\uDEC8\uDECD-\uDEDC\uDEDF-\uDEEA\uDEEF-\uDEF8\uDF00-\uDF92\uDF94-\uDFEF\uDFFA]/;
+var Z = /[ \xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/;
+
+// node_modules/entities/dist/decode-codepoint.js
+var c1 = [
+  8364,
+  0,
+  8218,
+  402,
+  8222,
+  8230,
+  8224,
+  8225,
+  710,
+  8240,
+  352,
+  8249,
+  338,
+  0,
+  381,
+  0,
+  0,
+  8216,
+  8217,
+  8220,
+  8221,
+  8226,
+  8211,
+  8212,
+  732,
+  8482,
+  353,
+  8250,
+  339,
+  0,
+  382,
+  376
+];
+function isInvalidCodePoint(codePoint) {
+  return codePoint === 0 || codePoint >= 55296 && codePoint <= 57343 || codePoint > 1114111;
+}
+function replaceCodePoint(codePoint) {
+  if (isInvalidCodePoint(codePoint)) {
+    return 65533;
+  }
+  if (codePoint >= 128 && codePoint <= 159) {
+    return c1[codePoint - 128] || codePoint;
+  }
+  return codePoint;
+}
+function codePointToString(codePoint) {
+  return codePoint - 1 >>> 0 < 127 || codePoint - 160 >>> 0 < 55136 ? String.fromCharCode(codePoint) : String.fromCodePoint(replaceCodePoint(codePoint));
+}
+
+// node_modules/entities/dist/internal/decode-shared.js
+var BASE91_INVERSE = /* @__PURE__ */ (() => {
+  const table2 = new Uint8Array(127);
+  let code2 = 0;
+  for (let char = 33; char <= 126; char++) {
+    if (char !== 34 && char !== 36 && char !== 92) {
+      table2[char] = code2++;
+    }
+  }
+  return table2;
+})();
+function decodeTrieDict(input, resultLength, atomCount, dict1AtomCount, ngramCount, dictSize) {
+  const base2 = 91;
+  const inputLength = input.length;
+  const twoCharBias = dictSize * (base2 - 1);
+  let pos = 0;
+  const readSlotCode = () => {
+    const c12 = BASE91_INVERSE[input.charCodeAt(pos++)];
+    return c12 < dictSize ? c12 : c12 * base2 - twoCharBias + BASE91_INVERSE[input.charCodeAt(pos++)];
+  };
+  const dict2AtomCount = atomCount - dict1AtomCount;
+  const slotCount = atomCount + ngramCount;
+  const single = new Int32Array(slotCount);
+  single.fill(-1, dict1AtomCount, dictSize);
+  single.fill(-1, dictSize + dict2AtomCount, slotCount);
+  const start = new Int32Array(slotCount);
+  const length = new Int32Array(slotCount);
+  function decodeDelta(count, off) {
+    let previous = 0;
+    let slot = off;
+    const end = off + count;
+    while (slot < end) {
+      const code2 = BASE91_INVERSE[input.charCodeAt(pos++)];
+      if (code2 < 89) {
+        previous += code2;
+        single[slot++] = previous;
+      } else if (code2 === 89) {
+        let runLength = BASE91_INVERSE[input.charCodeAt(pos++)] + 2;
+        while (runLength--)
+          single[slot++] = ++previous;
+      } else {
+        const next = BASE91_INVERSE[input.charCodeAt(pos++)];
+        previous += 89 + // eslint-disable-next-line unicorn/prefer-minimal-ternary -- branches read a different number of side-effecting input bytes
+        (next < 90 ? next * base2 + BASE91_INVERSE[input.charCodeAt(pos++)] : BASE91_INVERSE[input.charCodeAt(pos++)] * 8281 + BASE91_INVERSE[input.charCodeAt(pos++)] * base2 + BASE91_INVERSE[input.charCodeAt(pos++)]);
+        single[slot++] = previous;
+      }
+    }
+  }
+  decodeDelta(dict1AtomCount, 0);
+  decodeDelta(dict2AtomCount, dictSize);
+  const references = new Int32Array(ngramCount * 2);
+  let poolSize = 0;
+  let ngramIndex = 0;
+  function readNgramReferences(count, startSlot) {
+    for (let index = 0; index < count; index++) {
+      const slot = startSlot + index;
+      const a = readSlotCode();
+      const b = readSlotCode();
+      references[ngramIndex * 2] = a;
+      references[ngramIndex * 2 + 1] = b;
+      ngramIndex += 1;
+      start[slot] = poolSize;
+      const entryLength = (single[a] < 0 ? length[a] : 1) + (single[b] < 0 ? length[b] : 1);
+      length[slot] = entryLength;
+      poolSize += entryLength;
+    }
+  }
+  readNgramReferences(ngramCount - dictSize + dict1AtomCount, dictSize + dict2AtomCount);
+  readNgramReferences(dictSize - dict1AtomCount, dict1AtomCount);
+  const pool = new Uint16Array(poolSize);
+  let write = 0;
+  for (let index = 0; index < ngramIndex; index++) {
+    for (let half = 0; half < 2; half++) {
+      const source = references[index * 2 + half];
+      const value = single[source];
+      if (value < 0) {
+        let read = start[source];
+        const readEnd = read + length[source];
+        while (read < readEnd)
+          pool[write++] = pool[read++];
+      } else {
+        pool[write++] = value;
+      }
+    }
+  }
+  const out = new Uint16Array(resultLength);
+  let outIndex = 0;
+  while (pos < inputLength) {
+    let slot = BASE91_INVERSE[input.charCodeAt(pos++)];
+    if (slot >= dictSize) {
+      slot = slot * base2 - twoCharBias + BASE91_INVERSE[input.charCodeAt(pos++)];
+    }
+    const value = single[slot];
+    if (value < 0) {
+      let read = start[slot];
+      const readEnd = read + length[slot];
+      while (read < readEnd)
+        out[outIndex++] = pool[read++];
+    } else {
+      out[outIndex++] = value;
+    }
+  }
+  return out;
+}
+
+// node_modules/entities/dist/generated/decode-data-html.js
+var htmlDecodeTree = /* @__PURE__ */ decodeTrieDict("!}.&u%}'&}*'~!6*)%&,~!J~!J~%L~y<~!R,~~%Lu~~#GD~~#|)1#%}^%}2%+#.##%##%}&%##%'#%##&%#%#'%#&#%#&#'#%%#&#%##%#)%''%&%#%#'%#%%#%%}%%%#%#&(23#%%#&-%0%('1#(##%#'##+%'*.:1}#%#6-+(%'%%#%%%}#L'2351&('%}&/N'(0(/*-%(%%}#'+&T%7.2}#&%&#%#36/5##%&%%#&#%%#))2%%##%&&'0~!#*+&'%1~!%).'3q?&%'1~!.##%6(~!+%%%(Gw'rT~!E#<nA%#jZ~!H%(~!42##~!*31&~!G%U~#)5~#`3~!J~!Z~%]~%Y~%C~!q~!u~#kz~%#~!6'~!D~!U~!?~#T~!c%~!G#'~%7|~!G~!J~!G&~#pb~(Df}#%}*&}#%##%##%##&#-}&'#'&%#.++}%mI,#,@&(}*%}*'%&##&#%##%}&0}#.},U},%}+%}&%}#%##&}B%(}(%}+%)})%##%#&}&%##%&}<%}>%#%&}*%}(%}9%}/%})%}*%}*%}?&}&%}3%}&*#%})%#%#)}#&#-#+*%E%%'%'#%}#*V##&##I}#&&##%&%#&&Qf%%))w/0+&%#(#.%-''''++++7}>%4'',##1,#%#&%##&#'##&#*#9)%&%}#*}%,#+P(%A&%#'&##wSD',9E00#y#@}(+}&%&>~!#~!X}#*}(&&}(&}(,%}%&#+&}#&}I%#%}%)#(},'%#*}4%%#%}(''}#/##(##),%-##%%)#&}(.}&%#&}%%}*&#%},&&}&%}#%*'#%})%}D&}&%}-&}6&#&}-,%}#%})-(~+`~,=?~I9'9%~!,#%})%})%}@%}?%}(~!?~#<~#pP~#BG~#=1#%K+~#?#~%;)~#A~#mF1~#A'~'X%'~#lR~#N~'N~#r~#m#-~#i'?%#'%~#B%##%,%#~#_%#0%~#]732~,w~2+#:&#%&'0%&>%}#>##F+)#%&&#(+_}4&}-%}(&}@&}O7Fdf0@+/v4}&WU##&/0#&'('B#%}.%}'+#%}#%%&#&%#%##+#&#)#6#'#.},%}c%},%#%##%&#&%#&~#>'*-.%##%##%}#%%}%'~#)D1}#%*&~#_%%'(~#S2%'.}#~#=##*'*-%}&'%'##&&~'E%.#&~#M4}%%##&'%#~#O1##%&#'+~#<B%##%%'%+~#;#@%}#&%#&&%#(~#H1}'%'##&&~#?A}&'~#D#%32}'&&&&~#[}'(#%}'~#;C})&}%%#%~#=&%,3}%'(#%%~#^'#&&)#%'~#Y%-~#d-%'~#^%%&#&&&}#~#b~2t*&'~&(~&@~0%~e~3}%*''0})&}+~!9##-}#%-hD*)1fC#%/&/fB#40~!+#)*4~!+~!K'&:~!/*7~!.#~!H~!L':~%x&~!H#~!*~%1~!I#~!+A~#p'~!F~~#-#~,,(~.Z~!V~%;'B'mq-W~!N~%I%#&&#&}#%},%%}'%}+X#%}#&}(%}'%}<%}#%}%%'}'%}:~![)9@~%>~#UA%-%##&~!C%~!-.9:~!1~!-^2/:a~!y,D*J#-5)/4~%23,~#G~!L1~!0X3`~!2+~!!0-~&E~!W~!o,>Y&]~%cZx_&~#O*9#A#'#+I'%#)~!0B*-5A+-((F&*M#)(-7-5+'-3a5Vi~!Y~!?+[)%3),ERHm~!+:D,VG.+)?fB%%*(%)'(#&80%1'8`K8?`+'Z#&O&'H5#*9)A%%5&3))0%39+.*7#()&&*=4@**L)<'_&*+..;(#*+)./&0#3)%')-8(4ixD(&.}%,('aI:,)%,k2231T)I'#/-W7,/'Q#.'Y24+h')37</31&83##&0#),H(?'&?/1##%#&&#%''-%&&&#(&''&#.-'%#%%(,')*'&#&#'##%(%(#%('#&##%%%%('%#%#%%#%#&%##h>w+v<ayvyvcg.uuhKr}g/v|g>u9i[~>g5uI~=RvdwEg;v/g;uk!!TTSx]@RT!U!#!@VBRUU!'UTe-d0c`e&gSdicedFcrdTaqb.kYcAohdYd@a3e+d}dMdtd.aJ#bqcK`dle/e.e'dwdPdodddjbEb}ogd^ofdpduc6j?l%d{drdqc)d7bacOdQ%T#Y)X.sR[yH>6Vyv3[xwLu>vo'!*.[yBacahoj>6Rew3[xqdZa#!a&#^(X-[yG>6Vyu3[xvg3sEr|g.u/Ri9db0T#^(Xa)!-[y;>6Vylg4wKs{JwNZt3@3r=c4Z([xlg;wKt!cpq's@v7A'*a(a+!-a#[y<3Dt?3Dt'>6Vym3[xmg9rxsNJwLZt4~?r?db1T#`-!(Xa,!0[yS>6Vz%NuQs.g4wKtnJwNZtS@3r>c4Z([y%g;wKtrdga8!a(!#&T*Y-Xa#!a0<or[yc3Dtq>6Vz43[y3JwNZtf@3s!Ju}!%Dti:pm3c_%X#tjB5pkd6q!r]u?voC'*-a.a2!0a&a+[yI3DtI3Ds~3DtH>6Vyw3[xx;:s#~<5pKJwNZtE@3r~d`a)!a2T#a.(!+U.X1[yT3Dt`3Dtv>6Vz&3[y&g9rxwzcxstPu.<rAJwLZtT~?r@dZa%!a.&^*Za(/Reu[ya>6Vz23[y1g3sEr}wkg{NuQRg{ci(U#5@b`~,cg#U(2WnH5wugcRh7dX#T(Y,a'Ta!!a,[yZ<]mj>6Vz,3[y+Pv#5ReZKu+=,%!H}7ABwkaS?Rh:BcW(X#<]mrj:ubv/ARekdg%!(!a.*Ta(Y.X1!#sP>Rl*Dt6[y>>6Vyo3Wf*jOvuumvuRgRJuq*!:9<B@bX~3jVv&v@s@5Re[d/rQt{uAvo&a&a*)a2!,0Wf!3Dt0=Bs'>6Re}3[xy~<5s%JwJZt1~Gs)c;&!#2sJkNuXvzq7rxu,Re8dka4!a8(aEZ+a@Y.X1Xa)[yd=Bs(3DtP>6Vz53[y4cX#X&Re:avRe9~<5s&JwJZtQ~Gs*i^rzvdRg+Jv{%!2sbB@bX}kdga,!Za?&^*T1/!a'Dt+[y6>6Vyf3Wf%g/u;s4hGu6?Rh-JvZ,!c%#&RoX54Rivj7uyvf8RgTKvZB%*!2sGh<vu5Rgq<=C::9bb~#dZ#T&Ta6Y.X*Dt>[y93Wf)coZ(T,6VyifluvRgC@95@B@bX~/hFu34cC#T,k/unq8w8Q5RkUklwQuzunq8w8Q5Rk8d/rJu?v8w9)-&!a0a;a&aIWejg3sEr/h1s<DtDJvyZqY5aws3Jvy!&Wei~Hr1:au5@Bag>23E~5c:Z&bX};kKv?w&unuVu5Rjc;>bs)#~@:Rh.=ay<a]C;b`}Vd6s/t{uAvoaxa()!a,a7%-a#a2Dt,[yF2Wo[>6Vyt3[xuNuPRi&NuPwpi#RoWh?vf8Ri%Jv]!%Ri:KvxD!.'2WeAjZu`q9rxu,Re7woeAg-unLq(qA_/*2Wg_g3u5q^9:4E}/jTrxrzv=Wkkd~0UX#^^Xa-a1a5T&a=U1a'*aEa]!a*aPaA-adok[y54Rn>;:p3~Dp5g9rpsFNvZqjg3uJp4~<5p0Pw;5qlJwNZt*@3p1Pw:5p/Ou!5p2JvG'!6Vye=<qnJvh_[xhg3v,Rh3kOwOw-sDuev/Re^dha[a%!%!a+#Ta7)-5TaCaO!aka!a)sf[yb2>Rl!9ARiq5E}Qg=ucRkBE|oJrJ_@Wk~@Wk{JrJ_@Wk|@WkyJrJ_@Wk}@WkzJvO_[y2g-vMRmiKuYC!)&>Ri;>Ri<@3RkNc](X#@9Rk=g5vuRmhKvDB!+'=]meg3u4Rmgd)#Y'Vz3CARmfd`a+!%T'!+#Ta1Ta6TaM-sTDt9[yA9sYd'%Y#s[[xpj:ueunaXRgEjRq,v-vuqdd2'`#6Rev<32@5>:2<E}5xIo9a*X#Y(;5RePJvD_g>vyRgNj8w)v8<wggs:RgXiZt|vjx,hSq3ah!-(~@:Ro/Ou!5RhWj^v(pyw8unRhUdx-UY#^Ua.a3a70!)%UX1TaDa)'omRiRRhE[y:3Dsz=Br,>6Vyj3[xkg6ruwjcqsrPw;5r*Ku]D'Zt-@3r(~?r.i[vwv]dU1a--U#`a4(g/vsRhPOu!5RhLj:rmu9Wo!~@:wdh@g/vsRiTjXuvvNr}:RhBj^v(pyw8unRn]dz1UYa'a+^Y(!aETZalaRY.Ta?a4[yDJw1!#qLsW>6Vyrfzq-pLflpwRe|Js>%!Dt@3Dt&Jvy_[xs~HrnjMuwpsw'RecKu+D#'!t<~Grl~?rjg5u-x,gwp{ah!-(~@:Rg~Ou!5Rh'jXuvvNr}:Rh#cW#X/c;&!#2sLi[v7u7RgpJv)(!iLrxu,Re6j7v@s@5Se[e7d`aW!Za(a`T.a#!a3!&aDa-!9)Dt_=6s+3[x~~DR|h~DS6avhGun5RkZj3w)v-]mkKunB!&*]kb97R|i<ARk<c:Z(6Vy}Juh'!wziMRoS:F|vkLuauJv5vtvQRh1d='T+Y#VyO~DR|jcF#T'7R|g97R|kJv3'!ay<Rj,Jvh&!:ReXcsa6*a+#a#_aIRf9aLRf?c,Z&Rf5Rf7c.Z&Rf;Rf>cQ#%T'p-Rf8Rf=ct#%'(*!,p,Rf4p+Rf6Rf:Rf<d~'Ua%U*^UYa(!a,-!#a4YaTalaEX0a8a<Weo3Dt/3Dsx=Br93Wen~Dr;~<5p<JwNZt2@3p=Pw:5p;Ou!5r3c7&!#:p>3Ds}KvGB)_6Vyk2sM=<r7x'eovA(!hFu1ARf}cV#X&@r5j6rvwQa^Rf3c=Za'wkghJv__g;unRggA53B9=b^}%j6uduo5Jq;!(hIv%2Re`Ou4ARe_e%a#^^^Xa&!a*a2!&a6YaP!*ad!#a:aE/5Rn?[y@>6Vyp;:pE~DrY~<5pBJwNZt8@3pCh=rt3rWPw:5pAJup_[xoNuPpF9c!#'45pD5ARn)d8#X'X*3@rU72s]h>v<<sSjJpqvewOJq/(!hNw'5ReBk0s2u3w/w'5ReE5@Jq.!a+JQ!&WeU23d(#Y&RjG5]jBk!u7w&u0udARjEe#+^^^Ub#!a2/a`Z(agT1!a-a;|@TaG!aS[yV=Re~fow'RguNuPRe?bz#'>RoUWeL>:Cbb|?JwPZtVg6ruRmzJvD'!6Vz(g/vmRh~Jvy_[y(g9voRgyx*cy(#2>Ri2B9b]~9kIw9u7rluJu3Rg]dI#a%UY'@=p%CAx.gQZ&RhwwygtRm{x5g_Z'+ABqR9Woa=Bp&dV#^*Xa'!&@o{g4v]Rk;Jv{!%Rk[wkkiA5RkiwwfUB=x,fUuqC&*!>RfTg8v0RfV~ARfSd;rJsAuAv9wR'ae+/aO!a@aza/a#[yQ@Wg!2Wemg3sEr0JvB_g>uvReWg2v+Re=KupB_+[y!2AbY~-~Hr2AJwD!(h<~El>h<~El?Kun@+_:9b`}Kg-v/Ri3g;vtwyk_9]k_d=&T#*U.6qh@Ab`|K9:H|CJv[!&3Dtex'fDwC%!Rf[9WlMd[(^X,!a%Z06Vz!@WgBg=v~Rgvg,QRe@awd,#Y+jTv|Q~EfWj]uNr|~FRfXdy#Y&^Ua%!aO.!(a)Ua;=!a@aKap!a-,a!Ta]a[rSa]p?[y82sK=Bq~;:p:~<5p8Pw:5p7d'#Y'Wf(;RnRi[u4w&RgJJvG'!6Vyh=<r#ijuuv/sIKuYD'ZtG@3p9~Gr&d2#`(g<vtRgFj`u5w&rqpxRf2CJuY!+:wfnTOu!5Rg}jNs1ucv&RfwJvA!&3@q|BDcC#T,k/unq8w8Q5RkTklwQuzunq8w8Q5Rk9dga#!a'!a=#a0!:+Tb*b@aO.a4!aba8aFJv^}?!VyR~Dr<g;u%Rn.~<5p[x'e`wNZtR@3p]Pw:5pZhNvjBp.woe_g5u-r4JwF!%DtO3:ooc7&!#:p^3DtpLuGw(!+%)Dtk6Vz#2sd=<r8d'#Y([y#<x3gJt`w@!)%}MRiowzikRij=]ilxAf3,U(#B2Rf#g0v-Rm[ck{`U#]giKv3>)!&6Ri154s,KuGB_%@r68r:dJ|t`#X(9<E|u2@H|rx3gJu?w'!+'1Nu7Reg4=H~+9<wxgY95Rm]xLggZ-`(X}U2:Ri4h<uOawRmsJv__5@bb{jbV~3dka#a'a]!,#a+U=a>b6a3b%!/aKa/)!arwve^VyJ;:pR~DpTg3uJpS~<5pOPw;5qmPw:5pNOu!5pQJvG'!6Vyx=<qoJvA!{~Jup!%@qk7Rn/KvyD!}''[xz;>wkh'?Rh,x8gyt`w5D!&),(SgyccRgztJ@3pPB5p#d'(Y#<]mmifubw&RgoJvE&!82s^JvF&!8Rf,ADb]~;x=h'rNu]vK!,%'*0RnORh)4Rh*AqQg-vaRnNg;wHwkh'ba~4cE#Ta*x3gctyw@'!+%RnFRnD<4Rn@hFvK5RnCxWg[#`&a0Ua()`1Rm75Rg[c]%X#qi8Rg^NvdRj>BwzgZauwji7Rm6A4wgg]d1#&(*,.0a#Rm;Rm<Rm=Rm>Rm?Rm@RmARmBe%#^^^Xaea?aC/b+(,!a+a#!a/!>a&Ta<aKbD!2wphBRnk[yPw}hE|.=Br-3Dtm>6Vy~g6urRf.x,hPrNav!%'RnqRo%Ro#Nu;q[Pw;5r+JwNZtM@3r)d'#Y'Weh;xChL#`&RnmRnoKu}>%(!Rne~Bs-;2wjcussJv+'!aYSO}6@B<5?ba~8LrNvj!.%*ROwungw~ng~:9;Ri^>wtnig;wHRnixDh@|(UZ.x1h@|)!#:2<H|*xHn]#-UX'3Ro)z=iT}6ARns=Bwsn_wpnaRncw]aR(#UXa&Ua*a/=]iPd'#Y&Ro'WnXf{QRm2hNvj]nZd`'T~&1`{|`#9b]{}c:'!#Wl{>@=be}]?cl{{U#:5Abb}Jds#^YaF!a*b4a#a3aPa>&Tb!bH!*a_!Eau?/a&RjY<]gj>6Vz*;:pe~DrZg,QRj1JwNZtX@wihspcJvZ&!VyX9WmOJu|!|N2WmHJvh&!]ht~Bpbcn&T(!#RmQ<s7Nu;padH#X'`+WmJ@>RmKCARhnKup=!)&Wf+:RhqNuPpf9c!#'45pd5AwghpARn(Ls@w!%,)!RmP@Wfe<E|IJva!&WmNg8vsRmLd`*.`#Y'Xa!axRn*]hrA8Rhug5s@rXg8u!RmMd8#X'X*3@rV72smdI*#UY&RmICARho~GsgxVgd)Ta'U-Y&Xa!T#RnEWnA@Wffg1uDRi0hFvK5RnBxGnG&#`%owp)@wsf+bX}Ze-*1!a*^^^Ua|!#a.aq&Ya2!a>.a6!a:aO`aJDtL[y`@Wg#>6Vz12@wzoYRoZNuPRi!NuPRhzg=ucRi,@=b`{Yg=ucRi-ACJvB!&Sh[ebSh]ebi`wUuFRm4Jw2_[y0JvB!.<Ju(!&SoG}6Shd}6<Ju(!&SoH}6She}6Kur@._g5vHRieJvx!{L2G{Kx6gd'T#?Rh82Wi5cZ#X(g1w)Rm5dW-Y(Ta#!a)!#aYa=wnfE=su2>>bU{0j9udv:<svj8uQv-7RgHdE%#^'sq9sp=>Bb_{TJv`!&g/r|snj6v(us5d,#Y(56H}[978H}]Jw5!&g1rushJvB!+j;v{u5?zDhd}6}bj;v{u5?zDhe}6}ce*#`(^^^a[aea!=!a6a*aoXb1a.!aAbL!b>,b'aL!aV@Wf|2Wlg3[y/JwNZt^@3piPw:5pgJunZou3@rsJva&!Vy_g<v~Rm#JvG'!6Vz0=<r{Ju{%!:pj@WfsiXuJu3Rm:JvZ&!WfA~Bph@c4Z&Dtwax5rubx(#:awRk1@d,#Y&RfjRfid1#,Y(@Wfp2Wlrg5s@ryKu[@!,'=]ig9wlk?Rk>g5u-rqJvy'!@9RkQcH(T#=>Ri~@<wkj(Wj(KuZB*!&<7rw@9RkRcH(T#=>Ri}@<wkj)Wj)dg(Ta2Xa9X#`-!a*CARhg@@=I}d9x;c~#X%so=<sj>2@@=aybb}XjWv0Q~EfEj3vLv;<d,#Y(56H}`978H}_dgaPaFa'a/!#a3Y0a_a;a|!1(a7-[yE3[xt;:pJNvZrrg3uJrvJwNZt=@3pIh=rt3rxPw:5pGOu!5rpJvG'!6Vys=<rz@c4Z&Dt(ax5rtJvZ!&~BpH@wsfNg-vaRlNci*U#=<wei<F}a5@Jq.!a*JQ!%@qZ23d(#Y&RjH5]jCk!u7w&u0udARjFd/prq=tyvpaEa(a:.!a1aZ(@@=I}:9wpd%=<sX55w_h}@@=I{t=ay<aU@@=I}T=ay<2@@=I})?C9:9au@9Cb]}DP~=x-fAZ(2Wl1=ay<aU@@=I}>5@d##Y+jTv|vV~EfFj]uNpn~FRfGdgaK!Z2&!a8a-Tb({E!acTbM*!a(DtY[yYd'%Y#sl[y*hHvh>Re5x2c{Z}.j4uCvcawRiMd+#X+_x&d!},<5RkX;2Hzw@x,gavfB-!{CcF&T#Roe;RodwWbBg5urRgaKvHC*_6Vz+<4opieuew&Rmq@d]&Y)X,T#X0Rh}<BqP=4qS9:ReMg/ujReNJw0!/<Jui%!bd{kawwnemRelAxUa?a3#*.&UX(Ya+a/RhvRnQ<o}9Wmtd-#Y&RgSRmw9;Rmxay=Rmyg-vaRmuxEhSrNu,v-voC!%(aR.a(a7+1Ro1>Ro5CE{A9b]{@;5x#eO{:g;urRi+KrNA!%(Ro3>Ro79;Ri_Ku@>{;&!x%gX|{KunA_+g5QRj/g3u5Rj#g>uERj%wio/xRhS&!,!#^1U}wba{8>>@=be}qC@:D5ba{7Ku+A&!}x?ba}t>>@=be}se(aA^^^Uat!b0#{pa+awUazbGa#aLb9bgaWac'a5TbS=Br!d1#`%scp_Jvl!#rT>Re0JvX&!VyN=H{Fcm#U&:pY=ReaJv2&!]h0=]nUJvG'!6Vy|=<r%JrM_=]h2@Wlud'#)U'Wf'b]{i=]h/Jvh!&~BpWg=v]RnMx+ny#'Nu;pVwjnu=]nwxJnx,T#`&Reqwjnt=]nvieu9vrRjLLuYwP(#+!th@wih5pX~Gr'g5v/Rh4KunA'!-CARnP@wwiN:Rm_9x'cvw>!|l=<saKvAA!0&3@q}>w^e1bp#&Re2Re3BDx7gH#T|f5H|eKuZ>!%(:qNAH{]Jv6!+3B2B9=b^{X<5<B92:E{ZLvhwA(a;a%!igQuyRmad+#Y}m@3Rh5d8#X'X*:AqUAHzmaxwbh<aXRnVcF}RT#Nw&cj#U(BWnug/vsRntdka)(a3+.Zb7aYYan1!bVa@Xa}[y^@b[{G=H{+hFu73Rj&Pv#5ReQcK%T#sig1v{Rj'Ku+D#'!t]~Grm~?rkKuMB!01d5#`'Vy.ta3Dtu~Hroc8#'{^45s85AwZbP&!#Rn!wghxWn#KvEA!)&2RlA2RlBx:h|#(T,=]j09Wobz>x]z/@awRoTd+#Y(az]hFhCrm4d,#Y+jTv|Q~EfMj]uNr|~FRfOdCa!Xa9_X#@<plJvf!%b`{(9;Rgwc;.!#2x7cw#T|UDb]|T5Ju={(!=@E{&Jv)&!Ab`{'awJvf!~*>>@=be{#KuY>!+&4Ezyi[ugv&RjIdea+T)#UXa&T-T&a!Rh9auRmW=]kLg5vuRn+g3u4Rn-Ow6ARn,hHus5xNk?#UX(U~)/g8v0RkD~AwkkF?Ri.OuNBwkkA?Ri/d|a2`a*^UYa.!aBTZaTa'Xa;!(!2!-a#b2[yC>6Vyq3[xr2Wi?g1rusVh%s?DtF~<5rbJs;%!DtBfswKtCj[uvuSsEu3RgVx3o:u+wN'*Zt;@3rd~Grh~?rfg8w)Lq)qE&-a%!>bI|`jWv0vV~EfCjTv|vV~Ef@j]uNpn~FRfBcK#T']gWNu7x,k7q4ai(0!hHv8<RhmkMu9vrsBuev/RhlCJvB!,g<v{wchh~@:Rhji[vrv{wchi~@:RhkdS&a5UY#Ta!RgPwwiI5BwciI~@:Rh`x'iJvj'!5]iJPu8Bwch]~@:Rhach)U#h3rp]gLh@t|Ax,hTq3ah!-(~@:Ro0Ou!5RhXj^v(pyw8unRhVd|)`,^UYas!a?/a2Z'a^Ta{Tb7Ta(a#!a,Wf&9sZ3DtAadamov=Bqt3[xig8vsRm~>waiL2b`{QJv*_Ouv2qgj<v]v2BqfdR'X*X#Y-@3qr~Gqv~?p6hHv-]glPup5Lq+q?_%*b_{qF{n9b^{rOu4ARhpKvCD!+&~Bqp:5Dbb}nwoiKl&unuTuBv]v+ueunaXRf0=Jvh!0nKufu8v1w&w7q%w&uHrz:Rgnj5w,uxDJq/(!hNw'5ReCk0s2u3w/w'5ReFd>Za&!*UaA=<wkgsRnSJv^!%Refifw3vyRgOKu_B'!,<]gkiiu:w&Rh<=C@a^<B57@2F{[<B5@aW:=3away9A5aW=<B=C@a^<B57@2F{Ie-#`(^^^bCara.b8aza6!/bZ,!adTbnTbOb+aFaS!aAT9@Wf~2Wli3Dtl2@d,#Y&RfnRfmJwJZtN~GqyJva&!VyMg<v~Rm%iXuJu3Rm9Jv[_=]ih9wlkDRkCd1#`(@Wg>2Wls3cH#T(@<Rj*=>Ri|b~'#23s9h<~El.d'#Y&Dtxi^rzvdRl#d*#U%(o|B2s`hJwSaxRmDKv4B&!1:Rmdd5#`'Vx}to~Hq{x'f1v3(!BA5ba|bJv_&!Wfug1v]ReIdO+U/Y#&G}-8wze=Rh{g1v]ReHg/uQRf/by#)ibQwERl/cH#T(@<Rj+=>Ri{cNu+vlax-!(#a0qa9<Rii2;;bU{H;x<i=&X#Rk`<4wwi=C9H~8xAI(Y#<azRi@45wXI<B9;5bb~7dL(X#Xa(+!aL6Vy{g5QqOau:5au2@ay547EzbxOcU(UX-T#Ta#:Cbb|A?wjh/b_|SOw6ARgtihr}u7Rhy<d1#T)X1@@=I|~=ay<2@@=aybb}Sj3vLv;<d,#Y(56H}A978H}@dGpvs@uAu`vcw9*!aFa+ai%(b!aXa8.a?a[ozWey=sU2@G}Nch&U#Rf_WexKu+D#'!t:~Gr`~?r^j]uNr|~FRg*j^psurwJt|RmcKv)@&!)7Rkv~Br[@wxfO:Rl3co#U'6Rezj_q#vIuavjRltwzeyh@vr5JqD0!>aY?C9:9au@9Cb]}9cl#U*5;5<H||jbuus1ucv&Rfvg1v~d/pppzqFr^a--a~!aMat1(hFv;Wiz@@=Izoj5uuv-7Rix~Cw`fk2WlVcZ#X,k)u3vWs@u2]ktg;wEx'fBq(_2Wg/jTv|vV~EfoJv]!15x'hzqG!(P~EfU~CRl_j6v(us5x4i-#T(2WmZ?C2F|d>Kq<aj1!*jTqIsBv=Wl`~Cw`fi2WlWj`v0u*~>RlR=c>Z,k#u3vWs@u2]kr<c1Z+jTqIsBv=Wla~Cw`fm2WlXdmb3!a{(arZa`bkTa%TbQTa-a9+c'!aM!/[yL=Bqug.w'RifhFvyDRj.g>vgwyk^9]k^Jv3_@WfbAARkhJw2_[x|JvB_wkoIRoKwkoJRoLd'(Y#<]gm=<9<H|yd'%_X#skDtb3awwqkgNulRkgdB#^',9:p'hJwSaxRmEBwVb8@4=H|qLu+w50&!)@3qs~?pU>Awwn;;Rn=c:Z'ARn<=<qwKvC@!/&~BqqJv6!&]eVb^z^xRge'/a%+^`#Sge}6<4Rn3=]n0Pw2>Rn8Jw0!&>Rn:>Rn6cY#a7+!a&=<wkaNw~h3z_c5Z{=wjh#=]nLKv^D!&)Vyz=bW|swYb<WetcG#T(2wxa@qVx@gD#Y&b^|V5JwG&!5bb|pg/w&RgD@x=kHs=uAvn!a%%/'+RmSRh694Ro`g-vaRmRhHv-]mlxCcS#`&ba~.5cD#Ta)P~=d,#Y(56H{>978H{Dd_#{2^Y%_+qbbb{6g3sERhsbU{?dfa.,`a(Xa<!aiX#(55RiG54RiHcI#T'WiU3RiVNvdwtfcRlKNvdd,#Y&RlHRlExQgf.1*^T'X#Sgf}6Wn4=]hfPrk>Rn7Jw0!&>Rn5>Rn9Lunw?&a2!,5<oq@@wqfdRlJj5Q~=d,#Y(~ARfcOuN]fdDKw;ay(}i!547E}j?cI#T(@5bV}iCbV}hdv(^^Tb?a40,b##Tbo!a*bR!a<b|a/!aKai!aU[yK=]o^g:v>ReGJwPZtK<7Rh+h<~El,Pv#5ReR@awwxjCg,ulRjDJv6&!]j!z?aQeeg>w=Sh<eeJw;!&axEzOg,Qosc!#*:wkeJ]eJ>x'h-u(!%Ro.w~h.zPdNZ(X,Ya![x{;9ReY;wkgxRiF:x?ap#Y&RmUg<s2Rkod]+UY0TZ'!a&A9sw<=bczLNvuw{gqzNhJwSaxRmCKuLay!#&s_Rf-55b^{uJvZa!!c%#(55Ri654wmiu5RiuawLu,vp!+}^%b_}Y9;wkgxba}o>A9:=b^}zKuh=a''!3awRk3c*'!#aHRk6c+Z&Rk5Rk4Jv)&!awRjSawd9*`#0?C2@EzMj8u<uJ5RmbjQrquJu3x,k>uq@_+=ayb^|W~ARkEOuN]k@7dhzV^X/X&a-#zRzSb`zXcJzTT#2WkVKvDBzW!%FzY9;5bbzWjQrquJu3Jw3%!b`zU=ayb^zQd:#X(T-a!6Vyywxh}=b]{Jg=u1RiAdGp~qHtzv!w(wA+a+a;<!aJaYai'anasb(=azRmV:Cbb{MLq2vb!%')RjuRjrRjtRjqx3jnqCw3!%')Rk(Rk+Rk&Rk)Lq2vb!%')Rj{RjxRjzRjwLq2vb!%')RjsRjpRjfRjex3jcqCw3!%')Rk'Rk*RjkRjl9<CbbzfOu4ARhxLq2vb!%')RjyRjvRjhRjgx=joq*uKvb!%')+-Rk.Rk%Rj~Rk-Rk#Rj}x=jdq*uKvb!%')+-Rk,Rk!Rj|RjmRjjRjidAq&qKs@uAv8Aa.'*-a@a&0!aM@a5[y73Dsy3Ds|3Dt):wxgI2sHJwJZt.~Gqxwsf0ikrzt}Rl0Jvy_[xj~HqzKv_A|D!&WfP8axRoVcf,U#k(v]v+ueunaXRf1Ju}'!g8u#Ri=jQw!sCunLprq>!,')~<5qeGzq9F{W=c##%s5au:5aU3CBE|;d4#X(D!a&6Vygx(b;#(=]ed?C2F{N<capoq2r[a&!aPa9,'Pw;5s:@@=I|,55w_h|@@=IzcP~=x'fCqB_2Wl2>aU@@=I|1OuNBc1Z+jTqIsBv=Wlc~Cw`fl2WlZ~AcTa%!Z+jTqIsBv=Wlb~Cw`fh2WlYk+uNqJsBv=WlSg,u3dca3#UXaMYa)TaB-=cM|7T#<bI}l5@B932:aV2G{BOuNBJq:|M!5Ezt=<B=C@a^<B57@2F{v>cB{/T#=ay<bI{3Jv6!a.6BKq0ah&+!5E}HP~Ef{978BaU@@=Iza<7d#.Y#978BaU@@=IzH~AJq0!(@@=IzG978BaU@@=IzFe,aU*Y&^^^bvJb,b:bFad!a,c2Ta>aL.bo6!a#CbTa'T#Re{2Wlh2@G{yg6t~Ro_NvdRfticuRQRllJv3&!x&c|zs@Jw3!%RflwpfkRlpKuL;%(!Re<@G|C2GzdhIvuBwgjAg-u0RjAKQB%!(GzZ@G|5NuuRl7d='T+Y#Vy[g<v~Rm!==G|>JvA!)@wma=]m1ifuaw&RmnLs@vT'!|/+[y,g:v>ReTJw1!#qX=x!eC{bLu+wT&)ZtZauq_~Graci&U#F|89:r_Lupvq!.)&2RlG8RfaC=x!eF{_h?rpWlmd&'!#X|&]k::xJey#`'T|+<E|&2@H|%dE#(^,g;u.RiEg6vjRiC9xCkA{O|zY#g=ucRmXKs0@!&*@G|m@awRknJuh!,3d(}gY}eJvj!%Rm):Jw3!%Rm+Rm-Ls0w(&!a(a#@b[|6cZ#X'7RkxWgAOu4ARn'dH'U#Y*Vz-Wm'CARm}d]*#a%^a*T'aK!a<9bV{PC=p*Jw4!&SgxcbB5r]idw(wBRmF7xFkt#&`(Rm/Rm8E|!JuY_9:Rl5=wrgr2:bbxd@xXfB(a*#T+!.X0X1Ta/a'T&RlDRfL>RlyARl9b[z[>RfZ:RlL:RfRwlg/ARl;9;RlxKv,A/!%7s69<74=BA5ba{-8Bde#`a<XaKYa1,a'P~=wxfB2bZ}}?C972@@=I}r8@55B9;5bb}G978B2@@=aybb}3j3vLv;<Jw3&!>Rfk=ayb^}4~Ad1#`*@@=aybb{w2@>==<bbz]dx+UY#^UaF!a9!bB'Ya1.!ajXa#%olRhD[y=3Dt#Ov5BrHKuMB%!(Rf^Wep~HrJwkiQjKr|~FRg)Ku+D#'!t5~GrF~?rDdV)UY,Z/_7RkuG{<~BrBg,rlsO:235B@bX}|d?a1!#`(6Vyn5@d##Y+jTv|vV~EfIj]uNpn~FRfH7Lq2vb1!a9-978BaU@@=Iz9978BbU}#~AJq0!(@@=Iz8978BaU@@=Iz7~AJQ|}!978BbU}!JvkaK!AdUa21-U#`a+(g/vsRn~Ou!5RPj:rmu9WhOjXuvvNr}:RhAj^v(pyw8unRn[kPr}p|u7vwv]RiSBd;pppzq@qHQa?(b.!a.a`@.|xa(hFv;Wiyj5uuv-7Riw~Cw`fg2WlU978BbU|wOuNBJqG!(P~EfD~CRlQcZ#X,k)u3vWs@u2]ksg;wEx'f@q1_2Wg.j]uNpn~FRfqJv]!15x'h{qG!(@@=IzK~CRl^j6v(us5x4i,#T(2WmY?C2F{1>Kq<aj1!*jTqIsBv=Wld~Cw`fj2Wl[j`v0u*~>RlT=c>Z,k#u3vWs@u2]kq<c1Z+jTqIsBv=Wle~Cw`fn2Wl]dn1#c(a(b^a2!b/bAT(bj!aDa7bu,a_a{c0!2T0g:v>ReD2@G{42@G{5~DpM~<5rc=Bx6i>{RT#RnI@zCx]y]z:2Jv[!zr5Awyk]9]k]dD(Y+X#6Vz.g=wKtgwhaCwgmTWj2Lu,w%_+/[y-B;b^xeg3u3Rj-2@bX{*KrJ<!+'@Wg(g?QRlC@Jv`!%b[zIwsfII}8JQ_@w|kW|=Jv(%!AqcOuNBJvEzh!bYzjLs@wP#(0!oy@>RkdJwMZtc3Dtd@BcG#T'9bWxg2@2Fznd*#Y+;2x'c}w<zizixNgwa#Z'U+!/!a'!a+w~g~z6wcn{Rn}wcnzRn|5Rh%=]nJg5vuRmvNvdRlvcprJu}w*az*a#!%.a.'Bot9qT]kj@Wg'ay2Gzv@Jv`!%b[zEwsfHI}1;ck#Ux`<Cbbx_Lu+w!a&0*!wko*wwo,So,}6Juqxf!E}PigQuyRm`d3(`#8>Rn%:A5B;bZ~%KvhCa!a2!x>k7#Uxb@b{#xaRk7Jw0!)>wwhlShl}6>wwhmShm}6CJvB!.x'hhvj{!!5Bwkhhbaz}x'hivjz~!5Bwkhibaz|xEhTrNu,v-vpD!a%&/)a3a.,%Ro2t[CE{)@3re9b]{%wjo09:rgc:Z&Ro6=<riifuaw&RmoKrNA!%(Ro4>Ro89;Ri`dSaL'UYzxZb)7Rka3xRhT&!,!#^1U}vbaz{>>@=be}yC@:D5bazzKu+A&!}{?ba}y>>@=be}wxBh[t`u~vJvr!%a!a()a,a0a4RoC=]o;Ju(!%RoGRhdwjh`=]oAg>w#Ro?g5vuRo=NvdRl|Ku]C.!&;RoEJvB!%RoORoMBx'h[v+_?w~h`}~5?w~hd~!xKh]oiptu-utv.vp!#%&a30a@a'a+(a/aOp(o~p!RoDJu(!%RoHRhewjha=]oBNvdRl}g>w#Ro@g5vuRo>c[#X']o<CauRoRAd-#Y':RkpauRoQKu]C.!&;RoFJvB!%RoNRoPBx'h]v+_?w~ha}t5?w~he}ue!/UbhYacXaW^Tc&a;b:a-c/#b&aja1(!cL+!bKbt!bmcRc9aIc?8[yW3Dtt94Rg`Jv}!&SiRMzBhEebShEMNuPRe>x7gL#TzuwjirRipc<Z&>on;>z=h-MSh.Mwqczx'a7vj&!>Re4@=ResJt__NuPRi*NuPRi)j]uNr|~FRfzKrJ>_+@Wfy@Wf]2WocKrJ<!+'@Wg%g/QRl@@Jv`!&awRl<wsfFIzgLu(w*!.*&ShBMwvhIRhI9;RhNx1hK'!#Sn]Mx1hK~0!#:2<H~7cNu+w7D*'1ZtW>Rn1~?rOc:Z&Rn2=<rQ<7wjh&=BSnLMc]#X(6Vz)w[b=a!U#9wzgMc3#&(RgMRitRis<x,gKt`ax!&+SioM=BSilMc3#&(RgKRinRimKurB,!&SiQMzBhDebShDM6BJQ!(P~Efx978B2@@=I}WLrJw!!,a*&@G}O@9wkibRid@@x'fKwC!&SlDMSfLMjUv~Q~EfKKv3@a+!(hFv-]mpx/hYZ(C5RiWz<o/MwkhY?So/M@x,gbvfB*&!SgEM:SoeeehFu3:Rgbda(,^TZa)X/7Sg[eb:2RgI~BrMC@wgkc:wwkcRerx3h(uUvK!&*,SnOM4Sh*MArRg;wHRh(x=h;rJvPwI!a4',a'0@Wg&=BSh/Mg>w=Rh=g3w*wwgGRgGcW(X#;Sg}M2Gzk@Jv`!&awRl=wsfGIz`dKZ*T'Y-:RhR7RhQg5u-p`j6v(us5d,#Y+~Awkia?RicOuNBwkibba}Ld6p~tyu_vbAa'a+!a/'a3aEa8a!>Sh,ebJv{!&Sh@ebSaReb9;SgwebNuPRi(NvdRl)NuPRi'hHu^<Rm^Jvv_@Wl(g;u1Si/ebKu'B&!*Sh?eb@Wl'z@aPeb95Si.ebcpputyvjB)!,&a+0a%ShAMWeK@G}C@WfJ9;RhMwvhH9w{ia}ix,hJvRA1(!zAn[MRhHx1hJ~*!#hFv(BSn[MBJQ!(@@=I~'978B2@@=I}2db.Ua<'X}+T#a0XaG2G}E;wkg|wuh!Rh!x,hZu,@)!&So0MVy)C5RiXACJvB!&5RiY5RiZg8w)cG}*T#2@bU}=KsA>(!a.3wkhZba~(x,h^u(A!&(SoCMRhb5Bz=h[eb?w~hb~6x,h_u(A!&(SoDMRhc5Bz=h]eb?w~hc~6e)aA1T#T,^^^c-bMb&blcPaP(a/!0!bA=b5c@a(!bfbrc#2afwmhARnjwchORnp2Wlf3DtsNvdRl-2@wpa<]m0bx(#:awRk2@Jw3!%RfhwpfgRlnKQB%!(G{V@G|'NuuRl6d='T+Y#VyUg<v~Rl~==G|<Jv+'!aYShC}6@B<5?ba~8@Jw3'!g2QRljhLrpWlOd+#Y'g.w'rIg>w*wgj@g-u0Rj@Lu+wT&)ZtUauq]~GrGci&U#F|39:rELrNvj!.%*RhCwunfw~nf~:9;Ri]>wtnhg;wHRnhx3hDs@v~!/+'@Wfr@9RkSNu&Rlo=@<5GzoKs0@_+@Wl+@awRkmJuh!-3d(}pY#qWJvj!%Rm(:Jw3!%Rm,Rm*de&!1U-U#`)Re;@G|.@9Ri82@wjfvRlq=@<5GzpLvOvr!).&2RlF8Rf`C=x!eE{.Jw3_g2QRlkhLrpWlPde(!#U{s,UXa*Ta'[y'g:v>ReS;x0PZ&RnlRnn~HrKJw1}f!=x!eB|2w]aP(#Xa&a*Ta.Ua2a7=]iOd'#Y&Ro&WnWg;u.RiDg6vjRiBNvdRlzhNvj]nYJuW_2Wm3x)kFze{9d])!a.!,Y01!#&aC!a3RndC=ox~BrC@2b^{pg,rlse7x'ksuq!%Rm.E{xidw(wBRmGx9o+)X#wwo-So-}69:Rl4@xSf@a#XZ'X)X,Ta(/ARl8b[xc>RfY:RlI:RfQwlg.ARl:9;Rlwdn'#^XafaQa1X1TaHTa)@b[{zcZ#X'7RkwWg@Ou4ARn&x)kG#{,g7u/RkGdH'U#Y*Vz'Wm&CARm|bx#(A]gUbUzJj9Q~=d,#Y(56H}l978H{U7d,0#U*2>ABb_xZ978BbU{e~AJQ{g!978BbU{hxMh?ad{oUYZ.x1h?{l!#:2<H{mx3n[t{vl!,&a%3Ro(z=iS}6ARnr=Bwsn^wvn`Rnbd`*T}B0!#^X'BG{c9b]{a>>@=be}F?JvS!&BG{d7BG}(Bde#`a1X,Ya@!a'P~=wxf@2bZ}I56B2@@=aybb}08@55B9;5bb}<j3vLv;<Jw3&!>Rfg=ayb^}&OuNBKuLA!)a!P~=x#fD{f2@>==<bbzl?C972@@=Ix^d6rSu,v7w*C(0a)a6#B+a%!sQ[y?3Dt%3[xn~<5rLOu!5p@Ku+D#'!t7~GrP~?rNKvlaya7'!h+v-5qMg=t|cd,U#5AAaa5Abb{S@52B5@a[@52B5Gx[iXueu;d<#`a(!/549C;ag>23ExY5@Dah89b^~689Jv)!~2b[~1Lv'w(%*!a#bX|aPrmawRe]keu7uhv-q6rxu,q`xTo]/a5aU!bNaDXbi!b-!ao!b<bwA!#5@B932:aV2G|:d-)Y#hJrL>RhG<7@C5<H|_=Cau:5aj5@B932:bJ|ng>vIbs)#?C2F|9jPv0w.vISh-MKvUaz(.!9ABbb|[5;5<H|Eg>unwfh;9:4E|YjQsBt|vjx'hYq3!(?C2F|J:2<BaY?C2F|GOu!5x,g|p{ah!-(?C2F|c9:4E|OjXuvvNr}:Rh&i[w*t|cd+U#jJvsu)vsSn~Mkfrmu9p}u7vwv]So!McW#Xa!ax5@A5aY:5;5<H|>kJv~vYrquJu3x4ib#T)2@SmZM?C2F|Bj:rmu9@xPhI(a*a#U#`a3-5Abb|L~@:RhK9:4E|0@52B5G|#C::aY?C2F|-:2<BaY?C2F|.5Jvk!a)javYrquJu3x4ia#T)2@SmYM?C2F|HAxPhH(!a#U#`a*-5Abb|4~@:RhJ9:4E|R@52B5G|F:2<BaY?C2F|Sc^#Xa2j=Qq5CJvB!-g<v{z;hhM?C2F|Zi[vrv{z;hiM?C2F|XKsA>!a)-g<v{z;h[eb?C2F|]i[vrv{z;h]eb?C2F|^iZu.vix,hZq3ah!.(?C2F|QOu!5ShXM:2<BaY?C2F|P", 13494, 2713, 49, 25, 61);
+
+// node_modules/entities/dist/internal/bin-trie-flags.js
+var BinTrieFlags;
+(function(BinTrieFlags2) {
+  BinTrieFlags2[BinTrieFlags2["VALUE_LENGTH"] = 49152] = "VALUE_LENGTH";
+  BinTrieFlags2[BinTrieFlags2["FLAG13"] = 8192] = "FLAG13";
+  BinTrieFlags2[BinTrieFlags2["BRANCH_LENGTH"] = 8064] = "BRANCH_LENGTH";
+  BinTrieFlags2[BinTrieFlags2["JUMP_TABLE"] = 127] = "JUMP_TABLE";
+  BinTrieFlags2[BinTrieFlags2["VALUE_MASK"] = 8191] = "VALUE_MASK";
+})(BinTrieFlags || (BinTrieFlags = {}));
+
+// node_modules/entities/dist/decode.js
+var CharCodes;
+(function(CharCodes2) {
+  CharCodes2[CharCodes2["AMP"] = 38] = "AMP";
+  CharCodes2[CharCodes2["NUM"] = 35] = "NUM";
+  CharCodes2[CharCodes2["SEMI"] = 59] = "SEMI";
+  CharCodes2[CharCodes2["EQUALS"] = 61] = "EQUALS";
+  CharCodes2[CharCodes2["ZERO"] = 48] = "ZERO";
+  CharCodes2[CharCodes2["NINE"] = 57] = "NINE";
+  CharCodes2[CharCodes2["LOWER_A"] = 97] = "LOWER_A";
+  CharCodes2[CharCodes2["LOWER_X"] = 120] = "LOWER_X";
+})(CharCodes || (CharCodes = {}));
+var TO_LOWER_BIT = 32;
+var CONSUMED_SHIFT = 21;
+var CODE_POINT_MASK = 2097151;
+var CONSUMED_OVERFLOW = 2047;
+var longNumericConsumed = 0;
+function unpackConsumed(packed) {
+  const consumed = packed >>> CONSUMED_SHIFT;
+  return consumed === CONSUMED_OVERFLOW ? longNumericConsumed : consumed;
+}
+function isNumber(code2) {
+  return code2 - CharCodes.ZERO >>> 0 <= 9;
+}
+function isHexadecimalCharacter(code2) {
+  return (code2 | TO_LOWER_BIT) - CharCodes.LOWER_A >>> 0 <= 5;
+}
+function isAlpha(code2) {
+  return (code2 | TO_LOWER_BIT) - CharCodes.LOWER_A >>> 0 <= 25;
+}
+function isEntityInAttributeInvalidEnd(code2) {
+  return code2 === CharCodes.EQUALS || isAlpha(code2) || isNumber(code2);
+}
+var EntityDecoderState;
+(function(EntityDecoderState2) {
+  EntityDecoderState2[EntityDecoderState2["EntityStart"] = 0] = "EntityStart";
+  EntityDecoderState2[EntityDecoderState2["NumericStart"] = 1] = "NumericStart";
+  EntityDecoderState2[EntityDecoderState2["NumericDecimal"] = 2] = "NumericDecimal";
+  EntityDecoderState2[EntityDecoderState2["NumericHex"] = 3] = "NumericHex";
+  EntityDecoderState2[EntityDecoderState2["NamedEntity"] = 4] = "NamedEntity";
+})(EntityDecoderState || (EntityDecoderState = {}));
+var DecodingMode;
+(function(DecodingMode2) {
+  DecodingMode2[DecodingMode2["Legacy"] = 0] = "Legacy";
+  DecodingMode2[DecodingMode2["Strict"] = 1] = "Strict";
+  DecodingMode2[DecodingMode2["Attribute"] = 2] = "Attribute";
+})(DecodingMode || (DecodingMode = {}));
+function determineBranch(decodeTree, current, nodeIndex, char) {
+  const branchCount = (current & BinTrieFlags.BRANCH_LENGTH) >> 7;
+  const jumpOffset = current & BinTrieFlags.JUMP_TABLE;
+  if (jumpOffset) {
+    if (branchCount === 0) {
+      return char === jumpOffset ? nodeIndex : -1;
+    }
+    const slot = char - jumpOffset;
+    if (slot >>> 0 >= branchCount)
+      return -1;
+    const stored = decodeTree[nodeIndex + slot];
+    return stored === 0 ? -1 : nodeIndex + branchCount + stored - 1 & 65535;
+  }
+  if (branchCount === 0)
+    return -1;
+  const packedKeySlots = branchCount + 1 >> 1;
+  const branchEnd = nodeIndex + packedKeySlots + branchCount;
+  for (let index = 0; index < branchCount; index++) {
+    const packed = decodeTree[nodeIndex + (index >> 1)];
+    const key = packed >> ((index & 1) << 3) & 255;
+    if (key === char) {
+      const pointerIndex = nodeIndex + packedKeySlots + index;
+      return branchEnd + decodeTree[pointerIndex] & 65535;
+    }
+    if (key > char)
+      return -1;
+  }
+  return -1;
+}
+function readTrieValue(decodeTree, nodeIndex, valueLength) {
+  if (valueLength === 1) {
+    return String.fromCharCode(decodeTree[nodeIndex] & BinTrieFlags.VALUE_MASK);
+  }
+  if (valueLength === 2) {
+    return String.fromCharCode(decodeTree[nodeIndex + 1]);
+  }
+  return String.fromCharCode(decodeTree[nodeIndex + 1], decodeTree[nodeIndex + 2]);
+}
+function parseNumericEntity(input, numberStart, inputLength) {
+  let offset = numberStart + 1;
+  let cp = 0;
+  let digitStart = offset;
+  if (offset < inputLength && (input.charCodeAt(offset) | TO_LOWER_BIT) === CharCodes.LOWER_X) {
+    offset += 1;
+    digitStart = offset;
+    while (offset < inputLength) {
+      const char = input.charCodeAt(offset);
+      if (isNumber(char)) {
+        cp = cp * 16 + (char - CharCodes.ZERO);
+      } else if (isHexadecimalCharacter(char)) {
+        cp = cp * 16 + ((char | TO_LOWER_BIT) - CharCodes.LOWER_A + 10);
+      } else {
+        break;
+      }
+      offset += 1;
+    }
+  } else {
+    while (offset < inputLength) {
+      const digit = input.charCodeAt(offset) - CharCodes.ZERO;
+      if (digit >>> 0 > 9)
+        break;
+      cp = cp * 10 + digit;
+      offset += 1;
+    }
+  }
+  if (offset === digitStart)
+    return 0;
+  if (offset < inputLength && input.charCodeAt(offset) === CharCodes.SEMI) {
+    offset += 1;
+  }
+  if (cp > 1114111)
+    cp = 1114112;
+  let consumed = offset - numberStart;
+  if (consumed >= CONSUMED_OVERFLOW) {
+    longNumericConsumed = consumed;
+    consumed = CONSUMED_OVERFLOW;
+  }
+  return consumed << CONSUMED_SHIFT | cp;
+}
+function decodeWithTrie(input, isStrict, isAttribute) {
+  const decodeTree = htmlDecodeTree;
+  let offset = input.indexOf("&");
+  if (offset < 0)
+    return input;
+  const inputLength = input.length;
+  let chunkStart = 0;
+  let result = "";
+  const root = decodeTree[0];
+  const rootJumpOffset = root & BinTrieFlags.JUMP_TABLE;
+  const rootBranchCount = (root & BinTrieFlags.BRANCH_LENGTH) >> 7;
+  do {
+    const entityStart = offset + 1;
+    const firstChar = input.charCodeAt(entityStart);
+    let consumed;
+    let value;
+    if (firstChar === CharCodes.NUM) {
+      const packed = parseNumericEntity(input, entityStart, inputLength);
+      consumed = unpackConsumed(packed);
+      if (isStrict && consumed > 0 && input.charCodeAt(entityStart + consumed - 1) !== CharCodes.SEMI) {
+        consumed = 0;
+      }
+      value = consumed === 0 ? "" : codePointToString(packed & CODE_POINT_MASK);
+    } else if (isAlpha(firstChar)) {
+      consumed = 0;
+      value = "";
+      const rootSlotIndex = firstChar - rootJumpOffset;
+      let nodeIndex;
+      if (rootSlotIndex >>> 0 < rootBranchCount) {
+        const stored = decodeTree[1 + rootSlotIndex];
+        nodeIndex = stored === 0 ? -1 : rootBranchCount + stored & 65535;
+      } else {
+        nodeIndex = -1;
+      }
+      let bestNodeIndex = 0;
+      let bestValueLength = 0;
+      let current = nodeIndex < 0 ? 0 : decodeTree[nodeIndex];
+      let index = entityStart + 1;
+      trie: while (index < inputLength) {
+        while (
+          // Value-less, non-run node with a nonzero jump offset.
+          (current & (BinTrieFlags.VALUE_LENGTH | BinTrieFlags.FLAG13)) === 0 && (current & BinTrieFlags.JUMP_TABLE) !== 0
+        ) {
+          const jumpOffset = current & BinTrieFlags.JUMP_TABLE;
+          const branchCount = (current & BinTrieFlags.BRANCH_LENGTH) >> 7;
+          if (branchCount === 0) {
+            if (input.charCodeAt(index) !== jumpOffset)
+              break trie;
+            nodeIndex += 1;
+          } else {
+            const slot = input.charCodeAt(index) - jumpOffset;
+            if (slot >>> 0 >= branchCount)
+              break trie;
+            const stored = decodeTree[nodeIndex + 1 + slot];
+            if (stored === 0)
+              break trie;
+            nodeIndex = nodeIndex + branchCount + stored & 65535;
+          }
+          current = decodeTree[nodeIndex];
+          index += 1;
+          if (index >= inputLength)
+            break trie;
+        }
+        if ((current & (BinTrieFlags.VALUE_LENGTH | BinTrieFlags.FLAG13)) === BinTrieFlags.FLAG13) {
+          const runLength = (current & BinTrieFlags.BRANCH_LENGTH) >> 7;
+          if (input.charCodeAt(index) !== (current & BinTrieFlags.JUMP_TABLE)) {
+            break;
+          }
+          index += 1;
+          const remaining = runLength - 1;
+          let wordIndex = nodeIndex + 1;
+          let charIndexInPacked = 0;
+          for (; charIndexInPacked + 1 < remaining; charIndexInPacked += 2) {
+            const packed = decodeTree[wordIndex];
+            if (input.charCodeAt(index) !== (packed & 255))
+              break trie;
+            index += 1;
+            if (input.charCodeAt(index) !== (packed >> 8 & 255))
+              break trie;
+            index += 1;
+            wordIndex += 1;
+          }
+          if (charIndexInPacked < remaining) {
+            if (input.charCodeAt(index) !== (decodeTree[wordIndex] & 255))
+              break;
+            index += 1;
+          }
+          nodeIndex += 1 + (runLength >> 1);
+          current = decodeTree[nodeIndex];
+          continue;
+        }
+        const valueLength = current >>> 14;
+        const char = input.charCodeAt(index);
+        if (valueLength !== 0) {
+          if (char === CharCodes.SEMI) {
+            consumed = index - entityStart + 1;
+            value = valueLength === 1 ? String.fromCharCode(current & BinTrieFlags.VALUE_MASK) : readTrieValue(decodeTree, nodeIndex, valueLength);
+            break;
+          }
+          if (!isStrict && (current & BinTrieFlags.FLAG13) === 0) {
+            consumed = index - entityStart;
+            bestNodeIndex = nodeIndex;
+            bestValueLength = valueLength;
+          }
+          if (valueLength === 1)
+            break;
+        }
+        const next = determineBranch(decodeTree, current, nodeIndex + (valueLength || 1), char);
+        if (next < 0)
+          break;
+        nodeIndex = next;
+        current = decodeTree[nodeIndex];
+        index += 1;
+      }
+      if (value === "") {
+        const finalVL = current >>> 14;
+        if (finalVL !== 0 && !isStrict && (current & BinTrieFlags.FLAG13) === 0) {
+          consumed = index - entityStart;
+          bestNodeIndex = nodeIndex;
+          bestValueLength = finalVL;
+        }
+        if (consumed > 0) {
+          value = readTrieValue(decodeTree, bestNodeIndex, bestValueLength);
+        }
+      }
+    } else {
+      consumed = 0;
+      value = "";
+    }
+    if (consumed === 0 || isAttribute && firstChar !== CharCodes.NUM && input.charCodeAt(entityStart + consumed - 1) !== CharCodes.SEMI && entityStart + consumed < inputLength && isEntityInAttributeInvalidEnd(input.charCodeAt(entityStart + consumed))) {
+      offset = entityStart;
+    } else {
+      if (chunkStart < offset) {
+        result += input.slice(chunkStart, offset);
+      }
+      result += value;
+      offset = chunkStart = entityStart + consumed;
+    }
+    if (input.charCodeAt(offset) !== CharCodes.AMP) {
+      offset = input.indexOf("&", offset);
+    }
+  } while (offset >= 0);
+  return result + input.slice(chunkStart);
+}
+function decodeHTMLStrict(htmlString) {
+  return decodeWithTrie(htmlString, true, false);
+}
+
+// node_modules/entities/dist/index.js
+var EntityLevel;
+(function(EntityLevel2) {
+  EntityLevel2[EntityLevel2["XML"] = 0] = "XML";
+  EntityLevel2[EntityLevel2["HTML"] = 1] = "HTML";
+})(EntityLevel || (EntityLevel = {}));
+var EncodingMode;
+(function(EncodingMode2) {
+  EncodingMode2[EncodingMode2["UTF8"] = 0] = "UTF8";
+  EncodingMode2[EncodingMode2["ASCII"] = 1] = "ASCII";
+  EncodingMode2[EncodingMode2["Extensive"] = 2] = "Extensive";
+  EncodingMode2[EncodingMode2["Attribute"] = 3] = "Attribute";
+  EncodingMode2[EncodingMode2["Text"] = 4] = "Text";
+})(EncodingMode || (EncodingMode = {}));
+
+// node_modules/linkify-it/build/index.mjs
+var REBuilder = class {
+  constructor(opts = {}) {
+    __publicField(this, "src_Any", Any.source);
+    __publicField(this, "src_Cc", Cc.source);
+    __publicField(this, "src_Z", Z.source);
+    __publicField(this, "src_P", P.source);
+    __publicField(this, "src_ZPCc", [
+      this.src_Z,
+      this.src_P,
+      this.src_Cc
+    ].join("|"));
+    __publicField(this, "src_ZCc", [this.src_Z, this.src_Cc].join("|"));
+    __publicField(this, "cache", {});
+    __publicField(this, "opts", {
+      maxLength: 1e4,
+      urlAuth: false,
+      schema_names: []
+    });
+    this.opts = __spreadValues(__spreadValues({}, this.opts), opts);
+  }
+  set(opts = {}) {
+    this.opts = __spreadValues(__spreadValues({}, this.opts), opts);
+    this.cache = {};
+    return this;
+  }
+  escapeRE(str) {
+    return str.replace(/[.?*+^$[\]\\(){}|-]/g, "\\$&");
+  }
+  nestedPairRE(open, close, depth = 4) {
+    const openRE = this.escapeRE(open);
+    const closeRE = this.escapeRE(close);
+    const atom = `(?:(?!${this.src_ZCc}|${openRE}|${closeRE}).)`;
+    let pair = `${openRE}${atom}{0,1000}${closeRE}`;
+    for (let level = 2; level <= depth; level++) pair = `${openRE}(?:${atom}|${pair}){0,1000}${closeRE}`;
+    return pair;
+  }
+  get_text_separators() {
+    var _a, _b;
+    return (_b = (_a = this.cache).text_separators) != null ? _b : _a.text_separators = /[><\uff5c]/;
+  }
+  get_pseudo_letter() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_pseudo_letter) != null ? _b : _a.src_pseudo_letter = new RegExp(`(?:(?!${this.get_text_separators().source}|${this.src_ZPCc})${this.src_Any})`);
+  }
+  get_ipv4_addr() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_ip4) != null ? _b : _a.src_ip4 = /* @__PURE__ */ new RegExp("(?:(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])[.]){3}(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])");
+  }
+  get_ipv6_addr() {
+    var _a, _b;
+    const h16 = "[0-9A-Fa-f]{1,4}";
+    const ls32 = `(?:(?:${h16}:${h16})|${this.get_ipv4_addr().source})`;
+    return (_b = (_a = this.cache).src_ip6_addr) != null ? _b : _a.src_ip6_addr = new RegExp(`(?:(?:${h16}:){6}${ls32}|::(?:${h16}:){5}${ls32}|(?:${h16})?::(?:${h16}:){4}${ls32}|(?:(?:${h16}:){0,1}${h16})?::(?:${h16}:){3}${ls32}|(?:(?:${h16}:){0,2}${h16})?::(?:${h16}:){2}${ls32}|(?:(?:${h16}:){0,3}${h16})?::${h16}:${ls32}|(?:(?:${h16}:){0,4}${h16})?::${ls32}|(?:(?:${h16}:){0,5}${h16})?::${h16}|(?:(?:${h16}:){0,6}${h16})?::)`);
+  }
+  get_ipv6_url_host() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_ip6_host) != null ? _b : _a.src_ip6_host = new RegExp(`\\[${this.get_ipv6_addr().source}\\]`);
+  }
+  get_ipv6_mail_host() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_ipv6_mail_host) != null ? _b : _a.src_ipv6_mail_host = new RegExp(`\\[IPv6:${this.get_ipv6_addr().source}\\]`);
+  }
+  get_auth() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_auth) != null ? _b : _a.src_auth = new RegExp(`(?:(?:(?!${this.src_ZCc}|[@/\\[\\]()]).){1,50}@)?`);
+  }
+  get_port() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_port) != null ? _b : _a.src_port = /* @__PURE__ */ new RegExp("(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?");
+  }
+  get_host_terminator() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_host_terminator) != null ? _b : _a.src_host_terminator = new RegExp(`(?=$|${this.get_text_separators().source}|${this.src_ZPCc})(?!${this.opts["---"] ? "-(?!--)|" : "-|"}_|:\\d|\\.-|\\.(?!$|${this.src_ZPCc}))`);
+  }
+  get_path_terminator() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_path_terminator) != null ? _b : _a.src_path_terminator = new RegExp(`${this.src_ZPCc}|${this.get_text_separators().source}`);
+  }
+  get_path() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_path) != null ? _b : _a.src_path = new RegExp(`(?:[/?#](?:${this.nestedPairRE("[", "]")}|${this.nestedPairRE("(", ")")}|${this.nestedPairRE("{", "}")}|\\"(?:(?!${this.src_ZCc}|["]).){1,100}\\"|\\'(?:(?!${this.src_ZCc}|[']).){1,100}\\'|\\'(?=${this.get_pseudo_letter().source}|[-])|\\.{2,20}[:]?[a-zA-Z0-9%/&]|\\.(?!${this.src_ZCc}|[.]|$)|` + (this.opts["---"] ? "\\-(?!--(?:[^-]|$))(?:-{0,19})|" : "\\-{1,20}|") + `,(?!${this.src_ZCc}|$)|;(?!${this.src_ZCc}|$)|\\!{1,20}(?!${this.src_ZCc}|[!]|$)|\\?(?!${this.src_ZCc}|[?]|$)|` + this.get_path_extra().source + `[\\\\/:%@#&=_~*]|(?!${this.get_path_terminator().source}).){1,${this.opts.maxLength}}|\\/)?`);
+  }
+  get_mail_name() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_mail_name) != null ? _b : _a.src_mail_name = /* @__PURE__ */ new RegExp("[-!#$%&'*+/=?^_`{|}~a-zA-Z0-9](?:[-!#$%&'*+/=?^_`{|}~a-zA-Z0-9]|[.](?=[-!#$%&'*+/=?^_`{|}~a-zA-Z0-9])){0,63}");
+  }
+  get_xn() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_xn) != null ? _b : _a.src_xn = /* @__PURE__ */ new RegExp("xn--[a-z0-9\\-]{1,59}");
+  }
+  get_tld() {
+    if (this.cache.tld) return this.cache.tld;
+    const tlds_src = [...new Set(this.opts.tlds || [])].sort().reverse().join("|");
+    this.cache.tld = new RegExp(`${tlds_src || "$#none#$"}|${this.get_xn().source}`);
+    return this.cache.tld;
+  }
+  get_domain_root() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_domain_root) != null ? _b : _a.src_domain_root = new RegExp("(?:" + this.get_xn().source + `|${this.get_pseudo_letter().source}{1,63})`);
+  }
+  get_domain() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_domain) != null ? _b : _a.src_domain = new RegExp("(?:" + this.get_xn().source + `|(?:${this.get_pseudo_letter().source})|(?:${this.get_pseudo_letter().source}(?:-|${this.get_pseudo_letter().source}){0,61}${this.get_pseudo_letter().source}))`);
+  }
+  get_url_host_port() {
+    var _a, _b;
+    return (_b = (_a = this.cache).url_host_port) != null ? _b : _a.url_host_port = new RegExp("(?:" + this.get_ipv6_url_host().source + `|(?:(?:(?:${this.get_domain().source})\\.){0,10}${this.get_domain().source}))` + this.get_port().source + this.get_host_terminator().source);
+  }
+  get_fuzzy_url_host_port() {
+    var _a, _b;
+    return (_b = (_a = this.cache).fuzzy_url_host_port) != null ? _b : _a.fuzzy_url_host_port = new RegExp("(?:" + (this.opts.fuzzyIP ? this.get_ipv4_addr().source + "|" : "") + `(?:(?:(?:${this.get_domain().source})\\.){1,10}(?:${this.get_tld().source})))` + this.get_host_terminator().source);
+  }
+  get_mail_host() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_mail_host) != null ? _b : _a.src_mail_host = new RegExp("(?:" + this.get_ipv6_mail_host().source + `|(?:(?:(?:${this.get_domain().source})\\.){0,4}${this.get_domain().source}))` + this.get_host_terminator().source);
+  }
+  get_fuzzy_mail_host() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_fuzzy_mail_host) != null ? _b : _a.src_fuzzy_mail_host = new RegExp("(?:" + this.get_ipv6_mail_host().source + `|(?:(?:(?:${this.get_domain().source})[.]){1,4}${this.get_domain_root().source}))` + this.get_host_terminator().source);
+  }
+  get_path_extra() {
+    var _a, _b;
+    return (_b = (_a = this.cache).src_path_extra) != null ? _b : _a.src_path_extra = /* @__PURE__ */ new RegExp("");
+  }
+  get_fuzzy_mail_host_search() {
+    var _a, _b;
+    return (_b = (_a = this.cache).mail_fuzzy_host_search) != null ? _b : _a.mail_fuzzy_host_search = new RegExp(`@${this.get_fuzzy_mail_host().source}`, "ig");
+  }
+  get_fuzzy_link_search() {
+    var _a, _b;
+    return (_b = (_a = this.cache).link_fuzzy_search) != null ? _b : _a.link_fuzzy_search = new RegExp(`(^|(?![.:/\\-_@])(?:[$+<=>^\`|\uFF5C]|${this.src_ZPCc}))(?:(?![$+<=>^\`|\uFF5C])${this.get_fuzzy_url_host_port().source}${this.get_path().source})`, "ig");
+  }
+  get_http_validator() {
+    var _a, _b;
+    return (_b = (_a = this.cache).http_validator) != null ? _b : _a.http_validator = new RegExp("\\/\\/" + (this.opts.urlAuth ? this.get_auth().source : "") + this.get_url_host_port().source + this.get_path().source, "iy");
+  }
+  get_relative_proto_validator() {
+    var _a, _b;
+    return (_b = (_a = this.cache).relative_proto_validator) != null ? _b : _a.relative_proto_validator = new RegExp((this.opts.urlAuth ? this.get_auth().source : "") + `(?:localhost|${this.get_ipv6_url_host().source}|(?:(?:${this.get_domain().source})[.]){1,10}${this.get_domain_root().source})` + this.get_port().source + this.get_host_terminator().source + this.get_path().source, "iy");
+  }
+  get_mail_name_validator() {
+    var _a, _b;
+    return (_b = (_a = this.cache).mail_name_validator) != null ? _b : _a.mail_name_validator = new RegExp(`(?:^|${this.get_text_separators().source}|"|\\(|${this.src_ZCc})(${this.get_mail_name().source})$`);
+  }
+  get_mailto_validator() {
+    var _a, _b;
+    return (_b = (_a = this.cache).mailto_validator) != null ? _b : _a.mailto_validator = new RegExp(`${this.get_mail_name().source}@${this.get_mail_host().source}`, "iy");
+  }
+  get_schema_names() {
+    var _a, _b;
+    return (_b = (_a = this.cache).schema_names) != null ? _b : _a.schema_names = new RegExp((this.opts.schema_names || []).map((name) => this.escapeRE(name)).join("|"));
+  }
+  get_schema_search() {
+    var _a, _b;
+    return (_b = (_a = this.cache).schema_search) != null ? _b : _a.schema_search = new RegExp(`(^|(?!_)(?:[><\uFF5C]|${this.src_ZPCc}))(${this.get_schema_names().source})`, "ig");
+  }
+  get_schema_at_start() {
+    var _a, _b;
+    return (_b = (_a = this.cache).schema_at_start) != null ? _b : _a.schema_at_start = new RegExp(`^${this.get_schema_search().source}`, "i");
+  }
+};
+var web_schema = {
+  validate: (text3, pos, self) => {
+    const re = self.re.get_http_validator();
+    re.lastIndex = pos;
+    const m = re.exec(text3);
+    return m ? m[0].length : 0;
+  },
+  normalize: (match, self) => self.normalize(match)
+};
+var defaultSchemas = {
+  "http:": web_schema,
+  "https:": web_schema,
+  "ftp:": web_schema,
+  "//": {
+    validate: function(text3, pos, self) {
+      const re = self.re.get_relative_proto_validator();
+      re.lastIndex = pos;
+      const m = re.exec(text3);
+      if (m) {
+        if (pos >= 3 && text3[pos - 3] === ":") return 0;
+        if (pos >= 3 && text3[pos - 3] === "/") return 0;
+        return m[0].length;
+      }
+      return 0;
+    },
+    normalize: (match, self) => self.normalize(match)
+  },
+  "mailto:": {
+    validate: function(text3, pos, self) {
+      const re = self.re.get_mailto_validator();
+      re.lastIndex = pos;
+      const m = re.exec(text3);
+      return m ? m[0].length : 0;
+    },
+    normalize: (match, self) => self.normalize(match)
+  }
+};
+var tlds_2ch = "a:cdefgilmnoqrstuwxz|b:abdefghijmnorstvwyz|c:acdfghiklmnoruvwxyz|d:ejkmoz|e:cegrstu|f:ijkmor|g:abdefghilmnpqrstuwy|h:kmnrtu|i:delmnoqrst|j:emop|k:eghimnprwyz|l:abcikrstuvy|m:acdeghklmnopqrstuvwxyz|n:acefgilopruz|o:m|p:aefghklmnrstwy|q:a|r:eosuw|s:abcdeghijklmnortuvxyz|t:cdfghjklmnortvwz|u:agksyz|v:aceginu|w:fs|y:et|z:amw";
+var tlds_default = "biz|com|edu|gov|net|org|pro|web|xxx|aero|asia|coop|info|museum|name|shop|\u0440\u0444";
+function unpackTlds() {
+  const result = tlds_default.split("|");
+  tlds_2ch.split("|").forEach((item) => {
+    const sep = item.indexOf(":");
+    const prefix = item.slice(0, sep);
+    for (const suffix of item.slice(sep + 1)) result.push(prefix + suffix);
+  });
+  return result;
+}
+var defaultOptions = {
+  fuzzyLink: false,
+  fuzzyEmail: true,
+  fuzzyIP: false,
+  "---": false,
+  tlds: unpackTlds(),
+  urlAuth: false,
+  maxLength: 1e4
+};
+var Match = class {
+  constructor(text3, schema, index, lastIndex) {
+    /** Prefix (protocol) for matched string. Empty for fuzzy links. */
+    __publicField(this, "schema");
+    /** First position of matched string. */
+    __publicField(this, "index");
+    /** Next position after matched string. */
+    __publicField(this, "lastIndex");
+    /** Matched string. */
+    __publicField(this, "raw");
+    /** Normalized text of matched string. */
+    __publicField(this, "text");
+    /** Normalized URL of matched string. */
+    __publicField(this, "url");
+    const raw = text3.slice(index, lastIndex);
+    this.schema = schema.toLowerCase();
+    this.index = index;
+    this.lastIndex = lastIndex;
+    this.raw = raw;
+    this.text = raw;
+    this.url = raw;
+  }
+};
+var LinkifyIt = class {
+  /**
+  * Creates new linkifier instance.
+  *
+  * By default understands:
+  *
+  * - `http(s)://...` , `ftp://...`, `mailto:...` & `//...` links
+  * - "fuzzy" emails (foo@bar.com).
+  *
+  * See {@link LinkifyConstructorOptions} for available options.
+  *
+  * @param options Recognition options.
+  *
+  * @example
+  * ```javascript
+  * import { LinkifyIt } from 'linkify-it'
+  *
+  * const linkify = new LinkifyIt({ fuzzyLink: true })
+  *
+  * linkify
+  *   .tlds(require('tlds'))       // Reload with full TLD list
+  *   .tlds('onion', true)         // Add unofficial `.onion` domain
+  *   .add('ftp:', null)           // Disable `ftp:` protocol
+  *   .set({ fuzzyIP: true })      // Enable IPs in fuzzy links
+  *
+  * console.log(linkify.test('Site github.com!')) // true
+  * console.log(linkify.match('Site github.com!'))
+  * ```
+  */
+  constructor(options = {}) {
+    __publicField(this, "__opts__");
+    __publicField(this, "__schemas__");
+    __publicField(this, "re");
+    const _a = options, { rebuilder } = _a, linkifyOptions = __objRest(_a, ["rebuilder"]);
+    this.__opts__ = __spreadValues(__spreadValues({}, defaultOptions), linkifyOptions);
+    this.__schemas__ = __spreadValues({}, defaultSchemas);
+    this.re = rebuilder || new REBuilder();
+    this.re.set(__spreadProps(__spreadValues({}, this.__opts__), {
+      schema_names: Object.keys(this.__schemas__)
+    }));
+  }
+  /**
+  * Add new rule definition.
+  *
+  * `schema` is a link prefix (usually, protocol name with `:` at the end,
+  * `skype:` for example). `linkify-it` makes sure that prefix is not
+  * preceded with alphanumeric char and symbols. Only whitespaces and
+  * punctuation allowed.
+  *
+  * `definition` is a rule to check tail after link prefix. To disable an
+  * existing rule, pass `null`.
+  *
+  * @param schema Rule name (fixed pattern prefix).
+  * @param definition Schema definition, or `null` to disable the rule.
+  *
+  * See [twitter mentions example](https://github.com/markdown-it/linkify-it/blob/master/examples/twitter.mjs).
+  */
+  add(schema, definition = null) {
+    if (!definition) delete this.__schemas__[schema];
+    else {
+      const def = __spreadValues({
+        normalize: (match, self) => self.normalize(match)
+      }, definition);
+      this.__schemas__[schema] = def;
+    }
+    this.re.set(__spreadProps(__spreadValues({}, this.__opts__), {
+      schema_names: Object.keys(this.__schemas__)
+    }));
+    return this;
+  }
+  /**
+  * Set recognition options for links without schema.
+  *
+  * @param options Recognition options.
+  */
+  set(options = {}) {
+    this.__opts__ = __spreadValues(__spreadValues({}, this.__opts__), options);
+    this.re.set(__spreadProps(__spreadValues({}, this.__opts__), {
+      schema_names: Object.keys(this.__schemas__)
+    }));
+    return this;
+  }
+  /**
+  * Searches linkifiable pattern and returns `true` on success or `false` on fail.
+  *
+  * @param text Text to scan.
+  */
+  test(text3) {
+    if (!text3.length) return false;
+    let m, re;
+    re = this.re.get_schema_search();
+    re.lastIndex = 0;
+    while ((m = re.exec(text3)) !== null) if (this.testSchemaAt(text3, m[2], re.lastIndex)) return true;
+    if (this.__opts__.fuzzyLink && this.__schemas__["http:"]) {
+      re = this.re.get_fuzzy_link_search();
+      re.lastIndex = 0;
+      if (re.exec(text3) !== null) return true;
+    }
+    if (this.__opts__.fuzzyEmail && this.__schemas__["mailto:"]) {
+      if (text3.indexOf("@") >= 0) {
+        const mailHostRe = this.re.get_fuzzy_mail_host_search();
+        const mailNameRe = this.re.get_mail_name_validator();
+        mailHostRe.lastIndex = 0;
+        while ((m = mailHostRe.exec(text3)) !== null) {
+          const name = text3.slice(Math.max(0, m.index - 65), m.index);
+          if (mailNameRe.test(name)) return true;
+        }
+      }
+    }
+    return false;
+  }
+  /**
+  * Similar to {@link LinkifyIt.test} but checks only specific protocol tail exactly
+  * at given position. Returns length of found pattern (0 on fail).
+  *
+  * @param text Text to scan.
+  * @param schema Rule (schema) name.
+  * @param pos Text offset to check from.
+  */
+  testSchemaAt(text3, schema, pos) {
+    if (!this.__schemas__[schema.toLowerCase()]) return 0;
+    return this.__schemas__[schema.toLowerCase()].validate(text3.slice(0, pos + this.__opts__.maxLength), pos, this);
+  }
+  /**
+  * Returns array of found link descriptions or `null` on fail. We strongly
+  * recommend to use {@link LinkifyIt.test} first, for best speed.
+  *
+  * @param text Text to scan.
+  */
+  match(text3) {
+    const result = [];
+    const schemaRe = this.re.get_schema_search();
+    let fuzzyLinkRe;
+    let mailHostRe;
+    let mailNameRe;
+    let fuzzyLinkCandidate;
+    let fuzzyEmailCandidate;
+    let schemaPrefix;
+    let schemaDone = false;
+    let fuzzyLinkDone = false;
+    let fuzzyEmailDone = false;
+    let pos = 0;
+    if (!text3.length) return null;
+    schemaRe.lastIndex = 0;
+    if (this.__opts__.fuzzyLink && this.__schemas__["http:"]) {
+      fuzzyLinkRe = this.re.get_fuzzy_link_search();
+      fuzzyLinkRe.lastIndex = 0;
+    }
+    if (this.__opts__.fuzzyEmail && this.__schemas__["mailto:"]) {
+      mailHostRe = this.re.get_fuzzy_mail_host_search();
+      mailHostRe.lastIndex = 0;
+      mailNameRe = this.re.get_mail_name_validator();
+    }
+    for (; ; ) {
+      const scanFrom = Math.max(pos - 1, 0);
+      if (mailHostRe && mailNameRe && !fuzzyEmailDone && (!fuzzyEmailCandidate || fuzzyEmailCandidate.index < pos)) {
+        if (mailHostRe.lastIndex < scanFrom) mailHostRe.lastIndex = scanFrom;
+        for (; ; ) {
+          const m = mailHostRe.exec(text3);
+          if (!m) {
+            fuzzyEmailDone = true;
+            fuzzyEmailCandidate = void 0;
+            break;
+          }
+          const name = mailNameRe.exec(text3.slice(Math.max(0, m.index - 65), m.index));
+          if (!name) continue;
+          fuzzyEmailCandidate = {
+            schema: "mailto:",
+            index: m.index - name[1].length,
+            lastIndex: m.index + m[0].length
+          };
+          if (fuzzyEmailCandidate.index >= pos) break;
+          if (mailHostRe.lastIndex < scanFrom) mailHostRe.lastIndex = scanFrom;
+        }
+      }
+      if (fuzzyLinkRe && !fuzzyLinkDone && (!fuzzyLinkCandidate || fuzzyLinkCandidate.index < pos)) {
+        if (fuzzyLinkRe.lastIndex < scanFrom) fuzzyLinkRe.lastIndex = scanFrom;
+        for (; ; ) {
+          const m = fuzzyLinkRe.exec(text3);
+          if (!m) {
+            fuzzyLinkDone = true;
+            fuzzyLinkCandidate = void 0;
+            break;
+          }
+          fuzzyLinkCandidate = {
+            schema: "",
+            index: m.index + m[1].length,
+            lastIndex: m.index + m[0].length
+          };
+          if (fuzzyLinkCandidate.index >= pos) break;
+          if (fuzzyLinkRe.lastIndex < scanFrom) fuzzyLinkRe.lastIndex = scanFrom;
+        }
+      }
+      let fuzzyCandidate = fuzzyEmailCandidate;
+      if (!fuzzyCandidate || fuzzyLinkCandidate && (fuzzyLinkCandidate.index < fuzzyCandidate.index || fuzzyLinkCandidate.index === fuzzyCandidate.index && fuzzyLinkCandidate.lastIndex > fuzzyCandidate.lastIndex)) fuzzyCandidate = fuzzyLinkCandidate;
+      let schemaCandidate;
+      if (!schemaDone) for (; ; ) {
+        if (!schemaPrefix) {
+          if (schemaRe.lastIndex < scanFrom) schemaRe.lastIndex = scanFrom;
+          const m = schemaRe.exec(text3);
+          if (!m) {
+            schemaDone = true;
+            break;
+          }
+          schemaPrefix = {
+            schema: m[2],
+            index: m.index + m[1].length,
+            lastIndex: m.index + m[0].length
+          };
+        }
+        if (schemaPrefix.index < pos) {
+          schemaPrefix = void 0;
+          continue;
+        }
+        if (fuzzyCandidate && schemaPrefix.index > fuzzyCandidate.index) break;
+        const prefix = schemaPrefix;
+        schemaPrefix = void 0;
+        const len = this.testSchemaAt(text3, prefix.schema, prefix.lastIndex);
+        if (len) {
+          schemaCandidate = {
+            schema: prefix.schema,
+            index: prefix.index,
+            lastIndex: prefix.lastIndex + len
+          };
+          break;
+        }
+      }
+      let candidate = schemaCandidate;
+      if (!candidate || fuzzyEmailCandidate && (fuzzyEmailCandidate.index < candidate.index || fuzzyEmailCandidate.index === candidate.index && fuzzyEmailCandidate.lastIndex > candidate.lastIndex)) candidate = fuzzyEmailCandidate;
+      if (!candidate || fuzzyLinkCandidate && (fuzzyLinkCandidate.index < candidate.index || fuzzyLinkCandidate.index === candidate.index && fuzzyLinkCandidate.lastIndex > candidate.lastIndex)) candidate = fuzzyLinkCandidate;
+      if (!candidate) break;
+      if (candidate === fuzzyEmailCandidate) fuzzyEmailCandidate = void 0;
+      else if (candidate === fuzzyLinkCandidate) fuzzyLinkCandidate = void 0;
+      const match = new Match(text3, candidate.schema, candidate.index, candidate.lastIndex);
+      if (match.schema) this.__schemas__[match.schema].normalize(match, this);
+      else this.normalize(match);
+      result.push(match);
+      pos = candidate.lastIndex;
+    }
+    if (result.length) return result;
+    return null;
+  }
+  /**
+  * Returns fully-formed (not fuzzy) link if it starts at the beginning
+  * of the string, and null otherwise.
+  *
+  * @param text Text to scan.
+  */
+  matchAtStart(text3) {
+    if (!text3.length) return null;
+    const m = this.re.get_schema_at_start().exec(text3);
+    if (!m) return null;
+    const len = this.testSchemaAt(text3, m[2], m[0].length);
+    if (!len) return null;
+    const match = new Match(text3, m[2], m.index + m[1].length, m.index + m[0].length + len);
+    this.__schemas__[match.schema].normalize(match, this);
+    return match;
+  }
+  /**
+  * Load (or merge) new TLDs list. Those are used for fuzzy links (without
+  * prefix) to avoid false positives. By default this algorithm is used:
+  *
+  * - hostname with any 2-letter root zones are ok.
+  * - biz|com|edu|gov|net|org|pro|web|xxx|aero|asia|coop|info|museum|name|shop|рф
+  *   are ok.
+  * - encoded (`xn--...`) root zones are ok.
+  *
+  * If list is replaced, then exact match for 2-chars root zones will be checked.
+  *
+  * @param list List of TLDs.
+  * @param keepOld Merge with current list if `true` (`false` by default).
+  */
+  tlds(list2, keepOld = false) {
+    list2 = Array.isArray(list2) ? list2 : [list2];
+    if (!keepOld) this.__opts__.tlds = list2;
+    else this.__opts__.tlds = this.__opts__.tlds.concat(list2);
+    this.re.set(__spreadProps(__spreadValues({}, this.__opts__), {
+      schema_names: Object.keys(this.__schemas__)
+    }));
+    return this;
+  }
+  /**
+  * Default normalizer (if schema does not define its own).
+  *
+  * @param match Match to normalize.
+  */
+  normalize(match) {
+    if (!match.schema) match.url = `http://${match.url}`;
+    if (match.schema === "mailto:" && !/^mailto:/i.test(match.url)) match.url = `mailto:${match.url}`;
+  }
+};
+
+// node_modules/punycode.js/punycode.es6.js
+var maxInt = 2147483647;
+var base = 36;
+var tMin = 1;
+var tMax = 26;
+var skew = 38;
+var damp = 700;
+var initialBias = 72;
+var initialN = 128;
+var delimiter = "-";
+var regexPunycode = /^xn--/;
+var regexNonASCII = /[^\0-\x7F]/;
+var regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g;
+var errors = {
+  "overflow": "Overflow: input needs wider integers to process",
+  "not-basic": "Illegal input >= 0x80 (not a basic code point)",
+  "invalid-input": "Invalid input"
+};
+var baseMinusTMin = base - tMin;
+var floor = Math.floor;
+var stringFromCharCode = String.fromCharCode;
+function error(type) {
+  throw new RangeError(errors[type]);
+}
+function map(array, callback) {
+  const result = [];
+  let length = array.length;
+  while (length--) {
+    result[length] = callback(array[length]);
+  }
+  return result;
+}
+function mapDomain(domain, callback) {
+  const parts = domain.split("@");
+  let result = "";
+  if (parts.length > 1) {
+    result = parts[0] + "@";
+    domain = parts[1];
+  }
+  domain = domain.replace(regexSeparators, ".");
+  const labels = domain.split(".");
+  const encoded = map(labels, callback).join(".");
+  return result + encoded;
+}
+function ucs2decode(string) {
+  const output = [];
+  let counter2 = 0;
+  const length = string.length;
+  while (counter2 < length) {
+    const value = string.charCodeAt(counter2++);
+    if (value >= 55296 && value <= 56319 && counter2 < length) {
+      const extra = string.charCodeAt(counter2++);
+      if ((extra & 64512) == 56320) {
+        output.push(((value & 1023) << 10) + (extra & 1023) + 65536);
+      } else {
+        output.push(value);
+        counter2--;
+      }
+    } else {
+      output.push(value);
+    }
+  }
+  return output;
+}
+var ucs2encode = (codePoints) => String.fromCodePoint(...codePoints);
+var basicToDigit = function(codePoint) {
+  if (codePoint >= 48 && codePoint < 58) {
+    return 26 + (codePoint - 48);
+  }
+  if (codePoint >= 65 && codePoint < 91) {
+    return codePoint - 65;
+  }
+  if (codePoint >= 97 && codePoint < 123) {
+    return codePoint - 97;
+  }
+  return base;
+};
+var digitToBasic = function(digit, flag) {
+  return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
+};
+var adapt = function(delta, numPoints, firstTime) {
+  let k = 0;
+  delta = firstTime ? floor(delta / damp) : delta >> 1;
+  delta += floor(delta / numPoints);
+  for (; delta > baseMinusTMin * tMax >> 1; k += base) {
+    delta = floor(delta / baseMinusTMin);
+  }
+  return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
+};
+var decode2 = function(input) {
+  const output = [];
+  const inputLength = input.length;
+  let i = 0;
+  let n = initialN;
+  let bias = initialBias;
+  let basic = input.lastIndexOf(delimiter);
+  if (basic < 0) {
+    basic = 0;
+  }
+  for (let j = 0; j < basic; ++j) {
+    if (input.charCodeAt(j) >= 128) {
+      error("not-basic");
+    }
+    output.push(input.charCodeAt(j));
+  }
+  for (let index = basic > 0 ? basic + 1 : 0; index < inputLength; ) {
+    const oldi = i;
+    for (let w = 1, k = base; ; k += base) {
+      if (index >= inputLength) {
+        error("invalid-input");
+      }
+      const digit = basicToDigit(input.charCodeAt(index++));
+      if (digit >= base) {
+        error("invalid-input");
+      }
+      if (digit > floor((maxInt - i) / w)) {
+        error("overflow");
+      }
+      i += digit * w;
+      const t = k <= bias ? tMin : k >= bias + tMax ? tMax : k - bias;
+      if (digit < t) {
+        break;
+      }
+      const baseMinusT = base - t;
+      if (w > floor(maxInt / baseMinusT)) {
+        error("overflow");
+      }
+      w *= baseMinusT;
+    }
+    const out = output.length + 1;
+    bias = adapt(i - oldi, out, oldi == 0);
+    if (floor(i / out) > maxInt - n) {
+      error("overflow");
+    }
+    n += floor(i / out);
+    i %= out;
+    output.splice(i++, 0, n);
+  }
+  return String.fromCodePoint(...output);
+};
+var encode2 = function(input) {
+  const output = [];
+  input = ucs2decode(input);
+  const inputLength = input.length;
+  let n = initialN;
+  let delta = 0;
+  let bias = initialBias;
+  for (const currentValue of input) {
+    if (currentValue < 128) {
+      output.push(stringFromCharCode(currentValue));
+    }
+  }
+  const basicLength = output.length;
+  let handledCPCount = basicLength;
+  if (basicLength) {
+    output.push(delimiter);
+  }
+  while (handledCPCount < inputLength) {
+    let m = maxInt;
+    for (const currentValue of input) {
+      if (currentValue >= n && currentValue < m) {
+        m = currentValue;
+      }
+    }
+    const handledCPCountPlusOne = handledCPCount + 1;
+    if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
+      error("overflow");
+    }
+    delta += (m - n) * handledCPCountPlusOne;
+    n = m;
+    for (const currentValue of input) {
+      if (currentValue < n && ++delta > maxInt) {
+        error("overflow");
+      }
+      if (currentValue === n) {
+        let q = delta;
+        for (let k = base; ; k += base) {
+          const t = k <= bias ? tMin : k >= bias + tMax ? tMax : k - bias;
+          if (q < t) {
+            break;
+          }
+          const qMinusT = q - t;
+          const baseMinusT = base - t;
+          output.push(
+            stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
+          );
+          q = floor(qMinusT / baseMinusT);
+        }
+        output.push(stringFromCharCode(digitToBasic(q, 0)));
+        bias = adapt(delta, handledCPCountPlusOne, handledCPCount === basicLength);
+        delta = 0;
+        ++handledCPCount;
+      }
+    }
+    ++delta;
+    ++n;
+  }
+  return output.join("");
+};
+var toUnicode = function(input) {
+  return mapDomain(input, function(string) {
+    return regexPunycode.test(string) ? decode2(string.slice(4).toLowerCase()) : string;
+  });
+};
+var toASCII = function(input) {
+  return mapDomain(input, function(string) {
+    return regexNonASCII.test(string) ? "xn--" + encode2(string) : string;
+  });
+};
+var punycode = {
+  /**
+   * A string representing the current Punycode.js version number.
+   * @memberOf punycode
+   * @type String
+   */
+  "version": "2.3.1",
+  /**
+   * An object of methods to convert from JavaScript's internal character
+   * representation (UCS-2) to Unicode code points, and back.
+   * @see <https://mathiasbynens.be/notes/javascript-encoding>
+   * @memberOf punycode
+   * @type Object
+   */
+  "ucs2": {
+    "decode": ucs2decode,
+    "encode": ucs2encode
+  },
+  "decode": decode2,
+  "encode": encode2,
+  "toASCII": toASCII,
+  "toUnicode": toUnicode
+};
+var punycode_es6_default = punycode;
+
+// node_modules/markdown-it/dist/markdown-it.mjs
+var __defProp2 = Object.defineProperty;
+var __exportAll = (all, no_symbols) => {
+  let target = {};
+  for (var name in all) __defProp2(target, name, {
+    get: all[name],
+    enumerable: true
+  });
+  if (!no_symbols) __defProp2(target, Symbol.toStringTag, { value: "Module" });
+  return target;
+};
+var utils_exports = /* @__PURE__ */ __exportAll({
+  arrayReplaceAt: () => arrayReplaceAt,
+  asciiTrim: () => asciiTrim,
+  callable: () => callable,
+  escapeHtml: () => escapeHtml,
+  escapeRE: () => escapeRE,
+  fromCodePoint: () => fromCodePoint,
+  isMdAsciiPunct: () => isMdAsciiPunct,
+  isPunctChar: () => isPunctChar,
+  isPunctCharCode: () => isPunctCharCode,
+  isSpace: () => isSpace,
+  isValidEntityCode: () => isValidEntityCode,
+  isWhiteSpace: () => isWhiteSpace,
+  lib: () => lib,
+  normalizeReference: () => normalizeReference,
+  unescapeAll: () => unescapeAll,
+  unescapeMd: () => unescapeMd
+});
+function callable(cls) {
+  const wrapper = function(...args) {
+    return Reflect.construct(cls, args, new.target && new.target !== wrapper ? new.target : cls);
+  };
+  Object.defineProperty(wrapper, "name", { value: cls.name });
+  Object.setPrototypeOf(wrapper, cls);
+  wrapper.prototype = cls.prototype;
+  return wrapper;
+}
+function arrayReplaceAt(src, pos, newElements) {
+  return [].concat(src.slice(0, pos), newElements, src.slice(pos + 1));
+}
+function isValidEntityCode(c) {
+  if (c >= 55296 && c <= 57343) return false;
+  if (c >= 64976 && c <= 65007) return false;
+  if ((c & 65535) === 65535 || (c & 65535) === 65534) return false;
+  if (c >= 0 && c <= 8) return false;
+  if (c === 11) return false;
+  if (c >= 14 && c <= 31) return false;
+  if (c >= 127 && c <= 159) return false;
+  if (c > 1114111) return false;
+  return true;
+}
+function fromCodePoint(c) {
+  if (c > 65535) {
+    c -= 65536;
+    const surrogate1 = 55296 + (c >> 10);
+    const surrogate2 = 56320 + (c & 1023);
+    return String.fromCharCode(surrogate1, surrogate2);
+  }
+  return String.fromCharCode(c);
+}
+var UNESCAPE_MD_RE = /\\([!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~])/g;
+var UNESCAPE_ALL_RE = new RegExp(`${UNESCAPE_MD_RE.source}|${/&([a-z#][a-z0-9]{1,31});/gi.source}`, "gi");
+var DIGITAL_ENTITY_TEST_RE = /^#((?:x[a-f0-9]{1,8}|[0-9]{1,8}))$/i;
+function replaceEntityPattern(match, name) {
+  if (name.charCodeAt(0) === 35 && DIGITAL_ENTITY_TEST_RE.test(name)) {
+    const code2 = name[1].toLowerCase() === "x" ? parseInt(name.slice(2), 16) : parseInt(name.slice(1), 10);
+    if (isValidEntityCode(code2)) return fromCodePoint(code2);
+    return match;
+  }
+  const decoded = decodeHTMLStrict(match);
+  if (decoded !== match) return decoded;
+  return match;
+}
+function unescapeMd(str) {
+  if (str.indexOf("\\") < 0) return str;
+  return str.replace(UNESCAPE_MD_RE, "$1");
+}
+function unescapeAll(str) {
+  if (str.indexOf("\\") < 0 && str.indexOf("&") < 0) return str;
+  return str.replace(UNESCAPE_ALL_RE, function(match, escaped, entity2) {
+    if (escaped) return escaped;
+    return replaceEntityPattern(match, entity2);
+  });
+}
+var HTML_ESCAPE_TEST_RE = /[&<>"]/;
+var HTML_ESCAPE_REPLACE_RE = /[&<>"]/g;
+var HTML_REPLACEMENTS = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;"
+};
+function replaceUnsafeChar(ch) {
+  return HTML_REPLACEMENTS[ch];
+}
+function escapeHtml(str) {
+  if (HTML_ESCAPE_TEST_RE.test(str)) return str.replace(HTML_ESCAPE_REPLACE_RE, replaceUnsafeChar);
+  return str;
+}
+var REGEXP_ESCAPE_RE = /[.?*+^$[\]\\(){}|-]/g;
+function escapeRE(str) {
+  return str.replace(REGEXP_ESCAPE_RE, "\\$&");
+}
+function isSpace(code2) {
+  switch (code2) {
+    case 9:
+    case 32:
+      return true;
+  }
+  return false;
+}
+function isWhiteSpace(code2) {
+  if (code2 >= 8192 && code2 <= 8202) return true;
+  switch (code2) {
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 32:
+    case 160:
+    case 5760:
+    case 8239:
+    case 8287:
+    case 12288:
+      return true;
+  }
+  return false;
+}
+function isPunctChar(ch) {
+  return P.test(ch) || S.test(ch);
+}
+function isPunctCharCode(code2) {
+  return isPunctChar(fromCodePoint(code2));
+}
+function isMdAsciiPunct(ch) {
+  switch (ch) {
+    case 33:
+    case 34:
+    case 35:
+    case 36:
+    case 37:
+    case 38:
+    case 39:
+    case 40:
+    case 41:
+    case 42:
+    case 43:
+    case 44:
+    case 45:
+    case 46:
+    case 47:
+    case 58:
+    case 59:
+    case 60:
+    case 61:
+    case 62:
+    case 63:
+    case 64:
+    case 91:
+    case 92:
+    case 93:
+    case 94:
+    case 95:
+    case 96:
+    case 123:
+    case 124:
+    case 125:
+    case 126:
+      return true;
+    default:
+      return false;
+  }
+}
+function normalizeReference(str) {
+  str = str.trim().replace(/\s+/g, " ");
+  return str.toLowerCase().toUpperCase();
+}
+function isAsciiTrimmable(c) {
+  return c === 32 || c === 9 || c === 10 || c === 13;
+}
+function asciiTrim(str) {
+  let start = 0;
+  for (; start < str.length; start++) if (!isAsciiTrimmable(str.charCodeAt(start))) break;
+  let end = str.length - 1;
+  for (; end >= start; end--) if (!isAsciiTrimmable(str.charCodeAt(end))) break;
+  return str.slice(start, end + 1);
+}
+var lib = {
+  mdurl: mdurl_exports,
+  ucmicro: build_exports
+};
+function parseLinkLabel(state, start, disableNested) {
+  let level, found, marker, prevPos;
+  const max = state.posMax;
+  const oldPos = state.pos;
+  state.pos = start + 1;
+  level = 1;
+  while (state.pos < max) {
+    marker = state.src.charCodeAt(state.pos);
+    if (marker === 93) {
+      level--;
+      if (level === 0) {
+        found = true;
+        break;
+      }
+    }
+    prevPos = state.pos;
+    state.md.inline.skipToken(state);
+    if (marker === 91) {
+      if (prevPos === state.pos - 1) level++;
+      else if (disableNested) {
+        state.pos = oldPos;
+        return -1;
+      }
+    }
+  }
+  let labelEnd = -1;
+  if (found) labelEnd = state.pos;
+  state.pos = oldPos;
+  return labelEnd;
+}
+function parseLinkDestination(str, start, max) {
+  let code2;
+  let pos = start;
+  const result = {
+    ok: false,
+    pos: 0,
+    str: ""
+  };
+  if (str.charCodeAt(pos) === 60) {
+    pos++;
+    while (pos < max) {
+      code2 = str.charCodeAt(pos);
+      if (code2 === 10) return result;
+      if (code2 === 60) return result;
+      if (code2 === 62) {
+        result.pos = pos + 1;
+        result.str = unescapeAll(str.slice(start + 1, pos));
+        result.ok = true;
+        return result;
+      }
+      if (code2 === 92 && pos + 1 < max) {
+        pos += 2;
+        continue;
+      }
+      pos++;
+    }
+    return result;
+  }
+  let level = 0;
+  while (pos < max) {
+    code2 = str.charCodeAt(pos);
+    if (code2 === 32) break;
+    if (code2 < 32 || code2 === 127) break;
+    if (code2 === 92 && pos + 1 < max) {
+      if (str.charCodeAt(pos + 1) === 32) {
+        pos++;
+        continue;
+      }
+      pos += 2;
+      continue;
+    }
+    if (code2 === 40) {
+      level++;
+      if (level > 32) return result;
+    }
+    if (code2 === 41) {
+      if (level === 0) break;
+      level--;
+    }
+    pos++;
+  }
+  if (start === pos) return result;
+  if (level !== 0) return result;
+  result.str = unescapeAll(str.slice(start, pos));
+  result.pos = pos;
+  result.ok = true;
+  return result;
+}
+function parseLinkTitle(str, start, max, prev_state) {
+  let code2;
+  let pos = start;
+  const state = {
+    ok: false,
+    can_continue: false,
+    pos: 0,
+    str: "",
+    marker: 0
+  };
+  if (prev_state) {
+    state.str = prev_state.str;
+    state.marker = prev_state.marker;
+  } else {
+    if (pos >= max) return state;
+    let marker = str.charCodeAt(pos);
+    if (marker !== 34 && marker !== 39 && marker !== 40) return state;
+    start++;
+    pos++;
+    if (marker === 40) marker = 41;
+    state.marker = marker;
+  }
+  while (pos < max) {
+    code2 = str.charCodeAt(pos);
+    if (code2 === state.marker) {
+      state.pos = pos + 1;
+      state.str += unescapeAll(str.slice(start, pos));
+      state.ok = true;
+      return state;
+    } else if (code2 === 40 && state.marker === 41) return state;
+    else if (code2 === 92 && pos + 1 < max) pos++;
+    pos++;
+  }
+  state.can_continue = true;
+  state.str += unescapeAll(str.slice(start, pos));
+  return state;
+}
+var helpers_exports = /* @__PURE__ */ __exportAll({
+  parseLinkDestination: () => parseLinkDestination,
+  parseLinkLabel: () => parseLinkLabel,
+  parseLinkTitle: () => parseLinkTitle
+});
+function _typeof(o) {
+  "@babel/helpers - typeof";
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o2) {
+    return typeof o2;
+  } : function(o2) {
+    return o2 && "function" == typeof Symbol && o2.constructor === Symbol && o2 !== Symbol.prototype ? "symbol" : typeof o2;
+  }, _typeof(o);
+}
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return ("string" === r ? String : Number)(t);
+}
+function toPropertyKey(t) {
+  var i = toPrimitive(t, "string");
+  return "symbol" == _typeof(i) ? i : i + "";
+}
+function _defineProperty(e, r, t) {
+  return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+    value: t,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[r] = t, e;
+}
+var Token = class {
+  constructor(type, tag, nesting) {
+    _defineProperty(
+      this,
+      /**
+      * Source map info. Format: `[ line_begin, line_end ]`
+      */
+      "map",
+      null
+    );
+    _defineProperty(
+      this,
+      /**
+      * nesting level, the same as `state.level`
+      */
+      "level",
+      0
+    );
+    _defineProperty(
+      this,
+      /**
+      * An array of child nodes (inline and img tokens)
+      */
+      "children",
+      null
+    );
+    _defineProperty(
+      this,
+      /**
+      * In a case of self-closing tag (code, html, fence, etc.),
+      * it has contents of this tag.
+      */
+      "content",
+      ""
+    );
+    _defineProperty(
+      this,
+      /**
+      * '*' or '_' for emphasis, fence string for fence, etc.
+      */
+      "markup",
+      ""
+    );
+    _defineProperty(
+      this,
+      /**
+      * Additional information:
+      *
+      * - Info string for "fence" tokens
+      * - The value "auto" for autolink "link_open" and "link_close" tokens
+      * - The string value of the item marker for ordered-list "list_item_open" tokens
+      */
+      "info",
+      ""
+    );
+    _defineProperty(
+      this,
+      /**
+      * True for block-level tokens, false for inline tokens.
+      * Used in renderer to calculate line breaks
+      */
+      "block",
+      false
+    );
+    _defineProperty(
+      this,
+      /**
+      * If it's true, ignore this element when rendering. Used for tight lists
+      * to hide paragraphs.
+      */
+      "hidden",
+      false
+    );
+    this.type = type;
+    this.tag = tag;
+    this.attrs = null;
+    this.nesting = nesting;
+    this.meta = null;
+  }
+  /**
+  * Search attribute index by name.
+  */
+  attrIndex(name) {
+    if (!this.attrs) return -1;
+    const attrs = this.attrs;
+    for (let i = 0, len = attrs.length; i < len; i++) if (attrs[i][0] === name) return i;
+    return -1;
+  }
+  /**
+  * Add `[ name, value ]` attribute to list. Init attrs if necessary
+  */
+  attrPush(attrData) {
+    if (this.attrs) this.attrs.push(attrData);
+    else this.attrs = [attrData];
+  }
+  /**
+  * Set `name` attribute to `value`. Override old value if exists.
+  */
+  attrSet(name, value) {
+    const idx = this.attrIndex(name);
+    const attrData = [name, value];
+    if (idx < 0) this.attrPush(attrData);
+    else this.attrs[idx] = attrData;
+  }
+  /**
+  * Get the value of attribute `name`, or null if it does not exist.
+  */
+  attrGet(name) {
+    const idx = this.attrIndex(name);
+    let value = null;
+    if (idx >= 0) value = this.attrs[idx][1];
+    return value;
+  }
+  /**
+  * Join value to existing attribute via space. Or create new attribute if not
+  * exists. Useful to operate with token classes.
+  */
+  attrJoin(name, value) {
+    const idx = this.attrIndex(name);
+    if (idx < 0) this.attrPush([name, value]);
+    else this.attrs[idx][1] = `${this.attrs[idx][1]} ${value}`;
+  }
+};
+var Ruler = class {
+  constructor() {
+    _defineProperty(
+      this,
+      /** @internal */
+      "__rules__",
+      []
+    );
+    _defineProperty(
+      this,
+      /** @internal */
+      "__cache__",
+      null
+    );
+  }
+  /** @internal */
+  __find__(name) {
+    for (let i = 0; i < this.__rules__.length; i++) if (this.__rules__[i].name === name) return i;
+    return -1;
+  }
+  /** @internal */
+  __compile__() {
+    const chains = /* @__PURE__ */ new Set();
+    this.__rules__.forEach((rule) => {
+      if (!rule.enabled) return;
+      rule.alt.forEach((altName) => {
+        if (altName) chains.add(altName);
+      });
+    });
+    this.__cache__ = /* @__PURE__ */ Object.create(null);
+    this.__cache__[""] = [];
+    this.__rules__.forEach((rule) => {
+      if (rule.enabled) this.__cache__[""].push(rule.fn);
+    });
+    chains.forEach((chain) => {
+      this.__cache__[chain] = [];
+      this.__rules__.forEach((rule) => {
+        if (rule.enabled && rule.alt.indexOf(chain) >= 0) this.__cache__[chain].push(rule.fn);
+      });
+    });
+  }
+  /**
+  * Replace rule by name with new function & options. Throws error if name not
+  * found.
+  *
+  * @example Replace existing typographer replacement rule with new one
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  * const md = new MarkdownIt()
+  *
+  * md.core.ruler.at('replacements', function replace(state) {
+  *   //...
+  * });
+  * ```
+  */
+  at(name, fn, options = {}) {
+    const index = this.__find__(name);
+    if (index === -1) throw new Error(`Parser rule not found: ${name}`);
+    this.__rules__[index].fn = fn;
+    this.__rules__[index].alt = options.alt || [];
+    this.__cache__ = null;
+  }
+  /**
+  * Add new rule to chain before one with given name. See also
+  * {@link Ruler.after}, {@link Ruler.push}.
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  * const md = new MarkdownIt()
+  *
+  * md.block.ruler.before('paragraph', 'my_rule', function replace(state) {
+  *   //...
+  * });
+  * ```
+  */
+  before(beforeName, ruleName, fn, options = {}) {
+    const index = this.__find__(beforeName);
+    if (index === -1) throw new Error(`Parser rule not found: ${beforeName}`);
+    this.__rules__.splice(index, 0, {
+      name: ruleName,
+      enabled: true,
+      fn,
+      alt: options.alt || []
+    });
+    this.__cache__ = null;
+  }
+  /**
+  * Add new rule to chain after one with given name. See also
+  * {@link Ruler.before}, {@link Ruler.push}.
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  * const md = new MarkdownIt()
+  *
+  * md.inline.ruler.after('text', 'my_rule', function replace(state) {
+  *   //...
+  * });
+  * ```
+  */
+  after(afterName, ruleName, fn, options = {}) {
+    const index = this.__find__(afterName);
+    if (index === -1) throw new Error(`Parser rule not found: ${afterName}`);
+    this.__rules__.splice(index + 1, 0, {
+      name: ruleName,
+      enabled: true,
+      fn,
+      alt: options.alt || []
+    });
+    this.__cache__ = null;
+  }
+  /**
+  * Push new rule to the end of chain. See also
+  * {@link Ruler.before}, {@link Ruler.after}.
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  * const md = new MarkdownIt()
+  *
+  * md.core.ruler.push('my_rule', function replace(state) {
+  *   //...
+  * });
+  * ```
+  */
+  push(ruleName, fn, options = {}) {
+    this.__rules__.push({
+      name: ruleName,
+      enabled: true,
+      fn,
+      alt: options.alt || []
+    });
+    this.__cache__ = null;
+  }
+  /**
+  * Enable rules with given names. If any rule name not found - throw Error.
+  * Errors can be disabled by second param.
+  *
+  * See also {@link Ruler.disable}, {@link Ruler.enableOnly}.
+  *
+  * Returns list of found rule names (if no exception happened).
+  */
+  enable(list2, ignoreInvalid = false) {
+    if (!Array.isArray(list2)) list2 = [list2];
+    const result = [];
+    list2.forEach((name) => {
+      const idx = this.__find__(name);
+      if (idx < 0) {
+        if (ignoreInvalid) return;
+        throw new Error(`Rules manager: invalid rule name ${name}`);
+      }
+      this.__rules__[idx].enabled = true;
+      result.push(name);
+    });
+    this.__cache__ = null;
+    return result;
+  }
+  /**
+  * Enable rules with given names, and disable everything else. If any rule name
+  * not found - throw Error. Errors can be disabled by second param.
+  *
+  * See also {@link Ruler.disable}, {@link Ruler.enable}.
+  */
+  enableOnly(list2, ignoreInvalid = false) {
+    if (!Array.isArray(list2)) list2 = [list2];
+    this.__rules__.forEach((rule) => {
+      rule.enabled = false;
+    });
+    this.enable(list2, ignoreInvalid);
+  }
+  /**
+  * Disable rules with given names. If any rule name not found - throw Error.
+  * Errors can be disabled by second param.
+  *
+  * See also {@link Ruler.enable}, {@link Ruler.enableOnly}.
+  *
+  * Returns list of found rule names (if no exception happened).
+  */
+  disable(list2, ignoreInvalid = false) {
+    if (!Array.isArray(list2)) list2 = [list2];
+    const result = [];
+    list2.forEach((name) => {
+      const idx = this.__find__(name);
+      if (idx < 0) {
+        if (ignoreInvalid) return;
+        throw new Error(`Rules manager: invalid rule name ${name}`);
+      }
+      this.__rules__[idx].enabled = false;
+      result.push(name);
+    });
+    this.__cache__ = null;
+    return result;
+  }
+  /**
+  * Return array of active functions (rules) for given chain name. It analyzes
+  * rules configuration, compiles caches if not exists and returns result.
+  *
+  * Default chain name is `''` (empty string). It can't be skipped. That's
+  * done intentionally, to keep signature monomorphic for high speed.
+  */
+  getRules(chainName) {
+    if (!this.__cache__) this.__compile__();
+    return this.__cache__[chainName] || [];
+  }
+};
+var default_rules = {};
+default_rules.code_inline = function(tokens, idx, options, env, slf) {
+  const token = tokens[idx];
+  return `<code${slf.renderAttrs(token)}>${escapeHtml(token.content)}</code>`;
+};
+default_rules.code_block = function(tokens, idx, options, env, slf) {
+  const token = tokens[idx];
+  return `<pre${slf.renderAttrs(token)}><code>${escapeHtml(tokens[idx].content)}</code></pre>
+`;
+};
+default_rules.fence = function(tokens, idx, options, env, slf) {
+  const token = tokens[idx];
+  const info = token.info ? unescapeAll(token.info).trim() : "";
+  let langName = "";
+  let langAttrs = "";
+  if (info) {
+    const arr = info.split(/(\s+)/g);
+    langName = arr[0];
+    langAttrs = arr.slice(2).join("");
+  }
+  let highlighted;
+  if (options.highlight) highlighted = options.highlight(token.content, langName, langAttrs) || escapeHtml(token.content);
+  else highlighted = escapeHtml(token.content);
+  if (highlighted.indexOf("<pre") === 0) return highlighted + "\n";
+  if (info) {
+    const i = token.attrIndex("class");
+    const tmpAttrs = token.attrs ? token.attrs.slice() : [];
+    if (i < 0) tmpAttrs.push(["class", `${options.langPrefix}${langName}`]);
+    else {
+      tmpAttrs[i] = [tmpAttrs[i][0], tmpAttrs[i][1]];
+      tmpAttrs[i][1] += ` ${options.langPrefix}${langName}`;
+    }
+    const tmpToken = { attrs: tmpAttrs };
+    return `<pre><code${slf.renderAttrs(tmpToken)}>${highlighted}</code></pre>
+`;
+  }
+  return `<pre><code${slf.renderAttrs(token)}>${highlighted}</code></pre>
+`;
+};
+default_rules.image = function(tokens, idx, options, env, slf) {
+  const token = tokens[idx];
+  token.attrs[token.attrIndex("alt")][1] = slf.renderInlineAsText(token.children, options, env);
+  return slf.renderToken(tokens, idx, options);
+};
+default_rules.hardbreak = function(tokens, idx, options) {
+  return options.xhtmlOut ? "<br />\n" : "<br>\n";
+};
+default_rules.softbreak = function(tokens, idx, options) {
+  return options.breaks ? options.xhtmlOut ? "<br />\n" : "<br>\n" : "\n";
+};
+default_rules.text = function(tokens, idx) {
+  return escapeHtml(tokens[idx].content);
+};
+default_rules.html_block = function(tokens, idx) {
+  return tokens[idx].content;
+};
+default_rules.html_inline = function(tokens, idx) {
+  return tokens[idx].content;
+};
+var Renderer = class {
+  constructor() {
+    _defineProperty(
+      this,
+      /**
+      * Contains render rules for tokens. Can be updated and extended.
+      *
+      * See [source code](https://github.com/markdown-it/markdown-it/blob/master/src/renderer.ts)
+      * for more details and examples.
+      *
+      * @example Custom render rules
+      * ```javascript
+      * import MarkdownIt from 'markdown-it'
+      * const md = new MarkdownIt()
+      *
+      * md.renderer.rules.strong_open  = function () { return '<b>'; };
+      * md.renderer.rules.strong_close = function () { return '</b>'; };
+      *
+      * const result = md.renderInline(...);
+      * ```
+      *
+      * @example Each rule is called as independent static function with fixed signature
+      * ```javascript
+      * function my_token_render(tokens, idx, options, env, renderer) {
+      *   // ...
+      *   return renderedHTML;
+      * }
+      * ```
+      */
+      "rules",
+      Object.assign({}, default_rules)
+    );
+  }
+  /**
+  * Render token attributes to string.
+  */
+  renderAttrs(token) {
+    let i, l, result;
+    if (!token.attrs) return "";
+    result = "";
+    for (i = 0, l = token.attrs.length; i < l; i++) result += ` ${escapeHtml(token.attrs[i][0])}="${escapeHtml(String(token.attrs[i][1]))}"`;
+    return result;
+  }
+  /**
+  * Default token renderer. Can be overriden by custom function
+  * in {@link Renderer.rules}.
+  */
+  renderToken(tokens, idx, options) {
+    const token = tokens[idx];
+    let result = "";
+    if (token.hidden) return "";
+    let prev = idx - 1;
+    while (prev >= 0 && tokens[prev].hidden && tokens[prev].nesting === 0) prev--;
+    if (token.block && token.nesting !== -1 && prev >= 0 && tokens[prev].hidden && tokens[prev].nesting === -1) result += "\n";
+    result += (token.nesting === -1 ? "</" : "<") + token.tag;
+    result += this.renderAttrs(token);
+    if (token.nesting === 0 && options.xhtmlOut) result += " /";
+    let needLf = false;
+    if (token.block) {
+      needLf = true;
+      if (token.nesting === 1) {
+        let next = idx + 1;
+        while (next < tokens.length && tokens[next].hidden && tokens[next].nesting === 0) next++;
+        if (next < tokens.length) {
+          const nextToken = tokens[next];
+          if (nextToken.type === "inline" || nextToken.hidden) needLf = false;
+          else if (nextToken.nesting === -1 && nextToken.tag === token.tag) needLf = false;
+        }
+      }
+    }
+    result += needLf ? ">\n" : ">";
+    return result;
+  }
+  /**
+  * The same as {@link Renderer.render}, but for single token of `inline` type.
+  */
+  renderInline(tokens, options, env) {
+    let result = "";
+    const rules = this.rules;
+    for (let i = 0, len = tokens.length; i < len; i++) {
+      const type = tokens[i].type;
+      if (typeof rules[type] !== "undefined") result += rules[type](tokens, i, options, env, this);
+      else result += this.renderToken(tokens, i, options);
+    }
+    return result;
+  }
+  /**
+  * Special kludge for image `alt` attributes to conform CommonMark spec.
+  * Don't try to use it! Spec requires to show `alt` content with stripped markup,
+  * instead of simple escaping.
+  */
+  renderInlineAsText(tokens, options, env) {
+    let result = "";
+    for (let i = 0, len = tokens.length; i < len; i++) switch (tokens[i].type) {
+      case "text":
+      case "code_inline":
+        result += tokens[i].content;
+        break;
+      case "image":
+        result += this.renderInlineAsText(tokens[i].children, options, env);
+        break;
+      case "html_inline":
+      case "html_block":
+        result += tokens[i].content;
+        break;
+      case "softbreak":
+      case "hardbreak":
+        result += "\n";
+    }
+    return result;
+  }
+  /**
+  * Takes token stream and generates HTML. Probably, you will never need to call
+  * this method directly.
+  */
+  render(tokens, options, env) {
+    let result = "";
+    const rules = this.rules;
+    for (let i = 0, len = tokens.length; i < len; i++) {
+      const type = tokens[i].type;
+      if (type === "inline") result += this.renderInline(tokens[i].children, options, env);
+      else if (typeof rules[type] !== "undefined") result += rules[type](tokens, i, options, env, this);
+      else result += this.renderToken(tokens, i, options);
+    }
+    return result;
+  }
+};
+var StateCore = class {
+  constructor(src, md, env) {
+    _defineProperty(this, "tokens", []);
+    _defineProperty(this, "inlineMode", false);
+    _defineProperty(this, "Token", Token);
+    this.src = src;
+    this.env = env;
+    this.md = md;
+  }
+};
+var UNNORMALIZED_NEWLINE_RE = /\r\n?/g;
+var NULL_RE = /\0/g;
+function normalize(state) {
+  let str;
+  str = state.src.replace(UNNORMALIZED_NEWLINE_RE, "\n");
+  str = str.replace(NULL_RE, "\uFFFD");
+  state.src = str;
+}
+function block(state) {
+  let token;
+  if (state.inlineMode) {
+    token = new state.Token("inline", "", 0);
+    token.content = state.src;
+    token.map = [0, 1];
+    token.children = [];
+    state.tokens.push(token);
+  } else state.md.block.parse(state.src, state.md, state.env, state.tokens);
+}
+function strip_references(state) {
+  const tokens = state.tokens;
+  let last = 0;
+  for (let curr = 0; curr < tokens.length; curr++) {
+    if (tokens[curr].type === "reference_definition") continue;
+    if (curr !== last) tokens[last] = tokens[curr];
+    last++;
+  }
+  if (tokens.length !== last) tokens.length = last;
+}
+function inline(state) {
+  const tokens = state.tokens;
+  for (let i = 0, l = tokens.length; i < l; i++) {
+    const tok = tokens[i];
+    if (tok.type === "inline") state.md.inline.parse(tok.content, state.md, state.env, tok.children);
+  }
+}
+function isLinkOpen$1(str) {
+  return /^<a[>\s]/i.test(str);
+}
+function isLinkClose$1(str) {
+  return /^<\/a\s*>/i.test(str);
+}
+function linkify$1(state) {
+  const blockTokens = state.tokens;
+  if (!state.md.options.linkify) return;
+  for (let j = 0, l = blockTokens.length; j < l; j++) {
+    if (blockTokens[j].type !== "inline" || !state.md.linkify.test(blockTokens[j].content)) continue;
+    const tokens = blockTokens[j].children;
+    const replacements = [];
+    let htmlLinkLevel = 0;
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      const currentToken = tokens[i];
+      if (currentToken.type === "link_close") {
+        i--;
+        while (tokens[i].level !== currentToken.level && tokens[i].type !== "link_open") i--;
+        continue;
+      }
+      if (currentToken.type === "html_inline") {
+        if (isLinkOpen$1(currentToken.content) && htmlLinkLevel > 0) htmlLinkLevel--;
+        if (isLinkClose$1(currentToken.content)) htmlLinkLevel++;
+      }
+      if (htmlLinkLevel > 0) continue;
+      if (currentToken.type === "text" && state.md.linkify.test(currentToken.content)) {
+        const text3 = currentToken.content;
+        let links = state.md.linkify.match(text3);
+        const nodes = [];
+        let level = currentToken.level;
+        let lastPos = 0;
+        if (links.length > 0 && links[0].index === 0 && i > 0 && tokens[i - 1].type === "text_special") links = links.slice(1);
+        for (let ln = 0; ln < links.length; ln++) {
+          const url = links[ln].url;
+          const fullUrl = state.md.normalizeLink(url);
+          if (!state.md.validateLink(fullUrl)) continue;
+          let urlText = links[ln].text;
+          if (!links[ln].schema) urlText = state.md.normalizeLinkText(`http://${urlText}`).replace(/^http:\/\//, "");
+          else if (links[ln].schema === "mailto:" && !/^mailto:/i.test(urlText)) urlText = state.md.normalizeLinkText(`mailto:${urlText}`).replace(/^mailto:/, "");
+          else urlText = state.md.normalizeLinkText(urlText);
+          const pos = links[ln].index;
+          if (pos > lastPos) {
+            const token = new state.Token("text", "", 0);
+            token.content = text3.slice(lastPos, pos);
+            token.level = level;
+            nodes.push(token);
+          }
+          const token_o = new state.Token("link_open", "a", 1);
+          token_o.attrs = [["href", fullUrl]];
+          token_o.level = level++;
+          token_o.markup = "linkify";
+          token_o.info = "auto";
+          nodes.push(token_o);
+          const token_t = new state.Token("text", "", 0);
+          token_t.content = urlText;
+          token_t.level = level;
+          nodes.push(token_t);
+          const token_c = new state.Token("link_close", "a", -1);
+          token_c.level = --level;
+          token_c.markup = "linkify";
+          token_c.info = "auto";
+          nodes.push(token_c);
+          lastPos = links[ln].lastIndex;
+        }
+        if (lastPos < text3.length) {
+          const token = new state.Token("text", "", 0);
+          token.content = text3.slice(lastPos);
+          token.level = level;
+          nodes.push(token);
+        }
+        replacements.push({
+          index: i,
+          nodes
+        });
+      }
+    }
+    if (replacements.length > 0) {
+      let newTokensLength = tokens.length;
+      for (const replacement of replacements) newTokensLength += replacement.nodes.length - 1;
+      const newTokens = new Array(newTokensLength);
+      let replacementIndex = 0;
+      let newTokenIndex = 0;
+      replacements.reverse();
+      for (let i = 0; i < tokens.length; i++) {
+        const replacement = replacements[replacementIndex];
+        if ((replacement === null || replacement === void 0 ? void 0 : replacement.index) === i) {
+          for (const node of replacement.nodes) newTokens[newTokenIndex++] = node;
+          replacementIndex++;
+        } else newTokens[newTokenIndex++] = tokens[i];
+      }
+      blockTokens[j].children = newTokens;
+    }
+  }
+}
+var RARE_RE = /\+-|\.\.|\?\?\?\?|!!!!|,,|--/;
+var SCOPED_ABBR_TEST_RE = /\((c|tm|r)\)/i;
+var SCOPED_ABBR_RE = /\((c|tm|r)\)/gi;
+var SCOPED_ABBR = {
+  c: "\xA9",
+  r: "\xAE",
+  tm: "\u2122"
+};
+function replaceFn(match, name) {
+  return SCOPED_ABBR[name.toLowerCase()];
+}
+function replace_scoped(inlineTokens) {
+  let inside_autolink = 0;
+  for (let i = inlineTokens.length - 1; i >= 0; i--) {
+    const token = inlineTokens[i];
+    if (token.type === "text" && !inside_autolink) token.content = token.content.replace(SCOPED_ABBR_RE, replaceFn);
+    if (token.type === "link_open" && token.info === "auto") inside_autolink--;
+    if (token.type === "link_close" && token.info === "auto") inside_autolink++;
+  }
+}
+function replace_rare(inlineTokens) {
+  let inside_autolink = 0;
+  for (let i = inlineTokens.length - 1; i >= 0; i--) {
+    const token = inlineTokens[i];
+    if (token.type === "text" && !inside_autolink) {
+      if (RARE_RE.test(token.content)) token.content = token.content.replace(/\+-/g, "\xB1").replace(/\.{2,}/g, "\u2026").replace(/([?!])…/g, "$1..").replace(/([?!]){4,}/g, "$1$1$1").replace(/,{2,}/g, ",").replace(/(^|[^-])---(?=[^-]|$)/gm, "$1\u2014").replace(/(^|\s)--(?=\s|$)/gm, "$1\u2013").replace(/(^|[^-\s])--(?=[^-\s]|$)/gm, "$1\u2013");
+    }
+    if (token.type === "link_open" && token.info === "auto") inside_autolink--;
+    if (token.type === "link_close" && token.info === "auto") inside_autolink++;
+  }
+}
+function replace(state) {
+  let blkIdx;
+  if (!state.md.options.typographer) return;
+  for (blkIdx = state.tokens.length - 1; blkIdx >= 0; blkIdx--) {
+    if (state.tokens[blkIdx].type !== "inline") continue;
+    if (SCOPED_ABBR_TEST_RE.test(state.tokens[blkIdx].content)) replace_scoped(state.tokens[blkIdx].children);
+    if (RARE_RE.test(state.tokens[blkIdx].content)) replace_rare(state.tokens[blkIdx].children);
+  }
+}
+var QUOTE_TEST_RE = /['"]/;
+var QUOTE_RE = /['"]/g;
+var APOSTROPHE = "\u2019";
+var MAX_OPENERS = 1e3;
+function truncateStack(stack, heads, length) {
+  while (stack.length > length) {
+    const item = stack.pop();
+    if (item.isSingleQuote) heads.single = item.prevSameQuoteIdx;
+    else heads.double = item.prevSameQuoteIdx;
+  }
+}
+function addReplacement(replacements, tokenIdx, pos, ch) {
+  if (!replacements[tokenIdx]) replacements[tokenIdx] = [];
+  replacements[tokenIdx].push({
+    pos,
+    ch
+  });
+}
+function applyReplacements(str, replacements) {
+  let result = "";
+  let lastPos = 0;
+  replacements.sort((a, b) => a.pos - b.pos);
+  for (let i = 0; i < replacements.length; i++) {
+    const replacement = replacements[i];
+    result += str.slice(lastPos, replacement.pos) + replacement.ch;
+    lastPos = replacement.pos + 1;
+  }
+  return result + str.slice(lastPos);
+}
+function process_inlines(tokens, state) {
+  let j;
+  const stack = [];
+  const heads = {
+    single: -1,
+    double: -1
+  };
+  const replacements = {};
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i];
+    const thisLevel = tokens[i].level;
+    for (j = stack.length - 1; j >= 0; j--) if (stack[j].level <= thisLevel) break;
+    truncateStack(stack, heads, j + 1);
+    if (token.type !== "text") continue;
+    const text3 = token.content;
+    let pos = 0;
+    const max = text3.length;
+    OUTER: while (pos < max) {
+      QUOTE_RE.lastIndex = pos;
+      const t = QUOTE_RE.exec(text3);
+      if (!t) break;
+      let canOpen = true;
+      let canClose = true;
+      pos = t.index + 1;
+      const isSingle = t[0] === "'";
+      let lastChar = 32;
+      if (t.index - 1 >= 0) lastChar = text3.charCodeAt(t.index - 1);
+      else for (j = i - 1; j >= 0; j--) {
+        if (tokens[j].type === "softbreak" || tokens[j].type === "hardbreak") break;
+        if (!tokens[j].content) continue;
+        lastChar = tokens[j].content.charCodeAt(tokens[j].content.length - 1);
+        break;
+      }
+      let nextChar = 32;
+      if (pos < max) nextChar = text3.charCodeAt(pos);
+      else for (j = i + 1; j < tokens.length; j++) {
+        if (tokens[j].type === "softbreak" || tokens[j].type === "hardbreak") break;
+        if (!tokens[j].content) continue;
+        nextChar = tokens[j].content.charCodeAt(0);
+        break;
+      }
+      const isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctCharCode(lastChar);
+      const isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctCharCode(nextChar);
+      const isLastWhiteSpace = isWhiteSpace(lastChar);
+      const isNextWhiteSpace = isWhiteSpace(nextChar);
+      if (isNextWhiteSpace) canOpen = false;
+      else if (isNextPunctChar) {
+        if (!(isLastWhiteSpace || isLastPunctChar)) canOpen = false;
+      }
+      if (isLastWhiteSpace) canClose = false;
+      else if (isLastPunctChar) {
+        if (!(isNextWhiteSpace || isNextPunctChar)) canClose = false;
+      }
+      if (nextChar === 34 && t[0] === '"') {
+        if (lastChar >= 48 && lastChar <= 57) canClose = canOpen = false;
+      }
+      if (canOpen && canClose) {
+        canOpen = isLastPunctChar;
+        canClose = isNextPunctChar;
+      }
+      if (!canOpen && !canClose) {
+        if (isSingle) addReplacement(replacements, i, t.index, APOSTROPHE);
+        continue;
+      }
+      if (canClose) {
+        j = isSingle ? heads.single : heads.double;
+        if (j >= 0 && stack[j].level === thisLevel) {
+          const item = stack[j];
+          let openQuote;
+          let closeQuote;
+          if (isSingle) {
+            openQuote = state.md.options.quotes[2];
+            closeQuote = state.md.options.quotes[3];
+          } else {
+            openQuote = state.md.options.quotes[0];
+            closeQuote = state.md.options.quotes[1];
+          }
+          addReplacement(replacements, i, t.index, closeQuote);
+          addReplacement(replacements, item.tokenIdx, item.contentPos, openQuote);
+          truncateStack(stack, heads, j);
+          continue OUTER;
+        }
+      }
+      if (canOpen) {
+        if (stack.length >= MAX_OPENERS) return;
+        stack.push({
+          tokenIdx: i,
+          contentPos: t.index,
+          isSingleQuote: isSingle,
+          level: thisLevel,
+          prevSameQuoteIdx: isSingle ? heads.single : heads.double
+        });
+        if (isSingle) heads.single = stack.length - 1;
+        else heads.double = stack.length - 1;
+      } else if (canClose && isSingle) addReplacement(replacements, i, t.index, APOSTROPHE);
+    }
+  }
+  Object.keys(replacements).forEach(function(tokenIdx) {
+    const idx = Number(tokenIdx);
+    tokens[idx].content = applyReplacements(tokens[idx].content, replacements[tokenIdx]);
+  });
+}
+function smartquotes(state) {
+  if (!state.md.options.typographer) return;
+  for (let blkIdx = state.tokens.length - 1; blkIdx >= 0; blkIdx--) {
+    if (state.tokens[blkIdx].type !== "inline" || !QUOTE_TEST_RE.test(state.tokens[blkIdx].content)) continue;
+    process_inlines(state.tokens[blkIdx].children, state);
+  }
+}
+function join_alt(tokens) {
+  let curr, last;
+  const max = tokens.length;
+  for (curr = 0; curr < max; curr++) if (tokens[curr].type === "text_special") tokens[curr].type = "text";
+  for (curr = last = 0; curr < max; curr++) if (tokens[curr].type === "text" && curr + 1 < max && tokens[curr + 1].type === "text") tokens[curr + 1].content = tokens[curr].content + tokens[curr + 1].content;
+  else {
+    if (curr !== last) tokens[last] = tokens[curr];
+    last++;
+  }
+  if (curr !== last) tokens.length = last;
+}
+function text_join(state) {
+  let curr, last;
+  const blockTokens = state.tokens;
+  const l = blockTokens.length;
+  for (let j = 0; j < l; j++) {
+    if (blockTokens[j].type !== "inline") continue;
+    const tokens = blockTokens[j].children;
+    const max = tokens.length;
+    for (curr = 0; curr < max; curr++) {
+      if (tokens[curr].type === "text_special") tokens[curr].type = "text";
+      if (tokens[curr].children) join_alt(tokens[curr].children);
+    }
+    for (curr = last = 0; curr < max; curr++) if (tokens[curr].type === "text" && curr + 1 < max && tokens[curr + 1].type === "text") tokens[curr + 1].content = tokens[curr].content + tokens[curr + 1].content;
+    else {
+      if (curr !== last) tokens[last] = tokens[curr];
+      last++;
+    }
+    if (curr !== last) tokens.length = last;
+  }
+}
+var _rules$2 = [
+  ["normalize", normalize],
+  ["block", block],
+  ["strip_references", strip_references],
+  ["inline", inline],
+  ["linkify", linkify$1],
+  ["replacements", replace],
+  ["smartquotes", smartquotes],
+  ["text_join", text_join]
+];
+var ParserCore = class {
+  constructor() {
+    _defineProperty(
+      this,
+      /**
+      * {@link Ruler} instance. Keep configuration of core rules.
+      */
+      "ruler",
+      new Ruler()
+    );
+    _defineProperty(this, "State", StateCore);
+    for (let i = 0; i < _rules$2.length; i++) this.ruler.push(_rules$2[i][0], _rules$2[i][1]);
+  }
+  /**
+  * Executes core chain rules.
+  */
+  process(state) {
+    const rules = this.ruler.getRules("");
+    for (let i = 0, l = rules.length; i < l; i++) rules[i](state);
+  }
+};
+var StateBlock = class {
+  constructor(src, md, env, tokens) {
+    _defineProperty(this, "bMarks", []);
+    _defineProperty(this, "eMarks", []);
+    _defineProperty(this, "tShift", []);
+    _defineProperty(this, "sCount", []);
+    _defineProperty(this, "bsCount", []);
+    _defineProperty(this, "blkIndent", 0);
+    _defineProperty(this, "line", 0);
+    _defineProperty(this, "lineMax", 0);
+    _defineProperty(this, "tight", false);
+    _defineProperty(this, "listIndent", -1);
+    _defineProperty(this, "parentType", "root");
+    _defineProperty(this, "level", 0);
+    _defineProperty(this, "Token", Token);
+    this.src = src;
+    this.md = md;
+    this.env = env;
+    this.tokens = tokens;
+    const s = this.src;
+    for (let start = 0, pos = 0, indent = 0, offset = 0, len = s.length, indent_found = false; pos < len; pos++) {
+      const ch = s.charCodeAt(pos);
+      if (!indent_found) if (isSpace(ch)) {
+        indent++;
+        if (ch === 9) offset += 4 - offset % 4;
+        else offset++;
+        continue;
+      } else indent_found = true;
+      if (ch === 10 || pos === len - 1) {
+        if (ch !== 10) pos++;
+        this.bMarks.push(start);
+        this.eMarks.push(pos);
+        this.tShift.push(indent);
+        this.sCount.push(offset);
+        this.bsCount.push(0);
+        indent_found = false;
+        indent = 0;
+        offset = 0;
+        start = pos + 1;
+      }
+    }
+    this.bMarks.push(s.length);
+    this.eMarks.push(s.length);
+    this.tShift.push(0);
+    this.sCount.push(0);
+    this.bsCount.push(0);
+    this.lineMax = this.bMarks.length - 1;
+  }
+  push(type, tag, nesting) {
+    const token = new Token(type, tag, nesting);
+    token.block = true;
+    if (nesting < 0) this.level--;
+    token.level = this.level;
+    if (nesting > 0) this.level++;
+    this.tokens.push(token);
+    return token;
+  }
+  isEmpty(line) {
+    return this.bMarks[line] + this.tShift[line] >= this.eMarks[line];
+  }
+  skipEmptyLines(from) {
+    for (let max = this.lineMax; from < max; from++) if (this.bMarks[from] + this.tShift[from] < this.eMarks[from]) break;
+    return from;
+  }
+  skipSpaces(pos) {
+    for (let max = this.src.length; pos < max; pos++) if (!isSpace(this.src.charCodeAt(pos))) break;
+    return pos;
+  }
+  skipSpacesBack(pos, min) {
+    if (pos <= min) return pos;
+    while (pos > min) if (!isSpace(this.src.charCodeAt(--pos))) return pos + 1;
+    return pos;
+  }
+  skipChars(pos, code2) {
+    for (let max = this.src.length; pos < max; pos++) if (this.src.charCodeAt(pos) !== code2) break;
+    return pos;
+  }
+  skipCharsBack(pos, code2, min) {
+    if (pos <= min) return pos;
+    while (pos > min) if (code2 !== this.src.charCodeAt(--pos)) return pos + 1;
+    return pos;
+  }
+  getLines(begin, end, indent, keepLastLF) {
+    if (begin >= end) return "";
+    const queue = new Array(end - begin);
+    for (let i = 0, line = begin; line < end; line++, i++) {
+      let lineIndent = 0;
+      const lineStart = this.bMarks[line];
+      let first = lineStart;
+      let last;
+      if (line + 1 < end || keepLastLF) last = this.eMarks[line] + 1;
+      else last = this.eMarks[line];
+      while (first < last && lineIndent < indent) {
+        const ch = this.src.charCodeAt(first);
+        if (isSpace(ch)) if (ch === 9) lineIndent += 4 - (lineIndent + this.bsCount[line]) % 4;
+        else lineIndent++;
+        else if (first - lineStart < this.tShift[line]) lineIndent++;
+        else break;
+        first++;
+      }
+      if (lineIndent > indent) queue[i] = new Array(lineIndent - indent + 1).join(" ") + this.src.slice(first, last);
+      else queue[i] = this.src.slice(first, last);
+    }
+    return queue.join("");
+  }
+};
+var MAX_AUTOCOMPLETED_CELLS = 65536;
+function getLine(state, line) {
+  const pos = state.bMarks[line] + state.tShift[line];
+  const max = state.eMarks[line];
+  return state.src.slice(pos, max);
+}
+function escapedSplit(str) {
+  const result = [];
+  const max = str.length;
+  let pos = 0;
+  let ch = str.charCodeAt(pos);
+  let isEscaped = false;
+  let lastPos = 0;
+  let current = "";
+  while (pos < max) {
+    if (ch === 124) if (!isEscaped) {
+      result.push(current + str.substring(lastPos, pos));
+      current = "";
+      lastPos = pos + 1;
+    } else {
+      current += str.substring(lastPos, pos - 1);
+      lastPos = pos;
+    }
+    isEscaped = ch === 92;
+    pos++;
+    ch = str.charCodeAt(pos);
+  }
+  result.push(current + str.substring(lastPos));
+  return result;
+}
+function table(state, startLine, endLine, silent) {
+  if (startLine + 2 > endLine) return false;
+  let nextLine = startLine + 1;
+  if (state.sCount[nextLine] < state.blkIndent) return false;
+  if (state.sCount[nextLine] - state.blkIndent >= 4) return false;
+  let pos = state.bMarks[nextLine] + state.tShift[nextLine];
+  if (pos >= state.eMarks[nextLine]) return false;
+  const firstCh = state.src.charCodeAt(pos++);
+  if (firstCh !== 124 && firstCh !== 45 && firstCh !== 58) return false;
+  if (pos >= state.eMarks[nextLine]) return false;
+  const secondCh = state.src.charCodeAt(pos++);
+  if (secondCh !== 124 && secondCh !== 45 && secondCh !== 58 && !isSpace(secondCh)) return false;
+  if (firstCh === 45 && isSpace(secondCh)) return false;
+  while (pos < state.eMarks[nextLine]) {
+    const ch = state.src.charCodeAt(pos);
+    if (ch !== 124 && ch !== 45 && ch !== 58 && !isSpace(ch)) return false;
+    pos++;
+  }
+  let lineText = getLine(state, startLine + 1);
+  let columns = lineText.split("|");
+  const aligns = [];
+  for (let i = 0; i < columns.length; i++) {
+    const t = columns[i].trim();
+    if (!t) if (i === 0 || i === columns.length - 1) continue;
+    else return false;
+    if (!/^:?-+:?$/.test(t)) return false;
+    if (t.charCodeAt(t.length - 1) === 58) aligns.push(t.charCodeAt(0) === 58 ? "center" : "right");
+    else if (t.charCodeAt(0) === 58) aligns.push("left");
+    else aligns.push("");
+  }
+  lineText = getLine(state, startLine).trim();
+  if (lineText.indexOf("|") === -1) return false;
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  columns = escapedSplit(lineText);
+  if (columns.length && columns[0] === "") columns.shift();
+  if (columns.length && columns[columns.length - 1] === "") columns.pop();
+  const columnCount = columns.length;
+  if (columnCount === 0 || columnCount !== aligns.length) return false;
+  if (silent) return true;
+  const oldParentType = state.parentType;
+  state.parentType = "table";
+  const terminatorRules = state.md.block.ruler.getRules("blockquote");
+  const token_to = state.push("table_open", "table", 1);
+  const tableLines = [startLine, 0];
+  token_to.map = tableLines;
+  const token_tho = state.push("thead_open", "thead", 1);
+  token_tho.map = [startLine, startLine + 1];
+  const token_htro = state.push("tr_open", "tr", 1);
+  token_htro.map = [startLine, startLine + 1];
+  for (let i = 0; i < columns.length; i++) {
+    const token_ho = state.push("th_open", "th", 1);
+    if (aligns[i]) token_ho.attrs = [["style", `text-align:${aligns[i]}`]];
+    const token_il = state.push("inline", "", 0);
+    token_il.content = columns[i].trim();
+    token_il.children = [];
+    state.push("th_close", "th", -1);
+  }
+  state.push("tr_close", "tr", -1);
+  state.push("thead_close", "thead", -1);
+  let tbodyLines;
+  let autocompletedCells = 0;
+  for (nextLine = startLine + 2; nextLine < endLine; nextLine++) {
+    if (state.sCount[nextLine] < state.blkIndent) break;
+    let terminate = false;
+    for (let i = 0, l = terminatorRules.length; i < l; i++) if (terminatorRules[i](state, nextLine, endLine, true)) {
+      terminate = true;
+      break;
+    }
+    if (terminate) break;
+    lineText = getLine(state, nextLine).trim();
+    if (!lineText) break;
+    if (state.sCount[nextLine] - state.blkIndent >= 4) break;
+    columns = escapedSplit(lineText);
+    if (columns.length && columns[0] === "") columns.shift();
+    if (columns.length && columns[columns.length - 1] === "") columns.pop();
+    autocompletedCells += columnCount - columns.length;
+    if (autocompletedCells > MAX_AUTOCOMPLETED_CELLS) break;
+    if (nextLine === startLine + 2) {
+      const token_tbo = state.push("tbody_open", "tbody", 1);
+      token_tbo.map = tbodyLines = [startLine + 2, 0];
+    }
+    const token_tro = state.push("tr_open", "tr", 1);
+    token_tro.map = [nextLine, nextLine + 1];
+    for (let i = 0; i < columnCount; i++) {
+      const token_tdo = state.push("td_open", "td", 1);
+      if (aligns[i]) token_tdo.attrs = [["style", `text-align:${aligns[i]}`]];
+      const token_il = state.push("inline", "", 0);
+      token_il.content = columns[i] ? columns[i].trim() : "";
+      token_il.children = [];
+      state.push("td_close", "td", -1);
+    }
+    state.push("tr_close", "tr", -1);
+  }
+  if (tbodyLines) {
+    state.push("tbody_close", "tbody", -1);
+    tbodyLines[1] = nextLine;
+  }
+  state.push("table_close", "table", -1);
+  tableLines[1] = nextLine;
+  state.parentType = oldParentType;
+  state.line = nextLine;
+  return true;
+}
+function code(state, startLine, endLine) {
+  if (state.sCount[startLine] - state.blkIndent < 4) return false;
+  let nextLine = startLine + 1;
+  let last = nextLine;
+  while (nextLine < endLine) {
+    if (state.isEmpty(nextLine)) {
+      nextLine++;
+      continue;
+    }
+    if (state.sCount[nextLine] - state.blkIndent >= 4) {
+      nextLine++;
+      last = nextLine;
+      continue;
+    }
+    break;
+  }
+  state.line = last;
+  const token = state.push("code_block", "code", 0);
+  token.content = state.getLines(startLine, last, 4 + state.blkIndent, false) + "\n";
+  token.map = [startLine, state.line];
+  return true;
+}
+function fence(state, startLine, endLine, silent) {
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  let max = state.eMarks[startLine];
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  if (pos + 3 > max) return false;
+  const marker = state.src.charCodeAt(pos);
+  if (marker !== 126 && marker !== 96) return false;
+  let mem = pos;
+  pos = state.skipChars(pos, marker);
+  let len = pos - mem;
+  if (len < 3) return false;
+  const markup = state.src.slice(mem, pos);
+  const params = state.src.slice(pos, max);
+  if (marker === 96) {
+    if (params.indexOf(String.fromCharCode(marker)) >= 0) return false;
+  }
+  if (silent) return true;
+  let nextLine = startLine;
+  let haveEndMarker = false;
+  for (; ; ) {
+    nextLine++;
+    if (nextLine >= endLine) break;
+    pos = mem = state.bMarks[nextLine] + state.tShift[nextLine];
+    max = state.eMarks[nextLine];
+    if (pos < max && state.sCount[nextLine] < state.blkIndent) break;
+    if (state.src.charCodeAt(pos) !== marker) continue;
+    if (state.sCount[nextLine] - state.blkIndent >= 4) continue;
+    pos = state.skipChars(pos, marker);
+    if (pos - mem < len) continue;
+    pos = state.skipSpaces(pos);
+    if (pos < max) continue;
+    haveEndMarker = true;
+    break;
+  }
+  len = state.sCount[startLine];
+  state.line = nextLine + (haveEndMarker ? 1 : 0);
+  const token = state.push("fence", "code", 0);
+  token.info = params;
+  token.content = state.getLines(startLine + 1, nextLine, len, true);
+  token.markup = markup;
+  token.map = [startLine, state.line];
+  return true;
+}
+function blockquote(state, startLine, endLine, silent) {
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  let max = state.eMarks[startLine];
+  const oldLineMax = state.lineMax;
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  if (state.src.charCodeAt(pos) !== 62) return false;
+  if (silent) return true;
+  const oldBMarks = [];
+  const oldBSCount = [];
+  const oldSCount = [];
+  const oldTShift = [];
+  const terminatorRules = state.md.block.ruler.getRules("blockquote");
+  const oldParentType = state.parentType;
+  state.parentType = "blockquote";
+  let lastLineEmpty = false;
+  let nextLine;
+  for (nextLine = startLine; nextLine < endLine; nextLine++) {
+    const isOutdented = state.sCount[nextLine] < state.blkIndent;
+    pos = state.bMarks[nextLine] + state.tShift[nextLine];
+    max = state.eMarks[nextLine];
+    if (pos >= max) break;
+    if (state.src.charCodeAt(pos++) === 62 && !isOutdented) {
+      let initial = state.sCount[nextLine] + 1;
+      let spaceAfterMarker;
+      let adjustTab;
+      if (state.src.charCodeAt(pos) === 32) {
+        pos++;
+        initial++;
+        adjustTab = false;
+        spaceAfterMarker = true;
+      } else if (state.src.charCodeAt(pos) === 9) {
+        spaceAfterMarker = true;
+        if ((state.bsCount[nextLine] + initial) % 4 === 3) {
+          pos++;
+          initial++;
+          adjustTab = false;
+        } else adjustTab = true;
+      } else spaceAfterMarker = false;
+      let offset = initial;
+      oldBMarks.push(state.bMarks[nextLine]);
+      state.bMarks[nextLine] = pos;
+      while (pos < max) {
+        const ch = state.src.charCodeAt(pos);
+        if (isSpace(ch)) if (ch === 9) offset += 4 - (offset + state.bsCount[nextLine] + (adjustTab ? 1 : 0)) % 4;
+        else offset++;
+        else break;
+        pos++;
+      }
+      lastLineEmpty = pos >= max;
+      oldBSCount.push(state.bsCount[nextLine]);
+      state.bsCount[nextLine] = state.sCount[nextLine] + 1 + (spaceAfterMarker ? 1 : 0);
+      oldSCount.push(state.sCount[nextLine]);
+      state.sCount[nextLine] = offset - initial;
+      oldTShift.push(state.tShift[nextLine]);
+      state.tShift[nextLine] = pos - state.bMarks[nextLine];
+      continue;
+    }
+    if (lastLineEmpty) break;
+    let terminate = false;
+    for (let i = 0, l = terminatorRules.length; i < l; i++) if (terminatorRules[i](state, nextLine, endLine, true)) {
+      terminate = true;
+      break;
+    }
+    if (terminate) {
+      state.lineMax = nextLine;
+      if (state.blkIndent !== 0) {
+        oldBMarks.push(state.bMarks[nextLine]);
+        oldBSCount.push(state.bsCount[nextLine]);
+        oldTShift.push(state.tShift[nextLine]);
+        oldSCount.push(state.sCount[nextLine]);
+        state.sCount[nextLine] -= state.blkIndent;
+      }
+      break;
+    }
+    oldBMarks.push(state.bMarks[nextLine]);
+    oldBSCount.push(state.bsCount[nextLine]);
+    oldTShift.push(state.tShift[nextLine]);
+    oldSCount.push(state.sCount[nextLine]);
+    state.sCount[nextLine] = -1;
+  }
+  const oldIndent = state.blkIndent;
+  state.blkIndent = 0;
+  const token_o = state.push("blockquote_open", "blockquote", 1);
+  token_o.markup = ">";
+  const lines = [startLine, 0];
+  token_o.map = lines;
+  state.md.block.tokenize(state, startLine, nextLine);
+  const token_c = state.push("blockquote_close", "blockquote", -1);
+  token_c.markup = ">";
+  state.lineMax = oldLineMax;
+  state.parentType = oldParentType;
+  lines[1] = state.line;
+  for (let i = 0; i < oldTShift.length; i++) {
+    state.bMarks[i + startLine] = oldBMarks[i];
+    state.tShift[i + startLine] = oldTShift[i];
+    state.sCount[i + startLine] = oldSCount[i];
+    state.bsCount[i + startLine] = oldBSCount[i];
+  }
+  state.blkIndent = oldIndent;
+  return true;
+}
+function hr(state, startLine, endLine, silent) {
+  const max = state.eMarks[startLine];
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  const marker = state.src.charCodeAt(pos++);
+  if (marker !== 42 && marker !== 45 && marker !== 95) return false;
+  let cnt = 1;
+  while (pos < max) {
+    const ch = state.src.charCodeAt(pos++);
+    if (ch !== marker && !isSpace(ch)) return false;
+    if (ch === marker) cnt++;
+  }
+  if (cnt < 3) return false;
+  if (silent) return true;
+  state.line = startLine + 1;
+  const token = state.push("hr", "hr", 0);
+  token.map = [startLine, state.line];
+  token.markup = Array(cnt + 1).join(String.fromCharCode(marker));
+  return true;
+}
+function skipBulletListMarker(state, startLine) {
+  const max = state.eMarks[startLine];
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  const marker = state.src.charCodeAt(pos++);
+  if (marker !== 42 && marker !== 45 && marker !== 43) return -1;
+  if (pos < max) {
+    if (!isSpace(state.src.charCodeAt(pos))) return -1;
+  }
+  return pos;
+}
+function skipOrderedListMarker(state, startLine) {
+  const start = state.bMarks[startLine] + state.tShift[startLine];
+  const max = state.eMarks[startLine];
+  let pos = start;
+  if (pos + 1 >= max) return -1;
+  let ch = state.src.charCodeAt(pos++);
+  if (ch < 48 || ch > 57) return -1;
+  for (; ; ) {
+    if (pos >= max) return -1;
+    ch = state.src.charCodeAt(pos++);
+    if (ch >= 48 && ch <= 57) {
+      if (pos - start >= 10) return -1;
+      continue;
+    }
+    if (ch === 41 || ch === 46) break;
+    return -1;
+  }
+  if (pos < max) {
+    ch = state.src.charCodeAt(pos);
+    if (!isSpace(ch)) return -1;
+  }
+  return pos;
+}
+function markTightParagraphs(state, idx) {
+  const level = state.level + 2;
+  for (let i = idx + 2, l = state.tokens.length - 2; i < l; i++) if (state.tokens[i].level === level && state.tokens[i].type === "paragraph_open") {
+    state.tokens[i + 2].hidden = true;
+    state.tokens[i].hidden = true;
+    i += 2;
+  }
+}
+function list(state, startLine, endLine, silent) {
+  let max, pos, start, token;
+  let nextLine = startLine;
+  let tight = true;
+  if (state.sCount[nextLine] - state.blkIndent >= 4) return false;
+  if (state.listIndent >= 0 && state.sCount[nextLine] - state.listIndent >= 4 && state.sCount[nextLine] < state.blkIndent) return false;
+  let isTerminatingParagraph = false;
+  if (silent && state.parentType === "paragraph") {
+    if (state.sCount[nextLine] >= state.blkIndent) isTerminatingParagraph = true;
+  }
+  let isOrdered;
+  let markerValue;
+  let posAfterMarker;
+  if ((posAfterMarker = skipOrderedListMarker(state, nextLine)) >= 0) {
+    isOrdered = true;
+    start = state.bMarks[nextLine] + state.tShift[nextLine];
+    markerValue = Number(state.src.slice(start, posAfterMarker - 1));
+    if (isTerminatingParagraph && markerValue !== 1) return false;
+  } else if ((posAfterMarker = skipBulletListMarker(state, nextLine)) >= 0) isOrdered = false;
+  else return false;
+  if (isTerminatingParagraph) {
+    if (state.skipSpaces(posAfterMarker) >= state.eMarks[nextLine]) return false;
+  }
+  if (silent) return true;
+  const markerCharCode = state.src.charCodeAt(posAfterMarker - 1);
+  const listTokIdx = state.tokens.length;
+  if (isOrdered) {
+    token = state.push("ordered_list_open", "ol", 1);
+    if (markerValue !== 1) token.attrs = [["start", markerValue]];
+  } else token = state.push("bullet_list_open", "ul", 1);
+  const listLines = [nextLine, 0];
+  token.map = listLines;
+  token.markup = String.fromCharCode(markerCharCode);
+  let prevEmptyEnd = false;
+  const terminatorRules = state.md.block.ruler.getRules("list");
+  const oldParentType = state.parentType;
+  state.parentType = "list";
+  while (nextLine < endLine) {
+    pos = posAfterMarker;
+    max = state.eMarks[nextLine];
+    const initial = state.sCount[nextLine] + posAfterMarker - (state.bMarks[nextLine] + state.tShift[nextLine]);
+    let offset = initial;
+    while (pos < max) {
+      const ch = state.src.charCodeAt(pos);
+      if (ch === 9) offset += 4 - (offset + state.bsCount[nextLine]) % 4;
+      else if (ch === 32) offset++;
+      else break;
+      pos++;
+    }
+    const contentStart = pos;
+    let indentAfterMarker;
+    if (contentStart >= max) indentAfterMarker = 1;
+    else indentAfterMarker = offset - initial;
+    if (indentAfterMarker > 4) indentAfterMarker = 1;
+    const indent = initial + indentAfterMarker;
+    token = state.push("list_item_open", "li", 1);
+    token.markup = String.fromCharCode(markerCharCode);
+    const itemLines = [nextLine, 0];
+    token.map = itemLines;
+    if (isOrdered) token.info = state.src.slice(start, posAfterMarker - 1);
+    const oldTight = state.tight;
+    const oldTShift = state.tShift[nextLine];
+    const oldSCount = state.sCount[nextLine];
+    const oldListIndent = state.listIndent;
+    state.listIndent = state.blkIndent;
+    state.blkIndent = indent;
+    state.tight = true;
+    state.tShift[nextLine] = contentStart - state.bMarks[nextLine];
+    state.sCount[nextLine] = offset;
+    if (contentStart >= max && state.isEmpty(nextLine + 1)) state.line = Math.min(state.line + 2, endLine);
+    else state.md.block.tokenize(state, nextLine, endLine);
+    if (!state.tight || prevEmptyEnd) tight = false;
+    prevEmptyEnd = state.line - nextLine > 1 && state.isEmpty(state.line - 1);
+    state.blkIndent = state.listIndent;
+    state.listIndent = oldListIndent;
+    state.tShift[nextLine] = oldTShift;
+    state.sCount[nextLine] = oldSCount;
+    state.tight = oldTight;
+    token = state.push("list_item_close", "li", -1);
+    token.markup = String.fromCharCode(markerCharCode);
+    nextLine = state.line;
+    itemLines[1] = nextLine;
+    if (nextLine >= endLine) break;
+    if (state.sCount[nextLine] < state.blkIndent) break;
+    if (state.sCount[nextLine] - state.blkIndent >= 4) break;
+    let terminate = false;
+    for (let i = 0, l = terminatorRules.length; i < l; i++) if (terminatorRules[i](state, nextLine, endLine, true)) {
+      terminate = true;
+      break;
+    }
+    if (terminate) break;
+    if (isOrdered) {
+      posAfterMarker = skipOrderedListMarker(state, nextLine);
+      if (posAfterMarker < 0) break;
+      start = state.bMarks[nextLine] + state.tShift[nextLine];
+    } else {
+      posAfterMarker = skipBulletListMarker(state, nextLine);
+      if (posAfterMarker < 0) break;
+    }
+    if (markerCharCode !== state.src.charCodeAt(posAfterMarker - 1)) break;
+  }
+  if (isOrdered) token = state.push("ordered_list_close", "ol", -1);
+  else token = state.push("bullet_list_close", "ul", -1);
+  token.markup = String.fromCharCode(markerCharCode);
+  listLines[1] = nextLine;
+  state.line = nextLine;
+  state.parentType = oldParentType;
+  if (tight) markTightParagraphs(state, listTokIdx);
+  return true;
+}
+function reference(state, startLine, _endLine, silent) {
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  let max = state.eMarks[startLine];
+  let nextLine = startLine + 1;
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  if (state.src.charCodeAt(pos) !== 91) return false;
+  function getNextLine(nextLine2) {
+    const endLine = state.lineMax;
+    if (nextLine2 >= endLine || state.isEmpty(nextLine2)) return null;
+    let isContinuation = false;
+    if (state.sCount[nextLine2] - state.blkIndent > 3) isContinuation = true;
+    if (state.sCount[nextLine2] < 0) isContinuation = true;
+    if (!isContinuation) {
+      const terminatorRules = state.md.block.ruler.getRules("reference");
+      const oldParentType = state.parentType;
+      state.parentType = "reference";
+      let terminate = false;
+      for (let i = 0, l = terminatorRules.length; i < l; i++) if (terminatorRules[i](state, nextLine2, endLine, true)) {
+        terminate = true;
+        break;
+      }
+      state.parentType = oldParentType;
+      if (terminate) return null;
+    }
+    const pos2 = state.bMarks[nextLine2] + state.tShift[nextLine2];
+    const max2 = state.eMarks[nextLine2];
+    return state.src.slice(pos2, max2 + 1);
+  }
+  let str = state.src.slice(pos, max + 1);
+  max = str.length;
+  let labelEnd = -1;
+  for (pos = 1; pos < max; pos++) {
+    const ch = str.charCodeAt(pos);
+    if (ch === 91) return false;
+    else if (ch === 93) {
+      labelEnd = pos;
+      break;
+    } else if (ch === 10) {
+      const lineContent = getNextLine(nextLine);
+      if (lineContent !== null) {
+        str += lineContent;
+        max = str.length;
+        nextLine++;
+      }
+    } else if (ch === 92) {
+      pos++;
+      if (pos < max && str.charCodeAt(pos) === 10) {
+        const lineContent = getNextLine(nextLine);
+        if (lineContent !== null) {
+          str += lineContent;
+          max = str.length;
+          nextLine++;
+        }
+      }
+    }
+  }
+  if (labelEnd < 0 || str.charCodeAt(labelEnd + 1) !== 58) return false;
+  for (pos = labelEnd + 2; pos < max; pos++) {
+    const ch = str.charCodeAt(pos);
+    if (ch === 10) {
+      const lineContent = getNextLine(nextLine);
+      if (lineContent !== null) {
+        str += lineContent;
+        max = str.length;
+        nextLine++;
+      }
+    } else if (isSpace(ch)) {
+    } else break;
+  }
+  const destRes = state.md.helpers.parseLinkDestination(str, pos, max);
+  if (!destRes.ok) return false;
+  const href = state.md.normalizeLink(destRes.str);
+  if (!state.md.validateLink(href)) return false;
+  pos = destRes.pos;
+  const destEndPos = pos;
+  const destEndLineNo = nextLine;
+  const start = pos;
+  for (; pos < max; pos++) {
+    const ch = str.charCodeAt(pos);
+    if (ch === 10) {
+      const lineContent = getNextLine(nextLine);
+      if (lineContent !== null) {
+        str += lineContent;
+        max = str.length;
+        nextLine++;
+      }
+    } else if (isSpace(ch)) {
+    } else break;
+  }
+  let titleRes = state.md.helpers.parseLinkTitle(str, pos, max);
+  while (titleRes.can_continue) {
+    const lineContent = getNextLine(nextLine);
+    if (lineContent === null) break;
+    str += lineContent;
+    pos = max;
+    max = str.length;
+    nextLine++;
+    titleRes = state.md.helpers.parseLinkTitle(str, pos, max, titleRes);
+  }
+  let title;
+  if (pos < max && start !== pos && titleRes.ok) {
+    title = titleRes.str;
+    pos = titleRes.pos;
+  } else {
+    title = "";
+    pos = destEndPos;
+    nextLine = destEndLineNo;
+  }
+  while (pos < max) {
+    if (!isSpace(str.charCodeAt(pos))) break;
+    pos++;
+  }
+  if (pos < max && str.charCodeAt(pos) !== 10) {
+    if (title) {
+      title = "";
+      pos = destEndPos;
+      nextLine = destEndLineNo;
+      while (pos < max) {
+        if (!isSpace(str.charCodeAt(pos))) break;
+        pos++;
+      }
+    }
+  }
+  if (pos < max && str.charCodeAt(pos) !== 10) return false;
+  const label = normalizeReference(str.slice(1, labelEnd));
+  if (!label) return false;
+  if (silent) return true;
+  if (typeof state.env.references === "undefined") state.env.references = {};
+  if (typeof state.env.references[label] === "undefined") state.env.references[label] = {
+    title,
+    href
+  };
+  const token = state.push("reference_definition", "", 0);
+  token.map = [startLine, nextLine];
+  token.hidden = true;
+  const meta = /* @__PURE__ */ Object.create(null);
+  meta.label = label;
+  token.meta = meta;
+  state.line = nextLine;
+  return true;
+}
+var html_blocks_default = [
+  "address",
+  "article",
+  "aside",
+  "base",
+  "basefont",
+  "blockquote",
+  "body",
+  "caption",
+  "center",
+  "col",
+  "colgroup",
+  "dd",
+  "details",
+  "dialog",
+  "dir",
+  "div",
+  "dl",
+  "dt",
+  "fieldset",
+  "figcaption",
+  "figure",
+  "footer",
+  "form",
+  "frame",
+  "frameset",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "head",
+  "header",
+  "hr",
+  "html",
+  "iframe",
+  "legend",
+  "li",
+  "link",
+  "main",
+  "menu",
+  "menuitem",
+  "nav",
+  "noframes",
+  "ol",
+  "optgroup",
+  "option",
+  "p",
+  "param",
+  "search",
+  "section",
+  "summary",
+  "table",
+  "tbody",
+  "td",
+  "tfoot",
+  "th",
+  "thead",
+  "title",
+  "tr",
+  "track",
+  "ul"
+];
+var open_tag = `<[A-Za-z][A-Za-z0-9\\-]*(?:\\s+[a-zA-Z_:][a-zA-Z0-9:._-]*(?:\\s*=\\s*(?:[^"'=<>\`\\x00-\\x20]+|'[^']*'|"[^"]*"))?)*\\s*\\/?>`;
+var close_tag = "<\\/[A-Za-z][A-Za-z0-9\\-]*\\s*>";
+var HTML_TAG_RE = new RegExp(`^(?:${open_tag}|${close_tag}|<!---?>|<!--(?:[^-]|-[^-]|--[^>])*-->|<[?][\\s\\S]*?[?]>|<![A-Za-z][^>]*>|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>)`);
+var HTML_OPEN_CLOSE_TAG_RE = new RegExp(`^(?:${open_tag}|${close_tag})`);
+var HTML_SEQUENCES = [
+  [
+    /^<(script|pre|style|textarea)(?=(\s|>|$))/i,
+    /<\/(script|pre|style|textarea)>/i,
+    true
+  ],
+  [
+    /^<!--/,
+    /-->/,
+    true
+  ],
+  [
+    /^<\?/,
+    /\?>/,
+    true
+  ],
+  [
+    /^<![A-Za-z]/,
+    />/,
+    true
+  ],
+  [
+    /^<!\[CDATA\[/,
+    /\]\]>/,
+    true
+  ],
+  [
+    new RegExp(`^</?(${html_blocks_default.join("|")})(?=(\\s|/?>|$))`, "i"),
+    /^$/,
+    true
+  ],
+  [
+    new RegExp(`${HTML_OPEN_CLOSE_TAG_RE.source}\\s*$`),
+    /^$/,
+    false
+  ]
+];
+function html_block(state, startLine, endLine, silent) {
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  let max = state.eMarks[startLine];
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  if (!state.md.options.html) return false;
+  if (state.src.charCodeAt(pos) !== 60) return false;
+  let lineText = state.src.slice(pos, max);
+  let i = 0;
+  for (; i < HTML_SEQUENCES.length; i++) if (HTML_SEQUENCES[i][0].test(lineText)) break;
+  if (i === HTML_SEQUENCES.length) return false;
+  if (silent) return HTML_SEQUENCES[i][2];
+  let nextLine = startLine + 1;
+  const endsOnBlankLine = HTML_SEQUENCES[i][1].test("");
+  if (!HTML_SEQUENCES[i][1].test(lineText)) for (; nextLine < endLine; nextLine++) {
+    if (state.sCount[nextLine] < state.blkIndent) {
+      if (endsOnBlankLine || !state.isEmpty(nextLine)) break;
+    }
+    pos = state.bMarks[nextLine] + state.tShift[nextLine];
+    max = state.eMarks[nextLine];
+    lineText = state.src.slice(pos, max);
+    if (HTML_SEQUENCES[i][1].test(lineText)) {
+      if (lineText.length !== 0) nextLine++;
+      break;
+    }
+  }
+  state.line = nextLine;
+  const token = state.push("html_block", "", 0);
+  token.map = [startLine, nextLine];
+  token.content = state.getLines(startLine, nextLine, state.blkIndent, true);
+  return true;
+}
+function heading(state, startLine, endLine, silent) {
+  let pos = state.bMarks[startLine] + state.tShift[startLine];
+  let max = state.eMarks[startLine];
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  let ch = state.src.charCodeAt(pos);
+  if (ch !== 35 || pos >= max) return false;
+  let level = 1;
+  ch = state.src.charCodeAt(++pos);
+  while (ch === 35 && pos < max && level <= 6) {
+    level++;
+    ch = state.src.charCodeAt(++pos);
+  }
+  if (level > 6 || pos < max && !isSpace(ch)) return false;
+  if (silent) return true;
+  max = state.skipSpacesBack(max, pos);
+  const tmp = state.skipCharsBack(max, 35, pos);
+  if (tmp > pos && isSpace(state.src.charCodeAt(tmp - 1))) max = tmp;
+  state.line = startLine + 1;
+  const token_o = state.push("heading_open", `h${level}`, 1);
+  token_o.markup = "########".slice(0, level);
+  token_o.map = [startLine, state.line];
+  const token_i = state.push("inline", "", 0);
+  token_i.content = asciiTrim(state.src.slice(pos, max));
+  token_i.map = [startLine, state.line];
+  token_i.children = [];
+  const token_c = state.push("heading_close", `h${level}`, -1);
+  token_c.markup = "########".slice(0, level);
+  return true;
+}
+function lheading(state, startLine, endLine) {
+  const terminatorRules = state.md.block.ruler.getRules("paragraph");
+  if (state.sCount[startLine] - state.blkIndent >= 4) return false;
+  const oldParentType = state.parentType;
+  state.parentType = "paragraph";
+  let level = 0;
+  let marker;
+  let nextLine = startLine + 1;
+  for (; nextLine < endLine && !state.isEmpty(nextLine); nextLine++) {
+    if (state.sCount[nextLine] - state.blkIndent > 3) continue;
+    if (state.sCount[nextLine] >= state.blkIndent) {
+      let pos = state.bMarks[nextLine] + state.tShift[nextLine];
+      const max = state.eMarks[nextLine];
+      if (pos < max) {
+        marker = state.src.charCodeAt(pos);
+        if (marker === 45 || marker === 61) {
+          pos = state.skipChars(pos, marker);
+          pos = state.skipSpaces(pos);
+          if (pos >= max) {
+            level = marker === 61 ? 1 : 2;
+            break;
+          }
+        }
+      }
+    }
+    if (state.sCount[nextLine] < 0) continue;
+    let terminate = false;
+    for (let i = 0, l = terminatorRules.length; i < l; i++) if (terminatorRules[i](state, nextLine, endLine, true)) {
+      terminate = true;
+      break;
+    }
+    if (terminate) break;
+  }
+  if (!level) {
+    state.parentType = oldParentType;
+    return false;
+  }
+  const content = asciiTrim(state.getLines(startLine, nextLine, state.blkIndent, false));
+  state.line = nextLine + 1;
+  const token_o = state.push("heading_open", `h${level}`, 1);
+  token_o.markup = String.fromCharCode(marker);
+  token_o.map = [startLine, state.line];
+  const token_i = state.push("inline", "", 0);
+  token_i.content = content;
+  token_i.map = [startLine, state.line - 1];
+  token_i.children = [];
+  const token_c = state.push("heading_close", `h${level}`, -1);
+  token_c.markup = String.fromCharCode(marker);
+  state.parentType = oldParentType;
+  return true;
+}
+function paragraph(state, startLine, endLine) {
+  const terminatorRules = state.md.block.ruler.getRules("paragraph");
+  const oldParentType = state.parentType;
+  let nextLine = startLine + 1;
+  state.parentType = "paragraph";
+  for (; nextLine < endLine && !state.isEmpty(nextLine); nextLine++) {
+    if (state.sCount[nextLine] - state.blkIndent > 3) continue;
+    if (state.sCount[nextLine] < 0) continue;
+    let terminate = false;
+    for (let i = 0, l = terminatorRules.length; i < l; i++) if (terminatorRules[i](state, nextLine, endLine, true)) {
+      terminate = true;
+      break;
+    }
+    if (terminate) break;
+  }
+  const content = asciiTrim(state.getLines(startLine, nextLine, state.blkIndent, false));
+  state.line = nextLine;
+  const token_o = state.push("paragraph_open", "p", 1);
+  token_o.map = [startLine, state.line];
+  const token_i = state.push("inline", "", 0);
+  token_i.content = content;
+  token_i.map = [startLine, state.line];
+  token_i.children = [];
+  state.push("paragraph_close", "p", -1);
+  state.parentType = oldParentType;
+  return true;
+}
+var _rules$1 = [
+  [
+    "table",
+    table,
+    ["paragraph", "reference"]
+  ],
+  ["code", code],
+  [
+    "fence",
+    fence,
+    [
+      "paragraph",
+      "reference",
+      "blockquote",
+      "list"
+    ]
+  ],
+  [
+    "blockquote",
+    blockquote,
+    [
+      "paragraph",
+      "reference",
+      "blockquote",
+      "list"
+    ]
+  ],
+  [
+    "hr",
+    hr,
+    [
+      "paragraph",
+      "reference",
+      "blockquote",
+      "list"
+    ]
+  ],
+  [
+    "list",
+    list,
+    [
+      "paragraph",
+      "reference",
+      "blockquote"
+    ]
+  ],
+  ["reference", reference],
+  [
+    "html_block",
+    html_block,
+    [
+      "paragraph",
+      "reference",
+      "blockquote"
+    ]
+  ],
+  [
+    "heading",
+    heading,
+    [
+      "paragraph",
+      "reference",
+      "blockquote"
+    ]
+  ],
+  ["lheading", lheading],
+  ["paragraph", paragraph]
+];
+var ParserBlock = class {
+  constructor() {
+    _defineProperty(
+      this,
+      /**
+      * {@link Ruler} instance. Keep configuration of block rules.
+      */
+      "ruler",
+      new Ruler()
+    );
+    _defineProperty(this, "State", StateBlock);
+    for (let i = 0; i < _rules$1.length; i++) this.ruler.push(_rules$1[i][0], _rules$1[i][1], { alt: (_rules$1[i][2] || []).slice() });
+  }
+  tokenize(state, startLine, endLine) {
+    const rules = this.ruler.getRules("");
+    const len = rules.length;
+    const maxNesting = state.md.options.maxNesting;
+    let line = startLine;
+    let hasEmptyLines = false;
+    while (line < endLine) {
+      state.line = line = state.skipEmptyLines(line);
+      if (line >= endLine) break;
+      if (state.sCount[line] < state.blkIndent) break;
+      if (state.level >= maxNesting) {
+        state.line = endLine;
+        break;
+      }
+      const prevLine = state.line;
+      let ok = false;
+      for (let i = 0; i < len; i++) {
+        ok = rules[i](state, line, endLine, false);
+        if (ok) {
+          if (prevLine >= state.line) throw new Error("block rule didn't increment state.line");
+          break;
+        }
+      }
+      if (!ok) throw new Error("none of the block rules matched");
+      state.tight = !hasEmptyLines;
+      if (state.isEmpty(state.line - 1)) hasEmptyLines = true;
+      line = state.line;
+      if (line < endLine && state.isEmpty(line)) {
+        hasEmptyLines = true;
+        line++;
+        state.line = line;
+      }
+    }
+  }
+  /**
+  * Process input string and push block tokens into `outTokens`
+  */
+  parse(src, md, env, outTokens) {
+    if (!src) return;
+    const state = new this.State(src, md, env, outTokens);
+    this.tokenize(state, state.line, state.lineMax);
+  }
+};
+var StateInline = class {
+  constructor(src, md, env, outTokens) {
+    _defineProperty(this, "pos", 0);
+    _defineProperty(this, "level", 0);
+    _defineProperty(this, "pending", "");
+    _defineProperty(this, "pendingLevel", 0);
+    _defineProperty(this, "cache", {});
+    _defineProperty(this, "backticks", {});
+    _defineProperty(this, "backticksScanned", false);
+    _defineProperty(this, "linkLevel", 0);
+    _defineProperty(this, "delimiters", []);
+    _defineProperty(this, "_prev_delimiters", []);
+    _defineProperty(this, "Token", Token);
+    this.src = src;
+    this.env = env;
+    this.md = md;
+    this.tokens = outTokens;
+    this.tokens_meta = Array(outTokens.length);
+    this.posMax = this.src.length;
+  }
+  pushPending() {
+    const token = new Token("text", "", 0);
+    token.content = this.pending;
+    token.level = this.pendingLevel;
+    this.tokens.push(token);
+    this.pending = "";
+    return token;
+  }
+  push(type, tag, nesting) {
+    if (this.pending) this.pushPending();
+    const token = new Token(type, tag, nesting);
+    let token_meta = void 0;
+    if (nesting < 0) {
+      this.level--;
+      this.delimiters = this._prev_delimiters.pop();
+    }
+    token.level = this.level;
+    if (nesting > 0) {
+      this.level++;
+      this._prev_delimiters.push(this.delimiters);
+      this.delimiters = [];
+      token_meta = { delimiters: this.delimiters };
+    }
+    this.pendingLevel = this.level;
+    this.tokens.push(token);
+    this.tokens_meta.push(token_meta);
+    return token;
+  }
+  scanDelims(start, canSplitWord) {
+    const max = this.posMax;
+    const marker = this.src.charCodeAt(start);
+    let lastChar;
+    if (start === 0) lastChar = 32;
+    else if (start === 1) {
+      lastChar = this.src.charCodeAt(0);
+      if ((lastChar & 63488) === 55296) lastChar = 65533;
+    } else {
+      lastChar = this.src.charCodeAt(start - 1);
+      if ((lastChar & 64512) === 56320) {
+        const highSurr = this.src.charCodeAt(start - 2);
+        lastChar = (highSurr & 64512) === 55296 ? 65536 + (highSurr - 55296 << 10) + (lastChar - 56320) : 65533;
+      } else if ((lastChar & 64512) === 55296) lastChar = 65533;
+    }
+    let pos = start;
+    while (pos < max && this.src.charCodeAt(pos) === marker) pos++;
+    const count = pos - start;
+    let nextChar = pos < max ? this.src.charCodeAt(pos) : 32;
+    if ((nextChar & 64512) === 55296) {
+      const lowSurr = this.src.charCodeAt(pos + 1);
+      nextChar = (lowSurr & 64512) === 56320 ? 65536 + (nextChar - 55296 << 10) + (lowSurr - 56320) : 65533;
+    } else if ((nextChar & 64512) === 56320) nextChar = 65533;
+    const isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctCharCode(lastChar);
+    const isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctCharCode(nextChar);
+    const isLastWhiteSpace = isWhiteSpace(lastChar);
+    const isNextWhiteSpace = isWhiteSpace(nextChar);
+    const left_flanking = !isNextWhiteSpace && (!isNextPunctChar || isLastWhiteSpace || isLastPunctChar);
+    const right_flanking = !isLastWhiteSpace && (!isLastPunctChar || isNextWhiteSpace || isNextPunctChar);
+    return {
+      can_open: left_flanking && (canSplitWord || !right_flanking || isLastPunctChar),
+      can_close: right_flanking && (canSplitWord || !left_flanking || isNextPunctChar),
+      length: count
+    };
+  }
+};
+function isTerminatorChar(ch) {
+  switch (ch) {
+    case 10:
+    case 33:
+    case 35:
+    case 36:
+    case 37:
+    case 38:
+    case 42:
+    case 43:
+    case 45:
+    case 58:
+    case 60:
+    case 61:
+    case 62:
+    case 64:
+    case 91:
+    case 92:
+    case 93:
+    case 94:
+    case 95:
+    case 96:
+    case 123:
+    case 125:
+    case 126:
+      return true;
+    default:
+      return false;
+  }
+}
+function text2(state, silent) {
+  let pos = state.pos;
+  while (pos < state.posMax && !isTerminatorChar(state.src.charCodeAt(pos))) pos++;
+  if (pos === state.pos) return false;
+  if (!silent) state.pending += state.src.slice(state.pos, pos);
+  state.pos = pos;
+  return true;
+}
+function isAsciiAlpha(code2) {
+  return code2 >= 65 && code2 <= 90 || code2 >= 97 && code2 <= 122;
+}
+function isSchemeChar(code2) {
+  return code2 >= 65 && code2 <= 90 || code2 >= 97 && code2 <= 122 || code2 >= 48 && code2 <= 57 || code2 === 43 || code2 === 45 || code2 === 46;
+}
+function linkify(state, silent) {
+  if (!state.md.options.linkify) return false;
+  if (state.linkLevel > 0) return false;
+  const pos = state.pos;
+  const max = state.posMax;
+  if (pos + 3 > max) return false;
+  if (state.src.charCodeAt(pos) !== 58) return false;
+  if (state.src.charCodeAt(pos + 1) !== 47) return false;
+  if (state.src.charCodeAt(pos + 2) !== 47) return false;
+  const protoMin = pos - Math.min(10, state.pending.length, pos);
+  let protoStart = pos;
+  while (protoStart > protoMin && isSchemeChar(state.src.charCodeAt(protoStart - 1))) protoStart--;
+  if (protoStart === pos || !isAsciiAlpha(state.src.charCodeAt(protoStart))) return false;
+  const protoLength = pos - protoStart;
+  const link2 = state.md.linkify.matchAtStart(state.src.slice(protoStart));
+  if (!link2) return false;
+  let url = link2.url;
+  if (url.length <= protoLength) return false;
+  let urlEnd = url.length;
+  while (urlEnd > 0 && url.charCodeAt(urlEnd - 1) === 42) urlEnd--;
+  if (urlEnd !== url.length) url = url.slice(0, urlEnd);
+  const fullUrl = state.md.normalizeLink(url);
+  if (!state.md.validateLink(fullUrl)) return false;
+  if (!silent) {
+    state.pending = state.pending.slice(0, -protoLength);
+    const token_o = state.push("link_open", "a", 1);
+    token_o.attrs = [["href", fullUrl]];
+    token_o.markup = "linkify";
+    token_o.info = "auto";
+    const token_t = state.push("text", "", 0);
+    token_t.content = state.md.normalizeLinkText(url);
+    const token_c = state.push("link_close", "a", -1);
+    token_c.markup = "linkify";
+    token_c.info = "auto";
+  }
+  state.pos += url.length - protoLength;
+  return true;
+}
+function newline(state, silent) {
+  let pos = state.pos;
+  if (state.src.charCodeAt(pos) !== 10) return false;
+  const pmax = state.pending.length - 1;
+  const max = state.posMax;
+  if (!silent) if (pmax >= 0 && state.pending.charCodeAt(pmax) === 32) if (pmax >= 1 && state.pending.charCodeAt(pmax - 1) === 32) {
+    let ws = pmax - 1;
+    while (ws >= 1 && state.pending.charCodeAt(ws - 1) === 32) ws--;
+    state.pending = state.pending.slice(0, ws);
+    state.push("hardbreak", "br", 0);
+  } else {
+    state.pending = state.pending.slice(0, -1);
+    state.push("softbreak", "br", 0);
+  }
+  else state.push("softbreak", "br", 0);
+  pos++;
+  while (pos < max && isSpace(state.src.charCodeAt(pos))) pos++;
+  state.pos = pos;
+  return true;
+}
+var ESCAPED = [];
+for (let i = 0; i < 256; i++) ESCAPED.push(0);
+"\\!\"#$%&'()*+,./:;<=>?@[]^_`{|}~-".split("").forEach(function(ch) {
+  ESCAPED[ch.charCodeAt(0)] = 1;
+});
+function escape(state, silent) {
+  let pos = state.pos;
+  const max = state.posMax;
+  if (state.src.charCodeAt(pos) !== 92) return false;
+  pos++;
+  if (pos >= max) return false;
+  let ch1 = state.src.charCodeAt(pos);
+  if (ch1 === 10) {
+    if (!silent) state.push("hardbreak", "br", 0);
+    pos++;
+    while (pos < max) {
+      ch1 = state.src.charCodeAt(pos);
+      if (!isSpace(ch1)) break;
+      pos++;
+    }
+    state.pos = pos;
+    return true;
+  }
+  if (ch1 === 32) {
+    if (!silent) {
+      const token = state.push("text_special", "", 0);
+      token.content = "\\";
+      token.markup = "\\";
+      token.info = "escape";
+    }
+    state.pos = pos;
+    return true;
+  }
+  let escapedStr = state.src[pos];
+  if (ch1 >= 55296 && ch1 <= 56319 && pos + 1 < max) {
+    const ch2 = state.src.charCodeAt(pos + 1);
+    if (ch2 >= 56320 && ch2 <= 57343) {
+      escapedStr += state.src[pos + 1];
+      pos++;
+    }
+  }
+  const origStr = "\\" + escapedStr;
+  if (!silent) {
+    const token = state.push("text_special", "", 0);
+    if (ch1 < 256 && ESCAPED[ch1] !== 0) token.content = escapedStr;
+    else token.content = origStr;
+    token.markup = origStr;
+    token.info = "escape";
+  }
+  state.pos = pos + 1;
+  return true;
+}
+function buildLastRuns(src) {
+  const lastRuns = {};
+  let pos = 0;
+  while ((pos = src.indexOf("`", pos)) !== -1) {
+    const start = pos;
+    while (src.charCodeAt(++pos) === 96) ;
+    lastRuns[pos - start] = start;
+  }
+  return lastRuns;
+}
+function backtick(state, silent) {
+  var _state$backticks$open;
+  const start = state.pos;
+  if (state.src.charCodeAt(start) !== 96) return false;
+  const max = state.posMax;
+  let pos = start + 1;
+  while (pos < max && state.src.charCodeAt(pos) === 96) pos++;
+  const marker = state.src.slice(start, pos);
+  const openerLength = marker.length;
+  if (!state.backticksScanned) {
+    state.backticks = buildLastRuns(state.src);
+    state.backticksScanned = true;
+  }
+  if (((_state$backticks$open = state.backticks[openerLength]) !== null && _state$backticks$open !== void 0 ? _state$backticks$open : -1) >= pos) {
+    let matchEnd = pos;
+    let matchStart;
+    while ((matchStart = state.src.indexOf("`", matchEnd)) !== -1 && matchStart < max) {
+      matchEnd = matchStart + 1;
+      while (state.src.charCodeAt(matchEnd) === 96) matchEnd++;
+      if (matchEnd > max) break;
+      if (matchEnd - matchStart === openerLength) {
+        if (!silent) {
+          const token = state.push("code_inline", "code", 0);
+          token.markup = marker;
+          let content = state.src.slice(pos, matchStart).replace(/\n/g, " ");
+          if (content.startsWith(" ") && content.endsWith(" ") && /[^ ]/.test(content)) content = content.slice(1, -1);
+          token.content = content;
+        }
+        state.pos = matchEnd;
+        return true;
+      }
+    }
+  }
+  if (!silent) state.pending += marker;
+  state.pos = pos;
+  return true;
+}
+function strikethrough_tokenize(state, silent) {
+  const start = state.pos;
+  const marker = state.src.charCodeAt(start);
+  if (silent) return false;
+  if (marker !== 126) return false;
+  const scanned = state.scanDelims(state.pos, true);
+  let len = scanned.length;
+  const ch = String.fromCharCode(marker);
+  if (len < 2) return false;
+  let token;
+  if (len % 2) {
+    token = state.push("text", "", 0);
+    token.content = ch;
+    len--;
+  }
+  for (let i = 0; i < len; i += 2) {
+    token = state.push("text", "", 0);
+    token.content = ch + ch;
+    state.delimiters.push({
+      marker,
+      length: 0,
+      token: state.tokens.length - 1,
+      end: -1,
+      open: scanned.can_open,
+      close: scanned.can_close
+    });
+  }
+  state.pos += scanned.length;
+  return true;
+}
+function postProcess$1(state, delimiters) {
+  let token;
+  const loneMarkers = [];
+  const max = delimiters.length;
+  for (let i = 0; i < max; i++) {
+    const startDelim = delimiters[i];
+    if (startDelim.marker !== 126) continue;
+    if (startDelim.end === -1) continue;
+    const endDelim = delimiters[startDelim.end];
+    token = state.tokens[startDelim.token];
+    token.type = "s_open";
+    token.tag = "s";
+    token.nesting = 1;
+    token.markup = "~~";
+    token.content = "";
+    token = state.tokens[endDelim.token];
+    token.type = "s_close";
+    token.tag = "s";
+    token.nesting = -1;
+    token.markup = "~~";
+    token.content = "";
+    if (state.tokens[endDelim.token - 1].type === "text" && state.tokens[endDelim.token - 1].content === "~") loneMarkers.push(endDelim.token - 1);
+  }
+  while (loneMarkers.length) {
+    const i = loneMarkers.pop();
+    let j = i + 1;
+    while (j < state.tokens.length && state.tokens[j].type === "s_close") j++;
+    j--;
+    if (i !== j) {
+      token = state.tokens[j];
+      state.tokens[j] = state.tokens[i];
+      state.tokens[i] = token;
+    }
+  }
+}
+function strikethrough_postProcess(state) {
+  const tokens_meta = state.tokens_meta;
+  const max = state.tokens_meta.length;
+  postProcess$1(state, state.delimiters);
+  for (let curr = 0; curr < max; curr++) {
+    var _tokens_meta$curr;
+    const delimiters = (_tokens_meta$curr = tokens_meta[curr]) === null || _tokens_meta$curr === void 0 ? void 0 : _tokens_meta$curr.delimiters;
+    if (delimiters) postProcess$1(state, delimiters);
+  }
+}
+var strikethrough_default = {
+  tokenize: strikethrough_tokenize,
+  postProcess: strikethrough_postProcess
+};
+function emphasis_tokenize(state, silent) {
+  const start = state.pos;
+  const marker = state.src.charCodeAt(start);
+  if (silent) return false;
+  if (marker !== 95 && marker !== 42) return false;
+  const scanned = state.scanDelims(state.pos, marker === 42);
+  for (let i = 0; i < scanned.length; i++) {
+    const token = state.push("text", "", 0);
+    token.content = String.fromCharCode(marker);
+    state.delimiters.push({
+      marker,
+      length: scanned.length,
+      token: state.tokens.length - 1,
+      end: -1,
+      open: scanned.can_open,
+      close: scanned.can_close
+    });
+  }
+  state.pos += scanned.length;
+  return true;
+}
+function postProcess(state, delimiters) {
+  const max = delimiters.length;
+  for (let i = max - 1; i >= 0; i--) {
+    const startDelim = delimiters[i];
+    if (startDelim.marker !== 95 && startDelim.marker !== 42) continue;
+    if (startDelim.end === -1) continue;
+    const endDelim = delimiters[startDelim.end];
+    const isStrong = i > 0 && delimiters[i - 1].end === startDelim.end + 1 && delimiters[i - 1].marker === startDelim.marker && delimiters[i - 1].token === startDelim.token - 1 && delimiters[startDelim.end + 1].token === endDelim.token + 1;
+    const ch = String.fromCharCode(startDelim.marker);
+    const token_o = state.tokens[startDelim.token];
+    token_o.type = isStrong ? "strong_open" : "em_open";
+    token_o.tag = isStrong ? "strong" : "em";
+    token_o.nesting = 1;
+    token_o.markup = isStrong ? ch + ch : ch;
+    token_o.content = "";
+    const token_c = state.tokens[endDelim.token];
+    token_c.type = isStrong ? "strong_close" : "em_close";
+    token_c.tag = isStrong ? "strong" : "em";
+    token_c.nesting = -1;
+    token_c.markup = isStrong ? ch + ch : ch;
+    token_c.content = "";
+    if (isStrong) {
+      state.tokens[delimiters[i - 1].token].content = "";
+      state.tokens[delimiters[startDelim.end + 1].token].content = "";
+      i--;
+    }
+  }
+}
+function emphasis_post_process(state) {
+  const tokens_meta = state.tokens_meta;
+  const max = state.tokens_meta.length;
+  postProcess(state, state.delimiters);
+  for (let curr = 0; curr < max; curr++) {
+    var _tokens_meta$curr;
+    const delimiters = (_tokens_meta$curr = tokens_meta[curr]) === null || _tokens_meta$curr === void 0 ? void 0 : _tokens_meta$curr.delimiters;
+    if (delimiters) postProcess(state, delimiters);
+  }
+}
+var emphasis_default = {
+  tokenize: emphasis_tokenize,
+  postProcess: emphasis_post_process
+};
+function link(state, silent) {
+  let code2, label, res, ref;
+  let href = "";
+  let title = "";
+  let start = state.pos;
+  let parseReference = true;
+  if (state.src.charCodeAt(state.pos) !== 91) return false;
+  const oldPos = state.pos;
+  const max = state.posMax;
+  const labelStart = state.pos + 1;
+  const labelEnd = state.md.helpers.parseLinkLabel(state, state.pos, true);
+  if (labelEnd < 0) return false;
+  let pos = labelEnd + 1;
+  if (pos < max && state.src.charCodeAt(pos) === 40) {
+    parseReference = false;
+    pos++;
+    for (; pos < max; pos++) {
+      code2 = state.src.charCodeAt(pos);
+      if (!isSpace(code2) && code2 !== 10) break;
+    }
+    if (pos >= max) return false;
+    start = pos;
+    res = state.md.helpers.parseLinkDestination(state.src, pos, state.posMax);
+    if (res.ok) {
+      href = state.md.normalizeLink(res.str);
+      if (state.md.validateLink(href)) pos = res.pos;
+      else href = "";
+      start = pos;
+      for (; pos < max; pos++) {
+        code2 = state.src.charCodeAt(pos);
+        if (!isSpace(code2) && code2 !== 10) break;
+      }
+      res = state.md.helpers.parseLinkTitle(state.src, pos, state.posMax);
+      if (pos < max && start !== pos && res.ok) {
+        title = res.str;
+        pos = res.pos;
+        for (; pos < max; pos++) {
+          code2 = state.src.charCodeAt(pos);
+          if (!isSpace(code2) && code2 !== 10) break;
+        }
+      }
+    }
+    if (pos >= max || state.src.charCodeAt(pos) !== 41) parseReference = true;
+    pos++;
+  }
+  if (parseReference) {
+    if (typeof state.env.references === "undefined") return false;
+    if (pos < max && state.src.charCodeAt(pos) === 91) {
+      start = pos + 1;
+      pos = state.md.helpers.parseLinkLabel(state, pos);
+      if (pos >= 0) label = state.src.slice(start, pos++);
+      else pos = labelEnd + 1;
+    } else pos = labelEnd + 1;
+    if (!label) label = state.src.slice(labelStart, labelEnd);
+    label = normalizeReference(label);
+    ref = state.env.references[label];
+    if (!ref) {
+      state.pos = oldPos;
+      return false;
+    }
+    href = ref.href;
+    title = ref.title;
+  }
+  if (!silent) {
+    state.pos = labelStart;
+    state.posMax = labelEnd;
+    const token_o = state.push("link_open", "a", 1);
+    const attrs = [["href", href]];
+    token_o.attrs = attrs;
+    if (title) attrs.push(["title", title]);
+    if (label) {
+      const meta = /* @__PURE__ */ Object.create(null);
+      meta.label = label;
+      token_o.meta = meta;
+    }
+    state.linkLevel++;
+    state.md.inline.tokenize(state);
+    state.linkLevel--;
+    state.push("link_close", "a", -1);
+  }
+  state.pos = pos;
+  state.posMax = max;
+  return true;
+}
+function image(state, silent) {
+  let code2, content, label, pos, ref, res, title, start;
+  let href = "";
+  const oldPos = state.pos;
+  const max = state.posMax;
+  if (state.src.charCodeAt(state.pos) !== 33) return false;
+  if (state.src.charCodeAt(state.pos + 1) !== 91) return false;
+  const labelStart = state.pos + 2;
+  const labelEnd = state.md.helpers.parseLinkLabel(state, state.pos + 1, false);
+  if (labelEnd < 0) return false;
+  pos = labelEnd + 1;
+  if (pos < max && state.src.charCodeAt(pos) === 40) {
+    pos++;
+    for (; pos < max; pos++) {
+      code2 = state.src.charCodeAt(pos);
+      if (!isSpace(code2) && code2 !== 10) break;
+    }
+    if (pos >= max) return false;
+    start = pos;
+    res = state.md.helpers.parseLinkDestination(state.src, pos, state.posMax);
+    if (res.ok) {
+      href = state.md.normalizeLink(res.str);
+      if (state.md.validateLink(href)) pos = res.pos;
+      else href = "";
+    }
+    start = pos;
+    for (; pos < max; pos++) {
+      code2 = state.src.charCodeAt(pos);
+      if (!isSpace(code2) && code2 !== 10) break;
+    }
+    res = state.md.helpers.parseLinkTitle(state.src, pos, state.posMax);
+    if (pos < max && start !== pos && res.ok) {
+      title = res.str;
+      pos = res.pos;
+      for (; pos < max; pos++) {
+        code2 = state.src.charCodeAt(pos);
+        if (!isSpace(code2) && code2 !== 10) break;
+      }
+    } else title = "";
+    if (pos >= max || state.src.charCodeAt(pos) !== 41) {
+      state.pos = oldPos;
+      return false;
+    }
+    pos++;
+  } else {
+    if (typeof state.env.references === "undefined") return false;
+    if (pos < max && state.src.charCodeAt(pos) === 91) {
+      start = pos + 1;
+      pos = state.md.helpers.parseLinkLabel(state, pos);
+      if (pos >= 0) label = state.src.slice(start, pos++);
+      else pos = labelEnd + 1;
+    } else pos = labelEnd + 1;
+    if (!label) label = state.src.slice(labelStart, labelEnd);
+    label = normalizeReference(label);
+    ref = state.env.references[label];
+    if (!ref) {
+      state.pos = oldPos;
+      return false;
+    }
+    href = ref.href;
+    title = ref.title;
+  }
+  if (!silent) {
+    content = state.src.slice(labelStart, labelEnd);
+    const tokens = [];
+    state.md.inline.parse(content, state.md, state.env, tokens);
+    const token = state.push("image", "img", 0);
+    const attrs = [["src", href], ["alt", ""]];
+    token.attrs = attrs;
+    token.children = tokens;
+    token.content = content;
+    if (title) attrs.push(["title", title]);
+    if (label) {
+      const meta = /* @__PURE__ */ Object.create(null);
+      meta.label = label;
+      token.meta = meta;
+    }
+  }
+  state.pos = pos;
+  state.posMax = max;
+  return true;
+}
+var EMAIL_RE = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$/;
+var AUTOLINK_RE = /^([a-zA-Z][a-zA-Z0-9+.-]{1,31}):([^<>\x00-\x20]*)$/;
+function autolink(state, silent) {
+  let pos = state.pos;
+  if (state.src.charCodeAt(pos) !== 60) return false;
+  const start = state.pos;
+  const max = state.posMax;
+  for (; ; ) {
+    if (++pos >= max) return false;
+    const ch = state.src.charCodeAt(pos);
+    if (ch === 60) return false;
+    if (ch === 62) break;
+  }
+  const url = state.src.slice(start + 1, pos);
+  if (AUTOLINK_RE.test(url)) {
+    const fullUrl = state.md.normalizeLink(url);
+    if (!state.md.validateLink(fullUrl)) return false;
+    if (!silent) {
+      const token_o = state.push("link_open", "a", 1);
+      token_o.attrs = [["href", fullUrl]];
+      token_o.markup = "autolink";
+      token_o.info = "auto";
+      const token_t = state.push("text", "", 0);
+      token_t.content = state.md.normalizeLinkText(url);
+      const token_c = state.push("link_close", "a", -1);
+      token_c.markup = "autolink";
+      token_c.info = "auto";
+    }
+    state.pos += url.length + 2;
+    return true;
+  }
+  if (EMAIL_RE.test(url)) {
+    const fullUrl = state.md.normalizeLink(`mailto:${url}`);
+    if (!state.md.validateLink(fullUrl)) return false;
+    if (!silent) {
+      const token_o = state.push("link_open", "a", 1);
+      token_o.attrs = [["href", fullUrl]];
+      token_o.markup = "autolink";
+      token_o.info = "auto";
+      const token_t = state.push("text", "", 0);
+      token_t.content = state.md.normalizeLinkText(url);
+      const token_c = state.push("link_close", "a", -1);
+      token_c.markup = "autolink";
+      token_c.info = "auto";
+    }
+    state.pos += url.length + 2;
+    return true;
+  }
+  return false;
+}
+function isLinkOpen(str) {
+  return /^<a[>\s]/i.test(str);
+}
+function isLinkClose(str) {
+  return /^<\/a\s*>/i.test(str);
+}
+function isLetter(ch) {
+  const lc = ch | 32;
+  return lc >= 97 && lc <= 122;
+}
+function html_inline(state, silent) {
+  if (!state.md.options.html) return false;
+  const max = state.posMax;
+  const pos = state.pos;
+  if (state.src.charCodeAt(pos) !== 60 || pos + 2 >= max) return false;
+  const ch = state.src.charCodeAt(pos + 1);
+  if (ch !== 33 && ch !== 63 && ch !== 47 && !isLetter(ch)) return false;
+  const match = state.src.slice(pos).match(HTML_TAG_RE);
+  if (!match) return false;
+  if (!silent) {
+    const token = state.push("html_inline", "", 0);
+    token.content = match[0];
+    if (isLinkOpen(token.content)) state.linkLevel++;
+    if (isLinkClose(token.content)) state.linkLevel--;
+  }
+  state.pos += match[0].length;
+  return true;
+}
+var DIGITAL_RE = /^&#((?:x[a-f0-9]{1,6}|[0-9]{1,7}));/i;
+var NAMED_RE = /^&([a-z][a-z0-9]{1,31});/i;
+function entity(state, silent) {
+  const pos = state.pos;
+  const max = state.posMax;
+  if (state.src.charCodeAt(pos) !== 38) return false;
+  if (pos + 1 >= max) return false;
+  if (state.src.charCodeAt(pos + 1) === 35) {
+    const match = state.src.slice(pos).match(DIGITAL_RE);
+    if (match) {
+      if (!silent) {
+        const code2 = match[1][0].toLowerCase() === "x" ? parseInt(match[1].slice(1), 16) : parseInt(match[1], 10);
+        const token = state.push("text_special", "", 0);
+        token.content = isValidEntityCode(code2) ? fromCodePoint(code2) : fromCodePoint(65533);
+        token.markup = match[0];
+        token.info = "entity";
+      }
+      state.pos += match[0].length;
+      return true;
+    }
+  } else {
+    const match = state.src.slice(pos).match(NAMED_RE);
+    if (match) {
+      const decoded = decodeHTMLStrict(match[0]);
+      if (decoded !== match[0]) {
+        if (!silent) {
+          const token = state.push("text_special", "", 0);
+          token.content = decoded;
+          token.markup = match[0];
+          token.info = "entity";
+        }
+        state.pos += match[0].length;
+        return true;
+      }
+    }
+  }
+  return false;
+}
+function processDelimiters(delimiters) {
+  const openersBottom = {};
+  const max = delimiters.length;
+  if (!max) return;
+  let headerIdx = 0;
+  let lastTokenIdx = -2;
+  const jumps = [];
+  for (let closerIdx = 0; closerIdx < max; closerIdx++) {
+    const closer = delimiters[closerIdx];
+    jumps.push(0);
+    if (delimiters[headerIdx].marker !== closer.marker || lastTokenIdx !== closer.token - 1) headerIdx = closerIdx;
+    lastTokenIdx = closer.token;
+    closer.length = closer.length || 0;
+    if (!closer.close) continue;
+    if (!openersBottom.hasOwnProperty(closer.marker)) openersBottom[closer.marker] = [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ];
+    const minOpenerIdx = openersBottom[closer.marker][(closer.open ? 3 : 0) + closer.length % 3];
+    let openerIdx = headerIdx - jumps[headerIdx] - 1;
+    let newMinOpenerIdx = openerIdx;
+    for (; openerIdx > minOpenerIdx; openerIdx -= jumps[openerIdx] + 1) {
+      const opener = delimiters[openerIdx];
+      if (opener.marker !== closer.marker) continue;
+      if (opener.open && opener.end < 0) {
+        let isOddMatch = false;
+        if (opener.close || closer.open) {
+          if ((opener.length + closer.length) % 3 === 0) {
+            if (opener.length % 3 !== 0 || closer.length % 3 !== 0) isOddMatch = true;
+          }
+        }
+        if (!isOddMatch) {
+          const lastJump = openerIdx > 0 && !delimiters[openerIdx - 1].open ? jumps[openerIdx - 1] + 1 : 0;
+          jumps[closerIdx] = closerIdx - openerIdx + lastJump;
+          jumps[openerIdx] = lastJump;
+          closer.open = false;
+          opener.end = closerIdx;
+          opener.close = false;
+          newMinOpenerIdx = -1;
+          lastTokenIdx = -2;
+          break;
+        }
+      }
+    }
+    if (newMinOpenerIdx !== -1) openersBottom[closer.marker][(closer.open ? 3 : 0) + (closer.length || 0) % 3] = newMinOpenerIdx;
+  }
+}
+function link_pairs(state) {
+  const tokens_meta = state.tokens_meta;
+  const max = state.tokens_meta.length;
+  processDelimiters(state.delimiters);
+  for (let curr = 0; curr < max; curr++) {
+    var _tokens_meta$curr;
+    const delimiters = (_tokens_meta$curr = tokens_meta[curr]) === null || _tokens_meta$curr === void 0 ? void 0 : _tokens_meta$curr.delimiters;
+    if (delimiters) processDelimiters(delimiters);
+  }
+}
+function fragments_join(state) {
+  let curr, last;
+  let level = 0;
+  const tokens = state.tokens;
+  const max = state.tokens.length;
+  for (curr = last = 0; curr < max; curr++) {
+    if (tokens[curr].nesting < 0) level--;
+    tokens[curr].level = level;
+    if (tokens[curr].nesting > 0) level++;
+    if (tokens[curr].type === "text" && curr + 1 < max && tokens[curr + 1].type === "text") tokens[curr + 1].content = tokens[curr].content + tokens[curr + 1].content;
+    else {
+      if (curr !== last) tokens[last] = tokens[curr];
+      last++;
+    }
+  }
+  if (curr !== last) tokens.length = last;
+}
+var _rules = [
+  ["text", text2],
+  ["linkify", linkify],
+  ["newline", newline],
+  ["escape", escape],
+  ["backticks", backtick],
+  ["strikethrough", strikethrough_default.tokenize],
+  ["emphasis", emphasis_default.tokenize],
+  ["link", link],
+  ["image", image],
+  ["autolink", autolink],
+  ["html_inline", html_inline],
+  ["entity", entity]
+];
+var _rules2 = [
+  ["balance_pairs", link_pairs],
+  ["strikethrough", strikethrough_default.postProcess],
+  ["emphasis", emphasis_default.postProcess],
+  ["fragments_join", fragments_join]
+];
+var ParserInline = class {
+  constructor() {
+    _defineProperty(
+      this,
+      /**
+      * {@link Ruler} instance. Keep configuration of inline rules.
+      */
+      "ruler",
+      new Ruler()
+    );
+    _defineProperty(
+      this,
+      /**
+      * {@link Ruler} instance. Second ruler used for post-processing
+      * (e.g. in emphasis-like rules).
+      */
+      "ruler2",
+      new Ruler()
+    );
+    _defineProperty(this, "State", StateInline);
+    for (let i = 0; i < _rules.length; i++) this.ruler.push(_rules[i][0], _rules[i][1]);
+    for (let i = 0; i < _rules2.length; i++) this.ruler2.push(_rules2[i][0], _rules2[i][1]);
+  }
+  skipToken(state) {
+    const pos = state.pos;
+    const rules = this.ruler.getRules("");
+    const len = rules.length;
+    const maxNesting = state.md.options.maxNesting;
+    const cache = state.cache;
+    if (typeof cache[pos] !== "undefined") {
+      state.pos = cache[pos];
+      return;
+    }
+    let ok = false;
+    if (state.level < maxNesting) for (let i = 0; i < len; i++) {
+      state.level++;
+      ok = rules[i](state, true);
+      state.level--;
+      if (ok) {
+        if (pos >= state.pos) throw new Error("inline rule didn't increment state.pos");
+        break;
+      }
+    }
+    else state.pos = state.posMax;
+    if (!ok) state.pos++;
+    cache[pos] = state.pos;
+  }
+  tokenize(state) {
+    const rules = this.ruler.getRules("");
+    const len = rules.length;
+    const end = state.posMax;
+    const maxNesting = state.md.options.maxNesting;
+    while (state.pos < end) {
+      const prevPos = state.pos;
+      let ok = false;
+      if (state.level < maxNesting) for (let i = 0; i < len; i++) {
+        ok = rules[i](state, false);
+        if (ok) {
+          if (prevPos >= state.pos) throw new Error("inline rule didn't increment state.pos");
+          break;
+        }
+      }
+      if (ok) {
+        if (state.pos >= end) break;
+        continue;
+      }
+      state.pending += state.src[state.pos++];
+    }
+    if (state.pending) state.pushPending();
+  }
+  /**
+  * Process input string and push inline tokens into `outTokens`
+  */
+  parse(str, md, env, outTokens) {
+    const state = new this.State(str, md, env, outTokens);
+    this.tokenize(state);
+    const rules = this.ruler2.getRules("");
+    const len = rules.length;
+    for (let i = 0; i < len; i++) rules[i](state);
+  }
+};
+var config = {
+  default: {
+    options: {
+      html: false,
+      xhtmlOut: false,
+      breaks: false,
+      langPrefix: "language-",
+      linkify: false,
+      typographer: false,
+      quotes: "\u201C\u201D\u2018\u2019",
+      highlight: null,
+      maxNesting: 100
+    },
+    components: {
+      core: {},
+      block: {},
+      inline: {}
+    }
+  },
+  zero: {
+    options: {
+      html: false,
+      xhtmlOut: false,
+      breaks: false,
+      langPrefix: "language-",
+      linkify: false,
+      typographer: false,
+      quotes: "\u201C\u201D\u2018\u2019",
+      highlight: null,
+      maxNesting: 20
+    },
+    components: {
+      core: { rules: [
+        "normalize",
+        "block",
+        "strip_references",
+        "inline",
+        "text_join"
+      ] },
+      block: { rules: ["paragraph"] },
+      inline: {
+        rules: ["text"],
+        rules2: ["balance_pairs", "fragments_join"]
+      }
+    }
+  },
+  commonmark: {
+    options: {
+      html: true,
+      xhtmlOut: true,
+      breaks: false,
+      langPrefix: "language-",
+      linkify: false,
+      typographer: false,
+      quotes: "\u201C\u201D\u2018\u2019",
+      highlight: null,
+      maxNesting: 20
+    },
+    components: {
+      core: { rules: [
+        "normalize",
+        "block",
+        "strip_references",
+        "inline",
+        "text_join"
+      ] },
+      block: { rules: [
+        "blockquote",
+        "code",
+        "fence",
+        "heading",
+        "hr",
+        "html_block",
+        "lheading",
+        "list",
+        "reference",
+        "paragraph"
+      ] },
+      inline: {
+        rules: [
+          "autolink",
+          "backticks",
+          "emphasis",
+          "entity",
+          "escape",
+          "html_inline",
+          "image",
+          "link",
+          "newline",
+          "text"
+        ],
+        rules2: [
+          "balance_pairs",
+          "emphasis",
+          "fragments_join"
+        ]
+      }
+    }
+  }
+};
+var BAD_PROTO_RE = /^(vbscript|javascript|file|data):/;
+var GOOD_DATA_RE = /^data:image\/(gif|png|jpeg|webp);/;
+var RECODE_HOSTNAME_FOR = [
+  "http:",
+  "https:",
+  "mailto:"
+];
+var MarkdownIt = class {
+  /**
+  * Link validation function. CommonMark allows too much in links. By default
+  * we disable `javascript:`, `vbscript:`, `file:` schemas, and almost all `data:...` schemas
+  * except some embedded image types.
+  *
+  * You can change this behaviour:
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  * const md = new MarkdownIt()
+  *
+  * // enable everything
+  * md.validateLink = function () { return true; }
+  * ```
+  */
+  validateLink(url) {
+    const str = url.trim().toLowerCase();
+    return BAD_PROTO_RE.test(str) ? GOOD_DATA_RE.test(str) : true;
+  }
+  /**
+  * Function used to encode link url to a machine-readable format,
+  * which includes url-encoding, punycode, etc.
+  */
+  normalizeLink(url) {
+    const parsed = parse_default(url, true);
+    if (parsed.hostname) {
+      if (!parsed.protocol || RECODE_HOSTNAME_FOR.indexOf(parsed.protocol) >= 0) try {
+        parsed.hostname = punycode_es6_default.toASCII(parsed.hostname);
+      } catch (er) {
+      }
+    }
+    if (parsed.auth) parsed.auth = encode_default(parsed.auth);
+    if (parsed.hostname) parsed.hostname = encode_default(parsed.hostname);
+    if (parsed.pathname) parsed.pathname = encode_default(parsed.pathname);
+    if (parsed.search) parsed.search = encode_default(parsed.search);
+    if (parsed.hash) parsed.hash = encode_default(parsed.hash);
+    return format(parsed);
+  }
+  /**
+  * Function used to decode link url to a human-readable format`
+  */
+  normalizeLinkText(url) {
+    const parsed = parse_default(url, true);
+    if (parsed.hostname) {
+      if (!parsed.protocol || RECODE_HOSTNAME_FOR.indexOf(parsed.protocol) >= 0) try {
+        parsed.hostname = punycode_es6_default.toUnicode(parsed.hostname);
+      } catch (er) {
+      }
+    }
+    return decode_default(format(parsed), decode_default.defaultChars + "%");
+  }
+  constructor(...args) {
+    _defineProperty(
+      this,
+      /**
+      * Instance of {@link ParserInline}. You may need it to add new rules when
+      * writing plugins. For simple rules control use {@link MarkdownIt.disable}
+      * and {@link MarkdownIt.enable}.
+      */
+      "inline",
+      new ParserInline()
+    );
+    _defineProperty(
+      this,
+      /**
+      * Instance of {@link ParserBlock}. You may need it to add new rules when
+      * writing plugins. For simple rules control use {@link MarkdownIt.disable}
+      * and {@link MarkdownIt.enable}.
+      */
+      "block",
+      new ParserBlock()
+    );
+    _defineProperty(
+      this,
+      /**
+      * Instance of {@link ParserCore} chain executor. You may need it to add new
+      * rules when writing plugins. For simple rules control use
+      * {@link MarkdownIt.disable} and {@link MarkdownIt.enable}.
+      */
+      "core",
+      new ParserCore()
+    );
+    _defineProperty(
+      this,
+      /**
+      * Instance of {@link Renderer}. Use it to modify output look. Or to add rendering
+      * rules for new token types, generated by plugins.
+      *
+      * See {@link Renderer} docs and
+      * [source code](https://github.com/markdown-it/markdown-it/blob/master/src/renderer.ts).
+      *
+      * @example
+      * ```javascript
+      * import MarkdownIt from 'markdown-it'
+      * const md = new MarkdownIt()
+      *
+      * function myToken(tokens, idx, options, env, self) {
+      *   //...
+      *   return result;
+      * };
+      *
+      * md.renderer.rules['my_token'] = myToken
+      * ```
+      */
+      "renderer",
+      new Renderer()
+    );
+    _defineProperty(
+      this,
+      /**
+      * [linkify-it](https://github.com/markdown-it/linkify-it) instance.
+      * Used by [linkify](https://github.com/markdown-it/markdown-it/blob/master/src/rules_core/linkify.ts)
+      * rule.
+      */
+      "linkify",
+      new LinkifyIt()
+    );
+    _defineProperty(
+      this,
+      /**
+      * Assorted utility functions, useful to write plugins. See details
+      * [here](https://github.com/markdown-it/markdown-it/blob/master/src/common/utils.ts).
+      */
+      "utils",
+      utils_exports
+    );
+    _defineProperty(
+      this,
+      /**
+      * Link components parser functions, useful to write plugins. See details
+      * [here](https://github.com/markdown-it/markdown-it/blob/master/src/helpers).
+      */
+      "helpers",
+      Object.assign({}, helpers_exports)
+    );
+    const [presetNameOrOptions, options] = args;
+    if (typeof presetNameOrOptions === "string") {
+      this.configure(presetNameOrOptions);
+      if (options) this.set(options);
+    } else {
+      this.configure("default");
+      this.set(presetNameOrOptions || {});
+    }
+  }
+  /**
+  * Set parser options (in the same format as in constructor). Probably, you
+  * will never need it, but you can change options after constructor call.
+  *
+  * __Note:__ To achieve the best possible performance, don't modify a
+  * `markdown-it` instance options on the fly. If you need multiple configurations
+  * it's best to create multiple instances and initialize each with separate
+  * config.
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  *
+  * const md = new MarkdownIt()
+  *   .set({ html: true, breaks: true })
+  *   .set({ typographer: true })
+  * ```
+  */
+  set(options) {
+    Object.assign(this.options, options);
+    return this;
+  }
+  /**
+  * Batch load of all options and compenent settings. This is internal method,
+  * and you probably will not need it. But if you will - see available presets
+  * and data structure [here](https://github.com/markdown-it/markdown-it/tree/master/src/presets)
+  *
+  * We strongly recommend to use presets instead of direct config loads. That
+  * will give better compatibility with next versions.
+  */
+  configure(presets) {
+    let p;
+    if (typeof presets === "string") {
+      const presetName = presets;
+      p = config[presetName];
+      if (!p) throw new Error(`Wrong 'markdown-it' preset "${presetName}", check name`);
+    } else p = presets;
+    if (!p) throw new Error("Wrong `markdown-it` preset, can't be empty");
+    if (p.options) this.options = __spreadValues({}, p.options);
+    const components = p.components;
+    if (components) {
+      var _components$inline;
+      [
+        "core",
+        "block",
+        "inline"
+      ].forEach((name) => {
+        var _components$name;
+        const rules = (_components$name = components[name]) === null || _components$name === void 0 ? void 0 : _components$name.rules;
+        if (rules) this[name].ruler.enableOnly(rules);
+      });
+      const rules2 = (_components$inline = components.inline) === null || _components$inline === void 0 ? void 0 : _components$inline.rules2;
+      if (rules2) this.inline.ruler2.enableOnly(rules2);
+    }
+    return this;
+  }
+  /**
+  * Enable list or rules. It will automatically find appropriate components,
+  * containing rules with given names. If rule not found, and `ignoreInvalid`
+  * not set - throws exception.
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  *
+  * const md = new MarkdownIt()
+  *   .enable(['sub', 'sup'])
+  *   .disable('smartquotes')
+  * ```
+  */
+  enable(list2, ignoreInvalid = false) {
+    let result = [];
+    if (!Array.isArray(list2)) list2 = [list2];
+    [
+      "core",
+      "block",
+      "inline"
+    ].forEach((chain) => {
+      result = result.concat(this[chain].ruler.enable(list2, true));
+    });
+    result = result.concat(this.inline.ruler2.enable(list2, true));
+    const missed = list2.filter((name) => result.indexOf(name) < 0);
+    if (missed.length && !ignoreInvalid) throw new Error(`MarkdownIt. Failed to enable unknown rule(s): ${missed}`);
+    return this;
+  }
+  /**
+  * The same as {@link MarkdownIt.enable}, but turn specified rules off.
+  */
+  disable(list2, ignoreInvalid = false) {
+    let result = [];
+    if (!Array.isArray(list2)) list2 = [list2];
+    [
+      "core",
+      "block",
+      "inline"
+    ].forEach((chain) => {
+      result = result.concat(this[chain].ruler.disable(list2, true));
+    });
+    result = result.concat(this.inline.ruler2.disable(list2, true));
+    const missed = list2.filter((name) => result.indexOf(name) < 0);
+    if (missed.length && !ignoreInvalid) throw new Error(`MarkdownIt. Failed to disable unknown rule(s): ${missed}`);
+    return this;
+  }
+  /**
+  * Load specified plugin with given params into current parser instance.
+  * It's just a sugar to call `plugin(md, params)` with curring.
+  *
+  * @example
+  * ```javascript
+  * import MarkdownIt from 'markdown-it'
+  * import iterator from 'markdown-it-for-inline'
+  *
+  * const md = new MarkdownIt()
+  *   .use(iterator, 'foo_replace', 'text', function (tokens, idx) {
+  *     tokens[idx].content = tokens[idx].content.replace(/foo/g, 'bar')
+  *   })
+  * ```
+  */
+  use(plugin, ...params) {
+    plugin.apply(plugin, [this, ...params]);
+    return this;
+  }
+  /**
+  * Parse input string and return list of block tokens (special token type
+  * "inline" will contain list of inline tokens). You should not call this
+  * method directly, until you write custom renderer (for example, to produce
+  * AST).
+  *
+  * `env` is used to pass data between "distributed" rules and return additional
+  * metadata like reference info, needed for the renderer. It also can be used to
+  * inject data in specific cases. Usually, you will be ok to pass `{}`,
+  * and then pass updated object to renderer.
+  */
+  parse(src, env) {
+    if (typeof src !== "string") throw new Error("Input data should be a String");
+    const state = new this.core.State(src, this, env);
+    this.core.process(state);
+    return state.tokens;
+  }
+  /**
+  * Render markdown string into html. It does all magic for you :).
+  *
+  * `env` can be used to inject additional metadata (`{}` by default).
+  * But you will not need it with high probability. See also comment
+  * in {@link MarkdownIt.parse}.
+  */
+  render(src, env = {}) {
+    return this.renderer.render(this.parse(src, env), this.options, env);
+  }
+  /**
+  * The same as {@link MarkdownIt.parse} but skip all block rules. It returns
+  * the block tokens list with the single `inline` element, containing parsed
+  * inline tokens in `children` property. Also updates `env` object.
+  */
+  parseInline(src, env) {
+    const state = new this.core.State(src, this, env);
+    state.inlineMode = true;
+    this.core.process(state);
+    return state.tokens;
+  }
+  /**
+  * Similar to {@link MarkdownIt.render} but for single paragraph content.
+  * Result will NOT be wrapped into `<p>` tags.
+  */
+  renderInline(src, env = {}) {
+    return this.renderer.render(this.parseInline(src, env), this.options, env);
+  }
+};
+_defineProperty(MarkdownIt, "Token", Token);
+_defineProperty(MarkdownIt, "Ruler", Ruler);
+_defineProperty(MarkdownIt, "Renderer", Renderer);
+_defineProperty(MarkdownIt, "ParserCore", ParserCore);
+_defineProperty(MarkdownIt, "StateCore", StateCore);
+_defineProperty(MarkdownIt, "ParserBlock", ParserBlock);
+_defineProperty(MarkdownIt, "StateBlock", StateBlock);
+_defineProperty(MarkdownIt, "ParserInline", ParserInline);
+_defineProperty(MarkdownIt, "StateInline", StateInline);
+var MarkdownItCallable = callable(MarkdownIt);
+
 // src/utils/tasks.ts
-var import_markdown_it = __toESM(require_markdown_it());
 var import_minimatch = __toESM(require_minimatch());
+var import_obsidian4 = require("obsidian");
 
 // src/plugins/plugin-helper.ts
-var escape = (html) => String(html).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+var escape2 = (html) => String(html).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 var utils = {
-  escape
+  escape: escape2
 };
 var counter = 0;
 var regexPlugin = (regexp, replacer) => {
@@ -6384,11 +7354,9 @@ var regexPlugin = (regexp, replacer) => {
   return (md) => {
     md.inline.ruler.push(id, (state, silent) => {
       var match = _regexp.exec(state.src.slice(state.pos));
-      if (!match)
-        return false;
+      if (!match) return false;
       state.pos += match[0].length;
-      if (silent)
-        return true;
+      if (silent) return true;
       var token = state.push(id, "", 0);
       token.meta = { match };
       return true;
@@ -6400,294 +7368,1268 @@ var regexPlugin = (regexp, replacer) => {
 };
 
 // src/plugins/comment.ts
-var commentPlugin = regexPlugin(/\%\%([^\%]+)\%\%/, (match, utils2) => {
-  return `<!--${utils2.escape(match[1])}}-->`;
-});
+var commentPlugin = regexPlugin(
+  /\%\%([^\%]+)\%\%/,
+  (match, utils2) => {
+    return `<!--${utils2.escape(match[1])}}-->`;
+  }
+);
 
 // src/plugins/highlight.ts
-var highlightPlugin = regexPlugin(/\=\=([^\=]+)\=\=/, (match, utils2) => {
-  return `<mark>${utils2.escape(match[1])}</mark>`;
-});
+var highlightPlugin = regexPlugin(
+  /\=\=([^\=]+)\=\=/,
+  (match, utils2) => {
+    return `<mark>${utils2.escape(match[1])}</mark>`;
+  }
+);
 
 // src/plugins/link.ts
 var linkPlugin = (linkMap) => regexPlugin(/\[\[([^\]]+)\]\]/, (match, utils2) => {
   const content = match[1];
-  const [link, label] = content.trim().split("|");
-  const linkItem = linkMap.get(link);
-  let displayText = label ? label : linkItem ? linkItem.linkName : link;
+  const [link2, label] = content.trim().split("|");
+  const linkItem = linkMap.get(link2.trim());
+  let displayText = label ? label : linkItem ? linkItem.linkName : link2;
   if (label) {
     displayText = label;
   } else if (linkItem) {
     displayText = linkItem.linkName;
   } else {
-    displayText = link;
+    displayText = link2;
   }
-  if (!linkItem)
-    return `[[${content}]]`;
-  return `<a data-href="${link}" data-type="link" data-filepath="${linkItem.filePath}" class="internal-link">${utils2.escape(displayText)}</a>`;
+  if (!linkItem) return `[[${content}]]`;
+  return `<a href="#" data-href="${utils2.escape(
+    link2
+  )}" data-type="link" data-filepath="${utils2.escape(
+    linkItem.filePath
+  )}" class="internal-link">${utils2.escape(displayText)}</a>`;
 });
 
 // src/plugins/tag.ts
 var tagPlugin = regexPlugin(/\#\S+/, (match, utils2) => {
   const content = match[0];
-  return `<a href="${utils2.escape(content)}" data-type="link" class="tag" target="_blank" rel="noopener">${utils2.escape(content)}</a>`;
+  return `<a href="${utils2.escape(
+    content
+  )}" data-type="tag" class="tag" target="_blank" rel="noopener">${utils2.escape(
+    content
+  )}</a>`;
 });
 
 // src/utils/tasks.ts
-var parseTodos = (files, todoTags, cache, vault, includeFiles, showChecked, showAllTodos, lastRerender) => __async(void 0, null, function* () {
-  const includePattern = includeFiles.trim() ? includeFiles.trim().split("\n") : ["**/*"];
-  const filesWithCache = yield Promise.all(files.filter((file) => {
-    if (file.stat.mtime < lastRerender)
-      return false;
-    if (!includePattern.some((p) => (0, import_minimatch.default)(file.path, p)))
-      return false;
-    if (todoTags.length === 1 && todoTags[0] === "*")
-      return true;
-    const fileCache = cache.getFileCache(file);
-    const allTags = getAllTagsFromMetadata(fileCache);
-    const tagsOnPage = allTags.filter((tag) => todoTags.includes(retrieveTag(getTagMeta(tag)).toLowerCase()));
-    return tagsOnPage.length > 0;
-  }).map((file) => __async(void 0, null, function* () {
-    var _a, _b;
-    const fileCache = cache.getFileCache(file);
-    const tagsOnPage = (_b = (_a = fileCache == null ? void 0 : fileCache.tags) == null ? void 0 : _a.filter((e) => todoTags.includes(retrieveTag(getTagMeta(e.tag)).toLowerCase()))) != null ? _b : [];
-    const frontMatterTags = getFrontmatterTags(fileCache, todoTags);
-    const hasFrontMatterTag = frontMatterTags.length > 0;
-    const parseEntireFile = todoTags[0] === "*" || hasFrontMatterTag || showAllTodos;
-    const content = yield vault.cachedRead(file);
-    return {
-      content,
-      cache: fileCache,
-      validTags: tagsOnPage.map((e) => __spreadProps(__spreadValues({}, e), {
-        tag: e.tag.toLowerCase()
-      })),
-      file,
-      parseEntireFile,
-      frontmatterTag: todoTags.length ? frontMatterTags[0] : void 0
-    };
-  })));
-  const todosForUpdatedFiles = /* @__PURE__ */ new Map();
-  for (const fileInfo of filesWithCache) {
-    let todos = findAllTodosInFile(fileInfo);
-    if (!showChecked) {
-      todos = todos.filter((todo) => !todo.checked);
-    }
-    todosForUpdatedFiles.set(fileInfo.file, todos);
+var createFileMatcher = (patterns) => {
+  const rules = patterns.split("\n").map((s) => s.trim()).filter(Boolean);
+  const includes = rules.filter((s) => !s.startsWith("!")).map((p) => new import_minimatch.Minimatch(p, { dot: true }));
+  const excludes = rules.filter((s) => s.startsWith("!")).map((s) => new import_minimatch.Minimatch(s.slice(1), { dot: true }));
+  return (path) => (!includes.length || includes.some((p) => p.match(path))) && !excludes.some((p) => p.match(path));
+};
+var parseTodos = (_0, _1, _2, _3, _4, _5, _6, _7, ..._8) => __async(null, [_0, _1, _2, _3, _4, _5, _6, _7, ..._8], function* (files, todoTags, cache, vault, includeFiles, showChecked, showAllTodos, lastRerender, excludedTags = [], onError = () => {
+}, nestSubtasks = true) {
+  const results = /* @__PURE__ */ new Map();
+  let matchesFile;
+  let next = 0;
+  function worker() {
+    return __async(this, null, function* () {
+      var _a, _b, _c, _d, _e;
+      while (next < files.length) {
+        const file = files[next++];
+        if (file.stat.mtime < lastRerender) continue;
+        try {
+          matchesFile != null ? matchesFile : matchesFile = createFileMatcher(includeFiles);
+          if (!matchesFile(file.path)) {
+            results.set(file, []);
+            continue;
+          }
+          const metadata = cache.getFileCache(file);
+          const wildcard = todoTags.includes("*");
+          const frontmatter = getFrontmatterTags(metadata);
+          if (frontmatter.some((tag) => matchesTodoTag(tag, excludedTags))) {
+            results.set(file, []);
+            continue;
+          }
+          const matchedFrontmatter = frontmatter.filter(
+            (tag) => wildcard || matchesTodoTag(tag, todoTags)
+          );
+          const tags = (_a = metadata == null ? void 0 : metadata.tags) != null ? _a : [];
+          const matchingTags = tags.filter(
+            (tag) => wildcard || matchesTodoTag(tag.tag, todoTags)
+          );
+          if (!wildcard && !matchedFrontmatter.length && !matchingTags.length) {
+            results.set(file, []);
+            continue;
+          }
+          const content = yield vault.cachedRead(file);
+          const lines = getAllLinesFromFile(content);
+          const listItems = metadata == null ? void 0 : metadata.listItems;
+          const relations = (listItems != null ? listItems : []).map((item) => ({
+            line: item.position.start.line,
+            parent: item.parent
+          }));
+          const descendants = createDescendantLookup(relations);
+          const relationMap = new Map(
+            relations.map((item) => [item.line, item.parent])
+          );
+          const taskLines = /* @__PURE__ */ new Set();
+          const blocked = /* @__PURE__ */ new Set();
+          for (const section of (_b = metadata == null ? void 0 : metadata.sections) != null ? _b : []) {
+            if (section.type === "code" || section.type === "yaml")
+              for (let line = section.position.start.line; line <= section.position.end.line; line++)
+                blocked.add(line);
+          }
+          let fence2 = "";
+          let inFrontmatter = lines[0] === "---";
+          for (let line = 0; line < lines.length; line++) {
+            if (!listItems) {
+              if (inFrontmatter) {
+                if (line > 0 && /^(---|\.\.\.)\s*$/.test(lines[line]))
+                  inFrontmatter = false;
+                continue;
+              }
+              const marker = (_c = /^\s{0,3}(`{3,}|~{3,})/.exec(lines[line])) == null ? void 0 : _c[1];
+              if (marker && !fence2) {
+                fence2 = marker;
+                continue;
+              }
+              if (fence2) {
+                if ((marker == null ? void 0 : marker[0]) === fence2[0] && marker.length >= fence2.length)
+                  fence2 = "";
+                continue;
+              }
+            }
+            if (!blocked.has(line) && lineIsValidTodo(lines[line]))
+              taskLines.add(line);
+          }
+          if (listItems) {
+            const cachedTasks = new Set(
+              listItems.filter((item) => item.task != null).map((item) => item.position.start.line)
+            );
+            for (const line of taskLines)
+              if (!cachedTasks.has(line)) taskLines.delete(line);
+          }
+          const selectBlock = (line) => {
+            if (taskLines.has(line))
+              return [...descendants(line)].filter((n) => taskLines.has(n));
+            const selected2 = [];
+            for (let n = line; n < lines.length; n++) {
+              if (n === line + 1 && !lines[n].trim()) continue;
+              if (!lines[n].trim()) break;
+              if (taskLines.has(n)) selected2.push(n);
+            }
+            return selected2;
+          };
+          const excluded = /* @__PURE__ */ new Set();
+          for (const tag of tags.filter(
+            (tag2) => matchesTodoTag(tag2.tag, excludedTags)
+          ))
+            for (const line of selectBlock(tag.position.start.line))
+              excluded.add(line);
+          const selected = /* @__PURE__ */ new Map();
+          const add = (line, tag) => {
+            var _a2, _b2;
+            if (excluded.has(line)) return;
+            const byTag = (_a2 = selected.get(line)) != null ? _a2 : /* @__PURE__ */ new Map();
+            byTag.set(
+              (_b2 = tag == null ? void 0 : tag.toLowerCase()) != null ? _b2 : "",
+              tag ? getTagMeta(tag.toLowerCase()) : void 0
+            );
+            selected.set(line, byTag);
+          };
+          for (const tag of matchingTags)
+            for (const line of !nestSubtasks && taskLines.has(tag.position.start.line) ? [tag.position.start.line] : selectBlock(tag.position.start.line))
+              add(line, tag.tag);
+          if (wildcard || matchedFrontmatter.length || showAllTodos) {
+            for (const line of taskLines) {
+              if (!selected.has(line)) {
+                if (matchedFrontmatter.length)
+                  for (const tag of matchedFrontmatter) add(line, tag);
+                else add(line);
+              }
+            }
+          }
+          const links = [...(_d = metadata == null ? void 0 : metadata.links) != null ? _d : [], ...(_e = metadata == null ? void 0 : metadata.embeds) != null ? _e : []];
+          const md = new MarkdownItCallable().use(commentPlugin).use(
+            linkPlugin(
+              mapLinkMeta(
+                links.map((link2) => ({
+                  filePath: link2.link,
+                  linkName: link2.displayText
+                }))
+              )
+            )
+          ).use(tagPlugin).use(highlightPlugin);
+          const todos = [];
+          let rendered = 0;
+          for (const [line, tagMetas] of selected) {
+            if (++rendered % 250 === 0)
+              yield new Promise((resolve) => setTimeout(resolve, 0));
+            const checked = todoLineIsChecked(lines[line]);
+            if (checked && !showChecked) continue;
+            let parentLine = relationMap.get(line);
+            const seen = /* @__PURE__ */ new Set();
+            while (parentLine != null && parentLine >= 0 && !taskLines.has(parentLine) && !seen.has(parentLine)) {
+              seen.add(parentLine);
+              parentLine = relationMap.get(parentLine);
+            }
+            const originalText = extractTextFromTodoLine(lines[line]);
+            for (const tagMeta of tagMetas.values())
+              todos.push({
+                checked,
+                filePath: file.path,
+                fileName: file.name,
+                fileLabel: getFileLabelFromName(file.name),
+                fileCreatedTs: file.stat.ctime,
+                fileModifiedTs: file.stat.mtime,
+                mainTag: tagMeta == null ? void 0 : tagMeta.main,
+                subTag: tagMeta == null ? void 0 : tagMeta.sub,
+                line,
+                parentLine: parentLine >= 0 && parentLine < line ? parentLine : void 0,
+                children: [],
+                spacesIndented: getIndentationSpacesFromTodoLine(lines[line]),
+                originalText,
+                sourceLine: lines[line],
+                filterTags: tagMeta ? [[tagMeta.main, tagMeta.sub].filter(Boolean).join("/")] : [...matchedFrontmatter, ...matchingTags.map((tag) => tag.tag)],
+                rawHTML: md.render(
+                  removeTagFromText(originalText, tagMeta == null ? void 0 : tagMeta.main)
+                )
+              });
+          }
+          results.set(
+            file,
+            todos.sort((a, b) => a.line - b.line)
+          );
+        } catch (error2) {
+          console.warn("Checklist: unable to read", file.path, error2);
+          onError(file);
+        }
+        if (next % 16 === 0) yield new Promise((resolve) => setTimeout(resolve, 0));
+      }
+    });
   }
-  return todosForUpdatedFiles;
+  yield Promise.all(
+    Array.from({ length: Math.min(4, files.length) }, () => worker())
+  );
+  return new Map(
+    files.filter((file) => results.has(file)).map((file) => [file, results.get(file)])
+  );
 });
-var toggleTodoItem = (item, app) => __async(void 0, null, function* () {
-  const file = getFileFromPath(app.vault, item.filePath);
-  if (!file)
-    return;
-  const currentFileContents = yield app.vault.read(file);
-  const currentFileLines = getAllLinesFromFile(currentFileContents);
-  if (!currentFileLines[item.line].includes(item.originalText))
-    return;
-  const newData = setTodoStatusAtLineTo(currentFileLines, item.line, !item.checked);
-  app.vault.modify(file, newData);
-  item.checked = !item.checked;
+var getTasksApi = (app) => {
+  var _a, _b, _c;
+  const api = (_c = (_b = (_a = app.plugins) == null ? void 0 : _a.plugins) == null ? void 0 : _b["obsidian-tasks-plugin"]) == null ? void 0 : _c.apiV1;
+  return typeof (api == null ? void 0 : api.executeToggleTaskDoneCommand) === "function" ? api : void 0;
+};
+var toggleTodoItem = (item, app, useTasksPlugin = false) => __async(null, null, function* () {
+  const file = app.vault.getAbstractFileByPath(item.filePath);
+  if (!file || file.extension !== "md") {
+    new import_obsidian4.Notice("This note is no longer available. Refresh Checklist.");
+    return false;
+  }
+  const tasksApi = useTasksPlugin ? getTasksApi(app) : void 0;
+  if (useTasksPlugin && !tasksApi) {
+    new import_obsidian4.Notice(
+      "Enable Tasks 7.2 or later, or turn off \u201CComplete with Tasks\u201D in Checklist settings."
+    );
+    return false;
+  }
+  let changed = false;
+  let replacement;
+  try {
+    yield app.vault.process(file, (content) => {
+      const lines = getAllLinesFromFile(content);
+      const current = lines[item.line];
+      if (current !== item.sourceLine || !lineIsValidTodo(current))
+        return content;
+      replacement = tasksApi ? tasksApi.executeToggleTaskDoneCommand(current, file.path) : setLineTo(current, !item.checked);
+      if (typeof replacement !== "string")
+        throw new Error("Tasks returned an invalid task");
+      changed = replacement !== current;
+      lines.splice(
+        item.line,
+        1,
+        ...replacement ? getAllLinesFromFile(replacement) : []
+      );
+      return lines.join(content.includes("\r\n") ? "\r\n" : "\n");
+    });
+    if (changed && !tasksApi) {
+      item.sourceLine = replacement;
+      item.checked = !item.checked;
+    } else if (!changed)
+      new import_obsidian4.Notice(
+        "This task changed in its note. Refresh Checklist and try again."
+      );
+  } catch (error2) {
+    changed = false;
+    new import_obsidian4.Notice(
+      "Could not save the task. Check that the note is available and try again."
+    );
+    console.error("Checklist: task update failed", error2);
+  }
+  return changed;
 });
-var findAllTodosInFile = (file) => {
-  var _a, _b;
-  if (!file.parseEntireFile)
-    return file.validTags.flatMap((tag) => findAllTodosFromTagBlock(file, tag));
-  if (!file.content)
-    return [];
-  const fileLines = getAllLinesFromFile(file.content);
-  const links = [];
-  if ((_a = file.cache) == null ? void 0 : _a.links) {
-    links.push(...file.cache.links);
-  }
-  if ((_b = file.cache) == null ? void 0 : _b.embeds) {
-    links.push(...file.cache.embeds);
-  }
-  const tagMeta = file.frontmatterTag ? getTagMeta(file.frontmatterTag) : void 0;
-  const todos = [];
-  for (let i = 0; i < fileLines.length; i++) {
-    const line = fileLines[i];
-    if (line.length === 0)
-      continue;
-    if (lineIsValidTodo(line)) {
-      todos.push(formTodo(line, file, links, i, tagMeta));
-    }
-  }
-  return todos;
-};
-var findAllTodosFromTagBlock = (file, tag) => {
-  var _a, _b;
-  const fileContents = file.content;
-  const links = [];
-  if ((_a = file.cache) == null ? void 0 : _a.links) {
-    links.push(...file.cache.links);
-  }
-  if ((_b = file.cache) == null ? void 0 : _b.embeds) {
-    links.push(...file.cache.embeds);
-  }
-  if (!fileContents)
-    return [];
-  const fileLines = getAllLinesFromFile(fileContents);
-  const tagMeta = getTagMeta(tag.tag);
-  const tagLine = fileLines[tag.position.start.line];
-  if (lineIsValidTodo(tagLine)) {
-    return [formTodo(tagLine, file, links, tag.position.start.line, tagMeta)];
-  }
-  const todos = [];
-  for (let i = tag.position.start.line; i < fileLines.length; i++) {
-    const line = fileLines[i];
-    if (i === tag.position.start.line + 1 && line.length === 0)
-      continue;
-    if (line.length === 0)
-      break;
-    if (lineIsValidTodo(line)) {
-      todos.push(formTodo(line, file, links, i, tagMeta));
-    }
-  }
-  return todos;
-};
-var formTodo = (line, file, links, lineNum, tagMeta) => {
-  const relevantLinks = links.filter((link) => link.position.start.line === lineNum).map((link) => ({ filePath: link.link, linkName: link.displayText }));
-  const linkMap = mapLinkMeta(relevantLinks);
-  const rawText = extractTextFromTodoLine(line);
-  const spacesIndented = getIndentationSpacesFromTodoLine(line);
-  const tagStripped = removeTagFromText(rawText, tagMeta == null ? void 0 : tagMeta.main);
-  const md = new import_markdown_it.default().use(commentPlugin).use(linkPlugin(linkMap)).use(tagPlugin).use(highlightPlugin);
-  return {
-    mainTag: tagMeta == null ? void 0 : tagMeta.main,
-    subTag: tagMeta == null ? void 0 : tagMeta.sub,
-    checked: todoLineIsChecked(line),
-    filePath: file.file.path,
-    fileName: file.file.name,
-    fileLabel: getFileLabelFromName(file.file.name),
-    fileCreatedTs: file.file.stat.ctime,
-    rawHTML: md.render(tagStripped),
-    line: lineNum,
-    spacesIndented,
-    fileInfo: file,
-    originalText: rawText
-  };
-};
-var setTodoStatusAtLineTo = (fileLines, line, setTo) => {
-  fileLines[line] = setLineTo(fileLines[line], setTo);
-  return combineFileLines(fileLines);
-};
 
-// src/svelte/CheckCircle.svelte
+// src/svelte/ChecklistItem.svelte
+var import_obsidian5 = require("obsidian");
+
+// src/svelte/Icon.svelte
 function add_css(target) {
-  append_styles(target, "svelte-1wagsqu", ".checkbox.svelte-1wagsqu{width:var(--checklist-checkboxSize);height:var(--checklist-checkboxSize);min-width:var(--checklist-checkboxSize);min-height:var(--checklist-checkboxSize);border-radius:50%;border:var(--checklist-checkboxBorder);padding:2px;position:relative}.checked.svelte-1wagsqu{background-color:var(--text-muted);width:var(--checklist-checkboxCheckedSize);height:var(--checklist-checkboxCheckedSize);border-radius:50%;position:absolute;top:calc(calc(var(--checklist-checkboxSize) - var(--checklist-checkboxCheckedSize)) / 4);left:calc(calc(var(--checklist-checkboxSize) - var(--checklist-checkboxCheckedSize)) / 4)}");
+  append_styles(target, "svelte-194vumi", ".checklist-icon.svelte-194vumi{width:16px;height:16px;min-width:16px;flex-shrink:0;display:block;pointer-events:none}.chevron.svelte-194vumi{transition:transform 120ms ease}.rotated.svelte-194vumi{transform:rotate(-90deg)}@media(prefers-reduced-motion: reduce){.chevron.svelte-194vumi{transition:none}}");
 }
-function create_fragment(ctx) {
-  let div1;
-  let div0;
+function create_if_block_9(ctx) {
+  let path;
   return {
     c() {
-      div1 = element("div");
-      div0 = element("div");
-      attr(div0, "class", "svelte-1wagsqu");
-      toggle_class(div0, "checked", ctx[0]);
-      attr(div1, "class", "checkbox svelte-1wagsqu");
+      path = svg_element("path");
+      attr(path, "d", "M14 3H5v18h14V8zm0 0v5h5");
     },
     m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, div0);
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_8(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "M5 12h14m-6-6 6 6-6 6");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_7(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "M5 4h14M5 20h14m-12-6 5-4 5 4");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_6(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "M5 4h14M5 20h14m-12-10 5 4 5-4");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_5(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "m6 6 12 12M6 18 18 6");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_4(ctx) {
+  let circle;
+  let path;
+  return {
+    c() {
+      circle = svg_element("circle");
+      path = svg_element("path");
+      attr(circle, "cx", "10.5");
+      attr(circle, "cy", "10.5");
+      attr(circle, "r", "6.5");
+      attr(path, "d", "m16 16 4 4");
+    },
+    m(target, anchor) {
+      insert(target, circle, anchor);
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(circle);
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_3(ctx) {
+  let path;
+  let circle0;
+  let circle1;
+  return {
+    c() {
+      path = svg_element("path");
+      circle0 = svg_element("circle");
+      circle1 = svg_element("circle");
+      attr(path, "d", "M4 7h9m4 0h3M4 17h3m4 0h9");
+      attr(circle0, "cx", "15");
+      attr(circle0, "cy", "7");
+      attr(circle0, "r", "2");
+      attr(circle1, "cx", "9");
+      attr(circle1, "cy", "17");
+      attr(circle1, "r", "2");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+      insert(target, circle0, anchor);
+      insert(target, circle1, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+      if (detaching) detach(circle0);
+      if (detaching) detach(circle1);
+    }
+  };
+}
+function create_if_block_2(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "m7 10 5 5 5-5");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block_1(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "m8 10 4 6 4-6z");
+      attr(path, "fill", "currentColor");
+      attr(path, "stroke", "none");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_if_block(ctx) {
+  let path;
+  return {
+    c() {
+      path = svg_element("path");
+      attr(path, "d", "M20 7v5h-5M4 17v-5h5M6.1 7a7 7 0 0 1 11.55-1L20 9M4 15l2.35 3A7 7 0 0 0 18 17");
+    },
+    m(target, anchor) {
+      insert(target, path, anchor);
+    },
+    d(detaching) {
+      if (detaching) detach(path);
+    }
+  };
+}
+function create_fragment(ctx) {
+  let svg;
+  function select_block_type(ctx2, dirty) {
+    if (
+      /*name*/
+      ctx2[0] === "refresh"
+    ) return create_if_block;
+    if (
+      /*name*/
+      ctx2[0] === "disclosure"
+    ) return create_if_block_1;
+    if (
+      /*name*/
+      ctx2[0] === "chevron"
+    ) return create_if_block_2;
+    if (
+      /*name*/
+      ctx2[0] === "settings"
+    ) return create_if_block_3;
+    if (
+      /*name*/
+      ctx2[0] === "search"
+    ) return create_if_block_4;
+    if (
+      /*name*/
+      ctx2[0] === "close"
+    ) return create_if_block_5;
+    if (
+      /*name*/
+      ctx2[0] === "collapse"
+    ) return create_if_block_6;
+    if (
+      /*name*/
+      ctx2[0] === "expand"
+    ) return create_if_block_7;
+    if (
+      /*name*/
+      ctx2[0] === "arrow-right"
+    ) return create_if_block_8;
+    if (
+      /*name*/
+      ctx2[0] === "file"
+    ) return create_if_block_9;
+  }
+  let current_block_type = select_block_type(ctx, -1);
+  let if_block = current_block_type && current_block_type(ctx);
+  return {
+    c() {
+      svg = svg_element("svg");
+      if (if_block) if_block.c();
+      attr(svg, "class", "checklist-icon svelte-194vumi");
+      attr(svg, "viewBox", "0 0 24 24");
+      attr(svg, "fill", "none");
+      attr(svg, "stroke", "currentColor");
+      attr(svg, "stroke-width", "1.5");
+      attr(svg, "stroke-linecap", "round");
+      attr(svg, "stroke-linejoin", "round");
+      attr(svg, "aria-hidden", "true");
+      toggle_class(
+        svg,
+        "chevron",
+        /*name*/
+        ctx[0] === "chevron" || /*name*/
+        ctx[0] === "disclosure"
+      );
+      toggle_class(
+        svg,
+        "rotated",
+        /*name*/
+        (ctx[0] === "chevron" || /*name*/
+        ctx[0] === "disclosure") && /*direction*/
+        ctx[1] === "right"
+      );
+    },
+    m(target, anchor) {
+      insert(target, svg, anchor);
+      if (if_block) if_block.m(svg, null);
     },
     p(ctx2, [dirty]) {
-      if (dirty & 1) {
-        toggle_class(div0, "checked", ctx2[0]);
+      if (current_block_type !== (current_block_type = select_block_type(ctx2, dirty))) {
+        if (if_block) if_block.d(1);
+        if_block = current_block_type && current_block_type(ctx2);
+        if (if_block) {
+          if_block.c();
+          if_block.m(svg, null);
+        }
+      }
+      if (dirty & /*name*/
+      1) {
+        toggle_class(
+          svg,
+          "chevron",
+          /*name*/
+          ctx2[0] === "chevron" || /*name*/
+          ctx2[0] === "disclosure"
+        );
+      }
+      if (dirty & /*name, direction*/
+      3) {
+        toggle_class(
+          svg,
+          "rotated",
+          /*name*/
+          (ctx2[0] === "chevron" || /*name*/
+          ctx2[0] === "disclosure") && /*direction*/
+          ctx2[1] === "right"
+        );
       }
     },
     i: noop,
     o: noop,
     d(detaching) {
-      if (detaching)
-        detach(div1);
+      if (detaching) detach(svg);
+      if (if_block) {
+        if_block.d();
+      }
     }
   };
 }
 function instance($$self, $$props, $$invalidate) {
-  let { checked = false } = $$props;
+  let { name } = $$props;
+  let { direction = "down" } = $$props;
   $$self.$$set = ($$props2) => {
-    if ("checked" in $$props2)
-      $$invalidate(0, checked = $$props2.checked);
+    if ("name" in $$props2) $$invalidate(0, name = $$props2.name);
+    if ("direction" in $$props2) $$invalidate(1, direction = $$props2.direction);
   };
-  return [checked];
+  return [name, direction];
 }
-var CheckCircle = class extends SvelteComponent {
+var Icon = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance, create_fragment, safe_not_equal, { checked: 0 }, add_css);
+    init(this, options, instance, create_fragment, safe_not_equal, { name: 0, direction: 1 }, add_css);
   }
 };
-var CheckCircle_default = CheckCircle;
+var Icon_default = Icon;
 
 // src/svelte/ChecklistItem.svelte
-function add_css2(target) {
-  append_styles(target, "svelte-sx5ktw", "li.svelte-sx5ktw.svelte-sx5ktw{display:flex;align-items:center;background-color:var(--checklist-listItemBackground);border-radius:var(--checklist-listItemBorderRadius);margin:var(--checklist-listItemMargin);cursor:pointer;transition:background-color 100ms ease-in-out}li.svelte-sx5ktw.svelte-sx5ktw:hover{background-color:var(--checklist-listItemBackground--hover)}.toggle.svelte-sx5ktw.svelte-sx5ktw{padding:var(--checklist-togglePadding);background:transparent;box-shadow:var(--checklist-listItemBoxShadow);flex-shrink:1;width:initial}.content.svelte-sx5ktw.svelte-sx5ktw{padding:var(--checklist-contentPadding);flex:1;font-size:var(--checklist-contentFontSize)}.compact.svelte-sx5ktw.svelte-sx5ktw{bottom:var(--checklist-listItemMargin--compact)}.compact.svelte-sx5ktw>.content.svelte-sx5ktw{padding:var(--checklist-contentPadding--compact)}.compact.svelte-sx5ktw>.toggle.svelte-sx5ktw{padding:var(--checklist-togglePadding--compact)}.toggle.svelte-sx5ktw.svelte-sx5ktw:hover{opacity:0.8}");
+function get_each_context(ctx, list2, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[18] = list2[i];
+  return child_ctx;
 }
-function create_fragment2(ctx) {
-  let li;
+function create_if_block_32(ctx) {
   let button;
-  let checkcircle;
-  let t;
-  let div;
-  let li_class_value;
+  let icon;
+  let button_aria_label_value;
+  let t0;
+  let span;
+  let t1_value = (
+    /*item*/
+    ctx[0].children.length + ""
+  );
+  let t1;
   let current;
   let mounted;
   let dispose;
-  checkcircle = new CheckCircle_default({
-    props: { checked: ctx[0].checked }
+  icon = new Icon_default({
+    props: {
+      name: "disclosure",
+      direction: (
+        /*expanded*/
+        ctx[9] ? "down" : "right"
+      )
+    }
   });
   return {
     c() {
-      li = element("li");
       button = element("button");
-      create_component(checkcircle.$$.fragment);
-      t = space();
-      div = element("div");
-      attr(button, "class", "toggle svelte-sx5ktw");
-      attr(div, "class", "content svelte-sx5ktw");
-      attr(li, "class", li_class_value = null_to_empty(`${ctx[1]}`) + " svelte-sx5ktw");
+      create_component(icon.$$.fragment);
+      t0 = space();
+      span = element("span");
+      t1 = text(t1_value);
+      attr(button, "class", "checklist-children-toggle");
+      attr(
+        button,
+        "aria-expanded",
+        /*expanded*/
+        ctx[9]
+      );
+      attr(button, "aria-label", button_aria_label_value = `${/*expanded*/
+      ctx[9] ? "Collapse" : "Expand"} ${/*item*/
+      ctx[0].children.length} ${/*item*/
+      ctx[0].children.length === 1 ? "subtask" : "subtasks"}`);
+      attr(span, "class", "checklist-group-count checklist-children-count");
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      mount_component(icon, button, null);
+      insert(target, t0, anchor);
+      insert(target, span, anchor);
+      append(span, t1);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler*/
+          ctx[16]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      const icon_changes = {};
+      if (dirty & /*expanded*/
+      512) icon_changes.direction = /*expanded*/
+      ctx2[9] ? "down" : "right";
+      icon.$set(icon_changes);
+      if (!current || dirty & /*expanded*/
+      512) {
+        attr(
+          button,
+          "aria-expanded",
+          /*expanded*/
+          ctx2[9]
+        );
+      }
+      if (!current || dirty & /*expanded, item*/
+      513 && button_aria_label_value !== (button_aria_label_value = `${/*expanded*/
+      ctx2[9] ? "Collapse" : "Expand"} ${/*item*/
+      ctx2[0].children.length} ${/*item*/
+      ctx2[0].children.length === 1 ? "subtask" : "subtasks"}`)) {
+        attr(button, "aria-label", button_aria_label_value);
+      }
+      if ((!current || dirty & /*item*/
+      1) && t1_value !== (t1_value = /*item*/
+      ctx2[0].children.length + "")) set_data(t1, t1_value);
+    },
+    i(local) {
+      if (current) return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(button);
+      destroy_component(icon);
+      if (detaching) detach(t0);
+      if (detaching) detach(span);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block_22(ctx) {
+  let button;
+  let icon;
+  let span;
+  let t_value = (
+    /*item*/
+    ctx[0].filePath.replace(/\.md$/, "") + ""
+  );
+  let t;
+  let button_title_value;
+  let current;
+  let mounted;
+  let dispose;
+  icon = new Icon_default({ props: { name: "file" } });
+  return {
+    c() {
+      button = element("button");
+      create_component(icon.$$.fragment);
+      span = element("span");
+      t = text(t_value);
+      attr(button, "class", "checklist-source");
+      attr(button, "title", button_title_value = /*item*/
+      ctx[0].filePath);
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      mount_component(icon, button, null);
+      append(button, span);
+      append(span, t);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler_1*/
+          ctx[17]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if ((!current || dirty & /*item*/
+      1) && t_value !== (t_value = /*item*/
+      ctx2[0].filePath.replace(/\.md$/, "") + "")) set_data(t, t_value);
+      if (!current || dirty & /*item*/
+      1 && button_title_value !== (button_title_value = /*item*/
+      ctx2[0].filePath)) {
+        attr(button, "title", button_title_value);
+      }
+    },
+    i(local) {
+      if (current) return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(button);
+      destroy_component(icon);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block2(ctx) {
+  let if_block_anchor;
+  let current;
+  let if_block = (
+    /*expanded*/
+    ctx[9] && create_if_block_12(ctx)
+  );
+  return {
+    c() {
+      if (if_block) if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block) if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (
+        /*expanded*/
+        ctx2[9]
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+          if (dirty & /*expanded*/
+          512) {
+            transition_in(if_block, 1);
+          }
+        } else {
+          if_block = create_if_block_12(ctx2);
+          if_block.c();
+          transition_in(if_block, 1);
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        group_outros();
+        transition_out(if_block, 1, 1, () => {
+          if_block = null;
+        });
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current) return;
+      transition_in(if_block);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      current = false;
+    },
+    d(detaching) {
+      if (if_block) if_block.d(detaching);
+      if (detaching) detach(if_block_anchor);
+    }
+  };
+}
+function create_if_block_12(ctx) {
+  let ul;
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
+  let current;
+  let each_value = (
+    /*item*/
+    ctx[0].children
+  );
+  const get_key = (ctx2) => (
+    /*child*/
+    ctx2[18].filePath + ":" + /*child*/
+    ctx2[18].line
+  );
+  for (let i = 0; i < each_value.length; i += 1) {
+    let child_ctx = get_each_context(ctx, each_value, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+  }
+  return {
+    c() {
+      ul = element("ul");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(ul, "class", "checklist-items checklist-children");
+    },
+    m(target, anchor) {
+      insert(target, ul, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(ul, null);
+        }
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*item, app, onToggleTask, onTagClick, useTasksPlugin*/
+      61) {
+        each_value = /*item*/
+        ctx2[0].children;
+        group_outros();
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, ul, outro_and_destroy_block, create_each_block, null, get_each_context);
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current) return;
+      for (let i = 0; i < each_value.length; i += 1) {
+        transition_in(each_blocks[i]);
+      }
+      current = true;
+    },
+    o(local) {
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        transition_out(each_blocks[i]);
+      }
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(ul);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d();
+      }
+    }
+  };
+}
+function create_each_block(key_1, ctx) {
+  let first;
+  let checklistitem;
+  let current;
+  checklistitem = new ChecklistItem({
+    props: {
+      item: (
+        /*child*/
+        ctx[18]
+      ),
+      app: (
+        /*app*/
+        ctx[4]
+      ),
+      onToggleTask: (
+        /*onToggleTask*/
+        ctx[5]
+      ),
+      onTagClick: (
+        /*onTagClick*/
+        ctx[3]
+      ),
+      useTasksPlugin: (
+        /*useTasksPlugin*/
+        ctx[2]
+      )
+    }
+  });
+  return {
+    key: key_1,
+    first: null,
+    c() {
+      first = empty();
+      create_component(checklistitem.$$.fragment);
+      this.first = first;
+    },
+    m(target, anchor) {
+      insert(target, first, anchor);
+      mount_component(checklistitem, target, anchor);
+      current = true;
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      const checklistitem_changes = {};
+      if (dirty & /*item*/
+      1) checklistitem_changes.item = /*child*/
+      ctx[18];
+      if (dirty & /*app*/
+      16) checklistitem_changes.app = /*app*/
+      ctx[4];
+      if (dirty & /*onToggleTask*/
+      32) checklistitem_changes.onToggleTask = /*onToggleTask*/
+      ctx[5];
+      if (dirty & /*onTagClick*/
+      8) checklistitem_changes.onTagClick = /*onTagClick*/
+      ctx[3];
+      if (dirty & /*useTasksPlugin*/
+      4) checklistitem_changes.useTasksPlugin = /*useTasksPlugin*/
+      ctx[2];
+      checklistitem.$set(checklistitem_changes);
+    },
+    i(local) {
+      if (current) return;
+      transition_in(checklistitem.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(checklistitem.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(first);
+      destroy_component(checklistitem, detaching);
+    }
+  };
+}
+function create_fragment2(ctx) {
+  let li;
+  let div3;
+  let label;
+  let span;
+  let t0_value = (
+    /*item*/
+    (ctx[0].checked ? "Mark incomplete: " : "Complete: ") + /*item*/
+    ctx[0].originalText
+  );
+  let t0;
+  let t1;
+  let input;
+  let input_checked_value;
+  let t2;
+  let div2;
+  let div1;
+  let div0;
+  let t3;
+  let t4;
+  let completionProgress_action;
+  let t5;
+  let current;
+  let mounted;
+  let dispose;
+  let if_block0 = (
+    /*item*/
+    ctx[0].children.length && create_if_block_32(ctx)
+  );
+  let if_block1 = (
+    /*showSource*/
+    ctx[1] && create_if_block_22(ctx)
+  );
+  let if_block2 = (
+    /*item*/
+    ctx[0].children.length && create_if_block2(ctx)
+  );
+  return {
+    c() {
+      li = element("li");
+      div3 = element("div");
+      label = element("label");
+      span = element("span");
+      t0 = text(t0_value);
+      t1 = space();
+      input = element("input");
+      t2 = space();
+      div2 = element("div");
+      div1 = element("div");
+      div0 = element("div");
+      t3 = space();
+      if (if_block0) if_block0.c();
+      t4 = space();
+      if (if_block1) if_block1.c();
+      t5 = space();
+      if (if_block2) if_block2.c();
+      attr(span, "class", "checklist-sr-only");
+      attr(input, "type", "checkbox");
+      attr(input, "class", "task-list-item-checkbox");
+      input.checked = input_checked_value = /*item*/
+      ctx[0].checked;
+      input.disabled = /*busy*/
+      ctx[8];
+      attr(label, "class", "checklist-task-toggle");
+      attr(div0, "class", "checklist-task-content");
+      attr(div0, "role", "link");
+      attr(div0, "tabindex", "0");
+      attr(div1, "class", "checklist-task-line");
+      toggle_class(
+        div1,
+        "has-children",
+        /*item*/
+        ctx[0].children.length > 0
+      );
+      attr(div2, "class", "checklist-task-body");
+      attr(div3, "class", "checklist-task-row");
+      toggle_class(div3, "is-completing", !!/*item*/
+      ctx[0].completionExpiresAt);
+      attr(li, "class", "checklist-task");
+      toggle_class(
+        li,
+        "is-completed",
+        /*item*/
+        ctx[0].checked
+      );
     },
     m(target, anchor) {
       insert(target, li, anchor);
-      append(li, button);
-      mount_component(checkcircle, button, null);
-      append(li, t);
-      append(li, div);
-      ctx[7](div);
+      append(li, div3);
+      append(div3, label);
+      append(label, span);
+      append(span, t0);
+      append(label, t1);
+      append(label, input);
+      ctx[13](input);
+      append(div3, t2);
+      append(div3, div2);
+      append(div2, div1);
+      append(div1, div0);
+      ctx[14](div0);
+      append(div1, t3);
+      if (if_block0) if_block0.m(div1, null);
+      append(div2, t4);
+      if (if_block1) if_block1.m(div2, null);
+      append(li, t5);
+      if (if_block2) if_block2.m(li, null);
       current = true;
       if (!mounted) {
         dispose = [
-          listen(button, "click", ctx[6]),
-          listen(div, "click", ctx[8])
+          listen(
+            input,
+            "change",
+            /*toggle*/
+            ctx[11]
+          ),
+          listen(
+            div0,
+            "click",
+            /*handleClick*/
+            ctx[12]
+          ),
+          listen(
+            div0,
+            "keydown",
+            /*keydown_handler*/
+            ctx[15]
+          ),
+          action_destroyer(completionProgress_action = /*completionProgress*/
+          ctx[10].call(
+            null,
+            div3,
+            /*item*/
+            ctx[0].completionExpiresAt
+          ))
         ];
         mounted = true;
       }
     },
     p(ctx2, [dirty]) {
-      const checkcircle_changes = {};
-      if (dirty & 1)
-        checkcircle_changes.checked = ctx2[0].checked;
-      checkcircle.$set(checkcircle_changes);
-      if (!current || dirty & 2 && li_class_value !== (li_class_value = null_to_empty(`${ctx2[1]}`) + " svelte-sx5ktw")) {
-        attr(li, "class", li_class_value);
+      if ((!current || dirty & /*item*/
+      1) && t0_value !== (t0_value = /*item*/
+      (ctx2[0].checked ? "Mark incomplete: " : "Complete: ") + /*item*/
+      ctx2[0].originalText)) set_data(t0, t0_value);
+      if (!current || dirty & /*item*/
+      1 && input_checked_value !== (input_checked_value = /*item*/
+      ctx2[0].checked)) {
+        input.checked = input_checked_value;
+      }
+      if (!current || dirty & /*busy*/
+      256) {
+        input.disabled = /*busy*/
+        ctx2[8];
+      }
+      if (
+        /*item*/
+        ctx2[0].children.length
+      ) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+          if (dirty & /*item*/
+          1) {
+            transition_in(if_block0, 1);
+          }
+        } else {
+          if_block0 = create_if_block_32(ctx2);
+          if_block0.c();
+          transition_in(if_block0, 1);
+          if_block0.m(div1, null);
+        }
+      } else if (if_block0) {
+        group_outros();
+        transition_out(if_block0, 1, 1, () => {
+          if_block0 = null;
+        });
+        check_outros();
+      }
+      if (!current || dirty & /*item*/
+      1) {
+        toggle_class(
+          div1,
+          "has-children",
+          /*item*/
+          ctx2[0].children.length > 0
+        );
+      }
+      if (
+        /*showSource*/
+        ctx2[1]
+      ) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+          if (dirty & /*showSource*/
+          2) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block_22(ctx2);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(div2, null);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+      if (completionProgress_action && is_function(completionProgress_action.update) && dirty & /*item*/
+      1) completionProgress_action.update.call(
+        null,
+        /*item*/
+        ctx2[0].completionExpiresAt
+      );
+      if (!current || dirty & /*item*/
+      1) {
+        toggle_class(div3, "is-completing", !!/*item*/
+        ctx2[0].completionExpiresAt);
+      }
+      if (
+        /*item*/
+        ctx2[0].children.length
+      ) {
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
+          if (dirty & /*item*/
+          1) {
+            transition_in(if_block2, 1);
+          }
+        } else {
+          if_block2 = create_if_block2(ctx2);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(li, null);
+        }
+      } else if (if_block2) {
+        group_outros();
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
+        });
+        check_outros();
+      }
+      if (!current || dirty & /*item*/
+      1) {
+        toggle_class(
+          li,
+          "is-completed",
+          /*item*/
+          ctx2[0].checked
+        );
       }
     },
     i(local) {
-      if (current)
-        return;
-      transition_in(checkcircle.$$.fragment, local);
+      if (current) return;
+      transition_in(if_block0);
+      transition_in(if_block1);
+      transition_in(if_block2);
       current = true;
     },
     o(local) {
-      transition_out(checkcircle.$$.fragment, local);
+      transition_out(if_block0);
+      transition_out(if_block1);
+      transition_out(if_block2);
       current = false;
     },
     d(detaching) {
-      if (detaching)
-        detach(li);
-      destroy_component(checkcircle);
-      ctx[7](null);
+      if (detaching) detach(li);
+      ctx[13](null);
+      ctx[14](null);
+      if (if_block0) if_block0.d();
+      if (if_block1) if_block1.d();
+      if (if_block2) if_block2.d();
       mounted = false;
       run_all(dispose);
     }
@@ -6695,318 +8637,316 @@ function create_fragment2(ctx) {
 }
 function instance2($$self, $$props, $$invalidate) {
   let { item } = $$props;
-  let { lookAndFeel } = $$props;
+  let { showSource = false } = $$props;
+  let { useTasksPlugin = false } = $$props;
+  let { onTagClick } = $$props;
   let { app } = $$props;
+  let { onToggleTask } = $$props;
+  let checkbox;
   let contentDiv;
-  const toggleItem = (item2) => __async(this, null, function* () {
-    toggleTodoItem(item2, app);
-  });
-  const handleClick = (ev, item2) => {
-    const target = ev.target;
-    if (target.tagName === "A") {
-      ev.stopPropagation();
-      if (target.dataset.type === "link") {
-        navToFile(app, target.dataset.filepath, ev, item2 === null || item2 === void 0 ? void 0 : item2.line);
-      } else if (target.dataset.type === "tag") {
+  let busy = false;
+  let expanded = true;
+  function completionProgress(node, deadline) {
+    let previous;
+    const update2 = (value) => {
+      if (value === previous) return;
+      previous = value;
+      node.style.setProperty("--completion-duration", `${TASK_COMPLETION_DELAY_MS}ms`);
+      node.style.setProperty("--completion-delay", `${value ? Math.min(0, value - Date.now() - TASK_COMPLETION_DELAY_MS) : 0}ms`);
+    };
+    update2(deadline);
+    return { update: update2 };
+  }
+  function toggle() {
+    return __async(this, null, function* () {
+      if (busy) return;
+      $$invalidate(8, busy = true);
+      try {
+        yield onToggleTask(item);
+      } finally {
+        $$invalidate(8, busy = false);
+        $$invalidate(7, checkbox.checked = item.checked, checkbox);
       }
-    } else {
-      navToFile(app, item2.filePath, ev, item2 === null || item2 === void 0 ? void 0 : item2.line);
-    }
-  };
-  const click_handler = (ev) => {
-    toggleItem(item);
-    ev.stopPropagation();
-  };
-  function div_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"](() => {
-      contentDiv = $$value;
-      $$invalidate(2, contentDiv), $$invalidate(0, item);
     });
   }
-  const click_handler_1 = (ev) => handleClick(ev, item);
+  const handleClick = (event) => {
+    const target = event.target.closest("a");
+    if (target) {
+      event.stopPropagation();
+      if (target.dataset.type === "tag") {
+        event.preventDefault();
+        onTagClick(target.textContent);
+        return;
+      }
+      if (target.dataset.type === "link") {
+        event.preventDefault();
+        app.workspace.openLinkText(target.dataset.filepath, item.filePath, !!import_obsidian5.Keymap.isModEvent(event));
+      }
+      return;
+    }
+    navToFile(app, item.filePath, event, item.line);
+  };
+  function input_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      checkbox = $$value;
+      $$invalidate(7, checkbox);
+    });
+  }
+  function div0_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      contentDiv = $$value;
+      $$invalidate(6, contentDiv), $$invalidate(0, item);
+    });
+  }
+  const keydown_handler = (event) => {
+    if (event.key === "Enter" && event.target === event.currentTarget) {
+      event.preventDefault();
+      navToFile(app, item.filePath, event, item.line);
+    }
+  };
+  const click_handler = () => $$invalidate(9, expanded = !expanded);
+  const click_handler_1 = (event) => navToFile(app, item.filePath, event, item.line);
   $$self.$$set = ($$props2) => {
-    if ("item" in $$props2)
-      $$invalidate(0, item = $$props2.item);
-    if ("lookAndFeel" in $$props2)
-      $$invalidate(1, lookAndFeel = $$props2.lookAndFeel);
-    if ("app" in $$props2)
-      $$invalidate(5, app = $$props2.app);
+    if ("item" in $$props2) $$invalidate(0, item = $$props2.item);
+    if ("showSource" in $$props2) $$invalidate(1, showSource = $$props2.showSource);
+    if ("useTasksPlugin" in $$props2) $$invalidate(2, useTasksPlugin = $$props2.useTasksPlugin);
+    if ("onTagClick" in $$props2) $$invalidate(3, onTagClick = $$props2.onTagClick);
+    if ("app" in $$props2) $$invalidate(4, app = $$props2.app);
+    if ("onToggleTask" in $$props2) $$invalidate(5, onToggleTask = $$props2.onToggleTask);
   };
   $$self.$$.update = () => {
-    if ($$self.$$.dirty & 5) {
-      $: {
-        if (contentDiv)
-          $$invalidate(2, contentDiv.innerHTML = item.rawHTML, contentDiv);
-      }
+    if ($$self.$$.dirty & /*contentDiv, item*/
+    65) {
+      $: if (contentDiv) $$invalidate(6, contentDiv.innerHTML = item.rawHTML, contentDiv);
     }
   };
   return [
     item,
-    lookAndFeel,
-    contentDiv,
-    toggleItem,
-    handleClick,
+    showSource,
+    useTasksPlugin,
+    onTagClick,
     app,
+    onToggleTask,
+    contentDiv,
+    checkbox,
+    busy,
+    expanded,
+    completionProgress,
+    toggle,
+    handleClick,
+    input_binding,
+    div0_binding,
+    keydown_handler,
     click_handler,
-    div_binding,
     click_handler_1
   ];
 }
 var ChecklistItem = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance2, create_fragment2, safe_not_equal, { item: 0, lookAndFeel: 1, app: 5 }, add_css2);
+    init(this, options, instance2, create_fragment2, safe_not_equal, {
+      item: 0,
+      showSource: 1,
+      useTasksPlugin: 2,
+      onTagClick: 3,
+      app: 4,
+      onToggleTask: 5
+    });
   }
 };
 var ChecklistItem_default = ChecklistItem;
 
-// src/svelte/Icon.svelte
-function add_css3(target) {
-  append_styles(target, "svelte-9fjno5", ".svg.svelte-9fjno5{width:var(--checklist-iconSize);height:var(--checklist-iconSize);transition:transform 150ms ease;cursor:pointer}.up.svelte-9fjno5{transform:rotate(180deg)}.down.svelte-9fjno5{transform:rotate(0deg)}.left.svelte-9fjno5{transform:rotate(90deg)}.right.svelte-9fjno5{transform:rotate(270deg)}.button.svelte-9fjno5{fill:var(--checklist-iconFill--accent);transition:fill 150ms ease}.button.svelte-9fjno5:hover{fill:var(--checklist-textColor)}.static.svelte-9fjno5{fill:var(--checklist-iconFill)}");
-}
-function create_if_block_1(ctx) {
-  let svg;
-  let path;
-  let svg_class_value;
-  let mounted;
-  let dispose;
-  return {
-    c() {
-      svg = svg_element("svg");
-      path = svg_element("path");
-      attr(path, "d", "M44.4,4c-1,0-1.8,0.7-2,1.7l-1.9,11.9c-2.3,0.7-4.6,1.6-6.7,2.7l-9.8-7c-0.8-0.6-1.9-0.5-2.6,0.2l-7.8,7.8 c-0.7,0.7-0.8,1.8-0.2,2.6l6.9,9.9c-1.2,2.1-2.1,4.4-2.8,6.7l-11.9,2c-1,0.2-1.7,1-1.7,2v11c0,1,0.7,1.8,1.6,2l11.9,2.1 c0.7,2.4,1.6,4.6,2.8,6.7l-7,9.8c-0.6,0.8-0.5,1.9,0.2,2.6l7.8,7.8c0.7,0.7,1.8,0.8,2.6,0.2l9.9-6.9c2.1,1.2,4.3,2.1,6.7,2.8 l2,11.9c0.2,1,1,1.7,2,1.7h11c1,0,1.8-0.7,2-1.7l2.1-12c2.3-0.7,4.6-1.6,6.7-2.8l10,7c0.8,0.6,1.9,0.5,2.6-0.2l7.8-7.8 c0.7-0.7,0.8-1.8,0.2-2.6l-7.1-9.9c1.1-2.1,2.1-4.3,2.7-6.6l12-2.1c1-0.2,1.7-1,1.7-2v-11c0-1-0.7-1.8-1.7-2l-12-2 c-0.7-2.3-1.6-4.5-2.7-6.6l7-10c0.6-0.8,0.5-1.9-0.2-2.6l-7.8-7.8c-0.7-0.7-1.8-0.8-2.6-0.2l-9.8,7.1c-2.1-1.2-4.3-2.1-6.7-2.8 l-2.1-12c-0.2-1-1-1.7-2-1.7L44.4,4z M46.1,8h7.6l2,11.4c0.1,0.8,0.7,1.4,1.5,1.6c2.9,0.7,5.7,1.9,8.2,3.4 c0.7,0.4,1.6,0.4,2.2-0.1l9.4-6.7l5.4,5.4l-6.7,9.5c-0.5,0.6-0.5,1.5-0.1,2.2c1.5,2.5,2.6,5.2,3.4,8.1c0.2,0.8,0.8,1.4,1.6,1.5 L92,46.1v7.6l-11.4,2c-0.8,0.1-1.4,0.7-1.6,1.5c-0.7,2.9-1.9,5.6-3.4,8.1c-0.4,0.7-0.4,1.6,0.1,2.2l6.8,9.4l-5.4,5.4l-9.5-6.7 c-0.7-0.5-1.5-0.5-2.2-0.1c-2.5,1.5-5.2,2.7-8.2,3.4c-0.8,0.2-1.3,0.8-1.5,1.6l-2,11.4h-7.6l-1.9-11.3c-0.1-0.8-0.7-1.4-1.5-1.6 c-2.9-0.7-5.7-1.9-8.2-3.4c-0.7-0.4-1.5-0.4-2.2,0.1l-9.4,6.6l-5.4-5.4l6.6-9.3c0.5-0.7,0.5-1.5,0.1-2.2c-1.5-2.5-2.7-5.3-3.4-8.2 c-0.2-0.8-0.8-1.3-1.6-1.5L8,53.7v-7.6l11.3-1.9c0.8-0.1,1.4-0.7,1.6-1.5c0.7-2.9,1.9-5.7,3.4-8.2c0.4-0.7,0.4-1.5-0.1-2.2 l-6.6-9.4l5.4-5.4l9.3,6.7c0.6,0.5,1.5,0.5,2.2,0.1c2.5-1.5,5.3-2.7,8.2-3.4c0.8-0.2,1.4-0.8,1.5-1.6L46.1,8z M50,34 c-8.8,0-16,7.2-16,16s7.2,16,16,16s16-7.2,16-16S58.8,34,50,34z M50,38c6.7,0,12,5.3,12,12s-5.3,12-12,12s-12-5.3-12-12 S43.3,38,50,38z");
-      attr(svg, "viewBox", "0 0 100 100");
-      attr(svg, "width", "18");
-      attr(svg, "height", "18");
-      attr(svg, "class", svg_class_value = null_to_empty(`svg settings ${ctx[2]}`) + " svelte-9fjno5");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-      append(svg, path);
-      if (!mounted) {
-        dispose = listen(svg, "click", ctx[3]);
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (dirty & 4 && svg_class_value !== (svg_class_value = null_to_empty(`svg settings ${ctx2[2]}`) + " svelte-9fjno5")) {
-        attr(svg, "class", svg_class_value);
-      }
-    },
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-      mounted = false;
-      dispose();
-    }
-  };
-}
-function create_if_block(ctx) {
-  let svg;
-  let path;
-  let svg_class_value;
-  let mounted;
-  let dispose;
-  return {
-    c() {
-      svg = svg_element("svg");
-      path = svg_element("path");
-      attr(path, "d", "M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z");
-      attr(svg, "focusable", "false");
-      attr(svg, "xmlns", "http://www.w3.org/2000/svg");
-      attr(svg, "viewBox", "0 0 256 512");
-      attr(svg, "class", svg_class_value = null_to_empty(`svg ${ctx[1]} ${ctx[2]}`) + " svelte-9fjno5");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-      append(svg, path);
-      if (!mounted) {
-        dispose = listen(svg, "click", ctx[3]);
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (dirty & 6 && svg_class_value !== (svg_class_value = null_to_empty(`svg ${ctx2[1]} ${ctx2[2]}`) + " svelte-9fjno5")) {
-        attr(svg, "class", svg_class_value);
-      }
-    },
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-      mounted = false;
-      dispose();
-    }
-  };
-}
-function create_fragment3(ctx) {
-  let if_block_anchor;
-  function select_block_type(ctx2, dirty) {
-    if (ctx2[0] === "chevron")
-      return create_if_block;
-    if (ctx2[0] === "settings")
-      return create_if_block_1;
-  }
-  let current_block_type = select_block_type(ctx, -1);
-  let if_block = current_block_type && current_block_type(ctx);
-  return {
-    c() {
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
-    },
-    p(ctx2, [dirty]) {
-      if (current_block_type === (current_block_type = select_block_type(ctx2, dirty)) && if_block) {
-        if_block.p(ctx2, dirty);
-      } else {
-        if (if_block)
-          if_block.d(1);
-        if_block = current_block_type && current_block_type(ctx2);
-        if (if_block) {
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (if_block) {
-        if_block.d(detaching);
-      }
-      if (detaching)
-        detach(if_block_anchor);
-    }
-  };
-}
-function instance3($$self, $$props, $$invalidate) {
-  let { name } = $$props;
-  let { direction = "down" } = $$props;
-  let { style = "static" } = $$props;
-  const onClickDispatcher = createEventDispatcher();
-  const onClick = (ev) => {
-    onClickDispatcher("click", ev);
-  };
-  $$self.$$set = ($$props2) => {
-    if ("name" in $$props2)
-      $$invalidate(0, name = $$props2.name);
-    if ("direction" in $$props2)
-      $$invalidate(1, direction = $$props2.direction);
-    if ("style" in $$props2)
-      $$invalidate(2, style = $$props2.style);
-  };
-  return [name, direction, style, onClick];
-}
-var Icon = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance3, create_fragment3, safe_not_equal, { name: 0, direction: 1, style: 2 }, add_css3);
-  }
-};
-var Icon_default = Icon;
-
 // src/svelte/ChecklistGroup.svelte
-function add_css4(target) {
-  append_styles(target, "svelte-1tzpg3c", ".page.svelte-1tzpg3c{margin:var(--checklist-pageMargin);color:var(--checklist-textColor);transition:opacity 150ms ease-in-out;cursor:pointer}.file-link.svelte-1tzpg3c:hover{opacity:0.8}header.svelte-1tzpg3c{font-weight:var(--checklist-headerFontWeight);font-size:var(--checklist-headerFontSize);margin:var(--checklist-headerMargin);display:flex;gap:var(--checklist-headerGap);align-items:center}.space.svelte-1tzpg3c{flex:1}button.svelte-1tzpg3c,.count.svelte-1tzpg3c,.title.svelte-1tzpg3c{flex-shrink:1}.count.svelte-1tzpg3c{padding:var(--checklist-countPadding);background:var(--checklist-countBackground);border-radius:var(--checklist-countBorderRadius);font-size:var(--checklist-countFontSize)}.title.svelte-1tzpg3c{min-width:0;overflow:hidden;text-overflow:ellipsis;display:flex}button.svelte-1tzpg3c{display:flex;padding:var(--checklist-buttonPadding);background:transparent;box-shadow:var(--checklist-buttonBoxShadow)}.tag-base.svelte-1tzpg3c{color:var(--checklist-tagBaseColor)}.tag-sub.svelte-1tzpg3c{color:var(--checklist-tagSubColor)}ul.svelte-1tzpg3c{list-style:none;padding:0;margin:0;padding-inline-start:initial !important}.group.svelte-1tzpg3c{margin-bottom:var(--checklist-groupMargin)}.collapse.svelte-1tzpg3c{width:initial}");
-}
-function get_each_context(ctx, list, i) {
+function get_each_context_1(ctx, list2, i) {
   const child_ctx = ctx.slice();
-  child_ctx[7] = list[i];
+  child_ctx[15] = list2[i];
   return child_ctx;
 }
-function create_else_block(ctx) {
-  let span;
-  return {
-    c() {
-      span = element("span");
-      span.textContent = "All Tags";
-      attr(span, "class", "tag-base svelte-1tzpg3c");
-    },
-    m(target, anchor) {
-      insert(target, span, anchor);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching)
-        detach(span);
-    }
-  };
+function get_each_context2(ctx, list2, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[12] = list2[i];
+  return child_ctx;
 }
-function create_if_block_2(ctx) {
+function create_if_block_23(ctx) {
+  let header;
+  let button;
   let span0;
-  let t1;
+  let t0;
   let span1;
-  let t2_value = `${ctx[0].mainTag}${ctx[0].subTags != null ? "/" : ""}`;
+  let icon;
+  let button_aria_expanded_value;
+  let button_title_value;
+  let t1;
   let t2;
-  let span1_class_value;
-  let t3;
-  let if_block_anchor;
-  let if_block = ctx[0].subTags != null && create_if_block_3(ctx);
+  let current;
+  let mounted;
+  let dispose;
+  function select_block_type(ctx2, dirty) {
+    if (
+      /*group*/
+      ctx2[0].type === "tag" && /*group*/
+      ctx2[0].mainTag
+    ) return create_if_block_52;
+    return create_else_block_1;
+  }
+  let current_block_type = select_block_type(ctx, -1);
+  let if_block0 = current_block_type(ctx);
+  icon = new Icon_default({
+    props: {
+      name: "disclosure",
+      direction: (
+        /*isCollapsed*/
+        ctx[9] ? "right" : "down"
+      )
+    }
+  });
+  let if_block1 = (
+    /*group*/
+    ctx[0].path && create_if_block_42(ctx)
+  );
+  let if_block2 = (
+    /*showGroupCounts*/
+    ctx[2] && create_if_block_33(ctx)
+  );
   return {
     c() {
+      header = element("header");
+      button = element("button");
       span0 = element("span");
-      span0.textContent = "#";
-      t1 = space();
+      if_block0.c();
+      t0 = space();
       span1 = element("span");
-      t2 = text(t2_value);
-      t3 = space();
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-      attr(span0, "class", "tag-base svelte-1tzpg3c");
-      attr(span1, "class", span1_class_value = null_to_empty(ctx[0].subTags == null ? "tag-sub" : "tag-base") + " svelte-1tzpg3c");
+      create_component(icon.$$.fragment);
+      t1 = space();
+      if (if_block1) if_block1.c();
+      t2 = space();
+      if (if_block2) if_block2.c();
+      attr(span0, "class", "checklist-group-title");
+      attr(span1, "class", "checklist-group-marker");
+      attr(button, "class", "checklist-group-toggle");
+      attr(button, "aria-expanded", button_aria_expanded_value = !/*isCollapsed*/
+      ctx[9]);
+      attr(button, "title", button_title_value = /*isCollapsed*/
+      (ctx[9] ? "Expand " : "Collapse ") + /*group*/
+      ctx[0].label);
+      attr(header, "class", "checklist-group-header");
     },
     m(target, anchor) {
-      insert(target, span0, anchor);
-      insert(target, t1, anchor);
-      insert(target, span1, anchor);
-      append(span1, t2);
-      insert(target, t3, anchor);
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
+      insert(target, header, anchor);
+      append(header, button);
+      append(button, span0);
+      if_block0.m(span0, null);
+      append(button, t0);
+      append(button, span1);
+      mount_component(icon, span1, null);
+      append(header, t1);
+      if (if_block1) if_block1.m(header, null);
+      append(header, t2);
+      if (if_block2) if_block2.m(header, null);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler*/
+          ctx[10]
+        );
+        mounted = true;
+      }
     },
     p(ctx2, dirty) {
-      if (dirty & 1 && t2_value !== (t2_value = `${ctx2[0].mainTag}${ctx2[0].subTags != null ? "/" : ""}`))
-        set_data(t2, t2_value);
-      if (dirty & 1 && span1_class_value !== (span1_class_value = null_to_empty(ctx2[0].subTags == null ? "tag-sub" : "tag-base") + " svelte-1tzpg3c")) {
-        attr(span1, "class", span1_class_value);
-      }
-      if (ctx2[0].subTags != null) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block_3(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+      if (current_block_type === (current_block_type = select_block_type(ctx2, dirty)) && if_block0) {
+        if_block0.p(ctx2, dirty);
+      } else {
+        if_block0.d(1);
+        if_block0 = current_block_type(ctx2);
+        if (if_block0) {
+          if_block0.c();
+          if_block0.m(span0, null);
         }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
+      }
+      const icon_changes = {};
+      if (dirty & /*isCollapsed*/
+      512) icon_changes.direction = /*isCollapsed*/
+      ctx2[9] ? "right" : "down";
+      icon.$set(icon_changes);
+      if (!current || dirty & /*isCollapsed*/
+      512 && button_aria_expanded_value !== (button_aria_expanded_value = !/*isCollapsed*/
+      ctx2[9])) {
+        attr(button, "aria-expanded", button_aria_expanded_value);
+      }
+      if (!current || dirty & /*isCollapsed, group*/
+      513 && button_title_value !== (button_title_value = /*isCollapsed*/
+      (ctx2[9] ? "Expand " : "Collapse ") + /*group*/
+      ctx2[0].label)) {
+        attr(button, "title", button_title_value);
+      }
+      if (
+        /*group*/
+        ctx2[0].path
+      ) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+          if (dirty & /*group*/
+          1) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block_42(ctx2);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(header, t2);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*showGroupCounts*/
+        ctx2[2]
+      ) {
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
+        } else {
+          if_block2 = create_if_block_33(ctx2);
+          if_block2.c();
+          if_block2.m(header, null);
+        }
+      } else if (if_block2) {
+        if_block2.d(1);
+        if_block2 = null;
       }
     },
+    i(local) {
+      if (current) return;
+      transition_in(icon.$$.fragment, local);
+      transition_in(if_block1);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      transition_out(if_block1);
+      current = false;
+    },
     d(detaching) {
-      if (detaching)
-        detach(span0);
-      if (detaching)
-        detach(t1);
-      if (detaching)
-        detach(span1);
-      if (detaching)
-        detach(t3);
-      if (if_block)
-        if_block.d(detaching);
-      if (detaching)
-        detach(if_block_anchor);
+      if (detaching) detach(header);
+      if_block0.d();
+      destroy_component(icon);
+      if (if_block1) if_block1.d();
+      if (if_block2) if_block2.d();
+      mounted = false;
+      dispose();
     }
   };
 }
-function create_if_block_12(ctx) {
-  let t_value = ctx[0].pageName + "";
+function create_else_block_1(ctx) {
+  let t_value = (
+    /*group*/
+    ctx[0].label + ""
+  );
   let t;
   return {
     c() {
@@ -7016,141 +8956,460 @@ function create_if_block_12(ctx) {
       insert(target, t, anchor);
     },
     p(ctx2, dirty) {
-      if (dirty & 1 && t_value !== (t_value = ctx2[0].pageName + ""))
-        set_data(t, t_value);
+      if (dirty & /*group*/
+      1 && t_value !== (t_value = /*group*/
+      ctx2[0].label + "")) set_data(t, t_value);
     },
     d(detaching) {
-      if (detaching)
-        detach(t);
+      if (detaching) detach(t);
     }
   };
 }
-function create_if_block_3(ctx) {
+function create_if_block_52(ctx) {
   let span;
-  let t_value = ctx[0].subTags + "";
+  let t0;
+  let t1_value = (
+    /*group*/
+    ctx[0].mainTag + ""
+  );
+  let t1;
+  let if_block_anchor;
+  let if_block = (
+    /*group*/
+    ctx[0].subTags && create_if_block_62(ctx)
+  );
+  return {
+    c() {
+      span = element("span");
+      t0 = text("#");
+      t1 = text(t1_value);
+      if (if_block) if_block.c();
+      if_block_anchor = empty();
+      attr(span, "class", "checklist-tag-base");
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+      append(span, t0);
+      append(span, t1);
+      if (if_block) if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*group*/
+      1 && t1_value !== (t1_value = /*group*/
+      ctx2[0].mainTag + "")) set_data(t1, t1_value);
+      if (
+        /*group*/
+        ctx2[0].subTags
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block_62(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    d(detaching) {
+      if (detaching) detach(span);
+      if (if_block) if_block.d(detaching);
+      if (detaching) detach(if_block_anchor);
+    }
+  };
+}
+function create_if_block_62(ctx) {
+  let span;
+  let t0;
+  let t1_value = (
+    /*group*/
+    ctx[0].subTags + ""
+  );
+  let t1;
+  return {
+    c() {
+      span = element("span");
+      t0 = text("/");
+      t1 = text(t1_value);
+      attr(span, "class", "checklist-tag-sub");
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+      append(span, t0);
+      append(span, t1);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*group*/
+      1 && t1_value !== (t1_value = /*group*/
+      ctx2[0].subTags + "")) set_data(t1, t1_value);
+    },
+    d(detaching) {
+      if (detaching) detach(span);
+    }
+  };
+}
+function create_if_block_42(ctx) {
+  let button;
+  let icon;
+  let button_title_value;
+  let button_aria_label_value;
+  let current;
+  let mounted;
+  let dispose;
+  icon = new Icon_default({ props: { name: "arrow-right" } });
+  return {
+    c() {
+      button = element("button");
+      create_component(icon.$$.fragment);
+      attr(button, "class", "checklist-icon-button checklist-open-note");
+      attr(button, "title", button_title_value = "Open " + /*group*/
+      ctx[0].path);
+      attr(button, "aria-label", button_aria_label_value = "Open " + /*group*/
+      ctx[0].path);
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      mount_component(icon, button, null);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler_1*/
+          ctx[11]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (!current || dirty & /*group*/
+      1 && button_title_value !== (button_title_value = "Open " + /*group*/
+      ctx2[0].path)) {
+        attr(button, "title", button_title_value);
+      }
+      if (!current || dirty & /*group*/
+      1 && button_aria_label_value !== (button_aria_label_value = "Open " + /*group*/
+      ctx2[0].path)) {
+        attr(button, "aria-label", button_aria_label_value);
+      }
+    },
+    i(local) {
+      if (current) return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(button);
+      destroy_component(icon);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block_33(ctx) {
+  let span;
+  let t_value = countTodoTree(
+    /*group*/
+    ctx[0].todos
+  ) + "";
   let t;
   return {
     c() {
       span = element("span");
       t = text(t_value);
-      attr(span, "class", "tag-sub svelte-1tzpg3c");
+      attr(span, "class", "checklist-group-count");
     },
     m(target, anchor) {
       insert(target, span, anchor);
       append(span, t);
     },
     p(ctx2, dirty) {
-      if (dirty & 1 && t_value !== (t_value = ctx2[0].subTags + ""))
-        set_data(t, t_value);
+      if (dirty & /*group*/
+      1 && t_value !== (t_value = countTodoTree(
+        /*group*/
+        ctx2[0].todos
+      ) + "")) set_data(t, t_value);
     },
     d(detaching) {
-      if (detaching)
-        detach(span);
+      if (detaching) detach(span);
     }
   };
 }
-function create_if_block2(ctx) {
-  let ul;
+function create_if_block3(ctx) {
+  let current_block_type_index;
+  let if_block;
+  let if_block_anchor;
   let current;
-  let each_value = ctx[0].todos;
-  let each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+  const if_block_creators = [create_if_block_13, create_else_block];
+  const if_blocks = [];
+  function select_block_type_1(ctx2, dirty) {
+    if (
+      /*group*/
+      ctx2[0].groups
+    ) return 0;
+    return 1;
   }
-  const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
-    each_blocks[i] = null;
-  });
+  current_block_type_index = select_block_type_1(ctx, -1);
+  if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  return {
+    c() {
+      if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if_blocks[current_block_type_index].m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      let previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type_1(ctx2, dirty);
+      if (current_block_type_index === previous_block_index) {
+        if_blocks[current_block_type_index].p(ctx2, dirty);
+      } else {
+        group_outros();
+        transition_out(if_blocks[previous_block_index], 1, 1, () => {
+          if_blocks[previous_block_index] = null;
+        });
+        check_outros();
+        if_block = if_blocks[current_block_type_index];
+        if (!if_block) {
+          if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+          if_block.c();
+        } else {
+          if_block.p(ctx2, dirty);
+        }
+        transition_in(if_block, 1);
+        if_block.m(if_block_anchor.parentNode, if_block_anchor);
+      }
+    },
+    i(local) {
+      if (current) return;
+      transition_in(if_block);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      current = false;
+    },
+    d(detaching) {
+      if_blocks[current_block_type_index].d(detaching);
+      if (detaching) detach(if_block_anchor);
+    }
+  };
+}
+function create_else_block(ctx) {
+  let ul;
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
+  let current;
+  let each_value_1 = (
+    /*group*/
+    ctx[0].todos
+  );
+  const get_key = (ctx2) => (
+    /*item*/
+    ctx2[15].filePath + ":" + /*item*/
+    ctx2[15].line
+  );
+  for (let i = 0; i < each_value_1.length; i += 1) {
+    let child_ctx = get_each_context_1(ctx, each_value_1, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
+  }
   return {
     c() {
       ul = element("ul");
       for (let i = 0; i < each_blocks.length; i += 1) {
         each_blocks[i].c();
       }
-      attr(ul, "class", "svelte-1tzpg3c");
+      attr(ul, "class", "checklist-items");
     },
     m(target, anchor) {
       insert(target, ul, anchor);
       for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(ul, null);
+        if (each_blocks[i]) {
+          each_blocks[i].m(ul, null);
+        }
       }
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 13) {
-        each_value = ctx2[0].todos;
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(ul, null);
-          }
-        }
+      if (dirty & /*group, app, useTasksPlugin, onToggleTask, onTagClick, showSource*/
+      377) {
+        each_value_1 = /*group*/
+        ctx2[0].todos;
         group_outros();
-        for (i = each_value.length; i < each_blocks.length; i += 1) {
-          out(i);
-        }
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value_1, each_1_lookup, ul, outro_and_destroy_block, create_each_block_1, null, get_each_context_1);
         check_outros();
       }
     },
     i(local) {
-      if (current)
-        return;
-      for (let i = 0; i < each_value.length; i += 1) {
+      if (current) return;
+      for (let i = 0; i < each_value_1.length; i += 1) {
         transition_in(each_blocks[i]);
       }
       current = true;
     },
     o(local) {
-      each_blocks = each_blocks.filter(Boolean);
       for (let i = 0; i < each_blocks.length; i += 1) {
         transition_out(each_blocks[i]);
       }
       current = false;
     },
     d(detaching) {
-      if (detaching)
-        detach(ul);
-      destroy_each(each_blocks, detaching);
+      if (detaching) detach(ul);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d();
+      }
     }
   };
 }
-function create_each_block(ctx) {
+function create_if_block_13(ctx) {
+  let div;
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
+  let current;
+  let each_value = (
+    /*group*/
+    ctx[0].groups
+  );
+  const get_key = (ctx2) => (
+    /*child*/
+    ctx2[12].id
+  );
+  for (let i = 0; i < each_value.length; i += 1) {
+    let child_ctx = get_each_context2(ctx, each_value, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block2(key, child_ctx));
+  }
+  return {
+    c() {
+      div = element("div");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(div, "class", "checklist-subgroups");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(div, null);
+        }
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*group, app, showGroupCounts, showSource, collapsed, onToggle, onToggleTask, onTagClick, useTasksPlugin*/
+      511) {
+        each_value = /*group*/
+        ctx2[0].groups;
+        group_outros();
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, div, outro_and_destroy_block, create_each_block2, null, get_each_context2);
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current) return;
+      for (let i = 0; i < each_value.length; i += 1) {
+        transition_in(each_blocks[i]);
+      }
+      current = true;
+    },
+    o(local) {
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        transition_out(each_blocks[i]);
+      }
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(div);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d();
+      }
+    }
+  };
+}
+function create_each_block_1(key_1, ctx) {
+  let first;
   let checklistitem;
   let current;
   checklistitem = new ChecklistItem_default({
     props: {
-      item: ctx[7],
-      lookAndFeel: ctx[2],
-      app: ctx[3]
+      item: (
+        /*item*/
+        ctx[15]
+      ),
+      app: (
+        /*app*/
+        ctx[6]
+      ),
+      useTasksPlugin: (
+        /*useTasksPlugin*/
+        ctx[4]
+      ),
+      onToggleTask: (
+        /*onToggleTask*/
+        ctx[8]
+      ),
+      onTagClick: (
+        /*onTagClick*/
+        ctx[5]
+      ),
+      showSource: (
+        /*showSource*/
+        ctx[3] && /*group*/
+        ctx[0].type !== "page"
+      )
     }
   });
   return {
+    key: key_1,
+    first: null,
     c() {
+      first = empty();
       create_component(checklistitem.$$.fragment);
+      this.first = first;
     },
     m(target, anchor) {
+      insert(target, first, anchor);
       mount_component(checklistitem, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
       const checklistitem_changes = {};
-      if (dirty & 1)
-        checklistitem_changes.item = ctx2[7];
-      if (dirty & 4)
-        checklistitem_changes.lookAndFeel = ctx2[2];
-      if (dirty & 8)
-        checklistitem_changes.app = ctx2[3];
+      if (dirty & /*group*/
+      1) checklistitem_changes.item = /*item*/
+      ctx[15];
+      if (dirty & /*app*/
+      64) checklistitem_changes.app = /*app*/
+      ctx[6];
+      if (dirty & /*useTasksPlugin*/
+      16) checklistitem_changes.useTasksPlugin = /*useTasksPlugin*/
+      ctx[4];
+      if (dirty & /*onToggleTask*/
+      256) checklistitem_changes.onToggleTask = /*onToggleTask*/
+      ctx[8];
+      if (dirty & /*onTagClick*/
+      32) checklistitem_changes.onTagClick = /*onTagClick*/
+      ctx[5];
+      if (dirty & /*showSource, group*/
+      9) checklistitem_changes.showSource = /*showSource*/
+      ctx[3] && /*group*/
+      ctx[0].type !== "page";
       checklistitem.$set(checklistitem_changes);
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(checklistitem.$$.fragment, local);
       current = true;
     },
@@ -7159,123 +9418,186 @@ function create_each_block(ctx) {
       current = false;
     },
     d(detaching) {
+      if (detaching) detach(first);
       destroy_component(checklistitem, detaching);
     }
   };
 }
-function create_fragment4(ctx) {
-  let section;
-  let header;
-  let div0;
-  let t0;
-  let div1;
-  let t1;
-  let div2;
-  let t2_value = ctx[0].todos.length + "";
-  let t2;
-  let t3;
-  let button;
-  let icon;
-  let header_class_value;
-  let t4;
-  let section_class_value;
+function create_each_block2(key_1, ctx) {
+  let first;
+  let checklistgroup;
   let current;
-  let mounted;
-  let dispose;
-  function select_block_type(ctx2, dirty) {
-    if (ctx2[0].type === "page")
-      return create_if_block_12;
-    if (ctx2[0].mainTag)
-      return create_if_block_2;
-    return create_else_block;
-  }
-  let current_block_type = select_block_type(ctx, -1);
-  let if_block0 = current_block_type(ctx);
-  icon = new Icon_default({
+  checklistgroup = new ChecklistGroup({
     props: {
-      name: "chevron",
-      direction: ctx[1] ? "left" : "down"
+      group: (
+        /*child*/
+        ctx[12]
+      ),
+      app: (
+        /*app*/
+        ctx[6]
+      ),
+      showGroupCounts: (
+        /*showGroupCounts*/
+        ctx[2]
+      ),
+      showSource: (
+        /*showSource*/
+        ctx[3]
+      ),
+      collapsed: (
+        /*collapsed*/
+        ctx[1]
+      ),
+      onToggle: (
+        /*onToggle*/
+        ctx[7]
+      ),
+      onToggleTask: (
+        /*onToggleTask*/
+        ctx[8]
+      ),
+      onTagClick: (
+        /*onTagClick*/
+        ctx[5]
+      ),
+      useTasksPlugin: (
+        /*useTasksPlugin*/
+        ctx[4]
+      )
     }
   });
-  let if_block1 = !ctx[1] && create_if_block2(ctx);
+  return {
+    key: key_1,
+    first: null,
+    c() {
+      first = empty();
+      create_component(checklistgroup.$$.fragment);
+      this.first = first;
+    },
+    m(target, anchor) {
+      insert(target, first, anchor);
+      mount_component(checklistgroup, target, anchor);
+      current = true;
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      const checklistgroup_changes = {};
+      if (dirty & /*group*/
+      1) checklistgroup_changes.group = /*child*/
+      ctx[12];
+      if (dirty & /*app*/
+      64) checklistgroup_changes.app = /*app*/
+      ctx[6];
+      if (dirty & /*showGroupCounts*/
+      4) checklistgroup_changes.showGroupCounts = /*showGroupCounts*/
+      ctx[2];
+      if (dirty & /*showSource*/
+      8) checklistgroup_changes.showSource = /*showSource*/
+      ctx[3];
+      if (dirty & /*collapsed*/
+      2) checklistgroup_changes.collapsed = /*collapsed*/
+      ctx[1];
+      if (dirty & /*onToggle*/
+      128) checklistgroup_changes.onToggle = /*onToggle*/
+      ctx[7];
+      if (dirty & /*onToggleTask*/
+      256) checklistgroup_changes.onToggleTask = /*onToggleTask*/
+      ctx[8];
+      if (dirty & /*onTagClick*/
+      32) checklistgroup_changes.onTagClick = /*onTagClick*/
+      ctx[5];
+      if (dirty & /*useTasksPlugin*/
+      16) checklistgroup_changes.useTasksPlugin = /*useTasksPlugin*/
+      ctx[4];
+      checklistgroup.$set(checklistgroup_changes);
+    },
+    i(local) {
+      if (current) return;
+      transition_in(checklistgroup.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(checklistgroup.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(first);
+      destroy_component(checklistgroup, detaching);
+    }
+  };
+}
+function create_fragment3(ctx) {
+  let section;
+  let t;
+  let section_class_value;
+  let current;
+  let if_block0 = (
+    /*group*/
+    ctx[0].type !== "none" && create_if_block_23(ctx)
+  );
+  let if_block1 = (
+    /*group*/
+    (ctx[0].type === "none" || !/*isCollapsed*/
+    ctx[9]) && create_if_block3(ctx)
+  );
   return {
     c() {
+      var _a;
       section = element("section");
-      header = element("header");
-      div0 = element("div");
-      if_block0.c();
-      t0 = space();
-      div1 = element("div");
-      t1 = space();
-      div2 = element("div");
-      t2 = text(t2_value);
-      t3 = space();
-      button = element("button");
-      create_component(icon.$$.fragment);
-      t4 = space();
-      if (if_block1)
-        if_block1.c();
-      attr(div0, "class", "title svelte-1tzpg3c");
-      attr(div1, "class", "space svelte-1tzpg3c");
-      attr(div2, "class", "count svelte-1tzpg3c");
-      attr(button, "class", "collapse svelte-1tzpg3c");
-      attr(button, "title", "Toggle Group");
-      attr(header, "class", header_class_value = null_to_empty(`group-header ${ctx[0].type}`) + " svelte-1tzpg3c");
-      attr(section, "class", section_class_value = "group " + ctx[0].className + " svelte-1tzpg3c");
+      if (if_block0) if_block0.c();
+      t = space();
+      if (if_block1) if_block1.c();
+      attr(section, "class", section_class_value = "checklist-group " + /*group*/
+      ctx[0].className);
+      toggle_class(section, "has-subgroups", !!/*group*/
+      ((_a = ctx[0].groups) == null ? void 0 : _a.length));
     },
     m(target, anchor) {
       insert(target, section, anchor);
-      append(section, header);
-      append(header, div0);
-      if_block0.m(div0, null);
-      append(header, t0);
-      append(header, div1);
-      append(header, t1);
-      append(header, div2);
-      append(div2, t2);
-      append(header, t3);
-      append(header, button);
-      mount_component(icon, button, null);
-      append(section, t4);
-      if (if_block1)
-        if_block1.m(section, null);
+      if (if_block0) if_block0.m(section, null);
+      append(section, t);
+      if (if_block1) if_block1.m(section, null);
       current = true;
-      if (!mounted) {
-        dispose = [
-          listen(div0, "click", ctx[5]),
-          listen(button, "click", ctx[6])
-        ];
-        mounted = true;
-      }
     },
     p(ctx2, [dirty]) {
-      if (current_block_type === (current_block_type = select_block_type(ctx2, dirty)) && if_block0) {
-        if_block0.p(ctx2, dirty);
-      } else {
-        if_block0.d(1);
-        if_block0 = current_block_type(ctx2);
+      var _a;
+      if (
+        /*group*/
+        ctx2[0].type !== "none"
+      ) {
         if (if_block0) {
+          if_block0.p(ctx2, dirty);
+          if (dirty & /*group*/
+          1) {
+            transition_in(if_block0, 1);
+          }
+        } else {
+          if_block0 = create_if_block_23(ctx2);
           if_block0.c();
-          if_block0.m(div0, null);
+          transition_in(if_block0, 1);
+          if_block0.m(section, t);
         }
+      } else if (if_block0) {
+        group_outros();
+        transition_out(if_block0, 1, 1, () => {
+          if_block0 = null;
+        });
+        check_outros();
       }
-      if ((!current || dirty & 1) && t2_value !== (t2_value = ctx2[0].todos.length + ""))
-        set_data(t2, t2_value);
-      const icon_changes = {};
-      if (dirty & 2)
-        icon_changes.direction = ctx2[1] ? "left" : "down";
-      icon.$set(icon_changes);
-      if (!current || dirty & 1 && header_class_value !== (header_class_value = null_to_empty(`group-header ${ctx2[0].type}`) + " svelte-1tzpg3c")) {
-        attr(header, "class", header_class_value);
-      }
-      if (!ctx2[1]) {
+      if (
+        /*group*/
+        ctx2[0].type === "none" || !/*isCollapsed*/
+        ctx2[9]
+      ) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
-          if (dirty & 2) {
+          if (dirty & /*group, isCollapsed*/
+          513) {
             transition_in(if_block1, 1);
           }
         } else {
-          if_block1 = create_if_block2(ctx2);
+          if_block1 = create_if_block3(ctx2);
           if_block1.c();
           transition_in(if_block1, 1);
           if_block1.m(section, null);
@@ -7287,69 +9609,94 @@ function create_fragment4(ctx) {
         });
         check_outros();
       }
-      if (!current || dirty & 1 && section_class_value !== (section_class_value = "group " + ctx2[0].className + " svelte-1tzpg3c")) {
+      if (!current || dirty & /*group*/
+      1 && section_class_value !== (section_class_value = "checklist-group " + /*group*/
+      ctx2[0].className)) {
         attr(section, "class", section_class_value);
+      }
+      if (!current || dirty & /*group, group*/
+      1) {
+        toggle_class(section, "has-subgroups", !!/*group*/
+        ((_a = ctx2[0].groups) == null ? void 0 : _a.length));
       }
     },
     i(local) {
-      if (current)
-        return;
-      transition_in(icon.$$.fragment, local);
+      if (current) return;
+      transition_in(if_block0);
       transition_in(if_block1);
       current = true;
     },
     o(local) {
-      transition_out(icon.$$.fragment, local);
+      transition_out(if_block0);
       transition_out(if_block1);
       current = false;
     },
     d(detaching) {
-      if (detaching)
-        detach(section);
-      if_block0.d();
-      destroy_component(icon);
-      if (if_block1)
-        if_block1.d();
-      mounted = false;
-      run_all(dispose);
+      if (detaching) detach(section);
+      if (if_block0) if_block0.d();
+      if (if_block1) if_block1.d();
     }
   };
 }
-function instance4($$self, $$props, $$invalidate) {
+function instance3($$self, $$props, $$invalidate) {
+  let isCollapsed;
   let { group } = $$props;
-  let { isCollapsed } = $$props;
-  let { lookAndFeel } = $$props;
+  let { collapsed } = $$props;
+  let { showGroupCounts } = $$props;
+  let { showSource } = $$props;
+  let { useTasksPlugin = false } = $$props;
+  let { onTagClick } = $$props;
   let { app } = $$props;
   let { onToggle } = $$props;
-  function clickTitle(ev) {
-    if (group.type === "page")
-      navToFile(app, group.id, ev);
-  }
+  let { onToggleTask } = $$props;
   const click_handler = () => onToggle(group.id);
+  const click_handler_1 = (event) => navToFile(app, group.path, event);
   $$self.$$set = ($$props2) => {
-    if ("group" in $$props2)
-      $$invalidate(0, group = $$props2.group);
-    if ("isCollapsed" in $$props2)
-      $$invalidate(1, isCollapsed = $$props2.isCollapsed);
-    if ("lookAndFeel" in $$props2)
-      $$invalidate(2, lookAndFeel = $$props2.lookAndFeel);
-    if ("app" in $$props2)
-      $$invalidate(3, app = $$props2.app);
-    if ("onToggle" in $$props2)
-      $$invalidate(4, onToggle = $$props2.onToggle);
+    if ("group" in $$props2) $$invalidate(0, group = $$props2.group);
+    if ("collapsed" in $$props2) $$invalidate(1, collapsed = $$props2.collapsed);
+    if ("showGroupCounts" in $$props2) $$invalidate(2, showGroupCounts = $$props2.showGroupCounts);
+    if ("showSource" in $$props2) $$invalidate(3, showSource = $$props2.showSource);
+    if ("useTasksPlugin" in $$props2) $$invalidate(4, useTasksPlugin = $$props2.useTasksPlugin);
+    if ("onTagClick" in $$props2) $$invalidate(5, onTagClick = $$props2.onTagClick);
+    if ("app" in $$props2) $$invalidate(6, app = $$props2.app);
+    if ("onToggle" in $$props2) $$invalidate(7, onToggle = $$props2.onToggle);
+    if ("onToggleTask" in $$props2) $$invalidate(8, onToggleTask = $$props2.onToggleTask);
   };
-  return [group, isCollapsed, lookAndFeel, app, onToggle, clickTitle, click_handler];
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*collapsed, group*/
+    3) {
+      $: $$invalidate(9, isCollapsed = collapsed.includes(group.id));
+    }
+  };
+  return [
+    group,
+    collapsed,
+    showGroupCounts,
+    showSource,
+    useTasksPlugin,
+    onTagClick,
+    app,
+    onToggle,
+    onToggleTask,
+    isCollapsed,
+    click_handler,
+    click_handler_1
+  ];
 }
 var ChecklistGroup = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance4, create_fragment4, safe_not_equal, {
+    init(this, options, instance3, create_fragment3, safe_not_equal, {
       group: 0,
-      isCollapsed: 1,
-      lookAndFeel: 2,
-      app: 3,
-      onToggle: 4
-    }, add_css4);
+      collapsed: 1,
+      showGroupCounts: 2,
+      showSource: 3,
+      useTasksPlugin: 4,
+      onTagClick: 5,
+      app: 6,
+      onToggle: 7,
+      onToggleTask: 8
+    });
   }
 };
 var ChecklistGroup_default = ChecklistGroup;
@@ -7370,252 +9717,213 @@ function clickOutside(node) {
 }
 
 // src/svelte/Header.svelte
-function add_css5(target) {
-  append_styles(target, "svelte-rdace4", ".empty.svelte-rdace4.svelte-rdace4{color:var(--text-faint);text-align:center;margin-top:32px;font-style:italic}.container.svelte-rdace4.svelte-rdace4{height:32px;margin-bottom:12px;display:flex;flex-direction:row;gap:12px;align-items:center}.search.svelte-rdace4.svelte-rdace4{flex:1;background:var(--checklist-searchBackground);border:none;font-size:var(--checklist-contentFontSize);border-radius:var(--checklist-listItemBorderRadius);padding:0px 8px;color:var(--checklist-textColor);height:100%}.search.svelte-rdace4.svelte-rdace4:focus{box-shadow:0 0 0 2px var(--checklist-accentColor)}.settings-container.svelte-rdace4.svelte-rdace4{flex-shrink:1;display:flex;align-items:center;position:relative}.popover.svelte-rdace4.svelte-rdace4{position:absolute;top:32px;right:0px;width:300px;padding:12px;border-radius:var(--checklist-listItemBorderRadius);background:var(--checklist-searchBackground);box-shadow:0 2px 4px var(--background-modifier-cover);z-index:10}.section-title.svelte-rdace4.svelte-rdace4{font-weight:bold;margin-bottom:8px}section.svelte-rdace4.svelte-rdace4{margin-bottom:24px}.checkbox-item.svelte-rdace4 label.svelte-rdace4{gap:4px;display:flex;align-items:center;height:28px}.hash.svelte-rdace4.svelte-rdace4{color:var(--checklist-tagBaseColor)}");
-}
-function get_each_context2(ctx, list, i) {
+function get_each_context3(ctx, list2, i) {
   const child_ctx = ctx.slice();
-  child_ctx[12] = list[i];
+  child_ctx[59] = list2[i];
   return child_ctx;
 }
-function create_if_block3(ctx) {
-  let div1;
-  let section;
-  let div0;
-  let t1;
-  let t2;
-  let clickOutside_action;
-  let mounted;
-  let dispose;
-  let each_value = ctx[0];
-  let each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block2(get_each_context2(ctx, each_value, i));
-  }
-  let if_block = ctx[0].length === 0 && create_if_block_13(ctx);
+function get_each_context_12(ctx, list2, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[62] = list2[i][0];
+  child_ctx[63] = list2[i][1];
+  return child_ctx;
+}
+function get_each_context_2(ctx, list2, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[62] = list2[i][0];
+  child_ctx[63] = list2[i][1];
+  return child_ctx;
+}
+function create_if_block_72(ctx) {
+  let span;
+  let t;
+  let span_aria_label_value;
   return {
     c() {
-      div1 = element("div");
-      section = element("section");
-      div0 = element("div");
-      div0.textContent = "Show Tags?";
-      t1 = space();
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].c();
-      }
-      t2 = space();
-      if (if_block)
-        if_block.c();
-      attr(div0, "class", "section-title svelte-rdace4");
-      attr(section, "class", "svelte-rdace4");
-      attr(div1, "class", "popover svelte-rdace4");
+      span = element("span");
+      t = text(
+        /*taskCount*/
+        ctx[9]
+      );
+      attr(span, "class", "checklist-total");
+      attr(span, "aria-label", span_aria_label_value = `${/*taskCount*/
+      ctx[9]} tasks`);
     },
     m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, section);
-      append(section, div0);
-      append(section, t1);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(section, null);
+      insert(target, span, anchor);
+      append(span, t);
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*taskCount*/
+      512) set_data(
+        t,
+        /*taskCount*/
+        ctx2[9]
+      );
+      if (dirty[0] & /*taskCount*/
+      512 && span_aria_label_value !== (span_aria_label_value = `${/*taskCount*/
+      ctx2[9]} tasks`)) {
+        attr(span, "aria-label", span_aria_label_value);
       }
-      append(section, t2);
-      if (if_block)
-        if_block.m(section, null);
+    },
+    d(detaching) {
+      if (detaching) detach(span);
+    }
+  };
+}
+function create_if_block_53(ctx) {
+  let div;
+  let icon;
+  let t0;
+  let input;
+  let t1;
+  let current;
+  let mounted;
+  let dispose;
+  icon = new Icon_default({ props: { name: "search" } });
+  let if_block = (
+    /*search*/
+    ctx[0] && create_if_block_63(ctx)
+  );
+  return {
+    c() {
+      div = element("div");
+      create_component(icon.$$.fragment);
+      t0 = space();
+      input = element("input");
+      t1 = space();
+      if (if_block) if_block.c();
+      attr(input, "class", "checklist-search");
+      attr(input, "type", "text");
+      attr(input, "placeholder", "Search tasks, notes, tags\u2026");
+      attr(input, "aria-label", "Search tasks");
+      attr(div, "class", "checklist-search-wrap");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      mount_component(icon, div, null);
+      append(div, t0);
+      append(div, input);
+      ctx[40](input);
+      set_input_value(
+        input,
+        /*search*/
+        ctx[0]
+      );
+      append(div, t1);
+      if (if_block) if_block.m(div, null);
+      current = true;
       if (!mounted) {
         dispose = [
-          action_destroyer(clickOutside_action = clickOutside.call(null, div1)),
-          listen(div1, "click_outside", ctx[11])
+          listen(
+            input,
+            "input",
+            /*input_input_handler*/
+            ctx[41]
+          ),
+          listen(
+            input,
+            "input",
+            /*input_handler*/
+            ctx[42]
+          ),
+          listen(
+            input,
+            "keydown",
+            /*keydown_handler*/
+            ctx[43]
+          )
         ];
         mounted = true;
       }
     },
     p(ctx2, dirty) {
-      if (dirty & 11) {
-        each_value = ctx2[0];
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context2(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-          } else {
-            each_blocks[i] = create_each_block2(child_ctx);
-            each_blocks[i].c();
-            each_blocks[i].m(section, t2);
-          }
-        }
-        for (; i < each_blocks.length; i += 1) {
-          each_blocks[i].d(1);
-        }
-        each_blocks.length = each_value.length;
+      if (dirty[0] & /*search*/
+      1 && input.value !== /*search*/
+      ctx2[0]) {
+        set_input_value(
+          input,
+          /*search*/
+          ctx2[0]
+        );
       }
-      if (ctx2[0].length === 0) {
+      if (
+        /*search*/
+        ctx2[0]
+      ) {
         if (if_block) {
+          if_block.p(ctx2, dirty);
+          if (dirty[0] & /*search*/
+          1) {
+            transition_in(if_block, 1);
+          }
         } else {
-          if_block = create_if_block_13(ctx2);
+          if_block = create_if_block_63(ctx2);
           if_block.c();
-          if_block.m(section, null);
+          transition_in(if_block, 1);
+          if_block.m(div, null);
         }
       } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
+        group_outros();
+        transition_out(if_block, 1, 1, () => {
+          if_block = null;
+        });
+        check_outros();
       }
     },
+    i(local) {
+      if (current) return;
+      transition_in(icon.$$.fragment, local);
+      transition_in(if_block);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      transition_out(if_block);
+      current = false;
+    },
     d(detaching) {
-      if (detaching)
-        detach(div1);
-      destroy_each(each_blocks, detaching);
-      if (if_block)
-        if_block.d();
+      if (detaching) detach(div);
+      destroy_component(icon);
+      ctx[40](null);
+      if (if_block) if_block.d();
       mounted = false;
       run_all(dispose);
     }
   };
 }
-function create_each_block2(ctx) {
-  let div;
-  let label;
-  let input;
-  let input_checked_value;
-  let span;
-  let t1_value = ctx[12] + "";
-  let t1;
-  let mounted;
-  let dispose;
-  function click_handler_1(...args) {
-    return ctx[10](ctx[12], ...args);
-  }
-  return {
-    c() {
-      div = element("div");
-      label = element("label");
-      input = element("input");
-      span = element("span");
-      span.textContent = "#";
-      t1 = text(t1_value);
-      attr(input, "type", "checkbox");
-      input.checked = input_checked_value = !ctx[1].includes(ctx[12]);
-      attr(span, "class", "hash svelte-rdace4");
-      attr(label, "class", "svelte-rdace4");
-      attr(div, "class", "checkbox-item svelte-rdace4");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      append(div, label);
-      append(label, input);
-      append(label, span);
-      append(label, t1);
-      if (!mounted) {
-        dispose = listen(input, "click", prevent_default(click_handler_1));
-        mounted = true;
-      }
-    },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
-      if (dirty & 3 && input_checked_value !== (input_checked_value = !ctx[1].includes(ctx[12]))) {
-        input.checked = input_checked_value;
-      }
-      if (dirty & 1 && t1_value !== (t1_value = ctx[12] + ""))
-        set_data(t1, t1_value);
-    },
-    d(detaching) {
-      if (detaching)
-        detach(div);
-      mounted = false;
-      dispose();
-    }
-  };
-}
-function create_if_block_13(ctx) {
-  let div;
-  return {
-    c() {
-      div = element("div");
-      div.textContent = "No tags specified";
-      attr(div, "class", "empty svelte-rdace4");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-    },
-    d(detaching) {
-      if (detaching)
-        detach(div);
-    }
-  };
-}
-function create_fragment5(ctx) {
-  let div1;
-  let input;
-  let input_disabled_value;
-  let t0;
-  let div0;
+function create_if_block_63(ctx) {
+  let button;
   let icon;
-  let t1;
   let current;
   let mounted;
   let dispose;
-  icon = new Icon_default({
-    props: { name: "settings", style: "button" }
-  });
-  icon.$on("click", ctx[9]);
-  let if_block = ctx[5] && create_if_block3(ctx);
+  icon = new Icon_default({ props: { name: "close" } });
   return {
     c() {
-      div1 = element("div");
-      input = element("input");
-      t0 = space();
-      div0 = element("div");
+      button = element("button");
       create_component(icon.$$.fragment);
-      t1 = space();
-      if (if_block)
-        if_block.c();
-      input.disabled = input_disabled_value = ctx[2] && !ctx[6];
-      attr(input, "class", "search svelte-rdace4");
-      attr(input, "placeholder", "Search tasks");
-      attr(div0, "class", "settings-container svelte-rdace4");
-      attr(div1, "class", "container svelte-rdace4");
+      attr(button, "class", "checklist-icon-button");
+      attr(button, "title", "Clear search");
+      attr(button, "aria-label", "Clear search");
     },
     m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, input);
-      set_input_value(input, ctx[6]);
-      append(div1, t0);
-      append(div1, div0);
-      mount_component(icon, div0, null);
-      append(div0, t1);
-      if (if_block)
-        if_block.m(div0, null);
+      insert(target, button, anchor);
+      mount_component(icon, button, null);
       current = true;
       if (!mounted) {
-        dispose = [
-          listen(input, "input", ctx[7]),
-          listen(input, "input", ctx[8])
-        ];
+        dispose = listen(
+          button,
+          "click",
+          /*clearSearch*/
+          ctx[31]
+        );
         mounted = true;
       }
     },
-    p(ctx2, [dirty]) {
-      if (!current || dirty & 68 && input_disabled_value !== (input_disabled_value = ctx2[2] && !ctx2[6])) {
-        input.disabled = input_disabled_value;
-      }
-      if (dirty & 64 && input.value !== ctx2[6]) {
-        set_input_value(input, ctx2[6]);
-      }
-      if (ctx2[5]) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block3(ctx2);
-          if_block.c();
-          if_block.m(div0, null);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-    },
+    p: noop,
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(icon.$$.fragment, local);
       current = true;
     },
@@ -7624,97 +9932,1839 @@ function create_fragment5(ctx) {
       current = false;
     },
     d(detaching) {
-      if (detaching)
-        detach(div1);
+      if (detaching) detach(button);
       destroy_component(icon);
-      if (if_block)
-        if_block.d();
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block_43(ctx) {
+  let button;
+  let icon0;
+  let t;
+  let icon1;
+  let current;
+  let mounted;
+  let dispose;
+  icon0 = new Icon_default({ props: { name: "file" } });
+  icon1 = new Icon_default({ props: { name: "close" } });
+  return {
+    c() {
+      button = element("button");
+      create_component(icon0.$$.fragment);
+      t = text(
+        /*focusFolder*/
+        ctx[14]
+      );
+      create_component(icon1.$$.fragment);
+      attr(button, "class", "checklist-filter-chip");
+      attr(button, "title", "Clear folder filter");
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      mount_component(icon0, button, null);
+      append(button, t);
+      mount_component(icon1, button, null);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler_3*/
+          ctx[44]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (!current || dirty[0] & /*focusFolder*/
+      16384) set_data(
+        t,
+        /*focusFolder*/
+        ctx2[14]
+      );
+    },
+    i(local) {
+      if (current) return;
+      transition_in(icon0.$$.fragment, local);
+      transition_in(icon1.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon0.$$.fragment, local);
+      transition_out(icon1.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(button);
+      destroy_component(icon0);
+      destroy_component(icon1);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block_34(ctx) {
+  let button;
+  let t0_value = (
+    /*todoTags*/
+    ctx[1].length - /*todoTags*/
+    ctx[1].filter(
+      /*func*/
+      ctx[45]
+    ).length + ""
+  );
+  let t0;
+  let t1;
+  let t2_value = (
+    /*todoTags*/
+    ctx[1].length + ""
+  );
+  let t2;
+  let t3;
+  let icon;
+  let current;
+  let mounted;
+  let dispose;
+  icon = new Icon_default({ props: { name: "close" } });
+  return {
+    c() {
+      button = element("button");
+      t0 = text(t0_value);
+      t1 = text(" of ");
+      t2 = text(t2_value);
+      t3 = text("\n      tags");
+      create_component(icon.$$.fragment);
+      attr(button, "class", "checklist-filter-chip");
+      attr(button, "title", "Show all configured tags");
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      append(button, t0);
+      append(button, t1);
+      append(button, t2);
+      append(button, t3);
+      mount_component(icon, button, null);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler_4*/
+          ctx[46]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if ((!current || dirty[0] & /*todoTags, hiddenTags*/
+      6) && t0_value !== (t0_value = /*todoTags*/
+      ctx2[1].length - /*todoTags*/
+      ctx2[1].filter(
+        /*func*/
+        ctx2[45]
+      ).length + "")) set_data(t0, t0_value);
+      if ((!current || dirty[0] & /*todoTags*/
+      2) && t2_value !== (t2_value = /*todoTags*/
+      ctx2[1].length + "")) set_data(t2, t2_value);
+    },
+    i(local) {
+      if (current) return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(button);
+      destroy_component(icon);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block4(ctx) {
+  let div3;
+  let label0;
+  let t0;
+  let select0;
+  let option0;
+  let option1;
+  let option2;
+  let option3;
+  let t5;
+  let t6;
+  let div0;
+  let t8;
+  let label1;
+  let t9;
+  let select1;
+  let option4;
+  let t11;
+  let label2;
+  let t12;
+  let select2;
+  let option5;
+  let t14;
+  let div1;
+  let t16;
+  let label3;
+  let span0;
+  let input0;
+  let t18;
+  let label4;
+  let span1;
+  let input1;
+  let t20;
+  let label5;
+  let span2;
+  let input2;
+  let t22;
+  let label6;
+  let span3;
+  let input3;
+  let t24;
+  let label7;
+  let span4;
+  let input4;
+  let t26;
+  let div2;
+  let t28;
+  let label8;
+  let t29;
+  let input5;
+  let t30;
+  let mounted;
+  let dispose;
+  let if_block0 = (
+    /*groupBy*/
+    ctx[3] !== "none" && create_if_block_24(ctx)
+  );
+  let each_value_2 = Object.entries(SORT_OPTIONS);
+  let each_blocks_1 = [];
+  for (let i = 0; i < each_value_2.length; i += 1) {
+    each_blocks_1[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+  }
+  let each_value_1 = Object.entries(SORT_OPTIONS);
+  let each_blocks = [];
+  for (let i = 0; i < each_value_1.length; i += 1) {
+    each_blocks[i] = create_each_block_12(get_each_context_12(ctx, each_value_1, i));
+  }
+  let if_block1 = (
+    /*todoTags*/
+    ctx[1].length && create_if_block_14(ctx)
+  );
+  return {
+    c() {
+      div3 = element("div");
+      label0 = element("label");
+      t0 = text("Grouping");
+      select0 = element("select");
+      option0 = element("option");
+      option0.textContent = "None";
+      option1 = element("option");
+      option1.textContent = "Page";
+      option2 = element("option");
+      option2.textContent = "Tag";
+      option3 = element("option");
+      option3.textContent = "Folder";
+      t5 = space();
+      if (if_block0) if_block0.c();
+      t6 = space();
+      div0 = element("div");
+      div0.textContent = "Sort";
+      t8 = space();
+      label1 = element("label");
+      t9 = text("Groups");
+      select1 = element("select");
+      for (let i = 0; i < each_blocks_1.length; i += 1) {
+        each_blocks_1[i].c();
+      }
+      option4 = element("option");
+      option4.textContent = "Tag order";
+      t11 = space();
+      label2 = element("label");
+      t12 = text("Tasks");
+      select2 = element("select");
+      option5 = element("option");
+      option5.textContent = "Order in note";
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      t14 = space();
+      div1 = element("div");
+      div1.textContent = "Options";
+      t16 = space();
+      label3 = element("label");
+      span0 = element("span");
+      span0.textContent = "Show sub-tasks";
+      input0 = element("input");
+      t18 = space();
+      label4 = element("label");
+      span1 = element("span");
+      span1.textContent = "Show task count";
+      input1 = element("input");
+      t20 = space();
+      label5 = element("label");
+      span2 = element("span");
+      span2.textContent = "Show completed";
+      input2 = element("input");
+      t22 = space();
+      label6 = element("label");
+      span3 = element("span");
+      span3.textContent = "Show source notes";
+      input3 = element("input");
+      t24 = space();
+      label7 = element("label");
+      span4 = element("span");
+      span4.textContent = "Delay completion";
+      input4 = element("input");
+      t26 = space();
+      div2 = element("div");
+      div2.textContent = "Filter";
+      t28 = space();
+      label8 = element("label");
+      t29 = text("Limit to folder");
+      input5 = element("input");
+      t30 = space();
+      if (if_block1) if_block1.c();
+      option0.__value = "none";
+      option0.value = option0.__value;
+      option1.__value = "page";
+      option1.value = option1.__value;
+      option2.__value = "tag";
+      option2.value = option2.__value;
+      option3.__value = "folder";
+      option3.value = option3.__value;
+      attr(label0, "class", "checklist-option");
+      attr(div0, "class", "checklist-panel-heading checklist-section-heading");
+      option4.__value = "configured";
+      option4.value = option4.__value;
+      attr(label1, "class", "checklist-option");
+      option5.__value = "source";
+      option5.value = option5.__value;
+      attr(label2, "class", "checklist-option");
+      attr(div1, "class", "checklist-panel-heading checklist-section-heading");
+      attr(input0, "type", "checkbox");
+      input0.checked = /*nestSubtasks*/
+      ctx[11];
+      attr(label3, "class", "checklist-option");
+      attr(label3, "title", "Off keeps the previous flat list and task selection. On includes children of tagged tasks and shows their hierarchy.");
+      attr(input1, "type", "checkbox");
+      input1.checked = /*showGroupCounts*/
+      ctx[7];
+      attr(label4, "class", "checklist-option");
+      attr(input2, "type", "checkbox");
+      input2.checked = /*showChecked*/
+      ctx[5];
+      attr(label5, "class", "checklist-option");
+      attr(span3, "title", "Show the originating note beneath each task, except inside page groups.");
+      attr(input3, "type", "checkbox");
+      input3.checked = /*showSource*/
+      ctx[8];
+      attr(label6, "class", "checklist-option");
+      attr(input4, "type", "checkbox");
+      input4.checked = /*animateCompletion*/
+      ctx[4];
+      attr(label7, "class", "checklist-option");
+      attr(label7, "title", "Keep completed tasks visible briefly so you can undo an accidental check.");
+      attr(div2, "class", "checklist-panel-heading checklist-section-heading");
+      attr(input5, "type", "text");
+      attr(input5, "placeholder", "All folders");
+      attr(input5, "aria-label", "Limit to folder");
+      input5.value = /*focusFolder*/
+      ctx[14];
+      attr(label8, "class", "checklist-option checklist-folder-option");
+      attr(div3, "class", "checklist-display-panel");
+      attr(div3, "role", "group");
+      attr(div3, "aria-label", "Display options");
+    },
+    m(target, anchor) {
+      insert(target, div3, anchor);
+      append(div3, label0);
+      append(label0, t0);
+      append(label0, select0);
+      append(select0, option0);
+      append(select0, option1);
+      append(select0, option2);
+      append(select0, option3);
+      select_option(
+        select0,
+        /*groupBy*/
+        ctx[3]
+      );
+      append(div3, t5);
+      if (if_block0) if_block0.m(div3, null);
+      append(div3, t6);
+      append(div3, div0);
+      append(div3, t8);
+      append(div3, label1);
+      append(label1, t9);
+      append(label1, select1);
+      for (let i = 0; i < each_blocks_1.length; i += 1) {
+        if (each_blocks_1[i]) {
+          each_blocks_1[i].m(select1, null);
+        }
+      }
+      append(select1, option4);
+      select_option(
+        select1,
+        /*sortDirectionGroups*/
+        ctx[12]
+      );
+      append(div3, t11);
+      append(div3, label2);
+      append(label2, t12);
+      append(label2, select2);
+      append(select2, option5);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(select2, null);
+        }
+      }
+      select_option(
+        select2,
+        /*sortDirectionItems*/
+        ctx[13]
+      );
+      append(div3, t14);
+      append(div3, div1);
+      append(div3, t16);
+      append(div3, label3);
+      append(label3, span0);
+      append(label3, input0);
+      append(div3, t18);
+      append(div3, label4);
+      append(label4, span1);
+      append(label4, input1);
+      append(div3, t20);
+      append(div3, label5);
+      append(label5, span2);
+      append(label5, input2);
+      append(div3, t22);
+      append(div3, label6);
+      append(label6, span3);
+      append(label6, input3);
+      append(div3, t24);
+      append(div3, label7);
+      append(label7, span4);
+      append(label7, input4);
+      append(div3, t26);
+      append(div3, div2);
+      append(div3, t28);
+      append(div3, label8);
+      append(label8, t29);
+      append(label8, input5);
+      append(div3, t30);
+      if (if_block1) if_block1.m(div3, null);
+      if (!mounted) {
+        dispose = [
+          listen(
+            select0,
+            "change",
+            /*change_handler*/
+            ctx[47]
+          ),
+          listen(
+            select1,
+            "change",
+            /*change_handler_2*/
+            ctx[49]
+          ),
+          listen(
+            select2,
+            "change",
+            /*change_handler_3*/
+            ctx[50]
+          ),
+          listen(
+            input0,
+            "change",
+            /*change_handler_4*/
+            ctx[51]
+          ),
+          listen(
+            input1,
+            "change",
+            /*change_handler_5*/
+            ctx[52]
+          ),
+          listen(
+            input2,
+            "change",
+            /*change_handler_6*/
+            ctx[53]
+          ),
+          listen(
+            input3,
+            "change",
+            /*change_handler_7*/
+            ctx[54]
+          ),
+          listen(
+            input4,
+            "change",
+            /*change_handler_8*/
+            ctx[55]
+          ),
+          listen(
+            input5,
+            "change",
+            /*change_handler_9*/
+            ctx[56]
+          )
+        ];
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*groupBy*/
+      8) {
+        select_option(
+          select0,
+          /*groupBy*/
+          ctx2[3]
+        );
+      }
+      if (
+        /*groupBy*/
+        ctx2[3] !== "none"
+      ) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+        } else {
+          if_block0 = create_if_block_24(ctx2);
+          if_block0.c();
+          if_block0.m(div3, t6);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
+      if (dirty & /*Object, SORT_OPTIONS*/
+      0) {
+        each_value_2 = Object.entries(SORT_OPTIONS);
+        let i;
+        for (i = 0; i < each_value_2.length; i += 1) {
+          const child_ctx = get_each_context_2(ctx2, each_value_2, i);
+          if (each_blocks_1[i]) {
+            each_blocks_1[i].p(child_ctx, dirty);
+          } else {
+            each_blocks_1[i] = create_each_block_2(child_ctx);
+            each_blocks_1[i].c();
+            each_blocks_1[i].m(select1, option4);
+          }
+        }
+        for (; i < each_blocks_1.length; i += 1) {
+          each_blocks_1[i].d(1);
+        }
+        each_blocks_1.length = each_value_2.length;
+      }
+      if (dirty[0] & /*sortDirectionGroups*/
+      4096) {
+        select_option(
+          select1,
+          /*sortDirectionGroups*/
+          ctx2[12]
+        );
+      }
+      if (dirty & /*Object, SORT_OPTIONS*/
+      0) {
+        each_value_1 = Object.entries(SORT_OPTIONS);
+        let i;
+        for (i = 0; i < each_value_1.length; i += 1) {
+          const child_ctx = get_each_context_12(ctx2, each_value_1, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+          } else {
+            each_blocks[i] = create_each_block_12(child_ctx);
+            each_blocks[i].c();
+            each_blocks[i].m(select2, null);
+          }
+        }
+        for (; i < each_blocks.length; i += 1) {
+          each_blocks[i].d(1);
+        }
+        each_blocks.length = each_value_1.length;
+      }
+      if (dirty[0] & /*sortDirectionItems*/
+      8192) {
+        select_option(
+          select2,
+          /*sortDirectionItems*/
+          ctx2[13]
+        );
+      }
+      if (dirty[0] & /*nestSubtasks*/
+      2048) {
+        input0.checked = /*nestSubtasks*/
+        ctx2[11];
+      }
+      if (dirty[0] & /*showGroupCounts*/
+      128) {
+        input1.checked = /*showGroupCounts*/
+        ctx2[7];
+      }
+      if (dirty[0] & /*showChecked*/
+      32) {
+        input2.checked = /*showChecked*/
+        ctx2[5];
+      }
+      if (dirty[0] & /*showSource*/
+      256) {
+        input3.checked = /*showSource*/
+        ctx2[8];
+      }
+      if (dirty[0] & /*animateCompletion*/
+      16) {
+        input4.checked = /*animateCompletion*/
+        ctx2[4];
+      }
+      if (dirty[0] & /*focusFolder*/
+      16384 && input5.value !== /*focusFolder*/
+      ctx2[14]) {
+        input5.value = /*focusFolder*/
+        ctx2[14];
+      }
+      if (
+        /*todoTags*/
+        ctx2[1].length
+      ) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+        } else {
+          if_block1 = create_if_block_14(ctx2);
+          if_block1.c();
+          if_block1.m(div3, null);
+        }
+      } else if (if_block1) {
+        if_block1.d(1);
+        if_block1 = null;
+      }
+    },
+    d(detaching) {
+      if (detaching) detach(div3);
+      if (if_block0) if_block0.d();
+      destroy_each(each_blocks_1, detaching);
+      destroy_each(each_blocks, detaching);
+      if (if_block1) if_block1.d();
       mounted = false;
       run_all(dispose);
     }
   };
 }
-function instance5($$self, $$props, $$invalidate) {
+function create_if_block_24(ctx) {
+  let label;
+  let t0;
+  let select;
+  let option0;
+  let option1;
+  let t2;
+  let option1_disabled_value;
+  let option2;
+  let t3;
+  let option2_disabled_value;
+  let option3;
+  let t4;
+  let option3_disabled_value;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      label = element("label");
+      t0 = text("Sub-grouping");
+      select = element("select");
+      option0 = element("option");
+      option0.textContent = "None";
+      option1 = element("option");
+      t2 = text("Tag");
+      option2 = element("option");
+      t3 = text("Page");
+      option3 = element("option");
+      t4 = text("Folder");
+      option0.__value = "none";
+      option0.value = option0.__value;
+      option1.__value = "tag";
+      option1.value = option1.__value;
+      option1.disabled = option1_disabled_value = /*groupBy*/
+      ctx[3] === "tag" && /*subGroupBy*/
+      ctx[10] === "none";
+      option2.__value = "page";
+      option2.value = option2.__value;
+      option2.disabled = option2_disabled_value = /*groupBy*/
+      ctx[3] === "page" && /*subGroupBy*/
+      ctx[10] === "none";
+      option3.__value = "folder";
+      option3.value = option3.__value;
+      option3.disabled = option3_disabled_value = /*groupBy*/
+      ctx[3] === "folder" && /*subGroupBy*/
+      ctx[10] === "none";
+      attr(label, "class", "checklist-option");
+    },
+    m(target, anchor) {
+      insert(target, label, anchor);
+      append(label, t0);
+      append(label, select);
+      append(select, option0);
+      append(select, option1);
+      append(option1, t2);
+      append(select, option2);
+      append(option2, t3);
+      append(select, option3);
+      append(option3, t4);
+      select_option(
+        select,
+        /*subGroupBy*/
+        ctx[10]
+      );
+      if (!mounted) {
+        dispose = listen(
+          select,
+          "change",
+          /*change_handler_1*/
+          ctx[48]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*groupBy, subGroupBy*/
+      1032 && option1_disabled_value !== (option1_disabled_value = /*groupBy*/
+      ctx2[3] === "tag" && /*subGroupBy*/
+      ctx2[10] === "none")) {
+        option1.disabled = option1_disabled_value;
+      }
+      if (dirty[0] & /*groupBy, subGroupBy*/
+      1032 && option2_disabled_value !== (option2_disabled_value = /*groupBy*/
+      ctx2[3] === "page" && /*subGroupBy*/
+      ctx2[10] === "none")) {
+        option2.disabled = option2_disabled_value;
+      }
+      if (dirty[0] & /*groupBy, subGroupBy*/
+      1032 && option3_disabled_value !== (option3_disabled_value = /*groupBy*/
+      ctx2[3] === "folder" && /*subGroupBy*/
+      ctx2[10] === "none")) {
+        option3.disabled = option3_disabled_value;
+      }
+      if (dirty[0] & /*subGroupBy*/
+      1024) {
+        select_option(
+          select,
+          /*subGroupBy*/
+          ctx2[10]
+        );
+      }
+    },
+    d(detaching) {
+      if (detaching) detach(label);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_each_block_2(ctx) {
+  let option;
+  let t_value = (
+    /*label*/
+    ctx[63] + ""
+  );
+  let t;
+  let option_value_value;
+  return {
+    c() {
+      option = element("option");
+      t = text(t_value);
+      option.__value = option_value_value = /*value*/
+      ctx[62];
+      option.value = option.__value;
+    },
+    m(target, anchor) {
+      insert(target, option, anchor);
+      append(option, t);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) detach(option);
+    }
+  };
+}
+function create_each_block_12(ctx) {
+  let option;
+  let t_value = (
+    /*label*/
+    ctx[63] + ""
+  );
+  let t;
+  let option_value_value;
+  return {
+    c() {
+      option = element("option");
+      t = text(t_value);
+      option.__value = option_value_value = /*value*/
+      ctx[62];
+      option.value = option.__value;
+    },
+    m(target, anchor) {
+      insert(target, option, anchor);
+      append(option, t);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) detach(option);
+    }
+  };
+}
+function create_if_block_14(ctx) {
+  let div0;
+  let t1;
+  let div1;
+  let each_value = (
+    /*todoTags*/
+    ctx[1]
+  );
+  let each_blocks = [];
+  for (let i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block3(get_each_context3(ctx, each_value, i));
+  }
+  return {
+    c() {
+      div0 = element("div");
+      div0.textContent = "Tags";
+      t1 = space();
+      div1 = element("div");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(div0, "class", "checklist-panel-heading checklist-tags-heading");
+      attr(div1, "class", "checklist-tag-options");
+    },
+    m(target, anchor) {
+      insert(target, div0, anchor);
+      insert(target, t1, anchor);
+      insert(target, div1, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(div1, null);
+        }
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*hiddenTags, todoTags, onTagStatusChange*/
+      2097158) {
+        each_value = /*todoTags*/
+        ctx2[1];
+        let i;
+        for (i = 0; i < each_value.length; i += 1) {
+          const child_ctx = get_each_context3(ctx2, each_value, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+          } else {
+            each_blocks[i] = create_each_block3(child_ctx);
+            each_blocks[i].c();
+            each_blocks[i].m(div1, null);
+          }
+        }
+        for (; i < each_blocks.length; i += 1) {
+          each_blocks[i].d(1);
+        }
+        each_blocks.length = each_value.length;
+      }
+    },
+    d(detaching) {
+      if (detaching) detach(div0);
+      if (detaching) detach(t1);
+      if (detaching) detach(div1);
+      destroy_each(each_blocks, detaching);
+    }
+  };
+}
+function create_each_block3(ctx) {
+  let label;
+  let span;
+  let t0;
+  let t1_value = (
+    /*tag*/
+    ctx[59] + ""
+  );
+  let t1;
+  let span_title_value;
+  let input;
+  let input_checked_value;
+  let mounted;
+  let dispose;
+  function change_handler_10(...args) {
+    return (
+      /*change_handler_10*/
+      ctx[57](
+        /*tag*/
+        ctx[59],
+        ...args
+      )
+    );
+  }
+  return {
+    c() {
+      label = element("label");
+      span = element("span");
+      t0 = text("#");
+      t1 = text(t1_value);
+      input = element("input");
+      attr(span, "class", "checklist-tag-label");
+      attr(span, "title", span_title_value = "#" + /*tag*/
+      ctx[59]);
+      attr(input, "type", "checkbox");
+      input.checked = input_checked_value = !/*hiddenTags*/
+      ctx[2].includes(
+        /*tag*/
+        ctx[59]
+      );
+      attr(label, "class", "checklist-option");
+    },
+    m(target, anchor) {
+      insert(target, label, anchor);
+      append(label, span);
+      append(span, t0);
+      append(span, t1);
+      append(label, input);
+      if (!mounted) {
+        dispose = listen(input, "change", change_handler_10);
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if (dirty[0] & /*todoTags*/
+      2 && t1_value !== (t1_value = /*tag*/
+      ctx[59] + "")) set_data(t1, t1_value);
+      if (dirty[0] & /*todoTags*/
+      2 && span_title_value !== (span_title_value = "#" + /*tag*/
+      ctx[59])) {
+        attr(span, "title", span_title_value);
+      }
+      if (dirty[0] & /*hiddenTags, todoTags*/
+      6 && input_checked_value !== (input_checked_value = !/*hiddenTags*/
+      ctx[2].includes(
+        /*tag*/
+        ctx[59]
+      ))) {
+        input.checked = input_checked_value;
+      }
+    },
+    d(detaching) {
+      if (detaching) detach(label);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment4(ctx) {
+  let div3;
+  let div2;
+  let span;
+  let t1;
+  let div0;
+  let button0;
+  let t2;
+  let button0_aria_pressed_value;
+  let button0_resize_listener;
+  let t3;
+  let button1;
+  let t4;
+  let button1_resize_listener;
+  let div0_style_value;
+  let t5;
+  let t6;
+  let div1;
+  let button2;
+  let icon0;
+  let button2_title_value;
+  let button2_aria_label_value;
+  let t7;
+  let button3;
+  let icon1;
+  let t8;
+  let button4;
+  let icon2;
+  let button4_disabled_value;
+  let button4_title_value;
+  let button4_aria_label_value;
+  let t9;
+  let button5;
+  let icon3;
+  let t10;
+  let t11;
+  let t12;
+  let t13;
+  let clickOutside_action;
+  let current;
+  let mounted;
+  let dispose;
+  let if_block0 = (
+    /*showGroupCounts*/
+    ctx[7] && create_if_block_72(ctx)
+  );
+  icon0 = new Icon_default({ props: { name: "search" } });
+  icon1 = new Icon_default({ props: { name: "refresh" } });
+  icon2 = new Icon_default({
+    props: {
+      name: (
+        /*allCollapsed*/
+        ctx[17] ? "expand" : "collapse"
+      )
+    }
+  });
+  icon3 = new Icon_default({ props: { name: "settings" } });
+  let if_block1 = (
+    /*showSearch*/
+    ctx[24] && create_if_block_53(ctx)
+  );
+  let if_block2 = (
+    /*focusFolder*/
+    ctx[14] && create_if_block_43(ctx)
+  );
+  let if_block3 = (
+    /*hiddenTags*/
+    ctx[2].length && /*todoTags*/
+    ctx[1].length && create_if_block_34(ctx)
+  );
+  let if_block4 = (
+    /*showPopover*/
+    ctx[23] && create_if_block4(ctx)
+  );
+  return {
+    c() {
+      div3 = element("div");
+      div2 = element("div");
+      span = element("span");
+      span.textContent = "Tasks";
+      t1 = space();
+      div0 = element("div");
+      button0 = element("button");
+      t2 = text("All");
+      t3 = space();
+      button1 = element("button");
+      t4 = text("Note");
+      t5 = space();
+      if (if_block0) if_block0.c();
+      t6 = space();
+      div1 = element("div");
+      button2 = element("button");
+      create_component(icon0.$$.fragment);
+      t7 = space();
+      button3 = element("button");
+      create_component(icon1.$$.fragment);
+      t8 = space();
+      button4 = element("button");
+      create_component(icon2.$$.fragment);
+      t9 = space();
+      button5 = element("button");
+      create_component(icon3.$$.fragment);
+      t10 = space();
+      if (if_block1) if_block1.c();
+      t11 = space();
+      if (if_block2) if_block2.c();
+      t12 = space();
+      if (if_block3) if_block3.c();
+      t13 = space();
+      if (if_block4) if_block4.c();
+      attr(span, "class", "checklist-toolbar-title");
+      attr(button0, "aria-pressed", button0_aria_pressed_value = !/*showOnlyActiveFile*/
+      ctx[6]);
+      attr(button0, "title", "All notes");
+      attr(button0, "aria-label", "All notes");
+      add_render_callback(() => (
+        /*button0_elementresize_handler*/
+        ctx[33].call(button0)
+      ));
+      toggle_class(button0, "is-selected", !/*showOnlyActiveFile*/
+      ctx[6]);
+      attr(
+        button1,
+        "aria-pressed",
+        /*showOnlyActiveFile*/
+        ctx[6]
+      );
+      attr(button1, "title", "This note");
+      attr(button1, "aria-label", "This note");
+      add_render_callback(() => (
+        /*button1_elementresize_handler*/
+        ctx[35].call(button1)
+      ));
+      toggle_class(
+        button1,
+        "is-selected",
+        /*showOnlyActiveFile*/
+        ctx[6]
+      );
+      attr(div0, "class", "checklist-scope");
+      attr(div0, "style", div0_style_value = `--scope-all-width: ${/*allScopeWidth*/
+      ctx[25]}px; --scope-note-width: ${/*noteScopeWidth*/
+      ctx[26]}px`);
+      attr(div0, "role", "group");
+      attr(div0, "aria-label", "Task scope");
+      toggle_class(
+        div0,
+        "is-note",
+        /*showOnlyActiveFile*/
+        ctx[6]
+      );
+      attr(button2, "class", "checklist-icon-button");
+      attr(button2, "title", button2_title_value = /*showSearch*/
+      ctx[24] ? "Close search" : "Search tasks");
+      attr(button2, "aria-label", button2_aria_label_value = /*showSearch*/
+      ctx[24] ? "Close search" : "Search tasks");
+      attr(
+        button2,
+        "aria-expanded",
+        /*showSearch*/
+        ctx[24]
+      );
+      toggle_class(
+        button2,
+        "is-active",
+        /*showSearch*/
+        ctx[24]
+      );
+      attr(button3, "class", "checklist-icon-button");
+      button3.disabled = /*loading*/
+      ctx[15];
+      attr(button3, "title", "Refresh tasks");
+      attr(button3, "aria-label", "Refresh tasks");
+      attr(button4, "class", "checklist-icon-button");
+      button4.disabled = button4_disabled_value = !/*hasGroups*/
+      ctx[18];
+      attr(button4, "title", button4_title_value = /*allCollapsed*/
+      ctx[17] ? "Expand all groups" : "Collapse all groups");
+      attr(button4, "aria-label", button4_aria_label_value = /*allCollapsed*/
+      ctx[17] ? "Expand all groups" : "Collapse all groups");
+      attr(button5, "class", "checklist-icon-button");
+      attr(button5, "title", "Display options");
+      attr(button5, "aria-label", "Display options");
+      attr(
+        button5,
+        "aria-expanded",
+        /*showPopover*/
+        ctx[23]
+      );
+      toggle_class(
+        button5,
+        "is-active",
+        /*showPopover*/
+        ctx[23]
+      );
+      attr(div1, "class", "checklist-toolbar-actions");
+      attr(div2, "class", "checklist-toolbar-heading");
+      attr(div3, "class", "checklist-toolbar");
+    },
+    m(target, anchor) {
+      insert(target, div3, anchor);
+      append(div3, div2);
+      append(div2, span);
+      append(div2, t1);
+      append(div2, div0);
+      append(div0, button0);
+      append(button0, t2);
+      button0_resize_listener = add_iframe_resize_listener(
+        button0,
+        /*button0_elementresize_handler*/
+        ctx[33].bind(button0)
+      );
+      append(div0, t3);
+      append(div0, button1);
+      append(button1, t4);
+      button1_resize_listener = add_iframe_resize_listener(
+        button1,
+        /*button1_elementresize_handler*/
+        ctx[35].bind(button1)
+      );
+      append(div2, t5);
+      if (if_block0) if_block0.m(div2, null);
+      append(div2, t6);
+      append(div2, div1);
+      append(div1, button2);
+      mount_component(icon0, button2, null);
+      ctx[37](button2);
+      append(div1, t7);
+      append(div1, button3);
+      mount_component(icon1, button3, null);
+      append(div1, t8);
+      append(div1, button4);
+      mount_component(icon2, button4, null);
+      append(div1, t9);
+      append(div1, button5);
+      mount_component(icon3, button5, null);
+      ctx[38](button5);
+      append(div3, t10);
+      if (if_block1) if_block1.m(div3, null);
+      append(div3, t11);
+      if (if_block2) if_block2.m(div3, null);
+      append(div3, t12);
+      if (if_block3) if_block3.m(div3, null);
+      append(div3, t13);
+      if (if_block4) if_block4.m(div3, null);
+      current = true;
+      if (!mounted) {
+        dispose = [
+          listen(
+            button0,
+            "click",
+            /*click_handler*/
+            ctx[34]
+          ),
+          listen(
+            button1,
+            "click",
+            /*click_handler_1*/
+            ctx[36]
+          ),
+          listen(
+            button2,
+            "click",
+            /*toggleSearch*/
+            ctx[30]
+          ),
+          listen(button3, "click", function() {
+            if (is_function(
+              /*onRefresh*/
+              ctx[16]
+            )) ctx[16].apply(this, arguments);
+          }),
+          listen(button4, "click", function() {
+            if (is_function(
+              /*onToggleAll*/
+              ctx[19]
+            )) ctx[19].apply(this, arguments);
+          }),
+          listen(
+            button5,
+            "click",
+            /*click_handler_2*/
+            ctx[39]
+          ),
+          action_destroyer(clickOutside_action = clickOutside.call(null, div3)),
+          listen(
+            div3,
+            "click_outside",
+            /*click_outside_handler*/
+            ctx[58]
+          ),
+          listen(
+            div3,
+            "keydown",
+            /*closeOnEscape*/
+            ctx[32]
+          )
+        ];
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if (!current || dirty[0] & /*showOnlyActiveFile*/
+      64 && button0_aria_pressed_value !== (button0_aria_pressed_value = !/*showOnlyActiveFile*/
+      ctx[6])) {
+        attr(button0, "aria-pressed", button0_aria_pressed_value);
+      }
+      if (!current || dirty[0] & /*showOnlyActiveFile*/
+      64) {
+        toggle_class(button0, "is-selected", !/*showOnlyActiveFile*/
+        ctx[6]);
+      }
+      if (!current || dirty[0] & /*showOnlyActiveFile*/
+      64) {
+        attr(
+          button1,
+          "aria-pressed",
+          /*showOnlyActiveFile*/
+          ctx[6]
+        );
+      }
+      if (!current || dirty[0] & /*showOnlyActiveFile*/
+      64) {
+        toggle_class(
+          button1,
+          "is-selected",
+          /*showOnlyActiveFile*/
+          ctx[6]
+        );
+      }
+      if (!current || dirty[0] & /*allScopeWidth, noteScopeWidth*/
+      100663296 && div0_style_value !== (div0_style_value = `--scope-all-width: ${/*allScopeWidth*/
+      ctx[25]}px; --scope-note-width: ${/*noteScopeWidth*/
+      ctx[26]}px`)) {
+        attr(div0, "style", div0_style_value);
+      }
+      if (!current || dirty[0] & /*showOnlyActiveFile*/
+      64) {
+        toggle_class(
+          div0,
+          "is-note",
+          /*showOnlyActiveFile*/
+          ctx[6]
+        );
+      }
+      if (
+        /*showGroupCounts*/
+        ctx[7]
+      ) {
+        if (if_block0) {
+          if_block0.p(ctx, dirty);
+        } else {
+          if_block0 = create_if_block_72(ctx);
+          if_block0.c();
+          if_block0.m(div2, t6);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
+      if (!current || dirty[0] & /*showSearch*/
+      16777216 && button2_title_value !== (button2_title_value = /*showSearch*/
+      ctx[24] ? "Close search" : "Search tasks")) {
+        attr(button2, "title", button2_title_value);
+      }
+      if (!current || dirty[0] & /*showSearch*/
+      16777216 && button2_aria_label_value !== (button2_aria_label_value = /*showSearch*/
+      ctx[24] ? "Close search" : "Search tasks")) {
+        attr(button2, "aria-label", button2_aria_label_value);
+      }
+      if (!current || dirty[0] & /*showSearch*/
+      16777216) {
+        attr(
+          button2,
+          "aria-expanded",
+          /*showSearch*/
+          ctx[24]
+        );
+      }
+      if (!current || dirty[0] & /*showSearch*/
+      16777216) {
+        toggle_class(
+          button2,
+          "is-active",
+          /*showSearch*/
+          ctx[24]
+        );
+      }
+      if (!current || dirty[0] & /*loading*/
+      32768) {
+        button3.disabled = /*loading*/
+        ctx[15];
+      }
+      const icon2_changes = {};
+      if (dirty[0] & /*allCollapsed*/
+      131072) icon2_changes.name = /*allCollapsed*/
+      ctx[17] ? "expand" : "collapse";
+      icon2.$set(icon2_changes);
+      if (!current || dirty[0] & /*hasGroups*/
+      262144 && button4_disabled_value !== (button4_disabled_value = !/*hasGroups*/
+      ctx[18])) {
+        button4.disabled = button4_disabled_value;
+      }
+      if (!current || dirty[0] & /*allCollapsed*/
+      131072 && button4_title_value !== (button4_title_value = /*allCollapsed*/
+      ctx[17] ? "Expand all groups" : "Collapse all groups")) {
+        attr(button4, "title", button4_title_value);
+      }
+      if (!current || dirty[0] & /*allCollapsed*/
+      131072 && button4_aria_label_value !== (button4_aria_label_value = /*allCollapsed*/
+      ctx[17] ? "Expand all groups" : "Collapse all groups")) {
+        attr(button4, "aria-label", button4_aria_label_value);
+      }
+      if (!current || dirty[0] & /*showPopover*/
+      8388608) {
+        attr(
+          button5,
+          "aria-expanded",
+          /*showPopover*/
+          ctx[23]
+        );
+      }
+      if (!current || dirty[0] & /*showPopover*/
+      8388608) {
+        toggle_class(
+          button5,
+          "is-active",
+          /*showPopover*/
+          ctx[23]
+        );
+      }
+      if (
+        /*showSearch*/
+        ctx[24]
+      ) {
+        if (if_block1) {
+          if_block1.p(ctx, dirty);
+          if (dirty[0] & /*showSearch*/
+          16777216) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block_53(ctx);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(div3, t11);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*focusFolder*/
+        ctx[14]
+      ) {
+        if (if_block2) {
+          if_block2.p(ctx, dirty);
+          if (dirty[0] & /*focusFolder*/
+          16384) {
+            transition_in(if_block2, 1);
+          }
+        } else {
+          if_block2 = create_if_block_43(ctx);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(div3, t12);
+        }
+      } else if (if_block2) {
+        group_outros();
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*hiddenTags*/
+        ctx[2].length && /*todoTags*/
+        ctx[1].length
+      ) {
+        if (if_block3) {
+          if_block3.p(ctx, dirty);
+          if (dirty[0] & /*hiddenTags, todoTags*/
+          6) {
+            transition_in(if_block3, 1);
+          }
+        } else {
+          if_block3 = create_if_block_34(ctx);
+          if_block3.c();
+          transition_in(if_block3, 1);
+          if_block3.m(div3, t13);
+        }
+      } else if (if_block3) {
+        group_outros();
+        transition_out(if_block3, 1, 1, () => {
+          if_block3 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*showPopover*/
+        ctx[23]
+      ) {
+        if (if_block4) {
+          if_block4.p(ctx, dirty);
+        } else {
+          if_block4 = create_if_block4(ctx);
+          if_block4.c();
+          if_block4.m(div3, null);
+        }
+      } else if (if_block4) {
+        if_block4.d(1);
+        if_block4 = null;
+      }
+    },
+    i(local) {
+      if (current) return;
+      transition_in(icon0.$$.fragment, local);
+      transition_in(icon1.$$.fragment, local);
+      transition_in(icon2.$$.fragment, local);
+      transition_in(icon3.$$.fragment, local);
+      transition_in(if_block1);
+      transition_in(if_block2);
+      transition_in(if_block3);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon0.$$.fragment, local);
+      transition_out(icon1.$$.fragment, local);
+      transition_out(icon2.$$.fragment, local);
+      transition_out(icon3.$$.fragment, local);
+      transition_out(if_block1);
+      transition_out(if_block2);
+      transition_out(if_block3);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching) detach(div3);
+      button0_resize_listener();
+      button1_resize_listener();
+      if (if_block0) if_block0.d();
+      destroy_component(icon0);
+      ctx[37](null);
+      destroy_component(icon1);
+      destroy_component(icon2);
+      destroy_component(icon3);
+      ctx[38](null);
+      if (if_block1) if_block1.d();
+      if (if_block2) if_block2.d();
+      if (if_block3) if_block3.d();
+      if (if_block4) if_block4.d();
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function instance4($$self, $$props, $$invalidate) {
   let { todoTags } = $$props;
   let { hiddenTags } = $$props;
-  let { disableSearch } = $$props;
+  let { groupBy } = $$props;
+  let { animateCompletion } = $$props;
+  let { showChecked } = $$props;
+  let { showOnlyActiveFile } = $$props;
+  let { showGroupCounts } = $$props;
+  let { showSource } = $$props;
+  let { taskCount } = $$props;
+  let { subGroupBy } = $$props;
+  let { nestSubtasks } = $$props;
+  let { sortDirectionGroups } = $$props;
+  let { sortDirectionItems } = $$props;
+  let { focusFolder } = $$props;
+  let { loading } = $$props;
+  let { onRefresh } = $$props;
+  let { allCollapsed } = $$props;
+  let { hasGroups } = $$props;
+  let { onToggleAll } = $$props;
+  let { updateSetting } = $$props;
   let { onTagStatusChange } = $$props;
   let { onSearch } = $$props;
   let showPopover = false;
-  let search = "";
+  let { search = "" } = $$props;
+  let showSearch = false;
+  let allScopeWidth = 0;
+  let noteScopeWidth = 0;
+  let searchButton;
+  function toggleSearch() {
+    return __async(this, null, function* () {
+      if (showSearch) {
+        $$invalidate(0, search = "");
+        onSearch("");
+        $$invalidate(24, showSearch = false);
+        searchButton.focus();
+      } else {
+        $$invalidate(24, showSearch = true);
+        yield tick();
+        searchInput.focus();
+      }
+    });
+  }
+  let searchInput;
+  let displayButton;
+  function clearSearch() {
+    $$invalidate(0, search = "");
+    onSearch("");
+    searchInput.focus();
+  }
+  function closeOnEscape(event) {
+    if (event.key === "Escape" && showPopover) {
+      $$invalidate(23, showPopover = false);
+      displayButton.focus();
+      event.stopPropagation();
+    }
+  }
+  function button0_elementresize_handler() {
+    allScopeWidth = this.clientWidth;
+    $$invalidate(25, allScopeWidth);
+  }
+  const click_handler = () => updateSetting({ showOnlyActiveFile: false });
+  function button1_elementresize_handler() {
+    noteScopeWidth = this.clientWidth;
+    $$invalidate(26, noteScopeWidth);
+  }
+  const click_handler_1 = () => updateSetting({ showOnlyActiveFile: true });
+  function button2_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      searchButton = $$value;
+      $$invalidate(27, searchButton);
+    });
+  }
+  function button5_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      displayButton = $$value;
+      $$invalidate(29, displayButton);
+    });
+  }
+  const click_handler_2 = () => $$invalidate(23, showPopover = !showPopover);
+  function input_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      searchInput = $$value;
+      $$invalidate(28, searchInput);
+    });
+  }
   function input_input_handler() {
     search = this.value;
-    $$invalidate(6, search);
+    $$invalidate(0, search);
   }
   const input_handler = () => onSearch(search);
-  const click_handler = (ev) => {
-    $$invalidate(5, showPopover = !showPopover);
+  const keydown_handler = (event) => {
+    if (event.key === "Escape") {
+      event.stopPropagation();
+      toggleSearch();
+    }
   };
-  const click_handler_1 = (tag, ev) => onTagStatusChange(tag, hiddenTags.includes(tag));
-  const click_outside_handler = (ev) => {
-    $$invalidate(5, showPopover = false);
-  };
+  const click_handler_3 = () => updateSetting({ focusFolder: "" });
+  const func = (tag) => hiddenTags.includes(tag);
+  const click_handler_4 = () => updateSetting({ _hiddenTags: [] });
+  const change_handler = (event) => updateSetting({ groupBy: event.currentTarget.value });
+  const change_handler_1 = (event) => updateSetting({ subGroupBy: event.currentTarget.value });
+  const change_handler_2 = (event) => updateSetting({
+    sortDirectionGroups: event.currentTarget.value
+  });
+  const change_handler_3 = (event) => updateSetting({
+    sortDirectionItems: event.currentTarget.value
+  });
+  const change_handler_4 = (event) => updateSetting({
+    nestSubtasks: event.currentTarget.checked
+  });
+  const change_handler_5 = (event) => updateSetting({
+    showGroupCounts: event.currentTarget.checked
+  });
+  const change_handler_6 = (event) => updateSetting({ showChecked: event.currentTarget.checked });
+  const change_handler_7 = (event) => updateSetting({ showSource: event.currentTarget.checked });
+  const change_handler_8 = (event) => updateSetting({
+    animateCompletion: event.currentTarget.checked
+  });
+  const change_handler_9 = (event) => updateSetting({
+    focusFolder: event.currentTarget.value.trim().replace(/^\/+|\/+$/g, "")
+  });
+  const change_handler_10 = (tag, event) => onTagStatusChange(tag, event.currentTarget.checked);
+  const click_outside_handler = () => $$invalidate(23, showPopover = false);
   $$self.$$set = ($$props2) => {
-    if ("todoTags" in $$props2)
-      $$invalidate(0, todoTags = $$props2.todoTags);
-    if ("hiddenTags" in $$props2)
-      $$invalidate(1, hiddenTags = $$props2.hiddenTags);
-    if ("disableSearch" in $$props2)
-      $$invalidate(2, disableSearch = $$props2.disableSearch);
-    if ("onTagStatusChange" in $$props2)
-      $$invalidate(3, onTagStatusChange = $$props2.onTagStatusChange);
-    if ("onSearch" in $$props2)
-      $$invalidate(4, onSearch = $$props2.onSearch);
+    if ("todoTags" in $$props2) $$invalidate(1, todoTags = $$props2.todoTags);
+    if ("hiddenTags" in $$props2) $$invalidate(2, hiddenTags = $$props2.hiddenTags);
+    if ("groupBy" in $$props2) $$invalidate(3, groupBy = $$props2.groupBy);
+    if ("animateCompletion" in $$props2) $$invalidate(4, animateCompletion = $$props2.animateCompletion);
+    if ("showChecked" in $$props2) $$invalidate(5, showChecked = $$props2.showChecked);
+    if ("showOnlyActiveFile" in $$props2) $$invalidate(6, showOnlyActiveFile = $$props2.showOnlyActiveFile);
+    if ("showGroupCounts" in $$props2) $$invalidate(7, showGroupCounts = $$props2.showGroupCounts);
+    if ("showSource" in $$props2) $$invalidate(8, showSource = $$props2.showSource);
+    if ("taskCount" in $$props2) $$invalidate(9, taskCount = $$props2.taskCount);
+    if ("subGroupBy" in $$props2) $$invalidate(10, subGroupBy = $$props2.subGroupBy);
+    if ("nestSubtasks" in $$props2) $$invalidate(11, nestSubtasks = $$props2.nestSubtasks);
+    if ("sortDirectionGroups" in $$props2) $$invalidate(12, sortDirectionGroups = $$props2.sortDirectionGroups);
+    if ("sortDirectionItems" in $$props2) $$invalidate(13, sortDirectionItems = $$props2.sortDirectionItems);
+    if ("focusFolder" in $$props2) $$invalidate(14, focusFolder = $$props2.focusFolder);
+    if ("loading" in $$props2) $$invalidate(15, loading = $$props2.loading);
+    if ("onRefresh" in $$props2) $$invalidate(16, onRefresh = $$props2.onRefresh);
+    if ("allCollapsed" in $$props2) $$invalidate(17, allCollapsed = $$props2.allCollapsed);
+    if ("hasGroups" in $$props2) $$invalidate(18, hasGroups = $$props2.hasGroups);
+    if ("onToggleAll" in $$props2) $$invalidate(19, onToggleAll = $$props2.onToggleAll);
+    if ("updateSetting" in $$props2) $$invalidate(20, updateSetting = $$props2.updateSetting);
+    if ("onTagStatusChange" in $$props2) $$invalidate(21, onTagStatusChange = $$props2.onTagStatusChange);
+    if ("onSearch" in $$props2) $$invalidate(22, onSearch = $$props2.onSearch);
+    if ("search" in $$props2) $$invalidate(0, search = $$props2.search);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty[0] & /*search*/
+    1) {
+      $: if (search) $$invalidate(24, showSearch = true);
+    }
   };
   return [
+    search,
     todoTags,
     hiddenTags,
-    disableSearch,
+    groupBy,
+    animateCompletion,
+    showChecked,
+    showOnlyActiveFile,
+    showGroupCounts,
+    showSource,
+    taskCount,
+    subGroupBy,
+    nestSubtasks,
+    sortDirectionGroups,
+    sortDirectionItems,
+    focusFolder,
+    loading,
+    onRefresh,
+    allCollapsed,
+    hasGroups,
+    onToggleAll,
+    updateSetting,
     onTagStatusChange,
     onSearch,
     showPopover,
-    search,
+    showSearch,
+    allScopeWidth,
+    noteScopeWidth,
+    searchButton,
+    searchInput,
+    displayButton,
+    toggleSearch,
+    clearSearch,
+    closeOnEscape,
+    button0_elementresize_handler,
+    click_handler,
+    button1_elementresize_handler,
+    click_handler_1,
+    button2_binding,
+    button5_binding,
+    click_handler_2,
+    input_binding,
     input_input_handler,
     input_handler,
-    click_handler,
-    click_handler_1,
+    keydown_handler,
+    click_handler_3,
+    func,
+    click_handler_4,
+    change_handler,
+    change_handler_1,
+    change_handler_2,
+    change_handler_3,
+    change_handler_4,
+    change_handler_5,
+    change_handler_6,
+    change_handler_7,
+    change_handler_8,
+    change_handler_9,
+    change_handler_10,
     click_outside_handler
   ];
 }
 var Header = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance5, create_fragment5, safe_not_equal, {
-      todoTags: 0,
-      hiddenTags: 1,
-      disableSearch: 2,
-      onTagStatusChange: 3,
-      onSearch: 4
-    }, add_css5);
+    init(
+      this,
+      options,
+      instance4,
+      create_fragment4,
+      safe_not_equal,
+      {
+        todoTags: 1,
+        hiddenTags: 2,
+        groupBy: 3,
+        animateCompletion: 4,
+        showChecked: 5,
+        showOnlyActiveFile: 6,
+        showGroupCounts: 7,
+        showSource: 8,
+        taskCount: 9,
+        subGroupBy: 10,
+        nestSubtasks: 11,
+        sortDirectionGroups: 12,
+        sortDirectionItems: 13,
+        focusFolder: 14,
+        loading: 15,
+        onRefresh: 16,
+        allCollapsed: 17,
+        hasGroups: 18,
+        onToggleAll: 19,
+        updateSetting: 20,
+        onTagStatusChange: 21,
+        onSearch: 22,
+        search: 0
+      },
+      null,
+      [-1, -1, -1]
+    );
   }
 };
 var Header_default = Header;
 
 // src/svelte/App.svelte
-function add_css6(target) {
-  append_styles(target, "svelte-j2kqyp", ".empty.svelte-j2kqyp{color:var(--text-faint);text-align:center;margin-top:32px;font-style:italic}.checklist-plugin-main.svelte-j2kqyp{padding:initial;width:initial;height:initial;position:initial;overflow-y:initial;overflow-wrap:initial}");
-}
-function get_each_context3(ctx, list, i) {
+function get_each_context4(ctx, list2, i) {
   const child_ctx = ctx.slice();
-  child_ctx[11] = list[i];
+  child_ctx[36] = list2[i];
   return child_ctx;
 }
-function create_else_block_1(ctx) {
+function create_if_block_64(ctx) {
+  let div;
+  let t0;
+  let t1;
+  let t2_value = (
+    /*failedCount*/
+    ctx[15] === 1 ? "note could" : "notes could"
+  );
+  let t2;
+  let t3;
+  let button;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      t0 = text(
+        /*failedCount*/
+        ctx[15]
+      );
+      t1 = space();
+      t2 = text(t2_value);
+      t3 = text(" not be read.\n      ");
+      button = element("button");
+      button.textContent = "Retry";
+      attr(div, "class", "checklist-status");
+      attr(div, "role", "status");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      append(div, t0);
+      append(div, t1);
+      append(div, t2);
+      append(div, t3);
+      append(div, button);
+      if (!mounted) {
+        dispose = listen(button, "click", function() {
+          if (is_function(
+            /*onRefresh*/
+            ctx[17]
+          )) ctx[17].apply(this, arguments);
+        });
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if (dirty[0] & /*failedCount*/
+      32768) set_data(
+        t0,
+        /*failedCount*/
+        ctx[15]
+      );
+      if (dirty[0] & /*failedCount*/
+      32768 && t2_value !== (t2_value = /*failedCount*/
+      ctx[15] === 1 ? "note could" : "notes could")) set_data(t2, t2_value);
+    },
+    d(detaching) {
+      if (detaching) detach(div);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_else_block_12(ctx) {
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
   let each_1_anchor;
   let current;
-  let each_value = ctx[6];
-  let each_blocks = [];
+  let each_value = (
+    /*todoGroups*/
+    ctx[25]
+  );
+  const get_key = (ctx2) => (
+    /*group*/
+    ctx2[36].id
+  );
   for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block3(get_each_context3(ctx, each_value, i));
+    let child_ctx = get_each_context4(ctx, each_value, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block4(key, child_ctx));
   }
-  const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
-    each_blocks[i] = null;
-  });
   return {
     c() {
       for (let i = 0; i < each_blocks.length; i += 1) {
@@ -7724,78 +11774,106 @@ function create_else_block_1(ctx) {
     },
     m(target, anchor) {
       for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(target, anchor);
+        if (each_blocks[i]) {
+          each_blocks[i].m(target, anchor);
+        }
       }
       insert(target, each_1_anchor, anchor);
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 358) {
-        each_value = ctx2[6];
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context3(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block3(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-          }
-        }
+      if (dirty[0] & /*todoGroups, app, useTasksPlugin, showGroupCounts, showSource, _collapsedSections, toggleGroup, onToggleTask, search, onSearch*/
+      667680864) {
+        each_value = /*todoGroups*/
+        ctx2[25];
         group_outros();
-        for (i = each_value.length; i < each_blocks.length; i += 1) {
-          out(i);
-        }
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, each_1_anchor.parentNode, outro_and_destroy_block, create_each_block4, each_1_anchor, get_each_context4);
         check_outros();
       }
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       for (let i = 0; i < each_value.length; i += 1) {
         transition_in(each_blocks[i]);
       }
       current = true;
     },
     o(local) {
-      each_blocks = each_blocks.filter(Boolean);
       for (let i = 0; i < each_blocks.length; i += 1) {
         transition_out(each_blocks[i]);
       }
       current = false;
     },
     d(detaching) {
-      destroy_each(each_blocks, detaching);
-      if (detaching)
-        detach(each_1_anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d(detaching);
+      }
+      if (detaching) detach(each_1_anchor);
     }
   };
 }
-function create_if_block4(ctx) {
+function create_if_block_15(ctx) {
   let div;
+  let span0;
+  let t0_value = (
+    /*loading*/
+    ctx[14] ? "Loading tasks\u2026" : (
+      /*search*/
+      ctx[26] ? "No matching tasks" : "No tasks to show"
+    )
+  );
+  let t0;
+  let t1;
+  let span1;
   function select_block_type_1(ctx2, dirty) {
-    if (ctx2[3].length === ctx2[0].length)
-      return create_if_block_14;
-    if (ctx2[7].length)
-      return create_if_block_22;
+    if (
+      /*search*/
+      ctx2[26]
+    ) return create_if_block_25;
+    if (
+      /*todoTags*/
+      ctx2[0].length > 0 && /*visibleTags*/
+      ctx2[28].length === 0
+    ) return create_if_block_35;
+    if (
+      /*showOnlyActiveFile*/
+      ctx2[4]
+    ) return create_if_block_44;
+    if (
+      /*visibleTags*/
+      ctx2[28].length
+    ) return create_if_block_54;
     return create_else_block2;
   }
-  let current_block_type = select_block_type_1(ctx, -1);
+  let current_block_type = select_block_type_1(ctx, [-1, -1]);
   let if_block = current_block_type(ctx);
   return {
     c() {
       div = element("div");
+      span0 = element("span");
+      t0 = text(t0_value);
+      t1 = space();
+      span1 = element("span");
       if_block.c();
-      attr(div, "class", "empty svelte-j2kqyp");
+      attr(span0, "class", "checklist-empty-title");
+      attr(div, "class", "checklist-empty");
+      attr(div, "role", "status");
     },
     m(target, anchor) {
       insert(target, div, anchor);
-      if_block.m(div, null);
+      append(div, span0);
+      append(span0, t0);
+      append(div, t1);
+      append(div, span1);
+      if_block.m(span1, null);
     },
     p(ctx2, dirty) {
+      if (dirty[0] & /*loading, search*/
+      67125248 && t0_value !== (t0_value = /*loading*/
+      ctx2[14] ? "Loading tasks\u2026" : (
+        /*search*/
+        ctx2[26] ? "No matching tasks" : "No tasks to show"
+      ))) set_data(t0, t0_value);
       if (current_block_type === (current_block_type = select_block_type_1(ctx2, dirty)) && if_block) {
         if_block.p(ctx2, dirty);
       } else {
@@ -7803,54 +11881,106 @@ function create_if_block4(ctx) {
         if_block = current_block_type(ctx2);
         if (if_block) {
           if_block.c();
-          if_block.m(div, null);
+          if_block.m(span1, null);
         }
       }
     },
     i: noop,
     o: noop,
     d(detaching) {
-      if (detaching)
-        detach(div);
+      if (detaching) detach(div);
       if_block.d();
     }
   };
 }
-function create_each_block3(ctx) {
+function create_each_block4(key_1, ctx) {
+  let first;
   let checklistgroup;
   let current;
   checklistgroup = new ChecklistGroup_default({
     props: {
-      group: ctx[11],
-      app: ctx[5],
-      lookAndFeel: ctx[1],
-      isCollapsed: ctx[2].includes(ctx[11].id),
-      onToggle: ctx[8]
+      group: (
+        /*group*/
+        ctx[36]
+      ),
+      app: (
+        /*app*/
+        ctx[24]
+      ),
+      useTasksPlugin: (
+        /*useTasksPlugin*/
+        ctx[23]
+      ),
+      showGroupCounts: (
+        /*showGroupCounts*/
+        ctx[5]
+      ),
+      showSource: (
+        /*showSource*/
+        ctx[6]
+      ),
+      collapsed: (
+        /*_collapsedSections*/
+        ctx[19]
+      ),
+      onToggle: (
+        /*toggleGroup*/
+        ctx[29]
+      ),
+      onToggleTask: (
+        /*onToggleTask*/
+        ctx[18]
+      ),
+      onTagClick: (
+        /*func_2*/
+        ctx[34]
+      )
     }
   });
   return {
+    key: key_1,
+    first: null,
     c() {
+      first = empty();
       create_component(checklistgroup.$$.fragment);
+      this.first = first;
     },
     m(target, anchor) {
+      insert(target, first, anchor);
       mount_component(checklistgroup, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
       const checklistgroup_changes = {};
-      if (dirty & 64)
-        checklistgroup_changes.group = ctx2[11];
-      if (dirty & 32)
-        checklistgroup_changes.app = ctx2[5];
-      if (dirty & 2)
-        checklistgroup_changes.lookAndFeel = ctx2[1];
-      if (dirty & 68)
-        checklistgroup_changes.isCollapsed = ctx2[2].includes(ctx2[11].id);
+      if (dirty[0] & /*todoGroups*/
+      33554432) checklistgroup_changes.group = /*group*/
+      ctx[36];
+      if (dirty[0] & /*app*/
+      16777216) checklistgroup_changes.app = /*app*/
+      ctx[24];
+      if (dirty[0] & /*useTasksPlugin*/
+      8388608) checklistgroup_changes.useTasksPlugin = /*useTasksPlugin*/
+      ctx[23];
+      if (dirty[0] & /*showGroupCounts*/
+      32) checklistgroup_changes.showGroupCounts = /*showGroupCounts*/
+      ctx[5];
+      if (dirty[0] & /*showSource*/
+      64) checklistgroup_changes.showSource = /*showSource*/
+      ctx[6];
+      if (dirty[0] & /*_collapsedSections*/
+      524288) checklistgroup_changes.collapsed = /*_collapsedSections*/
+      ctx[19];
+      if (dirty[0] & /*onToggleTask*/
+      262144) checklistgroup_changes.onToggleTask = /*onToggleTask*/
+      ctx[18];
+      if (dirty[0] & /*search, onSearch*/
+      71303168) checklistgroup_changes.onTagClick = /*func_2*/
+      ctx[34];
       checklistgroup.$set(checklistgroup_changes);
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(checklistgroup.$$.fragment, local);
       current = true;
     },
@@ -7859,6 +11989,7 @@ function create_each_block3(ctx) {
       current = false;
     },
     d(detaching) {
+      if (detaching) detach(first);
       destroy_component(checklistgroup, detaching);
     }
   };
@@ -7867,118 +11998,375 @@ function create_else_block2(ctx) {
   let t;
   return {
     c() {
-      t = text("No checklists found in all files");
+      t = text("Tasks from your notes will appear here.");
     },
     m(target, anchor) {
       insert(target, t, anchor);
     },
     p: noop,
     d(detaching) {
-      if (detaching)
-        detach(t);
+      if (detaching) detach(t);
     }
   };
 }
-function create_if_block_22(ctx) {
+function create_if_block_54(ctx) {
   let t0;
-  let t1_value = ctx[7].length > 1 ? "s" : "";
+  let t1_value = (
+    /*visibleTags*/
+    ctx[28].map(func_1).join(", ") + ""
+  );
   let t1;
   let t2;
-  let t3_value = ctx[7].map(func).join(" ") + "";
-  let t3;
   return {
     c() {
-      t0 = text("No checklists found for tag");
+      t0 = text("Add\n          tasks tagged ");
       t1 = text(t1_value);
-      t2 = text(": ");
-      t3 = text(t3_value);
+      t2 = text(".");
     },
     m(target, anchor) {
       insert(target, t0, anchor);
       insert(target, t1, anchor);
       insert(target, t2, anchor);
-      insert(target, t3, anchor);
     },
-    p: noop,
+    p(ctx2, dirty) {
+      if (dirty[0] & /*visibleTags*/
+      268435456 && t1_value !== (t1_value = /*visibleTags*/
+      ctx2[28].map(func_1).join(", ") + "")) set_data(t1, t1_value);
+    },
     d(detaching) {
-      if (detaching)
-        detach(t0);
-      if (detaching)
-        detach(t1);
-      if (detaching)
-        detach(t2);
-      if (detaching)
-        detach(t3);
+      if (detaching) detach(t0);
+      if (detaching) detach(t1);
+      if (detaching) detach(t2);
     }
   };
 }
-function create_if_block_14(ctx) {
+function create_if_block_44(ctx) {
   let t;
   return {
     c() {
-      t = text("All checklist set to hidden");
+      t = text("No\n          matching tasks in the current note.");
     },
     m(target, anchor) {
       insert(target, t, anchor);
     },
     p: noop,
     d(detaching) {
-      if (detaching)
-        detach(t);
+      if (detaching) detach(t);
     }
   };
 }
-function create_fragment6(ctx) {
+function create_if_block_35(ctx) {
+  let t;
+  return {
+    c() {
+      t = text("All\n          tags are hidden. Choose a tag in Display options.");
+    },
+    m(target, anchor) {
+      insert(target, t, anchor);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) detach(t);
+    }
+  };
+}
+function create_if_block_25(ctx) {
+  let t;
+  return {
+    c() {
+      t = text("Try another search or clear the filter.");
+    },
+    m(target, anchor) {
+      insert(target, t, anchor);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) detach(t);
+    }
+  };
+}
+function create_if_block5(ctx) {
+  let button;
+  let t;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      button = element("button");
+      t = text("Show more tasks");
+      attr(button, "class", "checklist-load-more");
+      button.disabled = /*loading*/
+      ctx[14];
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      append(button, t);
+      if (!mounted) {
+        dispose = listen(button, "click", function() {
+          if (is_function(
+            /*onLoadMore*/
+            ctx[16]
+          )) ctx[16].apply(this, arguments);
+        });
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if (dirty[0] & /*loading*/
+      16384) {
+        button.disabled = /*loading*/
+        ctx[14];
+      }
+    },
+    d(detaching) {
+      if (detaching) detach(button);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment5(ctx) {
   let div;
   let header;
-  let t;
+  let updating_search;
+  let t0;
+  let t1;
   let current_block_type_index;
-  let if_block;
+  let if_block1;
+  let t2;
   let current;
-  header = new Header_default({
-    props: {
-      disableSearch: ctx[6].length === 0,
-      todoTags: ctx[0],
-      hiddenTags: ctx[3],
-      onTagStatusChange: ctx[9],
-      onSearch: ctx[4]
-    }
-  });
-  const if_block_creators = [create_if_block4, create_else_block_1];
+  function header_search_binding(value) {
+    ctx[33](value);
+  }
+  let header_props = {
+    todoTags: (
+      /*todoTags*/
+      ctx[0]
+    ),
+    hiddenTags: (
+      /*_hiddenTags*/
+      ctx[20]
+    ),
+    groupBy: (
+      /*groupBy*/
+      ctx[1]
+    ),
+    showChecked: (
+      /*showChecked*/
+      ctx[3]
+    ),
+    animateCompletion: (
+      /*animateCompletion*/
+      ctx[2]
+    ),
+    showOnlyActiveFile: (
+      /*showOnlyActiveFile*/
+      ctx[4]
+    ),
+    showGroupCounts: (
+      /*showGroupCounts*/
+      ctx[5]
+    ),
+    showSource: (
+      /*showSource*/
+      ctx[6]
+    ),
+    taskCount: (
+      /*totalCount*/
+      ctx[12]
+    ),
+    subGroupBy: (
+      /*subGroupBy*/
+      ctx[7]
+    ),
+    nestSubtasks: (
+      /*nestSubtasks*/
+      ctx[8]
+    ),
+    sortDirectionGroups: (
+      /*sortDirectionGroups*/
+      ctx[9]
+    ),
+    sortDirectionItems: (
+      /*sortDirectionItems*/
+      ctx[10]
+    ),
+    focusFolder: (
+      /*focusFolder*/
+      ctx[11]
+    ),
+    loading: (
+      /*loading*/
+      ctx[14]
+    ),
+    onRefresh: (
+      /*onRefresh*/
+      ctx[17]
+    ),
+    allCollapsed: (
+      /*allCollapsed*/
+      ctx[27]
+    ),
+    hasGroups: (
+      /*groupBy*/
+      ctx[1] !== "none" && /*todoGroups*/
+      ctx[25].length > 0
+    ),
+    onToggleAll: (
+      /*toggleAll*/
+      ctx[30]
+    ),
+    updateSetting: (
+      /*updateSetting*/
+      ctx[21]
+    ),
+    onTagStatusChange: (
+      /*updateTagStatus*/
+      ctx[31]
+    ),
+    onSearch: (
+      /*func*/
+      ctx[32]
+    )
+  };
+  if (
+    /*search*/
+    ctx[26] !== void 0
+  ) {
+    header_props.search = /*search*/
+    ctx[26];
+  }
+  header = new Header_default({ props: header_props });
+  binding_callbacks.push(() => bind(header, "search", header_search_binding));
+  let if_block0 = (
+    /*failedCount*/
+    ctx[15] && create_if_block_64(ctx)
+  );
+  const if_block_creators = [create_if_block_15, create_else_block_12];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
-    if (ctx2[6].length === 0)
-      return 0;
+    if (
+      /*todoGroups*/
+      ctx2[25].length === 0
+    ) return 0;
     return 1;
   }
-  current_block_type_index = select_block_type(ctx, -1);
-  if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  current_block_type_index = select_block_type(ctx, [-1, -1]);
+  if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  let if_block2 = (
+    /*hasMore*/
+    ctx[13] && create_if_block5(ctx)
+  );
   return {
     c() {
       div = element("div");
       create_component(header.$$.fragment);
-      t = space();
-      if_block.c();
-      attr(div, "class", "checklist-plugin-main markdown-preview-view svelte-j2kqyp");
+      t0 = space();
+      if (if_block0) if_block0.c();
+      t1 = space();
+      if_block1.c();
+      t2 = space();
+      if (if_block2) if_block2.c();
+      attr(div, "class", "checklist-plugin-main markdown-preview-view");
     },
     m(target, anchor) {
       insert(target, div, anchor);
       mount_component(header, div, null);
-      append(div, t);
+      append(div, t0);
+      if (if_block0) if_block0.m(div, null);
+      append(div, t1);
       if_blocks[current_block_type_index].m(div, null);
+      append(div, t2);
+      if (if_block2) if_block2.m(div, null);
       current = true;
     },
-    p(ctx2, [dirty]) {
+    p(ctx2, dirty) {
       const header_changes = {};
-      if (dirty & 64)
-        header_changes.disableSearch = ctx2[6].length === 0;
-      if (dirty & 1)
-        header_changes.todoTags = ctx2[0];
-      if (dirty & 8)
-        header_changes.hiddenTags = ctx2[3];
-      if (dirty & 16)
-        header_changes.onSearch = ctx2[4];
+      if (dirty[0] & /*todoTags*/
+      1) header_changes.todoTags = /*todoTags*/
+      ctx2[0];
+      if (dirty[0] & /*_hiddenTags*/
+      1048576) header_changes.hiddenTags = /*_hiddenTags*/
+      ctx2[20];
+      if (dirty[0] & /*groupBy*/
+      2) header_changes.groupBy = /*groupBy*/
+      ctx2[1];
+      if (dirty[0] & /*showChecked*/
+      8) header_changes.showChecked = /*showChecked*/
+      ctx2[3];
+      if (dirty[0] & /*animateCompletion*/
+      4) header_changes.animateCompletion = /*animateCompletion*/
+      ctx2[2];
+      if (dirty[0] & /*showOnlyActiveFile*/
+      16) header_changes.showOnlyActiveFile = /*showOnlyActiveFile*/
+      ctx2[4];
+      if (dirty[0] & /*showGroupCounts*/
+      32) header_changes.showGroupCounts = /*showGroupCounts*/
+      ctx2[5];
+      if (dirty[0] & /*showSource*/
+      64) header_changes.showSource = /*showSource*/
+      ctx2[6];
+      if (dirty[0] & /*totalCount*/
+      4096) header_changes.taskCount = /*totalCount*/
+      ctx2[12];
+      if (dirty[0] & /*subGroupBy*/
+      128) header_changes.subGroupBy = /*subGroupBy*/
+      ctx2[7];
+      if (dirty[0] & /*nestSubtasks*/
+      256) header_changes.nestSubtasks = /*nestSubtasks*/
+      ctx2[8];
+      if (dirty[0] & /*sortDirectionGroups*/
+      512) header_changes.sortDirectionGroups = /*sortDirectionGroups*/
+      ctx2[9];
+      if (dirty[0] & /*sortDirectionItems*/
+      1024) header_changes.sortDirectionItems = /*sortDirectionItems*/
+      ctx2[10];
+      if (dirty[0] & /*focusFolder*/
+      2048) header_changes.focusFolder = /*focusFolder*/
+      ctx2[11];
+      if (dirty[0] & /*loading*/
+      16384) header_changes.loading = /*loading*/
+      ctx2[14];
+      if (dirty[0] & /*onRefresh*/
+      131072) header_changes.onRefresh = /*onRefresh*/
+      ctx2[17];
+      if (dirty[0] & /*allCollapsed*/
+      134217728) header_changes.allCollapsed = /*allCollapsed*/
+      ctx2[27];
+      if (dirty[0] & /*groupBy, todoGroups*/
+      33554434) header_changes.hasGroups = /*groupBy*/
+      ctx2[1] !== "none" && /*todoGroups*/
+      ctx2[25].length > 0;
+      if (dirty[0] & /*updateSetting*/
+      2097152) header_changes.updateSetting = /*updateSetting*/
+      ctx2[21];
+      if (dirty[0] & /*search, onSearch*/
+      71303168) header_changes.onSearch = /*func*/
+      ctx2[32];
+      if (!updating_search && dirty[0] & /*search*/
+      67108864) {
+        updating_search = true;
+        header_changes.search = /*search*/
+        ctx2[26];
+        add_flush_callback(() => updating_search = false);
+      }
       header.$set(header_changes);
+      if (
+        /*failedCount*/
+        ctx2[15]
+      ) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+        } else {
+          if_block0 = create_if_block_64(ctx2);
+          if_block0.c();
+          if_block0.m(div, t1);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
       let previous_block_index = current_block_type_index;
       current_block_type_index = select_block_type(ctx2, dirty);
       if (current_block_type_index === previous_block_index) {
@@ -7989,167 +12377,363 @@ function create_fragment6(ctx) {
           if_blocks[previous_block_index] = null;
         });
         check_outros();
-        if_block = if_blocks[current_block_type_index];
-        if (!if_block) {
-          if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
-          if_block.c();
+        if_block1 = if_blocks[current_block_type_index];
+        if (!if_block1) {
+          if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+          if_block1.c();
         } else {
-          if_block.p(ctx2, dirty);
+          if_block1.p(ctx2, dirty);
         }
-        transition_in(if_block, 1);
-        if_block.m(div, null);
+        transition_in(if_block1, 1);
+        if_block1.m(div, t2);
+      }
+      if (
+        /*hasMore*/
+        ctx2[13]
+      ) {
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
+        } else {
+          if_block2 = create_if_block5(ctx2);
+          if_block2.c();
+          if_block2.m(div, null);
+        }
+      } else if (if_block2) {
+        if_block2.d(1);
+        if_block2 = null;
       }
     },
     i(local) {
-      if (current)
-        return;
+      if (current) return;
       transition_in(header.$$.fragment, local);
-      transition_in(if_block);
+      transition_in(if_block1);
       current = true;
     },
     o(local) {
       transition_out(header.$$.fragment, local);
-      transition_out(if_block);
+      transition_out(if_block1);
       current = false;
     },
     d(detaching) {
-      if (detaching)
-        detach(div);
+      if (detaching) detach(div);
       destroy_component(header);
+      if (if_block0) if_block0.d();
       if_blocks[current_block_type_index].d();
+      if (if_block2) if_block2.d();
     }
   };
 }
-var func = (e) => `#${e}`;
-function instance6($$self, $$props, $$invalidate) {
+var func_1 = (tag) => "#" + tag;
+function instance5($$self, $$props, $$invalidate) {
+  let visibleTags;
+  let allCollapsed;
   let { todoTags } = $$props;
-  let { lookAndFeel } = $$props;
+  let { groupBy } = $$props;
+  let { animateCompletion } = $$props;
+  let { showChecked } = $$props;
+  let { showOnlyActiveFile } = $$props;
+  let { showGroupCounts } = $$props;
+  let { showSource } = $$props;
+  let { subGroupBy } = $$props;
+  let { nestSubtasks } = $$props;
+  let { sortDirectionGroups } = $$props;
+  let { sortDirectionItems } = $$props;
+  let { focusFolder } = $$props;
+  let { totalCount } = $$props;
+  let { hasMore } = $$props;
+  let { loading } = $$props;
+  let { failedCount } = $$props;
+  let { onLoadMore } = $$props;
+  let { onRefresh } = $$props;
+  let { onToggleTask } = $$props;
   let { _collapsedSections } = $$props;
   let { _hiddenTags } = $$props;
   let { updateSetting } = $$props;
   let { onSearch } = $$props;
+  let { useTasksPlugin = false } = $$props;
   let { app } = $$props;
   let { todoGroups = [] } = $$props;
-  const visibleTags = todoTags.filter((t) => !_hiddenTags.includes(t));
-  const toggleGroup = (id) => {
-    const newCollapsedSections = _collapsedSections.includes(id) ? _collapsedSections.filter((e) => e !== id) : [..._collapsedSections, id];
-    updateSetting({ _collapsedSections: newCollapsedSections });
+  let search = "";
+  const groupIds = (groups) => groups.flatMap((group) => {
+    var _a;
+    return [
+      group.id,
+      ...groupIds((_a = group.groups) !== null && _a !== void 0 ? _a : [])
+    ];
+  });
+  const toggleGroup = (id) => updateSetting({
+    _collapsedSections: _collapsedSections.includes(id) ? _collapsedSections.filter((value) => value !== id) : [..._collapsedSections, id]
+  });
+  const toggleAll = () => {
+    const ids = groupIds(todoGroups);
+    updateSetting({
+      _collapsedSections: allCollapsed ? _collapsedSections.filter((id) => !ids.includes(id)) : [.../* @__PURE__ */ new Set([..._collapsedSections, ...ids])]
+    });
   };
-  const updateTagStatus = (tag, status) => {
-    const newHiddenTags = _hiddenTags.filter((t) => t !== tag);
-    if (!status)
-      newHiddenTags.push(tag);
-    updateSetting({ _hiddenTags: newHiddenTags });
+  const updateTagStatus = (tag, visible) => updateSetting({
+    _hiddenTags: visible ? _hiddenTags.filter((value) => value !== tag) : [.../* @__PURE__ */ new Set([..._hiddenTags, tag])]
+  });
+  const func = (value) => {
+    $$invalidate(26, search = value);
+    onSearch(value);
+  };
+  function header_search_binding(value) {
+    search = value;
+    $$invalidate(26, search);
+  }
+  const func_2 = (tag) => {
+    $$invalidate(26, search = tag);
+    onSearch(tag);
   };
   $$self.$$set = ($$props2) => {
-    if ("todoTags" in $$props2)
-      $$invalidate(0, todoTags = $$props2.todoTags);
-    if ("lookAndFeel" in $$props2)
-      $$invalidate(1, lookAndFeel = $$props2.lookAndFeel);
-    if ("_collapsedSections" in $$props2)
-      $$invalidate(2, _collapsedSections = $$props2._collapsedSections);
-    if ("_hiddenTags" in $$props2)
-      $$invalidate(3, _hiddenTags = $$props2._hiddenTags);
-    if ("updateSetting" in $$props2)
-      $$invalidate(10, updateSetting = $$props2.updateSetting);
-    if ("onSearch" in $$props2)
-      $$invalidate(4, onSearch = $$props2.onSearch);
-    if ("app" in $$props2)
-      $$invalidate(5, app = $$props2.app);
-    if ("todoGroups" in $$props2)
-      $$invalidate(6, todoGroups = $$props2.todoGroups);
+    if ("todoTags" in $$props2) $$invalidate(0, todoTags = $$props2.todoTags);
+    if ("groupBy" in $$props2) $$invalidate(1, groupBy = $$props2.groupBy);
+    if ("animateCompletion" in $$props2) $$invalidate(2, animateCompletion = $$props2.animateCompletion);
+    if ("showChecked" in $$props2) $$invalidate(3, showChecked = $$props2.showChecked);
+    if ("showOnlyActiveFile" in $$props2) $$invalidate(4, showOnlyActiveFile = $$props2.showOnlyActiveFile);
+    if ("showGroupCounts" in $$props2) $$invalidate(5, showGroupCounts = $$props2.showGroupCounts);
+    if ("showSource" in $$props2) $$invalidate(6, showSource = $$props2.showSource);
+    if ("subGroupBy" in $$props2) $$invalidate(7, subGroupBy = $$props2.subGroupBy);
+    if ("nestSubtasks" in $$props2) $$invalidate(8, nestSubtasks = $$props2.nestSubtasks);
+    if ("sortDirectionGroups" in $$props2) $$invalidate(9, sortDirectionGroups = $$props2.sortDirectionGroups);
+    if ("sortDirectionItems" in $$props2) $$invalidate(10, sortDirectionItems = $$props2.sortDirectionItems);
+    if ("focusFolder" in $$props2) $$invalidate(11, focusFolder = $$props2.focusFolder);
+    if ("totalCount" in $$props2) $$invalidate(12, totalCount = $$props2.totalCount);
+    if ("hasMore" in $$props2) $$invalidate(13, hasMore = $$props2.hasMore);
+    if ("loading" in $$props2) $$invalidate(14, loading = $$props2.loading);
+    if ("failedCount" in $$props2) $$invalidate(15, failedCount = $$props2.failedCount);
+    if ("onLoadMore" in $$props2) $$invalidate(16, onLoadMore = $$props2.onLoadMore);
+    if ("onRefresh" in $$props2) $$invalidate(17, onRefresh = $$props2.onRefresh);
+    if ("onToggleTask" in $$props2) $$invalidate(18, onToggleTask = $$props2.onToggleTask);
+    if ("_collapsedSections" in $$props2) $$invalidate(19, _collapsedSections = $$props2._collapsedSections);
+    if ("_hiddenTags" in $$props2) $$invalidate(20, _hiddenTags = $$props2._hiddenTags);
+    if ("updateSetting" in $$props2) $$invalidate(21, updateSetting = $$props2.updateSetting);
+    if ("onSearch" in $$props2) $$invalidate(22, onSearch = $$props2.onSearch);
+    if ("useTasksPlugin" in $$props2) $$invalidate(23, useTasksPlugin = $$props2.useTasksPlugin);
+    if ("app" in $$props2) $$invalidate(24, app = $$props2.app);
+    if ("todoGroups" in $$props2) $$invalidate(25, todoGroups = $$props2.todoGroups);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty[0] & /*todoTags, _hiddenTags*/
+    1048577) {
+      $: $$invalidate(28, visibleTags = todoTags.filter((tag) => !_hiddenTags.includes(tag)));
+    }
+    if ($$self.$$.dirty[0] & /*todoGroups, _collapsedSections*/
+    34078720) {
+      $: $$invalidate(27, allCollapsed = todoGroups.length > 0 && todoGroups.every((group) => _collapsedSections.includes(group.id)));
+    }
   };
   return [
     todoTags,
-    lookAndFeel,
+    groupBy,
+    animateCompletion,
+    showChecked,
+    showOnlyActiveFile,
+    showGroupCounts,
+    showSource,
+    subGroupBy,
+    nestSubtasks,
+    sortDirectionGroups,
+    sortDirectionItems,
+    focusFolder,
+    totalCount,
+    hasMore,
+    loading,
+    failedCount,
+    onLoadMore,
+    onRefresh,
+    onToggleTask,
     _collapsedSections,
     _hiddenTags,
+    updateSetting,
     onSearch,
+    useTasksPlugin,
     app,
     todoGroups,
+    search,
+    allCollapsed,
     visibleTags,
     toggleGroup,
+    toggleAll,
     updateTagStatus,
-    updateSetting
+    func,
+    header_search_binding,
+    func_2
   ];
 }
 var App3 = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance6, create_fragment6, safe_not_equal, {
-      todoTags: 0,
-      lookAndFeel: 1,
-      _collapsedSections: 2,
-      _hiddenTags: 3,
-      updateSetting: 10,
-      onSearch: 4,
-      app: 5,
-      todoGroups: 6
-    }, add_css6);
+    init(
+      this,
+      options,
+      instance5,
+      create_fragment5,
+      safe_not_equal,
+      {
+        todoTags: 0,
+        groupBy: 1,
+        animateCompletion: 2,
+        showChecked: 3,
+        showOnlyActiveFile: 4,
+        showGroupCounts: 5,
+        showSource: 6,
+        subGroupBy: 7,
+        nestSubtasks: 8,
+        sortDirectionGroups: 9,
+        sortDirectionItems: 10,
+        focusFolder: 11,
+        totalCount: 12,
+        hasMore: 13,
+        loading: 14,
+        failedCount: 15,
+        onLoadMore: 16,
+        onRefresh: 17,
+        onToggleTask: 18,
+        _collapsedSections: 19,
+        _hiddenTags: 20,
+        updateSetting: 21,
+        onSearch: 22,
+        useTasksPlugin: 23,
+        app: 24,
+        todoGroups: 25
+      },
+      null,
+      [-1, -1]
+    );
   }
 };
 var App_default = App3;
 
 // src/view.ts
-var TodoListView = class extends import_obsidian4.ItemView {
+var TodoListView = class extends import_obsidian6.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
-    this.lastRerender = 0;
+    this.fileVersions = /* @__PURE__ */ new Map();
+    this.refreshPromise = null;
+    this.refreshRequested = false;
+    this.fullRefreshRequested = false;
+    this.closed = false;
     this.groupedItems = [];
     this.itemsByFile = /* @__PURE__ */ new Map();
     this.searchTerm = "";
+    this.visibleLimit = 200;
+    this.totalCount = 0;
+    this.loading = false;
+    this.failedFiles = /* @__PURE__ */ new Set();
+    this.completionTimers = /* @__PURE__ */ new Map();
+    this.pendingCompletions = /* @__PURE__ */ new Map();
+    this.togglingTasks = /* @__PURE__ */ new Set();
   }
   getViewType() {
     return TODO_VIEW_TYPE;
   }
   getDisplayText() {
-    return "Todo List";
+    return "Checklist";
   }
   getIcon() {
     return "checkmark";
   }
   get todoTagArray() {
-    return this.plugin.getSettingValue("todoPageName").trim().split("\n").map((e) => e.toLowerCase()).filter((e) => e);
+    return this.plugin.getSettingValue("todoPageName").trim().split("\n").map((e) => e.trim().replace(/^#/, "").toLowerCase()).filter((e) => e);
   }
   get visibleTodoTagArray() {
-    return this.todoTagArray.filter((t) => !this.plugin.getSettingValue("_hiddenTags").includes(t));
+    return this.todoTagArray.filter(
+      (t) => !this.plugin.getSettingValue("_hiddenTags").includes(t)
+    );
   }
   onClose() {
     return __async(this, null, function* () {
-      this._app.$destroy();
+      var _a;
+      this.closed = true;
+      for (const timer of this.completionTimers.values()) clearTimeout(timer);
+      this.completionTimers.clear();
+      this.pendingCompletions.clear();
+      window.clearTimeout(this.refreshTimer);
+      (_a = this._app) == null ? void 0 : _a.$destroy();
     });
   }
   onOpen() {
     return __async(this, null, function* () {
+      this.closed = false;
       this._app = new App_default({
         target: this.contentEl,
         props: this.props()
       });
-      this.registerEvent(this.app.metadataCache.on("resolved", () => __async(this, null, function* () {
-        if (!this.plugin.getSettingValue("autoRefresh"))
-          return;
-        yield this.refresh();
-      })));
-      this.registerEvent(this.app.workspace.on("active-leaf-change", () => __async(this, null, function* () {
-        if (!this.plugin.getSettingValue("showOnlyActiveFile"))
-          return;
-        yield this.refresh();
-      })));
-      this.registerEvent(this.app.vault.on("delete", (file) => this.deleteFile(file.path)));
-      this.refresh();
+      this.registerEvent(
+        this.app.metadataCache.on("resolved", () => this.scheduleRefresh())
+      );
+      this.registerEvent(
+        this.app.metadataCache.on("changed", (file) => {
+          this.fileVersions.delete(file.path);
+          this.scheduleRefresh();
+        })
+      );
+      this.registerEvent(
+        this.app.workspace.on("active-leaf-change", () => __async(this, null, function* () {
+          if (!this.plugin.getSettingValue("showOnlyActiveFile")) return;
+          this.regroup();
+        }))
+      );
+      this.registerEvent(
+        this.app.vault.on("delete", (file) => this.deleteFile(file.path))
+      );
+      this.registerEvent(
+        this.app.vault.on("rename", () => {
+          if (this.plugin.getSettingValue("autoRefresh")) void this.refresh();
+        })
+      );
+      yield this.refresh();
     });
   }
+  scheduleRefresh() {
+    if (!this.plugin.getSettingValue("autoRefresh")) return;
+    window.clearTimeout(this.refreshTimer);
+    this.refreshTimer = window.setTimeout(() => void this.refresh(), 250);
+  }
+  regroup() {
+    this.visibleLimit = 200;
+    this.groupItems();
+    this.renderView();
+  }
   refresh(all = false) {
+    this.refreshRequested = true;
+    this.fullRefreshRequested || (this.fullRefreshRequested = all);
+    if (!this.refreshPromise) {
+      this.refreshPromise = this.runRefreshes().finally(() => {
+        this.refreshPromise = null;
+      });
+    }
+    return this.refreshPromise;
+  }
+  runRefreshes() {
+    return __async(this, null, function* () {
+      this.loading = true;
+      this.renderView();
+      try {
+        while (this.refreshRequested && !this.closed) {
+          const all = this.fullRefreshRequested;
+          this.refreshRequested = false;
+          this.fullRefreshRequested = false;
+          yield this.refreshOnce(all);
+        }
+      } finally {
+        this.loading = false;
+        this.renderView();
+      }
+    });
+  }
+  refreshOnce(all) {
     return __async(this, null, function* () {
       if (all) {
-        this.lastRerender = 0;
+        this.fileVersions.clear();
         this.itemsByFile.clear();
       }
       yield this.calculateAllItems();
+      if (this.closed) return;
       this.groupItems();
       this.renderView();
-      this.lastRerender = +new Date();
     });
   }
   rerender() {
@@ -8157,14 +12741,92 @@ var TodoListView = class extends import_obsidian4.ItemView {
   }
   deleteFile(path) {
     this.itemsByFile.delete(path);
+    this.fileVersions.delete(path);
     this.groupItems();
     this.renderView();
   }
+  taskKey(item) {
+    return JSON.stringify([item.filePath, item.line]);
+  }
+  clearCompletion(key) {
+    clearTimeout(this.completionTimers.get(key));
+    this.completionTimers.delete(key);
+    this.pendingCompletions.delete(key);
+  }
+  scheduleCompletionRemoval(key, delay) {
+    clearTimeout(this.completionTimers.get(key));
+    this.completionTimers.set(
+      key,
+      setTimeout(() => {
+        if (this.togglingTasks.has(key)) {
+          this.scheduleCompletionRemoval(key, 50);
+          return;
+        }
+        this.clearCompletion(key);
+        if (!this.closed) {
+          this.groupItems();
+          this.renderView();
+        }
+      }, delay)
+    );
+  }
+  toggleTask(item) {
+    return __async(this, null, function* () {
+      const key = this.taskKey(item);
+      if (this.togglingTasks.has(key)) return;
+      const completing = !item.checked;
+      const hold = completing && !this.plugin.getSettingValue("showChecked") && this.plugin.getSettingValue("animateCompletion");
+      this.togglingTasks.add(key);
+      if (hold)
+        this.pendingCompletions.set(key, Date.now() + TASK_COMPLETION_DELAY_MS);
+      try {
+        const changed = yield toggleTodoItem(
+          item,
+          this.app,
+          this.plugin.getSettingValue("useTasksPlugin")
+        );
+        if (changed && hold && !this.closed) {
+          this.scheduleCompletionRemoval(
+            key,
+            Math.max(0, this.pendingCompletions.get(key) - Date.now())
+          );
+        } else if (changed || hold) {
+          this.clearCompletion(key);
+        }
+        this.fileVersions.delete(item.filePath);
+        if (!this.closed) yield this.refresh();
+      } finally {
+        this.togglingTasks.delete(key);
+      }
+    });
+  }
   props() {
+    var _a, _b;
     return {
       todoTags: this.todoTagArray,
-      lookAndFeel: this.plugin.getSettingValue("lookAndFeel"),
-      subGroups: this.plugin.getSettingValue("subGroups"),
+      groupBy: this.plugin.getSettingValue("groupBy"),
+      showChecked: this.plugin.getSettingValue("showChecked"),
+      animateCompletion: this.plugin.getSettingValue("animateCompletion"),
+      showOnlyActiveFile: this.plugin.getSettingValue("showOnlyActiveFile"),
+      showGroupCounts: this.plugin.getSettingValue("showGroupCounts"),
+      showSource: this.plugin.getSettingValue("showSource"),
+      useTasksPlugin: this.plugin.getSettingValue("useTasksPlugin"),
+      subGroupBy: (_a = this.plugin.getSettingValue("subGroupBy")) != null ? _a : "none",
+      nestSubtasks: (_b = this.plugin.getSettingValue("nestSubtasks")) != null ? _b : false,
+      sortDirectionGroups: this.plugin.getSettingValue("sortDirectionGroups"),
+      sortDirectionItems: this.plugin.getSettingValue("sortDirectionItems"),
+      focusFolder: this.plugin.getSettingValue("focusFolder"),
+      totalCount: this.totalCount,
+      hasMore: this.totalCount > this.visibleLimit,
+      loading: this.loading,
+      failedCount: this.failedFiles.size,
+      onLoadMore: () => {
+        this.visibleLimit += 200;
+        this.groupItems();
+        this.renderView();
+      },
+      onRefresh: () => this.refresh(true),
+      onToggleTask: (item) => this.toggleTask(item),
       _collapsedSections: this.plugin.getSettingValue("_collapsedSections"),
       _hiddenTags: this.plugin.getSettingValue("_hiddenTags"),
       app: this.app,
@@ -8172,128 +12834,309 @@ var TodoListView = class extends import_obsidian4.ItemView {
       updateSetting: (updates) => this.plugin.updateSettings(updates),
       onSearch: (val) => {
         this.searchTerm = val;
-        this.refresh();
+        this.visibleLimit = 200;
+        this.groupItems();
+        this.renderView();
       }
     };
   }
   calculateAllItems() {
     return __async(this, null, function* () {
-      const todosForUpdatedFiles = yield parseTodos(this.app.vault.getMarkdownFiles(), this.todoTagArray.length === 0 ? ["*"] : this.visibleTodoTagArray, this.app.metadataCache, this.app.vault, this.plugin.getSettingValue("includeFiles"), this.plugin.getSettingValue("showChecked"), this.plugin.getSettingValue("showAllTodos"), this.lastRerender);
+      var _a, _b;
+      const files = this.app.vault.getMarkdownFiles();
+      const paths = new Set(files.map((file) => file.path));
+      for (const path of this.itemsByFile.keys()) {
+        if (!paths.has(path)) {
+          this.itemsByFile.delete(path);
+          this.fileVersions.delete(path);
+        }
+      }
+      const versions = new Map(
+        files.map((file) => [
+          file.path,
+          {
+            mtime: file.stat.mtime,
+            cache: this.app.metadataCache.getFileCache(file)
+          }
+        ])
+      );
+      const changedFiles = files.filter((file) => {
+        const previous = this.fileVersions.get(file.path);
+        const current = versions.get(file.path);
+        return !previous || previous.mtime !== current.mtime || previous.cache !== current.cache;
+      });
+      const todosForUpdatedFiles = yield parseTodos(
+        changedFiles,
+        this.todoTagArray.length === 0 ? ["*"] : this.todoTagArray,
+        this.app.metadataCache,
+        this.app.vault,
+        this.plugin.getSettingValue("includeFiles"),
+        true,
+        this.plugin.getSettingValue("showAllTodos"),
+        0,
+        ((_a = this.plugin.getSettingValue("excludeTags")) != null ? _a : "").split("\n").map((s) => s.trim()).filter(Boolean),
+        (file) => this.failedFiles.add(file.path),
+        (_b = this.plugin.getSettingValue("nestSubtasks")) != null ? _b : false
+      );
+      const currentPaths = new Set(
+        this.app.vault.getMarkdownFiles().map((file) => file.path)
+      );
+      for (const path of this.failedFiles)
+        if (!currentPaths.has(path)) this.failedFiles.delete(path);
       for (const [file, todos] of todosForUpdatedFiles) {
+        this.failedFiles.delete(file.path);
+        if (!currentPaths.has(file.path) || !versions.has(file.path)) continue;
         this.itemsByFile.set(file.path, todos);
+        this.fileVersions.set(file.path, versions.get(file.path));
       }
     });
   }
   groupItems() {
-    const flattenedItems = Array.from(this.itemsByFile.values()).flat();
+    var _a, _b, _c, _d;
+    const todoTags = this.todoTagArray;
+    const hiddenTags = new Set(this.plugin.getSettingValue("_hiddenTags"));
+    const visibleTags = todoTags.filter((tag) => !hiddenTags.has(tag));
+    const showChecked = this.plugin.getSettingValue("showChecked");
+    const animateCompletion = this.plugin.getSettingValue("animateCompletion");
     const viewOnlyOpen = this.plugin.getSettingValue("showOnlyActiveFile");
     const openFile = this.app.workspace.getActiveFile();
-    const filteredItems = viewOnlyOpen ? flattenedItems.filter((i) => i.filePath === openFile.path) : flattenedItems;
-    const searchedItems = filteredItems.filter((e) => e.originalText.toLowerCase().includes(this.searchTerm.toLowerCase()));
-    this.groupedItems = groupTodos(searchedItems, this.plugin.getSettingValue("groupBy"), this.plugin.getSettingValue("sortDirectionGroups"), this.plugin.getSettingValue("sortDirectionItems"), this.plugin.getSettingValue("subGroups"), this.plugin.getSettingValue("sortDirectionSubGroups"));
+    const candidates = viewOnlyOpen ? (_a = this.itemsByFile.get(openFile == null ? void 0 : openFile.path)) != null ? _a : [] : Array.from(this.itemsByFile.values()).flat();
+    const filteredItems = candidates.map((item) => __spreadProps(__spreadValues({}, item), {
+      completionExpiresAt: item.checked && !showChecked && animateCompletion ? this.pendingCompletions.get(this.taskKey(item)) : void 0
+    }));
+    const folder = ((_b = this.plugin.getSettingValue("focusFolder")) != null ? _b : "").trim().replace(/^\/+|\/+$/g, "");
+    const terms = this.searchTerm.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    const searchedItems = filteredItems.filter((item) => {
+      var _a2, _b2;
+      if (!showChecked && item.checked && !item.completionExpiresAt)
+        return false;
+      if (folder && !item.filePath.startsWith(folder + "/")) return false;
+      if (todoTags.length && !visibleTags.length) return false;
+      if (todoTags.length && !item.filterTags.some((tag) => matchesTodoTag(tag, visibleTags)))
+        return false;
+      if (!terms.length) return true;
+      const text3 = `${item.originalText} ${item.filePath} ${(_a2 = item.mainTag) != null ? _a2 : ""}/${(_b2 = item.subTag) != null ? _b2 : ""}`.toLowerCase();
+      return terms.every((term) => text3.includes(term));
+    });
+    this.totalCount = new Set(
+      searchedItems.map((item) => JSON.stringify([item.filePath, item.line]))
+    ).size;
+    const groups = groupTodos(
+      searchedItems,
+      this.plugin.getSettingValue("groupBy"),
+      this.plugin.getSettingValue("sortDirectionGroups"),
+      this.plugin.getSettingValue("sortDirectionItems"),
+      (_c = this.plugin.getSettingValue("subGroupBy")) != null ? _c : "none",
+      this.plugin.getSettingValue("sortDirectionGroups"),
+      todoTags,
+      "",
+      (_d = this.plugin.getSettingValue("nestSubtasks")) != null ? _d : false
+    );
+    const admitted = /* @__PURE__ */ new Set();
+    const admitTree = (items) => {
+      for (const item of items) {
+        if (admitted.size >= this.visibleLimit) return;
+        admitted.add(JSON.stringify([item.filePath, item.line]));
+        admitTree(item.children);
+      }
+    };
+    const admitGroups = (groups2) => {
+      for (const group of groups2) {
+        if (admitted.size >= this.visibleLimit) return;
+        if (group.groups) admitGroups(group.groups);
+        else admitTree(group.todos);
+      }
+    };
+    admitGroups(groups);
+    const pruneTree = (items) => items.filter(
+      (item) => admitted.has(JSON.stringify([item.filePath, item.line]))
+    ).map((item) => __spreadProps(__spreadValues({}, item), { children: pruneTree(item.children) }));
+    const pruneGroups = (groups2) => groups2.map((group) => __spreadProps(__spreadValues({}, group), {
+      todos: pruneTree(group.todos),
+      groups: group.groups ? pruneGroups(group.groups) : void 0
+    })).filter((group) => group.todos.length);
+    this.groupedItems = pruneGroups(groups);
   }
   renderView() {
-    this._app.$set(this.props());
+    var _a;
+    if (!this.closed) (_a = this._app) == null ? void 0 : _a.$set(this.props());
   }
 };
 
 // src/main.ts
-var TodoPlugin = class extends import_obsidian5.Plugin {
+var TodoPlugin = class extends import_obsidian7.Plugin {
+  constructor() {
+    super(...arguments);
+    this.openingPane = null;
+  }
+  get views() {
+    return this.app.workspace.getLeavesOfType(TODO_VIEW_TYPE).map((leaf) => leaf.view).filter((view) => view instanceof TodoListView);
+  }
   get view() {
-    var _a;
-    return (_a = this.app.workspace.getLeavesOfType(TODO_VIEW_TYPE)[0]) == null ? void 0 : _a.view;
+    return this.views[0];
   }
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
       this.addSettingTab(new TodoSettingTab(this.app, this));
+      this.registerEvent(
+        this.app.workspace.on("file-menu", (menu, file) => {
+          if (!(file instanceof import_obsidian7.TFolder)) return;
+          menu.addItem(
+            (item) => item.setTitle("Focus Checklist on this folder").setIcon("list-checks").onClick(() => __async(this, null, function* () {
+              yield this.updateSettings({
+                focusFolder: file.path === "/" ? "" : file.path,
+                showOnlyActiveFile: false
+              });
+              yield this.showPane();
+            }))
+          );
+        })
+      );
+      this.addRibbonIcon(
+        "list-checks",
+        "Open Checklist",
+        () => void this.showPane()
+      );
       this.addCommand({
         id: "show-checklist-view",
-        name: "Show Checklist Pane",
-        callback: () => {
-          const workspace = this.app.workspace;
-          const views = workspace.getLeavesOfType(TODO_VIEW_TYPE);
-          if (views.length === 0) {
-            workspace.getRightLeaf(false).setViewState({
-              type: TODO_VIEW_TYPE,
-              active: true
-            }).then(() => {
-              const todoLeaf = workspace.getLeavesOfType(TODO_VIEW_TYPE)[0];
-              workspace.revealLeaf(todoLeaf);
-              workspace.setActiveLeaf(todoLeaf, true, true);
-            });
-          } else {
-            views[0].setViewState({
-              active: true,
-              type: TODO_VIEW_TYPE
-            });
-            workspace.revealLeaf(views[0]);
-            workspace.setActiveLeaf(views[0], true, true);
-          }
-        }
+        name: "Show Checklist pane",
+        callback: () => this.showPane()
+      });
+      this.addCommand({
+        id: "choose-tag",
+        name: "Focus a tag",
+        callback: () => new TagPicker(this).open()
+      });
+      this.addCommand({
+        id: "toggle-completed",
+        name: "Toggle completed tasks",
+        callback: () => this.updateSettings({ showChecked: !this.settings.showChecked })
       });
       this.addCommand({
         id: "refresh-checklist-view",
         name: "Refresh List",
         callback: () => {
-          this.view.refresh();
+          this.views.forEach((view) => void view.refresh(true));
         }
+      });
+      this.addCommand({
+        id: "toggle-current-file",
+        name: "Toggle current file only",
+        callback: () => this.updateSettings({
+          showOnlyActiveFile: !this.getSettingValue("showOnlyActiveFile")
+        })
       });
       this.registerView(TODO_VIEW_TYPE, (leaf) => {
         const newView = new TodoListView(leaf, this);
         return newView;
       });
-      if (this.app.workspace.layoutReady)
-        this.initLeaf();
-      else
-        this.app.workspace.onLayoutReady(() => this.initLeaf());
     });
   }
-  initLeaf() {
-    if (this.app.workspace.getLeavesOfType(TODO_VIEW_TYPE).length)
-      return;
-    this.app.workspace.getRightLeaf(false).setViewState({
-      type: TODO_VIEW_TYPE,
-      active: true
-    });
-  }
-  onunload() {
-    return __async(this, null, function* () {
+  showPane() {
+    if (this.openingPane) return this.openingPane;
+    this.openingPane = (() => __async(this, null, function* () {
       var _a;
-      (_a = this.app.workspace.getLeavesOfType(TODO_VIEW_TYPE)[0]) == null ? void 0 : _a.detach();
+      const workspace = this.app.workspace;
+      const existing = workspace.getLeavesOfType(TODO_VIEW_TYPE)[0];
+      const leaf = (_a = existing != null ? existing : workspace.getRightLeaf(false)) != null ? _a : workspace.getLeaf(true);
+      if (!existing)
+        yield leaf.setViewState({ type: TODO_VIEW_TYPE, active: true });
+      yield workspace.revealLeaf(leaf);
+    }))().finally(() => {
+      this.openingPane = null;
     });
+    return this.openingPane;
   }
+  // Obsidian restores registered views in place across plugin reloads.
+  // Detaching leaves on unload would discard the user's pane position.
   loadSettings() {
     return __async(this, null, function* () {
       const loadedData = yield this.loadData();
       this.settings = __spreadValues(__spreadValues({}, DEFAULT_SETTINGS), loadedData);
+      if ((loadedData == null ? void 0 : loadedData.subGroupBy) == null && (loadedData == null ? void 0 : loadedData.subGroups))
+        this.settings.subGroupBy = this.settings.groupBy === "page" ? "tag" : "page";
+      if (this.settings.groupBy === "none" || this.settings.groupBy === this.settings.subGroupBy)
+        this.settings.subGroupBy = "none";
+      this.settings.subGroups = this.settings.subGroupBy !== "none";
     });
   }
   updateSettings(updates) {
     return __async(this, null, function* () {
+      updates = __spreadValues({}, updates);
+      if (updates.groupBy === "none") updates.subGroupBy = "none";
+      else if (updates.groupBy && updates.groupBy === this.settings.subGroupBy)
+        updates.subGroupBy = this.settings.groupBy;
+      else if (updates.subGroupBy && updates.subGroupBy !== "none" && updates.subGroupBy === this.settings.groupBy) {
+        if (this.settings.subGroupBy !== "none")
+          updates.groupBy = this.settings.subGroupBy;
+        else updates.subGroupBy = "none";
+      }
+      if (updates.subGroupBy != null)
+        updates.subGroups = updates.subGroupBy !== "none";
       Object.assign(this.settings, updates);
       yield this.saveData(this.settings);
       const onlyRepaintWhenChanges = [
         "autoRefresh",
-        "lookAndFeel",
+        "useTasksPlugin",
+        "showSource",
+        "showGroupCounts",
         "_collapsedSections"
       ];
       const onlyReGroupWhenChanges = [
         "subGroups",
+        "subGroupBy",
         "groupBy",
         "sortDirectionGroups",
         "sortDirectionSubGroups",
-        "sortDirectionItems"
+        "sortDirectionItems",
+        "showChecked",
+        "animateCompletion",
+        "showOnlyActiveFile",
+        "focusFolder",
+        "_hiddenTags"
       ];
-      if (onlyRepaintWhenChanges.includes(Object.keys(updates)[0]))
-        this.view.rerender();
-      else
-        this.view.refresh(!onlyReGroupWhenChanges.includes(Object.keys(updates)[0]));
+      const keys = Object.keys(updates);
+      if (keys.every((key) => onlyRepaintWhenChanges.includes(key)))
+        this.views.forEach((view) => view.rerender());
+      else if (keys.every(
+        (key) => onlyReGroupWhenChanges.includes(key) || onlyRepaintWhenChanges.includes(key)
+      ))
+        this.views.forEach((view) => view.regroup());
+      else yield Promise.all(this.views.map((view) => view.refresh(true)));
     });
   }
   getSettingValue(setting) {
     return this.settings[setting];
   }
 };
+var TagPicker = class extends import_obsidian7.FuzzySuggestModal {
+  constructor(plugin) {
+    super(plugin.app);
+    this.plugin = plugin;
+    this.setPlaceholder("Focus a tag\u2026");
+  }
+  getItems() {
+    return [
+      "All configured tags",
+      ...this.plugin.getSettingValue("todoPageName").split("\n").map((t) => t.trim().replace(/^#/, "").toLowerCase()).filter(Boolean)
+    ];
+  }
+  getItemText(item) {
+    return item === "All configured tags" ? item : "#" + item;
+  }
+  onChooseItem(item) {
+    const tags = this.getItems().slice(1);
+    void this.plugin.updateSettings({
+      _hiddenTags: item === "All configured tags" ? [] : tags.filter((t) => t !== item)
+    });
+    void this.plugin.showPane();
+  }
+};
+/*! Bundled license information:
+
+markdown-it/dist/markdown-it.mjs:
+  (*! markdown-it 15.0.2 https://github.com/markdown-it/markdown-it @license MIT *)
+*/
 
 /* nosourcemap */
