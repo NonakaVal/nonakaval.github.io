@@ -944,5 +944,13 @@
       ],
       "key": "B"
     }
+  ],
+  "templater-obsidian:insert-templater": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "E"
+    }
   ]
 }

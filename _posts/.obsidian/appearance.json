@@ -6,6 +6,7 @@
     "datacore-classes",
     "dashboarPlusPlus"
   ],
-  "theme": "moonstone",
-  "baseFontSize": 14
+  "theme": "obsidian",
+  "baseFontSize": 14,
+  "showRibbon": true
 }
